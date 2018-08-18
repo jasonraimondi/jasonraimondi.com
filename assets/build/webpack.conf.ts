@@ -1,4 +1,3 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { resolve } from 'path';
 import * as webpack from 'webpack';
@@ -6,18 +5,19 @@ import * as webpack from 'webpack';
 import postCssConfig from './postcss.config';
 
 const devMode = process.env.NODE_ENV !== 'production';
-const projectRoot = resolve(__dirname, '../');
+const assetsRoot = resolve(__dirname, '../');
+const jekyllRoot = resolve(__dirname, '../../jekyll/');
 
 const config: webpack.Configuration = {
   mode: devMode ? 'development' : 'production',
   devtool: devMode ? 'cheap-module-eval-source-map' : false,
-  context: projectRoot,
+  context: assetsRoot,
   entry: {
     'main': './src/main.ts',
   },
   output: {
-    path: projectRoot + '/dist',
-    filename: devMode ? '[name].package.js' : '[name].[hash].package.js',
+    path: jekyllRoot + '/assets',
+    filename: '[name].package.js',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json', '.scss'],
@@ -32,7 +32,7 @@ const config: webpack.Configuration = {
       {
         test: /\.p?css$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          MiniCssExtractPlugin.loader,
           'css-loader',
           {
             loader: 'postcss-loader',
@@ -45,12 +45,9 @@ const config: webpack.Configuration = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: projectRoot + '/src/index.html',
-    }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css',
+      filename: '[name].package.css',
+      chunkFilename: '[id].package.css',
     }),
   ],
 };

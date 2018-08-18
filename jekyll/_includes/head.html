@@ -1,0 +1,51 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> {% if page.title %}Jason Raimondi | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %} </title>
+  <meta name="author" content="Jason Raimondi" />
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  <meta property="og:url" content="https://www.jasonraimondi.com/" />
+  <meta property="og:title" content="{% if page.title %}Jason Raimondi | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
+  <meta property="og:site_name" content="{% if page.title %}Jason Raimondi | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
+  <meta property="og:image" content="{{ site.profile_url }}" />
+
+  <meta property="fb:app_id" content="000000" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="{% if page.title %}Jason Raimondi | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:title" content="{% if page.title %}Jason Raimondi | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="twitter:image" content="{{ site.profile_url }}">
+
+  <!--<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">-->
+  <!--<link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">-->
+  <!--<link rel="icon" href="/favicon-48x48.png" sizes="48x48" type="image/png">-->
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    html {
+      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href='{{ "/assets/main.package.css" | relative_url }}?{{site.time | date: '%s%N'}}'>
+
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+</head>

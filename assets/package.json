@@ -2,19 +2,19 @@
   "name": "@jmondi/webpack-starter",
   "description": "Typescript Webpack Starter Pack",
   "scripts": {
-    "clean": "rm -rf dist/*",
-    "dev": "run-s clean build:dev",
+    "clean": "rm -rf ../jekyll/assets/*",
+    "dev": "cross-env TS_NODE_PROJECT=tsconfig.webpack.json webpack --watch --config build/webpack.conf.ts",
     "prod": "run-s clean build:prod",
-    "build:dev": "cross-env TS_NODE_PROJECT=tsconfig.webpack.json webpack --config build/webpack.conf.ts",
     "build:prod": "cross-env TS_NODE_PROJECT=tsconfig.webpack.json NODE_ENV=production webpack --config build/webpack.conf.ts",
-    "pretty": "prettier --write src/**/*.ts src/**/*.scss"
+    "pretty": "prettier --write src/**/*.ts src/**/*.scss",
+    "jekyll": "cd ../jekyll && bundle exec jekyll serve",
+    "serve": "run-p dev jekyll"
   },
   "devDependencies": {
     "@types/node": "^10.7.1",
     "@types/webpack": "^4.4.10",
     "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
-    "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.1",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.3",

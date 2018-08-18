@@ -1,0 +1,20 @@
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
+
+<div class="container mx-auto max-w-md p-4 md:px-0 border-b-2 border-grey-light">
+    <ul class="list-reset flex align-middle">
+        <li class="mr-6 flex align-middle h-100">
+            <a class="text-blue hover:text-blue-darker no-underline" href="{{ '/' | relative_url }}">
+            Jason Raimondi
+            </a>
+        </li>
+        {% if page_paths %}
+        {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+        {% if my_page.title %}
+        <li class="mr-4"><a class="text-blue hover:text-blue-darker no-underline" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+    </ul>
+</div>
