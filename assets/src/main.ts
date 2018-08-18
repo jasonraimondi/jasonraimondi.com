@@ -1,10 +1,12 @@
-import './css/style.css'
+import Vue from 'vue';
 
-export class Something {
-  log() {
-    console.log('here is a console log');
-  }
-}
+import ImageGallery from './components/ImageGallery.vue';
 
-const something = new Something();
-something.log();
+import './css/style.css';
+
+const vm = new Vue({
+  el: '.vue-image-gallery',
+  components: {
+    ImageGallery,
+  },
+});

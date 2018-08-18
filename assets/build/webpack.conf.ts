@@ -1,7 +1,7 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { resolve } from 'path';
 import * as webpack from 'webpack';
-
+import VueLoaderPlugin from 'vue-loader/lib/plugin';
 import postCssConfig from './postcss.config';
 
 const devMode = process.env.NODE_ENV !== 'production';
@@ -19,15 +19,22 @@ const config: webpack.Configuration = {
     path: jekyllRoot + '/assets',
     filename: '[name].package.js',
   },
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json', '.scss'],
-  },
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: ['ts-loader'],
+        use: [{
+          loader: 'ts-loader',
+          options: {
+            appendTsSuffixTo: [/\.vue$/],
+          }
+        }],
+
       },
       {
         test: /\.p?css$/,
@@ -45,6 +52,7 @@ const config: webpack.Configuration = {
     ],
   },
   plugins: [
+    new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].package.css',
       chunkFilename: '[id].package.css',
