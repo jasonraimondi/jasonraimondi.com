@@ -1,0 +1,32 @@
+.sidebar {
+  background-color: var(--teal);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: var(--sidebar-width);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+
+  text-align: center;
+
+  flex-direction: column;
+  align-items: center;
+
+  @media (--large) {
+    display: flex;
+  }
+}
+
+.sidebar-is-open .sidebar {
+  display: flex;
+}
+
+@media (--large) {
+  .page-content {
+    margin-left: var(--sidebar-width);
+  }
+}

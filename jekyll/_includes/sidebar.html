@@ -1,5 +1,23 @@
-<ul>
-    <li>External Links</li>
+<ul class="list-reset">
+    <li>
+        <h3>Links</h3>
+    </li>
+    {% if page_paths %}
+    {% for path in page_paths %}
+    {% assign my_page = site.pages | where: "path", path | first %}
+    {% if my_page.title %}
+    <li>
+        <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+</ul>
+
+<ul class="list-reset">
+    <li>
+        <h3>External Links</h3>
+    </li>
     <li>
         <a href="https://git.jasonraimondi.com/jason"
            target="_blank"

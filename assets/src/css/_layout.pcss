@@ -4,6 +4,35 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  overflow: hidden;
+  background-color: var(--orange);
+  display: flex;
+  flex: 1;
+}
+
+.page-content {
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.sidebar-is-open .page-content {
+  margin-left: var(--sidebar-width);
+}
+
+@media (--large) {
+  .page-content {
+    margin-left: var(--sidebar-width);
+  }
+}
+
+.page-content {
+  height: 100%;
+  overflow-y: auto;
 }

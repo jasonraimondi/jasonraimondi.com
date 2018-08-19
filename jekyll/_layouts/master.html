@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
-    <body>
+<body>
+    <nav class="navigation">
         {% include topbar.html %}
-        <main>
-            {% include sidebar.html %}
-            <div>
-                {{ content }}
-            </div>
-        </main>
-    </body>
+    </nav>
+    <main class="main-content">
+        <article class="page-content">
+            <nav class="mobile-nav">
+                <button class="toggle-button">TOGGLE</button>
+            </nav>
+            {{ content }}
+        </article>
+    </main>
+    <aside class="sidebar">
+        {% include sidebar.html %}
+    </aside>
+</body>
 {% include scripts.html %}
 </html>
