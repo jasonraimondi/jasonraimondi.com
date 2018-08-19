@@ -4,6 +4,7 @@
 
 /*@import 'vue-plyr/dist/vue-plyr.css';*/
 
+@import '_highlight.css';
 @import '_variables.pcss';
 @import '_layout.pcss';
 @import '_navigation.pcss';

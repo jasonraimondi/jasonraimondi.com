@@ -2,20 +2,24 @@
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
 <body>
-    <nav class="navigation">
+<nav class="navigation">
+    <div class="navigation-constrain">
         {% include topbar.html %}
-    </nav>
-    <main class="main-content">
-        <article class="page-content">
+    </div>
+</nav>
+<main class="main-content">
+    <div class="page-content">
+        <div class="width-constrain">
             <nav class="mobile-nav">
                 <button class="toggle-button">TOGGLE</button>
             </nav>
             {{ content }}
-        </article>
-    </main>
-    <aside class="sidebar">
-        {% include sidebar.html %}
-    </aside>
+        </div>
+    </div>
+</main>
+<aside class="sidebar">
+    {% include sidebar.html %}
+</aside>
 </body>
 {% include scripts.html %}
 </html>

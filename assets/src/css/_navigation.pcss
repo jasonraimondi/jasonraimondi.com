@@ -1,14 +1,32 @@
 .navigation {
   display: none;
-//justify-content: center;
   align-items: center;
-  background-color: var(--purple);
-  width: 100%;
+  background-color: var(--white);
   height: 75px;
+  padding: 0 0.5rem;
+  border-bottom: 2px solid var(--black);
 
   @media (--large) {
     display: flex;
     margin-left: var(--sidebar-width);
+  }
+}
+
+.navigation-constrain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-title {
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 700;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
