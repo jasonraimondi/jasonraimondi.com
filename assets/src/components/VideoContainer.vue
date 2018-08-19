@@ -1,68 +1,28 @@
 <template>
     <div>
-        <my-video v-bind:class="{ 'video-container': true, portrait: isPortrait }" :sources="video.sources" :options="video.options"></my-video>
+        <vue-plyr>
+            <video :poster="poster" :src="mp4">
+                <source :src="mp4" type="video/mp4">
+                <source :src="webm" type="video/webm">
+            </video>
+        </vue-plyr>
     </div>
 </template>
 
 <script>
-  import Video from './Video';
+  import Vue from 'vue';
+  import VuePlyr from 'vue-plyr';
 
-  export default {
+  export default Vue.extend({
     props: ['mp4', 'webm', 'poster', 'orientation'],
     computed: {
       isPortrait() {
         return this.orientation === 'portrait';
       }
     },
-    data() {
-      return {
-        video: {
-          sources: [{
-            src: this.mp4.toString(),
-            type: 'video/mp4'
-          }, {
-            src: this.webm.toString(),
-            type: 'video/webm'
-          }],
-          options: {
-            autoplay: false,
-            volume: 0.6,
-            poster: this.poster.toString()
-          }
-        }
-      }
-    },
     components: {
-      myVideo: Video
+      VuePlyr
     }
-  }
+  });
 </script>
-
-<style lang="stylus">
-    @require '../theme/styles/config'
-
-    .video-container video
-        background-color white
-
-    .portrait
-        width 50%
-        margin 0 auto
-
-    @media (max-width: $MQLarge)
-        .portrait
-            width 60%
-
-    @media (max-width: $MQNarrow)
-        .portrait
-            width 70%
-
-    @media (max-width: $MQMobile)
-        .portrait
-            width 75%
-
-    @media (max-width: $MQMobileNarrow)
-        .portrait
-            width 80%
-
-</style>
 

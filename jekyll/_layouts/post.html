@@ -3,27 +3,29 @@ layout: master
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p>
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-        •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">By: <span itemprop="name">Jason Raimondi</span></span>
-  </header>
+    <header>
+        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+        <p>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                {{ page.date | date: date_format }}
+            </time>
+            •
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">By: <span itemprop="name">Jason Raimondi</span></span>
+    </header>
 
-  <section class="post-content use-pretty-links" itemprop="articleBody">
-    {{ content }}
-  </section>
+    <section id="post-content">
+        <article class="use-pretty-links" itemprop="articleBody">
+            {{ content }}
+        </article>
+    </section>
 
 </article>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-  $(function() {
-    return $("h2, h3, h4, h5, h6").each(function(i, el) {
+  $(function () {
+    return $("h2, h3, h4, h5, h6").each(function (i, el) {
       var $el, icon, id;
       $el = $(el);
       id = $el.attr('id');

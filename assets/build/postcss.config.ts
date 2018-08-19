@@ -1,9 +1,9 @@
-import { mediaQueries, properties } from '../settings/variables';
+import { mediaQueries } from '../settings/variables';
 
 export default (loader) => [
+  require("postcss-import"),
   require('postcss-cssnext')({
     features: {
-      customProperties: { variables: properties },
       customMedia: { extensions: mediaQueries },
     },
   }),

@@ -1,12 +1,16 @@
 import Vue from 'vue';
 
-import ImageGallery from './components/ImageGallery.vue';
-
 import './css/style.css';
+import ImageGallery from './components/ImageGallery.vue';
+import ImagePop from './components/ImagePop.vue';
+import VideoContainer from './components/VideoContainer.vue';
+
 
 const vm = new Vue({
-  el: '.vue-image-gallery',
+  el: '#post-content',
   components: {
     ImageGallery,
+    ImagePop,
+    VideoContainer,
   },
 });

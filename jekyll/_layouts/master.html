@@ -4,7 +4,10 @@
     <body>
         {% include topbar.html %}
         <main>
-            {{ content }}
+            {% include sidebar.html %}
+            <div>
+                {{ content }}
+            </div>
         </main>
     </body>
 {% include scripts.html %}

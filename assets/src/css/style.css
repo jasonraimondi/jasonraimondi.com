@@ -1,4 +1,8 @@
-@import '~normalize.css';
+@import 'normalize.css';
 
 @import '_layout.pcss';
 @import '_typography.pcss';
+@import 'posts.pcss';
+@import 'util/_list.pcss';
+
+/*@import 'vue-plyr/dist/vue-plyr.css';*/

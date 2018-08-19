@@ -19,6 +19,11 @@ const config: webpack.Configuration = {
     path: jekyllRoot + '/assets',
     filename: '[name].package.js',
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
+  },
   module: {
     rules: [
       {
