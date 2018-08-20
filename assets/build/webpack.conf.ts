@@ -54,6 +54,18 @@ const config: webpack.Configuration = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              publicPath: '/assets/'
+            }
+          }
+        ]
+      }
     ],
   },
   plugins: [

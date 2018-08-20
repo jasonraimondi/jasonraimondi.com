@@ -1,10 +1,19 @@
-default: build
+export VERSION=3.0.0
+export REPO=jasonraimondi/jasonraimondi.com
+export TAG=${REPO}:${VERSION}
 
-local-build:
-	cd assets && npm run dev
-	cd site && bundle exec jekyll build
+publish: package build push update-server
 
-docker-push:
-	cd docker; make push
+package:
+	cd assets && npm run prod
+	cd jekyll && JEKYLL_ENV=production bundle exec jekyll build
 
-build: docker-build
+build:
+	docker build -t ${TAG} -t ${REPO} .
+
+push:
+	docker push ${TAG}
+	docker push ${REPO}
+
+update-server:
+	ssh theweb2tool "cd jasonraimondi.com-tools && make jason"

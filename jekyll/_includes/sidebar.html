@@ -1,6 +1,11 @@
+<a class="avatar" href="{{ '/' | relative_url }}">
+    <img src="https://res.cloudinary.com/jmondi/image/upload/v1534476066/jasonraimondi.com/me/avatar.png"
+         alt="Jason Profile Picture">
+</a>
+
 <ul class="list-reset">
-    <li>
-        <h3>Here</h3>
+    <li class="sidebar-title">
+        <h5>Here</h5>
     </li>
     {% if page_paths %}
     {% for path in page_paths %}
@@ -15,8 +20,16 @@
 </ul>
 
 <ul class="list-reset">
-    <li>
-        <h3>There</h3>
+    <li class="sidebar-title">
+        <h6>Projects</h6>
+    </li>
+    <li><a href="{{ '/posts/traverse' | relative_url }}">Traverse</a></li>
+    <li><a href="{{ '/posts/can-i-poop' | relative_url }}">Can I Poop?</a></li>
+    <li><a href="{{ '/posts/flipp' | relative_url }}">Flipp</a></li>
+</ul>
+<ul class="list-reset">
+    <li class="sidebar-title">
+        <h5>There</h5>
     </li>
     <li>
         <a href="https://git.jasonraimondi.com/jason"

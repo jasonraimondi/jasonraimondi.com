@@ -10,10 +10,10 @@
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import "./ImageGallery.pcss";
+  import Vue from 'vue';
+  import './ImageGallery.pcss';
 
   export default Vue.extend({
-    props: ["images"],
+    props: ['images'],
   });
 </script>

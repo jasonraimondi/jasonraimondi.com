@@ -1,17 +1,16 @@
 <template>
-    <div>
-        <vue-plyr>
-            <video :poster="poster" :src="mp4">
-                <source :src="mp4" type="video/mp4">
-                <source :src="webm" type="video/webm">
-            </video>
-        </vue-plyr>
+    <div :class="{ 'video-portrait': isPortrait}">
+        <video controls :poster="poster">
+            <source :src="mp4" type="video/mp4">
+            <source :src="webm" type="video/webm">
+            Your browser doesn't support HTML5 video tag.
+        </video>
     </div>
 </template>
 
 <script>
   import Vue from 'vue';
-  import VuePlyr from 'vue-plyr';
+  import './VideoContainer.pcss';
 
   export default Vue.extend({
     props: ['mp4', 'webm', 'poster', 'orientation'],
@@ -20,9 +19,6 @@
         return this.orientation === 'portrait';
       }
     },
-    components: {
-      VuePlyr
-    }
   });
 </script>
 

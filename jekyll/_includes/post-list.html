@@ -1,11 +1,13 @@
-<ul class="list-reset">
+<ul class="list-reset post-list">
     {% for post in site.posts %}
     {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
     <li>
-        <a href="{{ post.url | relative_url }}">
-            <h3>{{ post.title | escape }}</h3>
-            <small>Posted: {{ post.date | date: date_format }}</small>
-            <p>{{ post.excerpt }}</p>
+        <a class="post-list-anchor" href="{{ post.url | relative_url }}">
+            <div class="post-list-title-container">
+                <h3 class="post-list-title">{{ post.title | escape }}</h3>
+                <p class="post-list-date">{{ post.date | date: date_format }}</p>
+            </div>
+            <p class="post-list-excerpt">{{ post.excerpt }}</p>
         </a>
     </li>
     {% endfor %}
