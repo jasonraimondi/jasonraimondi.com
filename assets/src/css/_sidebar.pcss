@@ -18,8 +18,18 @@
   }
 }
 
-.sidebar-toggle-container {
+.mobile-nav {
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+
+  @media (--large) {
+    display: none;
+  }
+}
+
+.sidebar-toggle-container {
+  margin-right: 2rem;
   border: 1px solid var(--grey);
   border-radius: 5px;
   height: 30px;
