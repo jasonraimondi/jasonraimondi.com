@@ -8,6 +8,7 @@
 @import '_variables.pcss';
 @import '_layout.pcss';
 @import '_navigation.pcss';
+@import '_post-list.pcss';
 @import '_posts.pcss';
 @import '_sidebar.pcss';
 @import '_typography.pcss';

@@ -1,5 +1,5 @@
 .sidebar {
-  border-right: 2px solid var(--black);
+  border-right: 1px solid var(--grey-light);
   background-color: var(--white);
   position: fixed;
   left: 0;
@@ -12,14 +12,36 @@
   -webkit-overflow-scrolling: touch;
   display: none;
 
-  text-align: center;
-
-  flex-direction: column;
-  align-items: center;
-
   @media (--large) {
     display: flex;
+    flex-direction: column;
   }
+}
+
+.sidebar .avatar {
+  display: block;
+}
+
+.sidebar .avatar img {
+  width: calc(100% - 120px);
+  margin-top: 30px;
+  padding: 0 60px 60px 60px;
+  border-radius: 9999px;
+}
+
+.sidebar-title h5 {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding-left: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li.sidebar-title {
+  padding-left: 2rem;
 }
 
 .sidebar-is-open .sidebar {

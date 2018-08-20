@@ -4,6 +4,20 @@
   margin: 15px auto 30px;
 }
 
+.image-pop-container.portrait {
+  @media (--large) {
+    margin: 0 15%;
+  }
+
+  @media (--xlarge) {
+    margin: 0 20%;
+  }
+
+  @media (--xxlarge) {
+    margin: 0 25%;
+  }
+}
+
 .image-pop-container img {
   margin: 10px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
@@ -22,6 +36,14 @@
 }
 
 @media (--xlarge) {
+  .pops:hover {
+    max-width: 110% !important;
+    width: 110% !important;
+    margin-left: -5%;
+  }
+}
+
+@media (--xxlarge) {
   .pops:hover {
     max-width: 125% !important;
     width: 125% !important;

@@ -7,6 +7,7 @@ const screens = {
 };
 
 export const mediaQueries = {
+  small: `screen and (min-width: ${addPx(screens.sm, 1)})`,
   smallOnly: `screen and (max-width: ${screens.md})`,
   medium: `screen and (min-width: ${addPx(screens.md, 1)})`,
   mediumOnly: `screen and (min-width: ${addPx(screens.md, 1)}) and (max-width: ${screens.lg})`,

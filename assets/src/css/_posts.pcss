@@ -1,14 +1,28 @@
+.post-container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  @media (--large) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.post-container header {
+  margin-bottom: 1rem;
+}
+
 #post-content p,
 #post-content ol,
 #post-content ul,
 #post-content div,
 #post-content pre {
-  margin-bottom: 4px;
+  margin-bottom: 1rem;
 }
 
 #post-content ol,
 #post-content ul {
-  margin-left: 4px;
+  margin-left: 0.25rem;
 }
 
 #post-content h1,
@@ -17,13 +31,13 @@
 #post-content h4,
 #post-content h5,
 #post-content h6 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .use-pretty-links h2 a {
   background-position: 0 2rem;
-  background-size: 4px 4px;
+  background-size: 2px 2px;
 }
 
 .use-pretty-links h3 a {
@@ -58,6 +72,7 @@
   background-position: 0 1.25rem;
   background-size: 1px 1px;
 }
+
 .use-pretty-links a :not(img, span, small) {
   text-decoration: none;
   color: var(--black);
