@@ -10,6 +10,9 @@
     "jekyll": "cd ../jekyll && bundle exec jekyll serve",
     "serve": "run-p dev jekyll"
   },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
   "devDependencies": {
     "@types/node": "^10.7.1",
     "@types/webpack": "^4.4.10",
@@ -36,11 +39,5 @@
     "singleQuote": true,
     "trailingComma": "all",
     "parser": "typescript"
-  },
-  "dependencies": {
-    "plyr": "^3.4.3",
-    "simple-jekyll-search": "^1.7.0",
-    "vue": "^2.5.17",
-    "vue-plyr": "^4.0.0"
   }
 }

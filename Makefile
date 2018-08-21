@@ -5,8 +5,8 @@ export TAG=${REPO}:${VERSION}
 publish: package build push update-server
 
 package:
-	cd assets && npm run prod
-	cd jekyll && JEKYLL_ENV=production bundle exec jekyll build
+	cd assets && npm install && npm run prod
+	cd jekyll && bundle install && JEKYLL_ENV=production bundle exec jekyll build
 
 build:
 	docker build -t ${TAG} -t ${REPO} .
