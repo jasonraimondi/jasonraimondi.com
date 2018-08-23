@@ -129,4 +129,4 @@ If you are using an IntelliJ IDE (PHPStorm, WebStorm, etc), I’ve already gone 
 
 ![IntelliJ Unit Test Runner](https://i.imgur.com/6nw5rvZ.png)
 
-The github repository for this post can be found here: [GitHub - jasonraimondi/typescript-react-starter: There is very little documentation on setting up a TypeScript React project that is not using the create-react-app magical nonsense. Here is my response. This includes PostCSS and CSSNext.](https://github.com/jasonraimondi/typescript-react-starter)
+The github repository for this post can be found here: [jasonraimondi/typescript-react-starter](https://github.com/jasonraimondi/typescript-react-starter)
