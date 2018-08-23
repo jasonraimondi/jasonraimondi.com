@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testing a React TypeScript app with Code Coverage using Webpack
+title: Testing a TypeScript React app using TS-Jest - Not "Create React App"
 date: 2018-08-23T19:48:59 +0000
 excerpt: "Lets start a TypesScript React app without using Create React App"
 tags: react typescript webpack tdd testing
