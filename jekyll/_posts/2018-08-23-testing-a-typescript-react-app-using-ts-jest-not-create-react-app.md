@@ -92,7 +92,7 @@ import * as Adapter from 'enzyme-adapter-react-16';
 enzyme.configure({ adapter: new Adapter() });
 ```
 
-Now we are going to need to register this new setup file with by adding the following “setupFiles” to our `jest.conf.js` . DO NOT change `<rootDir>`.
+Now we are going to need to register this new setup file with by adding the following “setupFiles” to our `jest.config.js` . DO NOT change `<rootDir>`.
 
 ```json
   "setupFiles": [
@@ -100,7 +100,30 @@ Now we are going to need to register this new setup file with by adding the foll
   ]
 ```
 
+### Resolve Static Asset Imports in React Components
 
+We are going to need to add a couple of mock import files that will resolve whenever static assets are imported into our components. This allows you to import assets such as pre compiled style sheets, images, videos, and more. Basically, anything that `file-loader` would be resolving for us during the actual Webpack build.
+
+Create the following two files:
+
+```json
+// /path/to/typescript-react-starter/test/fileMock.ts
+export default 'test-file-stub';
+```
+
+```json
+// /path/to/typescript-react-starter/test/styleMock.ts
+export default {};
+```
+
+Now you are going to nee do edit our `jest.config.js`, this time adding a moduleNameMapper section that will allow Jest to resolve imports from static assets and files.
+
+```json
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/fileMock.ts",
+    "\\.(css|pcss)$": "<rootDir>/test/styleMock.ts"
+  }
+```
 
 ### Running the Tests
 
