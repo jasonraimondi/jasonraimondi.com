@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Testing a TypeScript React app using TS-Jest - Not "Create React App"
+title: Testing a TypeScript React app using TS-Jest without using Create React App
 date: 2018-08-23T19:48:59 +0000
-excerpt: "Lets start a TypesScript React app without using Create React App"
+excerpt: "Lets create a TypesScript React app without using the cli tool Create React App. This allows you to create a custom build specific to your deploy process."
 tags: react typescript webpack tdd testing
 ---
 

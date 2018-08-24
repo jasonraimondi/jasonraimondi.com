@@ -8,7 +8,7 @@ tags: docker-compose traefik docker lets-encrypt
 
 If you’ve ever configured Docker + Nginx + Lets Encrypt before, it takes some time. Tools like Certbot have made this process easier, but they are not without flaws, especially when deploying to a docker environment. Traefik makes it a cinch.
 
-Maintaining nginx configurations as well as  SSL certificates is doable. Deploying a new container to a domain and getting that configured with SSL can take a bit of time but it is by no means impossible. For each deployed site, you need to have a  `site.conf` nginx file and several more files for nginx certificates. All of these files need to be deployed in the nginx container and mounted to the host machine so when the container is rebuilt you do not lose your certificates.
+Maintaining nginx configurations as well as  SSL certificates is doable. Deploying a new container to a domain and getting that configured with SSL can take a bit of time but it is by no means impossible. For each deployed site, you need to have a  `site.conf` nginx file and several more files for nginx certificates. All of these files need to be deployed in the nginx container and mounted to the host machine so when the container is rebuilt you do not lose your certificates. Check out my post on [configuring lets encrypt with nginx using docker](./2017-08-22-configure-ssl-lets-encrypt-nginx-docker.md) if you really want to find out.
 
 With Traefik, there is one `traefik.toml` configuration file, and one json file, defaulted to `acme.json` that needs to be mounted. With these two files, you can effectively deploy *n* number of secured sites.
 
@@ -29,7 +29,6 @@ The Traefik container is pretty simple to deploy. This is the only container tha
      - "443:443"
 ```
 
-
 #### Deploying a Secure Site
 
 The magic of Traefik is done through labels.
@@ -40,7 +39,6 @@ The magic of Traefik is done through labels.
       - "traefik.port=5000"
       - "traefik.frontend.rule=Host:containers.jasonraimondi.com"
 ```
-
 
 - `traefik.enable` : will the site be available through the load balancer.
 - `traefik.port`:  the port the load balancer needs to connect to the application on (and Express.js application would be typically be port 3000).
