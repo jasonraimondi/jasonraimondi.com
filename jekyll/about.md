@@ -10,7 +10,7 @@ My name is Jason Raimondi and I am a Full Stack Software Engineer currently livi
 
 I have a Bachelors of Fine Arts in Digital Media from the University of Florida, with my primary focus being on the web.
 
-I have been professionally developing for the web since 2009, primarily developing sites early on in **PHP** and **JavaScript**. I have written some client libraries in **Python** and **Ruby**. Recently, my favorite stack has is **TypeScript** on **Node.js**.
+I have been professionally developing for the web since 2009, primarily developing sites early on in **PHP** and **JavaScript**. I have written some client libraries in **Python** and **Ruby**. Recently, my favorite stack has been **TypeScript** on **Node.js**.
 
 I am a student of [Clean Code](https://cleancoders.com/), a [Software Crafter](https://scna.softwarecraftsmanship.org/).  I have a passion for writing Clean software based on SOLID design principles. I have been a student of TDD, practicing daily since October 2016. Under the guidance of [Jamie Isaacs](https://www.jamieisaacs.com/), we have maintained our goal of 85% coverage on 200K+ LOC API codebase at Event Farm.
 
