@@ -16,6 +16,7 @@ timezone: America/Los_Angeles
 permalink: /posts/:title
 plugins:
 - jekyll-feed
+- jekyll-sitemap
 
 markdown: kramdown
 kramdown:
