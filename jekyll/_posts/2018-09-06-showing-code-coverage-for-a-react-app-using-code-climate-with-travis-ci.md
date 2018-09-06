@@ -106,8 +106,10 @@ The whole point of this was for the badges, so go and add your badges.
     alt='Code Climate add coverage badges'
 ></image-pop>
 
+Example Repository: [https://github.com/jasonraimondi/traverse](https://github.com/jasonraimondi/traverse)
+
 Sources:
 - [https://github.com/codeclimate/test-reporter/issues/341](https://github.com/codeclimate/test-reporter/issues/341)
 - [https://docs.codeclimate.com/docs/configuring-test-coverage](https://docs.codeclimate.com/docs/configuring-test-coverage)
 - [https://docs.codeclimate.com/docs/travis-ci-test-coverage](https://docs.codeclimate.com/docs/travis-ci-test-coverage)
-- [https://jestjs.io/docs/en/configuration.html#coveragereporters-array-string](https://jestjs.io/docs/en/configuration.html#coveragereporters-array-string)
+- [https://jestjs.io/docs/en/configuration.html](https://jestjs.io/docs/en/configuration.html#coveragereporters-array-string)
