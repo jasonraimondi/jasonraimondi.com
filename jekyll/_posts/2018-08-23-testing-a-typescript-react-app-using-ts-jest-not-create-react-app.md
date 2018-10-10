@@ -55,10 +55,13 @@ This configuration is done in our  `jest.config.js` file in our project root.
 
 ### Configure Enzyme with Jest
 
-
 Now that Jest is configured for TypeScript, we need to configure an Enzyme Adapter inside our jest configuration.
 
 [Enzyme](https://github.com/airbnb/enzyme) is a JavaScript Testing utility for React built by AirBnB. It makes it easy to test React Components by mimicking jQuery’s API for DOM manipulation and traversing.
+
+```bash
+npm install --save-dev enzyme enzyme-adapter-react-16
+```
 
 If you try and run the test before adding the Enzyme Adaptor, you are going to be met with the following message:
 
@@ -84,8 +87,6 @@ If you try and run the test before adding the Enzyme Adaptor, you are going to b
 To resolve this, we are going to need to add a `setupTests.ts` file that will register our Enzyme Adapter. We are going to add this file at
 
 ```javascript
-// /path/to/typescript-react-starter/test/setupTests.ts
-
 import * as enzyme from 'enzyme';
 import * as Adapter from 'enzyme-adapter-react-16';
 
@@ -106,13 +107,11 @@ We are going to need to add a couple of mock import files that will resolve when
 
 Create the following two files:
 
-```json
-// /path/to/typescript-react-starter/test/fileMock.ts
+```javascript
 export default 'test-file-stub';
 ```
 
-```json
-// /path/to/typescript-react-starter/test/styleMock.ts
+```javascript
 export default {};
 ```
 
@@ -129,8 +128,8 @@ Now you are going to nee do edit our `jest.config.js`, this time adding a module
 
 You can manually run the tests with the `npm run test` command.
 
-```
-~/C/typescript-react-starter ❯❯❯ npm run test                                                                                                                                                                                     ✘ 1
+```bash
+$ npm run test                                                                                                                                                                                     ✘ 1
 
 > @jmondi/typescript-react-starter@ test /Users/jraimondi/Code/typescript-react-starter
 > jest
