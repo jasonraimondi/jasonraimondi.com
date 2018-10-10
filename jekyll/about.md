@@ -15,3 +15,5 @@ I have been professionally developing for the web since 2009, primarily developi
 I have a passion for writing Clean software based on SOLID design principles. I have been a student of TDD, practicing daily since October 2016. Under the guidance of [Jamie Isaacs](https://www.jamieisaacs.com/), we have maintained our goal of 85% coverage on 200K+ LOC API codebase at Event Farm.
 
 I am a technologist and all around computer geek. If I’m not learning a new language or design pattern, I'm looking at the cool things people build on GitHub, playing board games with my friends or out on the trails.
+
+Feel free to peek at my [Resume](./resume)
