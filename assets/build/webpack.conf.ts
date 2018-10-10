@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
     'main': './src/main.ts',
   },
   output: {
-    path: jekyllRoot + '/assets',
+    path: jekyllRoot + '/assets/js',
     filename: '[name].package.js',
   },
   resolve: {

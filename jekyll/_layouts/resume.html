@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{% include head.html %}
+<body>
+<nav class="navigation">
+    <div class="navigation-constrain">
+        {% include topbar.html %}
+    </div>
+</nav>
+<main class="main-content">
+    <div class="page-content">
+        <div class="width-constrain">
+            <nav class="mobile-nav">
+                <div class="sidebar-toggle-container">
+                    <a class="toggle-button sidebar-toggle-icon"></a>
+                </div>
+                <h2><a href='{{ "/" | relative_url }}'>JASON RAIMONDI</a></h2>
+            </nav>
+            <iframe src='http://docs.google.com/gview?url={{ "/assets/resume/JasonRaimondi-Resume-3.1.4.pdf" | absolute_url }}&embedded=true'
+                    style="width:100%; height:100%;" frameborder="0"></iframe>
+        </div>
+    </div>
+</main>
+<aside class="sidebar">
+    {% include sidebar.html %}
+</aside>
+</body>
+{% include scripts.html %}
+</html>
