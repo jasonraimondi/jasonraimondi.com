@@ -2,7 +2,7 @@
   "name": "@jmondi/webpack-starter",
   "description": "Typescript Webpack Starter Pack",
   "scripts": {
-    "clean": "rm -rf ../jekyll/assets/*",
+    "clean": "rm -rf ../jekyll/assets/js/*",
     "dev": "cross-env TS_NODE_PROJECT=tsconfig.webpack.json webpack --watch --config build/webpack.conf.ts",
     "prod": "run-s clean build:prod",
     "build:prod": "cross-env TS_NODE_PROJECT=tsconfig.webpack.json NODE_ENV=production webpack --config build/webpack.conf.ts",
