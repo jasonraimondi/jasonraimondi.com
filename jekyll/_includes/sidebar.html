@@ -7,6 +7,9 @@
     <li class="sidebar-title">
         <h5>Here</h5>
     </li>
+    <li>
+        <a href="{{ '/resume' | relative_url }}">Resume</a>
+    </li>
     {% if page_paths %}
     {% for path in page_paths %}
     {% assign my_page = site.pages | where: "path", path | first %}
