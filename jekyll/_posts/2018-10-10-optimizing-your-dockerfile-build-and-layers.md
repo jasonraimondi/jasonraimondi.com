@@ -93,7 +93,7 @@ COPY . /myapp
 CMD ["bundle", "exec", "rails", "s", "-p", "3000", "-b", "0.0.0.0"]
 ```
 
-Notice that we are copying our `Gemfile` and `Gemfile.lock`, then installing our bundle dependencies
+Notice that we are copying our `Gemfile` and `Gemfile.lock`, installing our bundle dependencies, and then copying in our app and running the Rails engine.
 
 ### Summary
 
