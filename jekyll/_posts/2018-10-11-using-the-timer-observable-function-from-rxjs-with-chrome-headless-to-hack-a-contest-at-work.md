@@ -6,7 +6,7 @@ excerpt: 'The official rules read: “Everyone has their own tagged link that po
 tags: rxjs typescript puppeteer docker
 ---
 
-![the conversation aftermath](/assets/posts/2018/10/hack-contest-01.png)
+![the conversation aftermath](/assets/posts/2018/10/hack-contest/hack-contest-01.png)
 
 I am going to begin by saying, I couldn’t not do it. It was calling to me like Ring calls to Sauron.
 
@@ -14,7 +14,7 @@ I am going to begin by saying, I couldn’t not do it. It was calling to me like
 
 The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. That is very interesting...
 
-![the contest official rules](/assets/posts/2018/10/hack-contest-02.png)
+![the contest official rules](/assets/posts/2018/10/hack-contest/hack-contest-02.png)
 
 ### The Code
 
