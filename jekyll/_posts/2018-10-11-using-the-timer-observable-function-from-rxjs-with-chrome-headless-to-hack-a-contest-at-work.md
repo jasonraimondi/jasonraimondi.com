@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using the 'timer' Observable from Rxjs and Chrome Headless to Hack a Contest at Work
-date: 2018-10-10T18:09:00 -0700
+date: 2018-10-11T15:32:00 -0700
 excerpt: 'The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. Interesting, very interesting.'
 tags: rxjs typescript puppeteer docker
 ---
