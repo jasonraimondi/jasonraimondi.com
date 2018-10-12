@@ -4,7 +4,7 @@ layout: master
 
 <br />
 
-![My Fiance and I](/assets/misc/me/us.jpg)
+![My Fiance and I](/assets/misc/me/us.png)
 
 My name is Jason Raimondi and I am a Full Stack Software Engineer currently living in Los Angeles, CA. I am a student of [Clean Code](https://cleancoders.com/), a [Software Crafter](https://scna.softwarecraftsmanship.org/).
 
