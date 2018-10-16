@@ -14,13 +14,9 @@ I am going to begin by saying, I couldn’t not do it. It was calling to me like
 
 The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. That is very interesting...
 
-![the contest official rules](/assets/posts/2018/10/hack-contest/hack-contest-02.png)
-
-### The Code
-
 I present to you [jasonraimondi/hack-contest](https://github.com/jasonraimondi/hack-contest).
 
-The meat and potatoes:
+### The Code
 
 ```javascript
 import * as puppeteer from 'puppeteer';
@@ -47,9 +43,9 @@ const intervolTimerSubscription = intervolTimer.subscribe(addPageview);
 ```
 
 
-I am using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless Chrome instance to spin up a new browser for us every time we want to view the page.
+We are using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless Chrome instance to spin up a new browser for us every time we want to view the page.
 
-I am using the [‘timer’ function](`timer` function) from the [Rxjs library](https://github.com/reactivex/rxjs). We are then able to add a subscription to the timer that will execute every intervol.
+The [‘timer’ function](`timer` function) from the [Rxjs library](https://github.com/reactivex/rxjs) is what is powering our loop. We are then able to add a subscription to the timer that will execute every intervol.
 
 ### Dockerized
 
