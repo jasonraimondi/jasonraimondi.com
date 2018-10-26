@@ -1,4 +1,4 @@
-export VERSION=3.0.0
+export VERSION=3.0.1
 export REPO=jasonraimondi/jasonraimondi.com
 export TAG=${REPO}:${VERSION}
 
