@@ -12,9 +12,7 @@ I am going to begin by saying, I couldn’t not do it. It was calling to me like
 
 ### Official Contest Rules
 
-The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. That is very interesting...
-
-I present to you [jasonraimondi/hack-contest](https://github.com/jasonraimondi/hack-contest).
+The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. That is very interesting... I present to you [jasonraimondi/hack-contest](https://github.com/jasonraimondi/hack-contest).
 
 ### The Code
 
@@ -43,15 +41,11 @@ const intervolTimerSubscription = intervolTimer.subscribe(addPageview);
 ```
 
 
-We are using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless Chrome instance to spin up a new browser for us every time we want to view the page.
-
-The [‘timer’ function](`timer` function) from the [Rxjs library](https://github.com/reactivex/rxjs) is what is powering our loop. We are then able to add a subscription to the timer that will execute every intervol.
+We are using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless Chrome instance to spin up a new browser for us every time we want to view the page. The [‘timer’ function](http://reactivex.io/documentation/operators/timer.html) from the [Rxjs library](https://github.com/reactivex/rxjs) is what is powering our loop. We are then able to add a subscription to the timer that will execute every intervol.
 
 ### Dockerized
 
-Running chrome headless can be a memory hog. [See here](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker) for recommended way to run puppeteer in Docker.
-
-Luckily the image by alekzonder already does all of this for us. [GitHub - alekzonder/docker-puppeteer: docker image with Google Puppeteer installed](https://github.com/alekzonder/docker-puppeteer)
+Running chrome headless can be a memory hog. [See here](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker) for recommended way to run puppeteer in Docker. Luckily the image by alekzonder already does all of this for us. [GitHub - alekzonder/docker-puppeteer: docker image with Google Puppeteer installed](https://github.com/alekzonder/docker-puppeteer)
 
 ```
 FROM alekzonder/puppeteer
