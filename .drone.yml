@@ -1,6 +1,17 @@
-pipeline:
-  frontend:
-    image: node:alpine
-    commands:
-      - npm install -q --no-color --no-progress
-      - npm run test
+kind: pipeline
+name: default
+
+steps:
+- name: publish
+  image: plugins/docker
+  settings:
+    repo: jasonraimondi/foobar
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    auto_tag: true
+    tags:
+    - latest
+    - ${DRONE_COMMIT_SHA}
+    - ${DRONE_BUILD_NUMBER}
