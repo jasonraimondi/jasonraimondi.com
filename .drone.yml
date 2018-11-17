@@ -5,7 +5,7 @@ steps:
 - name: publish
   image: plugins/docker
   settings:
-    repo: jasonraimondi/foobar
+    repo: jasonraimondi/jasonraimondi.com
     username:
       from_secret: docker_username
     password:
