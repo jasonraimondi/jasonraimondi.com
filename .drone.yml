@@ -15,6 +15,5 @@ steps:
       from_secret: docker_password
     tags: [
       latest,
-      $DRONE_COMMIT_SHA,
-      $DRONE_BUILD_NUMBER,
+      ${DRONE_TAG},
     ]
