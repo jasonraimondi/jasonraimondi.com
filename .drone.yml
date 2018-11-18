@@ -4,9 +4,9 @@ name: default
 steps:
 - name: publish
   image: plugins/docker
-  when:
-    event: tag
   settings:
+    when:
+      event: tag
     repo: jasonraimondi/jasonraimondi.com
     username:
       from_secret: docker_username
