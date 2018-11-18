@@ -4,13 +4,12 @@ name: default
 steps:
 - name: publish
   image: plugins/docker
+  when:
+    event: tag
   settings:
     repo: jasonraimondi/jasonraimondi.com
     username:
       from_secret: docker_username
     password:
       from_secret: docker_password
-    auto_tag: true
-    tags:
-    - latest
-    - 3.1.0
+    tags: [ latest ]
