@@ -17,3 +17,4 @@ steps:
      - latest
      - ${DRONE_TAG}
     auto_tag: true
+    force_tag: true
