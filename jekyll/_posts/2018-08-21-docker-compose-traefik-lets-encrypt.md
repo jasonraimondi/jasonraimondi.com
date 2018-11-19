@@ -20,9 +20,22 @@ The Traefik container is pretty simple to deploy. This is the only container tha
   traefik:
     restart: always
     image: traefik
+    command:
+      - "--api"
+      - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
+      - "--entrypoints=Name:https Address::443 TLS"
+      - "--defaultentrypoints=http,https"
+      - "--acme"
+      - "--acme.storage=/etc/traefik/acme/acme.json"
+      - "--acme.entryPoint=https"
+      - "--acme.httpChallenge.entryPoint=http"
+      - "--acme.onHostRule=true"
+      - "--acme.onDemand=false"
+      - "--acme.email=engineering@eventfarm.com"
+      - "--docker"
+      - "--docker.watch"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      - ./traefik/traefik.toml:/etc/traefik/traefik.toml:ro
       - ./traefik/acme:/etc/traefik/acme
     ports:
      - "80:80"
