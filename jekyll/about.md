@@ -9,24 +9,37 @@ layout: master
 <script>
     var myArray = [
       "/assets/misc/about/us.png",
-      "/assets/misc/about/us.png",
-      "/assets/misc/about/codecraft-2018.jpg",
       "/assets/misc/about/codecraft-2018.jpg",
       "/assets/misc/about/colorado-2018.jpg",
     ];
-    var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
-    var anchor = document.getElementById('photo-of-me'); //or grab it by tagname etc
-    anchor.src = randomItem
+    var randomPictureLink = myArray[Math.floor(Math.random()*myArray.length)];
+    var picture = document.getElementById("photo-of-me");
+    picture.src = randomPictureLink;
 </script>
 
-My name is Jason Raimondi and I am a Full Stack Software Engineer currently living in Los Angeles, CA. I am a student of [Clean Code](https://cleancoders.com/), a [Software Crafter](https://scna.softwarecraftsmanship.org/).
+{{ site.description }}
 
 I have a Bachelors of Fine Arts in Digital Media from the University of Florida, with my primary focus being on the web. I formed Digital Canvas Design LLC in January of 2014 to help maintain my growing number of clients.
 
-I have been professionally developing for the web since 2009, primarily developing sites early on in **PHP** and **JavaScript**. I have experience writing microservices (ding!) libraries in **Golang** and **Python**. Recently, my favorite stack has been **React in TypeScript**. I manage a number of client projects on VPS' ranging from AWS, to Linode, Digital Ocean, as well as bare metal hosting at Liquid Web. I have migrated to an entire container based deploy using **Docker** and **Docker Swarm**. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
+I have been professionally developing for the web since 2009, primarily developing sites early on in **PHP** and **JavaScript**. I have experience writing modular and horizontal applications in everything from PHP, **Node.js**, **Golang** and **Python**. Recently, my favorite front end tool has been **React** in **TypeScript**. My favorite backend tool has been Golang (so small) or Node.js (so easy) in TypeScript. I have migrated to an entire container based deploy using **Docker** and Docker **Swarm**. 
 
-I have a passion for writing Clean software based on SOLID design principles. I have been a student of TDD, practicing daily since Fall 2016. The Event Farm API was rewritten using TDD practices, and has maintained an 85% coverage on a roughly 200K+ LOC Rest API written in PHP 7.1 using **Domain Driven Design** and a Command/Query JSON REST API. 
+I have a passion for writing software with a clean architecture. I have been a student of TDD, practicing daily since fall 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
 
-I am a technologist and all around computer geek. If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
+If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
-Feel free to peek at my [Resume](./resume) or [GoodReads](https://www.goodreads.com/jasonraimondi)
+Feel free to peek at my [resume](./resume) or check out some of [my favorite books.](https://www.goodreads.com/jasonraimondi)
+
+<!-- 
+
+Oh, hello there. 
+
+This wasnt really meant for you, but I can see why you might think it was. One day (hopefully soon) I will update this and either add some cool stuff to the console or more information about my technical skills in the comments, this was just text that I didnt want to lose to VC and forget it existed.
+
+This text:
+
+The Event Farm API was rewritten using TDD practices, and has maintained an 85% coverage on a roughly 200K+ (circa spring 2018) and growing LOC Rest API written in PHP 7.1 using **Domain Driven Design** and a Command/Query JSON REST API. 
+
+--> 
+
+<br>
+<br>
