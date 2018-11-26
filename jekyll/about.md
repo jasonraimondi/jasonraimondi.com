@@ -29,4 +29,4 @@ I have a passion for writing Clean software based on SOLID design principles. I 
 
 I am a technologist and all around computer geek. If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
-Feel free to peek at my [Resume](./resume) or [GoodReads](https://www.goodreads.com/user/show/70344177-jason)
+Feel free to peek at my [Resume](./resume) or [GoodReads](https://www.goodreads.com/jasonraimondi)
