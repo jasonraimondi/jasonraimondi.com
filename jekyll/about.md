@@ -21,7 +21,7 @@ layout: master
 
 I have a Bachelors of Fine Arts in Digital Media from the University of Florida, with my primary focus being on the web. I formed Digital Canvas Design LLC in January of 2014 to help maintain my growing number of clients.
 
-I have been professionally developing for the web since 2009, primarily developing sites early on in **PHP** and **JavaScript**. I have experience writing modular and horizontal applications in everything from PHP, **Node.js**, **Golang** and **Python**. Recently, my favorite front end tool has been **React** in **TypeScript**. My favorite backend tool has been Golang (so small) or Node.js (so easy) in TypeScript. I have migrated to an entire container based deploy using **Docker** and Docker **Swarm**. 
+I have been professionally developing for the web since 2009; early on, I was primarily developing sites in **PHP** and **JavaScript**. Recently, my favorite backend tool has been **Golang** (so small) or **Node.js** (so easy) in **TypeScript** and my favorite front end tool have been **React** in TypeScript or just Vue.js. I have experience writing modular and horizontal applications in everything from PHP, Node.js, Golang and **Python**. I have migrated to an entire container based deploy using **Docker** and Docker **Swarm**. 
 
 I have a passion for writing software with a clean architecture. I have been a student of TDD, practicing daily since fall 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
 
