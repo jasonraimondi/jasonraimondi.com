@@ -1,7 +1,14 @@
+---
+layout: post
+title: "Setting Up Laravel with Foundation"
+date: 2016-05-05T14:00:00 -08:00
+excerpt: "[Laravel Elixir](https://laravel.com/docs/5.2/elixir) is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks. Although Laravel Elixir is branded with Laravel, it is truly a stand alone tool that can be used almost anywhere Gulp can. Laravel Elixir is a really powerful and useful tool and can make build systems that much easier for beginners. Let's see how we can use Zurb's Foundation for Sites 6 with Laravel Elixir so we can have a super minimal, yet powerfully flexible build system and Front End Framework."
+tags: php laravel foundation-sites
+---
 
 ## Setting Up Laravel Elixir with Foundation 6
 
-![laravel elixir building](BLOG_IMAGES/2016-05-05/2015-05-05-cover-photo.png)
+![laravel elixir building](/assets/posts/2016/05/2015-05-05-cover-photo.png)
 
 [Laravel Elixir](https://laravel.com/docs/5.2/elixir) is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks. Although Laravel Elixir is branded with Laravel, it is truly a stand alone tool that can be used almost anywhere Gulp can. Laravel Elixir is a really powerful and useful tool and can make build systems that much easier for beginners. Let's see how we can use Zurb's Foundation for Sites 6 with Laravel Elixir so we can have a super minimal, yet powerfully flexible build system and Front End Framework.
 
@@ -47,7 +54,7 @@ After we remove Bootstrap from our dependencies, we can install [Laravel Elixir]
 
 Installing Laravel Elixir is super easy, especially considering it comes ready out of the box, only needing a simple `npm install` to get started. You can see "laravel-elixir" listed as a dependency under the devDependencies in your `package.json` file.
 
-![package.json file](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-02.png)
+![package.json file](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-02.png)
 
 Since we have already run `npm install --save foundation-sites jquery `, we already have those dependencies installed in our `node_modules` folder. In order to install the rest of our node modules, we need to run an `npm install` in the root of our project directory.
 
@@ -57,7 +64,7 @@ This is going to actually install Laravel Elixir and Gulp into your projects `no
 
 Getting Foundation's Sass imported is a breeze when using Laravel Elixir! The first thing we want to do is import the `scss` folder from the `foundation-sites`
 
-![gulpfile sass only](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-03.png)
+![gulpfile sass only](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-03.png)
 
 What we are going to need to do is set up our `app.scss` file with the imports to Foundation using `@import 'foundation'`.
 
@@ -67,13 +74,13 @@ Foundation allows you to choose what pieces you want to import, and if you reall
 
 For this example, we are just going to go ahead and set up our `app.scss` file so it is ready to either import the entire Foundation library with `@include 'foundation-everything'`, or choose the pieces you would like to include.
 
-![app.scss file](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-04.png)
+![app.scss file](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-04.png)
 
 ### Foundation JavaScript
 
 Foundation's JavaScript components use features of ECMAScript 2015, therefore in order to build the files ourselves, we are going to need to run them through a preprocessor such as Babel in order to compile our JS to ES5.
 
-![gulpfile sass and js](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-05.png)
+![gulpfile sass and js](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-05.png)
 
 You would go ahead and initialize foundation just as usual with `$(document).foundation();` and that will kick off all Foundation elements at once.
 
@@ -95,7 +102,7 @@ $ gulp --production
 
 For a one time development build to see what has been compiled with Sass and Babel, run `gulp` from inside the project root.
 
-![gulp building production](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-06.png)
+![gulp building production](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-06.png)
 
 You can find the built files in the `public/assets/css` and `public/assets/js` directories along with their respected map files. The map files are very helpful when debugging
 
@@ -103,11 +110,11 @@ You can find the built files in the `public/assets/css` and `public/assets/js` d
 
 You can get a basic server up and running super quickly by running `php artisan serve` from within your project root directory. This should spin up a really basic PHP server, typically at `localhost:8000`.  Check out what else artisan can do for you by running `php artisan list` or by [checking out the documentation](https://laravel.com/docs/5.2/artisan).
 
-![artisan serve](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-07.png)
+![artisan serve](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-07.png)
 
 I've gone ahead and added my JS and CSS file paths to the `resources/views/welcome.blade.php` file in order to see our newly built files.
 
-![inspector with foundation](BLOG_IMAGES/2016-05-05/2016-05-05-setting-up-laravel-with-foundation-08.png)
+![inspector with foundation](/assets/posts/2016/05/2016-05-05-setting-up-laravel-with-foundation-08.png)
 
 You should be up and running with a simple Laravel and Foundation App. Now you can go forward, pick the Foundation Components you want to include in your project, and leave the rest. This allows you to be super selective about what you are bringing into your build files, allowing you to really reduce some of the dead weight that full fledged CSS frameworks can sometimes bring.
 
