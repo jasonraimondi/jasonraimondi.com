@@ -18,3 +18,10 @@ steps:
      - ${DRONE_TAG}
     auto_tag: true
     force_tag: true
+
+- name: notify
+  image: hello-world
+  when:
+    status: [ success ]
+    event:
+    - tag
