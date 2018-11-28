@@ -52,7 +52,7 @@ steps:
 
 #### Step: Test
 
-The “test” step has no conditions to run, thus will run for every commit that is pushed up to the repository. Every commit will run the test step, which will use the [`node:alpine`](https://hub.docker.com/_/node/) container and run the “commands” consecutively.
+The “test” step has no conditions to run, thus will run for every commit that is pushed up to the repository. Every commit will run the test step, which will use the [node:alpine](https://hub.docker.com/_/node/) container and run the “commands” consecutively.
 
 #### Step: Publish
 
@@ -66,7 +66,7 @@ One of the best ways to get Drone automatically building your images for you, es
 
 The following Dockerfile is the one that is running and building this Jekyll site.
 
-```Dockerfile
+```
 FROM jekyll/builder as builder
 RUN apk update && apk add --update nodejs nodejs-npm
 WORKDIR /app/jekyll
