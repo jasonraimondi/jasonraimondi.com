@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Auto Deploy Docker Containers Using a Self Hosted CI (Drone 1.0.0-rc.1) and a Multi Stage Dockerfile"
-date: 2017-08-22T14:00:00 -08:00
-excerpt: "Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI."
+date: 2018-11-27T10:00:00 -08:00
+excerpt: "Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI. One of the best ways to get Drone automatically building your images for you, especially images that have a build stage, is to use a multi-stage Dockerfile"
 tags: docker drone.io ci
 ---
 
@@ -62,7 +62,7 @@ This step is also using the [Docker plugin by drone-plugins](http://plugins.dron
 
 ### Multi Stage Dockerfile
 
-One of the best ways to get Drone automatically building your images for you, especially	images that have a build stage, is to use a Dockerfile [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/).
+One of the best ways to get Drone automatically building your images for you, especially images that have a build stage, is to use a [multi-stage](https://docs.docker.com/develop/develop-images/multistage-build/) Dockerfile.
 
 The following Dockerfile is the one that is running and building this Jekyll site.
 
