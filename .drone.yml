@@ -8,7 +8,8 @@ steps:
     event:
     - tag
   settings:
-    repo: jasonraimondi/jasonraimondi.com
+    repo: containers.jasonraimondi.com/jason/jasonraimondi.com
+    registry: containers.jasonraimondi.com
     username:
       from_secret: docker_username
     password:
@@ -18,10 +19,3 @@ steps:
      - ${DRONE_TAG}
     auto_tag: true
     force_tag: true
-
-- name: notify
-  image: hello-world
-  when:
-    status: [ success ]
-    event:
-    - tag
