@@ -27,7 +27,7 @@ I worked relatively hard and received a really fancy piece of paper in 2013 from
 
 If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
-Feel free to check out my [resume](./resume) or peek at some of [the books am have been reading.](https://www.goodreads.com/jasonraimondi)
+Feel free to check out my [resume](./resume) or peek at some of [the books I have been reading.](https://www.goodreads.com/jasonraimondi)
 
 <!-- 
 
