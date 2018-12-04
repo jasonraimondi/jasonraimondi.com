@@ -23,7 +23,7 @@ I have been professionally developing for the web since 2009. Early on I was pri
 
 My passion is for writing software with a clean architecture. I have been a student of TDD, practicing daily since late 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
 
-I worked relatively hard and received a really fancy piece of paper in 2018 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to maintain my professional work.
+I worked relatively hard and received a really fancy piece of paper in 2013 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to maintain my professional work.
 
 If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
