@@ -4,7 +4,7 @@ layout: master
 
 <br />
 
-<img id="photo-of-me" alt="Me" />
+<img id="image-of-me" alt="image of me" />
 
 <script>
     var myArray = [
@@ -13,7 +13,7 @@ layout: master
       "/assets/misc/about/colorado-2018.jpg",
     ];
     var randomPictureLink = myArray[Math.floor(Math.random()*myArray.length)];
-    var picture = document.getElementById("photo-of-me");
+    var picture = document.getElementById("image-of-me");
     picture.src = randomPictureLink;
 </script>
 
@@ -21,13 +21,13 @@ layout: master
 
 I have been professionally developing for the web since 2009. Early on I was primarily developing sites in **PHP** and **JavaScript**. Recently, my favorite stack has been **Golang** (so small) or **Node.js** (so easy) in **TypeScript** on the server, and **React** in TypeScript or just Vue.js on the client. I have experience writing modular applications and have migrated to an entire containerized based deploy using **Docker** and Docker **Swarm**. 
 
-I have a passion for writing software with a clean architecture. I have been a student of TDD, practicing daily since fall 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
+My passion is for writing software with a clean architecture. I have been a student of TDD, practicing daily since late 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
 
-I have a Bachelors of Fine Arts in Digital Media from the University of Florida, with my primary focus being on the web. I formed Digital Canvas Design LLC in January of 2014 to help maintain my growing number of clients.
+I worked relatively hard and received a really fancy piece of paper in 2018 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to help maintain my growing number of clients.
 
 If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
-Feel free to peek at my [resume](./resume) or check out some of [my favorite books.](https://www.goodreads.com/jasonraimondi)
+Feel free to check out my [resume](./resume) or peek at some of [the books am have been reading.](https://www.goodreads.com/jasonraimondi)
 
 <!-- 
 
