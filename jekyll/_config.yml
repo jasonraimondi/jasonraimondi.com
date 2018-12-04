@@ -7,7 +7,8 @@ description: >-
   My name is Jason Raimondi and I am a Full Stack Software Engineer from the east coast, living on the west coast. My primary professional focus has been in web technologies, designing, building and deploying web applications. Really, I am a technologist and all around computer geek, give me a computer and I will be hacking in minutes and occupied for days.
 url: "https://jasonraimondi.com"
 
-profile_url: "https://jasonraimondi.com/assets/misc/me/avatar.png"
+profile_url: "/assets/misc/me/avatar.png"
+resume_url: "/assets/resume/JasonRaimondi-Resume-3.2.0.pdf"
 
 twitter_username: jsonmamondi
 github_username:  jasonraimondi

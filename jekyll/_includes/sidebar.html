@@ -1,5 +1,5 @@
 <a class="avatar" href="{{ '/' | relative_url }}">
-    <img src="{{ site.profile_url }}"
+    <img src="{{ site.profile_url | absolute_url }}"
          alt="Jason Profile Picture">
 </a>
 
@@ -9,6 +9,9 @@
     </li>
     <li>
         <a href="{{ '/resume' | relative_url }}">Resume</a>
+        <a href="{{ site.resume_url | absolute_url}}" target="_blank" style="display: inline-block; height: 0.9rem">
+            <img src="{{ '/assets/icons/ic-link-48px.svg' | relative_url }}" class="inline-block" alt="external resume link icon" style="max-height: 100%; position: relative; top: 3px">
+        </a>
     </li>
     <li>
         <a href="{{ '/about' | relative_url }}">About</a>
