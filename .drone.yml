@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: publish-every
+- name: publish-latest
   image: plugins/docker
   when:
     event: push
@@ -17,11 +17,20 @@ steps:
     tags: [ "latest" ]
     force_tag: true
 
-- name: publish
+- name: notify
+  image: jasonraimondi/curl
+  when:
+    status: [ success ]
+    event:
+      - tag
+  commands:
+    - -X POST https://jasonraimondi.com/.ci/update-jason
+
+- name: publish-tag
   image: plugins/docker
   when:
     event:
-    - tag
+      - tag
   settings:
     repo: containers.jasonraimondi.com/jason/jasonraimondi.com
     registry: containers.jasonraimondi.com
@@ -30,6 +39,6 @@ steps:
     password:
       from_secret: docker_password
     tags:
-     - ${DRONE_TAG}
+      - ${DRONE_TAG}
     auto_tag: true
     force_tag: true
