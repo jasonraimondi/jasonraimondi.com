@@ -21,8 +21,8 @@ steps:
   image: jasonraimondi/curl
   when:
     status: [ success ]
-    event:
-      - tag
+    event: push
+    branch: master
   commands:
     - -X POST https://jasonraimondi.com/.ci/update-jason
 
