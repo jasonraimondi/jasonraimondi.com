@@ -10,4 +10,4 @@ layout: master
     <li><a href="{{ '/archive/daydream-nightmare' | relative_url }}">Daydream Nightmare</a></li>
 </ul>
 
-_More is coming to the archives very soon!_
+_More coming to the archives soon!_
