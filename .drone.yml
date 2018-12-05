@@ -24,7 +24,7 @@ steps:
     event: push
     branch: master
   commands:
-    - -X POST https://jasonraimondi.com/.ci/update-jason
+    - curl -X POST https://jasonraimondi.com/.ci/update-jason
 
 - name: publish-tag
   image: plugins/docker
