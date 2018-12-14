@@ -12,7 +12,7 @@ This workflow is meant to help break the habit of using Google Chrome. I tend to
 
 ![alfred workflow preview](/assets/posts/2018/12/alfred-workflow-opened.png)
 
-To help combat this, I’ve created a workflow in Alfred that is triggered by the keyword “chrome”
+To help combat this, [I’ve created an Alfred workflow](https://git.jasonraimondi.com/jason/alfred-workflow-launch-firefox-instead-of-chrome) that is triggered by the keyword “chrome” and will launch Firefox.
 
 Now every time I am about to launch Chrome, I see the “Launch Firefox Instead of Chrome” launcher. After selecting it a time or two, Alfred will start to prioritize it above the actual Google Chrome application.
 
