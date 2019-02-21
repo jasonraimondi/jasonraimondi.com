@@ -2,7 +2,7 @@
     <div class="image-gallery-container">
         <template v-for="image in images">
             <a class="image-gallery-anchor" :href="image.src">
-                <img class="image-gallery-image" :src="image.thumb" :alt="image.alt" :title="image.alt">
+                <img class="image-gallery-image" :src="'' + image.src" :alt="image.alt" :title="image.alt">
                 <small class="alt-text">{{ image.alt }}</small>
             </a>
         </template>
