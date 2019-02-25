@@ -48,7 +48,7 @@
       "highlights": [
         "Managed web servers and applications for clients, historically built and deployed LAMP/LEMP stacks, currently bouncing between Golang, Node.js + PHP7.",
         "Deployed and secured Linux and BSD servers ranging from firewalls to webservers and NAS machines both internal and external.",
-        "Constructs sites for clients with varying complexity, from simple static HTML websites, to custom built solutions using PHP + MySQL, utilizing existing web technologies including frameworks such as Laravel and CakePHP to CMS solutions such as WordPress.",
+        "Constructs sites for clients with varying complexity, from simple static HTML websites, to custom built solutions using PHP + MySQL, utilizing existing web technologies including frameworks such as Laravel and CakePHP to CMS solutions such as WordPress."
       ]
     },
     {
