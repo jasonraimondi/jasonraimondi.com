@@ -1,14 +1,14 @@
 .navigation {
   display: none;
   align-items: center;
-  background-color: var(--white);
+  background-color: $white;
   height: 75px;
   padding: 0 0.5rem;
-  border-bottom: 1px solid var(--grey-light);
+  border-bottom: 1px solid $grey-light;
 
   @media (--large) {
     display: flex;
-    margin-left: var(--sidebar-width);
+    margin-left: $sidebar-width;
   }
 }
 
@@ -22,7 +22,7 @@
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--black);
+  color: $black;
 
   &:hover {
     text-decoration: underline;
@@ -30,5 +30,5 @@
 }
 
 .sidebar-is-open .navigation {
-  margin-left: var(--sidebar-width);
+  margin-left: $sidebar-width;
 }

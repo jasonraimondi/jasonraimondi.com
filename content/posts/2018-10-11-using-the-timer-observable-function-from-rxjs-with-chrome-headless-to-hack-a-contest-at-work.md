@@ -11,7 +11,7 @@ tags = [
 ]
 +++
 
-![the conversation aftermath](/posts/2018/10/hack-contest/hack-contest-01.png)
+![the conversation aftermath](/assets/posts/2018/10/hack-contest/hack-contest-01.png)
 
 I am going to begin by saying, I couldn’t not do it. It was calling to me like Ring calls to Sauron.
 

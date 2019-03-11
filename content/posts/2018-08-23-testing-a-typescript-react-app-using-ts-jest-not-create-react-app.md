@@ -16,7 +16,7 @@ There is very little documentation on setting up a TypeScript React project that
 
 The [Create React App]([GitHub - facebook/create-react-app: Create React apps with no build configuration.](https://github.com/facebook/create-react-app)) helper works great for greenfield projects, or projects that are not going to deviate at all from the structure and tools the Create React App helper gives you.
 
-![Jest Results with Code Coverage](/posts/2018/09/testing-typescript-react-app/intellij-test-suite.png)
+![Jest Results with Code Coverage](/assets/posts/2018/09/testing-typescript-react-app/intellij-test-suite.png)
 
 My goal is to give you a fairly slim (while remaining production ready) tested, TypeScript React app, WITH code coverage.
 
@@ -77,12 +77,9 @@ If you try and run the test before adding the Enzyme Adaptor, you are going to b
           before using any of Enzyme's top level APIs, where `Adapter` is the adapter
           corresponding to the library currently being tested. For example:
 
-          import Adapter from 'enzyme-adapter-react-15';
-
-          To find out more about this, see http://airbnb.io/enzyme/docs/installation/index.html
-
-      14 |
-      15 | it('renders the correct name after updating the input value', () => {
+          import Adapter from 'enzyme-adapter-react-15ind
+ex.md
+renders the correct name after updating the input value', () => {
     > 16 |   const app = enzyme.shallow(<App version={1.1}/>);
          |                      ^
       17 |   app.find('input').simulate('change', { target: { value: 'Jason Raimondi' } });
@@ -155,6 +152,6 @@ Ran all test suites.
 
 If you are using an IntelliJ IDE (PHPStorm, WebStorm, etc), I’ve already gone and added a Jest Runner called  “Unit Test” that you can either manually trigger, or use the convenient `ctrl + r`  running that IntelliJ offers.
 
-![IntelliJ Unit Test Runner](/posts/2018/09/testing-typescript-react-app/intellij-test-runner.png)
+![IntelliJ Unit Test Runner](/assets/posts/2018/09/testing-typescript-react-app/intellij-test-runner.png)
 
 The github repository for this post can be found here: [jasonraimondi/typescript-react-starter](https://github.com/jasonraimondi/typescript-react-starter)

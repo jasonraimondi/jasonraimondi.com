@@ -1,0 +1,51 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> {{with .Page.Title}}{{.}}{{ else }}{{.Site.Params.Title | htmlEscape }}{{ end }} </title>
+    <meta name="author" content="Jason Raimondi" />
+    <meta name="description" content="{{ with .Page.Description | truncate 160 | htmlEscape }}{{.}}{{ else }}{{ .Site.Params.LongDescription | truncate 160 | htmlEscape }}{{ end }}" />
+
+    <link rel="canonical" href="{{ .RelPermalink | absURL }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title | htmlEscape }}" href="{{ "/feed.xml" | relURL }}">
+
+    <link rel="shortcut icon" href='{{ "/favicon.ico" | relURL}}'>
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | relURL}}'>
+    <link rel="icon" type="image/png" sizes="32x32" href='{{ "/favicon-32x32.png" | relURL}}'>
+    <link rel="icon" type="image/png" sizes="16x16" href='{{ "/favicon-16x16.png" | relURL}}'>
+    <link rel="manifest" href='{{ "/site.webmanifest" | relURL}}'>
+    <link rel="mask-icon" href='{{ "/safari-pinned-tab.svg" | relURL}}' color="#59c270">
+    <meta name="msapplication-TileColor" content="#38c172">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:url" content="https://www.jasonraimondi.com/" />
+    <meta property="og:title" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}" />
+    <meta property="og:description" content="{{ with .Page.Description | truncate 300 | htmlEscape }}{{.}}{{ else }}{{ .Site.Params.LongDescription | truncate 300 | htmlEscape }}{{ end }}" />
+    <meta property="og:site_name" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}{% endif %}" />
+    <meta property="og:image" content="{{ .Site.Params.ProfileURL | relURL }}" />
+
+    <meta property="fb:app_id" content="000000" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}">
+    <meta name="twitter:title" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Page.Description | truncate 160 | htmlEscape }}{{.}}{{ else }}{{ .Site.Params.LongDescription | truncate 160 | htmlEscape }}{{ end }}">
+    <meta name="twitter:image" content="{{ .Site.Params.ProfileURL | relURL }}">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        html {
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href='{{ "/js/main.package.css" | relURL }}?{{ .Date.Format "Jan 2nd 2006" }}'>
+</head>

@@ -1,47 +1,52 @@
-baseurl = "https://jasonraimondi.com"
+baseurl = "/"
 title = "Jason Raimondi | Software Engineer"
-theme ="hugo-theme-basic"
+theme ="jasontheme"
 languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 description = "Jason Raimondi is a Software Engineer based out of California."
 
-pygmentsCodeFences=true
-pygmentsUseClasses=true
-
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
 
 [params]
   titleEmoji = ":tada:"
   twitter = "jsonmamondi"
   email = "jason@raimondi.us"
   longDescription = "My name is Jason Raimondi and I am a Full Stack Software Engineer from the east coast, living on the west coast. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
-  profileURL = "/misc/me/avatar.png"
-  resumeURL = "/resume/JasonRaimondi-Resume-3.2.6.pdf"
+  profileURL = "/assets/misc/me/avatar.png"
+  resumeURL = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
 
-[Permalinks]
-  post = "posts/:slug"
+#[Permalinks]
+#  post = "posts/:slug"
 
-[[params.menu]]
-  name = "posts"
-  url = "posts/"
+#[[params.menu]]
+#  name = "posts"
+#  url = "posts/"
+#
+#[[params.menu]]
+#  name = "tags"
+#  url = "tags/"
+#
+#[privacy]
+#  [privacy.googleAnalytics]
+#    anonymizeIP = true
+#    respectDoNotTrack = true
+#    useSessionStorage = true
+#  [privacy.twitter]
+#    enableDNT = true
+#  [privacy.youtube]
+#    privacyEnhanced = true
+#
 
-[[params.menu]]
-  name = "tags"
-  url = "tags/"
 
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    respectDoNotTrack = true
-    useSessionStorage = true
-  [privacy.twitter]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
+pygmentsCodeFences=true
+pygmentsUseClasses=true
+
+defaultContentLanguage = "en"
+[languages]
+  [languages.en]
+    lang = "en"
+    languageName = "English"
+    weight = 1
 
 [sitemap]
   changefreq = "monthly"

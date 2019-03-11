@@ -1,3 +1,5 @@
+import '_variables.scss';
+
 .post-container {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -16,7 +18,7 @@
 .date,
 .post-container time,
 .post-container span[itemprop="author"] {
-  color: var(--grey);
+  color: $grey);
 }
 
 #post-content p,
@@ -87,18 +89,18 @@
 
 .use-pretty-links a :not(img, span, small) {
   text-decoration: none;
-  color: var(--black);
-  background-image: linear-gradient(#ffffff 50%, var(--black) 50%);
+  color: $black);
+  background-image: linear-gradient(#ffffff 50%, $black 50%);
   background-repeat: repeat-x;
 
   &:hover {
-    color: var(--purple-dark);
-    background-image: linear-gradient(#ffffff 50%, var(--purple-dark) 50%);
+    color: $purple-dark);
+    background-image: linear-gradient(#ffffff 50%, $purple-dark 50%);
   }
 
   &:visited {
-    color: var(--purple-dark);
-    background-image: linear-gradient(#ffffff 50%, var(--purple-dark) 50%);
+    color: $purple-dark);
+    background-image: linear-gradient(#ffffff 50%, $purple-dark 50%);
   }
 }
 

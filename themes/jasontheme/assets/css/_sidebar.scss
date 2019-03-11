@@ -1,13 +1,15 @@
+@import '_variables.scss';
+
 .sidebar {
-  border-right: 1px solid var(--grey-light);
-  background-color: var(--white);
+  border-right: 1px solid $grey-light;
+  background-color: $white;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   z-index: 0;
-  width: var(--sidebar-width);
+  width: $sidebar-width;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
@@ -30,7 +32,7 @@
 
 .sidebar-toggle-container {
   margin-right: 2rem;
-  border: 1px solid var(--grey);
+  border: 1px solid $grey;
   border-radius: 5px;
   height: 30px;
   width: 30px;
@@ -47,7 +49,7 @@
 .sidebar-toggle-icon {
   height: 80%;
   width: 80%;
-  background: url('./icons/menu.svg');
+  background: url('icons/menu.svg');
 }
 
 .sidebar .avatar {
@@ -82,6 +84,6 @@
 
 @media (--large) {
   .page-content {
-    margin-left: var(--sidebar-width);
+    margin-left: $sidebar-width;
   }
 }
