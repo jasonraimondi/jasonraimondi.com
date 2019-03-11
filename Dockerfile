@@ -1,25 +1,15 @@
-FROM node:alpine as node-builder
-WORKDIR /app/assets
-COPY ./assets/package* /app/assets/
-RUN mkdir -p /app/jekyll/assets/js \
-    && npm install -q --no-color --no-progress
-COPY ./assets/tsconfig* /app/assets/
-COPY ./assets/build/ /app/assets/build/
-COPY ./assets/settings/ /app/assets/settings/
-COPY ./assets/src/ /app/assets/src/
-RUN npm run prod
+    FROM jojomi/hugo as builder
+    WORKDIR /app
+    RUN apk update && apk upgrade \
+        && apk add --no-cache bash git openssh \
+        && git clone --depth=1 https://github.com/siegerts/hugo-theme-basic.git /app/themes/hugo-theme-basic \
+        && rm -rf /app/themes/hugo-theme-basic/.git
+    COPY ./layouts/ /app/layouts/
+    COPY ./content/ /app/content/
+    COPY ./static/ /app/static/
+    COPY ./config.toml /app/config.toml
+    RUN hugo --source /app --destination /dist --cleanDestinationDir
 
-FROM jekyll/builder as builder
-WORKDIR /app
-COPY ./jekyll/Gemfile* /app/
-RUN bundle install
-COPY ./jekyll /app/
-COPY --from=node-builder /app/jekyll/assets/js /app/assets/js
-RUN mkdir -p /app/_site \
-    && jekyll build
-
-FROM nginx:alpine
-LABEL maintainer="Jason Raimondi <jason@raimondi.us>"
-RUN rm -f /etc/nginx/conf.d/* && rm -rf /app/*
-COPY --from=builder /app/_site /app
-COPY ./nginx /etc/nginx/
+    FROM nginx:alpine
+    COPY ./nginx /etc/nginx/
+    COPY --chown=nginx:nginx --from=builder /dist/ /app/

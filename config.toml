@@ -1,0 +1,46 @@
+    baseurl = "https://typescriptforhumans.com"
+    title = "Jason Raimondi | Software Engineer"
+    theme ="hugo-theme-basic"
+    languageCode = "en-us"
+    enableEmoji = true
+    copyright = "© 2019 Jason Raimondi"
+    description = "Jason Raimondi is a Software Engineer based out of California."
+
+    [taxonomies]
+      category = "categories"
+      series = "series"
+      tag = "tags"
+
+    [params]
+      titleEmoji = ":tada:"
+      twitter = "jsonmamondi"
+
+    [Permalinks]
+      post = "a/:slug"
+
+    [[params.menu]]
+      name = "articles"
+      url = "a/"
+
+    # [[params.menu]]
+    #   name = "post series"
+    #   url = "series/"
+
+    # [[params.menu]]
+    #   name = "about"
+    #   url = "about/"
+
+    [privacy]
+      [privacy.googleAnalytics]
+        anonymizeIP = true
+        respectDoNotTrack = true
+        useSessionStorage = true
+      [privacy.twitter]
+        enableDNT = true
+      [privacy.youtube]
+        privacyEnhanced = true
+
+    [sitemap]
+      changefreq = "monthly"
+      filename = "sitemap.xml"
+      priority = 0.5
