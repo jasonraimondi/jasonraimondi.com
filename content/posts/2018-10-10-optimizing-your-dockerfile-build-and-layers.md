@@ -1,10 +1,12 @@
----
-layout: post
-title: Optimizing your Dockerfile Build and Layers
-date: 2018-10-10T18:09:00 -0700
-excerpt: "Too many layers and your machines take a large amount of storage and can take a long time to download and extract.  Too few layers and the machine takes F  O  R  E  V  E  R to rebuild."
-tags: docker dockerfile
----
++++
+title = "Optimizing your Dockerfile Build and Layers"
+date = 2018-10-10
+description = "Too many layers and your machines take a large amount of storage and can take a long time to download and extract.  Too few layers and the machine takes F  O  R  E  V  E  R to rebuild."
+tags = [ 
+    "docker",
+    "dockerfile",
+]
++++
 
 ```
 Unable to find image 'nginx:latest' locally

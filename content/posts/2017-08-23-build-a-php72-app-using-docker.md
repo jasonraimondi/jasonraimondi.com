@@ -1,10 +1,13 @@
----
-layout: post
-title: "Building a PHP7.2 + Nginx application using Docker"
-date: 2017-08-23T18:30:00 -08:00
-excerpt: "The goal of this is to have a working development and production build for a PHP7.2 Application using Nginx as our web server."
-tags: php nginx docker
----
++++
+title = "Building a PHP7.2 + Nginx application using Docker"
+date = 2017-08-23
+description = "The goal of this is to have a working development and production build for a PHP7.2 Application using Nginx as our web server."
+tags = [ 
+    "php",
+    "nginx",
+    "docker",
+]
++++
 
 A sample project is available on Github at [https://github.com/jasonraimondi/post-docker-php-nginx](https://github.com/jasonraimondi/post-docker-php-nginx)
 

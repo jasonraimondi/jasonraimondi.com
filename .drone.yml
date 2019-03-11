@@ -14,7 +14,7 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-    tags: [ "latest" ]
+    tags = [ [ "latest" ]
     force_tag: true
 
 - name: notify
@@ -38,7 +38,7 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-    tags:
+    tags = [
       - ${DRONE_TAG}
     auto_tag: true
     force_tag: true

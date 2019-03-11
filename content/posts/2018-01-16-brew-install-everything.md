@@ -1,10 +1,14 @@
----
-layout: post
-title: "Brew Install Everything"
-date: 2018-01-16T10:23:00 -08:00
-excerpt: "So you just got yourself a fresh Mac, now what? Getting your Mac configured to your workflow is essential to productivity.  You spend the better part of every day using it, it is worth spending the time to get it set up right the first time."
-tags: apple macos brew homebrew
----
++++
+title = "Brew Install Everything"
+date = 2018-01-16
+description = "So you just got yourself a fresh Mac, now what? Getting your Mac configured to your workflow is essential to productivity.  You spend the better part of every day using it, it is worth spending the time to get it set up right the first time."
+tags = [
+    "apple",
+    "macos",
+    "brew",
+    "homebrew",
+]
++++
 
 *Note: This is a modified and updated version of my original post [here](http://blog.eventfarm.com/developers/fresh-mac-now-what-brew-install-everything) on the Event Farm Engineering blog on Mar 14, 2016.*
 

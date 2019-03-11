@@ -1,10 +1,15 @@
----
-layout: post
-title: "Configure SSL Using Let’s Encrypt, Nginx, and Docker"
-date: 2017-08-22T14:00:00 -08:00
-excerpt: "Some notes on setting up HTTPS on your server using the official Let's Encrypt Docker Image."
-tags: php nginx lets-encrypt docker ssl
----
++++
+title = "Configure SSL Using Let’s Encrypt, Nginx, and Docker"
+date = 2017-08-22
+description = "Some notes on setting up HTTPS on your server using the official Let's Encrypt Docker Image."
+tags = [ 
+    "php",
+    "nginx",
+    "lets-encrypt",
+    "docker",
+    "ssl",
+]
++++
 
 We will be using the official [Docker Hub Cerbot Image](https://hub.docker.com/r/certbot/certbot/) that will handle the Let’s Encrypt SSL Certificate generation.
 

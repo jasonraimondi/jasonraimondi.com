@@ -1,10 +1,9 @@
----
-layout: post
-title: Getting Rid of Hiccups
-date: 2018-10-10T14:54:00 -0700
-excerpt: "I found this the other day when I had the hiccups a few different days. Posting it here because it worked amazing and I do not ever want to forget this technique."
-tags: misc
----
++++
+title = "Getting Rid of Hiccups"
+date = 2018-10-10
+description = "I found this the other day when I had the hiccups a few different days. Posting it here because it worked amazing and I do not ever want to forget this technique."
+tags = [ "misc" ]
++++
 
 I found this the other day when I had the hiccups a few different days in a row. Posting it here because it worked amazing and I do not ever want to forget this technique.
 

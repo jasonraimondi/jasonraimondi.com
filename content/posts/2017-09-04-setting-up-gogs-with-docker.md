@@ -1,10 +1,15 @@
----
-layout: post
-title: "Setting up a Private Git Server using Gogs"
-date: 2017-09-04T08:57:00 -08:00
-excerpt: "Getting a private Git/Gogs server behind SSL is actually surprisingly easy to get going. Let's see what it takes to get a containerized Gogs + MySQL running on a VPS server behind SSL using Docker."
-tags: gogs ssl nginx lets-encrypt docker
----
++++
+title = "Setting up a Private Git Server using Gogs"
+date = 2017-09-04
+description = "Getting a private Git/Gogs server behind SSL is actually surprisingly easy to get going. Let's see what it takes to get a containerized Gogs + MySQL running on a VPS server behind SSL using Docker."
+tags = [
+    "gogs",
+    "ssl",
+    "nginx",
+    "lets-encrypt",
+    "docker",
+]
++++
 
 ### 1. Cloning the Starter Project
 

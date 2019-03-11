@@ -1,12 +1,16 @@
----
-layout: post
-title: Using the 'timer' Observable from Rxjs and Chrome Headless to Hack a Contest at Work
-date: 2018-10-11T15:32:00 -0700
-excerpt: 'The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. Interesting, very interesting.'
-tags: rxjs typescript puppeteer docker
----
++++
+title = "Using the 'timer' Observable from Rxjs and Chrome Headless to Hack a Contest at Work"
+date = 2018-10-11
+description = 'The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. Interesting, very interesting.'
+tags = [
+    "rxjs",
+    "typescript",
+    "puppeteer",
+    "docker",
+]
++++
 
-![the conversation aftermath](/assets/posts/2018/10/hack-contest/hack-contest-01.png)
+![the conversation aftermath](/posts/2018/10/hack-contest/hack-contest-01.png)
 
 I am going to begin by saying, I couldn’t not do it. It was calling to me like Ring calls to Sauron.
 

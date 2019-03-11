@@ -8,7 +8,7 @@ layout: master
         <p>
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                {{ page.date | date: date_format }}
+                {{ page.date | date = date_format }}
             </time>
             •
             <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jason Raimondi</span></span>

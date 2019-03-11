@@ -1,10 +1,15 @@
----
-layout: post
-title: "Update PHP Homebrew"
-date: 2018-04-12T14:20:00 -08:00
-excerpt: "Update PHP on your Mac using after the homebrew/php tap has been deprecated."
-tags: apple macos brew homebrew php
----
++++
+title = "Update PHP Homebrew"
+date = 2018-04-12
+description = "Update PHP on your Mac using after the homebrew/php tap has been deprecated."
+tags = [
+    "apple",
+    "macos",
+    "brew",
+    "homebrew",
+    "php",
+]
++++
 
 [Homebrew/php](https://github.com/Homebrew/homebrew-php) has been deprecated.
 
