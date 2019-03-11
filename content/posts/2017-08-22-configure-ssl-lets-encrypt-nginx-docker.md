@@ -18,7 +18,7 @@ We will be using the official [Docker Hub Cerbot Image](https://hub.docker.com/r
 
 Run the following command to generate your `dhparam.pem` key. There is little risk if this key is exposed, but you probably want to keep this key private. This Stack Overflow answer, [Can they be public?](https://security.stackexchange.com/a/94397) was fairly informative on the subject.
 
-```markdown
+```md
 git clone git@github.com:jasonraimondi/post-docker-php-nginx.git sample-app
 cd sample-app
 cd docker/prod/nginx
@@ -66,7 +66,7 @@ We need to generate the our Let’s Encrypt SSL certificates so we can serve our
 
 The following is our command to run the certbot command to create your initial ssl certificates. What we are doing here is grabbing the latest version of the [certbot/certbot](https://hub.docker.com/r/certbot/certbot/) container.
 
-```markdown
+```bash
 docker run -ti certbot/certbot certonly
 	-d $YOUR_DOMAIN
 	-v </path/to/letsencrypt>:/etc/letsencrypt
@@ -81,7 +81,7 @@ The volume parameters are split into two, separated by a colon. The left hand si
 
 Here is an example of one for this site:
 
-```markdown
+```bash
 docker run -ti certbot/certbot certonly
 	-d jasonraimondi.com
 	-d www.jasonraimondi.com
@@ -98,7 +98,7 @@ After you’ve run the `certbot` command and completed the initial generation of
 
 Inside of the docker image, this should be located at:
 
-```markdown
+```md
 /etc/nginx/ssl_security.conf
 ````
 
@@ -118,7 +118,7 @@ Include a Let’s Encrypt default location out of the webroot.
 
 Inside of the docker image, this should be located at:
 
-```markdown
+```md
 /etc/nginx/conf.d/lets-encrypt-location
 ````
 

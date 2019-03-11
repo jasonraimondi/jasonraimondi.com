@@ -73,13 +73,13 @@ Inside of Travis, you are going to need to add the following environment. I ende
 ></image-pop>
 
 
-```bash
+```
 CC_TEST_REPORTER_ID=your-id-here
 ```
 
 Install and run the Code Climate test reporter with Travis CI.
 
-```yaml
+```
 language: node_js
 node_js:
 - "10"

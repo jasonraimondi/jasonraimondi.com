@@ -20,13 +20,13 @@ Visit [Homebrew](http://brew.sh/) for the download link.. Before you are able to
 Now you need to enter in the Homebrew install script and let it run. You're good to go!
 
 
-```bash
+```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 There are only 5 commands you need to remember to be fluent.
 
-```bash
+```
 # Updates the package list from the repository
 brew update
 

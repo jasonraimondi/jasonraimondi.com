@@ -9,7 +9,7 @@ tags = [
 ]
 +++
 
-```
+```bash
 Unable to find image 'nginx:latest' locally
 latest: Pulling from library/nginx
 802b00ed6f79: Downloading [================================================>  ]  21.63MB/22.49MB
@@ -29,7 +29,7 @@ The way that a Dockerfile’s build happens is sequentially from the top to the 
 
 If we look at the following Dockerfile, this container has 2 layers that is a smaller implementation of a container for this particular application.
 
-```
+```dockerfile
 FROM node:alpine
 WORKDIR /app
 COPY . /app
@@ -45,7 +45,7 @@ Now that we know our Dockerfile is building from top to bottom, and each layered
 
 If we look at the optimized Dockerfile, we will notice that we’ve increased the number of layers to 6. The container has a few more layers, but overall the size of the machine has not increased.
 
-```
+```dockerfile
 FROM node:alpine
 
 WORKDIR /app
@@ -77,7 +77,7 @@ If we step through the Dockerfile above:
 
 Bundling a Rails app might look like:
 
-```
+```dockerfile
 FROM ruby
 
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs \

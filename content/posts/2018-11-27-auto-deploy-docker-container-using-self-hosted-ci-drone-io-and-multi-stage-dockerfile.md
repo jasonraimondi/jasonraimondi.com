@@ -22,7 +22,7 @@ To configure drone with your repository, you need to activate the repository ins
 
 After you’ve activated your repository, you are going to need to add a `.drone.yml` file to your repository. This file is going to contain the build steps and conditions that will trigger Drone to run.
 
-```yaml
+```yml
 # .drone.yml
 
 kind: pipeline
@@ -70,7 +70,7 @@ One of the best ways to get Drone automatically building your images for you, es
 
 The following Dockerfile is the one that is running and building this Jekyll site.
 
-```
+```dockerfile
 FROM jekyll/builder as builder
 RUN apk update && apk add --update nodejs nodejs-npm
 WORKDIR /app/jekyll

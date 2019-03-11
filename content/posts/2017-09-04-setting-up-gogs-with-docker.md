@@ -18,7 +18,7 @@ Update: Gitea is a lot better than Gogs.
 
 Lets start with my base project found on github [here, starter-docker-gogs](https://github.com/digitalcanvasdesign/starter-docker-gogs).  This project is meant to be a kicking off point and I would assume if anyone uses it they are just nuking the `.git` directory at project root and starting their own history.
 
-```markdown
+```md
 git clone https://github.com/digitalcanvasdesign/starter-docker-gogs
 cd starter-docker-gogs
 rm -rf .git
@@ -30,7 +30,7 @@ Yep, **nuke the git instance included and reinitialize it with your own** git hi
 
 The contents of our `.env.sample` are as follows:
 
-```markdown
+```md
 MYSQL_ROOT_PASSWORD=rootpass
 MYSQL_DATABASE=gogs
 MYSQL_USER=gogs
@@ -84,7 +84,7 @@ You can check out the [official Docker Compose docs](https://docs.docker.com/com
 
 The docker-compose.yml is what is bootstrapping this project. It may seem like our `make` commands are doing this, but if you look inside of our `Makefile`, all of our makefiles are just wrapping docker-compose commands.
 
-```yaml
+```yml
 version: "2"
 
 services:
@@ -261,7 +261,7 @@ We have two server blocks in this file; the first is listening to traffic to you
 
 One interesting thing about this is the `proxy_pass http://gogs:3000`. Typically, you'd proxy pass to the same machine you are on (i.e. `proxy_pass 127.0.0.1:3000`), but since Gogs is running in a container, it is not technically running on `127.0.0.1`, but instead, it is sort of inside a subnet on your local machine.  This is a Docker thing; one way two Docker containers can talk to each other is by the literal machine name. In our case, this is as defined in our `docker-compose.yml`, our container running Gogs is simply named `gogs`.
 
-```yaml
+```yml
 gogs:
     image: gogs/gog
     ...
@@ -271,7 +271,7 @@ gogs:
 
 After you've updated your `gogs-ssl.conf`  we can go ahead and restart our
 
-```markdown
+```md
 make stop clean build start
 ```
 

@@ -22,7 +22,7 @@ Lets go ahead and create a fresh install of Laravel. You are going to need [Comp
 $ brew install composer
 ```
 
-If you need some help with Homebrew, see the Homebrew portion of my previous post, [Fresh Mac, Now What?](https://jasonraimondi.com/posts/brew-install-everything).
+If you need some help with Homebrew, see the Homebrew portion of my previous post, [Fresh Mac, Now What?](/posts/brew-install-everything).
 
 Next, you are going to need to download the Laravel Installer. Check out the [Laravel Installation documentation](https://laravel.com/docs/5.2) if you need more detailed instructions on getting started.
 

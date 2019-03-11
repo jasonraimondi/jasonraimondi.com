@@ -8,7 +8,7 @@ tags = [ "alfred" ]
 
 This workflow is meant to help break the habit of using Google Chrome. I tend to launch applications with Alfred. When I want to launch a browser, what is engraved in my brain is CHROME! 
 
-&#8984; + SPACE &rarr; “chrome” &rarr; ENTER. Every time.
+##### &#8984; + SPACE &rarr; “chrome” &rarr; ENTER. Every time.
 
 ![alfred workflow preview](/posts/2018/12/alfred-workflow-opened.png)
 

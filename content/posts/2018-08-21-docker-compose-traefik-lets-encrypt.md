@@ -21,7 +21,7 @@ With Traefik, there is one `traefik.toml` configuration file, and one json file,
 
 The Traefik container is pretty simple to deploy. This is the only container that we need to mount to the filesystem to maintain our SSL certificates.
 
-```yaml
+```yml
   traefik:
     restart: always
     image: traefik
@@ -51,7 +51,7 @@ The Traefik container is pretty simple to deploy. This is the only container tha
 
 The magic of Traefik is done through labels.
 
-```yaml
+```yml
     labels:
       - "traefik.enable=true"
       - "traefik.port=5000"
@@ -62,7 +62,7 @@ The magic of Traefik is done through labels.
 - `traefik.port`:  the port the load balancer needs to connect to the application on (and Express.js application would be typically be port 3000).
 - `traefik.frontend.rule`: the domain to host the site on, this value can be a comma separated list of multiple domains.
 
-```yaml
+```yml
 registry:
     restart: always
     image: registry:2

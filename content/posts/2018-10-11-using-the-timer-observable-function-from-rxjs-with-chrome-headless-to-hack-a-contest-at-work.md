@@ -52,7 +52,7 @@ We are using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless 
 
 Running chrome headless can be a memory hog. [See here](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-in-docker) for recommended way to run puppeteer in Docker. Luckily the image by alekzonder already does all of this for us. [GitHub - alekzonder/docker-puppeteer: docker image with Google Puppeteer installed](https://github.com/alekzonder/docker-puppeteer)
 
-```
+```dockerfile
 FROM alekzonder/puppeteer
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
@@ -66,13 +66,13 @@ CMD ["npm", "run", "start"]
 
 If you are interested in running the project and generating me even more page views and taking the lead of this contest even further, you can go ahead and run the container on your own machine, all you need is Docker.
 
-```
+```bash
 docker run --rm jasonraimondi/hack-contest
 ```
 
 It will give you a little heads up every time we’ve navigated to the page.
 
-```
+```bash
 > hack-contest@1.0.0 start /app
 > ts-node src/index.ts
 

@@ -6,6 +6,9 @@ enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 description = "Jason Raimondi is a Software Engineer based out of California."
 
+pygmentsCodeFences=true
+pygmentsUseClasses=true
+
 [taxonomies]
   category = "categories"
   series = "series"

@@ -21,7 +21,7 @@ All formulae were migrated to [Homebrew/homebrew-core](https://github.com/Homebr
 ```bash
 brew list | grep php
 brew uninstall php56 php71 php71-intl etc
-``````
+```
 
 #### Remove leftover references to existing configurations.
 
@@ -29,13 +29,13 @@ If you skip this step, you may see errors down the road where php is referencing
 
 ```bash
 rm -rf /usr/local/etc/php/{7.0,7.1,5.6}
-````
+```
 
 #### Install PHP from the new brew namespace
 
 ```bash
 brew install php@7.1
-````
+```
 
 Follow the instructions when that command is finished to add `$PATH` to your `.bashrc` or `.zshrc`
 
@@ -45,11 +45,11 @@ Un[Fortunately] mongo was left out of the default. If you need it, go ahead and 
 
 ```bash
 pecl install mongodb
-````
+```
 
 #### If you see this error, error `fatal error: 'openssl/sha.h' file not found on installation` after running `pecl install mongodb`
 
 ```bash
 cd /usr/local/include
 ln -s ../opt/openssl/include/openssl .
-````
+```
