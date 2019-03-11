@@ -1,5 +1,6 @@
 +++
 title = "Optimizing your Dockerfile Build and Layers"
+slug = "optimizing-your-dockerfile-build-and-layers"
 date = 2018-10-10
 description = "Too many layers and your machines take a large amount of storage and can take a long time to download and extract.  Too few layers and the machine takes F  O  R  E  V  E  R to rebuild."
 tags = [ 

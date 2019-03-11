@@ -1,5 +1,6 @@
 +++
 title = "Brew Install Everything"
+slug = "brew-install-everything"
 date = 2018-01-16
 description = "So you just got yourself a fresh Mac, now what? Getting your Mac configured to your workflow is essential to productivity.  You spend the better part of every day using it, it is worth spending the time to get it set up right the first time."
 tags = [

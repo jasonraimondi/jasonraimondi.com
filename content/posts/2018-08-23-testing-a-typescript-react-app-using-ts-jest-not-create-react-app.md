@@ -1,5 +1,6 @@
 +++
 title = "Testing a TypeScript React app using TS-Jest without using Create React App"
+slug = "testing-a-typescript-react-app-using-ts-jest-not-create-react-app"
 date = 2018-08-23
 description = "Lets create a TypesScript React app without using the cli tool Create React App. This allows you to create a custom build specific to your deploy process."
 tags = [

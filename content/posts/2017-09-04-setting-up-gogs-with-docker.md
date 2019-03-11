@@ -1,5 +1,6 @@
 +++
 title = "Setting up a Private Git Server using Gogs"
+slug = "setting-up-gogs-with-docker"
 date = 2017-09-04
 description = "Getting a private Git/Gogs server behind SSL is actually surprisingly easy to get going. Let's see what it takes to get a containerized Gogs + MySQL running on a VPS server behind SSL using Docker."
 tags = [
@@ -10,6 +11,8 @@ tags = [
     "docker",
 ]
 +++
+
+Update: Gitea is a lot better than Gogs.
 
 ### 1. Cloning the Starter Project
 

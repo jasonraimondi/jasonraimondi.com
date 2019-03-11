@@ -1,5 +1,6 @@
 +++
 title = "Using the 'timer' Observable from Rxjs and Chrome Headless to Hack a Contest at Work"
+slug = "using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work"
 date = 2018-10-11
 description = 'The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. Interesting, very interesting.'
 tags = [

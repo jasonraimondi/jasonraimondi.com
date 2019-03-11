@@ -1,5 +1,6 @@
 +++
 title = "Setting Up Laravel Elixir with Foundation 6"
+slug = "setting-up-laravel-with-foundation"
 date = 2016-05-05
 description = "Laravel Elixir is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks."
 tags = [ 
@@ -37,7 +38,6 @@ $ laravel new laravel-foundation
 $ cd laravel-foundation
 
 ```
-
 
 ### Installing Foundation & jQuery
 
