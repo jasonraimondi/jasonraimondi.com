@@ -6,6 +6,11 @@ enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 description = "Jason Raimondi is a Software Engineer based out of California."
 
+pygmentsCodeFences=true
+pygmentsUseClasses=true
+
+defaultContentLanguage = "en"
+
 [params]
   titleEmoji = ":tada:"
   twitter = "jsonmamondi"
@@ -35,11 +40,6 @@ description = "Jason Raimondi is a Software Engineer based out of California."
 #    privacyEnhanced = true
 #
 
-
-pygmentsCodeFences=true
-pygmentsUseClasses=true
-
-defaultContentLanguage = "en"
 [languages]
   [languages.en]
     lang = "en"
