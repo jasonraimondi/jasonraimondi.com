@@ -11,7 +11,6 @@ description = "Jason Raimondi is a Software Engineer based out of California."
   titleEmoji = ":tada:"
   twitter = "jsonmamondi"
   email = "jason@raimondi.us"
-  longDescription = "My name is Jason Raimondi and I am a Full Stack Software Engineer from the east coast, living on the west coast. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
   profileURL = "/assets/misc/me/avatar.png"
   resumeURL = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
 

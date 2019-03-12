@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ .Title }}</title>
-</head>
-<body>
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-</body>
-</html>
+{{ define "main" }}
+<article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header>
+        <h1 itemprop="name headline">{{ .Title | htmlEscape }}</h1>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        {{ .Date.Format "January 2, 2006" }}
+        </time>
+        •
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jason Raimondi</span></span>
+    </header>
+
+    <section id="post-content">
+        <p>
+            <span class="f6 gray mv3" title="Lastmod: {{ .Lastmod.Format "January 2, 2006" }}. Published at: {{ .PublishDate.Format "2006-01-02" }}.">
+            {{ if ne .Lastmod .PublishDate }}
+            <span class="i">last modified</span> {{ dateFormat "January 2, 2006" .Lastmod }}
+            {{ end }}
+            </span>
+        </p>
+        <article class="use-pretty-links" itemprop="articleBody">
+            {{ .Content }}
+        </article>
+    </section>
+
+</article>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        return $("h2, h3, h4, h5, h6").each(function (i, el) {
+            var $el, icon, id;
+            $el = $(el);
+            id = $el.attr('id');
+            icon = '#';
+            if (id) {
+                return $el.prepend($("<a />").addClass("header-link").addClass('mr-2').addClass('text-grey').attr("href", "#" + id).html(icon));
+            }
+        });
+    });
+</script>
+{{ end }}

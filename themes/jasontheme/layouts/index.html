@@ -2,6 +2,7 @@
 <html>
 {{ partial "head.html" . }}
 <body>
+MAIN INDEX LAYOUT
 <nav class="navigation">
     <div class="navigation-constrain">
         {{ partial "topbar.html" }}
@@ -17,7 +18,7 @@
                 <h2><a href='{{ "/" | relURL }}'>JASON RAIMONDI</a></h2>
             </nav>
             {{ block "main" . }}
-            Main Block
+            Main Block of index
             <!-- The part of the page that begins to differ between templates -->
             {{ end }}
         </div>
@@ -26,6 +27,6 @@
 <aside class="sidebar">
     {{ partial "sidebar.html" }}
 </aside>
-{{ partial "scripts.html" . }}
+{{ partial "footer_includes.html" . }}
 </body>
 </html>

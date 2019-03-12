@@ -1,15 +1,22 @@
-const vm = new Vue({
-    el: '#posts-content',
-});
+const doc = document.getElementById('posts-content');
 
-Vue.component('video-container', {
-    props: ['mp4', 'webm', 'poster', 'orientation'],
-    computed: {
-        isPortrait: function() {
-            return this.orientation === 'portrait';
-        }
-    },
-    template: `
+if (doc) {
+    loadVue();
+}
+
+const loadVue = () => {
+    const vm = new Vue({
+        el: '#posts-content',
+    });
+
+    Vue.component('video-container', {
+        props: ['mp4', 'webm', 'poster', 'orientation'],
+        computed: {
+            isPortrait: function () {
+                return this.orientation === 'portrait';
+            }
+        },
+        template: `
         <div :class="{ 'video-portrait': isPortrait}">
         <video controls :poster="poster">
             <source :src="mp4" type="video/mp4">
@@ -18,26 +25,26 @@ Vue.component('video-container', {
         </video>
     </div>
     `
-});
+    });
 
-Vue.component('image-pop', {
-    props: ['src', 'alt', 'portrait'],
-    computed: {
-        isPortrait: function() {
-            return !!portrait;
+    Vue.component('image-pop', {
+        props: ['src', 'alt', 'portrait'],
+        computed: {
+            isPortrait: function () {
+                return !!portrait;
+            },
         },
-    },
-    template: `
+        template: `
      <div class="image-pop-container" v-bind:class="{ portrait: isPortrait }">
          <img :src="src" :alt="alt" :title="alt" class="pops">
          <small class="image-pop-title">{{ alt }}</small>
      </div>
     `
-});
+    });
 
-Vue.component('image-gallery', {
-    props: ['images'],
-    template: `
+    Vue.component('image-gallery', {
+        props: ['images'],
+        template: `
         <div class="image-gallery-container">
         <template v-for="image in images">
             <a class="image-gallery-anchor" :href="image.src">
@@ -47,4 +54,5 @@ Vue.component('image-gallery', {
         </template>
     </div>
     `
-});
+    });
+};

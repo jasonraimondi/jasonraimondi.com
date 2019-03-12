@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        {{- partial "sidebar.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+{{ partial "head.html" . }}
+<body>
+MAIN BASE OF
+<nav class="navigation">
+    <div class="navigation-constrain">
+        {{ partial "topbar.html" }}
+    </div>
+</nav>
+<main class="main-content">
+    <div class="page-content">
+        <div class="width-constrain">
+            <nav class="mobile-nav">
+                <div class="sidebar-toggle-container">
+                    <a class="toggle-button sidebar-toggle-icon"></a>
+                </div>
+                <h2><a href='{{ "/" | relURL }}'>JASON RAIMONDI</a></h2>
+            </nav>
+            {{ block "main" . }}
+            Main Block of baseof
+            <!-- The part of the page that begins to differ between templates -->
+            {{ end }}
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
+    </div>
+</main>
+<aside class="sidebar">
+    {{ partial "sidebar.html" }}
+</aside>
+{{ partial "footer_includes.html" . }}
+</body>
 </html>

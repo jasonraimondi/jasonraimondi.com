@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15c324f6-1e31-40ad-b1f6-77cccb73acc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/topbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/archive.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2018-08-06-traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-08-06-traverse.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/jasontheme/assets/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/assets/js/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer_includes.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer_includes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head_includes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/jasontheme/layouts/partials/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/post/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/project/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/series.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/tag.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/jekyll/_site/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,38 +35,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <entry file="file://$PROJECT_DIR$/content/about.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="588">
+                <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -73,6 +63,10 @@
       <find>($large)</find>
       <find>($xlarge)</find>
       <find>($xxlarge)</find>
+      <find>scripts.html</find>
+      <find>main block</find>
+      <find>{ .Site</find>
+      <find>longDescription</find>
     </findStrings>
     <replaceStrings>
       <replace>/assets/posts/20</replace>
@@ -83,6 +77,7 @@
       <replace>#{$large}</replace>
       <replace>#{$xlarge}</replace>
       <replace>#{$xxlarge}</replace>
+      <replace>{ $.Site</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/themes/jasontheme/assets/css</dir>
@@ -95,18 +90,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/layouts/partials/scripts.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/tag.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/theme.toml" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/pagination.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/post/single.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/_default/list.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/project/single.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/series.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy/category.html" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html" />
-        <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/themes/jasontheme/archetypes/default.md" />
         <option value="$PROJECT_DIR$/archetypes/default.md" />
         <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/sass/main.scss" />
@@ -120,7 +104,6 @@
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/css/_posts.scss" />
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/css/_layout.scss" />
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/css/_sidebar.scss" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html" />
         <option value="$PROJECT_DIR$/assets/src/components/ImageGallery.pcss" />
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/css/components/_image-gallery.scss" />
         <option value="$PROJECT_DIR$/assets/src/components/ImagePop.pcss" />
@@ -139,13 +122,25 @@
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/js/components/ImageGallery.js" />
         <option value="$PROJECT_DIR$/assets/src/main.ts" />
         <option value="$PROJECT_DIR$/themes/jasontheme/assets/js/menu.js" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/assets/js/components.js" />
-        <option value="$PROJECT_DIR$/content/about.md" />
         <option value="$PROJECT_DIR$/content/resume.md" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html" />
         <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/topbar.html" />
-        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/index.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/project/single.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/post/single.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head_includes.html" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer_includes.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/assets/js/components.js" />
+        <option value="$PROJECT_DIR$/content/posts/2018-08-06-traverse.md" />
         <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/sidebar.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/_default/list.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/index.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/_default/baseof.html" />
+        <option value="$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html" />
+        <option value="$PROJECT_DIR$/config.toml" />
+        <option value="$PROJECT_DIR$/content/about.md" />
       </list>
     </option>
   </component>
@@ -175,12 +170,6 @@
             <path>
               <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="_includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -199,22 +188,7 @@
               <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="jasontheme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="jasontheme" type="462c0819:PsiDirectoryNode" />
               <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="jasontheme" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,9 +219,9 @@
       <recent name="$PROJECT_DIR$/themes/jasontheme/static" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/themes/jasontheme/layouts/partials" />
       <recent name="$PROJECT_DIR$/themes/jasontheme/layouts/taxonomy" />
-      <recent name="$PROJECT_DIR$/content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,81 +310,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.pcss" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/conf.d/default.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/sass/main.scss" />
-    <entry file="file://$PROJECT_DIR$/public/page/1/index.html" />
-    <entry file="file://$PROJECT_DIR$/public/sass/main.css" />
-    <entry file="file://$PROJECT_DIR$/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/assets/css/vendor/normalize.css" />
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/css/_navigation.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/css/lib/normalize.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/theme.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/css/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/css/_posts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/assets/icons/ic-link-48px.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/css/_list.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -515,7 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css" />
     <entry file="file://$PROJECT_DIR$/content/posts/2017-11-14-flipp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -548,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -575,41 +466,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/about.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="75">
-            <caret line="5" column="21" selection-end-line="5" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/js/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -620,17 +480,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/index.html">
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/project/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/post/single.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/scripts.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/head_includes.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="897" lean-forward="true" selection-start-line="897" selection-end-line="897" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/footer_includes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/master.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/pdf.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/archive.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/_default/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/2018-08-06-traverse.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="225">
+            <caret line="37" column="36" lean-forward="true" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/_default/baseof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/_default/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#li#2;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/assets/js/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/jasontheme/layouts/partials/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="140" selection-start-line="22" selection-start-column="140" selection-end-line="22" selection-end-column="140" />
+          <caret line="34" column="141" selection-start-line="34" selection-start-column="141" selection-end-line="34" selection-end-column="141" />
+          <caret line="6" column="133" selection-start-line="6" selection-start-column="133" selection-end-line="6" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="588">
+            <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
