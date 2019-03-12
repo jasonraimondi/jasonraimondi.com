@@ -1,0 +1,5 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.8/dist/vue.js"></script>
+{{ $components := resources.Get "js/components.js" }}
+{{ $menu := resources.Get "js/menu.js" }}
+{{ $js := slice $components $menu | resources.Concat "js/bundle.js" }}
+<script src="{{ $js.Permalink | relURL }}"></script>

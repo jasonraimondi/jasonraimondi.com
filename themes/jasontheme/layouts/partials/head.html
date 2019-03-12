@@ -30,9 +30,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
 
-    <meta name="twitter:card" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:card" content="{{ with .Page.Title}}{{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
     <meta name="twitter:site" content="@{{ .Site.Params.Twitter }}">
-    <meta name="twitter:title" content="{{ with .Page.Title}}Jason Raimondi | {{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
+    <meta name="twitter:title" content="{{ with .Page.Title}}{{. | htmlEscape}}{{ else }}{{ .Site.Title | htmlEscape }}{{ end }}">
     <meta name="twitter:description" content="{{ with .Page.Description | truncate 160 | htmlEscape }}{{.}}{{ else }}{{ .Site.Params.LongDescription | truncate 160 | htmlEscape }}{{ end }}">
     <meta name="twitter:image" content="{{ .Site.Params.ProfileURL | relURL }}">
 
@@ -44,12 +44,11 @@
         }
 
         html {
+            font-size: 18px;
             font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         }
     </style>
-    <link rel="stylesheet" href='{{ "/js/main.package.css" | relURL }}?{{ .Date.Format "Jan 2nd 2006" }}'>
-
     {{ $sass := resources.Get "css/style.scss" }}
     {{ $style := $sass | resources.ToCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}?">
 </head>

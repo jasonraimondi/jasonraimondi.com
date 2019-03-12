@@ -11,15 +11,15 @@ $screenLarge: 992px;
 $screenXLarge: 1200px;
 $screenXXLarge: 1400px;
 
-$small: screen and (min-width: $screenSmall + 1);
-$smallOnly: screen and (max-width: $screenMedium);
-$medium: screen and (min-width: $screenMedium + 1);
-$mediumOnly: screen and (min-width: $screenMedium + 1) and (max-width: $screenLarge);
-$large: screen and (min-width: $screenLarge + 1);
-$largeOnly: screen and (min-width: $screenLarge + 1) and (max-width: $screenXLarge);
-$xlarge: screen and (min-width: $screenXLarge + 1);
-$xlargeOnly: screen and (min-width: $screenXLarge + 1) and (max-width: $screenXXLarge);
-$xxlarge: screen and (min-width: $screenXXLarge + 1);
+$small: "screen and (min-width: #{$screenSmall + 1})";
+$smallOnly: "screen and (max-width: #{$screenMedium})";
+$medium: "screen and (min-width: #{$screenMedium + 1})";
+$mediumOnly: "screen and (min-width: #{$screenMedium + 1}) and (max-width: #{$screenLarge})";
+$large: "screen and (min-width: #{$screenLarge + 1})";
+$largeOnly: "screen and (min-width: #{$screenLarge + 1}) and (max-width: #{$screenXLarge})";
+$xlarge: "screen and (min-width: #{$screenXLarge + 1})";
+$xlargeOnly: "screen and (min-width: #{$screenXLarge + 1}) and (max-width: #{$screenXXLarge})";
+$xxlarge: "screen and (min-width: #{$screenXXLarge + 1})";
 
 $black: #22292f !default;
 $grey-darkest: #3d4852 !default;
