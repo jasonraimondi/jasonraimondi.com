@@ -1,5 +1,6 @@
 +++
 title = "Resume"
+slug = "resume"
 date = 2019-03-11
 +++
 

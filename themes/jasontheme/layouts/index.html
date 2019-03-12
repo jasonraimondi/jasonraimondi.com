@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-<html>
-{{ partial "head.html" . }}
-<body>
-<nav class="navigation">
-    <div class="navigation-constrain">
-        {{ partial "topbar.html" }}
-    </div>
-</nav>
-<main class="main-content">
-    <div class="page-content">
-        <div class="width-constrain">
-            <nav class="mobile-nav">
-                <div class="sidebar-toggle-container">
-                    <a class="toggle-button sidebar-toggle-icon"></a>
-                </div>
-                <h2><a href='{{ "/" | relURL }}'>JASON RAIMONDI</a></h2>
-            </nav>
-            {{ block "main" . }}
-            Main Block of index
-            <!-- The part of the page that begins to differ between templates -->
-            {{ end }}
-        </div>
-    </div>
-</main>
-<aside class="sidebar">
-    {{ partial "sidebar.html" . }}
-</aside>
-{{ partial "footer_includes.html" . }}
-</body>
-</html>
+{{ define "main" }}
+    <h1>Index Default</h1>
+    <ul class="list-reset post-list">
+        {{ range .Data.Pages.ByDate.Reverse }}
+            <li>
+                <a class="post-list-anchor" href="{{ .Permalink }}">
+                    <div class="post-list-title-container">
+                        <h3 class="post-list-title">{{ .Title }}</h3>
+                        <p class="post-list-date">{{ .Date.Format "January 2, 2006" }}</p>
+                    </div>
+                    <p class="post-list-excerpt">{{ .Description }}</p>
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}
+

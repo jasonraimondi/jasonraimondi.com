@@ -2,7 +2,6 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-MAIN BASE OF
 <nav class="navigation">
     <div class="navigation-constrain">
         {{ partial "topbar.html" }}
@@ -11,14 +10,9 @@ MAIN BASE OF
 <main class="main-content">
     <div class="page-content">
         <div class="width-constrain">
-            <nav class="mobile-nav">
-                <div class="sidebar-toggle-container">
-                    <a class="toggle-button sidebar-toggle-icon"></a>
-                </div>
-                <h2><a href='{{ "/" | relURL }}'>JASON RAIMONDI</a></h2>
-            </nav>
+            {{ partial "mobile-nav.html" }}
             {{ block "main" . }}
-            Main Block of baseof
+            Default main block!!
             <!-- The part of the page that begins to differ between templates -->
             {{ end }}
         </div>
