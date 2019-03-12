@@ -1,6 +1,5 @@
-<a class="avatar" href="{{ "/" | relURL }}">
-    <img src="{{ $.Site.Params.ProfileURL }}"
-         alt="Jason Profile Picture" />
+<a class="avatar" href="/">
+    <img src="{{ $.Site.Params.ProfileURL }}" alt="Jason Profile Picture" />
 </a>
 
 <ul class="list-reset">
@@ -8,14 +7,11 @@
         <h5>Over Here</h5>
     </li>
     <li>
-        <a href="{{ "/about" | relURL }}">About</a>
+        <a href="/about">About</a>
     </li>
     <li>
-        <a href="{{ "/resume" | relURL }}">Resume</a>
-        <a href="{{ $.Site.Params.resumeURL | relURL}}" target="_blank" style="display: inline-block; height: 0.9rem">
-            <img src="{{ "/assets/icons/ic-link-48px.svg" | relURL }}" class="inline-block" alt="external resume link icon" style="max-height: 100%; position: relative; top: 3px">
-        </a>
-        <a href="{{ "/assets/resume/resume.json" | relURL}}" target="_blank" style="display: inline-block; background-color: #38c172; color: white; font-size: 0.7rem; padding: 2px 4px; border-radius: 2px">
+        <a href="{{ $.Site.Params.ResumeURL }}" target="_blank">Resume</a>
+        <a href="/assets/resume/resume.json" target="_blank" style="display: inline-block; background-color: #38c172; color: white; font-size: 0.7rem; padding: 2px 4px; border-radius: 2px">
             <span>json</span>
         </a>
     </li>
@@ -25,10 +21,10 @@
     <li class="sidebar-title">
         <h6>Projects</h6>
     </li>
-    <li><a href="{{ "/posts/traverse" | relURL }}">Traverse</a></li>
-    <li><a href="{{ "/posts/can-i-poop" | relURL }}">Can I Poop?</a></li>
-    <li><a href="{{ "/posts/flipp" | relURL }}">Flipp</a></li>
-    <li><a href="{{ "/archives" | relURL }}">Archives</a></li>
+    <li><a href="/posts/traverse">Traverse</a></li>
+    <li><a href="/posts/can-i-poop">Can I Poop?</a></li>
+    <li><a href="/posts/flipp">Flipp</a></li>
+    <li><a href="/archives">Archives</a></li>
 </ul>
 
 <ul class="list-reset">

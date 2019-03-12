@@ -6,7 +6,6 @@ enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 description = "Jason Raimondi is a Software Engineer based out of California."
 
-
 [params]
   titleEmoji = ":tada:"
   twitter = "jsonmamondi"

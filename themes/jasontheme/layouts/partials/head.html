@@ -6,8 +6,8 @@
 <meta name="author" content="Jason Raimondi" />
 <meta name="description" content="{{ with .Page.Description | truncate 160 | htmlEscape }}{{.}}{{ else }}{{ $.Site.Params.Description | truncate 160 | htmlEscape }}{{ end }}" />
 
-<link rel="canonical" href="{{ .RelPermalink | absURL }}">
-<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title | htmlEscape }}" href="{{ "/feed.xml" | relURL }}">
+<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title | htmlEscape }}" href="{{ .RSSLink | absURL }}">
 
 <link rel="shortcut icon" href='{{ "/favicon.ico" | relURL}}'>
 <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | relURL}}'>

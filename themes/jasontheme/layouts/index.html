@@ -2,7 +2,6 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-MAIN INDEX LAYOUT
 <nav class="navigation">
     <div class="navigation-constrain">
         {{ partial "topbar.html" }}
@@ -25,7 +24,7 @@ MAIN INDEX LAYOUT
     </div>
 </main>
 <aside class="sidebar">
-    {{ partial "sidebar.html" }}
+    {{ partial "sidebar.html" . }}
 </aside>
 {{ partial "footer_includes.html" . }}
 </body>
