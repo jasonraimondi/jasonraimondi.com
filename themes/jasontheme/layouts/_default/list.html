@@ -1,12 +1,16 @@
 {{ define "main" }}
-<ul class="list-reset">
-    <!-- prettier-ignore -->
+<h1>List Default</h1>
+<ul class="list-reset post-list">
     {{ range .Data.Pages.ByDate.Reverse }}
     <li>
-        <a class="f3 b dib black no-underline" href="{{ .Permalink }}">{{ .Title }}</a>
-        <span class="f6 gray">{{ .Date.Format "January 2, 2006" }}</span>
+        <a class="post-list-anchor" href="{{ .Permalink }}">
+            <div class="post-list-title-container">
+                <h3 class="post-list-title">{{ .Title }}</h3>
+                <p class="post-list-date">{{ .Date.Format "January 2, 2006" }}</p>
+            </div>
+            <p class="post-list-excerpt">{{ .Description }}</p>
+        </a>
     </li>
-    <!-- prettier-ignore -->
     {{ end }}
 </ul>
 {{ end }}
