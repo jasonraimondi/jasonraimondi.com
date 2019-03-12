@@ -1,8 +1,15 @@
 const doc = document.getElementById('posts-content');
 
-if (doc) {
-    loadVue();
-}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    if (doc) {
+        loadVue();
+        console.log('loading vue');
+    } else {
+        console.log('no vue found');
+    }
+});
+
 
 const loadVue = () => {
     const vm = new Vue({

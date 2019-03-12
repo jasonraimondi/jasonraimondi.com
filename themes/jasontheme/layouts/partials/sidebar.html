@@ -7,11 +7,11 @@
         <h5>Over Here</h5>
     </li>
     <li>
-        <a href="/about">About</a>
+        <a href="{{ "/about" | absURL }}">About</a>
     </li>
     <li>
-        <a href="{{ $.Site.Params.ResumeURL }}" target="_blank">Resume</a>
-        <a href="/assets/resume/resume.json" target="_blank" style="display: inline-block; background-color: #38c172; color: white; font-size: 0.7rem; padding: 2px 4px; border-radius: 2px">
+        <a href="{{ $.Site.Params.ResumeURL | absURL }}" target="_blank">Resume</a>
+        <a href="{{ "/assets/resume/resume.json" | absURL }}" target="_blank" style="display: inline-block; background-color: #38c172; color: white; font-size: 0.7rem; padding: 2px 4px; border-radius: 2px">
             <span>json</span>
         </a>
     </li>
@@ -21,10 +21,10 @@
     <li class="sidebar-title">
         <h6>Projects</h6>
     </li>
-    <li><a href="/posts/traverse">Traverse</a></li>
-    <li><a href="/posts/can-i-poop">Can I Poop?</a></li>
-    <li><a href="/posts/flipp">Flipp</a></li>
-    <li><a href="/archives">Archives</a></li>
+    <li><a href="{{ "/posts/traverse" | absURL }}">Traverse</a></li>
+    <li><a href="{{ "/posts/can-i-poop" | absURL }}">Can I Poop?</a></li>
+    <li><a href="{{ "/posts/flipp" | absURL }}">Flipp</a></li>
+    <li><a href="{{ "/archives" | absURL }}">Archives</a></li>
 </ul>
 
 <ul class="list-reset">
