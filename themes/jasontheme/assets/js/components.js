@@ -1,7 +1,7 @@
-const doc = document.getElementById('posts-content');
+const doc = document.getElementById('post-content');
 
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     if (doc) {
         loadVue();
         console.log('loading vue');
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const loadVue = () => {
     const vm = new Vue({
-        el: '#posts-content',
+        el: '#post-content',
     });
 
     Vue.component('video-container', {
