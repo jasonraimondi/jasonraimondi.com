@@ -1,4 +1,6 @@
-const vm = new Vue({el: '#posts-content',});
+const vm = new Vue({
+    el: '#posts-content',
+});
 
 Vue.component('video-container', {
     props: ['mp4', 'webm', 'poster', 'orientation'],
@@ -46,4 +48,3 @@ Vue.component('image-gallery', {
     </div>
     `
 });
-
