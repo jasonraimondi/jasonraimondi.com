@@ -44,7 +44,7 @@ code {
   height: 100%;
   max-width: $container-width;
 
-  @media (--xlarge) {
+  @media ($xlarge) {
     max-width: $container-width-xl;
   }
 }
@@ -65,7 +65,7 @@ code {
   flex-direction: column;
   align-items: center;
 
-  @media (--large) {
+  @media #{$large} {
     margin-left: $sidebar-width;
     padding-left: 0;
     padding-right: 0;

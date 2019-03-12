@@ -1,10 +1,10 @@
-import '_variables.scss';
+@import '_variables.scss';
 
 .post-container {
   padding-top: 1rem;
   padding-bottom: 2rem;
 
-  @media (--large) {
+  @media #{$large} {
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
@@ -18,7 +18,7 @@ import '_variables.scss';
 .date,
 .post-container time,
 .post-container span[itemprop="author"] {
-  color: $grey);
+  color: $grey;
 }
 
 #post-content p,
@@ -89,17 +89,17 @@ import '_variables.scss';
 
 .use-pretty-links a :not(img, span, small) {
   text-decoration: none;
-  color: $black);
+  color: $black;
   background-image: linear-gradient(#ffffff 50%, $black 50%);
   background-repeat: repeat-x;
 
   &:hover {
-    color: $purple-dark);
+    color: $purple-dark;
     background-image: linear-gradient(#ffffff 50%, $purple-dark 50%);
   }
 
   &:visited {
-    color: $purple-dark);
+    color: $purple-dark;
     background-image: linear-gradient(#ffffff 50%, $purple-dark 50%);
   }
 }

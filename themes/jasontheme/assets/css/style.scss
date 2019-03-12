@@ -1,10 +1,10 @@
-@import 'vendor/normalize.scss';
+@import 'lib/normalize';
 
-@import 'util/_list.scss';
+@import 'list';
 
 /*@import 'vue-plyr/dist/vue-plyr.css';*/
 
-@import '_highlight.scss';
+@import 'lib/pygment';
 @import '_variables.scss';
 @import '_layout.scss';
 @import '_navigation.scss';

@@ -14,7 +14,7 @@
 }
 
 .post-list-title-container {
-  @media (--small) {
+  @media ($screenSmall) {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -49,7 +49,7 @@
     </style>
     <link rel="stylesheet" href='{{ "/js/main.package.css" | relURL }}?{{ .Date.Format "Jan 2nd 2006" }}'>
 
-    {{ $sass := resources.Get "sass/main.scss" }}
+    {{ $sass := resources.Get "css/style.scss" }}
     {{ $style := $sass | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
