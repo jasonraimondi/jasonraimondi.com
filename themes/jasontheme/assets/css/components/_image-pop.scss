@@ -18,9 +18,10 @@
   }
 }
 
-.image-pop-container img {
+.image-pop-container > img {
   margin: 10px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .image-pop-title {
