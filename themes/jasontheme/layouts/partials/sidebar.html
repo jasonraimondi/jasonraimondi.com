@@ -1,5 +1,5 @@
 <a class="avatar" href="/">
-    <img src="{{ $.Site.Params.ProfileURL }}" alt="Jason Profile Picture" />
+    <img src="{{ .Site.Params.ProfileURL }}" alt="{{ .Site.Params.Name }} Profile Picture" />
 </a>
 
 <ul class="list-reset">
@@ -11,7 +11,7 @@
     </li>
     {{ with $.Site.Params.ResumeURL }}
     <li>
-        <a href="{{ . | absURL }}" target="_blank">Resume</a>
+        <a href="{{ . | absURL }}" target="_blank">R&eacute;sum&eacute;</a>
         {{ with $.Site.Params.ResumeJSON }}
         <a href="{{ . | absURL }}" target="_blank" class="label">
             <span>json</span>
@@ -23,18 +23,18 @@
 
 <ul class="list-reset">
     <li class="sidebar-title">
-        <h6>Projects</h6>
+        <h6>{{ .Site.Params.ProjectsMenu.Title }}</h6>
     </li>
-    {{ range .Site.Params.ProjectsMenu }}
+    {{ range .Site.Params.ProjectsMenu.Link }}
     <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
     {{ end }}
 </ul>
 
 <ul class="list-reset">
     <li class="sidebar-title">
-        <h5>Over There</h5>
+        <h5>{{ .Site.Params.ExternalMenu.Title }}</h5>
     </li>
-    {{ range .Site.Params.ExternalMenu }}
+    {{ range .Site.Params.ExternalMenu.Link }}
     <li><a href="{{ .url | absURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
     {{ end }}
 </ul>

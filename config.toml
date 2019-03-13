@@ -25,49 +25,39 @@ defaultContentLanguage = "en"
   resumeURL = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
   resumeJSON = "/assets/resume/resume.json"
 
-[[Params.ProjectsMenu]]
+[Params.ProjectsMenu]
+  title = "Projects"
+[[Params.ProjectsMenu.Link]]
   name = "Traverse"
   url = "/posts/traverse"
-[[Params.ProjectsMenu]]
+[[Params.ProjectsMenu.Link]]
   name = "Can I Poop?"
   url = "/posts/can-i-poop"
-[[Params.ProjectsMenu]]
+[[Params.ProjectsMenu.Link]]
   name = "Flip"
   url = "/posts/flipp"
-[[Params.ProjectsMenu]]
+[[Params.ProjectsMenu.Link]]
   name = "Archives"
   url = "/archives"
 
-[[Params.ProjectsMenu]]
-  name = "Traverse"
-  url = "/posts/traverse"
-[[Params.ProjectsMenu]]
-  name = "Can I Poop?"
-  url = "/posts/can-i-poop"
-[[Params.ProjectsMenu]]
-  name = "Flip"
-  url = "/posts/flipp"
-[[Params.ProjectsMenu]]
-  name = "Archives"
-  url = "/archives"
-
-
-[[Params.ExternalMenu]]
+[Params.ExternalMenu]
+  title = "Over There"
+[[Params.ExternalMenu.Link]]
   name = "Gitea"
   url = "https://git.jasonraimondi.com/jason?tab=activity"
-[[Params.ExternalMenu]]
+[[Params.ExternalMenu.Link]]
   name = "GitHub"
   url = "https://github.com/jasonraimondi"
-[[Params.ExternalMenu]]
+[[Params.ExternalMenu.Link]]
   name = "GoodReads"
   url = "https://www.goodreads.com/jasonraimondi"
-[[Params.ExternalMenu]]
+[[Params.ExternalMenu.Link]]
   name = "Leetcode"
   url = "https://leetcode.com/jasonraimondi"
-[[Params.ExternalMenu]]
+[[Params.ExternalMenu.Link]]
   name = "LinkedIn"
   url = "https://linkedin.com/in/jasonraimondi"
-[[Params.ExternalMenu]]
+[[Params.ExternalMenu.Link]]
   name = "Vimeo"
   url = "https://vimeo.com/jasonraimondi"
 
