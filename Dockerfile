@@ -1,4 +1,4 @@
-FROM jojomi/hugo as builder
+FROM digitalcanvasdesign/hugo-nodejs-builder as builder
 WORKDIR /app
 COPY ./themes/ /app/themes/
 COPY ./content/ /app/content/
