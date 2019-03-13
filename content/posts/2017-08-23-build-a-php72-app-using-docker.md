@@ -91,7 +91,7 @@ location /.well-known/acme-challenge {
     root /etc/letsencrypt/webrootauth;
     default_type “text/plain”;
 }
-``
+```
 
 ##### Enable Gzip for Asset Compression.
 
@@ -109,7 +109,7 @@ gzip_buffers 16 8k;
 gzip_http_version 1.1;
 gzip_min_length 256;
 gzip_types text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript application/vnd.ms-fontobject application/x-font-ttf font/opentype image/svg+xml image/x-icon;
-``
+```
 
 ##### Nginx Site Configuration
 
@@ -165,7 +165,7 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
 }
-``
+```
 
 ### Tools Containers
 In future posts we are going to be expanding our containers to add in a Tools container for building front end assets, as well as DB support using the official Percona/MySQL Docker Container.

@@ -44,6 +44,8 @@ code {
   height: 100%;
   max-width: $container-width;
 
+  @media #{$large} {
+  }
   @media #{$xlarge} {
     max-width: $container-width-xl;
   }
