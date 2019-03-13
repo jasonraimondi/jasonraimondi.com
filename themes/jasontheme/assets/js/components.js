@@ -12,11 +12,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 const loadVue = () => {
-    const vm = new Vue({
-        el: '#post-content',
-    });
-
-    Vue.component('video-container', {
+    const VideoContainer = Vue.component('video-container', {
+        name: 'video-container',
         props: ['mp4', 'webm', 'poster', 'orientation'],
         computed: {
             isPortrait: function () {
@@ -34,11 +31,12 @@ const loadVue = () => {
     `
     });
 
-    Vue.component('image-pop', {
+    const ImagePop = Vue.component('image-pop', {
+        name: 'image-pop',
         props: ['src', 'alt', 'portrait'],
         computed: {
             isPortrait: function () {
-                return !!portrait;
+                return !!this.portrait;
             },
         },
         template: `
@@ -49,17 +47,26 @@ const loadVue = () => {
     `
     });
 
-    Vue.component('image-gallery', {
+    const ImageGallery = Vue.component('image-gallery', {
+        name: 'image-gallery',
         props: ['images'],
         template: `
         <div class="image-gallery-container">
         <template v-for="image in images">
             <a class="image-gallery-anchor" :href="image.src">
                 <img class="image-gallery-image" :src="'' + image.src" :alt="image.alt" :title="image.alt">
-                <small class="alt-text">{{ image.alt }}</small>
+                <small class="image-alt-text">{{ image.alt }}</small>
             </a>
         </template>
     </div>
     `
+    });
+    const vm = new Vue({
+        el: '#post-content',
+        components: {
+            VideoContainer,
+            ImageGallery,
+            ImagePop,
+        }
     });
 };
