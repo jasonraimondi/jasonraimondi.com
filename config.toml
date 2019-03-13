@@ -33,9 +33,9 @@ defaultContentLanguage = "en"
 [[Params.ProjectsMenu.Link]]
   name = "Flip"
   url = "/posts/flipp"
-[[Params.ProjectsMenu.Link]]
-  name = "Archives"
-  url = "/archives"
+#[[Params.ProjectsMenu.Link]]
+#  name = "Archives"
+#  url = "/archives"
 
 [Params.ExternalMenu]
   title = "Over There"
