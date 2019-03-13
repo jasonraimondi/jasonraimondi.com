@@ -9,9 +9,13 @@
     <li>
         <a href="{{ "/about" | absURL }}">About</a>
     </li>
-    {{ with $.Site.Params.ResumeURL }}
+
+    {{ with $.Site.Params.ResumePDF }}
     <li>
-        <a href="{{ . | absURL }}" target="_blank">R&eacute;sum&eacute;</a>
+        <a href="{{ "/resume" | absURL }}" target="_blank">R&eacute;sum&eacute;</a>
+        <a href="{{ . | absURL }}" target="_blank" class="label">
+            <span>link</span>
+        </a>
         {{ with $.Site.Params.ResumeJSON }}
         <a href="{{ . | absURL }}" target="_blank" class="label">
             <span>json</span>

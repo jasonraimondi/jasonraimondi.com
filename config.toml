@@ -18,8 +18,7 @@ defaultContentLanguage = "en"
   name = "Jason Raimondi"
 #  email = "jason@raimondi.us"
   profileURL = "/assets/misc/me/avatar.png"
-  resumeVERSION = "3.2.6" # not required for template, this is my own
-  resumeURL = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
+  resumePDF = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
   resumeJSON = "/assets/resume/resume.json"
 
 [Params.ProjectsMenu]
