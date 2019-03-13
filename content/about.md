@@ -2,6 +2,7 @@
 title = "About"
 slug = "about"
 date = 2019-03-11
+description = "My passion is for writing software with a clean architecture. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
 +++
 
 <img id="js-image-of-me" alt="image of me" />
