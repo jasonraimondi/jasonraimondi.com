@@ -2,17 +2,11 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-<nav class="navigation">
-    <div class="navigation-constrain">
-        {{ partial "topbar.html" . }}
-    </div>
-</nav>
 <main class="main-content">
     <div class="page-content">
         <div class="width-constrain">
             {{ partial "mobile-nav.html" }}
             {{ block "main" . }}
-            Default main block!!
             <!-- The part of the page that begins to differ between templates -->
             {{ end }}
         </div>

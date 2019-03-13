@@ -1,19 +1,15 @@
 @import 'lib/normalize';
 
+@import 'variables';
 @import 'list';
-
-/*@import 'vue-plyr/dist/vue-plyr.css';*/
-
-@import 'lib/pygment';
-@import '_variables.scss';
-@import '_layout.scss';
-@import '_navigation.scss';
-@import '_post-list.scss';
-@import '_posts.scss';
-@import '_sidebar.scss';
-@import '_typography.scss';
-
+@import 'layout';
+@import 'post-list';
+@import 'posts';
+@import 'sidebar';
+@import 'typography';
 
 @import 'components/image-gallery';
 @import 'components/image-pop';
 @import 'components/video-container';
+
+@import 'lib/pygment';
