@@ -3,13 +3,9 @@
 </a>
 
 <ul class="list-reset">
-    <li class="sidebar-title">
-        <h5>Over Here</h5>
+    <li class="sidebar-site-name">
+        <h1>{{ .Site.Params.Name }}</h1>
     </li>
-    <li>
-        <a href="{{ "/about" | absURL }}">About</a>
-    </li>
-
     {{ with $.Site.Params.ResumePDF }}
     <li>
         <a href="{{ "/resume" | absURL }}" target="_blank">R&eacute;sum&eacute;</a>
@@ -22,6 +18,9 @@
         </a>
         {{ end }}
     </li>
+    {{ end }}
+    {{ range .Site.Params.MainMenu.Link }}
+    <li><a href="{{ .url | absURL }}">{{ .name }}</a></li>
     {{ end }}
 </ul>
 

@@ -30,11 +30,14 @@
 }
 
 .post-list-date {
-  min-width: 100px;
+  min-width: 125px;
   font-size: 80%;
   color: $grey;
   &:hover {
     color: $grey-dark;
+  }
+  @media #{$large} {
+    min-width: 200px;
   }
 }
 

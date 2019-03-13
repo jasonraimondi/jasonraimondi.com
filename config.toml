@@ -21,6 +21,16 @@ defaultContentLanguage = "en"
   resumePDF = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
   resumeJSON = "/assets/resume/resume.json"
 
+[Params.MainMenu]
+  title = "Projects"
+[[Params.MainMenu.Link]]
+  name = "About"
+  url = "/about"
+[[Params.MainMenu.Link]]
+  name = "Tags"
+  url = "/tags"
+
+
 [Params.ProjectsMenu]
   title = "Projects"
 [[Params.ProjectsMenu.Link]]
