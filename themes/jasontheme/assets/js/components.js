@@ -61,6 +61,7 @@ const loadVue = () => {
     </div>
     `
     });
+
     const vm = new Vue({
         el: '#post-content',
         components: {

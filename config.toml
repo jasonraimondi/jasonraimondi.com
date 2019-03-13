@@ -11,24 +11,67 @@ pygmentsUseClasses=true
 
 defaultContentLanguage = "en"
 
-[params]
+
+#[Permalinks]
+#  post = "posts/:slug"
+
+
+[Params]
+  name = "Jason Raimondi"
   titleEmoji = ":tada:"
   twitter = "jsonmamondi"
   email = "jason@raimondi.us"
   profileURL = "/assets/misc/me/avatar.png"
   resumeURL = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
+  resumeJSON = "/assets/resume/resume.json"
 
-#[Permalinks]
-#  post = "posts/:slug"
+[[Params.ProjectsMenu]]
+  name = "Traverse"
+  url = "/posts/traverse"
+[[Params.ProjectsMenu]]
+  name = "Can I Poop?"
+  url = "/posts/can-i-poop"
+[[Params.ProjectsMenu]]
+  name = "Flip"
+  url = "/posts/flipp"
+[[Params.ProjectsMenu]]
+  name = "Archives"
+  url = "/archives"
 
-#[[params.menu]]
-#  name = "posts"
-#  url = "posts/"
-#
-#[[params.menu]]
-#  name = "tags"
-#  url = "tags/"
-#
+[[Params.ProjectsMenu]]
+  name = "Traverse"
+  url = "/posts/traverse"
+[[Params.ProjectsMenu]]
+  name = "Can I Poop?"
+  url = "/posts/can-i-poop"
+[[Params.ProjectsMenu]]
+  name = "Flip"
+  url = "/posts/flipp"
+[[Params.ProjectsMenu]]
+  name = "Archives"
+  url = "/archives"
+
+
+[[Params.ExternalMenu]]
+  name = "Gitea"
+  url = "https://git.jasonraimondi.com/jason?tab=activity"
+[[Params.ExternalMenu]]
+  name = "GitHub"
+  url = "https://github.com/jasonraimondi"
+[[Params.ExternalMenu]]
+  name = "GoodReads"
+  url = "https://www.goodreads.com/jasonraimondi"
+[[Params.ExternalMenu]]
+  name = "Leetcode"
+  url = "https://leetcode.com/jasonraimondi"
+[[Params.ExternalMenu]]
+  name = "LinkedIn"
+  url = "https://linkedin.com/in/jasonraimondi"
+[[Params.ExternalMenu]]
+  name = "Vimeo"
+  url = "https://vimeo.com/jasonraimondi"
+
+
 #[privacy]
 #  [privacy.googleAnalytics]
 #    anonymizeIP = true

@@ -15,4 +15,10 @@
   text-decoration: none;
   font-style: italic;
   color: $grey;
+  a:hover {
+    background-image: none !important;
+  }
+}
+
+.image-alt-text {
 }
