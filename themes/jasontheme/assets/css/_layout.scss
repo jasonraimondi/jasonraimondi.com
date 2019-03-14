@@ -100,7 +100,10 @@ code {
   font-size: 0.7rem;
   padding: 2px 4px;
   border-radius: 2px;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
     color: $white;
     background-color: $green-dark;
   }

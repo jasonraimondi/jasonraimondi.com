@@ -1,11 +1,8 @@
 @import '_variables.scss';
 
-html {
-  font-size: $base-rem;
-  line-height: 1.2;
-}
-
+html,
 body {
+  font-size: $base-rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -13,7 +10,10 @@ body {
 a {
   color: $green;
   text-decoration: none;
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
     color: $green-dark;
   }
 }
@@ -25,11 +25,7 @@ pre.highlight > code {
 h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0.5rem;
   margin-top: 0;
-  line-height: 1.1;
-}
-
-p {
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 h1 {
