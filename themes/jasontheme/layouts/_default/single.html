@@ -22,18 +22,27 @@
     </section>
 </article>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(function () {
-        return $("h2, h3, h4, h5, h6").each(function (i, el) {
-            var $el, icon, id;
-            $el = $(el);
-            id = $el.attr('id');
-            icon = '#';
-            if (id) {
-                return $el.prepend($("<a />").addClass("header-link").addClass('mr-2').addClass('text-grey').attr("href", "#" + id).html(icon));
+    const addHeaderDeepLinks = function() {
+        const postDoc = document.getElementById('post-content');
+        const elements = [
+            postDoc.getElementsByTagName('h2'),
+            postDoc.getElementsByTagName('h3'),
+            postDoc.getElementsByTagName('h4'),
+            postDoc.getElementsByTagName('h5'),
+            postDoc.getElementsByTagName('h6'),
+        ];
+        for (let i = 0; i < elements.length; i++) {
+            for (let k = 0; k < elements[i].length; k++) {
+                const header = elements[i][k];
+                const anchor = document.createElement('a');
+                anchor.className = 'header-link mr-2 text-grey';
+                anchor.href = '#' + header.id;
+                anchor.innerHTML = '#';
+                header.insertBefore(anchor, header.firstChild);
             }
-        });
-    });
+        }
+    };
+    addHeaderDeepLinks();
 </script>
 {{ end }}
