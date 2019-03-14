@@ -1,5 +1,5 @@
 +++
-title = "Using an Alfred Workflow to Assist in Switching from Google Chrome to Firefox."
+title = "Using an Alfred workflow to assist in switching from Google Chrome to Firefox"
 slug = "using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox"
 date = 2018-12-13
 description = "Now every time I am about to launch Chrome, I see the \"Launch Firefox Instead of Chrome\" launcher."

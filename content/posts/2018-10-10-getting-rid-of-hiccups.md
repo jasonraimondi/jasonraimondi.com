@@ -1,5 +1,5 @@
 +++
-title = "Getting Rid of Hiccups"
+title = "Getting rid of hiccups"
 slug = "getting-rid-of-hiccups"
 date = 2018-10-10
 description = "I found this the other day when I had the hiccups a few different days. Posting it here because it worked amazing and I do not ever want to forget this technique."

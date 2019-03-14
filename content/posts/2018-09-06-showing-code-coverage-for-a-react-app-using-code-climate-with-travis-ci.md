@@ -1,5 +1,5 @@
 +++
-title = "Showing Code Coverage for a React app using Code Climate with Travis CI"
+title = "Showing code coverage for a React app using Code Climate and Travis CI"
 slug = "showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci"
 date = 2018-09-06
 description = "The documentation on Code Climate for setting up auto generation of code coverage for a JavaScript application was lacking pretty hard. Here I show how we can get a React app using Travis CI and Jest to automate generating code coverage that gets sent to Code Climate."

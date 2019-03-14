@@ -1,5 +1,5 @@
 +++
-title = "Auto Deploy Docker Containers Using a Self Hosted CI (Drone 1.0.0-rc.1) and a Multi Stage Dockerfile"
+title = "Auto deploy Docker containers using a self hosted CI (Drone 1.0.0-rc.1) and a multi stage Dockerfile"
 slug = "auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile"
 date = 2018-11-27
 description = "Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI. One of the best ways to get Drone automatically building your images for you, especially images that have a build stage, is to use a multi-stage Dockerfile"

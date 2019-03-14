@@ -1,6 +1,6 @@
 +++
 slug = "fully-qualified-name-in-typescript-absolute-imports"
-title = "Fully Qualified Namespaces in TypeScript (Absolute Imports)"
+title = "Fully qualified namespaces in TypeScript (absolute imports)"
 description = "Absolute Imports in TypeScript"
 tags = [
   "namespaces", 

@@ -1,5 +1,5 @@
 +++
-title = "Update PHP Homebrew"
+title = "Update PHP using homebrew"
 slug = "update-php-homebrew"
 date = 2018-04-12
 description = "Update PHP on your Mac using after the homebrew/php tap has been deprecated."

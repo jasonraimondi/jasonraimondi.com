@@ -1,6 +1,6 @@
 +++
 slug = "my-first-typescript-file"
-title = "My First TypeScript File"
+title = "My first TypeScript file"
 description = "I am a typescript file"
 tags = [
     "typescript",
