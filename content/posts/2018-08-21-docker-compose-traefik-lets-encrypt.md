@@ -9,6 +9,9 @@ tags = [
     "docker",
     "lets-encrypt",
 ]
+categories = [
+    "ops",
+]
 +++
 
 If you’ve ever configured Docker + Nginx + Lets Encrypt before, it takes some time. Tools like Certbot have made this process easier, but they are not without flaws, especially when deploying to a docker environment. Traefik makes it a cinch.

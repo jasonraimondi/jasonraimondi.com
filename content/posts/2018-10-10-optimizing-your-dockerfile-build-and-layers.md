@@ -7,6 +7,9 @@ tags = [
     "docker",
     "dockerfile",
 ]
+categories = [
+    "ops",
+]
 +++
 
 ```bash

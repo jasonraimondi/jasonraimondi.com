@@ -10,6 +10,10 @@ tags = [
     "code-climate",
     "travis-ci",
 ]
+categories = [
+    "frontend",
+    "ops",
+]
 +++
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/test_coverage)](https://codeclimate.com/github/jasonraimondi/traverse/test_coverage)

@@ -3,7 +3,12 @@ title = "A vanilla JS solution to adding header deep links to your blog for easy
 slug = "adding-vanilla-js-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content"
 date = 2019-03-14
 description = "Now every time I am about to launch Chrome, I see the \"Launch Firefox Instead of Chrome\" launcher."
-tags = [ "alfred" ]
+tags = [ 
+    "alfred" 
+]
+categories = [
+    "frontend"
+]
 +++
 
 #### <-- This # lets you return directly to this link!

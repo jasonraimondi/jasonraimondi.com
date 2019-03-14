@@ -8,7 +8,9 @@ tags = [
     "javascript",
     "typescript",
 ]
-draft = true
+categories = [
+    "frontend"
+]
 +++
 
 <img height="100" src="https://res.cloudinary.com/jmondi/image/upload/c_scale,w_150/v1534475620/jasonraimondi.com/traverse/pointing.png" alt="Traverse" /> 

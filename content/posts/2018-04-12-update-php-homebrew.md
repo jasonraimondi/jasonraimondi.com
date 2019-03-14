@@ -8,6 +8,10 @@ tags = [
     "homebrew",
     "php",
 ]
+categories = [
+    "backend",
+    "ops,"
+]
 +++
 
 [Homebrew/php](https://github.com/Homebrew/homebrew-php) has been deprecated.

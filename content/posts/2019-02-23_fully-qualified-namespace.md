@@ -2,6 +2,7 @@
 slug = "fully-qualified-name-in-typescript-absolute-imports"
 title = "Fully qualified namespaces in TypeScript (absolute imports)"
 description = "Absolute Imports in TypeScript"
+date = 2019-02-23
 tags = [
   "namespaces", 
   "fully qualified name", 
@@ -9,15 +10,18 @@ tags = [
   "webpack",
   "tsconfig.json"
 ]
-date = 2019-02-23
+categories = [
+    "frontend",
+    "backend",
+]
 +++
+
+Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.
 
 ```javascript
 - import { Something } from '../../../models/something';
 + import { Something } from '@/models/something';
 ```
-
-Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.
 
 Normally when using imports, we would reference the path from the relative location of the file you are importing to.
 

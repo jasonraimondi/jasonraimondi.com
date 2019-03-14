@@ -3,7 +3,12 @@ title = "Using an Alfred workflow to assist in switching from Google Chrome to F
 slug = "using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox"
 date = 2018-12-13
 description = "Now every time I am about to launch Chrome, I see the \"Launch Firefox Instead of Chrome\" launcher."
-tags = [ "alfred" ]
+tags = [ 
+    "alfred" 
+]
+categories = [
+    "workflow"
+]
 +++
 
 This workflow is meant to help break the habit of using Google Chrome. I tend to launch applications with Alfred. When I want to launch a browser, what is engraved in my brain is CHROME! 

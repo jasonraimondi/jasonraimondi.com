@@ -10,6 +10,9 @@ tags = [
     "lets-encrypt",
     "docker",
 ]
+categories = [
+    "ops",
+]
 +++
 
 Update: Shortly after writing this article, I found out the shortcomings of Gogs, and how Gitea, a community maintained fork of Gogs is much more active and has a lot more features. Gitea is a lot better than Gogs, the installation is mostly the same.

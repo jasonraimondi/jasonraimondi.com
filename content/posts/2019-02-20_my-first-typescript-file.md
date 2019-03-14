@@ -2,11 +2,14 @@
 slug = "my-first-typescript-file"
 title = "My first TypeScript file"
 description = "I am a typescript file"
+date = 2019-02-20
 tags = [
     "typescript",
     "tsc",
 ]
-date = 2019-02-20
+categories = [
+    "frontend"
+]
 +++
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.

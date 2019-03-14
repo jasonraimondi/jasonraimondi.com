@@ -9,6 +9,10 @@ tags = [
     "puppeteer",
     "docker",
 ]
+categories = [
+    "ops",
+    "backend",
+]
 +++
 
 ![the conversation aftermath](/assets/posts/2018/10/hack-contest/hack-contest-01.png)

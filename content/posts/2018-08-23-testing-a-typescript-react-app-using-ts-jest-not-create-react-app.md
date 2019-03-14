@@ -10,6 +10,9 @@ tags = [
     "tdd",
     "testing",
 ]
+categories = [
+    "frontend",
+]
 +++
 
 There is very little documentation on setting up a TypeScript React project that is not using the `create-react-app` magical nonsense.

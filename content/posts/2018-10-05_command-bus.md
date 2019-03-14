@@ -2,11 +2,14 @@
 slug = "command-query-bus-with-ioc-container"
 title = "Command/Query Bus with IoC Container"
 description = "Actions can either be a Command or Query. With the ApplicationCore, we can dispatch our Actions."
+date = 2018-10-05
 tags = [
   "dependency injection", 
   "ioc",
 ]
-date = 2018-10-05
+categories = [
+    "backend",
+]
 +++
 
 Actions can either be a **Command** or **Query**. 

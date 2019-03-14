@@ -24,11 +24,11 @@ defaultContentLanguage = "en"
 [Params.MainMenu]
   title = "Projects"
 [[Params.MainMenu.Link]]
+  name = "Categories"
+  url = "/categories"
+[[Params.MainMenu.Link]]
   name = "About"
   url = "/about"
-[[Params.MainMenu.Link]]
-  name = "Tags"
-  url = "/tags"
 
 
 [Params.ProjectsMenu]
