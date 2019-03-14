@@ -41,13 +41,7 @@
     *::after {
         box-sizing: inherit;
     }
-
-    html {
-        font-size: 18px;
-        font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    }
 </style>
-
 
 {{ if .Site.IsServer }}
     {{ $style := resources.Get "css/style.scss" | toCSS }}
@@ -56,5 +50,3 @@
     {{ $style := resources.Get "css/style.scss" | toCSS | postCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" emotion="🤩">
 {{ end }}
-
-
