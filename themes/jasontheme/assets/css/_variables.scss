@@ -21,6 +21,8 @@ $xlarge: "screen and (min-width: #{$screenXLarge + 1})";
 $xlargeOnly: "screen and (min-width: #{$screenXLarge + 1}) and (max-width: #{$screenXXLarge})";
 $xxlarge: "screen and (min-width: #{$screenXXLarge + 1})";
 
+$hamburgerMenuIcon: url('/icons/menu.svg');
+
 $black: #22292f !default;
 $grey-darkest: #3d4852 !default;
 $grey-darker: #606f7b !default;
