@@ -10,7 +10,7 @@
     </header>
     <section id="post-content">
         <p>
-            <span class="f6 gray mv3" title="Lastmod: {{ .Lastmod.Format "January 2, 2006" }}. Published at: {{ .PublishDate.Format "2006-01-02" }}.">
+            <span title="Lastmod: {{ .Lastmod.Format "January 2, 2006" }}. Published at: {{ .PublishDate.Format "2006-01-02" }}.">
             {{ if ne .Lastmod .PublishDate }}
             <span class="i">last modified</span> {{ dateFormat "January 2, 2006" .Lastmod }}
             {{ end }}
