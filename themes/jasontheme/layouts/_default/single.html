@@ -19,10 +19,36 @@
         </p>
     </header>
     <section id="post-content">
+        <ul class="list-reset">
+            {{ $taxonomy := "tags" }}
+            {{ with .Param $taxonomy }}
+                {{ range $index, $tag := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                        <li class="label">
+                            <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        </ul>
         <article itemprop="articleBody">
             {{ .Content }}
         </article>
     </section>
+
+    <footer>
+        <h4>Related Posts</h4>
+        {{ $currentPagePermalink := .Permalink }}
+        {{ $tags := .Params.tags }}
+        <ul class="list-reset">
+            {{ range .Site.Pages }}
+                {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
+                {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
+                    <li><a href="{{ .Permalink | absURL }}">{{ .Title }}</a></li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </footer>
 </article>
 
 <script>

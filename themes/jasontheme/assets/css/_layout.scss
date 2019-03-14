@@ -97,10 +97,18 @@ code {
   padding: 2px 4px;
   border-radius: 2px;
 
+  a {
+    color: $white;
+  }
+
   &:hover,
   &:active,
   &:focus,
-  &:visited {
+  &:visited,
+  a:hover,
+  a:active,
+  a:focus,
+  a:visited {
     color: $white;
     background-color: $green-dark;
   }
