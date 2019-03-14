@@ -15,7 +15,7 @@ Actions can either be a **Command** or **Query**.
 
 [ApplicationCore](https://git.jasonraimondi.com/jason/posters-http/src/branch/master/src/domain/infrastructure/application.core.ts) is our gateway into our bus. With the ApplicationCore, we can dispatch our Actions.
 
-```typescript
+```javascript
 const logger = LoggerService.createFromWinstonLogger();
 const applicationCore = new ApplicationCore(logger);
 
@@ -35,7 +35,7 @@ Actions can be either Commands or Queries. Commands change state, queries retrie
 
 Actions need to register their respective handlers with the `@Action(ActionHandler)` decorator. This registers the Action/ActionHandler pair so when a new action is dispatched we know which handler to execute.
 
-```typescript
+```javascript
 export interface IListUsers extends IPagination {
 }
 
@@ -58,7 +58,7 @@ ActionHandlers follow the same Command/Query pattern.
 
 ActionHandlers need to add the `@ActionHandler()` decorator. This adds the Reflection data to allow us to resolve the class dependencies in our [mapper.ts](https://git.jasonraimondi.com/jason/posters-http/src/branch/master/src/domain/infrastructure/lib/bus/mapper.ts).
 
-```typescript
+```javascript
 @ActionHandler()
 export class ListUsersHandler implements IQueryHandler<ListUsers> {
   public constructor(
@@ -76,7 +76,7 @@ export class ListUsersHandler implements IQueryHandler<ListUsers> {
 
 The mapper is basically where our dependency injection happens. [This Dependency Injection in TypeScript](https://nehalist.io/dependency-injection-in-typescript/) article is a great resource and is the basis of our `@ActionHandlers()` decorator.
 
-```typescript
+```javascript
 export class Mapper {
   ...
   public getCommandHandlerFromCommand(command: IAction | any): IActionHandler | any {
@@ -111,7 +111,7 @@ What makes our container unique is that we are using [Inversify](http://inversif
 
 This means that we are able to to mock or create dummy depencies for testing.
 
-```typescript
+```javascript
 export class InversifyContainer extends Container {
   public constructor(
     protected readonly repositoryFactory: RepositoryFactory,
@@ -132,7 +132,7 @@ export class InversifyContainer extends Container {
 
 This allows us to extend our TestingInversifyConfig to and rebind our container dependencies.
 
-```typescript
+```javascript
 export class TestingInversifyConfig extends InversifyContainer {
   public constructor(
     repositoryFactory: RepositoryFactory,
@@ -162,7 +162,7 @@ If you notice... it is just extending our ApplicationCore which is [here](https:
 
 [DomainService](https://git.jasonraimondi.com/jason/posters-http/src/branch/master/src/http/services/domain.service.ts)
 
-```typescript
+```javascript
 import { Injectable } from '@nestjs/common';
 
 import { ApplicationCore } from '../../domain/infrastructure/application.core';
@@ -182,7 +182,7 @@ This is our Http layer logger. It is just extending our Domain's LoggerService
 
 [HttpLoggerService](https://git.jasonraimondi.com/jason/posters-http/src/branch/master/src/http/services/http-logger.service.ts)
 
-```typescript
+```javascript
 import { Injectable, LoggerService as NestLoggerService } from '@nestjs/common';
 
 import { LoggerService } from '../../domain/infrastructure/services/logger.service';
@@ -199,7 +199,7 @@ This is a pretty straightforward Nest.js controller. The special sauce is the Do
 
 [RegisterController](https://git.jasonraimondi.com/jason/posters-http/src/branch/master/src/http/controllers/register.controller.ts)
 
-```typescript
+```javascript
 @Controller('register')
 export class RegisterController {
   constructor(

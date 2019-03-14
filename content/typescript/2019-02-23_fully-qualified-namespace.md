@@ -23,7 +23,7 @@ Normally when using imports, we would reference the path from the relative locat
 
 Import syntax
 
-```typescript
+```javascript
 import Language from '@/app/components/Language';
 import { LanguagePicker, ListType } from '@/app/components/LanguagePicker';
 
