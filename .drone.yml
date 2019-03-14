@@ -20,9 +20,9 @@ steps:
 - name: notify
   image: jasonraimondi/curl
   when:
+    event:
+      - tag
     status: [ success ]
-    event: push
-    branch: master
   commands:
     - curl -X POST https://jasonraimondi.com/.ci/update-jason
 
