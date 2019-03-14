@@ -59,13 +59,16 @@ code {
 }
 
 .page-content {
-  min-width: 300px;
+  height: 100%;
   width: 100%;
+  min-width: 300px;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media #{$large} {
     margin-left: $sidebar-width;
@@ -87,12 +90,6 @@ code {
   margin-top: 35px;
 }
 
-.page-content {
-  height: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .label {
   display: inline-block;
   background-color: $green;
@@ -100,11 +97,112 @@ code {
   font-size: 0.7rem;
   padding: 2px 4px;
   border-radius: 2px;
+
   &:hover,
   &:active,
   &:focus,
   &:visited {
     color: $white;
     background-color: $green-dark;
+  }
+}
+
+.sidebar {
+  border-right: 1px solid $grey-light;
+  background-color: $white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: $sidebar-width;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  flex-direction: column;
+
+  @media #{$large} {
+    display: flex;
+  }
+
+  .avatar {
+    display: block;
+
+    img {
+      width: calc(100% - 120px);
+      margin-top: 30px;
+      padding: 0 60px 25px 60px;
+      border-radius: 9999px;
+    }
+  }
+}
+
+.mobile-nav {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+
+  @media #{$large} {
+    display: none;
+  }
+}
+
+.sidebar-toggle-container {
+  margin-right: 2rem;
+  border: 1px solid $grey;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12.5px;
+
+  @media #{$large} {
+    display: none;
+  }
+}
+
+.sidebar-toggle-icon {
+  height: 80%;
+  width: 80%;
+  background: url('/icons/menu.svg');
+}
+
+.sidebar ul li {
+  padding-left: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul li.sidebar-title,
+.sidebar-site-name {
+  padding-left: 2rem !important;
+}
+
+%sidebar-title {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-title h5,
+.sidebar-site-name h1 {
+  @extend %sidebar-title;
+}
+
+.sidebar-site-name h1 {
+  font-size: 1.75rem;
+  color: $black;
+  margin-bottom: 15px;
+}
+
+.sidebar-is-open .sidebar {
+  display: flex;
+}
+
+@media #{$large} {
+  .page-content {
+    margin-left: $sidebar-width;
   }
 }
