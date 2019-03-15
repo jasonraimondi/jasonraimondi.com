@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://jasonraimondi.com/"
 title = "Jason Raimondi | Software Engineer"
 theme ="jasontheme"
 languageCode = "en-us"
