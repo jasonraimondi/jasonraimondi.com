@@ -89,31 +89,6 @@ code {
 }
 
 
-.label {
-  display: inline-block;
-  background-color: $green;
-  color: $white;
-  font-size: 0.7rem;
-  padding: 2px 4px;
-  border-radius: 2px;
-
-  a {
-    color: $white;
-  }
-
-  &:hover,
-  &:active,
-  &:focus,
-  &:visited,
-  a:hover,
-  a:active,
-  a:focus,
-  a:visited {
-    color: $white;
-    background-color: $green-dark;
-  }
-}
-
 .sidebar {
   border-right: 1px solid $grey-light;
   background-color: $white;

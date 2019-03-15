@@ -5,7 +5,7 @@ description = "Absolute Imports in TypeScript"
 date = 2019-02-23
 tags = [
   "namespaces", 
-  "fully qualified name", 
+  "fully qualified namespace", 
   "typescript", 
   "webpack",
   "tsconfig.json"

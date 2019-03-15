@@ -20,10 +20,21 @@
     </header>
     <section id="post-content">
         <ul class="list-reset">
-            {{ $taxonomy := "tags" }}
-            {{ with .Param $taxonomy }}
+            {{ $taxonomyCategory := "categories" }}
+            {{ with .Param $taxonomyCategory }}
+                {{ range $index, $category := . }}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
+                        <li class="label">
+                            <a href="{{ .Permalink }}">{{ $category | urlize }}</a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            {{ $taxonomyTag := "tags" }}
+            {{ with .Param $taxonomyTag }}
                 {{ range $index, $tag := . }}
-                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
                         <li class="label">
                             <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
                         </li>
@@ -36,7 +47,7 @@
         </article>
     </section>
 
-    <footer>
+    <footer class="related-posts">
         <h4>Related Posts</h4>
         {{ $currentPagePermalink := .Permalink }}
         {{ $tags := .Params.tags }}

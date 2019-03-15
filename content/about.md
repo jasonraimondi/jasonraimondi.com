@@ -19,7 +19,7 @@ description = "My passion is for writing software with a clean architecture. My 
     picture.src = randomPictureLink;
 </script>
 
-My name is Jason Raimondi and I am a Full Stack Software Engineer from the east coast, living on the west coast. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days.
+Jason Raimondi is a Full Stack Software Engineer based out of Los Angeles. My focus has been in web systems, building and deploying server and client web applications. I am a technologist and all around computer geek; give me a computer and I will be hacking in minutes, occupied for days.
 
 I have been professionally developing for the web since 2009. Early on I was primarily developing sites in **PHP** and **JavaScript**. Recently, my favorite stack has been **Golang** (so small) or **Node.js** (so easy) in **TypeScript** on the server, and **React** in TypeScript or just Vue.js on the client. I have experience writing modular applications and have migrated to an entire containerized based deploy using **Docker** and Docker **Swarm**. 
 

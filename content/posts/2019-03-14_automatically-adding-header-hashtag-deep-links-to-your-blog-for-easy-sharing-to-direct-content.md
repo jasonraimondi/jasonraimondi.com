@@ -4,10 +4,11 @@ slug = "adding-vanilla-js-header-hashtag-deep-links-to-your-blog-for-easy-sharin
 date = 2019-03-14
 description = "Now every time I am about to launch Chrome, I see the \"Launch Firefox Instead of Chrome\" launcher."
 tags = [ 
-    "alfred" 
+    "javascript", 
+    "blog", 
 ]
 categories = [
-    "frontend"
+    "frontend",
 ]
 +++
 

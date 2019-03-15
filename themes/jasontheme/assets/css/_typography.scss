@@ -1,4 +1,4 @@
-@import '_variables.scss';
+@import 'variables';
 
 html,
 body {
@@ -10,7 +10,9 @@ body {
 a {
   color: $green;
   text-decoration: none;
-  &:hover,
+  &:hover {
+    color: $green-darker;
+  }
   &:active,
   &:focus,
   &:visited {
