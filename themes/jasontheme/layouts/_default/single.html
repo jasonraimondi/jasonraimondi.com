@@ -46,8 +46,9 @@
             {{ .Content }}
         </article>
     </section>
-
+    {{ if .Params.tags }}
     <footer class="related-posts">
+        <hr>
         <h4>Related Posts</h4>
         {{ $currentPagePermalink := .Permalink }}
         {{ $tags := .Params.tags }}
@@ -60,6 +61,7 @@
             {{ end }}
         </ul>
     </footer>
+    {{ end }}
 </article>
 
 <script>
