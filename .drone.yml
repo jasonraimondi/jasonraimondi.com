@@ -17,15 +17,6 @@ steps:
     tags: [ "latest" ]
     force_tag: true
 
-- name: notify
-  image: jasonraimondi/curl
-  when:
-    event:
-      - tag
-    status: [ success ]
-  commands:
-    - curl -X POST https://jasonraimondi.com/.ci/update-jason
-
 - name: publish-tag
   image: plugins/docker
   when:
@@ -41,3 +32,12 @@ steps:
     tags: ["latest", $DRONE_TAG]
     auto_tag: true
     force_tag: true
+
+- name: notify
+  image: jasonraimondi/curl
+  when:
+    event:
+      - tag
+    status: [ success ]
+  commands:
+    - curl -X POST https://jasonraimondi.com/.ci/update-jason
