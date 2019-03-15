@@ -18,7 +18,7 @@ A sample project is available on Github at [https://github.com/jasonraimondi/pos
 
 Our end application structure is going to look consistent with following directory tree.
 
-```md
+```markdown
 project/
 ├── docker/
 │   ├── dev/

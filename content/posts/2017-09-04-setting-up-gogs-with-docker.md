@@ -21,11 +21,11 @@ Update: Shortly after writing this article, I found out the shortcomings of Gogs
 
 Lets start with my base project found on github [here, starter-docker-gogs](https://github.com/digitalcanvasdesign/starter-docker-gogs).  This project is meant to be a kicking off point and I would assume if anyone uses it they are just nuking the `.git` directory at project root and starting their own history.
 
-```md
+```bash
 git clone https://github.com/digitalcanvasdesign/starter-docker-gogs
 cd starter-docker-gogs
 rm -rf .git
-``````
+```
 
 Yep, **nuke the git instance included and reinitialize it with your own** git history using `git init`.
 
@@ -33,12 +33,12 @@ Yep, **nuke the git instance included and reinitialize it with your own** git hi
 
 The contents of our `.env.sample` are as follows:
 
-```md
+```dotenv
 MYSQL_ROOT_PASSWORD=rootpass
 MYSQL_DATABASE=gogs
 MYSQL_USER=gogs
 MYSQL_PASSWORD=gogs
-````
+```
 
 - `MYSQL_ROOT_PASSWORD` = This variable is mandatory and specifies the password that will be set for the MySQL root superuser account. In the above example, it was set to 'gogs'.
 - `MYSQL_DATABASE` = This variable is optional and allows you to specify the name of a database to be created on image startup. If a user/password was supplied (see below) then that user will be granted superuser access (corresponding to GRANT ALL) to this database.
@@ -51,7 +51,7 @@ Inside of our main `Makefile`, you will find a command called `generate-ssl-cert
 ```makefile
 generate-ssl-cert:
 	docker run -ti -v ./data/letsencrypt:/etc/letsencrypt -v ./data/certs:/etc/certs certbot/certbot certonly --webroot -w /etc/letsencrypt/webrootauth -d YOUR_DOMAIN --email YOUR_EMAIL --agree-tos
-````
+```
 
 You need to edit the `Makefile` and update the fields 'YOUR_DOMAIN' and 'YOUR_EMAIL' to the domain you are using, and your email for registration with Let's Encrypt.
 
@@ -87,7 +87,7 @@ You can check out the [official Docker Compose docs](https://docs.docker.com/com
 
 The docker-compose.yml is what is bootstrapping this project. It may seem like our `make` commands are doing this, but if you look inside of our `Makefile`, all of our makefiles are just wrapping docker-compose commands.
 
-```yml
+```yaml
 version: "2"
 
 services:
@@ -118,7 +118,7 @@ services:
       - "127.0.0.1:3306:3306"
     env_file:
       - .env
-````
+```
 
 
 Both MySQL and Gogs section, we are directly referencing the official image. You can see under the nginx section, we are defining a build directory of `nginx-ssl`. This is because we need to add some SSL certificates and keys inside of this container to get it ready to serve our Gogs instance over https.
@@ -264,7 +264,7 @@ We have two server blocks in this file; the first is listening to traffic to you
 
 One interesting thing about this is the `proxy_pass http://gogs:3000`. Typically, you'd proxy pass to the same machine you are on (i.e. `proxy_pass 127.0.0.1:3000`), but since Gogs is running in a container, it is not technically running on `127.0.0.1`, but instead, it is sort of inside a subnet on your local machine.  This is a Docker thing; one way two Docker containers can talk to each other is by the literal machine name. In our case, this is as defined in our `docker-compose.yml`, our container running Gogs is simply named `gogs`.
 
-```yml
+```yaml
 gogs:
     image: gogs/gog
     ...
@@ -274,7 +274,7 @@ gogs:
 
 After you've updated your `gogs-ssl.conf`  we can go ahead and restart our
 
-```md
+```markdown
 make stop clean build start
 ```
 
@@ -314,6 +314,7 @@ A full list of settings can be found in the [Gogs Cheat Sheet](https://gogs.io/d
 ## Overview
 
 **[1.](#1-cloning-the-starter-project) Clone a copy of the project:**
+
 ```bash
 git clone https://github.com/digitalcanvasdesign/starter-docker-gogs` on your local machine**
 ```

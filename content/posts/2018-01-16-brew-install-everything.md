@@ -44,7 +44,7 @@ brew install <package name>
 
 # Gets you a list of installed packages
 brew list
-````
+```
 
 Applications that duplicate software provided by OS X need to tap the *duplicate repository* to install them. If you would have installed one of these from Homebrew, you would get a notification requiring you to go through the "homebrew/dupes" repository. For example, installing rsync without first tapping the dupes repository results in:
 
@@ -58,7 +58,7 @@ This formula was found in a tap:
 
 To install it, run:
 brew install homebrew/dupes/rsync
-````
+```
 
 Fret not, this is a simple task. You can install it directly using the full path as stated above, or you can tap the repository first so you won't have to reference it during the installation.
 
@@ -67,7 +67,7 @@ Fret not, this is a simple task. You can install it directly using the full path
 brew tap homebrew/dupes
 
 brew install rsync
-````
+```
 
 ### Updating
 
@@ -87,6 +87,6 @@ In fact, there is a Cask for pretty much all applications, from Google Chrome to
 brew cask search <package name>
 brew cask install <package name>
 brew cask list
-````
+```
 
 Homebrew Cask allows you to install software that would typically require visiting the web, download a .dmg, and then installing manually. Homebrew Cask makes it super simple to grab the latest version of software, like Google Chrome from Homebrew Cask.

@@ -21,12 +21,12 @@ We will be using the official [Docker Hub Cerbot Image](https://hub.docker.com/r
 
 Run the following command to generate your `dhparam.pem` key. There is little risk if this key is exposed, but you probably want to keep this key private. This Stack Overflow answer, [Can they be public?](https://security.stackexchange.com/a/94397) was fairly informative on the subject.
 
-```md
+```markdown
 git clone git@github.com:jasonraimondi/post-docker-php-nginx.git sample-app
 cd sample-app
 cd docker/prod/nginx
 openssl dhparam -out dhparam.pem 2048
-````
+```
 
 ### 2. Set Nginx to Listen on Port 80
 
@@ -61,7 +61,7 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
     }
 }
-````
+```
 
 ### 3. Run the Let’s Encrypt certbot Docker container to generate certificates.
 
@@ -77,7 +77,7 @@ docker run -ti certbot/certbot certonly
 	—webroot -w /var/www/public
 	—email $YOUR_EMAIL
 	—agree-tos
-````
+```
 
 What is a little tricky about this one is that you need to have the paths correct for the volumes. The host path
 The volume parameters are split into two, separated by a colon. The left hand side is the host machine and the right hand side is the path inside of our container.
@@ -93,7 +93,7 @@ docker run -ti certbot/certbot certonly
 	—webroot -w /var/www/public
 	—email jason@digitalcanvasdesign.net
 	—agree-tos
-````
+```
 
 ### 4. Update Nginx to Forward Traffic Over SSL
 
@@ -101,9 +101,9 @@ After you’ve run the `certbot` command and completed the initial generation of
 
 Inside of the docker image, this should be located at:
 
-```md
+```markdown
 /etc/nginx/ssl_security.conf
-````
+```
 
 ```nginx
 ssl_dhparam /etc/nginx/ssl/dhparam.pem;
@@ -113,7 +113,7 @@ ssl_ciphers ‘ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-R
 ssl_prefer_server_ciphers on;
 
 add_header Strict-Transport-Security “max-age=31536000”;
-````
+```
 
 ### 5. Include Let’s Encrypt Default Location
 
@@ -121,16 +121,16 @@ Include a Let’s Encrypt default location out of the webroot.
 
 Inside of the docker image, this should be located at:
 
-```md
+```markdown
 /etc/nginx/conf.d/lets-encrypt-location
-````
+```
 
 ```nginx
 location /.well-known/acme-challenge {
     root /etc/letsencrypt/webrootauth;
     default_type “text/plain”;
 }
-````
+```
 
 We need to update the contents of our sites `nginx.conf` file to the following:
 

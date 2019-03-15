@@ -24,7 +24,7 @@
             {{ with .Param $taxonomyCategory }}
                 {{ range $index, $category := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
-                        <li class="label">
+                        <li class="label" style="margin-right:3.5px">
                             <a href="{{ .Permalink }}">{{ $category | urlize }}</a>
                         </li>
                     {{ end }}
@@ -35,7 +35,7 @@
             {{ with .Param $taxonomyTag }}
                 {{ range $index, $tag := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
-                        <li class="label">
+                        <li class="label" style="margin-right:3.5px">
                             <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
                         </li>
                     {{ end }}
