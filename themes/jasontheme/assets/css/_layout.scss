@@ -24,20 +24,23 @@ img {
 .main-content {
   height: 100%;
   display: grid;
+  grid-template-areas: "content";
   @media #{$large} {
     grid-template-columns: $sidebar-width 1fr;
     grid-template-areas: "sidebar content";
   }
 }
+
 .sidebar {
   display: none;
-  max-width: $sidebar-width;
-  grid-area: sidebar;
-  @include scrollable();
   @media #{$large} {
+    @include scrollable();
     display: block;
+    max-width: $sidebar-width;
+    grid-area: sidebar;
   }
 }
+
 .page-content {
   grid-area: content;
   @include scrollable();
@@ -141,6 +144,7 @@ img {
   width: 100%;
   height: 100%;
   max-width: $container-width;
+  margin: 0 auto;
 
   @media #{$large} {
     max-width: $container-width-lg;
