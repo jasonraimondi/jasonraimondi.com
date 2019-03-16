@@ -25,19 +25,19 @@ img {
   height: 100%;
   display: grid;
   grid-template-areas: "content";
-  @media #{$large} {
-    grid-template-columns: $sidebar-width 1fr;
-    grid-template-areas: "sidebar content";
-  }
+  //@media #{$large} {
+  //  grid-template-columns: $sidebar-width 1fr;
+  //  grid-template-areas: "sidebar content";
+  //}
 }
 
 .sidebar {
   display: none;
+  @include scrollable();
+  max-width: $sidebar-width;
+  grid-area: sidebar;
   @media #{$large} {
-    @include scrollable();
     display: block;
-    max-width: $sidebar-width;
-    grid-area: sidebar;
   }
 }
 
@@ -48,10 +48,10 @@ img {
 
 .sidebar-is-open {
   .sidebar {
-    display: block;
+    //display: block;
   }
   .page-content {
-    transform: translateX($sidebar-width);
+    //transform: translateX($sidebar-width);
   }
 }
 

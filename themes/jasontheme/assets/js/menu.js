@@ -1,7 +1,7 @@
 let isSidebarOpen = false;
 
 // // Toggle button
-document.querySelector('.toggle-button').addEventListener('click', function () {
+document.querySelector('#js-toggle-button').addEventListener('click', function () {
     if (isSidebarOpen) {
         closeSidebar();
     } else {
@@ -11,12 +11,12 @@ document.querySelector('.toggle-button').addEventListener('click', function () {
 });
 
 function openSidebar() {
-    var element = document.querySelector('html');
+    const element = document.querySelector('html');
     element.classList.add('sidebar-is-open');
 }
 
 
 function closeSidebar() {
-    var element = document.querySelector('html');
+    const element = document.querySelector('html');
     element.classList.remove('sidebar-is-open');
 }
