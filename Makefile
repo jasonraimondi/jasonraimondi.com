@@ -1,4 +1,6 @@
 .PHONY: serve
 
+default: serve
+
 serve:
-	cd assets && npm run serve
+	hugo serve -D --disableFastRender
