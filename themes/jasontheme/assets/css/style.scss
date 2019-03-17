@@ -1,13 +1,14 @@
 @import 'lib/normalize';
 
 @import 'variables';
-@import 'list';
-@import 'label';
+
 @import 'layout';
-@import 'post-list';
-@import 'posts';
-@import 'sidebar';
 @import 'typography';
+@import 'sidebar';
+@import 'posts';
+@import 'post-list';
+@import 'label';
+@import 'list';
 
 @import 'components/image-gallery';
 @import 'components/image-pop';
