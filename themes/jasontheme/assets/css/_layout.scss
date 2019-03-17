@@ -24,21 +24,15 @@ img {
 .main-content {
   height: 100%;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas: "content";
-  //@media #{$large} {
-  //  grid-template-columns: $sidebar-width 1fr;
-  //  grid-template-areas: "sidebar content";
-  //}
 }
 
 .sidebar {
   display: none;
-  @include scrollable();
   max-width: $sidebar-width;
   grid-area: sidebar;
-  @media #{$large} {
-    display: block;
-  }
+  @include scrollable();
 }
 
 .page-content {
@@ -46,65 +40,27 @@ img {
   @include scrollable();
 }
 
+// technically this should be small and medium only, that would fix an issue that appears when you
+// have a small window and open the menu, and then enlarge the browser, the content is off center
 .sidebar-is-open {
+  .main-content {
+    grid-template-columns: $sidebar-width 100%;
+    grid-template-areas: "sidebar content";
+    overflow-x: hidden;
+  }
+
   .sidebar {
-    //display: block;
-  }
-  .page-content {
-    //transform: translateX($sidebar-width);
-  }
-}
-
-
-.header-link {
-  color: $green;
-  margin-right: 0.75rem;
-
-  &:hover {
-    color: $green-dark;
-    border-bottom: 2px solid $green-dark;
-  }
-}
-
-.sidebar {
-  border-right: 1px solid $grey-light;
-  background-color: $white;
-
-  .avatar {
     display: block;
-
-    img {
-      width: calc(100% - 120px);
-      margin-top: 30px;
-      padding: 0 60px 25px 60px;
-      border-radius: 9999px;
-    }
   }
+}
 
-  ul li {
-    padding-left: 2.75rem;
-    margin-bottom: 0.5rem;
-
-    &.sidebar-title {
-      padding-left: 2rem;
-
-      h5 {
-        font-size: 1.25rem;
-        margin: 0;
-        padding: 0;
-      }
-    }
+@media #{$large} {
+  .main-content {
+    grid-template-columns: $sidebar-width 1fr;
+    grid-template-areas: "sidebar content";
   }
-
-  .sidebar-site-name {
-    padding-left: 2rem !important;
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 1.5rem;
-      color: $black;
-      margin-bottom: 15px;
-    }
+  .sidebar {
+    display: block;
   }
 }
 
@@ -118,34 +74,15 @@ img {
   }
 }
 
-.sidebar-toggle-container {
-  margin-right: 2rem;
-  border: 1px solid $grey;
-  border-radius: 5px;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12.5px;
-
-  @media #{$large} {
-    display: none;
-  }
-}
-
-.sidebar-toggle-icon {
-  height: 80%;
-  width: 80%;
-  background: $hamburgerMenuIcon;
-}
-
 .width-constrain {
   width: 100%;
   height: 100%;
   max-width: $container-width;
   margin: 0 auto;
 
+  @media #{$medium} {
+    max-width: $container-width-md;
+  }
   @media #{$large} {
     max-width: $container-width-lg;
   }
