@@ -26,10 +26,10 @@ message TS6071: Successfully created a tsconfig.json file.
 ```
 
 
-* `"target"` - JavaScript syntax output ()
-* `"rootDir"` - Project source directory directory 
-* `"outDir"` - Output directory for your built JavaScript files, this directory would typically be added to the gitignore.
-* `"module"` - Don't really worry about the depths of this one just yet, for now, we'll use "commonjs"
+* **target** - JavaScript syntax output ()
+* **rootDir** - Project source directory directory 
+* **outDir** - Output directory for your built JavaScript files, this directory would typically be added to the gitignore.
+* **module** - Don't really worry about the depths of this one just yet, for now, we'll use "commonjs"
 
 If you open up the `tsconfig.json`, that is going to be a pretty big and intimidating file. There are a lot of options and configurations you can make for the `tsc` compiler, but you dont need to worry about most of these right now. 
 
