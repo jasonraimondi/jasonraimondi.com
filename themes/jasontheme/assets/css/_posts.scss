@@ -1,14 +1,5 @@
 @import 'variables';
 
-//.post-container {
-//  padding-top: 1rem;
-//  padding-bottom: 2rem;
-//
-//  @media #{$large} {
-//    padding-top: 2rem;
-//    padding-bottom: 3rem;
-//  }
-//}
 //
 //.post-container header h1 {
 //  margin-bottom: 1rem;
@@ -23,6 +14,9 @@
 }
 
 #post-content {
+  height: 100%;
+  width: 100%;
+
   p {
     line-height: 1.8;
   }

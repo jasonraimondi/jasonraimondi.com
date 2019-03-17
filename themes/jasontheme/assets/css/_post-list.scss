@@ -1,8 +1,11 @@
 .post-list {
   > li {
-    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $grey;
+    margin-bottom: 2rem;
     &:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
     }
   }
 }
@@ -13,7 +16,6 @@
     text-decoration: underline;
   }
 }
-
 
 .post-list-title {
   font-size: 1.25rem;
