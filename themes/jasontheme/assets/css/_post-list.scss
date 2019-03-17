@@ -1,25 +1,19 @@
+.post-list {
+  > li {
+    margin-bottom: 1.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .post-list-anchor {
   color: $black;
-  display: block;
-  padding: 1rem 0;
-  border-bottom: 1px solid $grey-light;
-
-  &:hover .post-list-title {
+  &:hover {
     text-decoration: underline;
   }
-
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
-.post-list-title-container {
-  @media #{$small} {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 
 .post-list-title {
   font-size: 1.25rem;
@@ -30,12 +24,9 @@
 }
 
 .post-list-date {
-  min-width: 125px;
+  display: block;
   font-size: 80%;
   color: $grey;
-  &:hover {
-    color: $grey-dark;
-  }
   @media #{$large} {
     min-width: 200px;
   }

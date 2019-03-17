@@ -1,23 +1,24 @@
 @import 'variables';
 
-.post-container {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-
-  @media #{$large} {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-  }
-}
-
-.post-container header h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.date,
-.post-container time,
-.post-container span[itemprop="author"] {
+//.post-container {
+//  padding-top: 1rem;
+//  padding-bottom: 2rem;
+//
+//  @media #{$large} {
+//    padding-top: 2rem;
+//    padding-bottom: 3rem;
+//  }
+//}
+//
+//.post-container header h1 {
+//  margin-bottom: 1rem;
+//  font-size: 1.5rem;
+//}
+//
+.date
+  //.post-container time,
+  //.post-container span[itemprop="author"]
+{
   color: $grey;
 }
 
@@ -71,7 +72,8 @@
 
 .related-posts {
   margin-top: 3rem;
+
   ul li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 1rem;
   }
 }
