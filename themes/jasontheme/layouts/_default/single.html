@@ -78,7 +78,7 @@
             for (let k = 0; k < elements[i].length; k++) {
                 const header = elements[i][k];
                 const anchor = document.createElement('a');
-                anchor.className = 'header-link mr-2 text-grey';
+                anchor.className = 'header-link';
                 anchor.href = '#' + header.id;
                 anchor.innerHTML = '#';
                 header.insertBefore(anchor, header.firstChild);

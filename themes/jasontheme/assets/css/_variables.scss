@@ -1,7 +1,12 @@
+$sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;;
+$mono: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+
 $base-rem: 18px;
 $container-width: 90%;
 $container-width-md: 80%;
-$container-width-lg: 700px;
+$container-width-lg: 680px;
 $container-width-xl: 900px;
 $container-width-xxl: 1000px;
 $sidebar-width: 275px;
@@ -12,7 +17,7 @@ $screenSmall: 576px;
 $screenMedium: 768px;
 $screenLarge: 992px;
 $screenXLarge: 1200px;
-$screenXXLarge: 1400px;
+$screenXXLarge: 1500px;
 
 $small: "screen and (min-width: #{$screenSmall + 1})";
 $smallOnly: "screen and (max-width: #{$screenMedium})";

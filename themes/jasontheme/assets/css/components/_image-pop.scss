@@ -36,7 +36,7 @@
   transition: all 200ms;
 }
 
-@media #{$xlarge} {
+@media #{$large} {
   .pops:hover {
     max-width: 104% !important;
     width: 104% !important;
@@ -44,10 +44,18 @@
   }
 }
 
+@media #{$xlarge} {
+  .pops:hover {
+    max-width: 110% !important;
+    width: 110% !important;
+    margin-left: -5%;
+  }
+}
+
 @media #{$xxlarge} {
   .pops:hover {
-    max-width: 125% !important;
-    width: 125% !important;
-    margin-left: -12.5%;
+    max-width: 114% !important;
+    width: 114% !important;
+    margin-left: -7%;
   }
 }
