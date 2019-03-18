@@ -1,6 +1,6 @@
 baseurl = "https://jasonraimondi.com/"
 title = "Full Stack Software Engineer"
-theme ="developer-theme"
+theme ="hugo-theme-developer-portfolio"
 languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
