@@ -1,0 +1,3 @@
+[submodule "themes/developer-theme"]
+	path = themes/developer-theme
+	url = https://github.com/jasonraimondi/hugo-theme-developer-portfolio.git
