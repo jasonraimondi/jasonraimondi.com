@@ -1,6 +1,6 @@
 baseurl = "https://jasonraimondi.com/"
 title = "Full Stack Software Engineer"
-theme ="jasontheme"
+theme ="developer-theme"
 languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
@@ -31,7 +31,6 @@ defaultContentLanguage = "en"
   name = "About"
   url = "/about"
 
-
 [Params.ProjectsMenu]
   title = "Projects"
 [[Params.ProjectsMenu.Link]]
@@ -43,9 +42,6 @@ defaultContentLanguage = "en"
 [[Params.ProjectsMenu.Link]]
   name = "Flip"
   url = "/posts/flipp"
-#[[Params.ProjectsMenu.Link]]
-#  name = "Archives"
-#  url = "/archives"
 
 [Params.ExternalMenu]
   title = "Over There"
@@ -67,18 +63,6 @@ defaultContentLanguage = "en"
 [[Params.ExternalMenu.Link]]
   name = "Vimeo"
   url = "https://vimeo.com/jasonraimondi"
-
-
-#[privacy]
-#  [privacy.googleAnalytics]
-#    anonymizeIP = true
-#    respectDoNotTrack = true
-#    useSessionStorage = true
-#  [privacy.twitter]
-#    enableDNT = true
-#  [privacy.youtube]
-#    privacyEnhanced = true
-#
 
 [languages]
   [languages.en]
