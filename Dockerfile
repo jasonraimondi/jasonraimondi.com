@@ -5,14 +5,13 @@ COPY .gitmodules /app/.gitmodules
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache bash git openssh \
-    && git submodule update --init --recursive \
+    && git submodule update --init \
     && cd /app/themes/hugo-theme-developer-portfolio \
     && npm install
 COPY ./content/ /app/content/
 COPY ./static/ /app/static/
 COPY ./config.toml /app/config.toml
-RUN cd /app \
-    && hugo --destination /dist --cleanDestinationDir --minify
+RUN hugo --source /app --destination /dist --cleanDestinationDir --minify
 
 FROM nginx:alpine
 COPY ./nginx /etc/nginx/
