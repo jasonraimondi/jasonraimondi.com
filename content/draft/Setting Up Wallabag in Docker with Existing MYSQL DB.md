@@ -1,3 +1,17 @@
++++
+title = "Setting Up Wallabag in Docker with Existing MYSQL DB"
+slug = "setting-up-wallabag-in-docker-with-existing-mysql"
+date = 2019-03-19
+draft = true
+description = "Setting Up Wallabag in Docker with Existing MYSQL DB"
+tags = [
+    "selfhosted",
+]
+categories = [
+    "ops",
+]
++++ 
+
 # Setting Up Wallabag in Docker with Existing MYSQL DB
 ```
 # the spacing in this file is wrong but you get it

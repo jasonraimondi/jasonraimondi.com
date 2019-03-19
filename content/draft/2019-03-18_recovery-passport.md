@@ -16,6 +16,12 @@ categories = [
 ]
 +++
 
+[Jack Powers](https://www.linkedin.com/in/jackpowersjr/) - Cofounder/CEO
+
+[Jason Ibarra](https://www.linkedin.com/in/jasonibarraseo/) - Cofounder/COO
+
+[Jason Raimondi](https://www.linkedin.com/in/jasonraimondi/) - Lead Software Engineer
+
 Recovery Passport is a tool used by several mental and drug rehabilitation patients in South Florida, allowing the member to enter daily if they have been taking care of themselves and staying sober, as well as entering journal entries and goals viewable by their counselors and supporters.
 
 Members are invited by their counselors and asked to journal daily about their thoughts and feelings. After each entry, the member is presented with  three questions:
@@ -61,14 +67,6 @@ Journal entries are locked after a 30 minute period.
     src="/assets/posts/2019/03/recovery-passport/recovery-passport_7.png"
     alt="Notifications list"
 ></image-pop>
-
-### The Recovery Passport team:
-
-[Jack Powers](https://www.linkedin.com/in/jackpowersjr/) - Cofounder/CEO
-
-[Jason Ibarra](https://www.linkedin.com/in/jasonibarraseo/) - Cofounder/COO
-
-[Jason Raimondi](https://www.linkedin.com/in/jasonraimondi/) - Lead Software Engineer
 
 ### Stack
 
