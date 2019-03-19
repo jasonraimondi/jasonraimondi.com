@@ -2,7 +2,6 @@
 title = "Recovery Passport is a three tiered support system for mental and drug rehab patients, and those closest to them."
 slug = "recovery-passport-three-tiered-support-system"
 date = 2019-03-18
-draft = true
 description = "Members are invited by their counselors and asked to journal daily about their thoughts and feelings."
 tags = [ 
     "vue.js",
@@ -26,14 +25,11 @@ Members are invited by their counselors and asked to journal daily about their t
 
 Journal entries are locked after a 30 minute period.
 
-The app was developed in Laravel and uses elements of Vue.js on the front end.
-
 <image-pop
     v-bind:portrait="true"
     src="/assets/posts/2019/03/recovery-passport/recovery-passport_1.png"
     alt="When logging into the app, members need to answer daily if they have maintained sobriety, or taken care of themselves (if mental rehab)."
 ></image-pop>
-
 
 <image-pop
     v-bind:portrait="true"
@@ -59,7 +55,6 @@ The app was developed in Laravel and uses elements of Vue.js on the front end.
     alt="Entries are only editable for 30 minutes"
 ></image-pop>
 
-
 <image-pop
     v-bind:portrait="true"
     src="/assets/posts/2019/03/recovery-passport/recovery-passport_7.png"
@@ -73,3 +68,7 @@ The app was developed in Laravel and uses elements of Vue.js on the front end.
 [Jason Ibarra](https://www.linkedin.com/in/jasonibarraseo/) - Cofounder/COO
 
 [Jason Raimondi](https://www.linkedin.com/in/jasonraimondi/) - Lead Software Engineer
+
+### Stack
+
+The app was developed using the LEMP stack in Laravel, and uses elements of Vue.js on the front end. Deployed to a Docker Swarm on Digital Ocean.
