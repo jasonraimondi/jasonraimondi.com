@@ -1,8 +1,8 @@
 +++
-title = "Recovery Passport is a three tiered support system for mental and drug rehab patients, and those closest to them."
+title = "Recovery Passport"
 slug = "recovery-passport-three-tiered-support-system"
 date = 2019-03-18
-description = "Members are invited by their counselors and asked to journal daily about their thoughts and feelings."
+description = "Recovery Passport  is a three tiered support system for mental and drug rehab patients, and those closest to them."
 tags = [ 
     "vue.js",
     "php",
