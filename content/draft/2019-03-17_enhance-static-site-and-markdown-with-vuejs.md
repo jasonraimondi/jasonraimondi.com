@@ -15,14 +15,7 @@ categories = [
 ]
 +++
 
-It is possible to
-
-<image-pop
-    src="/assets/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg"
-    alt="Photo by William Fonteneau on Unsplash"
-></image-pop>
-
-Photo by [William Fonteneau](https://unsplash.com/photos/lVpEY1BOTuM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
+It is possible to add fancy vue components like this:
 
 ```html
 <image-pop
@@ -31,3 +24,9 @@ Photo by [William Fonteneau](https://unsplash.com/photos/lVpEY1BOTuM?utm_source=
 ></image-pop>
 ```
 
+<image-pop
+    src="/assets/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg"
+    alt="Photo by William Fonteneau on Unsplash"
+></image-pop>
+
+Photo by [William Fonteneau](https://unsplash.com/photos/lVpEY1BOTuM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
