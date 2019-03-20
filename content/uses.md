@@ -6,7 +6,7 @@ date = 2019-03-19
 
 ## Editor
 
-[IntelliJ Suite](https://www.jetbrains.com/)
+[IntelliJ Suite](https://www.jetbrains.com/) -- If I am developing code, I am probably using an IntelliJ product. From PHPStorm, to PyCharm, or GoLand.
 
 [Visual Studio Code](https://code.visualstudio.com/)
 
@@ -21,6 +21,8 @@ date = 2019-03-19
 [Alfred](https://www.alfredapp.com/) -- Alfred is great, use workflows like `ip`
 
 [Spectacle](https://www.spectacleapp.com/)
+
+[Sequel Pro](#)
 
 [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)
 

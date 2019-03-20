@@ -1,5 +1,5 @@
 +++
-title = "Code syntax highlighting with pygment"
+title = "Signing Git commits with GPG Key"
 slug = "code-syntax-highlighting-with-pygment"
 date = 2019-03-19
 draft = true

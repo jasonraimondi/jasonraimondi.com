@@ -1,5 +1,5 @@
 +++
-title = "Wild Wild West"
+title = "Developing on the web is the wild Wild West."
 slug = "www-wild-wild-west"
 date = 2019-03-19
 draft = true
