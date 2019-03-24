@@ -3,16 +3,14 @@ title = "Enhance macOS Quick Look"
 slug = "enhance-macos-quick-look"
 date = 2019-03-21
 draft = true
-description = "Developing on the web is the wild Wild West."
+description = "If you use macOS Quick Look (&#8984; + Space)"
 tags = [
     "www",
     "php",
     "javascript",
 ]
 categories = [
-    "frontend",
-    "backend",
-    "ops",
+    "workflow",
 ]
 +++ 
 
