@@ -1,6 +1,22 @@
++++
+title = "Conways game of life in TypeScript."
+slug = "conways-game-of-life-typescript"
+date = 2019-03-26
+draft = true
+description = "Conways Game of Life TypeScript."
+tags = [
+    "typescript",
+]
+categories = [
+    "frontend",
+]
++++ 
+
 Conways Game of Life
 
+<div id="conways-game-of-life">Loading the game...</div>
 
+<script src="/assets/js/conways-game-of-life.package.js"></script>
 
 ```typescript
 import * as React from 'react';
@@ -52,7 +68,7 @@ class GameBoard extends React.Component<{}, GameBoardState> {
     const mainStyle: any = {
       width: '100%',
       display: 'grid',
-      gridTemplateColumns: `repeat(${ROW_LENGTH}, ${100 / ROW_LENGTH}%)`,
+      gridTemplateColumns: 'repeat(${ROW_LENGTH}, ${100 / ROW_LENGTH}%)', // switch these to ``, the markdown transformers was having issues here
     };
     const red = '#E3342F';
     const green = '#38C172';
