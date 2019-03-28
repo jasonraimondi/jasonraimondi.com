@@ -2,6 +2,7 @@
 title = "Uses"
 description = "This page lists software and hardware I use on a daily basis."
 date = 2019-03-19
+lastmod = 2019-03-27
 +++
 
 This page lists software and hardware I use on a daily basis.
