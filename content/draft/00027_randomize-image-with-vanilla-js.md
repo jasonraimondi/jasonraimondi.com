@@ -14,7 +14,7 @@ categories = [
 
 Randomize image in static Jekyll or Hugo site with vanilla JavaScript
 
-If you check out my [about](/about) page.
+If you check out my [about](/about) page. Refresh the page to (hopefully) get a new one.
 
 ```html
 <img id="js-image-of-me" alt="image of me" />
