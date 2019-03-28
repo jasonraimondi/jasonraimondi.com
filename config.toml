@@ -46,6 +46,9 @@ defaultContentLanguage = "en"
 [[Params.MainMenu.Link]]
   name = "About"
   url = "/about"
+[[Params.MainMenu.Link]]
+  name = "Uses"
+  url = "/uses"
 
 [Params.ProjectsMenu]
   title = "Projects"
