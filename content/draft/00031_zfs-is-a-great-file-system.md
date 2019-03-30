@@ -44,13 +44,13 @@ The send command to update my offline **coldstorage** disk with the most recent 
 
 Temporarily marking the filesystem as read only. 
 
-This seems to effect zfs filesystem and all sub-filesystems. This is confirmed only via the following.
+This seems to effect all zfs sub-filesystems. This is confirmed only via the following.
 
 ```bash
 $ zfs set readonly=on storage
 ```
 
-Now if you try to create anything
+Now if you try to write anything
 
 ```bash
 $ cd /mnt/storage
@@ -60,7 +60,6 @@ $ cd /mnt/storage/nextcloud
 $ touch bar.txt
 touch: cannot touch 'bar.txt': Read-only file system
 ```
-
 
 ### ZFS Property - Mount Point
 

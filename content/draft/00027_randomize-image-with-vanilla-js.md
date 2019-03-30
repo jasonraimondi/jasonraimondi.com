@@ -12,34 +12,32 @@ categories = [
 ]
 +++
 
-Randomize image in static Jekyll or Hugo site with vanilla JavaScript
-
 If you check out my [about](/about) page. Refresh the page to (hopefully) get a new one.
 
 ```html
-<img id="js-image-of-me" alt="image of me" />
+<img id="js-random-image" alt="grey placeholder with number" />
 
 <script>
-    const myArray = [
-      "/assets/misc/about/us.png",
-      "/assets/misc/about/codecraft-2018.jpg",
-      "/assets/misc/about/colorado-2018.jpg",
+    const images = [
+      "https://via.placeholder.com/250&text=1",
+      "https://via.placeholder.com/250&text=2",
+      "https://via.placeholder.com/250&text=3",
     ];
-    const randomPictureLink = myArray[Math.floor(Math.random()*myArray.length)];
-    const picture = document.getElementById("js-image-of-me");
+    const randomPictureLink = images[Math.floor(Math.random()*images.length)];
+    const picture = document.getElementById("js-random-image");
     picture.src = randomPictureLink;
 </script>
 ```
 
-<img id="js-image-of-me" alt="image of me" />
+<img id="js-random-image" alt="grey placeholder with number" />
 
 <script>
-    const myArray = [
-      "/assets/misc/about/us.png",
-      "/assets/misc/about/codecraft-2018.jpg",
-      "/assets/misc/about/colorado-2018.jpg",
+    const images = [
+      "https://via.placeholder.com/250&text=1",
+      "https://via.placeholder.com/250&text=2",
+      "https://via.placeholder.com/250&text=3",
     ];
-    const randomPictureLink = myArray[Math.floor(Math.random()*myArray.length)];
-    const picture = document.getElementById("js-image-of-me");
+    const randomPictureLink = images[Math.floor(Math.random()*images.length)];
+    const picture = document.getElementById("js-random-image");
     picture.src = randomPictureLink;
 </script>
