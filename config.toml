@@ -54,7 +54,7 @@ defaultContentLanguage = "en"
   title = "Projects"
 [[Params.ProjectsMenu.Link]]
   name = "Traverse"
-  url = "/posts/traverse"
+  url = "/posts/traverse-2-electric-boogaloo"
 [[Params.ProjectsMenu.Link]]
   name = "Can I Poop?"
   url = "/posts/can-i-poop"
