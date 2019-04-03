@@ -9,7 +9,7 @@ tags = [
 categories = [
     "workflow",
 ]
-image = "/assets/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
+featuredImage = "/assets/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
 +++
 
 ![preview of alfred chrome to firefox workflow](/assets/posts/2018/12/alfred-chrome-to-firefox-workflow.png)

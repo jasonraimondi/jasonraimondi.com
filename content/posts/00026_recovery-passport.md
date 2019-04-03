@@ -13,6 +13,7 @@ categories = [
     "backend",
     "ops",
 ]
+featuredImage = "/assets/posts/2019/03/recovery-passport/recovery-passport_1.png"
 +++
 
 [Jack Powers](https://www.linkedin.com/in/jackpowersjr/) - Cofounder/CEO

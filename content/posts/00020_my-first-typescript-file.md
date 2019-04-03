@@ -10,6 +10,7 @@ tags = [
 categories = [
     "frontend"
 ]
+featuredImage = "/posts/2019/01/my-first-typescript-file.png"
 +++
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.
@@ -20,7 +21,7 @@ Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed
 
 Let's create our first TypeScript file `main.ts` with the following contents:
 
-```javascript
+```typescript
 function output(words: string) {
     console.log(words);
 }
@@ -48,7 +49,7 @@ The `tsc` command is taking the content from the `main.ts` file and compiling it
 
 JavaScript Output:
 
-```javascript
+```typescript
 function output(words) { // notice no more `string` type
     console.log(words);
 }

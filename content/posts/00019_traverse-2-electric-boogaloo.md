@@ -11,6 +11,7 @@ tags = [
 categories = [
     "frontend"
 ]
+featuredImage = "/posts/2019/03/traverse-featured.png"
 +++
 
 <img height="100" src="https://res.cloudinary.com/jmondi/image/upload/c_scale,w_150/v1534475620/jasonraimondi.com/traverse/pointing.png" alt="Traverse" /> 
