@@ -1,8 +1,14 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
+slug = "recovery-passport-three-tiered-support-system"
 date = {{ .Date }}
 Description = ""
-Tags = []
-Categories = []
+tags = [ 
+    "demotag",
+]
+categories = [
+    "workflow",
+]
+featuredImage = ""
 +++
 
