@@ -3,7 +3,7 @@ title = "Signing Git commits with GPG Key"
 slug = "code-syntax-highlighting-with-pygment"
 date = 2019-03-19
 draft = true
-description = "Using Pygment with Hugo for Code Syntax Highlighting."
+description = "Signing Git commits with GPG Key."
 tags = [
     "hugo",
     "javascript",
@@ -14,8 +14,6 @@ categories = [
     "ops",
 ]
 +++ 
-
-Signing Git commits with GPG Key
 
 #### Always Sign Git Commits
 
@@ -44,6 +42,6 @@ To set your GPG signing key in Git, paste the text below, substituting in the GP
 git config --global user.signingkey 3AA5C34371567BD2
 ```
 
-### GPG keys and command D
+#### GPG keys Hijacking Mac Keybindings
 
-Remove the `command + shift + d` highjack on Mac using via System Preferences… Keyboard… Shortcuts and finding the PGP_Toolbox
+Remove the `command + shift + d` hijacking on Mac using via System Preferences… Keyboard… Shortcuts and finding the PGP_Toolbox
