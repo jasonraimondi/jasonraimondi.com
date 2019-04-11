@@ -59,7 +59,7 @@ defaultContentLanguage = "en"
   name = "Can I Poop?"
   url = "/posts/can-i-poop"
 [[Params.ProjectsMenu.Link]]
-  name = "Flip"
+  name = "Flipp"
   url = "/posts/flipp"
 
 [Params.ExternalMenu]
