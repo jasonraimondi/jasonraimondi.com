@@ -2,7 +2,7 @@
 title = "Uses"
 description = "This page lists software and hardware I use on a daily basis."
 date = 2019-03-19
-lastmod = 2019-03-27
+lastmod = 2019-04-18
 +++
 
 This page lists software and hardware I use on a daily basis.
@@ -29,6 +29,12 @@ This page lists software and hardware I use on a daily basis.
 * **[Bartender](https://www.macbartender.com/)** -- Hide running status bar applications.
 * **[Docker](https://www.docker.com/)** -- Run anything, then delete it.
 * **[Keeping You Awake](https://github.com/newmarcel/KeepingYouAwake)** -- Lighter, open-source Caffeine alternative.
+* **Photoshop**
+* **Illustrator**
+* **[Krita](https://krita.org/en/)**
+* **[Figma](https://www.figma.com/)**
+* **[GIMP](https://www.gimp.org/)**
+* **[Godot](https://godotengine.org/)**
 
 #### Self Hosted
 
@@ -40,3 +46,5 @@ This page lists software and hardware I use on a daily basis.
 * **[Docker Registry v2](https://docs.docker.com/registry/)** -- Host private Docker images.
 * **[Kodi](https://kodi.tv/)** -- Media Client
 * **[Emby](https://emby.media)** -- Media Server.
+* **[Kanboard](https://kanboard.org/)** -- Web based kanban board.
+* **[Wallabag](https://wallabag.org/en)** -- A selfhosted Pocket alternative
