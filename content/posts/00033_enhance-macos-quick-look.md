@@ -9,6 +9,7 @@ tags = [
 categories = [
     "workflow",
 ]
+comments = true
 +++ 
 
 Want to peek at that video file? No problem. Want to see what content is inside a text document. Quick Look has your back.

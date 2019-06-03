@@ -13,6 +13,7 @@ categories = [
     "ops",
     "backend",
 ]
+comments = true
 +++
 
 ![the conversation aftermath](/assets/posts/2018/10/hack-contest/hack-contest-01.png)

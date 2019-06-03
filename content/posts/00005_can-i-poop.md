@@ -18,6 +18,7 @@ categories = [
     "hardware",
 ]
 featuredImage = "/assets/posts/2017/11/canipoop/canipoop-alfredo.png"
+comments = true
 +++
 
 <image-pop

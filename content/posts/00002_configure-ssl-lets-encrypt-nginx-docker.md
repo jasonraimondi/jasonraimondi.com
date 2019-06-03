@@ -13,6 +13,7 @@ tags = [
 categories = [
     "ops",
 ]
+comments = true
 +++
 
 We will be using the official [Docker Hub Cerbot Image](https://hub.docker.com/r/certbot/certbot/) that will handle the Let’s Encrypt SSL Certificate generation.

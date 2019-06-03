@@ -10,6 +10,7 @@ tags = [
 categories = [
     "backend",
 ]
+comments = true
 +++
 
 Actions can either be a **Command** or **Query**. 

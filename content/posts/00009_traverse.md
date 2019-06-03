@@ -11,6 +11,7 @@ tags = [
 categories = [
     "frontend",
 ]
+comments = true
 +++
 
 ![Traverse Spaceman Logo](/assets/posts/2018/08/traverse/pointing_0.5x.png)

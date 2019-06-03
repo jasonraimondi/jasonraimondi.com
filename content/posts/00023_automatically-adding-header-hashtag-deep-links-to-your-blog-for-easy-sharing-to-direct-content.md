@@ -10,6 +10,7 @@ tags = [
 categories = [
     "frontend",
 ]
+comments = true
 +++
 
 #### <-- This # lets you return directly to this link!

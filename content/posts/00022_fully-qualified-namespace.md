@@ -14,6 +14,7 @@ categories = [
     "frontend",
     "backend",
 ]
+comments = true
 +++
 
 Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.

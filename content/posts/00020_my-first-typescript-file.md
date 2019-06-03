@@ -11,6 +11,7 @@ categories = [
     "frontend"
 ]
 featuredImage = "/posts/2019/01/my-first-typescript-file.png"
+comments = true
 +++
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.

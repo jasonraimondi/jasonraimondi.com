@@ -10,6 +10,7 @@ tags = [
 categories = [
     "ops",
 ]
+comments = true
 +++
 
 ```bash

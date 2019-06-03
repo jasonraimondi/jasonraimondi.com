@@ -12,6 +12,7 @@ categories = [
     "backend",
     "ops,"
 ]
+comments = true
 +++
 
 [Homebrew/php](https://github.com/Homebrew/homebrew-php) has been deprecated.

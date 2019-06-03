@@ -12,6 +12,7 @@ categories = [
     "backend",
     "ops",
 ]
+comments = true
 +++
 
 A sample project is available on Github at [https://github.com/jasonraimondi/post-docker-php-nginx](https://github.com/jasonraimondi/post-docker-php-nginx)

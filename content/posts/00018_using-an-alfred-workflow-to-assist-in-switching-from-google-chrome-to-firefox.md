@@ -10,6 +10,7 @@ categories = [
     "workflow",
 ]
 featuredImage = "/assets/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
+comments = true
 +++
 
 ![preview of alfred chrome to firefox workflow](/assets/posts/2018/12/alfred-chrome-to-firefox-workflow.png)

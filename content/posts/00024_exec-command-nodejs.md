@@ -10,6 +10,7 @@ tags = [
 categories = [
     "backend"
 ]
+comments = true
 +++
 
 Using the exec command in Node.js is pretty simple, first import the exec function, and then call it with the the first argument being the command you are running, and the second argument a callback with params for **error**, **stdout**, **stderr**.

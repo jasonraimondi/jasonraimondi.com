@@ -11,6 +11,7 @@ tags = [
 categories = [
     "ops"
 ]
+comments = true
 +++
 
 Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI.

@@ -12,6 +12,7 @@ categories = [
     "backend",
     "frontend",
 ]
+comments = true
 +++
 
 ![laravel elixir building](/assets/posts/2016/05/2015-05-05-cover-photo-fixed.png)

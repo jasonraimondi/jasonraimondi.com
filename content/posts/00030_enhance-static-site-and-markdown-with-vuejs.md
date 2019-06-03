@@ -12,6 +12,7 @@ tags = [
 categories = [
     "frontend",
 ]
+comments = true
 +++
 
 Adding some dynamic elements to your static generated site can be super easy using Vue.js and some dynamic components.
