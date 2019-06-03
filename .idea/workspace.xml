@@ -2,32 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00001_setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00001_setting-up-laravel-with-foundation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00002_configure-ssl-lets-encrypt-nginx-docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00002_configure-ssl-lets-encrypt-nginx-docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00003_build-a-php72-app-using-docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00003_build-a-php72-app-using-docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00004_setting-up-gogs-with-docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00004_setting-up-gogs-with-docker.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00005_can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00005_can-i-poop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00006_flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00006_flipp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00007_brew-install-everything.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00007_brew-install-everything.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00008_update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00008_update-php-homebrew.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00009_traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00009_traverse.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00010_docker-compose-traefik-lets-encrypt.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00010_docker-compose-traefik-lets-encrypt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00011_testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00011_testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00013_command-bus.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00013_command-bus.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00015_optimizing-your-dockerfile-build-and-layers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00015_optimizing-your-dockerfile-build-and-layers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00016_using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00016_using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00017_auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00017_auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00019_traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00019_traverse-2-electric-boogaloo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00020_my-first-typescript-file.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00020_my-first-typescript-file.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00022_fully-qualified-namespace.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00022_fully-qualified-namespace.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00023_automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00023_automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00024_exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00024_exec-command-nodejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00030_enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00030_enhance-static-site-and-markdown-with-vuejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/00033_enhance-macos-quick-look.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/00033_enhance-macos-quick-look.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
     </list>
@@ -39,20 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/posts/00020_my-first-typescript-file.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="412">
-                <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
@@ -111,23 +72,6 @@
               <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="draft" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jasonraimondi.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jasonraimondi.com" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -156,9 +100,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="362" y="23" width="1170" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35549647" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35549647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -171,7 +114,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
