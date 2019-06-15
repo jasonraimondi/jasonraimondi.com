@@ -2,9 +2,7 @@ FROM digitalcanvasdesign/hugo-nodejs-builder as builder
 WORKDIR /app
 COPY .git /app/.git
 COPY .gitmodules /app/.gitmodules
-RUN apk update \
-    && apk upgrade \
-    && apk add --no-cache bash git openssh \
+RUN apk add --update --no-cache bash git openssh \
     && git submodule update --init \
     && cd /app/themes/hugo-theme-developer-portfolio \
     && npm install
