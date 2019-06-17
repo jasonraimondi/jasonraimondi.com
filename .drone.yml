@@ -16,7 +16,6 @@ steps:
       from_secret: docker_password
     tags: [ "latest" ]
     force_tag: true
-    custom_dns: [ 10.0.0.1, 1.1.1.1 ]
 
 - name: publish-tag
   image: plugins/docker
@@ -33,7 +32,6 @@ steps:
     tags: ["latest", $DRONE_TAG]
     auto_tag: true
     force_tag: true
-    custom_dns: [ 10.0.0.1, 1.1.1.1 ]
 
 - name: notify
   image: jasonraimondi/curl
