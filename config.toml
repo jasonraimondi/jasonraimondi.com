@@ -92,6 +92,6 @@ defaultContentLanguage = "en"
     weight = 1
 
 [sitemap]
-  changefreq = "monthly"
+  changefreq = "daily"
   filename = "sitemap.xml"
   priority = 0.5
