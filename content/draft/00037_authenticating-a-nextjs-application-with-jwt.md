@@ -54,7 +54,6 @@ GET http://localhost:1323/api/restricted # AUTHORIZATION HEADER REQUIRED
 
 ### Boot the API
 
-
 Let's boot the backend api. If you have never used Golang before before, I don't want you to get hung up on this one with the install and whatnot. Lets push forward to the actual REST API being implemented. I will post resources for Installing Golang at the end of this post.
 
 ```bash
@@ -70,6 +69,10 @@ ____________________________________O/_______
                                     O\
 ⇨ http server started on [::]:1323
 ```
+
+The following asciinema shows the API we are working with.
+
+{{< asciinema id="PQqr2gcOLw7Lohd4CY1eKqF6e" >}}
 
 Now we have a server started and listening on `localhost:1323`
 
@@ -207,6 +210,7 @@ Now we can add our main index page with two links, one home, and one to a not-ye
 
 ```jsx
 // pages/index.tsx
+
 import React from "react";
 
 function Page() {
@@ -219,8 +223,16 @@ function Page() {
     </>;
 }
 
+
+
 export default Page;
 ```
+
+
+<image-pop
+    src="/assets/posts/2019/08/index-page-with-hello-world.png"
+    alt="The base index page"
+></image-pop>
 
 ### Add Login page with form
 
@@ -272,7 +284,14 @@ function LoginPage() {
 export default LoginPage;
 ```
 
+
+
 We should be able to now enter our email and password into our login form located at `localhost:3000`
+
+<image-pop
+    src="/assets/posts/2019/08/login-page-with-form-filled.png"
+    alt="The base index page"
+></image-pop>
 
 ### Add Login API Call
 
@@ -456,3 +475,5 @@ func main() {
     // ... removed for brevity
 }
 ```
+
+FOO
