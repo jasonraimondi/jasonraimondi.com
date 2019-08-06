@@ -32,41 +32,17 @@ Members are invited by their counselors and asked to journal daily about their t
 
 Journal entries are locked after a 30 minute period.
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_1.png"
-    alt="When logging into the app, members need to answer daily if they have maintained sobriety, or taken care of themselves (if mental rehab)."
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_1.png" alt="When logging into the app, members need to answer daily if they have maintained sobriety, or taken care of themselves (if mental rehab)." >}}
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_2.png"
-    alt="Basic example member profile"
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_2.png" alt="Basic example member profile" >}}
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_3.png"
-    alt="Adding an entry to Recovery Passport"
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_3.png" alt="Adding an entry to Recovery Passport" >}}
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_4.png"
-    alt="After your entry, you need to answer how this event makes you feel"
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_4.png" alt="After your entry, you need to answer how this event makes you feel" >}}
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_5.png"
-    alt="Entries are only editable for 30 minutes"
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_5.png" alt="Entries are only editable for 30 minutes" >}}
 
-<image-pop
-    v-bind:portrait="true"
-    src="/assets/posts/2019/03/recovery-passport/recovery-passport_7.png"
-    alt="Notifications list"
-></image-pop>
+{{< image-pop portrait="true" src="/assets/posts/2019/03/recovery-passport/recovery-passport_7.png" alt="Notifications list" >}}
 
 ### Stack
 
