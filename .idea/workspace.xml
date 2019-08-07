@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/new-video.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/alert-with-token.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/login-to-dashboard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/redirect-to-login.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/todo-add-login-endpoint.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/you-are-not-logged-in.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00037_authenticating-a-nextjs-application-with-jwt.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/00037_authenticating-a-nextjs-application-with-jwt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/posts/2019/08/login-with-alert.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/posts/2019/08/new-video.gif" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,15 +48,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image-gallery" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/static/vendor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/assets/posts/2019/08" />
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
       <recent name="$PROJECT_DIR$/static/casts" />
       <recent name="$PROJECT_DIR$/content/draft" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image-gallery" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/static/vendor" />
     </key>
   </component>
   <component name="RunDashboard">
