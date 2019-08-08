@@ -12,6 +12,7 @@ categories = [
     "frontend",
     "Backend",
 ]
+toc = true
 +++ 
 
 * [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
@@ -129,7 +130,7 @@ export default Index;
 
 ### Add Login Page
 
-Now we can add the login form. First let's get a working form that updates our form fields, `inputs` via the React Hook `setInputs`. 
+Now we can add the login form. First let's get a working form that updates our form fields.
 
 ```jsx
 // pages/login.tsx
@@ -145,7 +146,10 @@ export type LoginInputs = {
 
 function Login() {
   // these values are hardcoded since our main.go api only accepts this auth combo
-  const initialValues: LoginInputs = { email: "rickety_cricket@example.com", password: "shhh!", };
+  const initialValues: LoginInputs = { 
+    email: "rickety_cricket@example.com", 
+    password: "shhh!", 
+  };
 
   const [inputs, setInputs] = useState(initialValues);
 
@@ -162,7 +166,8 @@ function Login() {
     });
   };
 
-  return (
+  return <>
+    <Links />
     <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="email">Email</label>
@@ -184,7 +189,7 @@ function Login() {
       </div>
       <button type="submit">Login</button>
     </form>
-  );
+  </>;
 }
 
 export default Login;
@@ -198,7 +203,9 @@ There was no actual request being made here, just an alert showing us the form f
 
 ### Add Login API Call
 
-Add a login api call with Axios. I am using axios over fetch because, well... I just havent found good enough documentation on Fetch for me to understand how to use it both in a Node, and Browser context. Axios I am certain works with both, and works well.
+I am using axios over fetch because, well... I just havent found good enough documentation on Fetch for me to understand how to use it both in a Node, and Browser context. Axios I am certain works with both, and works well.
+
+Now let's create an _postLogin_ api call with Axios.
 
 ```typescript
 // services/rest_service.ts
@@ -223,11 +230,10 @@ export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | voi
   return "Something unexpected happened!";
 };
 
-const baseConfig: AxiosRequestConfig = {
-  baseURL: "http://localhost:1323",
-};
-
 const post = (url: string, data: URLSearchParams) => {
+  const baseConfig: AxiosRequestConfig = {
+    baseURL: "http://localhost:1323",
+  };
   return axios.post(url, data, baseConfig).catch(catchAxiosError);
 };
 ```
@@ -252,9 +258,10 @@ export class AuthToken {
   readonly decodedToken: DecodedToken;
 
   constructor(readonly token?: string) {
-    // we are going to default to an expired decodedToken and
-    // then try and decode the jwt using the jwt-decode lib
+    // we are going to default to an expired decodedToken
     this.decodedToken = { email: "", exp: 0 };
+
+    // then try and decode the jwt using jwt-decode
     try {
       if (token) this.decodedToken = jwtDecode(token);
     } catch (e) {
@@ -302,17 +309,20 @@ export class AuthToken {
 
 Remove the alert message and store the token into cookies using the [js-cookie](https://github.com/js-cookie/js-cookie) library.
 
-**Note: You cannot save the _AuthToken_ class into cookie, only the JWT string**, this data is stored with `JSON.stringify()` and loaded with `JSON.parse()`. Therefore you cannot have complex objects in here. 
+**Note: You cannot save the _AuthToken_ class into cookie, only the JWT string**, this data is stored with `JSON.stringify` and loaded with `JSON.parse`. Therefore you cannot have complex objects in here. 
 
-```javascript
+```typescript
 // services/rest_service.ts
 
 export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | void> => {
   // ...
   if (res.data && res.data.token) {
+     // ...
 -    alert(`this is my token: (${res.data.token})`);
 +    await AuthToken.storeToken(res.data.token);
-
+  }
+  // ...
+}
 ```
 
 ### Add a _privateRoute_ high order component (HOC)
@@ -349,6 +359,9 @@ export function privateRoute(WrappedComponent: any) {
     }
 
     componentDidMount(): void {
+      // since getInitialProps returns our props after they've
+      // JSON.stringify we need to reinitialize it as an 
+      // AuthToken to have the full class method suite be available to you
       this.setState({ auth: new AuthToken(this.props.token) })
     }
 
@@ -475,4 +488,4 @@ function Page(props: AuthProps) {
 export default privateRoute(Page);
 ```
 
-### Show protected page route
+{{< image-pop src="/assets/posts/2019/08/login-to-dashboard.gif" alt="LOGOUT VIDEO HERE" >}}
