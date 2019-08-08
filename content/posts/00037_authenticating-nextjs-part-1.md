@@ -22,6 +22,9 @@ toc = true
 
 ## Overview
 
+[Part 1]({{< ref "/posts/00037_authenticating-nextjs-part-1.md" >}})
+[Part 2]({{< ref "/posts/00038_authenticating-nextjs-part-2.md" >}})
+
 We are going to be creating a Next.js application that will connect to a RESTful API server. 
 
 Our Next.js application will have the following three pages:
@@ -130,7 +133,5 @@ HTTP/1.1 200 OK
 ```
 
 ## Continue
-
-{{% posts/auth-nextjs-links %}}
 
 The source code for everything we are working on can be found here: https://github.com/jasonraimondi/nextjs-jwt-example

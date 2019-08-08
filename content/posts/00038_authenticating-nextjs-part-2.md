@@ -102,6 +102,8 @@ function Index() {
 export default Index;
 ```
 
+{{< image-pop src="/assets/posts/2019/08/only-index-page.gif" alt="Only index page" >}}
+
 ### Add Login Page
 
 Now we can add the login form. First let's get a working form that updates our form fields, `inputs` via the React Hook `setInputs`. 
@@ -419,6 +421,7 @@ Now users will be redirected on login. This redirect happened during the _getIni
 ### Add Logout function
 
 ```jsx
+  logout = AuthToken.logout
 
   static async logout() {
     Cookie.remove(TOKEN_STORAGE_KEY);
@@ -478,7 +481,4 @@ export PATH="$GOPATH/bin:$PATH"
 
 An EXCELLENT starters guide to getting your feet wet with Golang is _Learn Go with Tests_ [Gitbook available](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/install-go)
 
-
 The source code for everything we are working on can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
-
-{{% posts/auth-nextjs-links %}}
