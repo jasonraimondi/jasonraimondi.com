@@ -1,9 +1,9 @@
 +++
-title = "Create a simple auth system from scratch using Next.js and JWT - Part 1"
-slug = "authenticating-nextjs-part-2"
+title = "Create an auth system from scratch using Next.js and JWT"
+slug = "authenticating-nextjs-part-1"
 date = 2019-08-01
 draft = true
-description = "Create a simple auth system from scratch using Next.js and JWT"
+description = "Part 1: Create an auth system from scratch using Next.js and JWT"
 tags = [
     "nextjs",
     "react",
@@ -13,8 +13,17 @@ categories = [
     "frontend",
     "Backend",
 ]
-toc = true
-+++ 
++++
+
+This article is part one of a series.
+
+* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
+* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
+* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
+* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
+* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
+
+## Part 1: The REST Api
 
 * Create a simple auth system from scratch using Next.js and JWT - Part 1
 * Roll your own auth system using Next.js and JWT
@@ -22,18 +31,7 @@ toc = true
 
 ## Overview
 
-[Part 1]({{< ref "/posts/00037_authenticating-nextjs-part-1.md" >}})
-[Part 2]({{< ref "/posts/00038_authenticating-nextjs-part-2.md" >}})
-
-We are going to be creating a Next.js application that will connect to a RESTful API server. 
-
-Our Next.js application will have the following three pages:
-
-```bash
-http://localhost:3000/          # home page
-http://localhost:3000/login     # login page
-http://localhost:3000/dashboard # protected page authed users only
-```
+The source code for everything we are working on can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
 
 Our Server will have the following API
 
@@ -134,4 +132,3 @@ HTTP/1.1 200 OK
 
 ## Continue
 
-The source code for everything we are working on can be found here: https://github.com/jasonraimondi/nextjs-jwt-example

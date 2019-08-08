@@ -1,6 +1,6 @@
 +++
 title = "Part 2: The Next.js Application"
-slug = "authenticating-a-nextjs-application-with-jwt-part-2"
+slug = "authenticating-nextjs-part-2"
 date = 2019-08-02
 draft = true
 description = "Authenticating and securing a nextjs application"
@@ -12,12 +12,35 @@ categories = [
     "frontend",
     "Backend",
 ]
-toc = true
 +++ 
 
-## Part 2: The Next.js Application
+* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
+* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
+* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
+* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
+* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
 
-The firs thing that we need to do though is create the directory for our Next.js project, and initialize npm. We also need to create a **pages** directory for Next.js 
+## The Next.js app
+
+We are going to be creating a Next.js application that will authenticate into to the RESTful API server we have built in [part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}).
+
+Our Next.js application will have the following three pages:
+
+```bash
+http://localhost:3000/          # home page
+http://localhost:3000/login     # login page
+http://localhost:3000/dashboard # protected page authed users only
+```
+
+As a reminder, the API we are working with has the following API:
+
+```bash
+POST http://localhost:1323/api/login        # NO AUTH REQUIRED
+GET  http://localhost:1323/api/unrestricted # NO AUTH REQUIRED
+GET  http://localhost:1323/api/restricted   # AUTHORIZATION HEADER REQUIRED 
+```
+
+The first thing that we need to do though is create the directory for our Next.js project, and initialize npm. We also need to create a **pages** directory for Next.js 
 
 ```bash
 mkdir -p ./pages
@@ -453,32 +476,3 @@ export default privateRoute(Page);
 ```
 
 ### Show protected page route
-
-## Part 3 - add pre-rendered rest api calls in getInitialProps
-## Part 4 - adding a page layout
-### Add Tailwind
-### **Bonus:** Add Tailwindcss
-## Part 5 - containerize it
-### **Bonus:** Add Docker
-### **Bonus:** Install Golang 
- 
-```bash
-brew install go
-```
-
-* https://golang.org/doc/install
-* https://github.com/quii/learn-go-with-tests
-* https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/install-go
-
-One of the quirky things about go is, it expects your code in a specific folder. Most languages, you can put your code anywhere you want.
-
-```bash
-# here is what I have added to my .zshrc
-export GOPATH=${HOME}/go; 
-export GO111MODULE=on; 
-export PATH="$GOPATH/bin:$PATH"
-```
-
-An EXCELLENT starters guide to getting your feet wet with Golang is _Learn Go with Tests_ [Gitbook available](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/install-go)
-
-The source code for everything we are working on can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
