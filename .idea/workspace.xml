@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +22,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,17 +43,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image-gallery" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/static/vendor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/draft" />
       <recent name="$PROJECT_DIR$/static/assets/posts/2019/08" />
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
       <recent name="$PROJECT_DIR$/static/casts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image-gallery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,6 +79,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/jason/Code/git.jasonraimondi.com/jason/jasonraimondi.com/themes/hugo-theme-developer-portfolio/assets/css" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -85,6 +112,11 @@
           </value>
         </entry>
       </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
     </option>
   </component>
 </project>
