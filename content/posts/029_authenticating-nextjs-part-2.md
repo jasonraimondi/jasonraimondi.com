@@ -2,6 +2,7 @@
 title = "Part 2: The Next.js Application"
 slug = "authenticating-nextjs-part-2"
 date = 2019-08-02
+draft = true
 description = "Authenticating and securing a nextjs application"
 tags = [
     "nextjs",
@@ -222,10 +223,12 @@ export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | voi
   return "Something unexpected happened!";
 };
 
+// a base configuration we can extend from
+const baseConfig: AxiosRequestConfig = {
+  baseURL: "http://localhost:1323",
+};
+
 const post = (url: string, data: URLSearchParams) => {
-  const baseConfig: AxiosRequestConfig = {
-    baseURL: "http://localhost:1323",
-  };
   return axios.post(url, data, baseConfig).catch(catchAxiosError);
 };
 ```
@@ -346,18 +349,22 @@ export function privateRoute(WrappedComponent: any) {
     static async getInitialProps(ctx: NextPageContext) {
       // create AuthToken
       const auth = AuthToken.fromNext(ctx);
-      const initialProps = { token: auth.token };
+      const initialProps = { auth };
       // if the token is expired, that means the user is no longer (or never was) authenticated
       // and if we allow the request to continue, they will reach a page they should not be at.
       if (auth.isExpired) console.log("hey! server says you shouldnt be here! you are not logged in!");
-      if (WrappedComponent.getInitialProps) return WrappedComponent.getInitialProps(initialProps);
+      if (WrappedComponent.getInitialProps) {
+        const wrappedProps = await WrappedComponent.getInitialProps(initialProps);
+        // make sure our `auth: AuthToken` is always returned
+        return { ...wrappedProps, auth };
+      }
       return initialProps;
     }
 
     componentDidMount(): void {
-      // since getInitialProps returns our props after they've
-      // JSON.stringify we need to reinitialize it as an 
-      // AuthToken to have the full class method suite be available to you
+      // since getInitialProps returns our props after they've JSON.stringify
+      // we need to reinitialize it as an AuthToken to have the full class
+      // with all instance methods available
       this.setState({ auth: new AuthToken(this.props.token) })
     }
 
@@ -398,7 +405,7 @@ import { AuthToken } from "../services/auth_token";
 
 type Props = AuthProps;
 
-function Dashboard({ token, auth }: Props) {
+function Dashboard({ auth }: Props) {
   return (
     <Links />
     <p><strong>user</strong>: {auth.decodedToken.email}</p>
@@ -521,9 +528,16 @@ export default privateRoute(Dashboard);
 
 You can see that immediately on logout the user is redirected to the login page. The user no longer has access to the restricted dashboard page after logging out.  
 
+### Add a Logout Page
+
+
+
 ### Continue to [part 3 - adding pre-render asynchronous calls using `getInitialProps`.]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
 
 The source code can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
 
 * [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
 * [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
+* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
+* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
+* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
