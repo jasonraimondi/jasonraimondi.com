@@ -18,7 +18,7 @@ If you have never used a Mac, or are living in a box, macOS has an amazing featu
 
 You'll quickly realize that Quick Look does not support all file types. Like markdown, or 
 
-```
+```bash
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 ```
 

@@ -2,7 +2,6 @@
 title = "Part 2: The Next.js Application"
 slug = "authenticating-nextjs-part-2"
 date = 2019-08-02
-draft = true
 description = "Authenticating and securing a nextjs application"
 tags = [
     "nextjs",

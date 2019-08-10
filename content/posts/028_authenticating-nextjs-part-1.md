@@ -2,7 +2,6 @@
 title = "Create an authorization/authentication system from scratch using Next.js"
 slug = "authenticating-nextjs-part-1"
 date = 2019-08-01
-draft = true
 description = "Part 1: Create an auth system from scratch using Next.js and JWT"
 tags = [
     "nextjs",
