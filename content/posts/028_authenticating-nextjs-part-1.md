@@ -129,6 +129,3 @@ Once again, the source code can be found here: https://github.com/jasonraimondi/
 
 * [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
 * [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
-* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
-* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
-* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
