@@ -10,6 +10,7 @@ tags = [
     "vue.js",
 ]
 categories = [
+    "software",
     "backend",
     "frontend",
     "hardware",
@@ -27,7 +28,7 @@ At what was, in my opinion, one of the best events of our 2403 Main Street Offic
 
 Meet Flipp:
 
-{{< video-container mp4="/assets/posts/2017/11/flipp/flipp-mp4.mp4" webm="/assets/posts/2017/11/flipp/flipp-webm.webm" poster="/assets/posts/2017/11/flipp/flipp-screenshot.png" >}}
+{{< video/html5 mp4="/assets/posts/2017/11/flipp/flipp-mp4.mp4" webm="/assets/posts/2017/11/flipp/flipp-webm.webm" poster="/assets/posts/2017/11/flipp/flipp-screenshot.png" >}}
 
 Flipp was an interactive piece where guests of the event could enter their phone number to get access to a controller website on their mobile devices that would allow them to vote for different artworks hanging around the office, and when they voted, they would trigger a scene change on Phillips Hue lights, signaling a vote for the particular pieces.
 
@@ -37,4 +38,4 @@ The source code of the front end is available on github at [https://github.com/j
 
 Firebase Usage: 
 
-{{< image-pop portrait="true" src="/assets/posts/2017/11/flipp/firebase-usage.png" alt="Firebase Console" >}} 
+{{< image/pop portrait="true" src="/assets/posts/2017/11/flipp/firebase-usage.png" alt="Firebase Console" >}} 

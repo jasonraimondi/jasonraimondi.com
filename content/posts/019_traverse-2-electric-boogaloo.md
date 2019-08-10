@@ -53,8 +53,8 @@ Traverse is [MIT licensed](https://github.com/jasonraimondi/traverse/blob/master
 
 ### Screen Shots
 
-{{< image-pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-1.png" alt="Version 0.10.2 Screenshot 1" >}}
+{{< image/pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-1.png" alt="Version 0.10.2 Screenshot 1" >}}
 
-{{< image-pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-2.png" alt="Version 0.10.2 Screenshot 2" >}}
+{{< image/pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-2.png" alt="Version 0.10.2 Screenshot 2" >}}
 
-{{< image-pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-3.png" alt="Version 0.10.2 Screenshot 3" >}}
+{{< image/pop portrait="true" src="https://raw.githubusercontent.com/jasonraimondi/traverse/master/screenshots/0.10.2-3.png" alt="Version 0.10.2 Screenshot 3" >}}

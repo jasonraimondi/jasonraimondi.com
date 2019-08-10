@@ -13,6 +13,7 @@ tags = [
     "alfred",
 ]
 categories = [
+    "software",
     "frontend",
     "backend",
     "hardware",
@@ -21,7 +22,7 @@ featuredImage = "/assets/posts/2017/11/canipoop/canipoop-alfredo.png"
 comments = true
 +++
 
-{{< image-pop src="/assets/posts/2017/11/canipoop/canipoop-alfredo.png" alt="Can I Poop Alfred Workflow" >}}
+{{< image/pop src="/assets/posts/2017/11/canipoop/canipoop-alfredo.png" alt="Can I Poop Alfred Workflow" >}}
 
 A few months ago myself and a coworker attended one of the [LA Software Craftmanship](https://www.meetup.com/LA-Software-Craftsmanship/) workshops down at 8th Light centered around using the GPIO pins on the Raspberry Pi.  We wrote a few different programs in C and Python first using some sensors, and then the Tx/Rx to send messages between Pi’s.  It reminded me a lot of college where I had the opportunity to take classes like Sensors and Electronics Based Art, centered around using Arduino based sensors to make all different things, it was great.
 
@@ -33,22 +34,11 @@ The Software Craftsmanship meet up was a great inspiration to get going, and it 
 
 I present to you [canipoop.com](http://canipoop.com), Yes, seriously.
 
-
-<image-gallery
-    :images="[{
-        src: '/assets/posts/2017/11/canipoop/canipoop-website-1open.png',
-        alt: 'Can I Poop Website Screenshot - One Open'
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-website-2open.png',
-        alt: 'Can I Poop Website Screenshot - Two Open'
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-firebase.png',
-        alt: 'Firebase Panel'
-    }]"
-></image-gallery>
-
+{{< image/gallery/frame >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-website-1open.png" alt="Can I Poop Website Screenshot - One Open" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-website-2open.png" alt="Can I Poop Website Screenshot - Two Open" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-firebase.png" alt="Firebase Panel" >}}
+{{< /image/gallery/frame >}}
 
 When you open the page you are met with the bathroom status of the LA office of Event Farm. Open or closed, upstairs and downstairs.
 
@@ -62,38 +52,13 @@ Since the internal release of [canipoop.com](http://canipoop.com) several months
 
 The whole suite of canipoop apps is available at [https://github.com/pdt256/canipoop](https://github.com/pdt256/canipoop), feel free to poke around, or maybe even contribute a PR.
 
-
-<image-gallery
-    :images="[{
-        src: '/assets/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg',
-        alt: 'Raspberry Pi installed behind wall panel',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg',
-        alt: 'Speaker wiring around the mirror',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg',
-        alt: 'Reed switches on downstairs bathroom door, inside the door',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg',
-        alt: 'Reed switches on upstairs bathroom door, outside the door',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg',
-        alt: 'Reed switches on upstairs bathroom door, outside the door',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg',
-        alt: 'Arduino enclosure',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-arduino-1.jpg',
-        alt: 'Arduino Layout 1',
-    },
-    {
-        src: '/assets/posts/2017/11/canipoop/canipoop-ardunio-2.jpg',
-        alt: 'Arduino Layout 2',
-    }]"
-></image-gallery>
+{{< image/gallery/frame >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg" alt="Raspberry Pi installed behind wall panel" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg" alt="Speaker wiring around the mirror" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg" alt="Reed switches on downstairs bathroom door, inside the door" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
+    {{< image/gallery/image src="/assets/posts/2017/11/canipoop/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
+{{< \/image/gallery/frame >}}

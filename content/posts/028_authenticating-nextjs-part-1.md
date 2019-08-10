@@ -1,5 +1,5 @@
 +++
-title = "Create an auth system from scratch using Next.js and JWT"
+title = "Create an authorization/authentication system from scratch using Next.js"
 slug = "authenticating-nextjs-part-1"
 date = 2019-08-01
 draft = true
@@ -8,20 +8,15 @@ tags = [
     "nextjs",
     "react",
     "jwt",
+    "golang",
+    "echo-framework"
 ]
 categories = [
+    "software",
     "frontend",
-    "Backend",
+    "backend",
 ]
 +++
-
-This article is part one of a series.
-
-* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
-* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
-* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
-* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
-* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
 
 ## Part 1: The REST Api
 
@@ -49,7 +44,6 @@ The flow of the application is simple.
 
 Now we are going to replicate the flow in our Next.js application by creating a **login page**, an unrestricted **home page**, and a restricted **dashboard page**.  
 
-
 ## Part 1: The REST Api Server
 
 I am using Golang web framework [Echo](https://echo.labstack.com/) for my API, but feel free to bring your own backend implementation. You can use anything from another Node.js, to a Laravel/PHP/Ruby/Rails app. You can even have the entire backend logic inside of your Next.js app!
@@ -70,7 +64,7 @@ Let's take a look at the actual REST API we have implemented.
 
 {{< asciinema id="1hB16TAx2eD0g6sy50XjAELaZ" description="A demonstration of the RESTful API will be working with." >}}
 
-### Hit the API manually via the curl
+### GET requests
 
 Now to demonstrate the endpoints that we have created, lets hit them on the CLI real quick. First we will hit the unrestricted endpoint. 
 
@@ -92,7 +86,7 @@ HTTP/1.1 400 Bad Request
 {"message":"missing or malformed jwt"}
 ```
 
-### Submit login post
+### Submitting a login post
 
 Next I am going to make a POST request with my email and password passed as form data to the API's login page.
 
@@ -130,5 +124,12 @@ HTTP/1.1 200 OK
 {"message":"hello email address: rickety_cricket@example.com"}
 ```
 
-## Continue
+### Continue to [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
 
+Once again, the source code can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
+
+* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
+* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
+* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
+* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
+* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})

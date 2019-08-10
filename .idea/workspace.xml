@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/assets/posts/2019/08/show-logout.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/006_flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/006_flipp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/009_traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/009_traverse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/019_traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/019_traverse-2-electric-boogaloo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/025_recovery-passport.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/025_recovery-passport.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/026_enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/026_enhance-static-site-and-markdown-with-vuejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/031_authenticating-nextjs-part-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/032_authenticating-nextjs-part-5.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +34,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,19 +55,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/draft" />
       <recent name="$PROJECT_DIR$/static/assets/posts/2019/08" />
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
       <recent name="$PROJECT_DIR$/static/casts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image-gallery" />
     </key>
   </component>
   <component name="RunDashboard">

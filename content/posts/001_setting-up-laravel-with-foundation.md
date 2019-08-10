@@ -9,6 +9,7 @@ tags = [
     "foundation-sites",
 ]
 categories = [
+    "software",
     "backend",
     "frontend",
 ]
