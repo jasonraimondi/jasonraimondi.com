@@ -35,7 +35,7 @@ http://localhost:3000/login     # login page
 http://localhost:3000/dashboard # protected page authed users only
 ```
 
-### Set up Next with TypeScript
+### Set up Next.js, with TypeScript
 
 The first thing that we need to do though is create the directory for our Next.js project, and initialize npm. We are also going to need to create a **pages** directory for Next.js or it will freak out.
 
@@ -235,9 +235,9 @@ const post = (url: string, data: URLSearchParams) => {
 
 {{< image/pop src="/assets/posts/2019/08/alert-with-token.gif" alt="Alert with token" >}}
 
-### Create _AuthToken_ class to handle the JWT string
+### Create **AuthToken** class to handle the JWT string
 
-Our _AuthToken_ class will attempt to decode the JWT using the [jwt-decode](https://github.com/auth0/jwt-decode) library. We we will then have methods to check if the token is expired/valid, and what the expiration date is.
+Our **AuthToken** class will attempt to decode the JWT using the [jwt-decode](https://github.com/auth0/jwt-decode) library. We we will then have methods to check if the token is expired/valid, and what the expiration date is.
 
 ```typescript
 // services/auth_token.ts
@@ -283,7 +283,7 @@ export class AuthToken {
 
 ### Store JWT string into cookies
 
-Now that we have the _AuthToken_ class all set up, we need to add functionality to actually store the token into our cookies. 
+Now that we have the **AuthToken** class all set up, we need to add functionality to actually store the token into our cookies. 
 
 ```typescript
 // services/auth_token.ts
@@ -304,7 +304,7 @@ export class AuthToken {
 
 Remove the alert message and store the JWT string into cookies using the [js-cookie](https://github.com/js-cookie/js-cookie) library.
 
-**Note: You should not save the _AuthToken_ class into cookies** as it will be flattened into a JSON string, and returned as a standard object when retrieved.
+**Note: You should not save the **AuthToken** class into cookies** as it will be flattened into a JSON string, and returned as a standard object when retrieved.
 
 ```typescript
 // services/rest_service.ts
@@ -326,9 +326,9 @@ A HOC is effectively a [decorator](https://en.wikipedia.org/wiki/Decorator_patte
 
 > Concretely, a **higher-order component** is a function that takes a component and returns a new component.
 
-Now we are going to add a `privateRoute` [high order component](https://reactjs.org/docs/higher-order-components.html) that will handle the authorization check in the pre-render method `async getInitialProps`.
+Now we are going to add a **privateRoute** [high order component](https://reactjs.org/docs/higher-order-components.html) that will handle the authorization check in the pre-render method `async getInitialProps`.
 
-Our `privateRoute` function will be decorating any React component with some authorization checks. It is attaching to the Next.js/React lifecycle methods and and updating accordingly.  
+Our **privateRoute** function will be decorating any React component with some authorization checks. It is attaching to the Next.js/React lifecycle methods and and updating accordingly.  
 
 ```jsx
 import { NextPageContext } from "next";
@@ -369,31 +369,44 @@ export function privateRoute(WrappedComponent: any) {
     }
 
     render() {
-      return <WrappedComponent auth={this.state.auth} {...this.props} />;
+      // we want to hydrate the WrappedComponent with a full instance method of
+      // AuthToken, the existing props.auth is a flattened auth, we want to use
+      // the state instance of auth that has been rehydrated in browser after mount
+      const { auth, ...propsWithoutAuth } = this.props;
+      return <WrappedComponent auth={this.state.auth} {...propsWithoutAuth} />;
     }
   };
 }
 ```
 
-In the `getInitialProps` method of our _privateRoute_ HOC, we are going to create a new _AuthToken_ that will be initialized from the `NextPageContext`.
+In the **getInitialProps** method of our _privateRoute_ HOC, we are going to create a new **AuthToken** that will be initialized from the **NextPageContext**.
 
 If the token is expired, the user is not authorized to view this page, and will (eventually be) redirected to the login page. For now, we are going to `console.log` yell at our user. These logs will appear in your Next.js server side log output. This check is happening pre-browser render, and therefore the console log will not be visible in the browser.
 
-Now, for any page that we want to protect, all we need to do is wrap the component in a `privateRoute`. We'll see an example in the following section.
+Now, for any page that we want to protect, all we need to do is wrap the component in a **privateRoute**. We'll see an example in the following section.
 
-In addition to authorization checks, one more thing that this HOC does is make the _AuthToken_ class available to the wrapped component.
+In addition to authorization checks, one more thing that this HOC does is make the **AuthToken** class available to the wrapped component.
 
 ```jsx
-<WrappedComponent auth={this.state.auth} {...this.props} />;
+componentDidMount(): void {
+  this.setState({ auth: new AuthToken(this.props.token) })
+}
+
+render() {
+  const { auth, ...propsWithoutAuth } = this.props;
+  return <WrappedComponent auth={this.state.auth} {...propsWithoutAuth} />;
+}
 ```
 
-This will allow `WrappedComponents` to access the _AuthToken_ class as a prop of key `auth` that is "magically" available.
+@TODO WRITE STUFF HERE
+
+This will allow **WrappedComponent** to access the **AuthToken** class as a prop of key **auth** that is "magically" available.
 
 ### Add dashboard page protected by _privateRoute_
 
-We are going to be creating a dashboard page that is only going to be visible to our authenticated users. All we need to do do make this happen is pass our `Dashboard` component through the `privateRoute` as it is being exported. 
+We are going to be creating a dashboard page that is only going to be visible to our authenticated users. All we need to do do make this happen is pass our **Dashboard** component through the **privateRoute** as it is being exported. 
 
-We are able to access the key `auth` off of the props passed into the `Dashboard` component kind of magically. 
+We are able to access the key **auth** off of the props passed into the **Dashboard** component kind of magically. 
 
 ```jsx
 // pages/dashboard.tsx
@@ -419,9 +432,16 @@ function Dashboard({ auth }: Props) {
 export default privateRoute(Dashboard);
 ```
 
-Remember, private route currently just console logging the auth status and **is not protecting the route yet**. What is happening is that we are noticing the token is void, running a `console.log`, and letting the unauthorized user access the page. Note the values of our _AuthToken_ in the following screen are all indicating that the email of the authenticated user is an empty string, the token is expired, and is not authenticated. This is because I am accessing this page as a user that has not logged in.
+Remember, private route **is not yet protecting the route**; currently it is just emitting a `console.log` function with the current auth status. What is happening is that we are noticing the token is void, running a `console.log`, and letting the unauthorized user access the page. 
 
-{{< image/pop src="/assets/posts/2019/08/you-are-not-logged-in.gif" alt="You are not logged in!" >}}
+
+{{< 
+  image/pop 
+  src="/assets/posts/2019/08/you-are-not-logged-in.gif" 
+  alt="Shows a non-authenticated user visiting the dashboard page, and the AuthToken contents are all saying the token is not valid and is expired." 
+>}}
+
+Note the values of our **AuthToken** in are all indicating that the email of the authenticated user is an empty string, the token is expired, and is not authenticated. This is because I am accessing this page as a user that has not logged in.
 
 So now lets actually add some protection by creating a function that redirects the user to the login page if they are not already logged in.
 
@@ -458,7 +478,7 @@ export const redirectToLogin = (server?: ServerResponse) => {
 
 I went ahead and added the `?redirected=true` param to our redirect destination. This is more for debugging and demonstration and doesnt really serve another purpose.
 
-So let's go ahead and update our `privateRoute` function to `redirectToLogin` instead of 
+So let's go ahead and update our **privateRoute** function to **redirectToLogin** instead of 
 
 ```typescript
 // components/private_route.tsx
@@ -480,7 +500,7 @@ Now users will actually be redirected on login, thus protecting our dashboard. T
 
 ### Successful login to dashboard
 
-So now after a successful login attempt, we will see our dashboard with the full _AuthToken_ details spread out. The authenticated user's email is "rickety_cricket@example.com", their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined in part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
+So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined in part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}).
 
 {{< image/pop src="/assets/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
 
@@ -497,7 +517,7 @@ So now after a successful login attempt, we will see our dashboard with the full
   logout = AuthToken.logout
 ```
 
-So now that we've added the logout method to _AuthToken_, we can go ahead and access it off of our handy-dandy `auth` prop.
+So now that we've added the logout method to **AuthToken**, we can go ahead and access it off of our handy-dandy **auth** prop.
 
 ```jsx
 // pages/dashboard.tsx
@@ -532,7 +552,7 @@ You can see that immediately on logout the user is redirected to the login page.
 
 
 
-### Continue to [part 3 - adding pre-render asynchronous calls using `getInitialProps`.]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
+### Continue to [part 3 - adding pre-render asynchronous calls using **getInitialProps**.]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
 
 The source code can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
 

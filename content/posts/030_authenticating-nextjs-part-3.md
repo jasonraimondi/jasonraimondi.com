@@ -18,6 +18,7 @@ categories = [
 
 Note: getInitialProps runs the `JSON.serialize` method.
 
+The goal of this one is to show how ot make pre-rendered async.
 
 ## Add ApiCallout component
 
@@ -36,7 +37,7 @@ export function ApiCallout({ message }: any) {
 
 ## Add rest call go unprotected page
 
-If you open up your `services/rest_services.ts` file, you should have the _login_ **POST** method set up from [part 2]({{< relref "posts/029_authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
+If you open up your `services/rest_services.ts` file, you should have the _login_ **POST** method set up from [part 2]({{< relref "/posts/029_authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
 
 ```typescript
 // services/rest_service.ts
