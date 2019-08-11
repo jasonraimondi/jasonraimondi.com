@@ -22,7 +22,7 @@ defaultContentLanguage = "en"
   email = "jason@raimondi.us"
   profileURL = "/assets/misc/me/avatar.png"
   resumePDF = "/assets/resume/JasonRaimondi-Resume-3.2.6.pdf"
-  resumeJSON = "/assets/resume/resume.json"
+  resumeJSON = "/resume.json"
   analyticsSnippet = """
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
