@@ -9,14 +9,17 @@ description = "My passion is for writing software with a clean architecture. My 
 <img id="js-image-of-me" alt="image of me" />
 
 <script>
-    const myArray = [
-      "/assets/misc/about/us.png",
-      "/assets/misc/about/codecraft-2018.jpg",
-      "/assets/misc/about/colorado-2018.jpg",
-    ];
-    const randomPictureLink = myArray[Math.floor(Math.random()*myArray.length)];
-    const picture = document.getElementById("js-image-of-me");
-    picture.src = randomPictureLink;
+    function setRandomPicture() {
+        const pictures = [
+          'https://s3.us-west-1.wasabisys.com/webcdn/misc/about/us.png',
+          'https://s3.us-west-1.wasabisys.com/webcdn/misc/about/codecraft-2018.jpg',
+          'https://s3.us-west-1.wasabisys.com/webcdn/misc/about/colorado-2018.jpg',
+        ];
+        const randomPictureLink = pictures[Math.floor(Math.random()*pictures.length)];
+        const picture = document.getElementById("js-image-of-me");
+        picture.src = randomPictureLink;
+    }
+    setRandomPicture();
 </script>
 
 My name is Jason Raimondi and I am a Full Stack Software Engineer based out of Los Angeles. My focus has been in web systems, building and deploying server and client web applications. I am a technologist and all around computer geek; give me a computer and I will be hacking in minutes, occupied for days.

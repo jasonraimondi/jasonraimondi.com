@@ -16,7 +16,7 @@ This page lists software and hardware I use on a daily basis.
 
 #### Desktop Apps
 
-* **[Firefox](https://firefox.com)** -- [Use Alfred to switch from Google Chrome to Firefox](/posts/using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox/).
+* **[Firefox](https://firefox.com)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
 * **[Alfred](https://www.alfredapp.com/)** -- Alfred is great, use [workflows to enhance](https://github.com/zenorocha/alfred-workflows). It also comes with a clipboard history manager and tool to store your text snippets.
 * **[Spectacle](https://www.spectacleapp.com/)** -- The greatest keybinding specific alternative to better touch tool.
 * **[Sequel Pro](#)** -- Historically, it was the best MySQL GUI for Mac. It is not running so well on newer versions of Mac. 

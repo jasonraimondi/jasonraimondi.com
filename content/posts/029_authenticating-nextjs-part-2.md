@@ -119,7 +119,7 @@ function Index() {
 export default Index;
 ```
 
-{{< image/pop src="/assets/posts/2019/08/only-index-page.gif" alt="Only index page" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/only-index-page.gif" alt="Only index page" >}}
 
 ### Add Login Page
 
@@ -190,7 +190,7 @@ export default Login;
 
 We should be able to now enter our email and password into our login form located at `localhost:3000`
 
-{{< image/pop src="/assets/posts/2019/08/todo-add-login-endpoint.gif" alt="Login Page Success" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/todo-add-login-endpoint.gif" alt="Login Page Success" >}}
 
 There was no actual request being made here, just an alert showing us the form fields we have filled out. The next step will be to make the login POST request and retrieve our Authorization token.
 
@@ -233,7 +233,7 @@ const post = (url: string, data: URLSearchParams) => {
 };
 ```
 
-{{< image/pop src="/assets/posts/2019/08/alert-with-token.gif" alt="Alert with token" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/alert-with-token.gif" alt="Alert with token" >}}
 
 ### Create **AuthToken** class to handle the JWT string
 
@@ -437,7 +437,7 @@ Remember, private route **is not yet protecting the route**; currently it is jus
 
 {{< 
   image/pop 
-  src="/assets/posts/2019/08/you-are-not-logged-in.gif" 
+  src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/you-are-not-logged-in.gif" 
   alt="Shows a non-authenticated user visiting the dashboard page, and the AuthToken contents are all saying the token is not valid and is expired." 
 >}}
 
@@ -496,13 +496,13 @@ export function privateRoute(WrappedComponent: any) {
 ```
 Now users will actually be redirected on login, thus protecting our dashboard. The redirect happens during the _getInitialProps_ setup, pre initial render, meaning no flash of unauthorized content (or any content) will occur. 
 
-{{< image/pop src="/assets/posts/2019/08/redirect-to-login.gif" alt="Shows an unauthorized user attempting to view dashboard and being redirected to login." >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/redirect-to-login.gif" alt="Shows an unauthorized user attempting to view dashboard and being redirected to login." >}}
 
 ### Successful login to dashboard
 
 So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined in part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}).
 
-{{< image/pop src="/assets/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
 
 ### Add Logout function
 
@@ -544,7 +544,7 @@ function Dashboard({ token, auth }: Props) {
 export default privateRoute(Dashboard);
 ```
 
-{{< image/pop src="/assets/posts/2019/08/show-logout.gif" alt="Demonstrate a user logout" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-logout.gif" alt="Demonstrate a user logout" >}}
 
 You can see that immediately on logout the user is redirected to the login page. The user no longer has access to the restricted dashboard page after logging out.  
 

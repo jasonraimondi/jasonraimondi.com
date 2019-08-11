@@ -30,7 +30,7 @@ The game is a 0 player game. We start with a random board, and there is a button
 
 <div id="conways-game-of-life">Loading the game...</div>
 
-<script type="text/javascript" src="/assets/js/main.package.1.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/main.package.1.js" | absURL }}"></script>
 
 ### The React Code
 
