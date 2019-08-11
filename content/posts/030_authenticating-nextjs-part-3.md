@@ -13,6 +13,13 @@ categories = [
     "Backend",
 ]
 +++ 
+## Overview
+
+We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
+
+1. In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
+2. In [part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
+3. In [this part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
 ## Add pre-rendered async rest api calls in getInitialProps
 

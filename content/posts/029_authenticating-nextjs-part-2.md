@@ -12,12 +12,28 @@ categories = [
     "frontend",
     "Backend",
 ]
-toc = false
+toc = true
 +++ 
 
-## The Next.js app
+## Overview
 
-We are going to be creating a Next.js application that will authenticate into to the RESTful API server. For a refresher on what this API is all about, you can check out [part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}) of the series. 
+We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
+
+1. In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
+2. In [this part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
+3. In [part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+
+### Source Code
+
+Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 2, take a look in the [web](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/web) directory.
+
+### The Next.js app
+
+The basic flow of the application will be simple
+
+1. An unauthenticated user lands on the **home page**. This page is visible to _any_ user, authenticated or not.
+2. The user then can navigate to the **login page**. And proceed to fill the form. 
+3. After a successful login, the user will then be redirected to the **dashboard page**. This dashboard is only accessible by an authenticated user. Any unauthenticated user will be redirected back to the **login page**.  
 
 The server has the following API:
 
@@ -35,7 +51,7 @@ http://localhost:3000/login     # login page
 http://localhost:3000/dashboard # protected page authed users only
 ```
 
-### Set up Next.js, with TypeScript
+## Install Next.js with TypeScript
 
 The first thing that we need to do though is create the directory for our Next.js project, and initialize npm. We are also going to need to create a **pages** directory for Next.js or it will freak out.
 
@@ -55,6 +71,8 @@ Since Next.js v9.0 has [built in zero config typescript support](https://nextjs.
 ```bash
 npm install --save-dev typescript @types/react @types/node
 ```
+
+### Add the Development Scripts
 
 Add the following scripts to your `package.json` file.
 
@@ -239,6 +257,9 @@ const post = (url: string, data: URLSearchParams) => {
 
 Our **AuthToken** class will attempt to decode the JWT using the [jwt-decode](https://github.com/auth0/jwt-decode) library. We we will then have methods to check if the token is expired/valid, and what the expiration date is.
 
+The decoded JWT will contain the authenticated users _email_ and _expiresAt_ timestamp.  
+
+
 ```typescript
 // services/auth_token.ts
 
@@ -324,7 +345,9 @@ export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | voi
 
 A HOC is effectively a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) on a React component. 
 
-> Concretely, a **higher-order component** is a function that takes a component and returns a new component.
+{{< quote author="React Docs" link="https://reactjs.org/docs/higher-order-components.html" >}}
+Concretely, a **higher-order component** is a function that takes a component and returns a new component.
+{{< /quote >}}
 
 Now we are going to add a **privateRoute** [high order component](https://reactjs.org/docs/higher-order-components.html) that will handle the authorization check in the pre-render method `async getInitialProps`.
 
@@ -386,19 +409,6 @@ If the token is expired, the user is not authorized to view this page, and will 
 Now, for any page that we want to protect, all we need to do is wrap the component in a **privateRoute**. We'll see an example in the following section.
 
 In addition to authorization checks, one more thing that this HOC does is make the **AuthToken** class available to the wrapped component.
-
-```jsx
-componentDidMount(): void {
-  this.setState({ auth: new AuthToken(this.props.token) })
-}
-
-render() {
-  const { auth, ...propsWithoutAuth } = this.props;
-  return <WrappedComponent auth={this.state.auth} {...propsWithoutAuth} />;
-}
-```
-
-@TODO WRITE STUFF HERE
 
 This will allow **WrappedComponent** to access the **AuthToken** class as a prop of key **auth** that is "magically" available.
 
