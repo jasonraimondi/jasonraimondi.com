@@ -1,10 +1,10 @@
 +++
-title = "Part 3: Add pre-rendered async rest api calls in getInitialProps()"
+title = "Add pre-rendered async rest api calls in getInitialProps()"
 slug = "authenticating-nextjs-part-3"
-date = 2019-08-02
-draft = true
-description = "Authenticating and securing a nextjs application"
+date = "2019-08-10T05:30:00-0700"
+description = "Part 3: Authenticating and securing a nextjs application"
 tags = [
+    "authenticating-nextjs",
     "nextjs",
     "react",
 ]
@@ -13,15 +13,20 @@ categories = [
     "Backend",
 ]
 +++ 
+
 ## Overview
 
-We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
+* In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
+* In [part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
+* In [this part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
-1. In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
-2. In [part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
-3. In [this part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+## Source Code
+
+Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 3, take a look in the [web](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/web) directory.
 
 ## Add pre-rendered async rest api calls in getInitialProps
+
+We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
 
 Note: getInitialProps runs the `JSON.serialize` method.
 
@@ -146,9 +151,10 @@ export default Index;
 ```typescript
 // services/rest_service.ts
 
-export const fetchRestricted = async (auth?: AuthToken) => {
-  const headers: any = {};
-  if (auth) headers.Authorization = auth.authorizationString;
+
+export const fetchRestricted = async (auth: AuthToken) => {
+  // add the Authorization header
+  const headers: any = { Authorization: auth.authorizationString };
   const res: any = await get("/api/restricted", { headers });
   return messageFromResponse(res);
 };
@@ -164,15 +170,39 @@ const get = async (url: string, config: AxiosRequestConfig = {}) => {
 
 ## Add to the dashboard page
 
+```jsx
+// pages/dashboard.tsx
+
+import React  from "react"
+import { ApiCallout } from "../components/api_callout";
+import { Links } from "../components/links";
+import { AuthProps, privateRoute } from "../components/private_route";
+import { AuthToken } from "../services/auth_token";
+import { fetchRestricted } from "../services/rest_service";
+
+type Props = AuthProps & {
+  message: string
+}
+
+function Dashboard({ message, auth }: Props) {
+  return <>
+    <Links isAuth={auth.isValid}/>
+    <ApiCallout message={message} />
+    <p><strong>user</strong>: {auth.decodedToken.email}</p>
+    <p><strong>isValid</strong>: {auth.isValid.toString()}</p>
+    <p><strong>isExpired</strong>: {auth.isExpired.toString()}</p>
+    <p><strong>authorizationString</strong>: {auth.authorizationString}</p>
+    <p><strong>expiresAt</strong>: {auth.expiresAt.toString()}</p>
+    <hr />
+  </>
+}
+
+Dashboard.getInitialProps = async ({ auth }: AuthProps) => {
+  const message = await fetchRestricted(auth);
+  return { message };
+};
+
+export default privateRoute(Dashboard);
+```
+
 ## Show view source
-
-
-### Continue to [part 4.]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
-
-The source code can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
-
-* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
-* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
-* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
-* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
-* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})

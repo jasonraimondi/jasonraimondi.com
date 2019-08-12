@@ -1,10 +1,10 @@
 +++
 title = "Authenticating and securing a Next.js app from unauthorized access"
 slug = "authenticating-nextjs-part-1"
-date = 2019-08-01
-draft = true
+date = "2019-08-10T03:30:00-0700"
 description = "Part 1: The REST Api"
 tags = [
+    "authenticating-nextjs",
     "nextjs",
     "react",
     "jwt",
@@ -20,8 +20,6 @@ categories = [
 
 ## Overview
 
-We will be creating/mocking a REST API with an authentication flow. Any unauthorized user will be able to access and view a single **unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
-
 * In [this part]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating/mocking the REST API.
 * In [part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
 * In [part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
@@ -31,6 +29,8 @@ We will be creating/mocking a REST API with an authentication flow. Any unauthor
 Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 1, take a look in the [api](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/api) directory.
 
 ## Outline the REST API
+
+We will be creating/mocking a REST API with an authentication flow. Any unauthorized user will be able to access and view a single **unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
 
 The backend language or framework that is running our REST API that we are going to create is less important than the actual API that we are going to expose. The language/framework is interchangeable; the API is the piece we want to reinforce here.
 

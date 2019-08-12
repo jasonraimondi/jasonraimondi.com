@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_blockquote.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/quote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/00035_conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/00035_conways-game-of-life-in-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00025_signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00027_randomize-image-with-vanilla-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00028_setting-up-wallabag-in-docker-with-existing-mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00029_code-syntax-highlighting-with-pygment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00031_zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00032_developing-on-the-web-is-like-the-wild-wild-west.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/00035_conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/js/conways-game-of-life.package.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/js/conways-game-of-life.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_elements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/static/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/static/robots.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +32,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -59,19 +53,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/draft" />
       <recent name="$PROJECT_DIR$/static/assets/posts/2019/08" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/draft" />
+      <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
     </key>
   </component>
   <component name="RunDashboard">

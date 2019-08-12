@@ -1,10 +1,10 @@
 +++
-title = "Part 2: The Next.js Application"
+title = "Securing a Next.js Application with JWT and a private route higher order component. "
 slug = "authenticating-nextjs-part-2"
-date = 2019-08-02
-draft = true
-description = "Authenticating and securing a nextjs application"
+date = "2019-08-10T04:30:00-0700"
+description = "Part 2: Authenticating and securing a nextjs application"
 tags = [
+    "authenticating-nextjs",
     "nextjs",
     "react",
 ]
@@ -12,24 +12,23 @@ categories = [
     "frontend",
     "Backend",
 ]
-toc = true
 +++ 
 
 ## Overview
 
-We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
+* In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
+* In [this part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
+* In [part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
-1. In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
-2. In [this part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
-3. In [part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
-
-### Source Code
+## Source Code
 
 Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 2, take a look in the [web](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/web) directory.
 
-### The Next.js app
+## The Next.js app
 
-The basic flow of the application will be simple
+Here we will be creating a Next.js application with an authentication flow that will allow an unauthorized user to view only unprotected pages. Logged in users will be able to view pages that will be protected from unauthorized access by using our **privateRoute** higher order component (HOC).
+
+The basic flow of the application contains three parts.
 
 1. An unauthenticated user lands on the **home page**. This page is visible to _any_ user, authenticated or not.
 2. The user then can navigate to the **login page**. And proceed to fill the form. 
@@ -206,7 +205,7 @@ function Login() {
 export default Login;
 ```
 
-We should be able to now enter our email and password into our login form located at `localhost:3000`
+We should be able to now enter our email and password into our login form located at `http://localhost:3000`
 
 {{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/todo-add-login-endpoint.gif" alt="Login Page Success" >}}
 
@@ -216,7 +215,7 @@ There was no actual request being made here, just an alert showing us the form f
 
 I am using axios over fetch because, well... I just havent found good enough documentation on Fetch for me to understand how to use it both in a Node, and Browser context. Axios I am certain works with both, and works well.
 
-Now let's create an _postLogin_ api call with Axios.
+Now let's create an _postLogin_ api call with [axios](https://github.com/axios/axios).
 
 ```typescript
 // services/rest_service.ts
@@ -258,7 +257,6 @@ const post = (url: string, data: URLSearchParams) => {
 Our **AuthToken** class will attempt to decode the JWT using the [jwt-decode](https://github.com/auth0/jwt-decode) library. We we will then have methods to check if the token is expired/valid, and what the expiration date is.
 
 The decoded JWT will contain the authenticated users _email_ and _expiresAt_ timestamp.  
-
 
 ```typescript
 // services/auth_token.ts
@@ -325,7 +323,7 @@ export class AuthToken {
 
 Remove the alert message and store the JWT string into cookies using the [js-cookie](https://github.com/js-cookie/js-cookie) library.
 
-**Note: You should not save the **AuthToken** class into cookies** as it will be flattened into a JSON string, and returned as a standard object when retrieved.
+**Note: You should not save the AuthToken class into cookies** as it will be flattened into a JSON string, and returned as a standard object when retrieved.
 
 ```typescript
 // services/rest_service.ts
@@ -341,7 +339,7 @@ export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | voi
 }
 ```
 
-### Add a _privateRoute_ high order component (HOC)
+### Add a _privateRoute_ higher order component (HOC)
 
 A HOC is effectively a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) on a React component. 
 
@@ -558,16 +556,26 @@ export default privateRoute(Dashboard);
 
 You can see that immediately on logout the user is redirected to the login page. The user no longer has access to the restricted dashboard page after logging out.  
 
-### Add a Logout Page
+### Bonus: Add a Logout Page
 
+```jsx
+// pages/logout.tsx
+
+import { Component } from "react";
+import { AuthProps, privateRoute } from "../components/private_route";
+
+class Logout extends Component<AuthProps> {
+  componentDidMount(): void {
+    this.props.auth.logout();
+  }
+
+  render() {
+    return "Logging Out...";
+  }
+}
+
+export default privateRoute(Logout);
+```
 
 
 ### Continue to [part 3 - adding pre-render asynchronous calls using **getInitialProps**.]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
-
-The source code can be found here: https://github.com/jasonraimondi/nextjs-jwt-example
-
-* [Part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}})
-* [Part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
-* [Part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
-* [Part 4]({{< ref "/posts/031_authenticating-nextjs-part-4.md" >}})
-* [Part 5]({{< ref "/posts/032_authenticating-nextjs-part-5.md" >}})
