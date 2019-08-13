@@ -1,5 +1,5 @@
 +++
-title = "Securing a Next.js Application with JWT and a private route higher order component. "
+title = "Securing a Next.js Application with JWT and a private route higher order component"
 slug = "authenticating-nextjs-part-2"
 date = "2019-08-10T04:30:00-0700"
 description = "Part 2: Authenticating and securing a nextjs application"
@@ -302,6 +302,8 @@ export class AuthToken {
 
 ### Store JWT string into cookies
 
+
+
 Now that we have the **AuthToken** class all set up, we need to add functionality to actually store the token into our cookies. 
 
 ```typescript
@@ -339,7 +341,7 @@ export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | voi
 }
 ```
 
-### Add a _privateRoute_ higher order component (HOC)
+### Add a _privateRoute_ higher order component (HOC) to secure the app from unauthorized access
 
 A HOC is effectively a [decorator](https://en.wikipedia.org/wiki/Decorator_pattern) on a React component. 
 
