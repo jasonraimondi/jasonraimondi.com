@@ -302,7 +302,7 @@ export class AuthToken {
 
 ### Store JWT string into cookies
 
-
+ADD WHY TO STORE INTO COOKIES
 
 Now that we have the **AuthToken** class all set up, we need to add functionality to actually store the token into our cookies. 
 

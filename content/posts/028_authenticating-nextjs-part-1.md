@@ -30,9 +30,7 @@ Everything we are working on can be found on GitHub at https://github.com/jasonr
 
 ## Outline the REST API
 
-We will be creating/mocking a REST API with an authentication flow. Any unauthorized user will be able to access and view a single **unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
-
-The backend language or framework that is running our REST API that we are going to create is less important than the actual API that we are going to expose. The language/framework is interchangeable; the API is the piece we want to reinforce here.
+Lets create a basic REST API with an authentication flow. I am referencing the [Echo JWT Recipe](https://echo.labstack.com/cookbook/jwt) that is a jumping off point for our JWT secured REST API.
 
 ```bash
 GET  http://localhost:1323/api/unrestricted # NO AUTH REQUIRED
@@ -40,7 +38,62 @@ POST http://localhost:1323/api/login        # NO AUTH REQUIRED
 GET  http://localhost:1323/api/restricted   # AUTHORIZATION HEADER REQUIRED 
 ```
 
-I am referencing the [Echo JWT Recipe](https://echo.labstack.com/cookbook/jwt) that is a jumping off point for our JWT secured REST API.
+Anyone will be able to access the **/unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
+
+```go
+package main
+
+import (
+    "net/http"
+    "time"
+
+    "github.com/dgrijalva/jwt-go"
+    "github.com/labstack/echo"
+    "github.com/labstack/echo/middleware"
+)
+
+func accessible(c echo.Context) error {
+    return c.JSON(http.StatusOK, map[string]string{
+        "message": "Success! The status is 200",
+    })
+}
+
+func restricted(c echo.Context) error {
+    user := c.Get("user").(*jwt.Token)
+    claims := user.Claims.(jwt.MapClaims)
+    email := claims["email"].(string)
+    return c.JSON(http.StatusOK, map[string]string{
+        "message": "hello email address: " + email,
+    })
+}
+
+func main() {
+    e := echo.New()
+
+    // Middleware
+    e.Use(middleware.Logger())
+    e.Use(middleware.Recover())
+
+    e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+        AllowOrigins: []string{"http://localhost:3000"},
+        AllowHeaders: []string{echo.HeaderAuthorization, echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+        AllowMethods: []string{http.MethodGet, http.MethodPost, http.MethodOptions},
+    }))
+
+    // Login route
+    e.POST("/api/login", login)
+
+    // Unauthenticated route
+    e.GET("/api/unrestricted", accessible)
+
+    // Restricted group
+    r := e.Group("/api/restricted")
+    r.Use(middleware.JWT([]byte("secret")))
+    r.GET("", restricted)
+
+    e.Logger.Fatal(e.Start(":1323"))
+}
+```
 
 ## Submit the GET requests
 
@@ -64,9 +117,40 @@ HTTP/1.1 400 Bad Request
 {"message":"missing or malformed jwt"}
 ```
 
-## Submit the login POST request
+## The login POST request
 
 Next I am going to make a POST request with my email and password passed as form data to the API's login page. The API will receive the request and begin the flow by verifying the user exists, and the password is correct. 
+
+```go
+func login(c echo.Context) error {
+    email := c.FormValue("email")
+    password := c.FormValue("password")
+
+    // Throws unauthorized error
+    if email != "rickety_cricket@example.com" || password != "shhh!" {
+        return echo.ErrUnauthorized
+    }
+
+    // Create token
+    token := jwt.New(jwt.SigningMethodHS256)
+
+    // Set claims
+    claims := token.Claims.(jwt.MapClaims)
+    claims["email"] = "rickety_cricket@example.com"
+    claims["admin"] = true
+    claims["exp"] = time.Now().Add(time.Hour * 72).Unix()
+
+    // Generate encoded token and send it as response.
+    t, err := token.SignedString([]byte("secret"))
+    if err != nil {
+        return err
+    }
+
+    return c.JSON(http.StatusOK, map[string]string{
+        "token": t,
+    })
+}
+```
 
 ### Successful login
 
