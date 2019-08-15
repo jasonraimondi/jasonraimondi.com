@@ -40,15 +40,11 @@ POST http://localhost:1323/api/login        # NO AUTH REQUIRED
 GET  http://localhost:1323/api/restricted   # AUTHORIZATION HEADER REQUIRED 
 ```
 
-The user will be required to submit a login POST in order to retrieve their authorization token for the restricted route.
+Anyone will be able to access the **/unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
 
 ## Adding an unrestricted and open endpoint
 
-Anyone will be able to access the **/unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
-
-### Create the GET endpoint
-
-The first endpoint is just a really simple endpoint that returns a json object with a key and value of `"message": "Success! The status is 200"`.
+The first endpoint is just a really simple endpoint that returns a json object with a key and value of `"message": "Success! The status is 200"`. 
 
 ```go
 package main
