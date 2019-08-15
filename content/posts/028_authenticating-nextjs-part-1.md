@@ -1,5 +1,5 @@
 +++
-title = "Authenticating and securing a Next.js app from unauthorized access"
+title = "Create a JWT secured REST Api using Golang"
 slug = "authenticating-nextjs-part-1"
 date = "2019-08-10T03:30:00-0700"
 description = "Part 1: The REST Api"
@@ -28,9 +28,11 @@ categories = [
 
 Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 1, take a look in the [api](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/api) directory.
 
+For this part, I am referencing the [Echo JWT Recipe](https://echo.labstack.com/cookbook/jwt) as an excellent starting point.
+
 ## Outline the REST API
 
-Lets create a basic REST API with an authentication flow. I am referencing the [Echo JWT Recipe](https://echo.labstack.com/cookbook/jwt) that is a jumping off point for our JWT secured REST API.
+Let's take a look at the outline of the REST API. We are going to create two open routes and one secure route that will require authentication.
 
 ```bash
 GET  http://localhost:1323/api/unrestricted # NO AUTH REQUIRED
@@ -38,64 +40,47 @@ POST http://localhost:1323/api/login        # NO AUTH REQUIRED
 GET  http://localhost:1323/api/restricted   # AUTHORIZATION HEADER REQUIRED 
 ```
 
+The user will be required to submit a login POST in order to retrieve their authorization token for the restricted route.
+
+## Adding an unrestricted and open endpoint
+
 Anyone will be able to access the **/unrestricted** endpoint. A user will be able to authenticate via a POST containing a valid _email_ and _password_ to the **login** endpoint and receiving a JWT. Authenticated users can then pass the JWT as an **Authorization** header to the **restricted** endpoint to view the content. Any requests without the **Authorization** header will be denied.
+
+### Create the GET endpoint
+
+The first endpoint is just a really simple endpoint that returns a json object with a key and value of `"message": "Success! The status is 200"`.
 
 ```go
 package main
 
 import (
-    "net/http"
-    "time"
-
-    "github.com/dgrijalva/jwt-go"
     "github.com/labstack/echo"
     "github.com/labstack/echo/middleware"
+    "net/http"
 )
-
-func accessible(c echo.Context) error {
-    return c.JSON(http.StatusOK, map[string]string{
-        "message": "Success! The status is 200",
-    })
-}
-
-func restricted(c echo.Context) error {
-    user := c.Get("user").(*jwt.Token)
-    claims := user.Claims.(jwt.MapClaims)
-    email := claims["email"].(string)
-    return c.JSON(http.StatusOK, map[string]string{
-        "message": "hello email address: " + email,
-    })
-}
 
 func main() {
     e := echo.New()
 
-    // Middleware
+    // logging and panic recovery middleware
     e.Use(middleware.Logger())
     e.Use(middleware.Recover())
 
-    e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-        AllowOrigins: []string{"http://localhost:3000"},
-        AllowHeaders: []string{echo.HeaderAuthorization, echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
-        AllowMethods: []string{http.MethodGet, http.MethodPost, http.MethodOptions},
-    }))
-
-    // Login route
-    e.POST("/api/login", login)
-
-    // Unauthenticated route
-    e.GET("/api/unrestricted", accessible)
-
-    // Restricted group
-    r := e.Group("/api/restricted")
-    r.Use(middleware.JWT([]byte("secret")))
-    r.GET("", restricted)
-
+    // unrestricted route
+    e.GET("/api/unrestricted", unrestricted)
+    
+    // listen on localhost:1323
     e.Logger.Fatal(e.Start(":1323"))
+}
+
+func unrestricted(c echo.Context) error {
+    return c.JSON(http.StatusOK, map[string]string{
+        "message": "Success! The status is 200",
+    })
 }
 ```
 
-## Submit the GET requests
+### Submit the GET requests to the unprotected endpoint
 
 To demonstrate the endpoints that we have created, let's request them on the CLI real quick. First we will hit the unrestricted endpoint. 
 
@@ -104,8 +89,62 @@ curl -i localhost:1323/api/unrestricted
 
 HTTP/1.1 200 OK
 
-{"message":"this route is unauthenticated!"}
+{"message":"Success! The status is 200"}
 ```
+
+## Create restricted REST API endpoint with JWT middleware protection
+
+I am using the [Echo Framework JWT middleware](https://echo.labstack.com/middleware/jwt), but the implementation can be replicated in any language or framework.  
+
+We will use the middleware to create a restricted endpoint that only authenticated users can access. 
+
+```go
+package main
+
+import (
+    "github.com/dgrijalva/jwt-go"
+    "github.com/labstack/echo"
+    "github.com/labstack/echo/middleware"
+    "net/http"
+)
+
+// Jwt signing key, this could be anything. Changing it would 
+// effectively log out all users, but is not destructive
+const jwtSecretKey = "my-super-secret-key"
+
+func main() {
+    e := echo.New()
+
+    e.Use(middleware.Logger())
+    e.Use(middleware.Recover())
+
+    e.GET("/api/unrestricted", unrestricted)
+
+    // add a restricted group
+    r := e.Group("/api")
+    // apply the jwt middleware to the route group
+    r.Use(middleware.JWT([]byte(jwtSecretKey)))
+    r.GET("/restricted", restricted)
+    
+    // listen on localhost:1323
+    e.Logger.Fatal(e.Start(":1323"))
+}
+
+func restricted(c echo.Context) error {
+    // do a fancy dance to get the token's email
+    user := c.Get("user").(*jwt.Token)
+    claims := user.Claims.(jwt.MapClaims)
+    email := claims["email"].(string)
+    
+    return c.JSON(http.StatusOK, map[string]string{
+        "message": "hello email address: " + email,
+    })
+}
+```
+
+This restricted endpoint that responds with a json object with a key and value of `"message": "hello email address: " + email`
+
+### Request the restricted endpoint without any credentials
 
 Now let's hit the restricted endpoint without providing any credentials. We receive a response status code of 400, and a message with the supplied error.
 
@@ -117,40 +156,74 @@ HTTP/1.1 400 Bad Request
 {"message":"missing or malformed jwt"}
 ```
 
-## The login POST request
-
-Next I am going to make a POST request with my email and password passed as form data to the API's login page. The API will receive the request and begin the flow by verifying the user exists, and the password is correct. 
+## Create a login function to return a token to the user upon successful login
 
 ```go
+package main
+
+import (
+    "github.com/dgrijalva/jwt-go"
+    "github.com/labstack/echo"
+    "github.com/labstack/echo/middleware"
+    "net/http"
+)
+
+const jwtSecretKey = "my-super-secret-key"
+
+func main() {
+    e := echo.New()
+
+    e.Use(middleware.Logger())
+    e.Use(middleware.Recover())
+
+    e.GET("/api/unrestricted", unrestricted)
+    // add the login route
+    e.POST("/api/login", login)
+
+    // add a restricted group
+    r := e.Group("/api")
+    // apply the jwt middleware to the route group
+    r.Use(middleware.JWT([]byte(jwtSecretKey)))
+    r.GET("/restricted", restricted)
+    
+    e.Logger.Fatal(e.Start(":1323"))
+}
+
 func login(c echo.Context) error {
     email := c.FormValue("email")
     password := c.FormValue("password")
 
-    // Throws unauthorized error
+    // throws unauthorized error
     if email != "rickety_cricket@example.com" || password != "shhh!" {
         return echo.ErrUnauthorized
     }
 
-    // Create token
+    // create token
     token := jwt.New(jwt.SigningMethodHS256)
 
-    // Set claims
+    // set claims
     claims := token.Claims.(jwt.MapClaims)
+    // add any key value fields to the token 
     claims["email"] = "rickety_cricket@example.com"
-    claims["admin"] = true
     claims["exp"] = time.Now().Add(time.Hour * 72).Unix()
 
-    // Generate encoded token and send it as response.
+    // generate encoded token and send it as response.
     t, err := token.SignedString([]byte("secret"))
     if err != nil {
         return err
     }
-
+    
+    // return the token for the consumer to grab and save
     return c.JSON(http.StatusOK, map[string]string{
         "token": t,
     })
 }
 ```
+
+### The login POST request
+
+Next I am going to make a POST request with my email and password passed as form data to the API's login page. The API will receive the request and begin the flow by verifying the user exists, and the password is correct. 
+
 
 ### Successful login
 
