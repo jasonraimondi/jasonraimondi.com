@@ -17,9 +17,9 @@ draft = true
 
 ## Overview
 
-* In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
-* In [part 2]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
-* In [this part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+* In [the first part]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
+* In [the previous part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we created the user facing Next.js application
+* In [this part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will be adding pre-render async api calls to our Next.js application
 
 ## Source Code
 
@@ -35,6 +35,8 @@ The goal of this one is to show how ot make pre-rendered async.
 
 ## Add ApiCallout component
 
+This is going to be just a dumb component with a message that makes it obvious this part is the api response. 
+
 ```jsx
 // components/api_callout.tsx
 
@@ -48,12 +50,16 @@ export function ApiCallout({ message }: any) {
 }
 ```
 
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/api-callout.png" alt="Show the ApiCallout component" portrait="true" >}}
+
+
 ## Add rest call go unprotected page
 
 If you open up your `services/rest_services.ts` file, you should have the _login_ **POST** method set up from [part 2]({{< relref "/posts/029_authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
 
 ```typescript
 // services/rest_service.ts
+
 import axios, { AxiosRequestConfig } from "axios";
 import { LoginInputs } from "../pages/login";
 import { catchAxiosError } from "./error";
@@ -69,7 +75,8 @@ export const fetchUnrestricted = async () => {
 // this endpoint handles the axios failure, and since we are sharing this, our 
 // consumers dont need to keep catching failures up the chain
 const get = async (url: string) => {
-  return await axios.get(url, baseConfig).catch(catchAxiosError)
+  // see the catchAxiosError function here and in the next code section
+  return await axios.get(url, baseConfig).catch(catchAxiosError) 
 };
 
 // here we will handle the response and return an appropriate message response
@@ -78,12 +85,13 @@ const messageFromResponse = (res: any) => {
   if (res.error) {
     message = res.error;
   } else if (res.data && res.data.message) {
-    message = res.data.message
+    // this is the "message" returned from our api
+    message = res.data.message 
   }
   return message;
 };
 
-// existing methods folded for berevity
+// existing methods shortened for berevity
 type errorMessage = string;
 const baseConfig: AxiosRequestConfig = { baseURL: "http://localhost:1323" };
 export const postLogin = async (inputs: LoginInputs): Promise<errorMessage | void> => {...};
@@ -113,7 +121,10 @@ export function catchAxiosError(err: AxiosError): ErrorResponse {
 }
 ```
 
-## Add to the index page
+## Add a pre-render async API call to the index page
+
+Now let's add an API call to our [server's unrestricted endpoint]({{< relref "posts/028_authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) on the index page of our Next.js. 
+
 
 ```jsx
 // pages/index.tsx
@@ -131,8 +142,8 @@ type Props = {
 function Index({ message }: Props) {
   return <>
     <Links/>
-    <p>The following is a result of a server side api call pre-render. If you right click and view source, the response from the API call will be visible in the source.</p>
     <ApiCallout message={message}/>
+    <p>The following is a result of a server side api call pre-render. If you right click and view source, the response from the API call will be visible in the source.</p>
     <p>This is different than say... Inspect Element, which shows the client side rendered content.</p>
     <p>This means that search engines can scrape this page, and immediately see the content, without trusting that the search engines can render SPA's.</p>
   </>;
@@ -147,6 +158,80 @@ Index.getInitialProps = async (ctx: NextPageContext) => {
 
 export default Index;
 ```
+
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="" >}}
+
+Our REST API from part 1 needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
+
+## See the api response in the page rendered "View Source"
+
+The following is a result of a server side api call happening in the [`getInitialProps` pre-render method](https://nextjs.org/docs#fetching-data-and-component-lifecycle). If you right click and view source, the response from the API call will be visible in the source. This means that search engines can scrape this page, and immediately see the page without a client side load. 
+
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-api-call-response-in-source.gif" alt="" >}}
+
+The inclusion of the response in **"View Source..."** is the the important part here. **View Source** shows the HTML as it was delivered from the web server to our browser; **Inspect Element** shows the current state of the DOM tree after DOM manipulation by JavaScript.<sup>[[0]](https://www.codebyamir.com/blog/view-source-vs-inspect-element)</sup>
+
+**The difference between a traditional `create-react-app` and a `ssr` Next.js application is the HTML delivered from the web server to the browser.** In a traditional CRA, our HTML would be delivered from the web server to the browser with an identifier marking the entry point of the application such as `id="my-app"`. 
+
+You'd use the `react-dom` library to attach to `#my-app`.
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./component/App";
+
+ReactDOM.render(<App />, document.getElementById("my-app"));
+```
+
+In this setup, React needs to boot on the client side, and then it can fetch the api response and give it to the browser. The HTML delivered to the browser would look something like:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create React App - Client Rendered</title>
+  </head>
+  <body>
+    <main id="my-app"></main>
+  </body>
+  <script src="vendor-bundles-here" ... />
+  <script src="app-bundles-here" ... />
+</html>
+```
+  
+Now for a server rendered react application, the HTML is delivered from the web server to the browser using the pre-render technique:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="next-head-count" content="2"/>
+</head>
+<body>
+<div id="__next">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard (protected)</a></li>
+    </ul>
+    <h2><small style="color:grey">API Call:</small> Success! The status is 200</h2>
+    <p>The following is a result of a server side api call pre-render. If you right click and view source, the response
+        from the API call will be visible in the source.</p>
+    <p>This is different than say... Inspect Element, which shows the client side rendered content.</p>
+    <p>This means that search engines can scrape this page, and immediately see the content, without trusting that the
+        search engines can render SPA&#x27;s.</p></div>
+</body>
+<script src="vendor-handoff-bundles-here" ... />
+<script src="app-handoff-bundles-here" ... />
+</html>
+```
+
+The exact snapshot of the application is delivered to the browser as HTML content, and then the browser side JavaScript can take it from there, leaving you with a normal React application you've come to know and love.
+
+In this example, this endpoint is a really basic. Imagine if your Next.js application homepage needs to display a list of recipes, or travel destinations. All of your recipe or travel information will be delivered from the webserver directly to the browser. This really helps search engine and other bots scrape your react application and help with SEO.
+
+This can all be done before the initial render, giving the user (or bot) a fully loaded page right from the get-go. Search engine bots will be able to scrape this page and see the entire content available on the first render, without having to put your trust in their client side rendering abilities.
+
 ## Add rest call with authorization header
 
 ```typescript
@@ -205,5 +290,3 @@ Dashboard.getInitialProps = async ({ auth }: AuthProps) => {
 
 export default privateRoute(Dashboard);
 ```
-
-## Show view source

@@ -1,5 +1,5 @@
 +++
-title = "Securing a Next.js Application with JWT and a private route higher order component"
+title = "Securing a Next.js application with JWT and a private route higher order component"
 slug = "authenticating-nextjs-part-2"
 date = "2019-08-10T04:30:00-0700"
 description = "Part 2: Authenticating and securing a nextjs application"
@@ -17,9 +17,9 @@ draft = true
 
 ## Overview
 
-* In [part 1]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the REST API
-* In [this part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the Next.js application
-* In [part 3]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+* In [the previous part]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
+* In [this part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will be creating the user facing Next.js application
+* In [the next part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
 ## Source Code
 
@@ -515,7 +515,7 @@ So now after a successful login attempt, we will see our dashboard with the full
 
 {{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
 
-### Add Logout function
+### Add logout function
 
 ```jsx
   static async logout() {
@@ -559,7 +559,7 @@ export default privateRoute(Dashboard);
 
 You can see that immediately on logout the user is redirected to the login page. The user no longer has access to the restricted dashboard page after logging out.  
 
-### Bonus: Add a Logout Page
+### Bonus: Add a logout page
 
 ```jsx
 // pages/logout.tsx
@@ -580,5 +580,6 @@ class Logout extends Component<AuthProps> {
 export default privateRoute(Logout);
 ```
 
+You can add a simple logout page which would allow users to navigate to `/logout` to be logged out which would be a much more typical use case.
 
 ### Continue to [part 3 - adding pre-render asynchronous calls using **getInitialProps**.]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}})
