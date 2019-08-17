@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/sitemap.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +20,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
