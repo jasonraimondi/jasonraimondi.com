@@ -160,7 +160,7 @@ export default Index;
 
 {{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="Shows the echo server logs along side the Next.js application navigation" >}}
 
-Our REST API from part 1 needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
+Our REST API [from previously]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
 
 ## See the api response in the page rendered "View Source"
 

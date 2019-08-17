@@ -512,7 +512,7 @@ Now users will actually be redirected on login, thus protecting our dashboard. T
 
 ### Successful login to dashboard
 
-So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined in part 1]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}).
+So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined previously]({{< ref "/posts/028_authenticating-nextjs-part-1.md" >}}).
 
 {{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
 

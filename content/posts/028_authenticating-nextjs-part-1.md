@@ -1,8 +1,8 @@
 +++
-title = "Create a JWT secured REST Api using Golang"
+title = "Create a secured REST Api using JWT and Golang"
 slug = "authenticating-nextjs-part-1"
 date = "2019-08-16T03:30:00-0700"
-description = "Part 1: The REST Api"
+description = "Create a secured REST Api using JWT and Golang"
 tags = [
     "authenticating-nextjs",
     "nextjs",
@@ -25,7 +25,7 @@ categories = [
 
 ## Source Code
 
-Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 1, take a look in the [api](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/api) directory.
+Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For this part, take a look in the [api](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/api) directory.
 
 For this part, I am referencing the [Echo JWT Recipe](https://echo.labstack.com/cookbook/jwt) as an excellent starting point.
 
