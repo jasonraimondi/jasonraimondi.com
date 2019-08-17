@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://jasonraimondi.com"
 title = "Full Stack Software Engineer"
 theme ="hugo-theme-developer-portfolio"
 languageCode = "en-us"
