@@ -2,7 +2,7 @@
 title = "Add pre-rendered async rest api calls in getInitialProps()"
 slug = "authenticating-nextjs-part-3"
 date = "2019-08-16T05:30:00-0700"
-description = "Part 3: Authenticating and securing a nextjs application"
+description = "Authenticating and securing a nextjs application"
 tags = [
     "authenticating-nextjs",
     "nextjs",

@@ -304,7 +304,7 @@ export class AuthToken {
 
 ### Store JWT string into cookies
 
-ADD WHY TO STORE INTO COOKIES
+We store our token into cookies instead of localstorage or sessionstorage because we want the token to be available to both the client and the server. Only on the client, in the browser, is local and session storage available.
 
 Now that we have the **AuthToken** class all set up, we need to add functionality to actually store the token into our cookies. 
 
@@ -327,7 +327,7 @@ export class AuthToken {
 
 Remove the alert message and store the JWT string into cookies using the [js-cookie](https://github.com/js-cookie/js-cookie) library.
 
-**Note: You should not save the AuthToken class into cookies** as it will be flattened into a JSON string, and returned as a standard object when retrieved.
+**Note: You should save the JWT string and not the entire AuthToken class into cookies,** as it will be flattened into a JSON string, and returned as a standard object when retrieved. This means that any functions (such as our `isValid` getter methods) will not be available until reinitialized as an AuthToken.
 
 ```typescript
 // services/rest_service.ts
