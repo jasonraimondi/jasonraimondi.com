@@ -2,7 +2,7 @@
 title = "Securing a Next.js application with JWT and a private route higher order component"
 slug = "authenticating-nextjs-part-2"
 date = "2019-08-16T04:30:00-0700"
-description = "Part 2: Authenticating and securing a nextjs application"
+description = "Authenticating and securing a nextjs application"
 tags = [
     "authenticating-nextjs",
     "nextjs",
@@ -24,7 +24,7 @@ categories = [
 
 ## Source Code
 
-Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For part 2, take a look in the [web](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/web) directory.
+Everything we are working on can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example. For this part, take a look in the [web](https://github.com/jasonraimondi/nextjs-jwt-example/tree/master/web) directory.
 
 ## The Next.js app
 
