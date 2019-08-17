@@ -1,18 +1,19 @@
 +++
 title = "Securing a Next.js application with JWT and a private route higher order component"
 slug = "authenticating-nextjs-part-2"
-date = "2019-08-10T04:30:00-0700"
+date = "2019-08-16T04:30:00-0700"
 description = "Part 2: Authenticating and securing a nextjs application"
 tags = [
     "authenticating-nextjs",
     "nextjs",
+    "ssr",
     "react",
 ]
 categories = [
     "frontend",
-    "Backend",
+    "backend",
+    "software",
 ]
-draft = true
 +++ 
 
 ## Overview

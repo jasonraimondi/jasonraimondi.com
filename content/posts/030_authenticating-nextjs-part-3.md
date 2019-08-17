@@ -1,18 +1,19 @@
 +++
 title = "Add pre-rendered async rest api calls in getInitialProps()"
 slug = "authenticating-nextjs-part-3"
-date = "2019-08-10T05:30:00-0700"
+date = "2019-08-16T05:30:00-0700"
 description = "Part 3: Authenticating and securing a nextjs application"
 tags = [
     "authenticating-nextjs",
     "nextjs",
+    "ssr",
     "react",
 ]
 categories = [
+    "software",
     "frontend",
-    "Backend",
+    "backend",
 ]
-draft = true
 +++ 
 
 ## Overview
@@ -123,8 +124,7 @@ export function catchAxiosError(err: AxiosError): ErrorResponse {
 
 ## Add a pre-render async API call to the index page
 
-Now let's add an API call to our [server's unrestricted endpoint]({{< relref "posts/028_authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) on the index page of our Next.js. 
-
+Now let's add the `fetchUnrestricted` API call to our [server's unrestricted endpoint]({{< relref "posts/028_authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) in the asynchronous `getInitialProps` method that is available on all Next.js pages. 
 
 ```jsx
 // pages/index.tsx
@@ -150,7 +150,6 @@ function Index({ message }: Props) {
 }
 
 Index.getInitialProps = async (ctx: NextPageContext) => {
-  // await redirectIfAuthenticated(ctx);
   const message: string = await fetchUnrestricted();
   return { message };
 };
@@ -159,7 +158,7 @@ Index.getInitialProps = async (ctx: NextPageContext) => {
 export default Index;
 ```
 
-{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="Shows the echo server logs along side the Next.js application navigation" >}}
 
 Our REST API from part 1 needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
 
@@ -167,7 +166,7 @@ Our REST API from part 1 needs to be running in order to get a successful respon
 
 The following is a result of a server side api call happening in the [`getInitialProps` pre-render method](https://nextjs.org/docs#fetching-data-and-component-lifecycle). If you right click and view source, the response from the API call will be visible in the source. This means that search engines can scrape this page, and immediately see the page without a client side load. 
 
-{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-api-call-response-in-source.gif" alt="" >}}
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-api-call-response-in-source.gif" alt="Shows the api call in the html delivered view-source" >}}
 
 The inclusion of the response in **"View Source..."** is the the important part here. **View Source** shows the HTML as it was delivered from the web server to our browser; **Inspect Element** shows the current state of the DOM tree after DOM manipulation by JavaScript.<sup>[[0]](https://www.codebyamir.com/blog/view-source-vs-inspect-element)</sup>
 
@@ -205,7 +204,7 @@ Now for a server rendered react application, the HTML is delivered from the web 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="next-head-count" content="2"/>
+    <title>Next.js App - Server Rendered</title>
 </head>
 <body>
 <div id="__next">
@@ -234,9 +233,10 @@ This can all be done before the initial render, giving the user (or bot) a fully
 
 ## Add rest call with authorization header
 
+Let's add a function to make a rest call to the restricted route with the proper Authorization header containing the JWT bearer token
+
 ```typescript
 // services/rest_service.ts
-
 
 export const fetchRestricted = async (auth: AuthToken) => {
   // add the Authorization header
@@ -255,6 +255,8 @@ const get = async (url: string, config: AxiosRequestConfig = {}) => {
 ```
 
 ## Add to the dashboard page
+
+Now let's add the `fetchRestricted` method to our asynchronous `getInitialProps` function available on all Next.js pages. We need to pass the required AuthToken to the `fetchRestricted` method so the call will have the proper credentials to view the response.
 
 ```jsx
 // pages/dashboard.tsx
@@ -283,6 +285,8 @@ function Dashboard({ message, auth }: Props) {
   </>
 }
 
+// add the fetchRestricted async call to the getInitialProps method
+// wait for the response before returning to the browser.
 Dashboard.getInitialProps = async ({ auth }: AuthProps) => {
   const message = await fetchRestricted(auth);
   return { message };
@@ -290,3 +294,41 @@ Dashboard.getInitialProps = async ({ auth }: AuthProps) => {
 
 export default privateRoute(Dashboard);
 ```
+
+Let's check out the dashboard page responding to us with our full 
+
+{{< image/pop src="https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/08/show-login-and-protected-route-with-api.gif" alt="Show the login and protected route with ssr prerender api call" >}}
+
+And just for good measure, let's show you the HTML source of this page:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next.js App - Authenticated user viewing server rendered protected page</title>
+</head>
+<body>
+<div id="__next">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/dashboard">Dashboard (protected)</a></li>
+        <li><a href="/logout">Logout (protected)</a></li>
+    </ul>
+    <h2><small style="color:grey">API Call:</small> hello email address: rickety_cricket@example.com</h2>
+    <p><strong>user</strong>: rickety_cricket@example.com</p>
+    <p><strong>isValid</strong>: true</p>
+    <p><strong>isExpired</strong>: false</p>
+    <p><strong>authorizationString</strong>: Bearer
+        eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJyaWNrZXR5X2NyaWNrZXRAZXhhbXBsZS5jb20iLCJleHAiOjE1NjYyNTkyOTd9.pG6KshrfFPxU27J4zXcjHMlvBoWirTXdoijPXPZ4gLA
+    </p>
+    <p><strong>expiresAt</strong>: Mon Aug 19 2019 17:01:37 GMT-0700 (Pacific Daylight Time)</p>
+    <hr/>
+</div>
+</body>
+</html>
+```
+
+## Fin
+
+Code examples can be found on GitHub at https://github.com/jasonraimondi/nextjs-jwt-example.

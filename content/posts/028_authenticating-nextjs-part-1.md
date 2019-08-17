@@ -1,7 +1,7 @@
 +++
 title = "Create a JWT secured REST Api using Golang"
 slug = "authenticating-nextjs-part-1"
-date = "2019-08-10T03:30:00-0700"
+date = "2019-08-16T03:30:00-0700"
 description = "Part 1: The REST Api"
 tags = [
     "authenticating-nextjs",
@@ -9,14 +9,12 @@ tags = [
     "react",
     "jwt",
     "golang",
-    "echo-framework"
+    "echo-framework",
 ]
 categories = [
     "software",
-    "frontend",
     "backend",
 ]
-draft = true
 +++
 
 ## Overview
@@ -255,7 +253,6 @@ func restricted(c echo.Context) error {
 ```
 
 This restricted endpoint that responds with a JSON object of `{"message": "hello email address: " + email}`
-
 
 ### The restricted request failing (no Authorization header)
 
