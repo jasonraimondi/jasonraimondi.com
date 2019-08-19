@@ -1,8 +1,8 @@
 +++
-title = "Add pre-rendered async rest api calls in getInitialProps()"
+title = "Add server side rendered async api calls to your Next.js application that resolve before the initial page load"
 slug = "authenticating-nextjs-part-3"
 date = "2019-08-16T05:30:00-0700"
-description = "Authenticating and securing a nextjs application"
+description = "Add api calls to your application that can all be resolved before the initial render, giving the user (or bot) a fully loaded page right from the get-go."
 tags = [
     "authenticating-nextjs",
     "nextjs",
@@ -29,10 +29,6 @@ Everything we are working on can be found on GitHub at https://github.com/jasonr
 ## Add pre-rendered async rest api calls in getInitialProps
 
 We will be creating a Next.js application with an authentication flow, that will allow the an unauthorized user to view unprotected pages. Only logged in users will be able to view pages that will be using our **privateRoute** high order component (HOC).
-
-Note: getInitialProps runs the `JSON.serialize` method.
-
-The goal of this one is to show how ot make pre-rendered async.
 
 ## Add ApiCallout component
 
