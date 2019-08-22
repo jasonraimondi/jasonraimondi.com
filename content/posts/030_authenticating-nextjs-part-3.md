@@ -1,8 +1,11 @@
 +++
 title = "Add server side rendered async api calls to your Next.js application that resolve before the initial page load"
-slug = "authenticating-nextjs-part-3"
+slug = "add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load"
 date = "2019-08-16T05:30:00-0700"
 description = "Add api calls to your application that can all be resolved before the initial render, giving the user (or bot) a fully loaded page right from the get-go."
+aliases = [
+    "/posts/authenticating-nextjs-part-3/",
+]
 tags = [
     "authenticating-nextjs",
     "nextjs",

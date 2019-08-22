@@ -1,8 +1,11 @@
 +++
-title = "Securing a Next.js application with JWT and a private route higher order component"
-slug = "authenticating-nextjs-part-2"
+title = "Secure a Next.js application with JWT and a private route higher order component"
+slug = "secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component"
 date = "2019-08-16T04:30:00-0700"
 description = "Authenticating and securing a nextjs application"
+aliases = [
+    "/posts/authenticating-nextjs-part-2/",
+]
 tags = [
     "authenticating-nextjs",
     "nextjs",

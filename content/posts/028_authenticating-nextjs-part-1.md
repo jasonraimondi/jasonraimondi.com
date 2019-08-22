@@ -1,8 +1,11 @@
 +++
-title = "Create a secured REST Api using JWT and Golang"
-slug = "authenticating-nextjs-part-1"
+title = "Create a secured REST Api for a Next.js application using JWT and Golang"
+slug = "create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang"
 date = "2019-08-16T03:30:00-0700"
 description = "Create a secured REST Api using JWT and Golang"
+aliases = [
+    "/posts/authenticating-nextjs-part-1/",
+]
 tags = [
     "authenticating-nextjs",
     "nextjs",
