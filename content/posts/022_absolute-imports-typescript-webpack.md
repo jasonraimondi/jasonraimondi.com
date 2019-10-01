@@ -1,11 +1,13 @@
 +++
-slug = "fully-qualified-name-in-typescript-absolute-imports"
-title = "Fully qualified namespaces in TypeScript (absolute imports)"
-description = "Absolute Imports in TypeScript"
+slug = "absolute-imports-with-typescript-and-webpack"
+title = "Absolute imports with TypeScript and Webpack"
+description = "Absolute Imports in TypeScript using the tsconfig path resolver."
 date = 2019-02-23
+lastmod = 2019-10-01
+aliases = [
+    "/posts/fully-qualified-name-in-typescript-absolute-imports/",
+]
 tags = [
-  "namespaces", 
-  "fully qualified namespace", 
   "typescript", 
   "webpack",
   "tsconfig.json"
