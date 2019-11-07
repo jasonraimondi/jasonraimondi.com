@@ -1,15 +1,26 @@
-FROM digitalcanvasdesign/hugo-nodejs-builder as builder
+FROM node:12-alpine as node
+
+FROM jojomi/hugo:0.54.0 as builder
+## Install node and yarn from node image
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+# COPY --from=node /usr/local/package.json /usr/local/package.json
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+RUN \
+  ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && \
+  ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
+
 WORKDIR /app
-COPY .git /app/.git
-COPY .gitmodules /app/.gitmodules
 RUN apk add --update --no-cache bash git openssh \
-    && git submodule update --init \
-    && cd /app/themes/hugo-theme-developer-portfolio \
-    && npm install
+    && npm install -g postcss-cli autoprefixer
+COPY ./themes/ /app/themes/
+RUN cd /app/themes/hugo-theme-developer-portfolio && npm ci
+
 COPY ./content/ /app/content/
 COPY ./static/ /app/static/
 COPY ./config.toml /app/config.toml
-RUN hugo --source /app --destination /dist --cleanDestinationDir --minify
+
+# RUN hugo --source /app --destination /dist --cleanDestinationDir --minify
+RUN hugo --source /app --destination /dist --cleanDestinationDir
 
 FROM nginx:alpine
 COPY ./nginx /etc/nginx/
