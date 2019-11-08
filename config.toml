@@ -5,6 +5,8 @@ languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 
+paginate = 20
+
 # disqusShortname = "jasonraimondi"
 
 pygmentsCodeFences=true
