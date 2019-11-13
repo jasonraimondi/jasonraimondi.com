@@ -4,3 +4,4 @@
 
 https://github.com/jasonraimondi/hugo-theme-developer-portfolio
 
+[![Actions Status](https://github.com/jasonraimondi/jasonraimondi.com/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/jasonraimondi/jasonraimondi.com/actions)
