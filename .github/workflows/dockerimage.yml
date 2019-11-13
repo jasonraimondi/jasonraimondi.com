@@ -12,5 +12,9 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build Docker image
       run: |
+        docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
         docker build . --file Dockerfile --tag jasonraimondi/jasonraimondi.com:latest
         docker push jasonraimondi/jasonraimondi.com:latest
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
