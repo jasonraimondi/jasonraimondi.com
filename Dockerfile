@@ -12,9 +12,9 @@ RUN \
 WORKDIR /app
 RUN apk add --update --no-cache bash git openssh \
     && npm install -g postcss-cli autoprefixer
-COPY ./themes/ /app/themes/
-RUN cd /app/themes/hugo-theme-developer-portfolio && npm ci
-
+RUN git clone https://github.com/jasonraimondi/hugo-theme-developer-portfolio.git /app/themes/hugo-theme-developer-portfolio \
+    && cd /app/themes/hugo-theme-developer-portfolio \
+    && npm ci
 COPY ./content/ /app/content/
 COPY ./static/ /app/static/
 COPY ./config.toml /app/config.toml
