@@ -28,7 +28,7 @@ I have been professionally developing for the web since 2009. Early on I was pri
 
 My passion is for writing software with a clean architecture. I have been a student of TDD, practicing daily since late 2016. I build applications following the [The Twelve-Factor App](https://12factor.net/) methodology.
 
-I worked received a really fancy piece of paper in 2013 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to maintain my professional work.
+I received a really fancy piece of paper in 2013 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to maintain my professional work.
 
 If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
 
@@ -36,11 +36,7 @@ Feel free to check out my [resume](./resume) or peek at some of [the books I hav
 
 <!-- 
 
-Oh, hello there. 
-
-This wasnt really meant for you, but I can see why you might think it was. One day (hopefully soon) I will update this and either add some cool stuff to the console or more information about my technical skills in the comments, this was just text that I didnt want to lose to VC and forget it existed.
-
-This text:
+https://www.alligator.org/news/local/artist-brings-new-art-to-satchel-s/article_dba753c2-05ff-11e2-af21-001a4bcf887a.html
 
 The Event Farm API was rewritten using TDD practices, and has maintained an 85% coverage on a roughly 200K+ (circa spring 2018) and growing LOC Rest API written in PHP 7.1 using **Domain Driven Design** and a Command/Query JSON REST API. 
 

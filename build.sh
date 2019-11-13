@@ -7,4 +7,4 @@ REPOSITORY="jasonraimondi/jasonraimondi.com"
 TAG=${1:-latest}
 
 docker build -t "$REPOSITORY:$TAG" .
-# docker push "$REPOSITORY:$TAG"
+docker push "$REPOSITORY:$TAG"
