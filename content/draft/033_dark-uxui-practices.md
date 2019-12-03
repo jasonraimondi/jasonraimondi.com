@@ -20,3 +20,9 @@ There are probably many lists out there like this, but this is my list.
 * You cannot scan or QR code the gift card, you have to enter the 27 digit (I didn't actually count) code manually.
 * Credit cards can be saved... but not a gift card?
 * No easy way to save tickets offline, must screenshot.
+
+## Airline Purchases
+
+![Airline Ticket Purchases](https://s3.us-west-1.wasabisys.com/webcdn/posts/2019/11/darkux/google-american-airlines.png)
+* Advertises as free seat selection, when the only perk of upgrading is the seat selection
+* Everything else is a fee or the same as basic economy
