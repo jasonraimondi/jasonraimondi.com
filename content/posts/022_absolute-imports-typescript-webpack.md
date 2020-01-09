@@ -17,6 +17,7 @@ categories = [
     "backend",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/graphic-node-TAHXyTpQBck-unsplash.jpg"
 +++
 
 Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.

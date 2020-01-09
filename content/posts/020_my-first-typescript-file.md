@@ -10,8 +10,8 @@ tags = [
 categories = [
     "frontend"
 ]
-featuredImage = "/posts/2019/01/my-first-typescript-file.png"
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.

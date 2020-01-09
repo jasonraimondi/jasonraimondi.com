@@ -14,6 +14,7 @@ categories = [
     "backend",
     "ops",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/under-construction.jpg"
 +++ 
 
 

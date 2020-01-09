@@ -12,6 +12,7 @@ categories = [
     "frontend",
     "Backend",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/under-construction.jpg"
 +++ 
 
 ## Add page layout and the Tailwind css framework

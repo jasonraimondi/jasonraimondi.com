@@ -2,9 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/dockerimage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dockerimage.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/random-feature-image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/photos/andrew-ly-zjU1dRlB4HM-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/page_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/install-golang.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/install-golang.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/006_flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/006_flipp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/007_brew-install-everything.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/007_brew-install-everything.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/009_traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/009_traverse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/010_docker-compose-traefik-lets-encrypt.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/010_docker-compose-traefik-lets-encrypt.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/011_testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/011_testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/013_command-bus.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/013_command-bus.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/015_optimizing-your-dockerfile-build-and-layers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/015_optimizing-your-dockerfile-build-and-layers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/016_using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/016_using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/017_auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/017_auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/019_traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/019_traverse-2-electric-boogaloo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/022_absolute-imports-typescript-webpack.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/022_absolute-imports-typescript-webpack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/023_automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/023_automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/025_recovery-passport.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/025_recovery-passport.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/026_enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/026_enhance-static-site-and-markdown-with-vuejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/027_enhance-macos-quick-look.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/027_enhance-macos-quick-look.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/031_absolute-imports-in-next-js-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/031_absolute-imports-in-next-js-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/content/my-first-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/content/my-first-post.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/head.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +79,13 @@
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
@@ -31,7 +93,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/photos" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -41,13 +103,6 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/content/draft" />
-      <recent name="$PROJECT_DIR$/static/assets/posts/2019/08" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/draft" />
       <recent name="$PROJECT_DIR$/content" />
@@ -55,16 +110,23 @@
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/photos" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content/draft" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -133,5 +195,19 @@
         <option value="1" />
       </set>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578688924792">
+      <screen x="0" y="23" width="3008" height="1669" />
+    </state>
+    <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578688924792" />
+    <state x="794" y="407" width="1794" height="729" key="find.popup" timestamp="1578698591773">
+      <screen x="0" y="23" width="3008" height="1669" />
+    </state>
+    <state x="794" y="407" width="1794" height="729" key="find.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578698591773" />
+    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup" timestamp="1578696033434">
+      <screen x="0" y="23" width="3008" height="1669" />
+    </state>
+    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578696033434" />
   </component>
 </project>

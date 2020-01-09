@@ -11,6 +11,7 @@ categories = [
     "backend",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 Actions can either be a **Command** or **Query**. 

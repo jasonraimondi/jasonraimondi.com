@@ -18,6 +18,7 @@ categories = [
     "software",
     "backend",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg"
 +++
 
 ## Overview

@@ -3,6 +3,7 @@ title = "Uses"
 description = "This page lists software and hardware I use on a daily basis."
 date = 2019-03-19
 lastmod = 2019-04-18
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
 +++
 
 This page lists software and hardware I use on a daily basis.

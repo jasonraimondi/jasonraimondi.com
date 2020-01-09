@@ -13,6 +13,7 @@ categories = [
     "workflow",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 *Note: This is a modified and updated version of my original post [here](http://blog.eventfarm.com/developers/fresh-mac-now-what-brew-install-everything) on the Event Farm Engineering blog on Mar 14, 2016.*

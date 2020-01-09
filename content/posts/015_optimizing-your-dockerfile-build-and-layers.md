@@ -11,6 +11,7 @@ categories = [
     "ops",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg"
 +++
 
 ```bash

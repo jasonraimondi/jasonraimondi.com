@@ -10,6 +10,7 @@ categories = [
     "workflow",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++ 
 
 Want to peek at that video file? No problem. Want to see what content is inside a text document. Quick Look has your back.

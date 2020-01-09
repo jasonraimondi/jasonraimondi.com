@@ -10,6 +10,7 @@ tags = [
 categories = [
     "misc",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/andrew-ly-zjU1dRlB4HM-unsplash.jpg"
 +++ 
 
 There are probably many lists out there like this, but this is my list.

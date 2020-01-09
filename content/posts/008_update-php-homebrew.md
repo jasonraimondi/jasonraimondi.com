@@ -13,6 +13,7 @@ categories = [
     "ops,"
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 [Homebrew/php](https://github.com/Homebrew/homebrew-php) has been deprecated.

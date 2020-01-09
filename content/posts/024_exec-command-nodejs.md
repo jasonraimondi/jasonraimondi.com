@@ -11,6 +11,7 @@ categories = [
     "backend"
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 Using the exec command in Node.js is pretty simple, first import the exec function, and then call it with the the first argument being the command you are running, and the second argument a callback with params for **error**, **stdout**, **stderr**.

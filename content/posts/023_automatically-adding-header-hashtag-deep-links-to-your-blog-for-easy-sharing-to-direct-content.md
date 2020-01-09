@@ -11,6 +11,7 @@ categories = [
     "frontend",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 #### <-- This # lets you return directly to this link!

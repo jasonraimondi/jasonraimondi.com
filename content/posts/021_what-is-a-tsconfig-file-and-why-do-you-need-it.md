@@ -13,6 +13,7 @@ categories = [
     "backend",
 ]
 comments = true
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++
 
 The `tsconfig.json` file is the main configuration file for TypeScript. Similar to how the `package.json` file in a directory identifies the presence of a Node.js project (or at least node modules), the `tsconfig.json` file identifies the presence of TypeScript files in the project. 

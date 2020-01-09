@@ -10,6 +10,7 @@ tags = [
 categories = [
     "frontend",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/under-construction.jpg"
 +++
 
 If you check out my [about](/about) page. Refresh the page to (hopefully) get a new one.
