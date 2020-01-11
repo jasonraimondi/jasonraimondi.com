@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/image.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

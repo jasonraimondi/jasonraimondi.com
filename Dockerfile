@@ -16,6 +16,7 @@ RUN git clone https://github.com/jasonraimondi/hugo-theme-developer-portfolio.gi
     && cd /app/themes/hugo-theme-developer-portfolio \
     && npm ci
 COPY ./content/ /app/content/
+COPY ./layouts/ /app/layouts/
 COPY ./static/ /app/static/
 COPY ./config.toml /app/config.toml
 
