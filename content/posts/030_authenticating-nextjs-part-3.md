@@ -17,6 +17,9 @@ categories = [
     "frontend",
     "backend",
 ]
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg"
+imageCredit = "@ascales https://unsplash.com/photos/1_WMZARl81c"
+imageAlt = "photo of rocket ship inside warehouse"
 +++ 
 
 ## Overview

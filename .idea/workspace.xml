@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/image.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/install-golang.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/install-golang.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/page_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/page_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +30,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,19 +58,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/draft" />
-      <recent name="$PROJECT_DIR$/content" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/photos" />
       <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes" />
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/draft" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/draft" />
+      <recent name="$PROJECT_DIR$/content" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/image" />
+      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -161,17 +152,23 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="175" y="150" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578718550642">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="175" y="150" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1578718550642" />
     <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578688924792">
       <screen x="0" y="23" width="3008" height="1669" />
     </state>
     <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578688924792" />
-    <state x="794" y="407" width="1794" height="729" key="find.popup" timestamp="1578701509610">
-      <screen x="0" y="23" width="3008" height="1669" />
+    <state x="443" y="259" width="1002" height="486" key="find.popup" timestamp="1578719488536">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="443" y="259" width="1002" height="486" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1578719488536" />
     <state x="794" y="407" width="1794" height="729" key="find.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578701509610" />
-    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup" timestamp="1578703440824">
-      <screen x="0" y="23" width="3008" height="1669" />
+    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup" timestamp="1578720198881">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1578720198881" />
     <state x="424" y="411" width="670" height="676" key="search.everywhere.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578703440824" />
   </component>
 </project>

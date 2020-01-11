@@ -13,7 +13,9 @@ categories = [
     "ops,"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/christin-hume-08tX2fsuSLg-unsplash.jpg"
+imageAlt = "labeled glass bottles on shelf"
+imageCredit = "@christinhumephoto https://unsplash.com/photos/08tX2fsuSLg"
 +++
 
 [Homebrew/php](https://github.com/Homebrew/homebrew-php) has been deprecated.

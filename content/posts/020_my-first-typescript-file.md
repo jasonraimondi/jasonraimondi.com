@@ -11,7 +11,9 @@ categories = [
     "frontend"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg"
+imageAlt = ""
+imageCredit = "@solmaz67 https://unsplash.com/photos/YSaKXcavOko"
 +++
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.

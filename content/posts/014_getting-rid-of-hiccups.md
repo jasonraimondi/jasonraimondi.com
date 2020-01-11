@@ -9,7 +9,8 @@ tags = [
 categories = [
     "workflow",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
+image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg"
+imageCredit = "@owenbeard https://unsplash.com/photos/DK8jXx1B-1c"
 +++
 
 I found this the other day when I had the hiccups a few different days in a row. Posting it here because it worked amazing and I do not ever want to forget this technique.
