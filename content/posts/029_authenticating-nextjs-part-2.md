@@ -18,6 +18,8 @@ categories = [
     "software",
 ]
 image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg"
+imageCredit = "@meric https://unsplash.com/photos/i_14EbINjKY"
+imageAlt = "photo of rocket ship inside warehouse"
 +++ 
 
 ## Overview

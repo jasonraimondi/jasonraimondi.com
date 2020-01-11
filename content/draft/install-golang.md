@@ -11,6 +11,8 @@ categories = [
     "backend",
 ]
 image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/under-construction.jpg"
+imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
+imageAlt = "under construction crane"
 +++ 
 
 ### Install Golang 

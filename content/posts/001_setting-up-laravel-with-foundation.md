@@ -15,6 +15,7 @@ categories = [
 ]
 comments = true
 image = "https://d265ybhz09ikd5.cloudfront.net/posts/2016/05/2015-05-05-cover-photo-fixed.png"
+imageAlt = "laravel and foundation logos"
 +++
 
 [Laravel Elixir](https://laravel.com/docs/5.2/elixir) is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks. Although Laravel Elixir is branded with Laravel, it is truly a stand alone tool that can be used almost anywhere Gulp can. Laravel Elixir is a really powerful and useful tool and can make build systems that much easier for beginners. Let's see how we can use Zurb's Foundation for Sites 6 with Laravel Elixir so we can have a super minimal, yet powerfully flexible build system and Front End Framework.

@@ -19,6 +19,8 @@ categories = [
     "backend",
 ]
 image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg"
+imageCredit = "@graphicnode https://unsplash.com/photos/Bd7YLDIXJXg"
+imageAlt = "snow-covered mountains"
 +++
 
 ## Overview

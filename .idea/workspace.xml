@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="" />
+    <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/031_authenticating-nextjs-part-4.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_authenticating-nextjs-part-5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/032_light-uxui-practices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/033_dark-uxui-practices.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/code-syntax-highlighting-with-pygment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/conways-game-of-life-in-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/developing-on-the-web-is-like-the-wild-wild-west.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/install-golang.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/install-golang.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/randomize-image-with-vanilla-js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/setting-up-wallabag-in-docker-with-existing-mysql.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/signing-gpg-keys.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/draft/zfs-is-a-great-file-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_post-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_posts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/page_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/page_list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,13 +165,13 @@
       <screen x="0" y="23" width="3008" height="1669" />
     </state>
     <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578688924792" />
-    <state x="794" y="407" width="1794" height="729" key="find.popup" timestamp="1578698591773">
+    <state x="794" y="407" width="1794" height="729" key="find.popup" timestamp="1578701509610">
       <screen x="0" y="23" width="3008" height="1669" />
     </state>
-    <state x="794" y="407" width="1794" height="729" key="find.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578698591773" />
-    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup" timestamp="1578696033434">
+    <state x="794" y="407" width="1794" height="729" key="find.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578701509610" />
+    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup" timestamp="1578703440824">
       <screen x="0" y="23" width="3008" height="1669" />
     </state>
-    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578696033434" />
+    <state x="424" y="411" width="670" height="676" key="search.everywhere.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578703440824" />
   </component>
 </project>
