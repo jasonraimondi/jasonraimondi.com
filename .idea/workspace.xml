@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/js/random-feature-image.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573620534297</updated>
       <workItem from="1573620535497" duration="1626000" />
+      <workItem from="1579589257246" duration="654000" />
     </task>
     <servers />
   </component>
@@ -148,15 +154,15 @@
       <screen x="0" y="23" width="3008" height="1669" />
     </state>
     <state x="535" y="781" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578688924792" />
-    <state x="443" y="259" width="1002" height="486" key="find.popup" timestamp="1578719488536">
+    <state x="443" y="259" width="1002" height="550" key="find.popup" timestamp="1579589499434">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="443" y="259" width="1002" height="486" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1578719488536" />
+    <state x="443" y="259" width="1002" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1579589499434" />
     <state x="794" y="407" width="1794" height="729" key="find.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578701509610" />
-    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup" timestamp="1578720198881">
+    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup" timestamp="1579589850255">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1578720198881" />
+    <state x="237" y="262" width="670" height="416" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1579589850255" />
     <state x="424" y="411" width="670" height="676" key="search.everywhere.popup/0.23.3008.1669/3008.23.1680.1027@0.23.3008.1669" timestamp="1578703440824" />
   </component>
 </project>

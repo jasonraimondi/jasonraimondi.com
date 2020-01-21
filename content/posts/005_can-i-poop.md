@@ -22,8 +22,6 @@ image = "https://d265ybhz09ikd5.cloudfront.net/posts/2017/11/canipoop/canipoop-a
 comments = true
 +++
 
-{{< image/pop src="https://d265ybhz09ikd5.cloudfront.net/posts/2017/11/canipoop/canipoop-alfredo.png" alt="Can I Poop Alfred Workflow" >}}
-
 A few months ago myself and a coworker attended one of the [LA Software Craftmanship](https://www.meetup.com/LA-Software-Craftsmanship/) workshops down at 8th Light centered around using the GPIO pins on the Raspberry Pi.  We wrote a few different programs in C and Python first using some sensors, and then the Tx/Rx to send messages between Pi’s.  It reminded me a lot of college where I had the opportunity to take classes like Sensors and Electronics Based Art, centered around using Arduino based sensors to make all different things, it was great.
 
 In our LA office at Event Farm, we have two unisex bathrooms, one downstairs, and one upstairs, both in awkward spots, so you have to walk all the way over to them basically to see if they are occupied. Our LA office also happens to be our product office, including our engineering and design teams. For engineers and designers, it can be difficult to get back into a groove after walking over only to find the toilet is taken.

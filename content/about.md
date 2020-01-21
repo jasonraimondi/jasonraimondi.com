@@ -4,10 +4,23 @@ slug = "about"
 date = 2018-12-04
 lastmod = 2019-03-13
 description = "My passion is for writing software with a clean architecture. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
-image = "https://d265ybhz09ikd5.cloudfront.net/misc/about/codecraft-2018.jpg"
+image = "https://d265ybhz09ikd5.cloudfront.net/misc/me/hitrecord-everyone-2019.jpg"
 +++
 
-<script type="text/javascript" src="/assets/js/random-feature-image.js"></script>
+<script>
+function setRandomPicture() {
+    const pictures = [
+        'https://d265ybhz09ikd5.cloudfront.net/misc/me/us.png',
+        'https://d265ybhz09ikd5.cloudfront.net/misc/me/codecraft-2018.jpg',
+        // 'https://d265ybhz09ikd5.cloudfront.net/misc/me/colorado-2018.jpg',
+        'https://d265ybhz09ikd5.cloudfront.net/misc/me/hitrecord-everyone-2019.jpg',
+    ];
+    const randomPictureLink = pictures[Math.floor(Math.random()*pictures.length)];
+    const picture = document.getElementById("js-feature-image");
+    picture.src = randomPictureLink;
+}
+setRandomPicture();
+</script>
 
 My name is Jason Raimondi and I am a Full Stack Software Engineer based out of Los Angeles. My focus has been in web systems, building and deploying server and client web applications. I am a technologist and all around computer geek; give me a computer and I will be hacking in minutes, occupied for days.
 
