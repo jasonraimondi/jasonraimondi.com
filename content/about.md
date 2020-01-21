@@ -10,14 +10,15 @@ image = "https://d265ybhz09ikd5.cloudfront.net/misc/me/hitrecord-everyone-2019.j
 <script>
 function setRandomPicture() {
     const pictures = [
-        'https://d265ybhz09ikd5.cloudfront.net/misc/me/us.png',
-        'https://d265ybhz09ikd5.cloudfront.net/misc/me/codecraft-2018.jpg',
-        // 'https://d265ybhz09ikd5.cloudfront.net/misc/me/colorado-2018.jpg',
-        'https://d265ybhz09ikd5.cloudfront.net/misc/me/hitrecord-everyone-2019.jpg',
+        '/misc/me/us.png',
+        '/misc/me/codecraft-2018.jpg',
+        // '/misc/me/colorado-2018.jpg',
+        '/misc/me/hitrecord-everyone-2019.jpg',
+        '/misc/me/event-farmers-hiking-2019.jpg',
     ];
     const randomPictureLink = pictures[Math.floor(Math.random()*pictures.length)];
     const picture = document.getElementById("js-feature-image");
-    picture.src = randomPictureLink;
+    picture.src = 'https://d265ybhz09ikd5.cloudfront.net' + randomPictureLink;
 }
 setRandomPicture();
 </script>
