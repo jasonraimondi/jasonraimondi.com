@@ -3,8 +3,9 @@
 default: build
 
 build:
-	npm install -g postcss-cli autoprefixer caniuse-lite
+	npm install -g postcss-cli
 	git submodule update --init --recursive
+	cd themes/hugo-theme-developer-portfolio && npm ci
 	hugo --cleanDestinationDir
 
 serve:
