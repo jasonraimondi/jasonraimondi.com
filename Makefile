@@ -4,7 +4,7 @@ default: build
 
 build:
 	npm install -g postcss-cli autoprefixer caniuse-lite
-	git submodule upgrade --init --recursive
+	git submodule update --init --recursive
 	hugo --cleanDestinationDir
 
 serve:
