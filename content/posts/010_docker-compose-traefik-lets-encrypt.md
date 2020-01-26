@@ -1,5 +1,5 @@
 +++
-title = "Docker Compose, Traefik + Lets Encrypt"
+title = "Docker Compose, Traefik 1.7 + Lets Encrypt"
 slug = "docker-compose-traefik-lets-encrypt"
 date = 2018-08-21
 description = "If you’ve ever configured Docker + Nginx + Lets Encrypt before, it takes some time. Tools like Certbot have made this process easier, but they are not without flaws, especially when deploying to a docker environment. Traefik makes it a cinch."
@@ -29,7 +29,7 @@ The Traefik container is pretty simple to deploy. This is the only container tha
 ```yml
   traefik:
     restart: always
-    image: traefik
+    image: traefik:1.7
     command:
       - "--api"
       - "--entrypoints=Name:http Address::80 Redirect.EntryPoint:https"
