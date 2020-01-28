@@ -2,5 +2,5 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
 # Redirect domain aliases to primary domain
-https://raimondi.us/* https://jasonraimondi.com/:splat 301!
-https://www.raimondi.us/* https://jasonraimondi.com/:splat 301!
+https://raimondi.us/* https://www.jasonraimondi.com/:splat 301!
+https://www.raimondi.us/* https://www.jasonraimondi.com/:splat 301!
