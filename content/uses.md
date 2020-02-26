@@ -2,7 +2,7 @@
 title = "Uses"
 description = "This page lists software and hardware I use on a daily basis."
 date = 2019-03-19
-lastmod = 2019-04-18
+lastmod = 2020-02-21
 image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
 imageCredit = "@robertbye https://unsplash.com/photos/BY34glOW7wA"
 imageAlt = "person using computer on brown wooden table"
@@ -14,10 +14,10 @@ This page lists software and hardware I use on a daily basis.
 
 * **[IntelliJ Suite](https://www.jetbrains.com/)** -- If I am developing code, I am probably using an IntelliJ product..
 * **[Visual Studio Code](https://code.visualstudio.com/)** -- If I am browsing code, or looking at a set of files, I may use VSC.
-* **[Sublime Text](https://www.sublimetext.com/)** -- A text editor for editing large text files.
+* **[Sublime Text](https://www.sublimetext.com/)** -- A text editor for opening single text files.
 * **[One Dark Theme](https://plugins.jetbrains.com/plugin/11938-one-dark-theme/)** -- Dark theme for the editor
 
-#### Desktop Apps
+#### Wares
 
 * **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
 * **[Alfred](https://www.alfredapp.com/)** -- Alfred is great, use [workflows to enhance](https://github.com/zenorocha/alfred-workflows). It also comes with a clipboard history manager and tool to store your text snippets.
@@ -35,8 +35,7 @@ This page lists software and hardware I use on a daily basis.
 
 #### Self Hosted
 
-* **[Nextcloud](https://nextcloud.com)** -- A Dropbox esque file server GUI.
-* **[Gitea](https://gitea.io/en-us/)** -- A git GUI.
+* **[Gitea](https://gitea.io/en-us/)** -- Selfhosted git web ui.
 * **[Fathom Analytics](https://usefathom.com/)** -- Lightweight analytics.
 * **[Invoice Ninja](https://www.invoiceninja.com/)** -- Full featured accounting.
 * **[Kodi](https://kodi.tv/)** -- Media Client
