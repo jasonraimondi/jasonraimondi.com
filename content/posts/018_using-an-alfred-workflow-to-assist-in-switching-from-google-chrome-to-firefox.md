@@ -13,8 +13,6 @@ image = "https://d265ybhz09ikd5.cloudfront.net/posts/2018/12/alfred-chrome-to-fi
 comments = true
 +++
 
-![preview of alfred chrome to firefox workflow](https://d265ybhz09ikd5.cloudfront.net/posts/2018/12/alfred-chrome-to-firefox-workflow.png)
-
 This workflow is meant to help break the habit of using Google Chrome. I tend to launch applications with Alfred. When I want to launch a browser, what is engraved in my brain is CHROME! 
 
 ##### Every time: &#8984; + SPACE &rarr; “chrome” &rarr; ENTER. 
