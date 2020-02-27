@@ -18,13 +18,13 @@ The only dependency required is going to be `exiftool`.
 
 ### MacOS
 
-```
+```bash
 brew install exiftool
 ``` 
  
 ### Debian or Ubuntu
 
-```
+```bash
 sudo apt install -y exiftool
 ```
 
@@ -39,7 +39,7 @@ It landed me about here: https://www.openstreetmap.org/#map=12/34.41824/-118.795
 Latitude: 34.418243
 Longitude: -118.795463
 
-```
+```bash
 exiftool \
     -GPSLongitudeRef="West" \
     -XMP:GPSLongitude="-118.795463" \
@@ -50,7 +50,7 @@ exiftool \
 
 If you wanted to do an entire directory of images
 
-```
+```bash
 exiftool \
     -GPSLongitudeRef="West" \
     -XMP:GPSLongitude="-118.795463" \
