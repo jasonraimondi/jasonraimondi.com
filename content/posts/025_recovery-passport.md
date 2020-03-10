@@ -13,7 +13,7 @@ categories = [
     "backend",
     "ops",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_1_feature.png"
+image = "https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_1_feature.png"
 +++
 
 [Jack Powers](https://www.linkedin.com/in/jackpowersjr/) - Cofounder/CEO
@@ -32,17 +32,17 @@ Members are invited by their counselors and asked to journal daily about their t
 
 Journal entries are locked after a 30 minute period.
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_1.png" alt="When logging into the app, members need to answer daily if they have maintained sobriety, or taken care of themselves (if mental rehab)." >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_1.png" alt="When logging into the app, members need to answer daily if they have maintained sobriety, or taken care of themselves (if mental rehab)." >}}
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_2.png" alt="Basic example member profile" >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_2.png" alt="Basic example member profile" >}}
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_3.png" alt="Adding an entry to Recovery Passport" >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_3.png" alt="Adding an entry to Recovery Passport" >}}
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_4.png" alt="After your entry, you need to answer how this event makes you feel" >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_4.png" alt="After your entry, you need to answer how this event makes you feel" >}}
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_5.png" alt="Entries are only editable for 30 minutes" >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_5.png" alt="Entries are only editable for 30 minutes" >}}
 
-{{< image/pop portrait="true" src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/recovery-passport/recovery-passport_7.png" alt="Notifications list" >}}
+{{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_7.png" alt="Notifications list" >}}
 
 ### Stack
 

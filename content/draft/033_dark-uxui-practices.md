@@ -10,7 +10,7 @@ tags = [
 categories = [
     "misc",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg"
 imageCredit = "@marckleen https://unsplash.com/photos/X4H8JXNYBVQ"
 +++ 
 
@@ -25,6 +25,6 @@ There are probably many lists out there like this, but this is my list.
 
 ## Airline Purchases
 
-![Airline Ticket Purchases](https://d265ybhz09ikd5.cloudfront.net/posts/2019/11/darkux/google-american-airlines.png)
+![Airline Ticket Purchases](https://assets.jasonraimondi.com/posts/2019/11/darkux/google-american-airlines.png)
 * Advertises as free seat selection, when the only perk of upgrading is the seat selection
 * Everything else is a fee or the same as basic economy

@@ -14,7 +14,7 @@ categories = [
 ]
 comments = true
 
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg"
 +++
 
 Adding some dynamic elements to your static generated site can be super easy using Vue.js and some dynamic components.
@@ -23,14 +23,14 @@ In this blog, I am able to add this to my markdown files:
 
 ```html
 <image-pop
-    src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg"
+    src="https://assets.jasonraimondi.com/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg"
     alt="Photo by William Fonteneau on Unsplash"
 ></image-pop>
 ```
 
 And when my code is published, it turns out a little something like this:
 
-{{< image/pop src="https://d265ybhz09ikd5.cloudfront.net/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg" alt="Photo by William Fonteneau on Unsplash" >}}
+{{< image/pop src="https://assets.jasonraimondi.com/posts/2019/03/william-fonteneau-1437891-unsplash-10p.jpg" alt="Photo by William Fonteneau on Unsplash" >}}
 
 Photo by [William Fonteneau](https://unsplash.com/photos/lVpEY1BOTuM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
 

@@ -10,7 +10,7 @@ tags = [
 categories = [
     "misc",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/andrew-ly-zjU1dRlB4HM-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/andrew-ly-zjU1dRlB4HM-unsplash.jpg"
 imageCredit = "@nineteen https://unsplash.com/photos/zjU1dRlB4HM"
 +++ 
 

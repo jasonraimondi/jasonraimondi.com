@@ -14,10 +14,10 @@ categories = [
     "backend",
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg"
 +++
 
-![the conversation aftermath](https://d265ybhz09ikd5.cloudfront.net/posts/2018/10/hack-contest/hack-contest-01.png)
+![the conversation aftermath](https://assets.jasonraimondi.com/posts/2018/10/hack-contest/hack-contest-01.png)
 
 I am going to begin by saying, I couldn’t not do it. It was calling to me like Ring calls to Sauron.
 

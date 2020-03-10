@@ -13,7 +13,7 @@ categories = [
     "backend",
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg"
 imageAlt = ""
 imageConfig = "@mpho_mojapelo https://unsplash.com/photos/UHDx3BHlFvY"
 +++

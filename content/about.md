@@ -4,7 +4,7 @@ slug = "about"
 date = 2018-12-04
 lastmod = 2019-03-13
 description = "My passion is for writing software with a clean architecture. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
-image = "https://d265ybhz09ikd5.cloudfront.net/misc/me/hitrecord-everyone-2019.jpg"
+image = "https://assets.jasonraimondi.com/misc/me/hitrecord-everyone-2019.jpg"
 +++
 
 <script>
@@ -18,7 +18,7 @@ function setRandomPicture() {
     ];
     const randomPictureLink = pictures[Math.floor(Math.random()*pictures.length)];
     const picture = document.getElementById("js-feature-image");
-    picture.src = 'https://d265ybhz09ikd5.cloudfront.net' + randomPictureLink;
+    picture.src = 'https://assets.jasonraimondi.com' + randomPictureLink;
 }
 setRandomPicture();
 </script>

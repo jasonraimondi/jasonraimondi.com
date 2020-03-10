@@ -11,7 +11,7 @@ categories = [
     "frontend"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg"
 imageAlt = ""
 imageCredit = "@solmaz67 https://unsplash.com/photos/YSaKXcavOko"
 +++

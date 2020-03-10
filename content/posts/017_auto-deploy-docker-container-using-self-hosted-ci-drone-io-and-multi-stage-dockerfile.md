@@ -12,7 +12,7 @@ categories = [
     "ops"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg"
 +++
 
 Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI.
@@ -23,7 +23,7 @@ For a while, Drone was relatively stable, versioned at 0.8. Recently, Drone is a
 
 To configure drone with your repository, you need to activate the repository inside of your running Drone Server. The [installation documentation](https://docs.drone.io/intro/) on the Drone website is straightforward, and will vary depending on the source code management system you use.
 
-![Activate Drone for Repository Screenshot](https://d265ybhz09ikd5.cloudfront.net/posts/2018/11/activate-drone.png)
+![Activate Drone for Repository Screenshot](https://assets.jasonraimondi.com/posts/2018/11/activate-drone.png)
 
 After you’ve activated your repository, you are going to need to add a `.drone.yml` file to your repository. This file is going to contain the build steps and conditions that will trigger Drone to run.
 

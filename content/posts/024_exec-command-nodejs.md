@@ -11,7 +11,7 @@ categories = [
     "backend"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg"
 imageCredit = "@gypsycompassrose https://unsplash.com/photos/fnlNwb5sB5Y"
 imageAlt = "photography of black dial telephone"
 +++

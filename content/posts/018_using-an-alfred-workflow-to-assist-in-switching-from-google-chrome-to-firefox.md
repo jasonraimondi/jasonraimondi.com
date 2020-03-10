@@ -9,7 +9,7 @@ tags = [
 categories = [
     "workflow",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
+image = "https://assets.jasonraimondi.com/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
 comments = true
 +++
 
@@ -17,7 +17,7 @@ This workflow is meant to help break the habit of using Google Chrome. I tend to
 
 ##### Every time: &#8984; + SPACE &rarr; “chrome” &rarr; ENTER. 
 
-![alfred workflow preview](https://d265ybhz09ikd5.cloudfront.net/posts/2018/12/alfred-workflow-opened.png)
+![alfred workflow preview](https://assets.jasonraimondi.com/posts/2018/12/alfred-workflow-opened.png)
 
 To help combat this, [I’ve created an Alfred workflow](https://git.jasonraimondi.com/jason/alfred-workflow-launch-firefox-instead-of-chrome) that is triggered by the keyword “chrome” and will launch Firefox.
 

@@ -12,7 +12,7 @@ categories = [
     "software",
     "frontend",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
 +++ 
 
 Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.

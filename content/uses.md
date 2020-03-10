@@ -3,7 +3,7 @@ title = "Uses"
 description = "This page lists software and hardware I use on a daily basis."
 date = 2019-03-19
 lastmod = 2020-02-21
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
 imageCredit = "@robertbye https://unsplash.com/photos/BY34glOW7wA"
 imageAlt = "person using computer on brown wooden table"
 +++

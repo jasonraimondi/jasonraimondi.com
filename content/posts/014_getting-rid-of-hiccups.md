@@ -9,7 +9,7 @@ tags = [
 categories = [
     "workflow",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg"
+image = "https://assets.jasonraimondi.com/posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg"
 imageCredit = "@owenbeard https://unsplash.com/photos/DK8jXx1B-1c"
 +++
 

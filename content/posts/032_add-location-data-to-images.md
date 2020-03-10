@@ -9,7 +9,7 @@ tags = [
 categories = [
     "software",
 ]
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/2020/02/openstreetmaps.png"
+image = "https://assets.jasonraimondi.com/posts/2020/02/openstreetmaps.png"
 +++ 
 
 ## Install dependencies
@@ -34,7 +34,7 @@ If you open [OpenStreetMaps](https://www.openstreetmap.org) and navigate to the 
 
 It landed me about here: https://www.openstreetmap.org/#map=12/34.41824/-118.79546
 
-![OpenStreetMaps screenshot showing latitude and longitude](https://d265ybhz09ikd5.cloudfront.net/posts/2020/02/openstreetmaps-lat-long.png)
+![OpenStreetMaps screenshot showing latitude and longitude](https://assets.jasonraimondi.com/posts/2020/02/openstreetmaps-lat-long.png)
 
 Latitude: 34.418243
 Longitude: -118.795463
@@ -65,4 +65,4 @@ Exiftool adds the location data to the photo by altering the file in place while
 
 Now when we import our photos into Apple Photos, the location data shows up correctly for our images.
  
-![Apple Photos app showing location data](https://d265ybhz09ikd5.cloudfront.net/posts/2020/02/apple-photos-location-data.png)
+![Apple Photos app showing location data](https://assets.jasonraimondi.com/posts/2020/02/apple-photos-location-data.png)

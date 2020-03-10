@@ -12,10 +12,10 @@ categories = [
     "frontend"
 ]
 comments = true
-image = "https://d265ybhz09ikd5.cloudfront.net/posts/_covers/traverse-featured-mini.png"
+image = "https://assets.jasonraimondi.com/posts/_covers/traverse-featured-mini.png"
 +++
 
-[![Traverse](https://d265ybhz09ikd5.cloudfront.net/posts/2018/08/traverse/pointing-mini.png)](https://github.com/jasonraimondi/traverse)
+[![Traverse](https://assets.jasonraimondi.com/posts/2018/08/traverse/pointing-mini.png)](https://github.com/jasonraimondi/traverse)
 
 [![Test Coverage](https://travis-ci.org/jasonraimondi/traverse.svg?branch=master)](https://travis-ci.org/jasonraimondi/traverse#)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/test_coverage)](https://codeclimate.com/github/jasonraimondi/traverse/test_coverage)
