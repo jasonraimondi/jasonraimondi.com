@@ -36,7 +36,7 @@ defaultContentLanguage = "en"
             m=f.getElementsByTagName('script')[0];
         o.async=1; o.src=t; o.id='fathom-script';
         m.parentNode.insertBefore(o,m)
-    })(document, window, '//analytics.jasonraimondi.com/tracker.js', 'fathom');
+    })(document, window, '//analytics.designcanvas.digital/tracker.js', 'fathom');
     fathom('set', 'siteId', 'YJMFD');
     fathom('trackPageview');
 </script>
@@ -78,14 +78,14 @@ defaultContentLanguage = "en"
   name = "GoodReads"
   url = "https://www.goodreads.com/jasonraimondi"
 [[Params.ExternalMenu.Link]]
-  name = "Leetcode"
-  url = "https://leetcode.com/jasonraimondi"
-[[Params.ExternalMenu.Link]]
   name = "LinkedIn"
   url = "https://linkedin.com/in/jasonraimondi"
 [[Params.ExternalMenu.Link]]
   name = "Vimeo"
   url = "https://vimeo.com/jasonraimondi"
+[[Params.ExternalMenu.Link]]
+  name = "Leetcode"
+  url = "https://leetcode.com/jasonraimondi"
 
 [languages]
   [languages.en]
