@@ -6,12 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/keeping-an-up-to-date-archive-of-the-github-repos-that-matter-to-you.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/keeping-an-up-to-date-archive-of-the-github-repos-that-matter-to-you.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/posts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/base/_width-constraint.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/base/_width-constraint.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/content/my-first-post.md" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/content/my-first-post.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
