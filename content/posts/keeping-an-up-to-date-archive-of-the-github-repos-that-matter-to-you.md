@@ -2,7 +2,7 @@
 title = "Archive the GitHub repositories that matter"
 slug = "always-up-to-date-archive-of-github-repositories"
 date = 2020-05-09
-description = "Keep an always up to date archive of the GitHub repositories that matter to you using Gitea mirror repositories"
+description = "One of the many great features of Gitea is the mirror repository. Keep an always up to date archive of the GitHub repositories that matter to you using Gitea mirror repositories"
 tags = [ 
     "deno",
     "github",
@@ -21,13 +21,13 @@ imageAlt = "under construction crane"
 
 There will be many buzz words, many.
 
-[Gitea](https://gitea.io) is a self-hosted git platform that has many great features, among them are a great web interface and mirror repositories.
+[Gitea](https://gitea.io) is a self-hosted git platform that has many great features, one of my favorites is the syncing mirror repositories.
 
 I wrote a tool using [Deno](https://deno.land/) to spider through a GitHub user's relevant repositories and add them to an instance of Gitea as [mirror repositories](#gitea-and-the-mirror-repository-type). 
 
 ## Gitea and the mirror repository type
 
-One of the many great features of Gitea is the "mirror repository". The mirror repo allows us to mirror repositories from existing sources, such your favorite open-source GitHub projects. 
+The mirror repo allows us to mirror repositories from existing sources, such your favorite open-source GitHub projects. 
 
 Mirror repositories update on cronjobs managed by Gitea. 
 
