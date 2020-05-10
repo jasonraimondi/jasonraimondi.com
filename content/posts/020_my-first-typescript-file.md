@@ -1,20 +1,18 @@
-+++
-slug = "my-first-typescript-file"
-title = "My first TypeScript file"
-description = "I am a typescript file"
-date = 2019-02-20
-tags = [
-    "typescript",
-    "tsc",
-]
-categories = [
-    "frontend"
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg"
-imageAlt = ""
-imageCredit = "@solmaz67 https://unsplash.com/photos/YSaKXcavOko"
-+++
+---
+categories:
+- frontend
+comments: true
+date: "2019-02-20T00:00:00-08:00"
+description: I am a typescript file
+image: https://assets.jasonraimondi.com/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg
+imageAlt: ""
+imageCredit: '@solmaz67 https://unsplash.com/photos/YSaKXcavOko'
+slug: my-first-typescript-file
+tags:
+- typescript
+- tsc
+title: My first TypeScript file
+---
 
 Now that you [have Node.js](/posts/installing-nodejs/) and [TypeScript installed](/posts/installing-typescript-from-nodejs/), we can actually get started with TypeScript.
 

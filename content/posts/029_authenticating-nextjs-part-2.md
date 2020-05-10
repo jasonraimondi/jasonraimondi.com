@@ -1,26 +1,24 @@
-+++
-title = "Secure a Next.js application with JWT and a private route higher order component"
-slug = "secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component"
-date = "2019-08-16T04:30:00-0700"
-description = "Authenticating and securing a nextjs application"
-aliases = [
-    "/posts/authenticating-nextjs-part-2/",
-]
-tags = [
-    "authenticating-nextjs",
-    "nextjs",
-    "ssr",
-    "react",
-]
-categories = [
-    "frontend",
-    "backend",
-    "software",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg"
-imageCredit = "@meric https://unsplash.com/photos/i_14EbINjKY"
-imageAlt = "photo of rocket ship inside warehouse"
-+++ 
+---
+aliases:
+- /posts/authenticating-nextjs-part-2/
+categories:
+- frontend
+- backend
+- software
+date: 2019-08-16T04:30:00-0700
+description: Authenticating and securing a nextjs application
+image: https://assets.jasonraimondi.com/posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg
+imageAlt: photo of rocket ship inside warehouse
+imageCredit: '@meric https://unsplash.com/photos/i_14EbINjKY'
+slug: secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component
+tags:
+- authenticating-nextjs
+- nextjs
+- ssr
+- react
+title: Secure a Next.js application with JWT and a private route higher order component
+---
+ 
 
 ## Overview
 

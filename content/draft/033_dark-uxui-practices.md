@@ -1,18 +1,18 @@
-+++
-title = "Website dark ux patterns I've noticed"
-slug = "dark-uxui-practices"
-date = "2019-11-07T11:30:00-0700"
-description = "A running list of websites that i've noticed with some really gross or intentionally misleading uxui practices."
-draft = true
-tags = [
-    "misc",
-]
-categories = [
-    "misc",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg"
-imageCredit = "@marckleen https://unsplash.com/photos/X4H8JXNYBVQ"
-+++ 
+---
+categories:
+- misc
+date: 2019-11-07T11:30:00-0700
+description: A running list of websites that i've noticed with some really gross or
+  intentionally misleading uxui practices.
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg
+imageCredit: '@marckleen https://unsplash.com/photos/X4H8JXNYBVQ'
+slug: dark-uxui-practices
+tags:
+- misc
+title: Website dark ux patterns I've noticed
+---
+ 
 
 There are probably many lists out there like this, but this is my list.
 

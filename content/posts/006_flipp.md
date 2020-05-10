@@ -1,23 +1,22 @@
-+++
-title = "Flipp, the light up event"
-slug = "flipp"
-date = 2017-11-14
-description = "At Event Farm, we love throwing cool events with engaging, interactive technology. This was a little something a few coworkers and I created at Event Farm."
-tags = [ 
-    "javascript", 
-    "firebase",
-    "websockets", 
-    "vue.js",
-]
-categories = [
-    "software",
-    "backend",
-    "frontend",
-    "hardware",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg"
-+++
+---
+categories:
+- software
+- backend
+- frontend
+- hardware
+comments: true
+date: "2017-11-14T00:00:00-08:00"
+description: At Event Farm, we love throwing cool events with engaging, interactive
+  technology. This was a little something a few coworkers and I created at Event Farm.
+image: https://assets.jasonraimondi.com/posts/_covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg
+slug: flipp
+tags:
+- javascript
+- firebase
+- websockets
+- vue.js
+title: Flipp, the light up event
+---
 
 {{< vimeo 218034844 >}}
 

@@ -1,18 +1,18 @@
-+++
-title = "Optimizing your Dockerfile build layers"
-slug = "optimizing-your-dockerfile-build-and-layers"
-date = 2018-10-10
-description = "Too many layers and your machines take a large amount of storage and can take a long time to download and extract.  Too few layers and the machine takes F  O  R  E  V  E  R to rebuild."
-tags = [ 
-    "docker",
-    "dockerfile",
-]
-categories = [
-    "ops",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg"
-+++
+---
+categories:
+- ops
+comments: true
+date: "2018-10-10T00:00:00-07:00"
+description: Too many layers and your machines take a large amount of storage and
+  can take a long time to download and extract.  Too few layers and the machine takes
+  F  O  R  E  V  E  R to rebuild.
+image: https://assets.jasonraimondi.com/posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
+slug: optimizing-your-dockerfile-build-and-layers
+tags:
+- docker
+- dockerfile
+title: Optimizing your Dockerfile build layers
+---
 
 ```bash
 Unable to find image 'nginx:latest' locally

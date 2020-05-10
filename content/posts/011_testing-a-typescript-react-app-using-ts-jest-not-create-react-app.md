@@ -1,21 +1,20 @@
-+++
-title = "Testing a TypeScript React app using TS-Jest without using Create React App"
-slug = "testing-a-typescript-react-app-using-ts-jest-not-create-react-app"
-date = 2018-08-23
-description = "Lets create a TypesScript React app without using the cli tool Create React App. This allows you to create a custom build specific to your deploy process."
-tags = [
-    "react",
-    "typescript",
-    "webpack",
-    "tdd",
-    "testing",
-]
-categories = [
-    "frontend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
-+++
+---
+categories:
+- frontend
+comments: true
+date: "2018-08-23T00:00:00-07:00"
+description: Lets create a TypesScript React app without using the cli tool Create
+  React App. This allows you to create a custom build specific to your deploy process.
+image: https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+slug: testing-a-typescript-react-app-using-ts-jest-not-create-react-app
+tags:
+- react
+- typescript
+- webpack
+- tdd
+- testing
+title: Testing a TypeScript React app using TS-Jest without using Create React App
+---
 
 There is very little documentation on setting up a TypeScript React project that is not using the `create-react-app` magical nonsense.
 

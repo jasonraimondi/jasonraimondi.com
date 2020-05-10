@@ -1,23 +1,24 @@
-+++
-title = "Archive the GitHub repositories that matter"
-slug = "always-up-to-date-archive-of-github-repositories"
-date = 2020-05-09
-description = "One of the many great features of Gitea is the mirror repository. Keep an always up to date archive of the GitHub repositories that matter to you using Gitea mirror repositories"
-tags = [ 
-    "deno",
-    "github",
-    "gitea",
-    "data hoarding",
-    "typescript",
-]
-categories = [
-    "misc",
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- misc
+- ops
+date: "2020-05-09T00:00:00-07:00"
+description: One of the many great features of Gitea is the mirror repository. Keep
+  an always up to date archive of the GitHub repositories that matter to you using
+  Gitea mirror repositories
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: always-up-to-date-archive-of-github-repositories
+tags:
+- deno
+- github
+- gitea
+- data hoarding
+- typescript
+title: Archive the GitHub repositories that matter
+---
+ 
 
 There will be many buzz words, many.
 

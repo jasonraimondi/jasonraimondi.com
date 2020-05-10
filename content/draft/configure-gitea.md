@@ -1,19 +1,18 @@
-+++
-title = "Configure Gitea"
-slug = "configure-gitea"
-date = 2020-05-09
-draft = true
-description = "Configure gitea"
-tags = [
-    "gitea",
-]
-categories = [
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- ops
+date: "2020-05-09T00:00:00-07:00"
+description: Configure gitea
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: configure-gitea
+tags:
+- gitea
+title: Configure Gitea
+---
+ 
 
 `/gitea/conf/app.ini`
 

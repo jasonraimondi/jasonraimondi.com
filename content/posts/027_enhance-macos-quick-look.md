@@ -1,17 +1,18 @@
-+++
-title = "Upgrade macOS Quick Look to support even more filetypes."
-slug = "enhance-macos-quick-look"
-date = 2019-04-24
-description = "The Quick Look feature on macOS (&#8984; + Space) an incredible time saving tool. Upgrading it to support more filetypes will make you even more of a macOS ninja."
-tags = [
-    "productivity",
-]
-categories = [
-    "workflow",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
-+++ 
+---
+categories:
+- workflow
+comments: true
+date: "2019-04-24T00:00:00-07:00"
+description: The Quick Look feature on macOS (&#8984; + Space) an incredible time
+  saving tool. Upgrading it to support more filetypes will make you even more of a
+  macOS ninja.
+image: https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+slug: enhance-macos-quick-look
+tags:
+- productivity
+title: Upgrade macOS Quick Look to support even more filetypes.
+---
+ 
 
 Want to peek at that video file? No problem. Want to see what content is inside a text document. Quick Look has your back.
 

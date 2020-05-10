@@ -1,19 +1,18 @@
-+++
-title = "Install Golang"
-slug = "install-golang"
-date = 2019-08-07
-draft = true
-description = "Install golang."
-tags = [
-    "golang",
-]
-categories = [
-    "backend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- backend
+date: "2019-08-07T00:00:00-07:00"
+description: Install golang.
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: install-golang
+tags:
+- golang
+title: Install Golang
+---
+ 
 
 ### Install Golang 
  

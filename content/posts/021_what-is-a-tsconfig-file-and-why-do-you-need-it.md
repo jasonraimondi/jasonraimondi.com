@@ -1,22 +1,21 @@
-+++
-slug = "what-is-a-tsconfig-file-and-why-do-you-need-it"
-title = "What is a tsconfig.json file and why do I need it?"
-description = "Adding this file will give you some control on the compilation of TypeScript into JavaScript."
-date = 2019-02-21
-tags = [
-    "typescript",
-    "tsconfig.json",
-    "tsc",
-]
-categories = [
-    "frontend",
-    "backend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg"
-imageAlt = ""
-imageConfig = "@mpho_mojapelo https://unsplash.com/photos/UHDx3BHlFvY"
-+++
+---
+categories:
+- frontend
+- backend
+comments: true
+date: "2019-02-21T00:00:00-08:00"
+description: Adding this file will give you some control on the compilation of TypeScript
+  into JavaScript.
+image: https://assets.jasonraimondi.com/posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
+imageAlt: ""
+imageConfig: '@mpho_mojapelo https://unsplash.com/photos/UHDx3BHlFvY'
+slug: what-is-a-tsconfig-file-and-why-do-you-need-it
+tags:
+- typescript
+- tsconfig.json
+- tsc
+title: What is a tsconfig.json file and why do I need it?
+---
 
 The `tsconfig.json` file is the main configuration file for TypeScript. Similar to how the `package.json` file in a directory identifies the presence of a Node.js project (or at least node modules), the `tsconfig.json` file identifies the presence of TypeScript files in the project. 
 

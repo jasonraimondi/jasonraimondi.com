@@ -1,22 +1,21 @@
-+++
-title = "Setting Up Laravel Elixir with Foundation 6"
-slug = "setting-up-laravel-with-foundation"
-date = 2016-05-05
-description = "Laravel Elixir is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks."
-tags = [ 
-    "php",
-    "laravel",
-    "foundation-sites",
-]
-categories = [
-    "software",
-    "backend",
-    "frontend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/2016/05/2015-05-05-cover-photo-fixed.png"
-imageAlt = "laravel and foundation logos"
-+++
+---
+categories:
+- software
+- backend
+- frontend
+comments: true
+date: "2016-05-05T00:00:00-07:00"
+description: Laravel Elixir is a wrapper around a traditional Gulp build system that
+  provides a clean, fluent API for defining basic Gulp Tasks.
+image: https://assets.jasonraimondi.com/posts/2016/05/2015-05-05-cover-photo-fixed.png
+imageAlt: laravel and foundation logos
+slug: setting-up-laravel-with-foundation
+tags:
+- php
+- laravel
+- foundation-sites
+title: Setting Up Laravel Elixir with Foundation 6
+---
 
 [Laravel Elixir](https://laravel.com/docs/5.2/elixir) is a wrapper around a traditional Gulp build system that provides a clean, fluent API for defining basic Gulp Tasks. Although Laravel Elixir is branded with Laravel, it is truly a stand alone tool that can be used almost anywhere Gulp can. Laravel Elixir is a really powerful and useful tool and can make build systems that much easier for beginners. Let's see how we can use Zurb's Foundation for Sites 6 with Laravel Elixir so we can have a super minimal, yet powerfully flexible build system and Front End Framework.
 

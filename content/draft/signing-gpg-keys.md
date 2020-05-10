@@ -1,22 +1,20 @@
-+++
-title = "Signing Git commits with GPG Key"
-slug = "code-syntax-highlighting-with-pygment"
-date = 2019-03-19
-draft = true
-description = "Signing Git commits with GPG Key."
-tags = [
-    "hugo",
-    "javascript",
-]
-categories = [
-    "frontend",
-    "backend",
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++
+---
+categories:
+- frontend
+- backend
+- ops
+date: "2019-03-19T00:00:00-07:00"
+description: Signing Git commits with GPG Key.
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: code-syntax-highlighting-with-pygment
+tags:
+- hugo
+- javascript
+title: Signing Git commits with GPG Key
+---
 
 #### Always Sign Git Commits
 

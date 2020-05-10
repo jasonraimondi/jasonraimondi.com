@@ -1,21 +1,21 @@
-+++
-title = "Using the 'timer' observable from Rxjs and Chrome Headless to hack a contest at work"
-slug = "using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work"
-date = 2018-10-11
-description = 'The official rules read: “Everyone has their own tagged link that points to the landing page — each unique click = 1 point”. Interesting, very interesting.'
-tags = [
-    "rxjs",
-    "typescript",
-    "puppeteer",
-    "docker",
-]
-categories = [
-    "ops",
-    "backend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg"
-+++
+---
+categories:
+- ops
+- backend
+comments: true
+date: "2018-10-11T00:00:00-07:00"
+description: 'The official rules read: “Everyone has their own tagged link that points
+  to the landing page — each unique click = 1 point”. Interesting, very interesting.'
+image: https://assets.jasonraimondi.com/posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
+slug: using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work
+tags:
+- rxjs
+- typescript
+- puppeteer
+- docker
+title: Using the 'timer' observable from Rxjs and Chrome Headless to hack a contest
+  at work
+---
 
 ![the conversation aftermath](https://assets.jasonraimondi.com/posts/2018/10/hack-contest/hack-contest-01.png)
 

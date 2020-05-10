@@ -1,27 +1,24 @@
-+++
-title = "Create a secured REST Api for a Next.js application using JWT and Golang"
-slug = "create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang"
-date = "2019-08-16T03:30:00-0700"
-description = "Create a secured REST Api using JWT and Golang"
-aliases = [
-    "/posts/authenticating-nextjs-part-1/",
-]
-tags = [
-    "authenticating-nextjs",
-    "nextjs",
-    "react",
-    "jwt",
-    "golang",
-    "echo-framework",
-]
-categories = [
-    "software",
-    "backend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg"
-imageCredit = "@graphicnode https://unsplash.com/photos/Bd7YLDIXJXg"
-imageAlt = "snow-covered mountains"
-+++
+---
+aliases:
+- /posts/authenticating-nextjs-part-1/
+categories:
+- software
+- backend
+date: 2019-08-16T03:30:00-0700
+description: Create a secured REST Api using JWT and Golang
+image: https://assets.jasonraimondi.com/posts/_covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg
+imageAlt: snow-covered mountains
+imageCredit: '@graphicnode https://unsplash.com/photos/Bd7YLDIXJXg'
+slug: create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang
+tags:
+- authenticating-nextjs
+- nextjs
+- react
+- jwt
+- golang
+- echo-framework
+title: Create a secured REST Api for a Next.js application using JWT and Golang
+---
 
 ## Overview
 

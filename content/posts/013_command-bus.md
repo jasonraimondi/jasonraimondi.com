@@ -1,18 +1,17 @@
-+++
-slug = "command-query-bus-with-ioc-container"
-title = "Command/Query Bus with IoC Container"
-description = "Actions can either be a Command or Query. With the ApplicationCore, we can dispatch our Actions."
-date = 2018-10-05
-tags = [
-  "dependency injection", 
-  "ioc",
-]
-categories = [
-    "backend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg"
-+++
+---
+categories:
+- backend
+comments: true
+date: "2018-10-05T00:00:00-07:00"
+description: Actions can either be a Command or Query. With the ApplicationCore, we
+  can dispatch our Actions.
+image: https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+slug: command-query-bus-with-ioc-container
+tags:
+- dependency injection
+- ioc
+title: Command/Query Bus with IoC Container
+---
 
 Actions can either be a **Command** or **Query**. 
 

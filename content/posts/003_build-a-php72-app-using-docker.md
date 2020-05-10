@@ -1,19 +1,18 @@
-+++
-title = "Building a PHP7.2 + Nginx application using Docker"
-slug = "build-a-php72-app-using-docker"
-date = 2017-08-23
-description = "The goal of this is to have a working development and production build for a PHP7.2 Application using Nginx as our web server."
-tags = [ 
-    "php",
-    "nginx",
-    "docker",
-]
-categories = [
-    "backend",
-    "ops",
-]
-comments = true
-+++
+---
+categories:
+- backend
+- ops
+comments: true
+date: "2017-08-23T00:00:00-07:00"
+description: The goal of this is to have a working development and production build
+  for a PHP7.2 Application using Nginx as our web server.
+slug: build-a-php72-app-using-docker
+tags:
+- php
+- nginx
+- docker
+title: Building a PHP7.2 + Nginx application using Docker
+---
 
 A sample project is available on Github at [https://github.com/jasonraimondi/post-docker-php-nginx](https://github.com/jasonraimondi/post-docker-php-nginx)
 

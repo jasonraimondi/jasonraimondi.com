@@ -1,21 +1,19 @@
-+++
-title = "Enhancing your static site and markdown posts with Vue.js"
-slug = "enhancing-your-static-site-and-markdown-posts-with-vuejs"
-date = 2019-04-18
-description = "Write inline web components in markdown posts to enhancing your static site"
-tags = [ 
-    "vue.js",
-    "javascript",
-    "markdown",
-    "static-site",
-]
-categories = [
-    "frontend",
-]
-comments = true
-
-image = "https://assets.jasonraimondi.com/posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg"
-+++
+---
+categories:
+- frontend
+comments: true
+date: "2019-04-18T00:00:00-07:00"
+description: Write inline web components in markdown posts to enhancing your static
+  site
+image: https://assets.jasonraimondi.com/posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg
+slug: enhancing-your-static-site-and-markdown-posts-with-vuejs
+tags:
+- vue.js
+- javascript
+- markdown
+- static-site
+title: Enhancing your static site and markdown posts with Vue.js
+---
 
 Adding some dynamic elements to your static generated site can be super easy using Vue.js and some dynamic components.
 

@@ -1,21 +1,22 @@
-+++
-title = "Showing code coverage for a React app using Code Climate and Travis CI"
-slug = "showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci"
-date = 2018-09-06
-description = "The documentation on Code Climate for setting up auto generation of code coverage for a JavaScript application was lacking pretty hard. Here I show how we can get a React app using Travis CI and Jest to automate generating code coverage that gets sent to Code Climate."
-tags = [
-    "react",
-    "typescript",
-    "javascript",
-    "code-climate",
-    "travis-ci",
-]
-categories = [
-    "frontend",
-    "ops",
-]
-comments = true
-+++
+---
+categories:
+- frontend
+- ops
+comments: true
+date: "2018-09-06T00:00:00-07:00"
+description: The documentation on Code Climate for setting up auto generation of code
+  coverage for a JavaScript application was lacking pretty hard. Here I show how we
+  can get a React app using Travis CI and Jest to automate generating code coverage
+  that gets sent to Code Climate.
+slug: showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci
+tags:
+- react
+- typescript
+- javascript
+- code-climate
+- travis-ci
+title: Showing code coverage for a React app using Code Climate and Travis CI
+---
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/test_coverage)](https://codeclimate.com/github/jasonraimondi/traverse/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/maintainability)](https://codeclimate.com/github/jasonraimondi/traverse/maintainability)

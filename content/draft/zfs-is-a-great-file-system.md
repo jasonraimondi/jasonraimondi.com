@@ -1,23 +1,23 @@
-+++
-title = "ZFS"
-slug = "zfs"
-date = 2019-03-18
-draft = true
-description = "Yes, zfs send is faster. It doesn’t need to parse everything, it directly finds all the blocks that have changed between the snapshots."
-tags = [ 
-    "vue.js",
-    "php",
-    "javascript",
-]
-categories = [
-    "frontend",
-    "backend",
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- frontend
+- backend
+- ops
+date: "2019-03-18T00:00:00-07:00"
+description: Yes, zfs send is faster. It doesn’t need to parse everything, it directly
+  finds all the blocks that have changed between the snapshots.
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: zfs
+tags:
+- vue.js
+- php
+- javascript
+title: ZFS
+---
+ 
 
 ### Sending and Receiving Snapshot
 

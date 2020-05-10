@@ -1,20 +1,19 @@
-+++
-title = "Recovery Passport"
-slug = "recovery-passport-three-tiered-support-system"
-date = 2019-03-18
-description = "Recovery Passport  is a three tiered support system for mental and drug rehab members, counselors, and those closest to them, supporters."
-tags = [ 
-    "vue.js",
-    "php",
-    "javascript",
-]
-categories = [
-    "frontend",
-    "backend",
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_1_feature.png"
-+++
+---
+categories:
+- frontend
+- backend
+- ops
+date: "2019-03-18T00:00:00-07:00"
+description: Recovery Passport  is a three tiered support system for mental and drug
+  rehab members, counselors, and those closest to them, supporters.
+image: https://assets.jasonraimondi.com/posts/2019/03/recovery-passport/recovery-passport_1_feature.png
+slug: recovery-passport-three-tiered-support-system
+tags:
+- vue.js
+- php
+- javascript
+title: Recovery Passport
+---
 
 [Jack Powers](https://www.linkedin.com/in/jackpowersjr/) - Cofounder/CEO
 

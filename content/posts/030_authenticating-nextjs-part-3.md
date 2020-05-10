@@ -1,26 +1,26 @@
-+++
-title = "Add server side rendered async api calls to your Next.js application that resolve before the initial page load"
-slug = "add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load"
-date = "2019-08-16T05:30:00-0700"
-description = "Add api calls to your application that can all be resolved before the initial render, giving the user (or bot) a fully loaded page right from the get-go."
-aliases = [
-    "/posts/authenticating-nextjs-part-3/",
-]
-tags = [
-    "authenticating-nextjs",
-    "nextjs",
-    "ssr",
-    "react",
-]
-categories = [
-    "software",
-    "frontend",
-    "backend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg"
-imageCredit = "@ascales https://unsplash.com/photos/1_WMZARl81c"
-imageAlt = "photo of rocket ship inside warehouse"
-+++ 
+---
+aliases:
+- /posts/authenticating-nextjs-part-3/
+categories:
+- software
+- frontend
+- backend
+date: 2019-08-16T05:30:00-0700
+description: Add api calls to your application that can all be resolved before the
+  initial render, giving the user (or bot) a fully loaded page right from the get-go.
+image: https://assets.jasonraimondi.com/posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg
+imageAlt: photo of rocket ship inside warehouse
+imageCredit: '@ascales https://unsplash.com/photos/1_WMZARl81c'
+slug: add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load
+tags:
+- authenticating-nextjs
+- nextjs
+- ssr
+- react
+title: Add server side rendered async api calls to your Next.js application that resolve
+  before the initial page load
+---
+ 
 
 ## Overview
 

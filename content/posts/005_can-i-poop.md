@@ -1,26 +1,26 @@
-+++
-title = "Can I Poop?"
-slug = "can-i-poop"
-date = 2017-11-01
-description = "A live view of Event Farm's upstairs/downstairs bathroom occupation status. Keep the window open for a few minutes during week day business hours and watch the room status. It will change without the need of a refresh."
-tags = [ 
-    "javascript", 
-    "firebase",
-    "websockets", 
-    "vue.js",
-    "raspberry-pi",
-    "arduino",
-    "alfred",
-]
-categories = [
-    "software",
-    "frontend",
-    "backend",
-    "hardware",
-]
-image = "https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-alfredo.png"
-comments = true
-+++
+---
+categories:
+- software
+- frontend
+- backend
+- hardware
+comments: true
+date: "2017-11-01T00:00:00-07:00"
+description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
+  Keep the window open for a few minutes during week day business hours and watch
+  the room status. It will change without the need of a refresh.
+image: https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-alfredo.png
+slug: can-i-poop
+tags:
+- javascript
+- firebase
+- websockets
+- vue.js
+- raspberry-pi
+- arduino
+- alfred
+title: Can I Poop?
+---
 
 A few months ago myself and a coworker attended one of the [LA Software Craftmanship](https://www.meetup.com/LA-Software-Craftsmanship/) workshops down at 8th Light centered around using the GPIO pins on the Raspberry Pi.  We wrote a few different programs in C and Python first using some sensors, and then the Tx/Rx to send messages between Pi’s.  It reminded me a lot of college where I had the opportunity to take classes like Sensors and Electronics Based Art, centered around using Arduino based sensors to make all different things, it was great.
 

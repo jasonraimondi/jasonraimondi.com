@@ -1,12 +1,12 @@
-+++
-title = "Uses"
-description = "This page lists software and hardware I use on a daily basis."
-date = 2019-03-19
-lastmod = 2020-02-21
-image = "https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg"
-imageCredit = "@robertbye https://unsplash.com/photos/BY34glOW7wA"
-imageAlt = "person using computer on brown wooden table"
-+++
+---
+date: "2019-03-19T00:00:00-07:00"
+description: This page lists software and hardware I use on a daily basis.
+image: https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+imageAlt: person using computer on brown wooden table
+imageCredit: '@robertbye https://unsplash.com/photos/BY34glOW7wA'
+lastmod: "2020-02-21T00:00:00-08:00"
+title: Uses
+---
 
 This page lists software and hardware I use on a daily basis.
 

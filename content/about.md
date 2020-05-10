@@ -1,11 +1,15 @@
-+++
-title = "About"
-slug = "about"
-date = 2018-12-04
-lastmod = 2019-03-13
-description = "My passion is for writing software with a clean architecture. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
-image = "https://assets.jasonraimondi.com/misc/me/hitrecord-everyone-2019.jpg"
-+++
+---
+date: "2018-12-04T00:00:00-08:00"
+description: My passion is for writing software with a clean architecture. My professional
+  focus has been in web systems; everything from designing to building and deploying
+  server and client web applications. What I really am is a technologist and all around
+  computer geek. Give me a computer and I will be hacking in minutes, occupied for
+  days.
+image: https://assets.jasonraimondi.com/misc/me/hitrecord-everyone-2019.jpg
+lastmod: "2019-03-13T00:00:00-07:00"
+slug: about
+title: About
+---
 
 <script>
 function setRandomPicture() {

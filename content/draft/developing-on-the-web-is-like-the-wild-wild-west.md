@@ -1,23 +1,22 @@
-+++
-title = "Developing on the web is the wild Wild West."
-slug = "www-wild-wild-west"
-date = 2019-03-19
-draft = true
-description = "Developing on the web is the wild Wild West."
-tags = [
-    "www",
-    "php",
-    "javascript",
-]
-categories = [
-    "frontend",
-    "backend",
-    "ops",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- frontend
+- backend
+- ops
+date: "2019-03-19T00:00:00-07:00"
+description: Developing on the web is the wild Wild West.
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: www-wild-wild-west
+tags:
+- www
+- php
+- javascript
+title: Developing on the web is the wild Wild West.
+---
+ 
 
 
 To whom it may inspire:

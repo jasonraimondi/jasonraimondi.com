@@ -1,21 +1,20 @@
-+++
-title = "Part 4: Add page layout and the Tailwind css framework"
-slug = "authenticating-nextjs-part-4"
-date = 2019-08-02
-draft = true
-description = "Authenticating and securing a nextjs application"
-tags = [
-    "nextjs",
-    "react",
-]
-categories = [
-    "frontend",
-    "Backend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- frontend
+- Backend
+date: "2019-08-02T00:00:00-07:00"
+description: Authenticating and securing a nextjs application
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: authenticating-nextjs-part-4
+tags:
+- nextjs
+- react
+title: 'Part 4: Add page layout and the Tailwind css framework'
+---
+ 
 
 ## Add page layout and the Tailwind css framework
 

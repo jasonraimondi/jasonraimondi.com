@@ -1,19 +1,17 @@
-+++
-title = "Randomize image in static Jekyll or Hugo site with vanilla JavaScript"
-slug = "randomize-image-in-static-jekyll-or-hugo-site-with-vanilla-js"
-date = 2019-03-19
-draft = true
-description = "Randomize vanilla js"
-tags = [
-    "javascript",
-]
-categories = [
-    "frontend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++
+---
+categories:
+- frontend
+date: "2019-03-19T00:00:00-07:00"
+description: Randomize vanilla js
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: randomize-image-in-static-jekyll-or-hugo-site-with-vanilla-js
+tags:
+- javascript
+title: Randomize image in static Jekyll or Hugo site with vanilla JavaScript
+---
 
 If you check out my [about](/about) page. Refresh the page to (hopefully) get a new one.
 

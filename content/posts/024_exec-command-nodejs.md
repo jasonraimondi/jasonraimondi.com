@@ -1,20 +1,19 @@
-+++
-title = "Using the exec command in node.js"
-slug = "exec-command-in-nodejs"
-date = 2019-03-14
-description = "Using the exec command in Node.js is pretty simple, first import the exec function, and then call it."
-tags = [ 
-    "javascript", 
-    "node.js", 
-]
-categories = [
-    "backend"
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg"
-imageCredit = "@gypsycompassrose https://unsplash.com/photos/fnlNwb5sB5Y"
-imageAlt = "photography of black dial telephone"
-+++
+---
+categories:
+- backend
+comments: true
+date: "2019-03-14T00:00:00-07:00"
+description: Using the exec command in Node.js is pretty simple, first import the
+  exec function, and then call it.
+image: https://assets.jasonraimondi.com/posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg
+imageAlt: photography of black dial telephone
+imageCredit: '@gypsycompassrose https://unsplash.com/photos/fnlNwb5sB5Y'
+slug: exec-command-in-nodejs
+tags:
+- javascript
+- node.js
+title: Using the exec command in node.js
+---
 
 Using the exec command in Node.js is pretty simple, first import the exec function, and then call it with the the first argument being the command you are running, and the second argument a callback with params for **error**, **stdout**, **stderr**.
 

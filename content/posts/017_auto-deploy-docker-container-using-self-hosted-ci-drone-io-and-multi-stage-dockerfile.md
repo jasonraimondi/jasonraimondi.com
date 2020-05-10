@@ -1,19 +1,21 @@
-+++
-title = "Auto deploy Docker containers using a self hosted CI (Drone 1.0.0-rc.1) and a multi stage Dockerfile"
-slug = "auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile"
-date = 2018-11-27
-description = "Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI. One of the best ways to get Drone automatically building your images for you, especially images that have a build stage, is to use a multi-stage Dockerfile"
-tags = [
-    "docker",
-    "drone.io",
-    "ci",
-]
-categories = [
-    "ops"
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg"
-+++
+---
+categories:
+- ops
+comments: true
+date: "2018-11-27T00:00:00-08:00"
+description: Drone.io is a great, Docker based alternative to Jenkins that is a lot
+  like a self hosted alternative to TravisCI. One of the best ways to get Drone automatically
+  building your images for you, especially images that have a build stage, is to use
+  a multi-stage Dockerfile
+image: https://assets.jasonraimondi.com/posts/_covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg
+slug: auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile
+tags:
+- docker
+- drone.io
+- ci
+title: Auto deploy Docker containers using a self hosted CI (Drone 1.0.0-rc.1) and
+  a multi stage Dockerfile
+---
 
 Drone.io is a great, Docker based alternative to Jenkins that is a lot like a self hosted alternative to TravisCI.
 

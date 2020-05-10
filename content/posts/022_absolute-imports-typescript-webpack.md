@@ -1,24 +1,21 @@
-+++
-slug = "absolute-imports-with-typescript-and-webpack"
-title = "Absolute imports with TypeScript and Webpack"
-description = "Absolute Imports in TypeScript using the tsconfig path resolver."
-date = 2019-02-23
-lastmod = 2019-10-01
-aliases = [
-    "/posts/fully-qualified-name-in-typescript-absolute-imports/",
-]
-tags = [
-  "typescript", 
-  "webpack",
-  "tsconfig.json"
-]
-categories = [
-    "frontend",
-    "backend",
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/graphic-node-TAHXyTpQBck-unsplash.jpg"
-+++
+---
+aliases:
+- /posts/fully-qualified-name-in-typescript-absolute-imports/
+categories:
+- frontend
+- backend
+comments: true
+date: "2019-02-23T00:00:00-08:00"
+description: Absolute Imports in TypeScript using the tsconfig path resolver.
+image: https://assets.jasonraimondi.com/posts/_covers/graphic-node-TAHXyTpQBck-unsplash.jpg
+lastmod: "2019-10-01T00:00:00-07:00"
+slug: absolute-imports-with-typescript-and-webpack
+tags:
+- typescript
+- webpack
+- tsconfig.json
+title: Absolute imports with TypeScript and Webpack
+---
 
 Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.
 

@@ -1,18 +1,17 @@
-+++
-title = "Traverse: app & website (closed source version)"
-slug = "traverse"
-date = 2018-08-06
-description = "Traverse is a GitHub Explorer App I built using Electron + React, and a whole bunch of other open source tools."
-tags = [
-    "electron",
-    "javascript",
-    "typescript",
-]
-categories = [
-    "frontend",
-]
-comments = true
-+++
+---
+categories:
+- frontend
+comments: true
+date: "2018-08-06T00:00:00-07:00"
+description: Traverse is a GitHub Explorer App I built using Electron + React, and
+  a whole bunch of other open source tools.
+slug: traverse
+tags:
+- electron
+- javascript
+- typescript
+title: 'Traverse: app & website (closed source version)'
+---
 
 ![Traverse Spaceman Logo](https://assets.jasonraimondi.com/posts/2018/08/traverse/pointing_0.5x.png)
 

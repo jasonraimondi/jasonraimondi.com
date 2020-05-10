@@ -1,19 +1,17 @@
-+++
-title = "Traverse 2: Electric Boogaloo"
-slug = "traverse-2-electric-boogaloo"
-date = 2019-03-14
-description = "Traverse was rewritten open sourced!"
-tags = [
-    "electron",
-    "javascript",
-    "typescript",
-]
-categories = [
-    "frontend"
-]
-comments = true
-image = "https://assets.jasonraimondi.com/posts/_covers/traverse-featured-mini.png"
-+++
+---
+categories:
+- frontend
+comments: true
+date: "2019-03-14T00:00:00-07:00"
+description: Traverse was rewritten open sourced!
+image: https://assets.jasonraimondi.com/posts/_covers/traverse-featured-mini.png
+slug: traverse-2-electric-boogaloo
+tags:
+- electron
+- javascript
+- typescript
+title: 'Traverse 2: Electric Boogaloo'
+---
 
 [![Traverse](https://assets.jasonraimondi.com/posts/2018/08/traverse/pointing-mini.png)](https://github.com/jasonraimondi/traverse)
 

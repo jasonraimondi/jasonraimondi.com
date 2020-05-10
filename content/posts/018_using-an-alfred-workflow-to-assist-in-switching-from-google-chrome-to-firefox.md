@@ -1,17 +1,16 @@
-+++
-title = "Using an Alfred workflow to assist in switching from Google Chrome to Firefox"
-slug = "using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox"
-date = 2018-12-13
-description = "Now every time I am about to launch Chrome, I see the \"Launch Firefox Instead of Chrome\" launcher."
-tags = [ 
-    "alfred", 
-]
-categories = [
-    "workflow",
-]
-image = "https://assets.jasonraimondi.com/posts/2018/12/alfred-chrome-to-firefox-workflow.png"
-comments = true
-+++
+---
+categories:
+- workflow
+comments: true
+date: "2018-12-13T00:00:00-08:00"
+description: Now every time I am about to launch Chrome, I see the "Launch Firefox
+  Instead of Chrome" launcher.
+image: https://assets.jasonraimondi.com/posts/2018/12/alfred-chrome-to-firefox-workflow.png
+slug: using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox
+tags:
+- alfred
+title: Using an Alfred workflow to assist in switching from Google Chrome to Firefox
+---
 
 This workflow is meant to help break the habit of using Google Chrome. I tend to launch applications with Alfred. When I want to launch a browser, what is engraved in my brain is CHROME! 
 

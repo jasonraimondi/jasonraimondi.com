@@ -1,21 +1,20 @@
-+++
-title = "Part 5 - Add Docker and containerize the app"
-slug = "authenticating-nextjs-part-5"
-date = 2019-08-02
-draft = true
-description = "Authenticating and securing a nextjs application"
-tags = [
-    "nextjs",
-    "react",
-]
-categories = [
-    "frontend",
-    "Backend",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg"
-imageCredit = "@hojipago https://unsplash.com/photos/D46mXLsQRJw"
-imageAlt = "under construction crane"
-+++ 
+---
+categories:
+- frontend
+- Backend
+date: "2019-08-02T00:00:00-07:00"
+description: Authenticating and securing a nextjs application
+draft: true
+image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+imageAlt: under construction crane
+imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
+slug: authenticating-nextjs-part-5
+tags:
+- nextjs
+- react
+title: Part 5 - Add Docker and containerize the app
+---
+ 
 
 ## Containerize them
 

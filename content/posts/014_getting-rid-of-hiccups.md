@@ -1,17 +1,17 @@
-+++
-title = "Getting rid of hiccups"
-slug = "getting-rid-of-hiccups"
-date = 2018-10-10
-description = "I found this the other day when I had the hiccups a few different days. Posting it here because it worked amazing and I do not ever want to forget this technique."
-tags = [ 
-    "misc" 
-]
-categories = [
-    "workflow",
-]
-image = "https://assets.jasonraimondi.com/posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg"
-imageCredit = "@owenbeard https://unsplash.com/photos/DK8jXx1B-1c"
-+++
+---
+categories:
+- workflow
+date: "2018-10-10T00:00:00-07:00"
+description: I found this the other day when I had the hiccups a few different days.
+  Posting it here because it worked amazing and I do not ever want to forget this
+  technique.
+image: https://assets.jasonraimondi.com/posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg
+imageCredit: '@owenbeard https://unsplash.com/photos/DK8jXx1B-1c'
+slug: getting-rid-of-hiccups
+tags:
+- misc
+title: Getting rid of hiccups
+---
 
 I found this the other day when I had the hiccups a few different days in a row. Posting it here because it worked amazing and I do not ever want to forget this technique.
 

@@ -1,16 +1,17 @@
-+++
-title = "Add location data to images"
-slug = "add-location-data-to-images"
-date = "2020-02-25T10:16:00-0800"
-description = "When you take photos with a camera without a GPS, like say, a DSLR, the photos don't include location data. Follow this guide to bulk add location data to images using `exiftool`"
-tags = [
-    "bash",
-]
-categories = [
-    "software",
-]
-image = "https://assets.jasonraimondi.com/posts/2020/02/openstreetmaps.png"
-+++ 
+---
+categories:
+- software
+date: 2020-02-25T10:16:00-0800
+description: When you take photos with a camera without a GPS, like say, a DSLR, the
+  photos don't include location data. Follow this guide to bulk add location data
+  to images using `exiftool`
+image: https://assets.jasonraimondi.com/posts/2020/02/openstreetmaps.png
+slug: add-location-data-to-images
+tags:
+- bash
+title: Add location data to images
+---
+ 
 
 ## Install dependencies
 
