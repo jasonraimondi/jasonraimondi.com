@@ -3,9 +3,7 @@ categories:
 - misc
 - ops
 date: "2020-05-09T00:00:00-07:00"
-description: One of the many great features of Gitea is the mirror repository. Keep
-  an always up to date archive of the GitHub repositories that matter to you using
-  Gitea mirror repositories
+description: Keep an always up to date archive of the GitHub repositories that matter to you using Gitea mirror repositories.
 draft: true
 image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
 imageAlt: under construction crane
@@ -17,68 +15,47 @@ tags:
 - gitea
 - data hoarding
 - typescript
-title: Archive the GitHub repositories that matter
+title: Archive GitHub repositories using Gitea Mirror Repos
 ---
- 
 
-There will be many buzz words, many.
+One of the many great features of Gitea is the mirror repository. 
+Mirror repositories are a feature of Gitea that allows you to local copies of external repositories. 
 
-[Gitea](https://gitea.io) is a self-hosted git platform that has many great features, one of my favorites is the syncing mirror repositories.
 
-I wrote a tool using [Deno](https://deno.land/) to spider through a GitHub user's relevant repositories and add them to an instance of Gitea as [mirror repositories](#gitea-and-the-mirror-repository-type). 
+## What is a mirror repository?
 
-## Gitea and the mirror repository type
+
+Using the **New Migration** option will allow you to initialize a repository in Gitea from an existing repository url. 
+
+
+We can keep a backup of the [Gitea codebase](https://github.com/go-gitea/gitea), synced every 8 hours to our local gitea instance. 
+
+
+Check the box **This repository will be a mirror** to have Gitea keep the repository up to date.
+
 
 The mirror repo allows us to mirror repositories from existing sources, such your favorite open-source GitHub projects. 
 
 Mirror repositories update on cronjobs managed by Gitea. 
 
-### Try Gitea using Docker
+// image of  
 
-For a quick look, try docker run
+## How?
 
-```bash
-docker run --rm -p 3000:3000 gitea:gitea
-```
+[Deno-mirror-to-gitea](https://github.com/jasonraimondi/deno-mirror-to-gitea) is a tool I wrote that will spider through GitHub users and add their relevant repositories as mirror repositories to an existing [Gitea](https://gitea.io) server. Gitea is a self-hosted git platform that has many great features, one of my favorites is the syncing mirror repositories.
 
-For a more permanent, use docker-compose
-
-Here is a lean `docker-compose.yml` file for getting a local gitea running and mounting repositories and configs. Using this configuration, repositories will be saved in a directory called `repositories` next to your `docker-compose.yml` file.
-
-```yaml
-version: "3.7"
-
-services:
-  server:
-    image: gitea/gitea:latest
-    environment:
-      - USER_UID=1000 # owner user of repos user uid
-      - USER_GID=1000 # owner group of repos gid
-    restart: unless-stopped
-    volumes:
-      - ./config:/data
-      - ./repositories:/data/git/repositories
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
-    ports:
-      - "3000:3000" # bind serve port directly or use reverse proxy 
-      - "222:22"    # ssh port into container
-```
-
-Boot the gitea instance
-
-```bash
-docker-compose up -d
-```
-
-Follow install steps.
-
-![gitea install screen](/)
-
-Most of the default configuration should be correct for a local testing instance. If you are using the docker-compose configuration, all of these fields are available for editing in the file `./config/`
-
-If you have created a user in the install step, go ahead and log in. If you havent, you can register a user now via the "Register" link and this user will be an administrator.
+### Create a Gitea access token
 
 Now you need to go in and create an access token for [deno-mirror-to-gitea](https://github.com/jasonraimondi/deno-mirror-to-gitea) to work.
 
-![gitea create access token screen](/)
+So now we have the token `1548f65934f5034d9803bdfd46a6a25e85e30de2`
+
+
+### Create a GitHub access token
+
+The GitHub GraphQL v4 API requires an access token. The only permission we are going to give the token is `public_repo` allowing **deno-mirror-to-gitea** to view only public repositories. The API is used to fetch a list of a users public repositories, repositories they've starred, repositories they've contributed to, and a list of users who they are following. 
+
+
+Follow this link to create a github access token: <a href="https://github.com/settings/tokens/new?description=deno-mirror-to-gitea&scopes=public_repo" target="_blank" rel="noopener noreferrer">https://github.com/settings/tokens/new?description=deno-mirror-to-gitea&scopes=public_repo</a>
+
+
