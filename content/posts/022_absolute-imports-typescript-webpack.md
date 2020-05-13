@@ -45,7 +45,6 @@ async function infinityIcon() {
 
 You just need to add the **paths** section to the compiler options of the TypeScript configuration file.
 
-
 // tsconfig.json
 
 ```json
@@ -59,7 +58,6 @@ You just need to add the **paths** section to the compiler options of the TypeSc
   ...
 }
 ```
-
 
 ### Notice for Webpack users
 

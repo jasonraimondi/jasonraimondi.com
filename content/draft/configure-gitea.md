@@ -18,7 +18,6 @@ title: Configure Gitea
 
 Check out the [sample app.ini](https://github.com/go-gitea/gitea/blob/master/custom/conf/app.ini.sample) file for a full list of options.
 
-
 ```text
 APP_NAME = Jason's Git Mirror
 RUN_MODE = prod

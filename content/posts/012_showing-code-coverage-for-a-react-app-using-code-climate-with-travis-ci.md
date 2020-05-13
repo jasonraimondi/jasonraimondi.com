@@ -54,7 +54,6 @@ If you want to direct coverage to a specific folder, you can go ahead and add so
 
 When I got to the website, I was actually super confused. Not a huge fan of the confusing double logins, the one we are looking for is called *Quality*. You are able to use Code Climate for free on open source repositories. Private repositories are paid.
 
-
 {{< image/pop src="https://assets.jasonraimondi.com/posts/2018/09/show-code-coverage-code-climate/code-climate-click-to-setup.png" alt="Configuring Travis environments" >}}
 
 Add the repository and generate a Token for Code Coverage. You are going to need to use the token in the next part as `CC_TEST_REPORTER_ID`.

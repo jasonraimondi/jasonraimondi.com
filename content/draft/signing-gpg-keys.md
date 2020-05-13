@@ -36,7 +36,6 @@ uid                 [ultimate] Jason Raimondi <jason@raimondi.us>
 ssb   rsa4096/DF6B171SDJE87BD1 2015-02-12 [E] [expires: 2020-02-11]
 ```
 
-
 To set your GPG signing key in Git, paste the text below, substituting in the GPG key ID you'd like to use. In this example, the GPG key ID is 1755B5C35R6G56E5:
 
 ```bash

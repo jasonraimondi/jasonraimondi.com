@@ -62,7 +62,6 @@ version: '3.7'
           - cloud-net
 ```
 
-
 So the hardest part of this was:
 
 1) waiting patiently for the thing to start or timeout

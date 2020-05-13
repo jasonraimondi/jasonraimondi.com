@@ -28,7 +28,6 @@ $ tsc --init
 message TS6071: Successfully created a tsconfig.json file.
 ```
 
-
 * **target** - JavaScript syntax output ()
 * **rootDir** - Project source directory directory 
 * **outDir** - Output directory for your built JavaScript files, this directory would typically be added to the gitignore.

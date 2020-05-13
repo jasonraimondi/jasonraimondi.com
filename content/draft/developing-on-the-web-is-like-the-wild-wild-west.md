@@ -18,7 +18,6 @@ title: Developing on the web is the wild Wild West.
 ---
  
 
-
 To whom it may inspire:
 
 # Developing on the web is the wild Wild West

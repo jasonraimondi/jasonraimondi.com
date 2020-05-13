@@ -62,7 +62,6 @@ This configuration is done in our  `jest.config.js` file in our project root.
     ]
 ```
 
-
 ### Configure Enzyme with Jest
 
 Now that Jest is configured for TypeScript, we need to configure an Enzyme Adapter inside our jest configuration.
@@ -152,7 +151,6 @@ Snapshots:   0 total
 Time:        1.59s, estimated 2s
 Ran all test suites.
 ```
-
 
 If you are using an IntelliJ IDE (PHPStorm, WebStorm, etc), I’ve already gone and added a Jest Runner called  “Unit Test” that you can either manually trigger, or use the convenient `ctrl + r`  running that IntelliJ offers.
 

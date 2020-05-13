@@ -55,7 +55,6 @@ export function ApiCallout({ message }: any) {
 
 {{< image/pop src="https://assets.jasonraimondi.com/posts/2019/08/api-callout.png" alt="Show the ApiCallout component" portrait="true" >}}
 
-
 ## Add rest call go unprotected page
 
 If you open up your `services/rest_services.ts` file, you should have the [_login_ **POST** method set up from previously]({{< relref "/posts/029_authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
@@ -155,7 +154,6 @@ Index.getInitialProps = async (ctx: NextPageContext) => {
   const message: string = await fetchUnrestricted();
   return { message };
 };
-
 
 export default Index;
 ```

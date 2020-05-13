@@ -59,7 +59,6 @@ You need to edit the `Makefile` and update the fields 'YOUR_DOMAIN' and 'YOUR_EM
 - `YOUR_DOMAIN` = to the domain you are going to be using
 - `YOUR_EMAIL` = email address for Let's Encrypt to send info about certs (i.e. a certificate expiring soon)
 
-
 ### 2. Getting Your Server Configured with Docker and Docker Compose
 
 Any VPS will do; Digital Ocean, Linode, AWS... whatever. We just need to have a domain with your DNS pointing your domain correctly to the server. We need to be hitting an actual domain and not an IP address that Let’s Encrypt can directly ping.
@@ -120,9 +119,6 @@ services:
     env_file:
       - .env
 ```
-
-
-Both MySQL and Gogs section, we are directly referencing the official image. You can see under the nginx section, we are defining a build directory of `nginx-ssl`. This is because we need to add some SSL certificates and keys inside of this container to get it ready to serve our Gogs instance over https.
 
 #### The Three Containers
 
@@ -290,7 +286,6 @@ dockergogs_gogs_1      /app/gogs/docker/start.sh  ...   Up      0.0.0.0:2222->22
 dockergogs_mysql_1     docker-entrypoint.sh mysqld      Up      127.0.0.1:3306->3306/tcp
 dockergogs_nginx_1     nginx -g daemon off;             Up      0.0.0.0:443->443/tcp, 0.0.0.0:80->80/tcp
 ```
-
 
 ### 6. Configure Gogs
 

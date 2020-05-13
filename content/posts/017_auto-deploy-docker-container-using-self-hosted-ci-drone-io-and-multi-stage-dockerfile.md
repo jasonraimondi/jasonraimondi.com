@@ -60,7 +60,6 @@ steps:
     force_tag: true
 ```
 
-
 #### Step: Test
 
 The “test” step has no conditions to run, thus will run for every commit that is pushed up to the repository. Every commit will run the test step, which will use the [node:alpine](https://hub.docker.com/_/node/) container and run the “commands” consecutively.

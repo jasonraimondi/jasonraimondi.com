@@ -450,7 +450,6 @@ export default privateRoute(Dashboard);
 
 Remember, private route **is not yet protecting the route**; currently it is just emitting a `console.log` function with the current auth status. What is happening is that we are noticing the token is void, running a `console.log`, and letting the unauthorized user access the page. 
 
-
 {{< 
   image/pop 
   src="https://assets.jasonraimondi.com/posts/2019/08/you-are-not-logged-in.gif" 

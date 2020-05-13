@@ -157,7 +157,6 @@ export class TestingInversifyConfig extends InversifyContainer {
 
 Our Http layer is exposed using [Nest.js](https://nestjs.com/) which is ultimately express under the hood, although you could use other options, such as [Fastify](https://github.com/fastify/fastify) if you really wanted to.
 
-
 #### Http/Services/DomainService
 
 This is the main entrypoint into our Domain project in our Http layer. This is going to be injected into our root AppModule and all of our controllers that are interfacing with our domain logic will be depending on this service.
@@ -195,7 +194,6 @@ export class HttpLoggerService extends LoggerService implements NestLoggerServic
 }
 
 ```
-
 
 ### Nest.js Http Controllers
 

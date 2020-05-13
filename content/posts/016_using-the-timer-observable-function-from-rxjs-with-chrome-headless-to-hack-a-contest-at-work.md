@@ -51,7 +51,6 @@ const intervolTimer = timer(0, intervol);
 const intervolTimerSubscription = intervolTimer.subscribe(addPageview);
 ```
 
-
 We are using [puppetter](https://github.com/GoogleChrome/puppeteer), a Headless Chrome instance to spin up a new browser for us every time we want to view the page. The [‘timer’ function](http://reactivex.io/documentation/operators/timer.html) from the [Rxjs library](https://github.com/reactivex/rxjs) is what is powering our loop. We are then able to add a subscription to the timer that will execute every intervol.
 
 ### Dockerized
