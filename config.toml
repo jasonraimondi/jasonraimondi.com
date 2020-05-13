@@ -42,8 +42,15 @@ defaultContentLanguage = "en"
 </script>
 """
 
+[Params.EditLink]
+  name = "GitHub"
+  link = "https://github.com/jasonraimondi/jasonraimondi.com"
+
 [Params.MainMenu]
   title = "Projects"
+[[Params.MainMenu.Link]]
+  name = "Posts"
+  url = "/posts"
 [[Params.MainMenu.Link]]
   name = "Categories"
   url = "/categories"
