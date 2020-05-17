@@ -47,13 +47,13 @@ defaultContentLanguage = "en"
   link = "https://github.com/jasonraimondi/jasonraimondi.com"
 
 [Params.MainMenu]
-  title = "Projects"
+#  title = "Projects"
+[[Params.MainMenu.Link]]
+  name = "Projects"
+  url = "/projects"
 [[Params.MainMenu.Link]]
   name = "Posts"
   url = "/posts"
-[[Params.MainMenu.Link]]
-  name = "Categories"
-  url = "/categories"
 [[Params.MainMenu.Link]]
   name = "About"
   url = "/about"
@@ -62,7 +62,7 @@ defaultContentLanguage = "en"
   url = "/uses"
 
 [Params.ProjectsMenu]
-  title = "Projects"
+#  title = "Projects"
 [[Params.ProjectsMenu.Link]]
   name = "Traverse"
   url = "/posts/traverse-2-electric-boogaloo"

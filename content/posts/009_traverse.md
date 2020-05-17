@@ -3,6 +3,7 @@ categories:
 - frontend
 comments: true
 date: "2018-08-06T00:00:00-07:00"
+lastmod: "2020-05-16T11:36:32-08:00"
 description: Traverse is a GitHub Explorer App I built using Electron + React, and
   a whole bunch of other open source tools.
 slug: traverse
@@ -17,11 +18,7 @@ title: 'Traverse: app & website (closed source version)'
 
 Traverse is a GitHub Explorer App I built using Electron + React, and a whole bunch of other open source tools.
 
-```bash
-brew cask install traverse
-```
-
-The app is primarily written in TypeScript.
+The app was written in TypeScript.
 
 {{< image/pop portrait="true" src="https://assets.jasonraimondi.com/posts/2018/08/traverse/traverse_app_no-shadow_02.png" alt="Main page of Traverse, searching for monthly trending JavaScript repositories" >}}
 
