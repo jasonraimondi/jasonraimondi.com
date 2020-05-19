@@ -1,0 +1,27 @@
+{{ define "main" }}
+<p class="h1" style="margin-top: 2rem;">Hey there, I'm Jason Raimondi. <small><a href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank" rel="nofollow">{{ .Site.Params.Twitter }}</a></small></p>
+<p>I am a full stack software engineer <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a>. I have been doing a lot of ops works recently, focusing on containerizing the HITRECORD Ruby application.</p>
+<p>My favorite stack these days has been <strong>TypeScript</strong> top to bottom. I really love (and hate) the flexibility of the enforced types, and optional <code>any</code> type.</p>
+<ul class="list-reset">
+    <li><h3>Some projects I've worked on recently</h3></li>
+    <li><a href="https://github.com/jasonraimondi/deno-mirror-to-gitea">Deno mirror to gitea</a> - 2020 - an archivist tool to spider through GitHub users and mirror them to a local gitea instance</li>
+    <li><a href="https://github.com/jasonraimondi/locatizor">Locatizor</a> - 2020 - Add location data to photos</li>
+    <li><a href="/posts/recovery-passport-three-tiered-support-system/">Recovery Passport</a> - 2015-2019 - three tiered support system</li>
+    <li><a href="/posts/traverse-2-electric-boogaloo/">Traverse</a> - 2018</li>
+    <li><a href="https://github.com/jasonraimondi/url-to-png">URL-to-PNG</a> - 2018 - url to png web utility tool</li>
+    <li><a href="/posts/traverse/">Traverse v0.1</a> - 2018</li>
+</ul>
+<p>If I’m not learning a new language or practicing software architecture design patterns, I’m out with my amazing wife or watching, listening to, or reading to a good movie or book.</p>
+
+<p>I am a data hoarder</p>
+
+<ul class="list-reset">
+    <li class="sidebar-title">
+        <h6 class="title">{{ .Site.Params.ExternalMenu.Title }}</h6>
+    </li>
+    {{ range .Site.Params.ExternalMenu.Link }}
+    <li><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
+    {{ end }}
+</ul>
+
+{{ end }}

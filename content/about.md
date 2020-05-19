@@ -35,7 +35,7 @@ My passion is for writing software with a clean architecture. I have been a stud
 
 I received a really fancy piece of paper in 2013 from the _University of Florida_ that reads: _Bachelors of Fine Arts_ in _Digital Media_. I formed Digital Canvas Design LLC in January of 2014 to maintain my professional work.
 
-If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing fiancé or watching, listening to, or reading to a good movie or book. 
+If I’m not learning a new language or practicing software architecture design patterns, I'm out with my amazing [wife](//kimcalderone.com) or watching, listening to, or reading to a good movie or book. 
 
 Feel free to check out my [resume](./resume) or peek at some of [the books I have been reading.](https://www.goodreads.com/jasonraimondi)
 
