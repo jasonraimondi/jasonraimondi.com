@@ -6,14 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/009_traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/009_traverse.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/projects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_label.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_label.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_anchor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_anchor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_headings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_headings.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,7 @@
       <workItem from="1583817356657" duration="21000" />
       <workItem from="1589506652279" duration="9000" />
       <workItem from="1589694078512" duration="5596000" />
-      <workItem from="1589867104610" duration="2181000" />
+      <workItem from="1589867104610" duration="8892000" />
     </task>
     <servers />
   </component>
@@ -162,15 +163,15 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="594" y="250" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1589145135103" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1589780165203">
+    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1589946272043">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="443" y="259" width="1002" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582181840775" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1589780165203" />
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup" timestamp="1589868567703">
+    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1589946272043" />
+    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup" timestamp="1589945246469">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="237" y="262" width="670" height="416" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582181829328" />
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1589868567703" />
+    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1589945246469" />
   </component>
 </project>

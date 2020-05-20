@@ -68,6 +68,32 @@ defaultContentLanguage = "en"
   name = "Flipp"
   url = "/posts/flipp"
 
+[Params.Projects]
+[[Params.Projects.Link]]
+  name = "Traverse"
+  url = "/posts/traverse-2-electric-boogaloo"
+[[Params.Projects.Link]]
+  name = "deno-mirror-to-gitea"
+  url = "https://github.com/jasonraimondi/deno-mirror-to-gitea"
+[[Params.Projects.Link]]
+  name = "Recovery Passport"
+  url = "/posts/recovery-passport-three-tiered-support-system/"
+[[Params.Projects.Link]]
+  name = "Locatizor"
+  url = "https://github.com/jasonraimondi/locatizor"
+[[Params.Projects.Link]]
+  name = "URL-to-PNG"
+  url = "https://github.com/jasonraimondi/url-to-png"
+[[Params.Projects.Link]]
+  name = "Restforcephp"
+  url = "https://github.com/eventfarm/restforcephp"
+[[Params.Projects.Link]]
+  name = "Can I Poop?"
+  url = "/posts/can-i-poop"
+[[Params.Projects.Link]]
+  name = "Flipp"
+  url = "/posts/flipp"
+
 [Params.ExternalMenu]
   title = "Over There"
 [[Params.ExternalMenu.Link]]
