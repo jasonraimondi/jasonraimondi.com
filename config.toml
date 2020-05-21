@@ -51,9 +51,6 @@ defaultContentLanguage = "en"
   name = "Posts"
   url = "/posts"
 [[Params.MainMenu.Link]]
-  name = "About"
-  url = "/about"
-[[Params.MainMenu.Link]]
   name = "Uses"
   url = "/uses"
 
@@ -72,27 +69,27 @@ defaultContentLanguage = "en"
 [[Params.Projects.Link]]
   name = "Traverse"
   url = "/posts/traverse-2-electric-boogaloo"
+  description = "Mac OS App for explore trending GitHub repos"
 [[Params.Projects.Link]]
   name = "deno-mirror-to-gitea"
   url = "https://github.com/jasonraimondi/deno-mirror-to-gitea"
+  description = "An archivist tool to sypder and backup GitHub repos"
 [[Params.Projects.Link]]
   name = "Recovery Passport"
   url = "/posts/recovery-passport-three-tiered-support-system/"
+  description = "Three tiered journaling system for recovering alcohol and narcotics addicts"
 [[Params.Projects.Link]]
   name = "Locatizor"
   url = "https://github.com/jasonraimondi/locatizor"
+  description = "Mac OS App to add location data to photos taken with a DSLR"
 [[Params.Projects.Link]]
   name = "URL-to-PNG"
   url = "https://github.com/jasonraimondi/url-to-png"
+  description = "A URL to PNG generator over HTTP"
 [[Params.Projects.Link]]
   name = "Restforcephp"
   url = "https://github.com/eventfarm/restforcephp"
-[[Params.Projects.Link]]
-  name = "Can I Poop?"
-  url = "/posts/can-i-poop"
-[[Params.Projects.Link]]
-  name = "Flipp"
-  url = "/posts/flipp"
+  description = "PHP API for Salesforce"
 
 [Params.ExternalMenu]
   title = "Over There"

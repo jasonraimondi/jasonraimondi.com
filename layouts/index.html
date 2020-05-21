@@ -1,37 +1,51 @@
 {{ define "main" }}
 
 <div class="home">
-    <p class="h1" style="margin-top: 2rem;">Hey, I'm Jason Raimondi.</p>
-    <p>I am a technologist and computer geek.</p>
+    <p class="h1" style="margin-top: 2rem;">
+        <img src="//assets.jasonraimondi.com/misc/me/animoji-hi.png" alt="emoji of me waving hi" style="height: 4rem;"/>
+        Hey, I'm Jason
+        <small>
+            <a href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank" rel="nofollow">
+                @{{ .Site.Params.Twitter }}
+            </a>
+        </small>
+    </p>
+
+    <p class="h2 font-mono">I'm a technologist and computer geek</p>
+
+    <p style="margin-top: 2rem;">
+        I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a>
+        doing a lot of ops work. Recently, I've been focusing on containerizing the our Ruby application and deploying
+        us on AWS EKS.
+    </p>
+
     <p>
         I have been professionally developing for the web since 2009. Early on I was primarily developing sites in
-        <strong>PHP</strong> and <strong>JavaScript</strong>. Recently, my favorite stack has been <strong>Golang</strong> or <strong>Node.js</strong> in <strong>TypeScript</strong> on the server, and
+        <strong>PHP</strong> and <strong>JavaScript</strong>. Recently, my favorite stack has been
+        <strong>Golang</strong> or <strong>Node.js</strong> in <strong>TypeScript</strong> on the server, and
         <strong>React</strong> in TypeScript. I have experience writing modular applications and have migrated to an
         entire containerized based deploy using Docker.
     </p>
 
-    <p>I have been working at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a> doing a lot of ops work, focusing on containerizing the HITRECORD Ruby application.</p>
-
-
-    {{ $title := .Site.Title }}
-
-    <p>foo {{ delimit .Site.Params.Projects.Link ", " ", and " }}</p>
-
-
-    <p>Some projects I've worked on recently are {{ range $i, $p := .Site.Params.Projects.Link }}{{- if $i -}}, {{ end -}}<a href="{{ $p.url | relURL }}">{{ $p.name | humanize }}</a>{{ end }}</p>
-
-    <p>I am a data hoarder.</p>
-
     <p>If I’m not learning a new language or practicing software architecture design patterns, I’m out with my amazing
         wife or watching, listening to, or reading to a good movie or book.</p>
-    <p>
-        You can find me around,
-        <a href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank" rel="nofollow">
-            @{{ .Site.Params.Twitter }}
-        </a>
-    </p>
 
-    Curious about how I work? Check out my <a href="/uses">uses</a> page for a full list of all the software, gadgets, and services I use.
+    <p class="h3" style="margin-top: 2rem;">These are some projects I've worked on recently:</p>
+
+    <ul class="list-reset">
+        {{ range $i, $p := .Site.Params.Projects.Link }}
+        <li style="margin-left: 0.5rem;">
+            &rarr; <a href="{{ $p.url | relURL }}">{{ $p.name }}</a>
+            {{ with $p.description }}- {{ . }}{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+
+    <p style="margin-top: 2rem;"><strong>Curious about how I work?</strong></p>
+    <p>
+        Check out my <a href="/uses">uses</a> page for a full list of all the software, gadgets, and services I
+        use.
+    </p>
 
     <ul class="list-reset" style="display: flex;">
         <li class="sidebar-title">
