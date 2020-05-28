@@ -1,22 +1,20 @@
 {{ define "main" }}
 
-<div class="home">
-    <p class="h1" style="margin-top: 2rem;">
-        <img src="//assets.jasonraimondi.com/misc/me/animoji-hi.png" alt="emoji of me waving hi" style="height: 4rem;"/>
-        Hey, I'm Jason
-        <small>
-            <a href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank" rel="nofollow">
-                @{{ .Site.Params.Twitter }}
-            </a>
-        </small>
+<div class="home" style="font-weight: 200;">
+    <h1 class="h1 font-mono" style="font-weight: 300;">
+        Hey, <img src="//assets.jasonraimondi.com/misc/me/animoji-hi.png" alt="emoji of me waving hi" style="position: relative; height: 3rem; top: 0.5rem"/> I'm Jason
+    </h1>
+
+    <h3 class="h2 font-mono" style="font-weight: 300;">I am a technologist and computer geek</h3>
+
+    <p>
+        I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a>
+        doing a lot of ops work. Recently, I've been focusing on containerizing our Ruby application and deploying
+        us on AWS EKS.
     </p>
 
-    <p class="h2 font-mono">I'm a technologist and computer geek</p>
-
-    <p style="margin-top: 2rem;">
-        I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a>
-        doing a lot of ops work. Recently, I've been focusing on containerizing the our Ruby application and deploying
-        us on AWS EKS.
+    <p>
+        You can follow my ramblings <a href="https://twitter.com/{{ .Site.Params.Twitter }}" target="_blank" rel="nofollow">@{{ .Site.Params.Twitter }}</a>.
     </p>
 
     <p>
@@ -30,7 +28,7 @@
     <p>If I’m not learning a new language or practicing software architecture design patterns, I’m out with my amazing
         wife or watching, listening to, or reading to a good movie or book.</p>
 
-    <p class="h3" style="margin-top: 2rem;">These are some projects I've worked on recently:</p>
+    <p class="h3" style="font-weight: 300;">These are some projects I've worked on recently:</p>
 
     <ul class="list-reset">
         {{ range $i, $p := .Site.Params.Projects.Link }}
@@ -42,17 +40,17 @@
     </ul>
 
     <p style="margin-top: 2rem;"><strong>Curious about how I work?</strong></p>
+
     <p>
-        Check out my <a href="/uses">uses</a> page for a full list of all the software, gadgets, and services I
-        use.
+        Check out my <a href="/uses">uses</a> page for a full list of all the software, gadgets, and services I use.
     </p>
 
-    <ul class="list-reset" style="display: flex;">
+    <ul class="over-there-links list-reset">
         <li class="sidebar-title">
-            <h6 class="title">{{ .Site.Params.ExternalMenu.Title }}</h6>
+            <h5>{{ .Site.Params.ExternalMenu.Title }}</h5>
         </li>
         {{ range .Site.Params.ExternalMenu.Link }}
-        <li style="margin-left:1rem;"><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
+        <li><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
         {{ end }}
     </ul>
 
