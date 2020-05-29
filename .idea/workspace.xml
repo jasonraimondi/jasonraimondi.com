@@ -8,7 +8,6 @@
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,11 +194,11 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="953" y="350" width="540" height="524" key="StructurePopup/0.23.1920.1177@0.23.1920.1177" timestamp="1590126706301" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1590736516805">
+    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1590737872098">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="443" y="259" width="1002" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582181840775" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590736516805" />
+    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590737872098" />
     <state x="888" y="286" key="run.anything.popup" timestamp="1590123275276">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
