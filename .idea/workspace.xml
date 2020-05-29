@@ -6,30 +6,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@2x.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@4x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@4x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar@4x.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/develop.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/animoji-hi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/animoji-hi@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webcdn/misc/me/animoji-hi@2x.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/keeping-an-up-to-date-archive-of-the-github-repos-that-matter-to-you.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/033_keeping-an-up-to-date-archive-of-the-github-repos-that-matter-to-you.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/base/_html.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/base/_html.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_anchor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_anchor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/content/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/assets/css/typography/_list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/example-site/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/baseof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/mobile-nav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcdn/misc/me/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webcdn/misc/me/avatar.webp" beforeDir="false" afterPath="$PROJECT_DIR$/webcdn/misc/me/avatar.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/partials/sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webcdn/misc/me/animoji-hi.png" beforeDir="false" afterPath="$PROJECT_DIR$/webcdn/misc/me/animoji-hi.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio" />
   </component>
   <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -68,7 +68,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -121,6 +121,7 @@
       <workItem from="1590558470965" duration="1583000" />
       <workItem from="1590572068750" duration="140000" />
       <workItem from="1590641228277" duration="9360000" />
+      <workItem from="1590725404246" duration="8594000" />
     </task>
     <servers />
   </component>
@@ -172,6 +173,12 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/themes/hugo-theme-basic" />
+      <path value="$PROJECT_DIR$/themes/jasontheme" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
     <state x="440" y="202" key="#Updates" timestamp="1582697010440">
       <screen x="0" y="23" width="1680" height="1027" />
@@ -185,43 +192,43 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="528" y="271" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1582697011248" />
-    <state width="1236" height="292" key="GridCell.Tab.0.bottom" timestamp="1590641430640">
+    <state width="1236" height="292" key="GridCell.Tab.0.bottom" timestamp="1590733715643">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1590641430640" />
-    <state width="1236" height="292" key="GridCell.Tab.0.center" timestamp="1590641430639">
+    <state width="1236" height="292" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1590733715643" />
+    <state width="1236" height="292" key="GridCell.Tab.0.center" timestamp="1590733715642">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1590641430639" />
-    <state width="1236" height="292" key="GridCell.Tab.0.left" timestamp="1590641430639">
+    <state width="1236" height="292" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1590733715642" />
+    <state width="1236" height="292" key="GridCell.Tab.0.left" timestamp="1590733715642">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1590641430639" />
-    <state width="1236" height="292" key="GridCell.Tab.0.right" timestamp="1590641430640">
+    <state width="1236" height="292" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1590733715642" />
+    <state width="1236" height="292" key="GridCell.Tab.0.right" timestamp="1590733715642">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1590641430640" />
-    <state x="594" y="250" key="SettingsEditor" timestamp="1590556257093">
+    <state width="1236" height="292" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1590733715642" />
+    <state x="594" y="250" key="SettingsEditor" timestamp="1590730575777">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="594" y="250" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1590556257093" />
+    <state x="594" y="250" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1590730575777" />
     <state x="953" y="350" width="540" height="524" key="StructurePopup" timestamp="1590126706301">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="953" y="350" width="540" height="524" key="StructurePopup/0.23.1920.1177@0.23.1920.1177" timestamp="1590126706301" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1590648210457">
+    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1590734364627">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="443" y="259" width="1002" height="550" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582181840775" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590648210457" />
+    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590734364627" />
     <state x="888" y="286" key="run.anything.popup" timestamp="1590123275276">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="888" y="286" key="run.anything.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590123275276" />
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup" timestamp="1590648734771">
+    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup" timestamp="1590734456843">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="237" y="262" width="670" height="416" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1582181829328" />
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590648734771" />
+    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590734456843" />
   </component>
 </project>
