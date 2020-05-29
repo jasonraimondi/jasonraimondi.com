@@ -1,11 +1,11 @@
 baseurl = "https://jasonraimondi.com"
-title = "Full Stack Software Engineer"
+title = "Software Engineer"
 theme ="hugo-theme-developer-portfolio"
 languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"
 
-paginate = 20
+paginate = 15
 
 # disqusShortname = "jasonraimondi"
 
@@ -13,9 +13,6 @@ pygmentsCodeFences=true
 pygmentsUseClasses=true
 
 defaultContentLanguage = "en"
-
-[Permalinks]
-  post = "posts/:slug"
 
 [Params]
   title = "jasonraimondi.com"
@@ -98,10 +95,7 @@ defaultContentLanguage = "en"
   description = "PHP API for Salesforce"
 
 [Params.ExternalMenu]
-  title = "Over There"
-[[Params.ExternalMenu.Link]]
-  name = "Gitea"
-  url = "https://git.jasonraimondi.com/jason?tab=activity"
+  title = "Follow Me Online Here:"
 [[Params.ExternalMenu.Link]]
   name = "GitHub"
   url = "https://github.com/jasonraimondi"
