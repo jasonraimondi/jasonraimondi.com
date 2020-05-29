@@ -40,10 +40,10 @@ defaultContentLanguage = "en"
 """
 
 [Params.ProfileURL]
-  smallJPG = "https://assets.jasonraimondi.com/misc/me/avatar.jpg"
-  smallWEBP = "https://assets.jasonraimondi.com/misc/me/avatar.webp"
-  largeJPG = "https://assets.jasonraimondi.com/misc/me/avatar@2x.jpg"
-  largeWEBP = "https://assets.jasonraimondi.com/misc/me/avatar@2x.webp"
+  smallJPG = "http://assets.jasonraimondi.com/misc/me/avatar.jpg"
+  smallWEBP = "http://assets.jasonraimondi.com/misc/me/avatar.webp"
+  largeJPG = "http://assets.jasonraimondi.com/misc/me/avatar@2x.jpg"
+  largeWEBP = "http://assets.jasonraimondi.com/misc/me/avatar@2x.webp"
 
 [Params.EditLink]
   name = "GitHub"
