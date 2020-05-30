@@ -1,29 +1,45 @@
 ---
 title: "Jason Raimondi"
-layout: "simple"
+layout: "empty"
 ---
 
 <style type="text/css">
-	h2 {
+	.home h1, 
+	.home h2, 
+	.home h3, 
+	.home h4, 
+	.home h5, 
+	.home h6 {
 		font-weight: 400;
+	}
+	.home h1 {
+		letter-spacing: -4px;
+	}
+	.home h2 {
+		letter-spacing: -1px;
+	}
+	.home h3 {
+		letter-spacing: -0.65px;
 	}
 </style>
 
-<h1 class="h1 font-mono" style="font-weight: 400;letter-spacing: -2px;">
+<div class="home">
+
+<h1 class="h1 font-mono">
     Hey,
     <picture>
 <!--            <source srcset="https://assets.jasonraimondi.com/misc/me/animoji-hi.webp, https://assets.jasonraimondi.com/misc/me/animoji-hi@2x.webp 2x" type="image/webp">-->
         <source srcset="https://assets.jasonraimondi.com/misc/me/animoji-hi.png, https://assets.jasonraimondi.com/misc/me/animoji-hi@2x.png 2x" type="image/png">
         <img src="https://assets.jasonraimondi.com/misc/me/animoji-hi.png" alt="emoji of me waving hi" style="position: relative; height: 3rem; top: 0.5rem"/>
     </picture>
-    I'm Jason
+    I'm Jason.
 </h1>
 
-<h2 class="font-mono">I am a technologist and computer geek</h2>
+<h2 class="font-mono">I am a technologist and computer geek.</h2>
 
 I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a> doing a lot of ops work. Recently, I've been focusing on containerizing our Ruby application and deploying us on AWS Elastic Kubernetes Service.
 
-I have been professionally developing for the web since 2009. Early on I was primarily developing more traditional server rendered **PHP** applications with a bit of  **JavaScript**. Recently, my favorite stack has been **Golang** or **TypeScript** from top to bottom.</p>
+I have been professionally developing for the web since 2009. Early on I was primarily developing more traditional server rendered **PHP** applications with a bit of  **JavaScript**. Recently, my favorite stack has been **Golang** and **TypeScript**.
 
 I have experience writing modular, horizontally scalable applications.
 
@@ -38,3 +54,5 @@ If I’m not learning a new language or practicing software architecture design 
 Check out my [uses](/uses) page for a full list of all the software, gadgets, and services I use.
 
 {{< index/external-links >}}
+
+</div>
