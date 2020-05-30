@@ -1,0 +1,13 @@
+{{ with $.Site.Params.ExternalMenu }}
+<ul class="over-there-links list-reset">
+    <li class="title">
+        <p class="h3" style="font-weight: 400;">{{ .Title }}</p>
+    </li>
+    {{ with $.Site.Params.Twitter}}
+    <li><a href="//twitter.com/{{ . }}" target="_blank" rel="nofollow">Twitter</a></li>
+    {{ end }}
+    {{ range .Link }}
+    <li><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
+    {{ end }}
+</ul>
+{{ end }}
