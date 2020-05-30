@@ -1,7 +1,7 @@
 {{ with $.Site.Params.ExternalMenu }}
 <ul class="over-there-links list-reset">
     <li class="title">
-        <p class="h3" style="font-weight: 400;">{{ .Title }}</p>
+        <h3 class="font-mono" style="margin: 0;">{{ .Title }}</h3>
     </li>
     {{ with $.Site.Params.Twitter}}
     <li><a href="//twitter.com/{{ . }}" target="_blank" rel="nofollow">Twitter</a></li>
