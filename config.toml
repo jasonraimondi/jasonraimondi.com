@@ -57,17 +57,6 @@ defaultContentLanguage = "en"
   name = "Uses"
   url = "/uses"
 
-[Params.ProjectsMenu]
-[[Params.ProjectsMenu.Link]]
-  name = "Traverse"
-  url = "/posts/traverse-2-electric-boogaloo"
-[[Params.ProjectsMenu.Link]]
-  name = "Can I Poop?"
-  url = "/posts/can-i-poop"
-[[Params.ProjectsMenu.Link]]
-  name = "Flipp"
-  url = "/posts/flipp"
-
 [Params.Projects]
 [[Params.Projects.Link]]
   name = "Traverse"
@@ -100,11 +89,11 @@ defaultContentLanguage = "en"
   name = "GitHub"
   url = "https://github.com/jasonraimondi"
 [[Params.ExternalMenu.Link]]
-  name = "GoodReads"
-  url = "https://www.goodreads.com/jasonraimondi"
-[[Params.ExternalMenu.Link]]
   name = "LinkedIn"
   url = "https://linkedin.com/in/jasonraimondi"
+[[Params.ExternalMenu.Link]]
+  name = "GoodReads"
+  url = "https://www.goodreads.com/jasonraimondi"
 [[Params.ExternalMenu.Link]]
   name = "Vimeo"
   url = "https://vimeo.com/jasonraimondi"
