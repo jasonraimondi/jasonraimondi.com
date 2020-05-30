@@ -20,7 +20,7 @@ defaultContentLanguage = "en"
   twitter = "jsonmamondi"
   name = "Jason Raimondi"
   email = "jason@raimondi.us"
-  resumePDF = "//assets.jasonraimondi.com/resume/JasonRaimondi-Resume-3.3.0.pdf"
+  resumePDF = "https://assets.jasonraimondi.com/resume/JasonRaimondi-Resume-3.3.0.pdf"
   resumeJSON = "/resume.json"
   analyticsSnippet = """
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
@@ -40,10 +40,10 @@ defaultContentLanguage = "en"
 """
 
 [Params.ProfileURL]
-  smallJPG = "https://webcdn.s3.us-west-1.wasabisys.com/misc/me/avatar.jpg"
-  smallWEBP = "https://webcdn.s3.us-west-1.wasabisys.com/misc/me/avatar.webp"
-  largeJPG = "https://webcdn.s3.us-west-1.wasabisys.com/misc/me/avatar@2x.jpg"
-  largeWEBP = "https://webcdn.s3.us-west-1.wasabisys.com/misc/me/avatar@2x.webp"
+  smallJPG = "https://assets.jasonraimondi.com/misc/me/avatar.jpg"
+  smallWEBP = "https://assets.jasonraimondi.com/misc/me/avatar.webp"
+  largeJPG = "https://assets.jasonraimondi.com/misc/me/avatar@2x.jpg"
+  largeWEBP = "https://assets.jasonraimondi.com/misc/me/avatar@2x.webp"
 
 [Params.EditLink]
   name = "GitHub"
