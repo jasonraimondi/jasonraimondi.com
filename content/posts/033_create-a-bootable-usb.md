@@ -1,9 +1,10 @@
 ---
 title: How to create a bootable Ubuntu install USB from Mac OS.
 description: Signing Git commits with GPG Key.
+draft: true
 categories:
   - ops
-date: "2020-06-02T08:00:00-07:00"
+date: "2020-06-02T16:00:00-07:00"
 image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
@@ -15,9 +16,9 @@ tags:
 
 I've been doing this for over a decade, and finally decided to document it.
 
-1. Insert the USB into your machine
+### 1. Insert the USB into your machine
 
-2. Find the device id
+### 2. Find the device id
 
 ```bash
 $ df -h
@@ -32,14 +33,14 @@ map auto_home    0Bi    0Bi    0Bi   100%       0          0  100%   /System/Vol
 
 Here, our disk is named UNTITLED and it has a device id of `/dev/disk2`. The trailing `s2` is the partition id.
 
-3. Unmount the partition
+### 3. Unmount the partition
 
 ```bash
 $ diskutil umount /dev/disk2s2
 Volume UNTITLED on disk2s2 unmounted
 ```
 
-4. Download Ubuntu 20.04
+### 4. Download Ubuntu 20.04
 
 ```bash
 $ wget https://releases.ubuntu.com/20.04/ubuntu-20.04-live-server-amd64.iso
@@ -53,7 +54,7 @@ Saving to: ‘ubuntu-20.04-live-server-amd64.iso’
 ubuntu-20.04-live-server-amd64.iso            28%[=========================>                                                                    ] 258.45M  11.9MB/s    eta 58s
 ```
 
-5. Flash the ISO to your USB disk
+### 5. Flash the ISO to your USB disk
 
 Our target in this case is `/dev/rdisk2`
 
@@ -61,11 +62,11 @@ Our target in this case is `/dev/rdisk2`
 $ sudo dd bs=8m if=ubuntu-20.04-live-server-amd64.iso of=/dev/rdisk2
 ```
 
-6. Eject the disk
+### 6. Eject the disk
 
 ```bash
 $ sudo diskutil eject /dev/rdisk2
 Disk /dev/rdisk2 ejected
 ```
 
-7. Remove the disk and boot into the flashable USB
+### 7. Remove the disk and boot into the flashable USB
