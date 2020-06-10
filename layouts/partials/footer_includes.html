@@ -1,0 +1,6 @@
+<!-- Minify and fingerprint on production build only -->
+{{ if .Site.IsServer }}
+    <script>console.log('Skipping Analytics');</script>
+{{ else }}
+    {{ .Site.Params.AnalyticsSnippet | safeHTML }}
+{{ end }}

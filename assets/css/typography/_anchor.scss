@@ -1,0 +1,64 @@
+@mixin anchor-hover {
+  //text-decoration: underline;
+  text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
+
+  color: var(--green-darker);
+  @media (prefers-color-scheme: dark) {
+    color: var(--purple-light);
+  }
+}
+
+a {
+  text-decoration: none;
+  text-decoration-skip: objects;
+  text-decoration-skip-ink: auto;
+  transition: color var(--speed-fast) ease-in-out, background var(--speed-fast) ease-in-out, border var(--speed-fast) ease-in-out;
+
+  color: var(--green);
+  @media (prefers-color-scheme: dark) {
+    color: var(--purple);
+  }
+
+  font-weight: var(--font-weight-semibold);
+
+  &:hover,
+  &:focus,
+  &:visited {
+    @include anchor-hover;
+  }
+
+  & > h1,
+  & > .h1,
+  & > h2,
+  & > .h2,
+  & > h3,
+  & > .h3,
+  & > h4,
+  & > .h4,
+  & > h5,
+  & > .h5,
+  & > h6,
+  & > .h6 {
+    color: var(--green);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--purple-light);
+    }
+  }
+
+  &:hover > h1,
+  &:hover > .h1,
+  &:hover > h2,
+  &:hover > .h2,
+  &:hover > h3,
+  &:hover > .h3,
+  &:hover > h4,
+  &:hover > .h4,
+  &:hover > h5,
+  &:hover > .h5,
+  &:hover > h6,
+  &:hover > .h6 {
+    @include anchor-hover;
+  }
+}

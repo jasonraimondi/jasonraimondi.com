@@ -1,0 +1,16 @@
+p {
+  margin: 1em 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: var(--font-size-md);
+  font-style: normal;
+  line-height: var(--line-height-m);
+  text-transform: none;
+  letter-spacing: var(--letter-spacing);
+
+  color: var(--black);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--grey-light);
+  }
+}

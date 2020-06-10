@@ -1,0 +1,32 @@
+.highlight > pre > code {
+  padding: 0;
+  background-color: var(--transparent);
+}
+
+code {
+  font-family: var(--code-font-family);
+  font-weight: var(--code-font-weight);
+  font-size: var(--code-font-size);
+  font-style: var(--code-font-style);
+  color: var(--code-color);
+  line-height: 1.4;
+}
+
+a > code,
+p > code,
+li > code,
+strong > code,
+span > code {
+  background-color: var(--code-bg);
+  padding: var(--code-padding);
+  border-radius: var(--border-radius);
+}
+
+h1, h2, h3, h4, h5 {
+  & > code {
+    color: var(--black);
+    background-color: var(--grey-light);
+    padding: 1px 2px;
+    border-radius: var(--border-radius);
+  }
+}

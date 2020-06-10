@@ -1,14 +1,10 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
-slug = "recovery-passport-three-tiered-support-system"
+slug = "{{ .Name | urlize }}"
 date = {{ .Date }}
 Description = ""
-tags = [ 
-    "demotag",
-]
-categories = [
-    "workflow",
-]
-featuredImage = ""
+Tags = []
+Categories = []
+draft = true
+toc = false
 +++
-

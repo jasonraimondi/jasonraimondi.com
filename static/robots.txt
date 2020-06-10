@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Sitemap files
-Sitemap: https://www.jasonraimondi.com/sitemap.xml
+Sitemap: /sitemap.xml

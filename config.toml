@@ -1,6 +1,5 @@
 baseurl = "https://jasonraimondi.com"
 title = "Software Engineer"
-theme ="hugo-theme-developer-portfolio"
 languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2019 Jason Raimondi"

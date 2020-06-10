@@ -10,11 +10,8 @@ RUN \
   ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
 
 WORKDIR /app
-RUN apk add --update --no-cache bash git openssh \
-    && npm install -g postcss-cli autoprefixer
-RUN git clone https://github.com/jasonraimondi/hugo-theme-developer-portfolio.git /app/themes/hugo-theme-developer-portfolio \
-    && cd /app/themes/hugo-theme-developer-portfolio \
-    && npm ci
+RUN npm ci
+COPY ./taxonomy/ /app/taxonomy/
 COPY ./content/ /app/content/
 COPY ./layouts/ /app/layouts/
 COPY ./static/ /app/static/

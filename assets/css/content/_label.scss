@@ -1,0 +1,39 @@
+.label {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 0.7em;
+  padding: 2px 4px;
+  border-radius: var(--border-radius);
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--white);
+    background-color: var(--purple-dark);
+  }
+
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  &.inline {
+    display: inline-block;
+  }
+
+  &:active,
+  &:focus,
+  &:hover,
+  &:visited,
+  a:active,
+  a:focus,
+  a:hover,
+  a:visited {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--green-darker);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--white);
+      background-color: var(--purple-light);
+    }
+  }
+}
