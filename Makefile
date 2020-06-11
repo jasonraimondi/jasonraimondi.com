@@ -12,6 +12,6 @@ build:
 	hugo --gc --cleanDestinationDir --minify
 
 push:
-	hugo deploy
+	hugo deploy -v --maxDeletes -1 --invalidateCDN true
 
 publish: build push
