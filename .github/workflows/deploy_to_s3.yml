@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    name: Build and Deploy
+    name: deploy to s3
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -18,7 +18,7 @@ jobs:
           HUGO_VERSION: 0.71.1
       - name: Hugo Build
         run: |
-          make install
+          npm ci
           $HOME/hugo --gc --cleanDestinationDir --minify
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
