@@ -5,7 +5,7 @@ categories:
 date: "2019-08-02T00:00:00-07:00"
 description: Authenticating and securing a nextjs application
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: authenticating-nextjs-part-4

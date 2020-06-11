@@ -5,7 +5,7 @@ comments: true
 date: "2018-12-13T00:00:00-08:00"
 description: Now every time I am about to launch Chrome, I see the "Launch Firefox
   Instead of Chrome" launcher.
-image: https://assets.jasonraimondi.com/posts/2018/12/alfred-chrome-to-firefox-workflow.png
+image: /posts/2018/12/alfred-chrome-to-firefox-workflow.png
 slug: using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox
 tags:
 - alfred
@@ -16,7 +16,7 @@ This workflow is meant to help break the habit of using Google Chrome. I tend to
 
 ##### Every time: &#8984; + SPACE &rarr; “chrome” &rarr; ENTER. 
 
-![alfred workflow preview](https://assets.jasonraimondi.com/posts/2018/12/alfred-workflow-opened.png)
+![alfred workflow preview](/posts/2018/12/alfred-workflow-opened.png)
 
 To help combat this, [I’ve created an Alfred workflow](https://git.jasonraimondi.com/jason/alfred-workflow-launch-firefox-instead-of-chrome) that is triggered by the keyword “chrome” and will launch Firefox.
 

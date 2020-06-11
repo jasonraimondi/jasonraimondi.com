@@ -5,7 +5,7 @@ comments: true
 date: "2018-08-23T00:00:00-07:00"
 description: Lets create a TypesScript React app without using the cli tool Create
   React App. This allows you to create a custom build specific to your deploy process.
-image: https://assets.jasonraimondi.com/posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+image: /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
 slug: testing-a-typescript-react-app-using-ts-jest-not-create-react-app
 tags:
 - react
@@ -20,7 +20,7 @@ There is very little documentation on setting up a TypeScript React project that
 
 The [Create React App]([GitHub - facebook/create-react-app: Create React apps with no build configuration.](https://github.com/facebook/create-react-app)) helper works great for greenfield projects, or projects that are not going to deviate at all from the structure and tools the Create React App helper gives you.
 
-![Jest Results with Code Coverage](https://assets.jasonraimondi.com/posts/2018/09/testing-typescript-react-app/intellij-test-suite.png)
+![Jest Results with Code Coverage](/posts/2018/09/testing-typescript-react-app/intellij-test-suite.png)
 
 My goal is to give you a fairly slim (while remaining production ready) tested, TypeScript React app, WITH code coverage.
 
@@ -154,6 +154,6 @@ Ran all test suites.
 
 If you are using an IntelliJ IDE (PHPStorm, WebStorm, etc), I’ve already gone and added a Jest Runner called  “Unit Test” that you can either manually trigger, or use the convenient `ctrl + r`  running that IntelliJ offers.
 
-![IntelliJ Unit Test Runner](https://assets.jasonraimondi.com/posts/2018/09/testing-typescript-react-app/intellij-test-runner.png)
+![IntelliJ Unit Test Runner](/posts/2018/09/testing-typescript-react-app/intellij-test-runner.png)
 
 The github repository for this post can be found here: [jasonraimondi/typescript-react-starter](https://github.com/jasonraimondi/typescript-react-starter)

@@ -4,7 +4,7 @@ categories:
 date: "2019-03-26T00:00:00-07:00"
 description: Conways Game of Life TypeScript.
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: conways-game-of-life-typescript

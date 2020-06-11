@@ -4,7 +4,7 @@ categories:
 comments: true
 date: "2019-02-20T00:00:00-08:00"
 description: I am a typescript file
-image: https://assets.jasonraimondi.com/posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg
+image: /posts/_covers/solmaz-hatamian-YSaKXcavOko-unsplash.jpg
 imageAlt: ""
 imageCredit: '@solmaz67 https://unsplash.com/photos/YSaKXcavOko'
 slug: my-first-typescript-file

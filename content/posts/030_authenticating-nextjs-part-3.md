@@ -8,7 +8,7 @@ categories:
 date: 2019-08-16T05:30:00-0700
 description: Add api calls to your application that can all be resolved before the
   initial render, giving the user (or bot) a fully loaded page right from the get-go.
-image: https://assets.jasonraimondi.com/posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg
+image: /posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg
 imageAlt: photo of rocket ship inside warehouse
 imageCredit: '@ascales https://unsplash.com/photos/1_WMZARl81c'
 slug: add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load
@@ -53,7 +53,7 @@ export function ApiCallout({ message }: any) {
 }
 ```
 
-{{< image/pop src="https://assets.jasonraimondi.com/posts/2019/08/api-callout.png" alt="Show the ApiCallout component" portrait="true" >}}
+{{< image/pop src="/posts/2019/08/api-callout.png" alt="Show the ApiCallout component" portrait="true" >}}
 
 ## Add rest call go unprotected page
 
@@ -158,7 +158,7 @@ Index.getInitialProps = async (ctx: NextPageContext) => {
 export default Index;
 ```
 
-{{< image/pop src="https://assets.jasonraimondi.com/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="Shows the echo server logs along side the Next.js application navigation" >}}
+{{< image/pop src="/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="Shows the echo server logs along side the Next.js application navigation" >}}
 
 Our REST API [from previously]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
 
@@ -166,7 +166,7 @@ Our REST API [from previously]({{< relref "/posts/028_authenticating-nextjs-part
 
 The following is a result of a server side api call happening in the [`getInitialProps` pre-render method](https://nextjs.org/docs#fetching-data-and-component-lifecycle). If you right click and view source, the response from the API call will be visible in the source. This means that search engines can scrape this page, and immediately see the page without a client side load. 
 
-{{< image/pop src="https://assets.jasonraimondi.com/posts/2019/08/show-api-call-response-in-source.gif" alt="Shows the api call in the html delivered view-source" >}}
+{{< image/pop src="/posts/2019/08/show-api-call-response-in-source.gif" alt="Shows the api call in the html delivered view-source" >}}
 
 The inclusion of the response in **"View Source..."** is the the important part here. **View Source** shows the HTML as it was delivered from the web server to our browser; **Inspect Element** shows the current state of the DOM tree after DOM manipulation by JavaScript.<sup>[[0]](https://www.codebyamir.com/blog/view-source-vs-inspect-element)</sup>
 
@@ -297,7 +297,7 @@ export default privateRoute(Dashboard);
 
 Let's check out the dashboard page responding to us with our full 
 
-{{< image/pop src="https://assets.jasonraimondi.com/posts/2019/08/show-login-and-protected-route-with-api.gif" alt="Show the login and protected route with ssr prerender api call" >}}
+{{< image/pop src="/posts/2019/08/show-login-and-protected-route-with-api.gif" alt="Show the login and protected route with ssr prerender api call" >}}
 
 And just for good measure, let's show you the HTML source of this page:
 

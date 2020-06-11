@@ -6,7 +6,7 @@ date: "2019-04-24T00:00:00-07:00"
 description: The Quick Look feature on macOS (&#8984; + Space) an incredible time
   saving tool. Upgrading it to support more filetypes will make you even more of a
   macOS ninja.
-image: https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+image: /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: enhance-macos-quick-look
 tags:
 - productivity

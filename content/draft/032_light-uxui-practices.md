@@ -5,7 +5,7 @@ date: 2019-11-07T11:30:00-0700
 description: A running list of websites that i've noticed with some really neat or
   nice uxui practices.
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/andrew-ly-zjU1dRlB4HM-unsplash.jpg
+image: /posts/_covers/andrew-ly-zjU1dRlB4HM-unsplash.jpg
 imageCredit: '@nineteen https://unsplash.com/photos/zjU1dRlB4HM'
 slug: light-uxui-practices
 tags:

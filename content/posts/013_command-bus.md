@@ -5,7 +5,7 @@ comments: true
 date: "2018-10-05T00:00:00-07:00"
 description: Actions can either be a Command or Query. With the ApplicationCore, we
   can dispatch our Actions.
-image: https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+image: /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: command-query-bus-with-ioc-container
 tags:
 - dependency injection

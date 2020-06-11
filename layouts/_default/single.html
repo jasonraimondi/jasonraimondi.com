@@ -21,7 +21,6 @@
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
-
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         {{ partial "image.html" . }}
@@ -49,7 +48,7 @@
                 {{ range $index, $category := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
                         <li style="margin-right:5px">
-                            <a href="{{ .Permalink }}" class="label inline">{{ $category | urlize }}</a>
+                            <a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a>
                         </li>
                     {{ end }}
                 {{ end }}
@@ -60,7 +59,7 @@
                 {{ range $index, $tag := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
                         <li style="margin-right:5px">
-                            <a href="{{ .Permalink }}" class="label inline">{{ $tag | urlize }}</a>
+                            <a href="{{ .RelPermalink }}" class="label inline">{{ $tag | urlize }}</a>
                         </li>
                     {{ end }}
             {{ end }}

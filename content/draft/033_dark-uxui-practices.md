@@ -5,7 +5,7 @@ date: 2019-11-07T11:30:00-0700
 description: A running list of websites that i've noticed with some really gross or
   intentionally misleading uxui practices.
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg
+image: /posts/_covers/marc-kleen-X4H8JXNYBVQ-unsplash.jpg
 imageCredit: '@marckleen https://unsplash.com/photos/X4H8JXNYBVQ'
 slug: dark-uxui-practices
 tags:
@@ -25,6 +25,6 @@ There are probably many lists out there like this, but this is my list.
 
 ## Airline Purchases
 
-![Airline Ticket Purchases](https://assets.jasonraimondi.com/posts/2019/11/darkux/google-american-airlines.png)
+![Airline Ticket Purchases](/posts/2019/11/darkux/google-american-airlines.png)
 * Advertises as free seat selection, when the only perk of upgrading is the seat selection
 * Everything else is a fee or the same as basic economy

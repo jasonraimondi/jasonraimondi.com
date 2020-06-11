@@ -5,7 +5,7 @@ draft: true
 categories:
   - ops
 date: "2020-06-02T16:00:00-07:00"
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: create-a-bootable-usb

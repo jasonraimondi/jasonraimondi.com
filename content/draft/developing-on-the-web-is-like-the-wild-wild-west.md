@@ -6,7 +6,7 @@ categories:
 date: "2019-03-19T00:00:00-07:00"
 description: Developing on the web is the wild Wild West.
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: www-wild-wild-west

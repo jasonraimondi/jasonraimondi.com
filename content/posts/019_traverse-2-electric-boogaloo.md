@@ -4,7 +4,7 @@ categories:
 comments: true
 date: "2019-03-14T00:00:00-07:00"
 description: Traverse was rewritten open sourced!
-image: https://assets.jasonraimondi.com/posts/_covers/traverse-featured-mini.png
+image: /posts/_covers/traverse-featured-mini.png
 slug: traverse-2-electric-boogaloo
 tags:
 - electron
@@ -13,7 +13,7 @@ tags:
 title: 'Traverse 2: Electric Boogaloo'
 ---
 
-[![Traverse](https://assets.jasonraimondi.com/posts/2018/08/traverse/pointing-mini.png)](https://github.com/jasonraimondi/traverse)
+[![Traverse](/posts/2018/08/traverse/pointing-mini.png)](https://github.com/jasonraimondi/traverse)
 
 [![Test Coverage](https://travis-ci.org/jasonraimondi/traverse.svg?branch=master)](https://travis-ci.org/jasonraimondi/traverse#)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/test_coverage)](https://codeclimate.com/github/jasonraimondi/traverse/test_coverage)

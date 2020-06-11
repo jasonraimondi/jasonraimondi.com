@@ -6,7 +6,7 @@ comments: true
 date: "2018-10-11T00:00:00-07:00"
 description: 'The official rules read: “Everyone has their own tagged link that points
   to the landing page — each unique click = 1 point”. Interesting, very interesting.'
-image: https://assets.jasonraimondi.com/posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
+image: /posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
 slug: using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work
 tags:
 - rxjs
@@ -17,7 +17,7 @@ title: Using the 'timer' observable from Rxjs and Chrome Headless to hack a cont
   at work
 ---
 
-![the conversation aftermath](https://assets.jasonraimondi.com/posts/2018/10/hack-contest/hack-contest-01.png)
+![the conversation aftermath](/posts/2018/10/hack-contest/hack-contest-01.png)
 
 I am going to begin by saying, I couldn’t not do it. It was calling to me like Ring calls to Sauron.
 

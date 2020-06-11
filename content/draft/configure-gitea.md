@@ -4,7 +4,7 @@ categories:
 date: "2020-05-09T00:00:00-07:00"
 description: Configure gitea
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: configure-gitea

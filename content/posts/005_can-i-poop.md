@@ -9,7 +9,7 @@ date: "2017-11-01T00:00:00-07:00"
 description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
   Keep the window open for a few minutes during week day business hours and watch
   the room status. It will change without the need of a refresh.
-image: https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-alfredo.png
+image: /posts/2017/11/canipoop/canipoop-alfredo.png
 slug: can-i-poop
 tags:
 - javascript
@@ -33,9 +33,9 @@ The Software Craftsmanship meet up was a great inspiration to get going, and it 
 I present to you [canipoop.com](http://canipoop.com), Yes, seriously.
 
 {{< image/gallery/frame >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-website-1open.png" alt="Can I Poop Website Screenshot - One Open" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-website-2open.png" alt="Can I Poop Website Screenshot - Two Open" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-firebase.png" alt="Firebase Panel" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-1open.png" alt="Can I Poop Website Screenshot - One Open" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-2open.png" alt="Can I Poop Website Screenshot - Two Open" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-firebase.png" alt="Firebase Panel" >}}
 {{< /image/gallery/frame >}}
 
 When you open the page you are met with the bathroom status of the LA office of Event Farm. Open or closed, upstairs and downstairs.
@@ -51,12 +51,12 @@ Since the internal release of [canipoop.com](http://canipoop.com) several months
 The whole suite of canipoop apps is available at [https://github.com/pdt256/canipoop](https://github.com/pdt256/canipoop), feel free to poke around, or maybe even contribute a PR.
 
 {{< image/gallery/frame >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg" alt="Raspberry Pi installed behind wall panel" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg" alt="Speaker wiring around the mirror" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg" alt="Reed switches on downstairs bathroom door, inside the door" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
-    {{< image/gallery/image src="https://assets.jasonraimondi.com/posts/2017/11/canipoop/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg" alt="Raspberry Pi installed behind wall panel" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg" alt="Speaker wiring around the mirror" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg" alt="Reed switches on downstairs bathroom door, inside the door" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
+    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
 {{< \/image/gallery/frame >}}

@@ -5,7 +5,7 @@ categories:
 date: 2019-09-11T05:30:00-0700
 description: ""
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+image: /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: absolute-imports-in-next-js-typescript
 tags:
 - nextjs

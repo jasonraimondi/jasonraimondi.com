@@ -4,7 +4,7 @@ categories:
 date: "2019-03-19T00:00:00-07:00"
 description: Setting Up Wallabag in Docker with Existing MYSQL DB
 draft: true
-image: https://assets.jasonraimondi.com/posts/_covers/under-construction.jpg
+image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: setting-up-wallabag-in-docker-with-existing-mysql
