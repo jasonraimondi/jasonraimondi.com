@@ -6,7 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +102,8 @@
       <workItem from="1590641228277" duration="9360000" />
       <workItem from="1590725404246" duration="10225000" />
       <workItem from="1591768770770" duration="54000" />
+      <workItem from="1591888829627" duration="15000" />
+      <workItem from="1591888904754" duration="2710000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,7 @@ This page lists software and hardware I use on a daily basis.
 
 * **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
 * **[Alfred](https://www.alfredapp.com/)** -- Alfred is great, use [workflows to enhance](https://github.com/zenorocha/alfred-workflows). It also comes with a clipboard history manager and tool to store your text snippets.
-* **[Spectacle](https://www.spectacleapp.com/)** -- The greatest keybinding specific alternative to better touch tool, although I saw this recently is abandoned too... So if anyone knows any alternatives, DM me.
+* **[Rectangle](https://github.com/rxhanson/Rectangle)** -- The greatest keybinding specific alternative to better touch tool
 * **[TablePlus](https://tableplus.com/)** -- The not-so-free successor to Sequel Pro. Well, technically it is not a successor, but Sequel Pro as far as I am aware is abandon-ware that has lackluster support on current OS X Versions. 
 * **[Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)** -- Little Snitch is a really nice GUI firewall for Mac. You can use it to monitor your Mac's networking, and even entirely block network access all together from running applications. 
 * **[Fantastical](https://flexibits.com/fantastical)** -- Nice calendar, although the version 3 upgrade introduced subscription pricing
