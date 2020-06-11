@@ -2,5 +2,8 @@
 User-agent: *
 Disallow:
 
+User-agent: *
+Disallow: /draft
+
 # Sitemap files
 Sitemap: /sitemap.xml

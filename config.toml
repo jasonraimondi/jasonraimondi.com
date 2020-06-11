@@ -143,9 +143,9 @@ URL = "s3://jasonraimondi-com-62a80b1e-61f2-4010-843d-48ba047503e8n?region=us-ea
 # URL = "gs://<Bucket Name>?prefix=a/subfolder/"
 
 # If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
-# cloudFrontDistributionID = <ID>
+cloudFrontDistributionID = "EPROAOOW3KQOL"
 
-# Optionally, you can include or exclude specific files.
+# Optionally, you can include or excmlude specific files.
 # See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
 # If non-empty, the pattern is matched against the local path.
 # All paths are matched against in their filepath.ToSlash form.
