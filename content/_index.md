@@ -37,7 +37,7 @@ layout: "empty"
 <h1 class="h1 font-mono">
     Hey,
     <picture>
-		<!-- <source srcset="/misc/me/animoji-hi.webp, /misc/me/animoji-hi@2x.webp 2x" type="image/webp"> -->
+		<source srcset="/misc/me/animoji-hi.webp, /misc/me/animoji-hi@2x.webp 2x" type="image/webp">
         <source srcset="/misc/me/animoji-hi.png, /misc/me/animoji-hi@2x.png 2x" type="image/png">
         <img src="/misc/me/animoji-hi.png" alt="emoji of me waving hi"/>
     </picture>
@@ -60,7 +60,7 @@ If I’m not learning a new language or practicing software architecture design 
 
 <h3 class="font-mono">Curious about how I work?</h3>
 
-Check out my [uses](/uses) page for a full list of all the software, gadgets, and services I use.
+Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
 
 {{< index/external-links >}}
 
