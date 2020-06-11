@@ -10,12 +10,14 @@ RUN \
   ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
 
 WORKDIR /app
+COPY package-lock.json package.json /app/
 RUN npm ci
-COPY ./taxonomy/ /app/taxonomy/
-COPY ./content/ /app/content/
-COPY ./layouts/ /app/layouts/
-COPY ./static/ /app/static/
-COPY ./config.toml /app/config.toml
+COPY assets/ /app/assets/
+COPY content/ /app/content/
+COPY layouts/ /app/layouts/
+COPY static/ /app/static/
+COPY taxonomy/ /app/taxonomy/
+COPY config.toml /app/
 
 # RUN hugo --source /app --destination /dist --cleanDestinationDir --minify
 RUN hugo --source /app --destination /dist --cleanDestinationDir
