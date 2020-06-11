@@ -6,7 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
