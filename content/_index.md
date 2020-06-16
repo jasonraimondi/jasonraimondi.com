@@ -62,8 +62,6 @@ If I’m not learning a new language or practicing software architecture design 
 
 Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
 
-{{< index/external-links >}}
-
 </div>
 
 <!-- 
