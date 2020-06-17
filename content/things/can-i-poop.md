@@ -1,11 +1,11 @@
 ---
 aliases:
-    - /posts/can-i-poop/
+- /posts/can-i-poop/
 categories:
-    - software
-    - frontend
-    - backend
-    - hardware
+- software
+- frontend
+- backend
+- hardware
 comments: true
 date: "2017-11-01T00:00:00-07:00"
 description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
@@ -14,13 +14,13 @@ description: A live view of Event Farm's upstairs/downstairs bathroom occupation
 image: /posts/2017/11/canipoop/canipoop-alfredo.png
 slug: can-i-poop
 tags:
-    - javascript
-    - firebase
-    - websockets
-    - vue.js
-    - raspberry-pi
-    - arduino
-    - alfred
+- javascript
+- firebase
+- websockets
+- vue.js
+- raspberry-pi
+- arduino
+- alfred
 title: Can I Poop?
 ---
 

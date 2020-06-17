@@ -2,48 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/ideas/_index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/things/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/things/deno-mirror-to-gitea.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/things/dont-feed-the-bots.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/things/url-to-png.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/drafts/031_authenticating-nextjs-part-4.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/031_authenticating-nextjs-part-4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/drafts/032_authenticating-nextjs-part-5.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/032_authenticating-nextjs-part-5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/001_setting-up-laravel-with-foundation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/002_configure-ssl-lets-encrypt-nginx-docker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/003_build-a-php72-app-using-docker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/004_setting-up-gogs-with-docker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/005_can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/can-i-poop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/006_flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/flipp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/007_brew-install-everything.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/008_update-php-homebrew.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/009_traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/traverse.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/010_docker-compose-traefik-lets-encrypt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/011_testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/012_showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/013_command-bus.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/014_getting-rid-of-hiccups.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/015_optimizing-your-dockerfile-build-and-layers.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/016_using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/017_auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/019_traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/traverse-2-electric-boogaloo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/020_my-first-typescript-file.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/021_what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/022_absolute-imports-typescript-webpack.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/023_automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/024_exec-command-nodejs.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/025_recovery-passport.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/recovery-passport.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/026_enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/027_enhance-macos-quick-look.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/028_authenticating-nextjs-part-1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/029_authenticating-nextjs-part-2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/030_authenticating-nextjs-part-3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/031_absolute-imports-in-next-js-typescript.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/032_add-location-data-to-images.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/033_create-a-bootable-usb.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/archives.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/archives.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/033_keeping-an-up-to-date-archive-of-the-github-repos-that-matter-to-you.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/i-write-bad-code.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/i-write-bad-code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/migrating-my-static-site-from-netlify-to-s3-with-cloudfront.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/migrating-my-static-site-from-netlify-to-s3-with-cloudfront.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/ideas/dont-feed-the-bots.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/things/can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/can-i-poop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/things/flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/flipp.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/things/recovery-passport.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/recovery-passport.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/things/traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/traverse-2-electric-boogaloo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/things/traverse.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/traverse.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +36,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/things" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/content/things" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/things" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/things" />
+      <recent name="$PROJECT_DIR$/content/posts" />
     </key>
   </component>
   <component name="TaskManager">
@@ -81,7 +56,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592368511524</updated>
-      <workItem from="1592368512797" duration="2978000" />
+      <workItem from="1592368512797" duration="4108000" />
+      <workItem from="1592372976442" duration="1628000" />
     </task>
     <servers />
   </component>
@@ -97,25 +73,29 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="688" y="420" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1177@0.23.1920.1177" timestamp="1592369108612" />
-    <state width="1878" height="447" key="GridCell.Tab.0.bottom" timestamp="1592371415756">
+    <state width="1576" height="447" key="GridCell.Tab.0.bottom" timestamp="1592372626769">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="447" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1592371415756" />
-    <state width="1878" height="447" key="GridCell.Tab.0.center" timestamp="1592371415755">
+    <state width="1576" height="447" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1592372626769" />
+    <state width="1576" height="447" key="GridCell.Tab.0.center" timestamp="1592372626768">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="447" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1592371415755" />
-    <state width="1878" height="447" key="GridCell.Tab.0.left" timestamp="1592371415754">
+    <state width="1576" height="447" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1592372626768" />
+    <state width="1576" height="447" key="GridCell.Tab.0.left" timestamp="1592372626767">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="447" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1592371415754" />
-    <state width="1878" height="447" key="GridCell.Tab.0.right" timestamp="1592371415755">
+    <state width="1576" height="447" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1592372626767" />
+    <state width="1576" height="447" key="GridCell.Tab.0.right" timestamp="1592372626768">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="447" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1592371415755" />
+    <state width="1576" height="447" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1592372626768" />
     <state x="981" y="366" width="826" height="490" key="find.popup" timestamp="1592370661394">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="981" y="366" width="826" height="490" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592370661394" />
+    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup" timestamp="1592374532599">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592374532599" />
   </component>
 </project>

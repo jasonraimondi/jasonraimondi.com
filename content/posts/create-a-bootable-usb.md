@@ -1,17 +1,17 @@
 ---
-title: How to create a bootable Ubuntu install USB from Mac OS.
+categories:
+- ops
+date: "2020-06-02T16:00:00-07:00"
 description: Signing Git commits with GPG Key.
 draft: true
-categories:
-  - ops
-date: "2020-06-02T16:00:00-07:00"
 image: /posts/_covers/under-construction.jpg
 imageAlt: under construction crane
 imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: create-a-bootable-usb
 tags:
-  - linux
-  - ubuntu
+- linux
+- ubuntu
+title: How to create a bootable Ubuntu install USB from Mac OS.
 ---
 
 I've been doing this for over a decade, and finally decided to document it.

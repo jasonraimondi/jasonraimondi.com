@@ -1,6 +1,6 @@
 ---
 aliases:
-    - /posts/flipp/
+- /posts/flipp/
 categories:
 - software
 - backend

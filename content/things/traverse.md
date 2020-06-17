@@ -1,13 +1,13 @@
 ---
 aliases:
-    - /posts/traverse/
+- /posts/traverse/
 categories:
 - frontend
 comments: true
 date: "2018-08-06T00:00:00-07:00"
-lastmod: "2020-05-16T11:36:32-08:00"
 description: Traverse is a GitHub Explorer App I built using Electron + React, and
   a whole bunch of other open source tools.
+lastmod: "2020-05-16T11:36:32-08:00"
 slug: traverse
 tags:
 - electron

@@ -1,10 +1,13 @@
 ---
-title: "Jason Raimondi"
 date: "2018-12-04T00:00:00-08:00"
-description: My name is Jason Raimondi and I am a Full Stack Software Engineer based out of Los Angeles. My focus has been in web systems, building and deploying server and client web applications. I am a technologist and all around computer geek; give me a computer and I will be hacking in minutes, occupied for days.
+description: My name is Jason Raimondi and I am a Full Stack Software Engineer based
+  out of Los Angeles. My focus has been in web systems, building and deploying server
+  and client web applications. I am a technologist and all around computer geek; give
+  me a computer and I will be hacking in minutes, occupied for days.
 image: /misc/me/hitrecord-everyone-2019.jpg
 lastmod: "2019-03-13T00:00:00-07:00"
-layout: "empty"
+layout: empty
+title: Jason Raimondi
 ---
 
 <style type="text/css">
