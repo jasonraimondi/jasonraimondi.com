@@ -1,25 +1,18 @@
 ---
-categories:
-- misc
-- ops
-date: "2020-05-09T00:00:00-07:00"
-description: Keep an always up to date archive of the GitHub repositories that matter to you using Gitea mirror repositories.
-draft: true
-image: /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
-slug: always-up-to-date-archive-of-github-repositories
+date: "2020-06-16T11:14:00-07:00"
+description: Bulk add mirror repositories to a Gitea instance by scraping repositories
+  on GitHub.
+slug: deno-mirror-to-gitea
 tags:
 - deno
 - github
 - gitea
 - data hoarding
 - typescript
-title: Archive GitHub repositories using Gitea Mirror Repos
+title: Deno Mirror to Gitea
 ---
 
-One of the many great features of Gitea is the mirror repository. 
-Mirror repositories are a feature of Gitea that allows you to local copies of external repositories. 
+Bulk add mirror repositories to a Gitea instance by scraping repositories on GitHub.
 
 ## What is a mirror repository?
 
@@ -32,8 +25,6 @@ Check the box **This repository will be a mirror** to have Gitea keep the reposi
 The mirror repo allows us to mirror repositories from existing sources, such your favorite open-source GitHub projects. 
 
 Mirror repositories update on cronjobs managed by Gitea. 
-
-// image of  
 
 ## How?
 
@@ -50,4 +41,3 @@ So now we have the token `1548f65934f5034d9803bdfd46a6a25e85e30de2`
 The GitHub GraphQL v4 API requires an access token. The only permission we are going to give the token is `public_repo` allowing **deno-mirror-to-gitea** to view only public repositories. The API is used to fetch a list of a users public repositories, repositories they've starred, repositories they've contributed to, and a list of users who they are following. 
 
 Follow this link to create a github access token: <a href="https://github.com/settings/tokens/new?description=deno-mirror-to-gitea&scopes=public_repo" target="_blank" rel="noopener noreferrer">https://github.com/settings/tokens/new?description=deno-mirror-to-gitea&scopes=public_repo</a>
-
