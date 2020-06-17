@@ -37,7 +37,7 @@ This page lists software and hardware I use on a daily basis.
 
 #### Wares (soft)
 
-* **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/018_using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
+* **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
 * **[Alfred](https://www.alfredapp.com/)** -- Alfred is great, use [workflows to enhance](https://github.com/zenorocha/alfred-workflows). It also comes with a clipboard history manager and tool to store your text snippets.
 * **[Rectangle](https://github.com/rxhanson/Rectangle)** -- The greatest keybinding specific alternative to better touch tool
 * **[TablePlus](https://tableplus.com/)** -- The not-so-free successor to Sequel Pro. Well, technically it is not a successor, but Sequel Pro as far as I am aware is abandon-ware that has lackluster support on current OS X Versions. 

@@ -22,9 +22,9 @@ title: Create a secured REST Api for a Next.js application using JWT and Golang
 
 ## Overview
 
-* In [this part]({{< relref "/posts/028_authenticating-nextjs-part-1.md" >}}) we will be creating the JWT secured REST API
-* In [the next part]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}}) we will create the user facing Next.js application
-* In [the last part]({{< ref "/posts/030_authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+* In [this part]({{< relref "/posts/authenticating-nextjs-part-1.md" >}}) we will be creating the JWT secured REST API
+* In [the next part]({{< ref "/posts/authenticating-nextjs-part-2.md" >}}) we will create the user facing Next.js application
+* In [the last part]({{< ref "/posts/authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
 ## Source Code
 
@@ -289,4 +289,4 @@ Let's take a look at the actual REST API we have implemented.
 
 {{< asciinema id="1hB16TAx2eD0g6sy50XjAELaZ" description="A demonstration of the RESTful API will be working with." >}}
 
-## Continue to [securing a Next.js application with JWT and a private route higher order component]({{< ref "/posts/029_authenticating-nextjs-part-2.md" >}})
+## Continue to [securing a Next.js application with JWT and a private route higher order component]({{< ref "/posts/authenticating-nextjs-part-2.md" >}})

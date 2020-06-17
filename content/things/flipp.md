@@ -1,4 +1,6 @@
 ---
+aliases:
+    - /posts/flipp/
 categories:
 - software
 - backend

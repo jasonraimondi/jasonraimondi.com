@@ -53,6 +53,9 @@ defaultContentLanguage = "en"
   name = "Posts"
   url = "/posts"
 [[Params.MainMenu.Link]]
+  name = "Apps"
+  url = "/things"
+[[Params.MainMenu.Link]]
   name = "Uses"
   url = "/uses"
 

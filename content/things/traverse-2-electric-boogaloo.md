@@ -1,4 +1,6 @@
 ---
+aliases:
+    - /posts/traverse-2-electric-boogaloo
 categories:
 - frontend
 comments: true
