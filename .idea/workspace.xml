@@ -1,204 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand />
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/content/apps/dont-feed-the-bots.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/apps/dont-feed-the-bots.md" afterDir="false" />
+    <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/composerJson.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jasonraimondi.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jasonraimondi.com.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.12.4/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1OtwuKqixBmai1Qgh9PlaEbjVHb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1dQsAwC7EZCCAr0eb0OCNCuizhP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts" />
-      <recent name="$PROJECT_DIR$/webcdn/misc/me" />
-      <recent name="$PROJECT_DIR$/content" />
-      <recent name="$PROJECT_DIR$/webcdn/posts/2020/05" />
-      <recent name="$PROJECT_DIR$/static/photos" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/webcdn/posts/2020/05" />
-      <recent name="$PROJECT_DIR$/content/draft" />
-      <recent name="$PROJECT_DIR$/content" />
-      <recent name="$PROJECT_DIR$/themes/hugo-theme-developer-portfolio/layouts/shortcodes/video" />
-    </key>
-  </component>
-  <component name="StructureViewFactory">
-    <option name="AUTOSCROLL_MODE" value="false" />
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="67a1f250-c1a3-4ef9-b578-87d3ed310eb6" name="Default Changelist" comment="" />
-      <created>1573620534297</created>
+      <changelist id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="" />
+      <created>1592368511524</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1573620534297</updated>
-      <workItem from="1573620535497" duration="1626000" />
-      <workItem from="1579589257246" duration="915000" />
-      <workItem from="1580274884023" duration="9000" />
-      <workItem from="1582181370704" duration="2454000" />
-      <workItem from="1582262003800" duration="2201000" />
-      <workItem from="1582504982769" duration="19000" />
-      <workItem from="1582696989983" duration="1437000" />
-      <workItem from="1582698439382" duration="1234000" />
-      <workItem from="1582781662798" duration="83000" />
-      <workItem from="1583817356657" duration="21000" />
-      <workItem from="1589506652279" duration="9000" />
-      <workItem from="1589694078512" duration="5596000" />
-      <workItem from="1589867104610" duration="10641000" />
-      <workItem from="1590039034455" duration="4185000" />
-      <workItem from="1590126323667" duration="601000" />
-      <workItem from="1590472520548" duration="1218000" />
-      <workItem from="1590555950363" duration="307000" />
-      <workItem from="1590556267764" duration="456000" />
-      <workItem from="1590558470965" duration="1583000" />
-      <workItem from="1590572068750" duration="140000" />
-      <workItem from="1590641228277" duration="9360000" />
-      <workItem from="1590725404246" duration="10225000" />
-      <workItem from="1591768770770" duration="54000" />
-      <workItem from="1591888829627" duration="15000" />
-      <workItem from="1591888904754" duration="2710000" />
+      <updated>1592368511524</updated>
+      <workItem from="1592368512797" duration="117000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.scss" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:/Users/jason/Code/git.jasonraimondi.com/jason/jasonraimondi.com/themes/hugo-theme-developer-portfolio/assets/css" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/themes/hugo-theme-basic" />
-      <path value="$PROJECT_DIR$/themes/jasontheme" />
-    </ignored-roots>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="744" y="273" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590556344453">
+    <state x="744" y="273" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592368629172">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="744" y="273" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1590556344453" />
-    <state width="1236" height="292" key="GridCell.Tab.0.bottom" timestamp="1591164231323">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1591164231323" />
-    <state width="1236" height="292" key="GridCell.Tab.0.center" timestamp="1591164231323">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1591164231323" />
-    <state width="1236" height="292" key="GridCell.Tab.0.left" timestamp="1591164231323">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1591164231323" />
-    <state width="1236" height="292" key="GridCell.Tab.0.right" timestamp="1591164231323">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state width="1236" height="292" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1591164231323" />
-    <state x="594" y="250" key="SettingsEditor" timestamp="1590730575777">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="594" y="250" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1590730575777" />
-    <state x="953" y="350" width="540" height="524" key="StructurePopup" timestamp="1590126706301">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="953" y="350" width="540" height="524" key="StructurePopup/0.23.1920.1177@0.23.1920.1177" timestamp="1590126706301" />
-    <state x="506" y="293" width="1146" height="631" key="find.popup" timestamp="1591159029469">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="506" y="293" width="1146" height="631" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1591159029469" />
-    <state x="888" y="286" key="run.anything.popup" timestamp="1590123275276">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="888" y="286" key="run.anything.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1590123275276" />
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup" timestamp="1591854124374">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="271" y="297" width="766" height="477" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1591854124374" />
+    <state x="744" y="273" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1592368629172" />
   </component>
 </project>
