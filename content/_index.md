@@ -1,4 +1,6 @@
 ---
+aliases:
+- /about
 date: "2018-12-04T00:00:00-08:00"
 description: My name is Jason Raimondi and I am a Full Stack Software Engineer based
   out of Los Angeles. My focus has been in web systems, building and deploying server
