@@ -1,0 +1,15 @@
+---
+title: Search
+date: 2020-06-20 05:31:56
+---
+
+Looking for a post?
+
+<div class="search-it" x-data="algoliaSearch()">
+    <input type="search" x-model="query" x-on:keyup="search()" placeholder="Find something...">
+    <ul>
+        <template x-for="r in results" :key="results">
+            <li><a x-bind:href="r.url" x-text="r.title"></a></li>
+        </template>
+    </ul>
+</div>

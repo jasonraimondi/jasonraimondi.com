@@ -110,6 +110,7 @@
     }
 
     &:last-child {
+      flex-grow: 100;
       padding-right: 0;
     }
   }

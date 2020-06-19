@@ -1,6 +1,13 @@
 <!-- Minify and fingerprint on production build only -->
-{{ if .Site.IsServer }}
-    <script>console.log('Skipping Analytics');</script>
-{{ else }}
+{{ if not .Site.IsServer }}
     {{ .Site.Params.AnalyticsSnippet | safeHTML }}
 {{ end }}
+
+{{- $algolia := resources.Get "js/lib/algoliasearch.umd.js" | fingerprint }}
+<script type="text/javascript" src="{{ $algolia.Permalink }}" integrity="{{ $algolia.Data.Integrity }}"></script>
+
+{{- $alpine := resources.Get "js/lib/alpine.min.js" | fingerprint }}
+<script type="text/javascript" src="{{ $alpine.Permalink }}" integrity="{{ $alpine.Data.Integrity }}" defer></script>
+
+{{- $search := resources.Get "js/search.js" | babel | fingerprint }}
+<script type="text/javascript" src="{{ $search.Permalink }}" integrity="{{ $search.Data.Integrity }}"></script>

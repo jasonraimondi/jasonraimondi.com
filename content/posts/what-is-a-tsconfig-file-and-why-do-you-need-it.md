@@ -93,14 +93,14 @@ src
 tsconfig.json
 
 ./dist:
-main.js
+search.js
 
 ./src:
 main.ts
 ```
 
 ```bash
-$ cat dist/main.js
+$ cat dist/search.js
 console.log("Hello World!");
 ```
 

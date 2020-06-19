@@ -6,7 +6,6 @@
     <p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p>
 </noscript>
 <main class="main-content">
-
     <nav class="main-nav">
         <a class="avatar" href="/">
             {{ $smallWEBP := .Site.Params.ProfileURL.SmallWEBP }}
@@ -20,30 +19,32 @@
             </picture>
         </a>
 
-        {{ if not .IsHome }}
-        <h2 class="nav-title">
-            <a href="/">{{ .Site.Params.Title }}</a>
-        </h2>
-        {{ end }}
+        <div>
+            {{ if not .IsHome }}
+            <h2 class="nav-title">
+                <a href="/">{{ .Site.Params.Title }}</a>
+            </h2>
+            {{ end }}
 
-        <ul class="nav-links list-reset">
-            {{ range .Site.Params.MainMenu.Link }}
-            <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
-            {{ end }}
-            {{ with $.Site.Params.ResumePDF }}
-            <li>
-                <a href="{{ "/resume" | relURL }}">Resume</a>
-                <a href="{{ . | relURL }}" target="_blank" class="label inline">
-                    <span>pdf</span>
-                </a>
-                {{ with $.Site.Params.ResumeJSON }}
-                <a href="{{ . | relURL }}" target="_blank" class="label inline">
-                    <span>json</span>
-                </a>
+            <ul class="nav-links list-reset">
+                {{ range .Site.Params.MainMenu.Link }}
+                <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
                 {{ end }}
-            </li>
-            {{ end }}
-        </ul>
+                {{ with $.Site.Params.ResumePDF }}
+                <li>
+                    <a href="{{ "/resume" | relURL }}">Resume</a>
+                    <a href="{{ . | relURL }}" target="_blank" class="label inline">
+                        <span>pdf</span>
+                    </a>
+                    {{ with $.Site.Params.ResumeJSON }}
+                    <a href="{{ . | relURL }}" target="_blank" class="label inline">
+                        <span>json</span>
+                    </a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </div>
     </nav>
 
     {{ block "main" . }}

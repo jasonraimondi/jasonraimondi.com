@@ -58,6 +58,9 @@ defaultContentLanguage = "en"
 [[Params.MainMenu.Link]]
   name = "Uses"
   url = "/uses"
+[[Params.MainMenu.Link]]
+  name = "Search"
+  url = "/search"
 
 [Params.Projects]
 [[Params.Projects.Link]]
@@ -118,9 +121,6 @@ defaultContentLanguage = "en"
 [markup.goldmark.renderer]
   unsafe = true
 
-
-
-
 [deployment]
 # By default, files are uploaded in an arbitrary order.
 # Files that match the regular expressions in the "Order" list
@@ -177,3 +177,16 @@ gzip = false
 [[deployment.matchers]]
 pattern = "^.+\\.(html|xml|json)$"
 gzip = true
+
+[outputs]
+home = ["HTML", "RSS", "Algolia"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags"]

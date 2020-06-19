@@ -41,10 +41,10 @@ Let's convert it into JavaScript so it can be run in the browser (or with Node.j
 main.ts
 ~/my-first-typescript-file ❯❯❯ tsc main.ts
 ~/my-first-typescript-file ❯❯❯ ls
-main.js main.ts
+search.js main.ts
 ```
 
-The `tsc` command is taking the content from the `main.ts` file and compiling it into a `main.js` file. 
+The `tsc` command is taking the content from the `main.ts` file and compiling it into a `search.js` file. 
 
 ![File open in visual studio code](/2019/01/my-first-compiled-typescript-file.png)
 
@@ -59,4 +59,4 @@ output("Hello World");
 // output: "Hello World"
 ```
 
-The `main.js` file looks very similar to it's TypeScript equivalent. The difference is the removal of the arugument type `: string` in `output(words: string)`.
+The `search.js` file looks very similar to it's TypeScript equivalent. The difference is the removal of the arugument type `: string` in `output(words: string)`.

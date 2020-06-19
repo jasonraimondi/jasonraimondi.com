@@ -65,5 +65,5 @@
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
 {{ else }}
     {{ $style := resources.Get "css/style.scss" | toCSS | postCSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
