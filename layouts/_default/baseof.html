@@ -30,19 +30,15 @@
                 {{ range .Site.Params.MainMenu.Link }}
                 <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
                 {{ end }}
-                {{ with $.Site.Params.ResumePDF }}
                 <li>
                     <a href="{{ "/resume" | relURL }}">Resume</a>
-                    <a href="{{ . | relURL }}" target="_blank" class="label inline">
+                    <a style="margin-left: 0.5rem;" href="{{ "/resume.pdf" | relURL }}" target="_blank" class="label inline">
                         <span>pdf</span>
                     </a>
-                    {{ with $.Site.Params.ResumeJSON }}
-                    <a href="{{ . | relURL }}" target="_blank" class="label inline">
+                    <a style="margin-left: 0.5rem;" href="{{ "/resume.json" | relURL }}" target="_blank" class="label inline">
                         <span>json</span>
                     </a>
-                    {{ end }}
                 </li>
-                {{ end }}
             </ul>
         </div>
     </nav>

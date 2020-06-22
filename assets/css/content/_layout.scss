@@ -91,18 +91,24 @@
   grid-area: links;
   display: flex;
   align-items: center;
+  overflow: scroll;
   flex: 1;
   height: 100%;
   margin: 0;
   text-transform: uppercase;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   @media (--large) {
     margin-left: 1rem;
   }
 
-  li {
+  > li {
+    display: flex;
     align-self: center;
-    padding: 0 10px;
+    padding-left: 1rem;
 
     &:first-child {
       margin-left: 0;
