@@ -91,7 +91,7 @@
   grid-area: links;
   display: flex;
   align-items: center;
-  overflow: scroll;
+  overflow-x: auto;
   flex: 1;
   height: 100%;
   margin: 0;
