@@ -20,7 +20,6 @@ tags:
 title: Add server side rendered async api calls to your Next.js application that resolve
   before the initial page load
 ---
- 
 
 ## Overview
 

@@ -6,7 +6,7 @@ categories:
 - backend
 - software
 date: 2019-08-16T04:30:00-0700
-description: Authenticating and securing a nextjs application
+description: Authenticating and securing a Next.js application
 image: /posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg
 imageAlt: photo of rocket ship inside warehouse
 imageCredit: '@meric https://unsplash.com/photos/i_14EbINjKY'
