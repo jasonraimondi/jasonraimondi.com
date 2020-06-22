@@ -12,14 +12,13 @@ RUN \
 WORKDIR /app
 COPY package-lock.json package.json /app/
 RUN npm ci
+COPY config.toml babel.config.js postcss.config.js /app/
 COPY assets/ /app/assets/
 COPY content/ /app/content/
 COPY layouts/ /app/layouts/
 COPY static/ /app/static/
 COPY taxonomy/ /app/taxonomy/
-COPY config.toml /app/
 
-# RUN hugo --source /app --destination /dist --cleanDestinationDir --minify
 RUN hugo --source /app --destination /dist --cleanDestinationDir
 
 FROM nginx:alpine
