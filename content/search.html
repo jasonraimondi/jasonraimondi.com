@@ -3,7 +3,7 @@ title: Search
 date: 2020-06-20 05:31:56
 ---
 
-Looking for a post?
+<p>Looking for a post?</p>
 
 <div class="search-it" x-data="algoliaSearch()">
     <input type="search" x-model="query" x-on:keyup="search()" placeholder="Find something...">
@@ -13,3 +13,5 @@ Looking for a post?
         </template>
     </ul>
 </div>
+
+{{< search-scripts >}}
