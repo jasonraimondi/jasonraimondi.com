@@ -2,7 +2,7 @@
 categories:
 - ops
 date: "2020-06-02T16:00:00-07:00"
-description: Signing Git commits with GPG Key.
+description: A reminder on how to create a bootable usb from a Mac 
 slug: create-a-bootable-usb
 tags:
 - linux
