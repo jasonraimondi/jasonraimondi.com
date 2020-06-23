@@ -7,7 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +36,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content/things" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/js/lib" />
       <recent name="$PROJECT_DIR$/content/things" />
       <recent name="$PROJECT_DIR$/content/posts" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content/things" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.algolia">
+  <component name="RunManager" selected="Hugo.Develop">
     <configuration name="algolia" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,6 +83,7 @@
       <workItem from="1592372976442" duration="3056000" />
       <workItem from="1592459340827" duration="717000" />
       <workItem from="1592541937801" duration="2893000" />
+      <workItem from="1592882458663" duration="3388000" />
     </task>
     <servers />
   </component>
@@ -104,35 +106,35 @@
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
     <state x="943" y="343" key="EnvironmentVariablesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1592542427771" />
-    <state width="1572" height="447" key="GridCell.Tab.0.bottom" timestamp="1592543283453">
+    <state width="1295" height="447" key="GridCell.Tab.0.bottom" timestamp="1592804875706">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1572" height="447" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1592543283453" />
-    <state width="1572" height="447" key="GridCell.Tab.0.center" timestamp="1592543283452">
+    <state width="1295" height="447" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1592804875706" />
+    <state width="1295" height="447" key="GridCell.Tab.0.center" timestamp="1592804875706">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1572" height="447" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1592543283452" />
-    <state width="1572" height="447" key="GridCell.Tab.0.left" timestamp="1592543283452">
+    <state width="1295" height="447" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1592804875706" />
+    <state width="1295" height="447" key="GridCell.Tab.0.left" timestamp="1592804875705">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1572" height="447" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1592543283451" />
-    <state width="1572" height="447" key="GridCell.Tab.0.right" timestamp="1592543283452">
+    <state width="1295" height="447" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1592804875705" />
+    <state width="1295" height="447" key="GridCell.Tab.0.right" timestamp="1592804875706">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state width="1572" height="447" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1592543283452" />
+    <state width="1295" height="447" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1592804875706" />
     <state x="600" y="470" width="540" height="524" key="StructurePopup" timestamp="1592603525191">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="600" y="470" width="540" height="524" key="StructurePopup/0.23.2560.1417/2560.-277.1680.1027@0.23.2560.1417" timestamp="1592603525191" />
-    <state x="981" y="366" width="826" height="490" key="find.popup" timestamp="1592632411093">
+    <state x="981" y="366" width="826" height="490" key="find.popup" timestamp="1592882541311">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="981" y="366" width="826" height="490" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592632411093" />
+    <state x="981" y="366" width="826" height="490" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592882541311" />
     <state x="1308" y="436" width="1102" height="590" key="find.popup/0.23.2560.1417/2560.-277.1680.1027@0.23.2560.1417" timestamp="1592603898979" />
-    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup" timestamp="1592633418094">
+    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup" timestamp="1592884216237">
       <screen x="0" y="23" width="1920" height="1177" />
     </state>
-    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592633418094" />
+    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1592884216237" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
