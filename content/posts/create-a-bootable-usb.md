@@ -3,10 +3,6 @@ categories:
 - ops
 date: "2020-06-02T16:00:00-07:00"
 description: Signing Git commits with GPG Key.
-draft: true
-image: /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: create-a-bootable-usb
 tags:
 - linux
@@ -70,3 +66,5 @@ Disk /dev/rdisk2 ejected
 ```
 
 ### 7. Remove the disk and boot into the flashable USB
+
+On a mac, you need to hold the alt/option key when rebooting to boot into the disk selection. For other machines, a lot of times it is just the `delete` key when booting to go into the BIOS, then select to choose to boot from the flash drive
