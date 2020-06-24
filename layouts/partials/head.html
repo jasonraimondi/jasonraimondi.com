@@ -9,6 +9,8 @@
 {{ $description := .Site.Params.Description }}
 {{ if .Page.Description }}
     {{ $description = .Page.Description }}
+{{ else }}
+    {{ $description = .Page.Summary }}
 {{ end }}
 
 {{ $image := $profileURL }}
