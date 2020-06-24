@@ -1,11 +1,11 @@
 ---
-title: Deploy your next static site using Terraform
+title: Terraform configuration for S3 static site with CloudFront for https and Cloudflare DNS
 slug: terraform-amazon-s3-static-site-with-cloudfront-https-and-cloudflare-dns
 draft: true
 date: 2020-06-23T03:23:28
 ---
 
-In this example, I am using Cloudflare as my DNS provider, Amazon s3 for the static site hosting, and Cloudfront for our https signing and CDN.
+In this example, I am using Cloudflare as my DNS provider, Amazon s3 for the static site hosting, and Cloudfront for https.
 
 <!--more--> 
 
@@ -30,9 +30,9 @@ resource "aws_s3_bucket" "static_jasonraimondi_com" {
 }
 ```
 
-### Add an `index.html` to the bucket
+### Add content to the bucket
 
-Seed a html file into your bucket. 
+Seed a `index.html` file into your bucket. 
 
 ```bash
 mkdir site
@@ -42,7 +42,7 @@ aws s3 sync site s3://examplebucket
 
 ### Create a cloudfront distribution for the s3 bucket
 
-You need to create both an [aws_cloudfront_origin_access_identity](#) and an [aws_cloudfront_distribution](#)
+You need to create both an [aws_cloudfront_origin_access_identity](https://www.terraform.io/docs/providers/aws/r/cloudfront_origin_access_identity.html) and an [aws_cloudfront_distribution](https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html)
 
 ```terraform
 resource "aws_cloudfront_origin_access_identity" "jasonraimondi_com" {
