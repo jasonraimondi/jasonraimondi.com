@@ -3,7 +3,6 @@ categories:
 - software
 - frontend
 date: 2019-09-11T05:30:00-0700
-description: ""
 draft: true
 image: /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: absolute-imports-in-next-js-typescript
@@ -12,9 +11,10 @@ tags:
 - node
 title: Absolute Imports in NextJS
 ---
- 
 
 Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.
+
+<!--more-->
 
 ```javascript
 - import { Something } from '../../../models/something';

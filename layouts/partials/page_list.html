@@ -7,5 +7,9 @@
     {{ .Date.Format "January 2, 2006" }}
     </time>
   </p>
-  <p class="post-list-excerpt">{{ .Description | safeHTML }}</p>
+  {{ if .Description }}
+    <p class="post-list-excerpt">{{ .Description | safeHTML }}</p>
+  {{ else }}
+    <p class="post-list-excerpt">{{ .Summary | safeHTML }}</p>
+  {{ end }}
 </li>

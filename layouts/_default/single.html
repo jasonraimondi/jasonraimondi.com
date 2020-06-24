@@ -25,7 +25,8 @@
     <header>
         {{ partial "image.html" . }}
         <h1 itemprop="name headline">{{ .Title }}</h1>
-        <p class="post-list-date">
+        <div class="post-date-wrapper">
+            <p class="post-list-date">
             <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
                 <span itemprop="name">{{ .Site.Params.Name }}</span>
             </span>
@@ -38,8 +39,9 @@
                     {{ .Page.Lastmod.Format "January 2, 2006" }}
                 </time>
             {{ end }}
-            {{ partial "edit-on-github.html" . }}
         </p>
+        {{ partial "edit-on-github.html" . }}
+        </div>
     </header>
     <section id="post-content">
         <ul id="post-tags-list" class="list-reset">
