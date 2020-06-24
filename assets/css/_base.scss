@@ -3,6 +3,14 @@
   -webkit-overflow-scrolling: touch;
 }
 
+@mixin no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 :root {
   --menu-icon-url: url('/icons/menu.svg');
   --sidebar-width: 275px;

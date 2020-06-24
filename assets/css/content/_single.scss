@@ -1,15 +1,23 @@
 .link-to-github {
   font-weight: 400;
   border-radius: 3px;
-  display: inline-block;
+  display: inline-flex;
   margin-left: 1rem;
   position: relative;
   top: -2px;
 
+  a {
+    display: inline-block;
+  }
+
   svg {
-    position: relative;
-    top: 2px;
-    max-height: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
     fill: currentColor;
   }
+}
+
+.post-date-wrapper {
+  display: flex;
+  justify-content: space-between;
 }

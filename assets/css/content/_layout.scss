@@ -88,6 +88,8 @@
 }
 
 .nav-links {
+  @include no-scrollbar;
+
   grid-area: links;
   display: flex;
   align-items: center;
@@ -97,9 +99,6 @@
   margin: 0;
   text-transform: uppercase;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
 
   @media (--large) {
     margin-left: 1rem;

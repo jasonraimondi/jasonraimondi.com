@@ -61,12 +61,17 @@ ol {
 }
 
 .breadcrumbs {
-  display: flex;
+  @include no-scrollbar;
+
+  line-height: 1.5;
+  white-space: nowrap;
   list-style-type: none;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   font-size: 0.8rem;
+  overflow-x: auto;
 
   li {
+    display: inline-block;
     margin-left: 0.25rem;
     padding-left: 0;
 
