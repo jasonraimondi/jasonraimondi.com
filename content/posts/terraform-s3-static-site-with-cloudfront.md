@@ -1,7 +1,6 @@
 ---
 title: Terraform configuration for S3 static site with CloudFront for https and Cloudflare DNS
 slug: terraform-amazon-s3-static-site-with-cloudfront-https-and-cloudflare-dns
-draft: true
 date: 2020-06-23T03:23:28
 ---
 

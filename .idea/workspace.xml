@@ -5,12 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/detect-external-links.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/terraform-s3-static-site-with-cloudfront.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/terraform-s3-static-site-with-cloudfront.md" afterDir="false" />
-    </list>
+    <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
