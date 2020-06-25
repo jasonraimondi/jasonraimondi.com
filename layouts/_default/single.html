@@ -25,21 +25,23 @@
     <header>
         {{ partial "image.html" . }}
         <h1 itemprop="name headline">{{ .Title }}</h1>
-        <div class="post-date-wrapper">
+        <div class="post-date-edit-wrapper">
             <p class="post-list-date">
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
-                <span itemprop="name">{{ .Site.Params.Name }}</span>
-            </span>
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                {{ .Date.Format "January 2, 2006" }}
-            </time>
-            {{ if ne .Date .Page.Lastmod }}
-                &nbsp;| Modified:&nbsp;
-                <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-                    {{ .Page.Lastmod.Format "January 2, 2006" }}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
+                    <span itemprop="name">{{ .Site.Params.Name }}</span>
+                </span>
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date.Format "January 2, 2006" }}
                 </time>
-            {{ end }}
-        </p>
+                {{ if ne .Date .Page.Lastmod }}
+                    <span class="post-modified-date">
+                        <span class="split"> | </span>Modified:&nbsp;
+                        <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+                            {{ .Page.Lastmod.Format "January 2, 2006" }}
+                        </time>
+                    </span>
+                {{ end }}
+            </p>
         {{ partial "edit-on-github.html" . }}
         </div>
     </header>

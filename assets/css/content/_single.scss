@@ -1,10 +1,8 @@
-.link-to-github {
+.edit-on-github {
+  font-size: 80%;
   font-weight: 400;
   border-radius: 3px;
   display: inline-flex;
-  margin-left: 1rem;
-  position: relative;
-  top: -2px;
   align-items: center;
 
   a {
@@ -16,9 +14,17 @@
     margin-right: 0.5rem;
     fill: currentColor;
   }
+
+  @media (--large) {
+    margin-left: 1rem;
+  }
 }
 
-.post-date-wrapper {
-  display: flex;
-  justify-content: space-between;
+.post-date-edit-wrapper {
+  display: block;
+
+  @media (--medium) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

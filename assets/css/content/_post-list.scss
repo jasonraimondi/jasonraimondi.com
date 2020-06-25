@@ -33,7 +33,7 @@
 }
 
 .post-list-date {
-  display: inline-block;
+  //display: inline-block;
   font-size: 80%;
   color: var(--grey-dark);
 
@@ -41,11 +41,3 @@
     min-width: 200px;
   }
 }
-
-//
-//.post-list-excerpt {
-//  color: var(--black);
-//  &:hover {
-//    color: var(--black);
-//  }
-//}
