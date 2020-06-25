@@ -6,6 +6,7 @@ categories:
 - backend
 - software
 date: 2019-08-16T04:30:00-0700
+lastmod: 2020-06-24T08:50:00-0700
 description: Authenticating and securing a Next.js application
 image: /posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg
 imageAlt: photo of rocket ship inside warehouse
@@ -16,15 +17,18 @@ tags:
 - nextjs
 - ssr
 - react
-title: Secure a Next.js application with JWT and a private route higher order component
+title: Secure a Next.js application with JWT, and a private route higher order component
 ---
- 
 
 ## Overview
 
 * In [the previous part]({{< relref "/posts/authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
 * In [this part]({{< ref "/posts/authenticating-nextjs-part-2.md" >}}) we will be creating the user facing Next.js application
 * In [the next part]({{< ref "/posts/authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+
+### Update as of June 24, 2020
+ 
+In this example, I am using Next.js version 9.0. Since this article has been published, Next.js 9.2 has added [static site generation (SSG)](https://nextjs.org/blog/next-9-3#next-gen-static-site-generation-ssg-support). Just for clarification, this guide using an "always server side rendering (SSR)" approach.
 
 ## Source Code
 
