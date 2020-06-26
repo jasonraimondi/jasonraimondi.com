@@ -1,0 +1,37 @@
+---
+label: post
+hide_body: false
+fields:
+- type: list
+  name: aliases
+  label: aliases
+- type: list
+  name: categories
+  label: categories
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: lastmod
+  label: lastmod
+- type: text
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
+- type: text
+  name: imageAlt
+  label: imageAlt
+- type: text
+  name: imageCredit
+  label: imageCredit
+- type: text
+  name: slug
+  label: slug
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
