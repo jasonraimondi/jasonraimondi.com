@@ -24,7 +24,7 @@ tags:
 title: Can I Poop?
 
 ---
-Update 2020-06-25: Sadly, the site and the hardware are gone. Event Farm has moved offices and the hardware is gone. The project will always live on in spirit!
+**Update 2020-06-25:** Sadly, the site and the hardware are gone. Event Farm has moved offices and the hardware is gone. The project will always live on in spirit!
 
 A few months ago myself and a coworker attended one of the [LA Software Craftmanship](https://www.meetup.com/LA-Software-Craftsmanship/) workshops down at 8th Light centered around using the GPIO pins on the Raspberry Pi.  We wrote a few different programs in C and Python first using some sensors, and then the Tx/Rx to send messages between Pi’s.  It reminded me a lot of college where I had the opportunity to take classes like Sensors and Electronics Based Art, centered around using Arduino based sensors to make all different things, it was great.
 
