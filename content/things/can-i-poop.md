@@ -1,17 +1,17 @@
 ---
 aliases:
-- /posts/can-i-poop/
+- "/posts/can-i-poop/"
 categories:
 - software
 - frontend
 - backend
 - hardware
 comments: true
-date: "2017-11-01T00:00:00-07:00"
+date: 2017-11-01T00:00:00-07:00
 description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
   Keep the window open for a few minutes during week day business hours and watch
   the room status. It will change without the need of a refresh.
-image: /posts/2017/11/canipoop/canipoop-alfredo.png
+image: "/posts/2017/11/canipoop/canipoop-alfredo.png"
 slug: can-i-poop
 tags:
 - javascript
@@ -22,7 +22,9 @@ tags:
 - arduino
 - alfred
 title: Can I Poop?
+
 ---
+Update 2020-06-25: Sadly, the site and the hardware are gone. Event Farm has moved offices and the hardware is gone. The project will always live on in spirit!
 
 A few months ago myself and a coworker attended one of the [LA Software Craftmanship](https://www.meetup.com/LA-Software-Craftsmanship/) workshops down at 8th Light centered around using the GPIO pins on the Raspberry Pi.  We wrote a few different programs in C and Python first using some sensors, and then the Tx/Rx to send messages between Pi’s.  It reminded me a lot of college where I had the opportunity to take classes like Sensors and Electronics Based Art, centered around using Arduino based sensors to make all different things, it was great.
 
@@ -35,9 +37,9 @@ The Software Craftsmanship meet up was a great inspiration to get going, and it 
 I present to you [canipoop.com](http://canipoop.com), Yes, seriously.
 
 {{< image/gallery/frame >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-1open.png" alt="Can I Poop Website Screenshot - One Open" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-2open.png" alt="Can I Poop Website Screenshot - Two Open" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-firebase.png" alt="Firebase Panel" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-1open.png" alt="Can I Poop Website Screenshot - One Open" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-website-2open.png" alt="Can I Poop Website Screenshot - Two Open" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-firebase.png" alt="Firebase Panel" >}}
 {{< /image/gallery/frame >}}
 
 When you open the page you are met with the bathroom status of the LA office of Event Farm. Open or closed, upstairs and downstairs.
@@ -46,19 +48,19 @@ We ended up using a Raspberry Pi downstairs and an Arduino upstairs, each hooked
 
 The front end of the site is a simple Vue.js site that is connecting to firebase to reflect the status of the rooms. The top half of the site represents the upstairs bathroom, and the bottom half of the page represents the downstairs bathroom. Our connection to firebase is a websocket, so, basically instantly, if the door opens or closes, the site reflects the state.
 
-We ended up with the domain [canipoop.com](http://canipoop.com) mostly because it was a really great one that was surprisingly still available, so we instantly hopped on it. I think we were originally joking around about www.isthebathroomopen.com; *luckily* that one was taken.
+We ended up with the domain [canipoop.com](http://canipoop.com) mostly because it was a really great one that was surprisingly still available, so we instantly hopped on it. I think we were originally joking around about www.isthebathroomopen.com; _luckily_ that one was taken.
 
 Since the internal release of [canipoop.com](http://canipoop.com) several months ago, we have built even more internal apps and tools for our poo problem. To my knowledge, the current CanIPoop Suite of apps  includes, well the website, then a native iPhone app that is reading the same firebase database. We also have an Alfred Workflow, and lastly a simple Go terminal app.
 
 The whole suite of canipoop apps is available at [https://github.com/pdt256/canipoop](https://github.com/pdt256/canipoop), feel free to poke around, or maybe even contribute a PR.
 
 {{< image/gallery/frame >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg" alt="Raspberry Pi installed behind wall panel" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg" alt="Speaker wiring around the mirror" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg" alt="Reed switches on downstairs bathroom door, inside the door" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
-    {{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
-{{< \/image/gallery/frame >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-raspberry-pi-behind-wall.jpg" alt="Raspberry Pi installed behind wall panel" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-3.jpg" alt="Speaker wiring around the mirror" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-downstairs-1.jpg" alt="Reed switches on downstairs bathroom door, inside the door" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-2.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-wiring-upstairs-3.jpg" alt="Reed switches on upstairs bathroom door, outside the door" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
+{{< image/gallery/image src="/posts/2017/11/canipoop/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
+{{< /image/gallery/frame >}}
