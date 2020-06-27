@@ -1,21 +1,21 @@
 ---
 aliases:
-- /posts/traverse/
+- "/posts/traverse/"
 categories:
 - frontend
 comments: true
-date: "2018-08-06T00:00:00-07:00"
+date: 2018-08-06T00:00:00-07:00
 description: Traverse is a GitHub Explorer App I built using Electron + React, and
   a whole bunch of other open source tools.
-lastmod: "2020-05-16T11:36:32-08:00"
+lastmod: 2020-05-16T11:36:32-08:00
 slug: traverse
 tags:
 - electron
 - javascript
 - typescript
-title: 'Traverse: app & website (closed source version)'
----
+title: Traverse
 
+---
 ![Traverse Spaceman Logo](/posts/2018/08/traverse/pointing_0.5x.png)
 
 Traverse is a GitHub Explorer App I built using Electron + React, and a whole bunch of other open source tools.
@@ -47,4 +47,3 @@ The app was written in TypeScript.
 {{< image/pop portrait="true" src="/posts/2018/08/traverse/traverse_website_no-shadow_08.png" alt="Traverse website release notes" >}}
 
 {{< image/pop portrait="true" src="/posts/2018/08/traverse/traverse_website_no-shadow_07.png" alt="Traverse website open source tools" >}}
-
