@@ -2,6 +2,7 @@
 categories:
 - ops
 date: "2020-06-02T16:00:00-07:00"
+lastmod: "2020-07-16T21:00:00-07:00"
 description: A reminder on how to create a bootable usb from a Mac 
 slug: create-a-bootable-usb
 tags:
@@ -55,7 +56,7 @@ ubuntu-20.04-live-server-amd64.iso            28%[=========================>    
 Our target in this case is `/dev/rdisk2`
 
 ```bash
-$ sudo dd bs=8m if=ubuntu-20.04-live-server-amd64.iso of=/dev/rdisk2
+$ sudo dd if=ubuntu-20.04-live-server-amd64.iso of=/dev/rdisk2 bs=32M
 ```
 
 ### 6. Eject the disk
@@ -68,3 +69,16 @@ Disk /dev/rdisk2 ejected
 ### 7. Remove the disk and boot into the flashable USB
 
 On a mac, you need to hold the alt/option key when rebooting to boot into the disk selection. For other machines, a lot of times it is just the `delete` key when booting to go into the BIOS, then select to choose to boot from the flash drive
+
+### Extra Notes
+
+* If the image file you have downloaded ends with an `.xz` file extension, run: 
+```bash
+$ xzcat ~/Downloads/<image-file.xz> | sudo dd of=<drive address> bs=32M
+```
+* If the line is in the `/dev/mmcblk0p1` format, then your drive address is: `/dev/mmcblk0`. If it is in the `/dev/sdb1` format, then the address is `/dev/sdb`.
+* On Linux, run the sync command to finalize the process 
+
+### Sources: 
+
+* https://ubuntu.com/download/iot/installation-media
