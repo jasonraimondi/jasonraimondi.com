@@ -6,14 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jasonraimondi.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jasonraimondi.com.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/posts/system76-lemur-pro-initial-reactions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_post-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/posts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/edit-on-github.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/edit-on-github.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/create-a-bootable-usb.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +30,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/posts" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/js/lib" />
-      <recent name="$PROJECT_DIR$/content/things" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/things" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/assets/js/lib" />
+      <recent name="$PROJECT_DIR$/content/things" />
+    </key>
   </component>
-  <component name="RunManager" selected="Hugo.Develop">
+  <component name="RunManager" selected="npm.algolia">
     <configuration name="algolia" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -68,7 +63,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Hugo.Develop" />
       <item itemvalue="npm.algolia" />
     </list>
     <recent_temporary>
@@ -90,6 +84,14 @@
       <workItem from="1592541937801" duration="2893000" />
       <workItem from="1592882458663" duration="3388000" />
       <workItem from="1593056672479" duration="2272000" />
+      <workItem from="1593641643677" duration="964000" />
+      <workItem from="1593730725108" duration="207000" />
+      <workItem from="1593995541744" duration="91000" />
+      <workItem from="1594061792588" duration="1292000" />
+      <workItem from="1594148897320" duration="635000" />
+      <workItem from="1594509221629" duration="526000" />
+      <workItem from="1594874854696" duration="395000" />
+      <workItem from="1594958795249" duration="422000" />
     </task>
     <servers />
   </component>
