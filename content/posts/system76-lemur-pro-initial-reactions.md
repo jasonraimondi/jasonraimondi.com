@@ -37,3 +37,11 @@ missing the command key, it is better in every way, using the super key as main 
 I dont miss touchid really
 
 cant see the screen with polarized lense 
+
+Theme:
+
+Applications - Ant Slim
+Cursor - Pop
+Icons - Papirus
+Shell - Ant slim
+Sound - Pop
