@@ -58,9 +58,6 @@ defaultContentLanguage = "en"
 [[Params.MainMenu.Link]]
   name = "Uses"
   url = "/uses"
-[[Params.MainMenu.Link]]
-  name = "Search"
-  url = "/search"
 
 [Params.Projects]
 [[Params.Projects.Link]]
