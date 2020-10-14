@@ -6,9 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/posts/encrypting-zfs-filesystem.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/search-scripts.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,13 @@
       <recent name="$PROJECT_DIR$/content/things" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.algolia">
+  <component name="RunManager" selected="Makefile.serve">
+    <configuration name="serve" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/Makefile" target="serve" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="algolia" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -65,9 +72,11 @@
     </configuration>
     <list>
       <item itemvalue="npm.algolia" />
+      <item itemvalue="Makefile.serve" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile.serve" />
         <item itemvalue="npm.algolia" />
       </list>
     </recent_temporary>
@@ -98,7 +107,9 @@
       <workItem from="1596421965102" duration="38000" />
       <workItem from="1596422079401" duration="16000" />
       <workItem from="1596780192160" duration="18000" />
-      <workItem from="1599199664921" duration="606000" />
+      <workItem from="1599199664921" duration="687000" />
+      <workItem from="1600721405384" duration="28000" />
+      <workItem from="1602654547377" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
@@ -139,56 +150,35 @@
     <option name="LAST_COMMIT_MESSAGE" value="Bump editor configs" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="483" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592542430113">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="483" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1592542430113" />
-    <state x="688" y="420" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592369108612">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="688" y="420" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1177@0.23.1920.1177" timestamp="1592369108612" />
     <state x="554" y="113" width="802" height="887" key="CommitChangelistDialog2" timestamp="1594959465284">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="554" y="113" width="802" height="887" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1594959465284" />
-    <state x="943" y="343" key="EnvironmentVariablesDialog" timestamp="1592542427771">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="1365" height="278" key="GridCell.Tab.0.bottom" timestamp="1602654741153">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="943" y="343" key="EnvironmentVariablesDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1592542427771" />
-    <state width="1878" height="140" key="GridCell.Tab.0.bottom" timestamp="1593057520656">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="1365" height="278" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741153" />
+    <state width="1365" height="278" key="GridCell.Tab.0.center" timestamp="1602654741152">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="140" key="GridCell.Tab.0.bottom/0.23.1920.1177@0.23.1920.1177" timestamp="1593057520656" />
-    <state width="1878" height="140" key="GridCell.Tab.0.center" timestamp="1593057520655">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="1365" height="278" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741152" />
+    <state width="1365" height="278" key="GridCell.Tab.0.left" timestamp="1602654741151">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="140" key="GridCell.Tab.0.center/0.23.1920.1177@0.23.1920.1177" timestamp="1593057520655" />
-    <state width="1878" height="140" key="GridCell.Tab.0.left" timestamp="1593057520655">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="1365" height="278" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741151" />
+    <state width="1365" height="278" key="GridCell.Tab.0.right" timestamp="1602654741153">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="140" key="GridCell.Tab.0.left/0.23.1920.1177@0.23.1920.1177" timestamp="1593057520655" />
-    <state width="1878" height="140" key="GridCell.Tab.0.right" timestamp="1593057520656">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state width="1365" height="278" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741153" />
+    <state x="981" y="333" width="826" height="566" key="find.popup" timestamp="1602654849836">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state width="1878" height="140" key="GridCell.Tab.0.right/0.23.1920.1177@0.23.1920.1177" timestamp="1593057520656" />
-    <state x="600" y="470" width="540" height="524" key="StructurePopup" timestamp="1592603525191">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state x="600" y="470" width="540" height="524" key="StructurePopup/0.23.2560.1417/2560.-277.1680.1027@0.23.2560.1417" timestamp="1592603525191" />
-    <state x="548" y="123" width="1272" height="977" key="VCS.FileHistoryDialog" timestamp="1592979715561">
-      <screen x="0" y="23" width="1920" height="1177" />
-    </state>
-    <state x="548" y="123" width="1272" height="977" key="VCS.FileHistoryDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1592979715561" />
-    <state x="981" y="334" width="826" height="512" key="find.popup" timestamp="1594959332163">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="981" y="366" width="826" height="490" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1593058868941" />
-    <state x="1308" y="436" width="1102" height="590" key="find.popup/0.23.2560.1417/2560.-277.1680.1027@0.23.2560.1417" timestamp="1592603898979" />
+    <state x="981" y="333" width="826" height="566" key="find.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1602654849836" />
     <state x="981" y="334" width="826" height="512" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1594959332163" />
-    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup" timestamp="1593058606280">
-      <screen x="0" y="23" width="1920" height="1177" />
+    <state x="776" y="263" width="672" height="606" key="search.everywhere.popup" timestamp="1602655280961">
+      <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="776" y="288" width="670" height="676" key="search.everywhere.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1593058606280" />
+    <state x="776" y="263" width="672" height="606" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1602655280961" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
