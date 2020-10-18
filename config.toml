@@ -61,6 +61,10 @@ defaultContentLanguage = "en"
 
 [Params.Projects]
 [[Params.Projects.Link]]
+  name = "TypeScript OAuth2 Server"
+  url = "https://github.com/jasonraimondi/typescript-oauth2-server"
+  description = "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. "
+[[Params.Projects.Link]]
   name = "Traverse"
   url = "/posts/traverse-2-electric-boogaloo"
   description = "Mac OS App for explore trending GitHub repos"
@@ -68,10 +72,6 @@ defaultContentLanguage = "en"
   name = "deno-mirror-to-gitea"
   url = "https://github.com/jasonraimondi/deno-mirror-to-gitea"
   description = "An archivist tool to sypder and backup GitHub repos"
-[[Params.Projects.Link]]
-  name = "Recovery Passport"
-  url = "/posts/recovery-passport-three-tiered-support-system/"
-  description = "Three tiered journaling system for recovering alcohol and narcotics addicts"
 [[Params.Projects.Link]]
   name = "Locatizor"
   url = "https://github.com/jasonraimondi/locatizor"
