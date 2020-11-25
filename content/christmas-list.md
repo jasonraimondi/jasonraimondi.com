@@ -1,0 +1,5 @@
+---
+---
+<head> 
+<meta http-equiv="refresh" content="0; url=https://www.notion.so/c32e7604e08345548acb8a1d090ea38b?v=0b7c2d3408474339bc2db04743da8464" />
+</head> 
