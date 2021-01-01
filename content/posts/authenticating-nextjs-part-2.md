@@ -322,7 +322,7 @@ Now that we have the **AuthToken** class all set up, we need to add functionalit
 import Cookie from "js-cookie";
 import Router from "next/router";
 
-const TOKEN_STORAGE_KEY = "myApp.authToken";
+export const TOKEN_STORAGE_KEY = "myApp.authToken";
 
 export class AuthToken {
   // ...  
@@ -364,9 +364,10 @@ Now we are going to add a **privateRoute** [high order component](https://reactj
 Our **privateRoute** function will be decorating any React component with some authorization checks. It is attaching to the Next.js/React lifecycle methods and and updating accordingly.  
 
 ```jsx
+import ServerCookie from "next-cookies";
 import { NextPageContext } from "next";
 import React, { Component } from "react";
-import { AuthToken } from "../services/auth_token";
+import { TOKEN_STORAGE_KEY, AuthToken } from "../services/auth_token";
 import { redirectToLogin } from "../services/redirect_service";
 
 export type AuthProps = {
@@ -381,7 +382,8 @@ export function privateRoute(WrappedComponent: any) {
 
     static async getInitialProps(ctx: NextPageContext) {
       // create AuthToken
-      const auth = AuthToken.fromNext(ctx);
+      const token = ServerCookie(ctx)[TOKEN_STORAGE_KEY];
+      const auth = new AuthToken(token);
       const initialProps = { auth };
       // if the token is expired, that means the user is no longer (or never was) authenticated
       // and if we allow the request to continue, they will reach a page they should not be at.
