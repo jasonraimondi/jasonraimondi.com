@@ -34,8 +34,8 @@
       "endDate": "present",
       "summary": "Software Engineer",
       "highlights": [
-        "Increased the HitRECord webserver scaling of add compute by 20x,from a previous ~10m to ~30s by updating the deployment of a traditional Ruby on Rails app to a containerized deploy using Kubernetes on AWS EKS, with horizontal node and vertical pod scaling.",
-        "Worked on the decoupling of a legacy AngularJS from a Rails monolith, to an Angular 8+ SPA, that is now on upgrade path towards Angular Universal and SSR.",
+        "Increased the HitRECord webserver scaling from a previous 10 minutes to 30 seconds using AWS Elastic Kubernetes Service with horizontal node and vertical pod scaling.",
+        "Decoupled a legacy AngularJS from a Rails monolith into an Angular 8+ SPA.",
         "Parallelized integration tests, refactoring a legacy Capybara test suite into Cypress, speeding up average CI build time from 60 minutes to under 10 minutes."
       ]
     },
