@@ -12,16 +12,39 @@
         "network": "LinkedIn",
         "username": "jasonraimondi",
         "url": "https://www.linkedin.com/in/jasonraimondi/"
+      },
+      {
+        "network": "GitHub",
+        "username": "jasonraimondi",
+        "url": "https://github.com/jasonraimondi"
+      },
+      {
+        "network": "Leetcode",
+        "username": "jasonraimondi",
+        "url": "https://leetcode.com/jasonraimondi"
       }
     ]
   },
   "work": [
     {
+      "company": "HitRECord",
+      "position": "Software Engineer",
+      "website": "https://hitrecord.org",
+      "startDate": "2019-04-01",
+      "endDate": "present",
+      "summary": "Software Engineer",
+      "highlights": [
+        "Increased the HitRECord webserver scaling of add compute by 20x,from a previous ~10m to ~30s by updating the deployment of a traditional Ruby on Rails app to a containerized deploy using Kubernetes on AWS EKS, with horizontal node and vertical pod scaling.",
+        "Worked on the decoupling of a legacy AngularJS from a Rails monolith, to an Angular 8+ SPA, that is now on upgrade path towards Angular Universal and SSR.",
+        "Parallelized integration tests, refactoring a legacy Capybara test suite into Cypress, speeding up average CI build time from 60 minutes to under 10 minutes."
+      ]
+    },
+    {
       "company": "Event Farm",
       "position": "Senior Software Engineer",
       "website": "https://eventfarm.com",
       "startDate": "2018-09-01",
-      "endDate": "present",
+      "endDate": "2019-03-01",
       "summary": "Senior Software Engineer",
       "highlights": [
         "Test Drove the re-architecture of the API code base, decoupling the codebase from CakePHP 2.x, to a PHP 7 application built using Domain Driven Design based on CQS principles. The project is routed through Lumen and maintains over 85% code coverage.",
