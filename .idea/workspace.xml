@@ -7,9 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/search-scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +16,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hz1bzaai" />
   </component>
   <component name="ProjectId" id="1dQsAwC7EZCCAr0eb0OCNCuizhP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -71,11 +72,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.algolia" />
       <item itemvalue="Makefile.serve" />
+      <item itemvalue="npm.algolia" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile.serve" />
         <item itemvalue="Makefile.serve" />
         <item itemvalue="npm.algolia" />
       </list>
