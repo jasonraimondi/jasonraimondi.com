@@ -86,7 +86,7 @@
     {{ end }}
 </article>
 
-{{- $posts := resources.Get "js/posts.js" | fingerprint }}
-<script type="text/javascript" src="{{ $posts.Permalink }}" integrity="{{ $posts.Data.Integrity }}"></script>
+{{- $typescript := resources.Get "js/main.ts" | js.Build (dict "minify" false) | fingerprint -}}
+<script type="text/javascript" src="{{ $typescript.Permalink }}" integrity="{{ $typescript.Data.Integrity }}"></script>
 
 {{ end }}

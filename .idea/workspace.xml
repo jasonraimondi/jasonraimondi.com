@@ -6,9 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy_to_s3.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -46,6 +48,7 @@
       <recent name="$PROJECT_DIR$/content/things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/js/src" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/things" />
     </key>
@@ -113,6 +116,10 @@
       <workItem from="1599199664921" duration="687000" />
       <workItem from="1600721405384" duration="28000" />
       <workItem from="1602654547377" duration="748000" />
+      <workItem from="1611203091156" duration="1128000" />
+      <workItem from="1614925764666" duration="88000" />
+      <workItem from="1614926195234" duration="1795000" />
+      <workItem from="1614928012525" duration="1261000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
@@ -151,47 +158,5 @@
     <MESSAGE value="Add lemur pro review draft" />
     <MESSAGE value="Bump editor configs" />
     <option name="LAST_COMMIT_MESSAGE" value="Bump editor configs" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="554" y="113" width="802" height="887" key="CommitChangelistDialog2" timestamp="1594959465284">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state x="554" y="113" width="802" height="887" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1594959465284" />
-    <state width="1365" height="278" key="GridCell.Tab.0.bottom" timestamp="1602654741153">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1365" height="278" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741153" />
-    <state width="1365" height="278" key="GridCell.Tab.0.center" timestamp="1602654741152">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1365" height="278" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741152" />
-    <state width="1365" height="278" key="GridCell.Tab.0.left" timestamp="1602654741151">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1365" height="278" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741151" />
-    <state width="1365" height="278" key="GridCell.Tab.0.right" timestamp="1602654741153">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1365" height="278" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1602654741153" />
-    <state x="981" y="333" width="826" height="566" key="find.popup" timestamp="1602654849836">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state x="981" y="333" width="826" height="566" key="find.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1602654849836" />
-    <state x="981" y="334" width="826" height="512" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1594959332163" />
-    <state x="776" y="263" width="672" height="606" key="search.everywhere.popup" timestamp="1602655280961">
-      <screen x="0" y="25" width="1920" height="1055" />
-    </state>
-    <state x="776" y="263" width="672" height="606" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1602655280961" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/js/search.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
