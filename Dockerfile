@@ -1,18 +1,9 @@
-FROM node:14-alpine as node
-
-FROM jojomi/hugo:0.76 as builder
-## Install node and yarn from node image
-COPY --from=node /usr/local/bin/node /usr/local/bin/node
-# COPY --from=node /usr/local/package.json /usr/local/package.json
-COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
-RUN \
-  ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && \
-  ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
-
+FROM klakegg/hugo:0.81.0-ext-alpine as builder
+RUN apk add --update nodejs npm
 WORKDIR /app
 COPY package-lock.json package.json /app/
 RUN npm ci
-COPY config.toml babel.config.js postcss.config.js /app/
+COPY config.toml postcss.config.js /app/
 COPY assets/ /app/assets/
 COPY content/ /app/content/
 COPY layouts/ /app/layouts/
