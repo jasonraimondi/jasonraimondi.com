@@ -69,9 +69,9 @@ defaultContentLanguage = "en"
   url = "/posts/traverse-2-electric-boogaloo"
   description = "Mac OS App for explore trending GitHub repos"
 [[Params.Projects.Link]]
-  name = "deno-mirror-to-gitea"
-  url = "https://github.com/jasonraimondi/deno-mirror-to-gitea"
-  description = "An archivist tool to sypder and backup GitHub repos"
+  name = "🦄 angular-unicornify"
+  url = "https://github.com/jasonraimondi/angular-unicornify"
+  description = "Easily add unicorn's to your Angular site"
 [[Params.Projects.Link]]
   name = "Locatizor"
   url = "https://github.com/jasonraimondi/locatizor"
