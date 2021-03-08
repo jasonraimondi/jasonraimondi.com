@@ -63,9 +63,12 @@
 </style>
 
 {{ if .Site.IsServer }}
-    {{ $style := resources.Get "css/style.scss" | toCSS | postCSS }}
+    {{ $css := resources.Get "css/style.scss" }}
+    {{ $style := $css | resources.ToCSS | resources.PostCSS }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
 {{ else }}
-    {{ $style := resources.Get "css/style.scss" | toCSS | postCSS | minify | fingerprint }}
+    {{ $css := resources.Get "css/style.scss" }}
+    {{ $style := $css | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
+
