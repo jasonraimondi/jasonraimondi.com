@@ -61,29 +61,33 @@ defaultContentLanguage = "en"
 
 [Params.Projects]
 [[Params.Projects.Link]]
-  name = "TypeScript OAuth2 Server"
+  name = "🔐 typescript-oauth2-server"
   url = "https://github.com/jasonraimondi/typescript-oauth2-server"
   description = "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. "
 [[Params.Projects.Link]]
-  name = "Traverse"
-  url = "/posts/traverse-2-electric-boogaloo"
-  description = "Mac OS App for explore trending GitHub repos"
+  name = "🖼️ url-to-png"
+  url = "https://github.com/jasonraimondi/url-to-png"
+  description = "Dynamic screenshots for the web over a simple http api"
 [[Params.Projects.Link]]
   name = "🦄 angular-unicornify"
   url = "https://github.com/jasonraimondi/angular-unicornify"
   description = "Easily add unicorn's to your Angular site"
 [[Params.Projects.Link]]
-  name = "Locatizor"
+  name = "🛎️ use-nofity-rxjs"
+  url = "https://github.com/jasonraimondi/use-notify-rxjs"
+  description = "React hook for design free toasts using rxjs"
+[[Params.Projects.Link]]
+  name = "🧭 traverse"
+  url = "/posts/traverse-2-electric-boogaloo"
+  description = "Desktop app for explore trending GitHub repos (Mac OS/Linux)"
+[[Params.Projects.Link]]
+  name = "🗺️ locatizor"
   url = "https://github.com/jasonraimondi/locatizor"
-  description = "Mac OS App to add location data to photos taken with a DSLR"
+  description = "Desktop app to add GPS data to jpg's that are missing location (Mac OS/Linux)"
 [[Params.Projects.Link]]
-  name = "URL-to-PNG"
-  url = "https://github.com/jasonraimondi/url-to-png"
-  description = "A URL to PNG generator over HTTP"
-[[Params.Projects.Link]]
-  name = "Restforcephp"
+  name = "💼 restforce-php"
   url = "https://github.com/eventfarm/restforcephp"
-  description = "PHP API for Salesforce"
+  description = "PHP API client library for Salesforce"
 
 [Params.ExternalMenu]
   title = "Follow Me Online Here:"
