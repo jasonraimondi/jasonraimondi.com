@@ -1,11 +1,9 @@
-
 .width-constrain {
   width: 100%;
   min-height: 100%;
   max-width: var(--container-xs);
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+
 
   @media (--small) {
     max-width: var(--container-sm);
@@ -21,16 +19,5 @@
   }
   @media (--xxlarge) {
     max-width: var(--container-xxl);
-  }
-  > .post-container {
-    margin: 1rem 0 2rem;
-    display: block;
-    //display: flex;
-    //flex-direction: column;
-    flex: 1;
-    .post-body {
-      height: 100%;
-      flex: 1;
-    }
   }
 }

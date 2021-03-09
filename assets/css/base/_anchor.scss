@@ -1,0 +1,20 @@
+a {
+  color: var(--colors-green-500);
+  transition: 0.3s ease;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: var(--colors-green-800);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--colors-purple-500);
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: var(--colors-purple-200);
+    }
+  }
+}

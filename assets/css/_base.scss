@@ -20,8 +20,8 @@
    * Root
    */
 
-  --root-size: 16px;
-  --root-size-large: 18px;
+  --root-size: 100%;
+  --root-size-large: 120%;
 
   /**
    * Container
@@ -34,52 +34,4 @@
   --container-md: 80%;
   --container-sm: 90%;
   --container-xs: 95%;
-
-  /**
-   * Font
-   */
-
-  --font-family-sans: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --font-family-serif: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  --font-family-mono: JetBrains Mono, Fira Code Retina, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  --font-family: var(--font-family-system);
-
-  /**
-   * Font Weights
-   */
-
-  --font-weight-thin: 200;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-black: 800;
-  --font-weight: normal;
-
-  /**
-   * Line height
-   */
-
-  --line-height-xxl: 2;
-  --line-height-xl: 1.75;
-  --line-height-l: 1.625;
-  --line-height-m: 1.5;
-  --line-height-s: 1.375;
-  --line-height-xs: 1.25;
-  --line-height-xxs: 1;
-  --line-height: var(--line-height-s);
-
-  /**
-   * Letter Spacing
-   */
-
-  --letter-spacing-xxl: 0.1em;
-  --letter-spacing-xl: 0.0825em;
-  --letter-spacing-l: 0.075em;
-  --letter-spacing-m: 0.05em;
-  --letter-spacing-s: 0.0375em;
-  --letter-spacing-xs: 0.025em;
-  --letter-spacing-xxs: 0.0125em;
-  --letter-spacing: 0;
 }

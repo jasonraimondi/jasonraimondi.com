@@ -1,9 +1,14 @@
 html {
   height: 100%;
   width: 100%;
-  font-weight: var(--font-weight-light);
 
   @media (prefers-color-scheme: dark) {
-    background-color: var(--black);
+    color: var(--colors-gray-50);
+    background-color: var(--colors-gray-800);
   }
+}
+
+body {
+  height: 100%;
+  width: 100%;
 }

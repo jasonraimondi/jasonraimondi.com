@@ -1,7 +1,11 @@
 .noscript {
   text-align: center;
-  background: var(--green);
+  background-color: var(--colors-green-500);
   color: inherit;
   margin-top: 0;
   padding: 0.5rem 0;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--colors-purple-500);
+  }
 }

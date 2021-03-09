@@ -13,19 +13,14 @@ title: Jason Raimondi
 ---
 
 <style type="text/css">
-	.home h1 picture img {
-		position: relative; 
-		top: 0.5rem;
-		height: 3rem; 
-	}
-	.home h1, 
-	.home h2, 
-	.home h3, 
-	.home h4, 
-	.home h5, 
-	.home h6 {
-		font-weight: 500;
-	}
+	/*.home h1, */
+	/*.home h2, */
+	/*.home h3, */
+	/*.home h4, */
+	/*.home h5, */
+	/*.home h6 {*/
+	/*	font-weight: 500;*/
+	/*}*/
 	.home h1 {
 		letter-spacing: -2px;
 	}
@@ -39,17 +34,17 @@ title: Jason Raimondi
 
 <div class="home">
 
-<h1 class="h1 font-mono">
+<h1 class="flex text-4xl items-center font-mono">
     Hey,
     <picture>
 		<source srcset="/misc/me/animoji-hi.webp, /misc/me/animoji-hi@2x.webp 2x" type="image/webp">
         <source srcset="/misc/me/animoji-hi.png, /misc/me/animoji-hi@2x.png 2x" type="image/png">
-        <img src="/misc/me/animoji-hi.png" alt="emoji of me waving hi"/>
+        <img class="relative bottom-1 h-20" src="/misc/me/animoji-hi.png" alt="emoji of me waving hi"/>
     </picture>
     I'm Jason.
 </h1>
 
-<h2 class="font-mono">I am a technologist and computer geek.</h2>
+<h2 class="font-mono mt-2 text-2xl mb-6">I am a technologist and computer geek.</h2>
 
 I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a> doing a lot of ops work. Recently, I've been focusing on containerizing our Ruby application and deploying us on AWS Elastic Kubernetes Service.
 
@@ -63,7 +58,7 @@ If I’m not learning a new language or practicing software architecture design 
 
 {{< index/recent-projects >}}
 
-<h3 class="font-mono">Curious about how I work?</h3>
+<h3 class="font-mono mt-4">Curious about how I work?</h3>
 
 Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
 

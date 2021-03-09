@@ -3,46 +3,12 @@
 {{ partial "head.html" . }}
 <body>
 <noscript><p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p></noscript>
-<main class="">
-    <nav class="flex">
-        <a class="w-36 hidden md:block" href="/">
-            {{ $smallWEBP := .Site.Params.ProfileURL.SmallWEBP }}
-            {{ $largeWEBP := .Site.Params.ProfileURL.LargeWEBP }}
-            {{ $smallJPG := .Site.Params.ProfileURL.SmallJPG }}
-            {{ $largeJPG := .Site.Params.ProfileURL.LargeJPG }}
-            <picture>
-                <source srcset="{{ $smallWEBP }}, {{ $largeWEBP }} 2x" type="image/webp">
-                <source srcset="{{ $smallJPG }}, {{ $largeJPG }} 2x" type="image/jpeg">
-                <img class="rounded-2xl" src="{{ $smallJPG }}" alt="{{ .Site.Params.Name }}'s Profile Picture">
-            </picture>
-        </a>
-
-        <div class="">
-            {{ if not .IsHome }}
-            <h2 class="text-2xl lg:text-4xl text-green-500 uppercase font-bold">
-                <a href="/">{{ .Site.Params.Title }}</a>
-            </h2>
-            {{ end }}
-
-            <ul class="flex justify-between">
-                {{ range .Site.Params.MainMenu.Link }}
-                <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
-                {{ end }}
-                <li>
-                    <a href="{{ "/resume" | relURL }}">Resume</a>
-                    <a class="ml-2" href="{{ "/resume.pdf" | relURL }}" target="_blank">
-                        <span>pdf</span>
-                    </a>
-                    <a style="margin-left: 0.5rem;" href="{{ "/resume.json" | relURL }}" target="_blank" class="label inline">
-                        <span>json</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<main class="container mx-auto px-2 py-8">
+    {{ partial "nav/top_bar.html" . }}
 
     {{ block "main" . }}
     {{ end }}
+
     {{ partial "footer_links.html" . }}
 </main>
 {{ partial "footer_includes.html" . }}
