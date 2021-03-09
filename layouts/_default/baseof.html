@@ -2,12 +2,10 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-<noscript>
-    <p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p>
-</noscript>
-<main class="main-content">
-    <nav class="main-nav">
-        <a class="avatar" href="/">
+<noscript><p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p></noscript>
+<main class="">
+    <nav class="flex">
+        <a class="w-36 hidden md:block" href="/">
             {{ $smallWEBP := .Site.Params.ProfileURL.SmallWEBP }}
             {{ $largeWEBP := .Site.Params.ProfileURL.LargeWEBP }}
             {{ $smallJPG := .Site.Params.ProfileURL.SmallJPG }}
@@ -15,24 +13,24 @@
             <picture>
                 <source srcset="{{ $smallWEBP }}, {{ $largeWEBP }} 2x" type="image/webp">
                 <source srcset="{{ $smallJPG }}, {{ $largeJPG }} 2x" type="image/jpeg">
-                <img src="{{ $smallJPG }}" alt="{{ .Site.Params.Name }}'s Profile Picture">
+                <img class="rounded-2xl" src="{{ $smallJPG }}" alt="{{ .Site.Params.Name }}'s Profile Picture">
             </picture>
         </a>
 
-        <div>
+        <div class="">
             {{ if not .IsHome }}
-            <h2 class="nav-title">
+            <h2 class="text-2xl lg:text-4xl text-green-500 uppercase font-bold">
                 <a href="/">{{ .Site.Params.Title }}</a>
             </h2>
             {{ end }}
 
-            <ul class="nav-links list-reset">
+            <ul class="flex justify-between">
                 {{ range .Site.Params.MainMenu.Link }}
                 <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
                 {{ end }}
                 <li>
                     <a href="{{ "/resume" | relURL }}">Resume</a>
-                    <a style="margin-left: 0.5rem;" href="{{ "/resume.pdf" | relURL }}" target="_blank" class="label inline">
+                    <a class="ml-2" href="{{ "/resume.pdf" | relURL }}" target="_blank">
                         <span>pdf</span>
                     </a>
                     <a style="margin-left: 0.5rem;" href="{{ "/resume.json" | relURL }}" target="_blank" class="label inline">

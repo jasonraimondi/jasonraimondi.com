@@ -6,9 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/css/_root.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_anchor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_blockquote.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_headings.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_hr.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_paragraph.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_pre.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_strong.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography/_utility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="hz1bzaai" />
@@ -47,6 +72,7 @@
       <recent name="$PROJECT_DIR$/content/things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/assets/js/src" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content/things" />
@@ -119,7 +145,8 @@
       <workItem from="1614925764666" duration="88000" />
       <workItem from="1614926195234" duration="1795000" />
       <workItem from="1614928012525" duration="1261000" />
-      <workItem from="1615188572635" duration="1989000" />
+      <workItem from="1615188572635" duration="3291000" />
+      <workItem from="1615270092186" duration="4655000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
