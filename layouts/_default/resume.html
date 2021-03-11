@@ -1,0 +1,103 @@
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+{{ $resume := getJSON "./static/resume.json" }}
+{{ $me := $resume.basics }}
+{{ $work := $resume.work }}
+{{ $education := $resume.education }}
+{{ $skills := $resume.skills }}
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+    "contact contact contact"
+    "work work education"
+    "work work education"
+    "skills skills skills";
+    /*grid-template-rows: 80px 1fr 70px;*/
+    /*grid-template-columns: 20% 1fr 15%;*/
+    /*grid-row-gap: 10px;*/
+    /*grid-column-gap: 10px;*/
+    /*height: 100vh;*/
+    /*margin: 0;*/
+  }
+  #work {
+    background-color: lime;
+    grid-area: work;
+  }
+  #contact {
+    background-color: tomato;
+    grid-area: contact;
+  }
+  #education {
+    background-color: red;
+    grid-area: education;
+  }
+  #skills {
+    background-color: blue;
+    grid-area: skills;
+  }
+</style>
+
+<div id="contact">
+    <img src="{{ $me.picture }}" alt="{{ $me.name }} profile image" title="{{ $me.name }} profile image">
+
+    <h1>{{ $me.name }}</h1>
+    <h2>{{ $me.label }}</h2>
+
+    <p>{{ $me.summary }}</p>
+
+    <ul>
+        <li>{{ $me.phone }}</li>
+        <li>{{ $me.email }}</li>
+    </ul>
+</div>
+
+<ul id="profiles">
+    {{ range $me.profiles }}
+    <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .network }}</a></li>
+    {{ end }}
+</ul>
+
+<ul id="work">
+    {{ range $work }}
+    <li>
+        <p>{{ .company }}</p>
+        <p>{{ .position }}</p>
+        <p>{{ .website }}</p>
+        <p>{{ .startDate }}</p>
+        <p>{{ .endDate }}</p>
+        <p>{{ .summary }}</p>
+        <ul>
+            {{ range .highlights }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+
+<ul id="education">
+    {{ range $education }}
+    <li>
+        <p>{{ .institution }}</p>
+        <p>{{ .area }}</p>
+        <p>{{ .studyType }}</p>
+        <p>{{ .endDate }}</p>
+    </li>
+    {{ end }}
+</ul>
+
+
+<ul id="skills">
+    {{ range $skills }}
+    <li>
+        <p>{{ .name }}</p>
+        <ul>
+            {{ range .keywords }}
+            <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
