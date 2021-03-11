@@ -6,18 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/base/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/resume.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_anchor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_anchor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_html.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_html.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_noscript.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_noscript.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_root.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/resume.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

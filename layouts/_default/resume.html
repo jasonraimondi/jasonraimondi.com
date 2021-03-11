@@ -1,4 +1,12 @@
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+{{ if .Site.IsServer }}
+    {{ $css := resources.Get "css/resume.scss" }}
+    {{ $style := $css | resources.ToCSS | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+{{ else }}
+    {{ $css := resources.Get "css/resume.scss" }}
+    {{ $style := $css | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
+{{ end }}
 
 {{ $resume := getJSON "./static/resume.json" }}
 {{ $me := $resume.basics }}
@@ -10,65 +18,80 @@
   body {
     display: grid;
     grid-template-areas:
-    "contact contact contact"
-    "work work education"
-    "work work education"
-    "skills skills skills";
+        "me me profiles"
+        "work work work"
+        "education education education"
+        "skills skills skills";
     /*grid-template-rows: 80px 1fr 70px;*/
     /*grid-template-columns: 20% 1fr 15%;*/
-    /*grid-row-gap: 10px;*/
-    /*grid-column-gap: 10px;*/
-    /*height: 100vh;*/
-    /*margin: 0;*/
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding: 1rem;
   }
-  #work {
-    background-color: lime;
-    grid-area: work;
+  #work { grid-area: work; }
+  #me { grid-area: me; }
+  #education { grid-area: education; }
+  #skills { grid-area: skills; }
+  #profiles { grid-area: profiles; }
+
+  #me {
+    display: grid;
+    grid-template-areas:
+        "pic first last contact"
+        "blank blank label contact";
+    grid-template-columns: 250px 25% 1fr 250px;
   }
-  #contact {
-    background-color: tomato;
-    grid-area: contact;
-  }
-  #education {
-    background-color: red;
-    grid-area: education;
-  }
-  #skills {
-    background-color: blue;
-    grid-area: skills;
-  }
+  #pic { grid-area: pic }
+  #first { grid-area: first }
+  #last { grid-area: last }
+  #label { grid-area: label }
+  #contact { grid-area: contact }
+  #blank { grid-area: blank }
 </style>
 
-<div id="contact">
-    <img src="{{ $me.picture }}" alt="{{ $me.name }} profile image" title="{{ $me.name }} profile image">
+<div id="me" class="bg-blue-300">
+    <img id="pic" src="{{ $me.picture }}" alt="{{ $me.name }} profile image" title="{{ $me.name }} profile image">
 
-    <h1>{{ $me.name }}</h1>
-    <h2>{{ $me.label }}</h2>
+    <h1 class="hidden">{{ $me.name }}</h1>
+    <span id="first" class="text-7xl text-right uppercase">Jason</span>
+    <span id="last" class="text-7xl font-black uppercase">Raimondi</span>
+    <h2 id="label" class="text-xl">{{ $me.label }}</h2>
 
-    <p>{{ $me.summary }}</p>
+    <div id="blank"></div>
+    <!--  <p>{{ $me.summary }}</p>-->
 
-    <ul>
+    <ul id="contact">
         <li>{{ $me.phone }}</li>
         <li>{{ $me.email }}</li>
     </ul>
 </div>
 
-<ul id="profiles">
+<ul id="profiles" class="bg-green-300">
     {{ range $me.profiles }}
     <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .network }}</a></li>
     {{ end }}
 </ul>
 
-<ul id="work">
+<style>
+    .work {
+      display: grid;
+      grid-template-areas:
+        "sidebar description";
+      grid-template-columns: 25% 1fr;
+    }
+    .sidebar { grid-area: sidebar; }
+    .description { grid-area: description; }
+</style>
+
+<ul id="work" class="bg-purple-300">
     {{ range $work }}
-    <li>
-        <p>{{ .company }}</p>
-        <p>{{ .position }}</p>
-        <p>{{ .website }}</p>
-        <p>{{ .startDate }}</p>
-        <p>{{ .endDate }}</p>
-        <p>{{ .summary }}</p>
-        <ul>
+    <li class="work mb-4 border-b-2 border-blue-500">
+        <div class="sidebar">
+            <p><a href="{{ .website }}">{{ .company }}</a></p>
+            <p>{{ .position }}</p>
+            <p>{{ dateFormat "January 2006" .startDate }} - {{ if eq .endDate "present" }}present{{ else }}{{ dateFormat "January 2006" .endDate }}{{ end }}</p>
+        </div>
+        <ul class="description">
             {{ range .highlights }}
             <li>{{ . }}</li>
             {{ end }}
@@ -77,7 +100,7 @@
     {{ end }}
 </ul>
 
-<ul id="education">
+<ul id="education" class="bg-gray-300">
     {{ range $education }}
     <li>
         <p>{{ .institution }}</p>
@@ -89,13 +112,13 @@
 </ul>
 
 
-<ul id="skills">
+<ul id="skills" class="bg-yellow-300">
     {{ range $skills }}
     <li>
         <p>{{ .name }}</p>
-        <ul>
+        <ul class="flex">
             {{ range .keywords }}
-            <li>{{ . }}</li>
+            <li class="label">{{ . }}</li>
             {{ end }}
         </ul>
     </li>
