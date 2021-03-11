@@ -40,6 +40,17 @@
       ]
     },
     {
+      "company": "Digital Canvas Design LLC",
+      "position": "Owner, Software Consultant",
+      "startDate": "2014-01-01",
+      "endDate": "present",
+      "highlights": [
+        "Managed web servers and applications for clients, historically built and deployed LAMP/LEMP stacks, currently bouncing between Golang, Node.js + PHP7.",
+        "Deployed and secured Linux and BSD servers ranging from firewalls to webservers and NAS machines both internal and external.",
+        "Constructs sites for clients with varying complexity, from simple static HTML websites, to custom built solutions using PHP + MySQL, utilizing existing web technologies including frameworks such as Laravel and CakePHP to CMS solutions such as WordPress."
+      ]
+    },
+    {
       "company": "Event Farm",
       "position": "Senior Software Engineer",
       "website": "https://eventfarm.com",
@@ -64,17 +75,6 @@
       ]
     },
     {
-      "company": "Digital Canvas Design LLC",
-      "position": "Owner, Software Consultant",
-      "startDate": "2014-01-01",
-      "endDate": "present",
-      "highlights": [
-        "Managed web servers and applications for clients, historically built and deployed LAMP/LEMP stacks, currently bouncing between Golang, Node.js + PHP7.",
-        "Deployed and secured Linux and BSD servers ranging from firewalls to webservers and NAS machines both internal and external.",
-        "Constructs sites for clients with varying complexity, from simple static HTML websites, to custom built solutions using PHP + MySQL, utilizing existing web technologies including frameworks such as Laravel and CakePHP to CMS solutions such as WordPress."
-      ]
-    },
-    {
       "company": "Freelancer",
       "position": "Professional Freelancer",
       "startDate": "2009-08-01",
@@ -88,8 +88,8 @@
     {
       "company": "Web Services LLC",
       "position": "Full Stack Web Developer",
-      "startDate": "2009-08-01",
-      "endDate": "2014-01-01",
+      "startDate": "2014-06-01",
+      "endDate": "2015-11-01",
       "highlights": [
         "Led team of 4 developers building AdStat, a SaaS Application for Advertising Agencies to monitor ROI and Reactions to TV Campaigns, integrating various web API’s including Google Analytics, Twilio, and Talkwalker.",
         "Key decision maker in choosing the web stack of our biggest project, AdStat. Decided upon a PHP, using Laravel as our base while utilizing both MySQL & MongoDB for data storage, and Foundation 5 for our front end.",
@@ -142,7 +142,8 @@
       "keywords": [
         "TypeScript",
         "JavaScript",
-        "(S)CSS",
+        "ESM",
+        "ESM",
         "React.js",
         "Vue.js",
         "Angular",
@@ -153,39 +154,30 @@
     {
       "name": "Back End",
       "keywords": [
-        "Node.js",
-        "Golang",
-        "PHP",
+        "GraphQL",
         "TypeScript",
+        "Node.js",
+        "Ruby/Rails",
+        "PHP",
         "OOP",
-        "RDS",
-        "noSQL",
-        "Firebase",
         "OAuth2",
-        "REST",
         "Laravel",
-        "Lumen",
-        "Phalcon",
         "Doctrine"
       ]
     },
     {
       "name": "Ops",
       "keywords": [
+        "Kubernetes",
         "Docker",
-        "Docker Swarm",
-        "Golang",
-        "Python",
-        "Debian",
-        "Ubuntu",
-        "ZFS",
-        "PFSense",
-        "LEMP/LAMP",
-        "Nginx",
-        "Traefik",
+        "AWS",
+        "RDS",
+        "Auto Scaling",
+        "CI/CD",
         "SSL",
         "Cron/Queues",
-        "SQL"
+        "SQL",
+        "LEMP/LAMP"
       ]
     },
     {
