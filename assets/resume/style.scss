@@ -1,0 +1,25 @@
+@import "media-queries";
+
+@mixin stretch() {
+  text-align: justify;
+  text-justify: inter-character;
+  &:after{
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../css/colors";
+@import "../css/base/anchor";
+@import "../css/content/label";
+
+@import "layout";
+@import "partials/me";
+@import "partials/education";
+@import "partials/experience";
+@import "partials/skills";

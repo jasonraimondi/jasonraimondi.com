@@ -7,14 +7,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $resume.basics.name }}'s Resume</title>
+    {{ $style := resources.Get "resume/style.scss" }}
     {{ if .Site.IsServer }}
-        {{ $css := resources.Get "css/resume.scss" }}
-        {{ $style := $css | resources.ToCSS | resources.PostCSS }}
-        <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+        {{ $css := $style | resources.ToCSS | resources.PostCSS }}
+        <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
     {{ else }}
-        {{ $css := resources.Get "css/resume.scss" }}
-        {{ $style := $css | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
-        <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
+        {{ $css := $style | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
     {{ end }}
 </head>
 <body class="dark:bg-gray-800 dark:text-white">
@@ -23,14 +22,12 @@
 
 <div id="resume-container" class="container mx-auto px-4">
     {{ partial "resume/me.html" (dict "context" . "me" $resume.basics) }}
-
+    
     {{ partial "resume/experience.html" (dict "context" . "works" $resume.work) }}
 
     {{ partial "resume/education.html" (dict "context" . "educations" $resume.education) }}
 
     {{ partial "resume/skill.html" (dict "context" . "skills" $resume.skills) }}
-
-    {{ partial "resume/profile.html" (dict "context" . "me" $resume.basics ) }}
 </div>
 
 </body>

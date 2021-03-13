@@ -1,0 +1,17 @@
+<ul id="profiles">
+    <li class="pt-2">
+        <ul id="contact">
+            <li><a href="mailto:{{ .me.email }}" class="text-black dark:text-white">{{ .me.email }}</a></li>
+            <li><a href="{{ .me.website }}" class="text-black dark:text-white">{{ .me.website }}</a></li>
+            {{ $telephone := (replaceRE "[^0-9]+" "" .me.phone) }}
+            <li><a href="tel:{{ $telephone }}" class="text-black dark:text-white">{{ .me.phone }}</a></li>
+        </ul>
+    </li>
+    <li class="pt-8">
+        <ul>
+            {{ range .me.profiles }}
+            <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .network }}</a></li>
+            {{ end }}
+        </ul>
+    </li>
+</ul>

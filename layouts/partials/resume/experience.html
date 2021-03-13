@@ -1,10 +1,10 @@
 <ul id="experiences">
-    <li class="main-layout">
-        <h3 class="sidebar uppercase text-xl"><strong>Experience</strong></h3>
+    <li class="resume-grid">
+        <h3 class="left-column uppercase text-xl"><strong>Experience</strong></h3>
     </li>
     {{ range .works }}
-    <li class="main-layout">
-        <div class="sidebar">
+    <li class="resume-grid">
+        <div class="left-column">
             <p>
                 <a href="{{ .website }}"
                    target="_blank"
@@ -16,7 +16,7 @@
             <p>{{ .position }}</p>
             <p class="italic"><small>{{ dateFormat "Jan 2006" .startDate }} - {{ if eq .endDate "present" }}present{{ else }}{{ dateFormat "Jan 2006" .endDate }}{{ end }}</small></p>
         </div>
-        <ul class="description">
+        <ul class="main-column">
             {{ range .highlights }}
             <li class="mb-2 break-normal">{{ . }}</li>
             {{ end }}

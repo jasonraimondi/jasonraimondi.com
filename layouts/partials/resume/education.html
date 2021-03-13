@@ -1,14 +1,14 @@
 <ul id="educations">
-    <li class="main-layout">
-        <h3 class="sidebar uppercase text-xl"><strong>Education</strong></h3>
+    <li class="resume-grid">
+        <h3 class="left-column uppercase text-xl"><strong>Education</strong></h3>
     </li>
     {{ range .educations }}
-    <li class="main-layout">
-        <div class="sidebar">
+    <li class="resume-grid">
+        <div class="left-column">
             <p><strong>{{ .institution }}</strong></p>
             <p class="italic"><small>{{ dateFormat "Jan 2006" .endDate }}</small></p>
         </div>
-        <div class="description">
+        <div class="main-column">
             <p>{{ .area }}</p>
             <p>{{ .studyType }}</p>
         </div>

@@ -1,0 +1,69 @@
+.about-me {
+  display: grid;
+  grid-template-areas:
+        "last"
+        "label";
+  grid-template-rows: 1fr 25px;
+}
+
+.name {
+  line-height: 1;
+  text-transform: uppercase;
+  max-height: 3rem;
+  font-size: 3rem;
+
+  @media (--medium) {
+    max-height: 4.25rem;
+    font-size: 4.25rem;
+  }
+
+  @media (--xlarge) {
+    max-height: 6rem;
+    font-size: 6rem;
+  }
+}
+
+.first {
+  grid-area: first;
+
+  @media (--medium) {
+    text-align: right;
+    direction: rtl;
+    position: relative;
+    right: -8px;
+  }
+}
+
+.last {
+  @apply font-black uppercase;
+  grid-area: last;
+
+  @media (--medium) {
+    @include stretch();
+  }
+}
+
+.job-title {
+  @include stretch();
+  @apply font-black text-xl uppercase;
+  grid-area: label;
+  line-height: 1;
+  width: 100%;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#profiles {
+  display: none;
+}
+
+@media (--xxlarge) {
+  #profiles {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: -260px;
+  }
+}

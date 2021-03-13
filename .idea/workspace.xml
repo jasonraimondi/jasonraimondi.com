@@ -7,12 +7,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/resume.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/resume.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/content/_label.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_label.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/partials/_me.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/partials/_me.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/partials/_skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/partials/_skills.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/links.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/partials/resume/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/me.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/skill.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/skill.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/layouts/partials/resume" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/resume/partial" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -54,12 +56,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/resume/partial" />
+      <recent name="$PROJECT_DIR$/assets/resume" />
       <recent name="$PROJECT_DIR$/layouts/partials/resume" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/assets/js/lib" />
-      <recent name="$PROJECT_DIR$/content/things" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/resume" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/assets/js/src" />
       <recent name="$PROJECT_DIR$/content/posts" />
