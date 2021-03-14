@@ -7,27 +7,25 @@
 @import 'media-queries';
 
 @import 'base/root';
+@import 'base/width-constraint';
 @import 'base/anchor';
 @import 'base/html';
 @import 'base/noscript';
 @import 'base/img';
-@import 'base/width-constraint';
+@import 'base/headings';
 @import 'base/nav';
 
-//@import 'content/elements';
-//@import 'content/footer';
-//@import 'content/label';
-//@import 'content/layout';
-//@import 'content/posts';
-//@import 'content/post-list';
-//@import 'content/resets';
-//@import 'content/pagination';
-//@import 'content/single';
-//
-//@import 'components/image-gallery';
-//@import 'components/image-pop';
-//@import 'components/video-container';
-//@import 'components/search';
+@import 'content/label';
+@import 'content/layout';
+@import 'content/posts';
+@import 'content/post-list';
+@import 'content/pagination';
+@import 'content/single';
+
+@import 'components/breadcrumbs';
+@import 'components/image-gallery';
+@import 'components/image-pop';
+@import 'components/video-container';
 
 @import 'lib/pygment';
 

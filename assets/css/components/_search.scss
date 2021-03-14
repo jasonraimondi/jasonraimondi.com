@@ -14,18 +14,17 @@
     border-radius: 5px;
     margin-bottom: 1rem;
     background-color: transparent;
-    border: 2px solid var(--green);
+    border: 2px solid var(--colors-green-500);
     padding: 0.5rem;
 
-    @media (prefers-color-scheme: dark) {
-      color: var(--white);
-      border-color: var(--purple);
+    @media (--dark) {
+      color: var(--colors-white);
+      border-color: var(--colors-purple-500);
     }
 
     &:focus {
       outline: white;
     }
-
   }
 
   ul {
@@ -42,19 +41,19 @@
 
   a {
     display: block;
-    color: var(--white);
+    color: var(--colors-white);
     font-size: 0.8rem;
     padding: 0.5rem;
-    background-color: var(--green);
+    background-color: var(--colors-green-500);
 
     &:hover {
-      background-color: var(--green-darker);
+      background-color: var(--colors-green-800);
     }
 
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--purple);
+    @media (--dark) {
+      background-color: var(--colors-purple-500);
       &:hover {
-        background-color: var(--purple-darker);
+        background-color: var(--colors-purple-800);
       }
     }
   }

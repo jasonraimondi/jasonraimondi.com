@@ -5,7 +5,7 @@
   margin-top: 0;
   padding: 0.5rem 0;
 
-  @media (prefers-color-scheme: dark) {
+  @media (--dark) {
     background-color: var(--colors-purple-500);
   }
 }

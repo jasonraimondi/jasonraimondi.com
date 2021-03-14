@@ -10,6 +10,8 @@ $screen-sm: 577px;
 $screen-xs-max: #{$screen-sm - 1};
 $screen-xs: 422px;
 
+@custom-media --dark (prefers-color-scheme: dark);
+
 @custom-media --xxlarge (min-width: #{$screen-xxl});
 @custom-media --xlarge-only (min-width: #{$screen-xl}) and (max-width: #{$screen-xl-max});
 @custom-media --xlarge (min-width: #{$screen-xl});

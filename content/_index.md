@@ -48,7 +48,7 @@ title: Jason Raimondi
 
 I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a> doing a lot of ops work. Recently, I've been focusing on containerizing our Ruby application and deploying us on AWS Elastic Kubernetes Service.
 
-I have been professionally developing for the web since 2009. Early on I was primarily developing more traditional server rendered **PHP** applications with a bit of  **JavaScript**. Recently, my favorite stack has been **Golang** and **TypeScript**.
+I have been professionally developing for the web since 2009. Early on, I was primarily developing traditional server rendered **PHP** applications with a bit of **JavaScript**. Recently, my favorite stack has been full stack **TypeScript**.
 
 I have experience writing modular, horizontally scalable applications.
 

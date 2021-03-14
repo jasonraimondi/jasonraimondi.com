@@ -17,7 +17,7 @@
 
 {{ define "main" }}
 
-<ul  class="breadcrumbs">
+<ul class="breadcrumbs">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
@@ -46,7 +46,7 @@
         </div>
     </header>
     <section id="post-content">
-        <ul id="post-tags-list" class="list-reset">
+        <ul id="post-tags-list">
             {{ $taxonomyCategory := "categories" }}
             {{ with .Param $taxonomyCategory }}
                 {{ range $index, $category := . }}

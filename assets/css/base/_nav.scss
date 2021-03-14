@@ -6,7 +6,7 @@
   @apply text-white py-0.5 px-1 rounded;
   @apply text-white py-0.5 px-1 rounded;
 
-  @media (prefers-color-scheme: dark) {
+  @media (--dark) {
     background-color: var(--colors-purple-500);
 
     &:focus,

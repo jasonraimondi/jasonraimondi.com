@@ -1,7 +1,7 @@
 .post-list {
   > li {
     padding-bottom: 0.5em;
-    border-bottom: var(--border);
+    border-bottom: 1px solid var(--colors-gray-800);
     margin-bottom: 1em;
 
     &:last-child {
@@ -22,20 +22,29 @@
 
 .post-list-anchor {
   small {
-    color: var(--grey);
+    color: var(--colors-gray-500);
   }
 }
 
 .post-list-title {
-  font-size: var(--font-size-xl);
+  font-size: var(--text-lg);
   margin-bottom: 0.1rem;
-  margin-top: 0.25rem
+  margin-top: 0.25rem;
+  color: var(--colors-green-500);
+
+  @media (--dark) {
+    color: var(--colors-purple-500);
+  }
 }
 
 .post-list-date {
   //display: inline-block;
   font-size: 80%;
-  color: var(--grey-dark);
+  color: var(--colors-gray-800);
+
+  @media (--dark) {
+    color: var(--colors-gray-300);
+  }
 
   @media (--large) {
     min-width: 200px;

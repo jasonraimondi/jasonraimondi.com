@@ -1,5 +1,5 @@
 .date {
-  color: var(--grey);
+  color: var(--colors-gray-500);
 }
 
 #post-tags-list {
@@ -26,9 +26,9 @@
   margin-bottom: 1rem;
   a {
     font-size: 0.7rem;
-    color: var(--grey-dark);
+    color: var(--colors-gray-500);
     &:hover {
-      color: var(--grey-darkest);
+      color: var(--colors-gray-800);
       text-decoration: none;
     }
   }
