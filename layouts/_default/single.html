@@ -24,9 +24,9 @@
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         {{ partial "image.html" . }}
-        <h1 itemprop="name headline">{{ .Title }}</h1>
+        <h1 itemprop="name headline" class="font-semibold">{{ .Title }}</h1>
         <div class="post-date-edit-wrapper">
-            <p class="post-list-date">
+            <p class="post-date">
                 <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
                     <span itemprop="name">{{ .Site.Params.Name }}</span>
                 </span>

@@ -6,7 +6,11 @@
 
     &:last-child {
       margin-bottom: 0;
-      border-bottom: 0;
+      //border-bottom: 0;
+    }
+
+    @media (--dark) {
+      border-bottom: 1px solid var(--colors-gray-200);
     }
   }
 
@@ -20,13 +24,8 @@
   }
 }
 
-.post-list-anchor {
-  small {
-    color: var(--colors-gray-500);
-  }
-}
-
 .post-list-title {
+  font-weight: 500;
   font-size: var(--text-lg);
   margin-bottom: 0.1rem;
   margin-top: 0.25rem;
@@ -34,19 +33,5 @@
 
   @media (--dark) {
     color: var(--colors-purple-500);
-  }
-}
-
-.post-list-date {
-  //display: inline-block;
-  font-size: 80%;
-  color: var(--colors-gray-800);
-
-  @media (--dark) {
-    color: var(--colors-gray-300);
-  }
-
-  @media (--large) {
-    min-width: 200px;
   }
 }

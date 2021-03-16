@@ -30,6 +30,9 @@ title: Jason Raimondi
 	.home h3 {
 		letter-spacing: -1px;
 	}
+    p {
+      margin-bottom: 1rem;
+    }
 </style>
 
 <div class="home">
@@ -58,7 +61,7 @@ If I’m not learning a new language or practicing software architecture design 
 
 {{< index/recent-projects >}}
 
-<h3 class="font-mono mt-4">Curious about how I work?</h3>
+<h3 class="font-mono mt-4 mb-2">Curious about how I work?</h3>
 
 Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
 

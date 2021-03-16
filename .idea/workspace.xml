@@ -6,29 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/base/_headings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/components/_breadcrumbs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/archives/resume.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_anchor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_anchor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/base/_html.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_html.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_noscript.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_noscript.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_image-gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_image-gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_image-pop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_image-pop.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/components/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/components/_search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_elements.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_label.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_label.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/base/_root.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/content/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_pagination.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/content/_post-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_post-list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/content/_posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_posts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_resets.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/media-queries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/media-queries.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/_media-queries.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume_next.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/related-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/related-posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/footer_links.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/footer_links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/page_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/page_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/me.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/index/recent-projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/index/recent-projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/resume.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +76,11 @@
       <recent name="$PROJECT_DIR$/assets/js/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/archives" />
       <recent name="$PROJECT_DIR$/assets/css/base" />
       <recent name="$PROJECT_DIR$/assets/css/components" />
       <recent name="$PROJECT_DIR$/assets/resume" />
       <recent name="$PROJECT_DIR$/assets/css" />
-      <recent name="$PROJECT_DIR$/assets/js/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.algolia">
@@ -107,7 +106,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Makefile.serve" />
       <item itemvalue="npm.algolia" />
     </list>
     <recent_temporary>

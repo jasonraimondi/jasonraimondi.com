@@ -1,6 +1,6 @@
 {{ with $.Site.Params.Projects.Link }}
 <ul class="mt-4">
-    <li><h3 class="font-mono">These are some projects I've worked on recently:</h3></li>
+    <li><h3 class="font-mono mb-2">These are some projects I've worked on recently:</h3></li>
     {{ range $i, $p := . }}
     <li>
         &rarr; <a href="{{ $p.url | relURL }}">{{ $p.name }}</a>
