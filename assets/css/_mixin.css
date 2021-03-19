@@ -20,3 +20,14 @@
     display: none;
   }
 }
+
+@define-mixin date-item {
+  font-size: var(--text-sm);
+  font-style: italic;
+  margin-bottom: 1em;
+  color: var(--colors-gray-500);
+
+  @media (--dark) {
+    color: var(--colors-gray-200);
+  }
+}

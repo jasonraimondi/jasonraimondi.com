@@ -21,15 +21,24 @@
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
-
 <article class="single" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="single--header">
-        {{ partial "image.html" . }}
-        <h1 class="single--title" itemprop="name headline">{{ .Title }}</h1>
+        {{ if isset .Params "image" }}
+        <div class="single--image">
+            <img id="js-feature-image" src="{{ .Params.Image | relURL }}" style="width: 100%" alt="{{ .Params.ImageAlt | relURL }}" />
+            <small id="js-feature-image-credit" class="image-credit">{{ .Params.ImageCredit | relURL }}</small>
+        </div>
+        {{ end }}
+
+
+        <h1 class="single--title" itemprop="name headline">
+            {{ .Title }}
+            <div class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">{{ .Site.Params.Name }}</span>
+            </div>
+        </h1>
+
         <p class="single--date">
-            <span class="single--date--author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-                <span class="single--date--author-name" itemprop="name">{{ .Site.Params.Name }}</span>
-            </span>
             <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"> {{ .Date.Format "January 2, 2006" }}</time>
             {{ if ne .Date .Page.Lastmod }}
             <span class="single--date--modified">
@@ -44,23 +53,28 @@
     <section class="single--post">
         {{ $taxonomyCategory := "categories" }}
         {{ with .Param $taxonomyCategory }}
-        <ul class="single--post--tags">
+        <div class="single--post--block1">
+            <ul class="single--post--tags">
                 {{ range $index, $category := . }}
-                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
-                        <li><a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a></li>
-                    {{ end }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
+                <li><a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a></li>
+                {{ end -}}
+                {{ end -}}
                 {{ end }}
+
+                {{ $taxonomyTag := "tags" }}
+                {{ with .Param $taxonomyTag }}
+                {{ range $index, $tag := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
+                <li><a href="{{ .RelPermalink }}" class="label">{{ $tag | urlize }}</a></li>
+                {{ end }}
+                {{ end }}
+            </ul>
             {{ end }}
 
-            {{ $taxonomyTag := "tags" }}
-            {{ with .Param $taxonomyTag }}
-                {{ range $index, $tag := . }}
-                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
-                        <li><a href="{{ .RelPermalink }}" class="label">{{ $tag | urlize }}</a></li>
-                    {{ end }}
-            {{ end }}
-        </ul>
-        {{ end }}
+            {{ partial "edit-on-github.html" . }}
+        </div>
+
         <article class="single--post-body" itemprop="articleBody">
             {{ if .Params.toc }}
             {{ .TableOfContents }}

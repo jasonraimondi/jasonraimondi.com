@@ -1,9 +1,9 @@
 
 .top-bar {
-@media (--medium) {
-  display: flex;
-  font-size: var(--text-lg);
-}
+  @media (--medium) {
+    display: flex;
+    font-size: var(--text-lg);
+  }
 }
 .top-bar--title {
   text-transform: uppercase;
@@ -13,19 +13,24 @@
 .top-bar--nav {
   list-style-type: none;
   padding-left: 0;
-
   text-transform: uppercase;
   font-weight: var(--font-semibold);
 
-li {
-  height: 100%;
-  margin-right: 1em;
-}
+  li {
+    margin-right: 1em;
+  }
 
-.label {
-  position: relative;
-  bottom: 2px;
-}
+  .label {
+    position: relative;
+    bottom: 2px;
+  }
+
+  @media (--medium) {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .topbar--nav--itemlist {

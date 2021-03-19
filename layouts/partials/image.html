@@ -1,4 +1,0 @@
-{{ if isset .Params "image" }}
-<img id="js-feature-image" src="{{ .Params.Image | relURL }}" style="width: 100%" alt="{{ .Params.ImageAlt | relURL }}" />
-<small id="js-feature-image-credit" class="image-credit">{{ .Params.ImageCredit | relURL }}</small>
-{{ end }}

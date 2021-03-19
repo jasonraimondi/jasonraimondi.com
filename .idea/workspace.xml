@@ -6,17 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/base/_code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/partials/_recent-projects.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/content/_posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_posts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/lib/pygment.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/lib/pygment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/partials/_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/partials/_footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resume/_skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_skills.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/index/recent-projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/index/recent-projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/resume" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css/partials" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css/partials" />
       <recent name="$PROJECT_DIR$/assets/resume" />
       <recent name="$PROJECT_DIR$/assets/resume/partial" />
       <recent name="$PROJECT_DIR$/layouts/partials/resume" />
       <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/assets/js/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/css/partials" />
@@ -144,7 +140,8 @@
       <workItem from="1615697701253" duration="3933000" />
       <workItem from="1615943658501" duration="12061000" />
       <workItem from="1616106600339" duration="3992000" />
-      <workItem from="1616128843587" duration="5678000" />
+      <workItem from="1616128843587" duration="8145000" />
+      <workItem from="1616137018748" duration="1043000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>

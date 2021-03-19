@@ -2,56 +2,25 @@
 }
 .single .single--title {
   font-size: var(--h2);
+  margin: 0 0 0.25em;
 }
-.single--post-body {
-  p {
-    margin-bottom: 1em;
-    line-height: 1.5;
-  }
-
-  .post-body > a {
-    display: block;
-  }
-
-  a,
-  ol,
-  ul,
-  div,
-  pre {
-    margin-bottom: 1rem;
-  }
-
-  li > ul {
-    margin-bottom: 0;
-  }
-
-  small {
-    line-height: 1.2;
-  }
-
-  ol,
-  ul {
-    margin-left: 0.25rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .header-link {
-    margin-right: 0.5rem;
-  }
+.single--image {
+  margin-bottom: 1rem;
 }
+
+.single--date {
+  @mixin date-item;
+}
+
+.single--post--block1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
 .single--post--tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
 
   li {
     margin-right: 0.5em;
@@ -64,6 +33,50 @@
     &:focus {
       text-decoration: none;
     }
+  }
+}
+
+.single--post-body {
+  p,
+  a,
+  ol,
+  ul,
+  div,
+  pre {
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+  li > ul {
+    margin-bottom: 0;
+  }
+
+  small {
+    line-height: 1.2;
+  }
+
+  ol,
+  ul {
+    list-style: disc;
+    margin-left: 1em;
+
+    li {
+      margin-bottom: 0.25em;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .header-link {
+    margin-right: 0.5em;
   }
 }
 
@@ -83,7 +96,7 @@
   font-weight: 400;
   border-radius: 3px;
   display: inline-flex;
-  align-items: center;
+  align-self: start;
 
   a {
     display: inline-block;

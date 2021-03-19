@@ -23,7 +23,7 @@ title: Jason Raimondi
     I'm Jason.
 </h1>
 
-<h2 class="font-mono mt-2 text-2xl mb-6">I am a technologist and computer geek.</h2>
+## I am a technologist and computer geek.
 
 I work at <a href="https://twitter.com/hitrecord" target="_blank" rel="nofollow">@HITRECORD</a> doing a lot of ops work. Recently, I've been focusing on containerizing our Ruby application and deploying us on AWS Elastic Kubernetes Service.
 
@@ -37,7 +37,7 @@ If I’m not learning a new language or practicing software architecture design 
 
 {{< index/recent-projects >}}
 
-<h3 class="font-mono mt-4 mb-2">Curious about how I work?</h3>
+### Curious about how I work?
 
 Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
 

@@ -1,0 +1,15 @@
+.recent-projects {
+  margin: 1em 0 2em;
+}
+.recent-projects--title {
+  margin: 0 0 1em;
+}
+.recent-projects--list {
+}
+.recent-projects--list--item {
+  margin-bottom: 5em;
+  a {
+    font-size: 1.1em;
+    font-weight: var(--font-bold);
+  }
+}
