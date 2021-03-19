@@ -18,13 +18,14 @@
 
 .list-item--title {
   color: blue;
-  font-size: var(--h4);
+  font-size: var(--h2);
   margin: 0 0 0.25em;
 }
 .list-item--date {
   font-size: var(--text-sm);
   color: var(--colors-gray-500);
   margin-bottom: 1em;
+  font-style: italic;
 }
 .list-item--description {
   line-height: 1.4;

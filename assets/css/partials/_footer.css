@@ -1,0 +1,15 @@
+.footer {
+}
+.footer--title {
+  margin: 0 0 0.5em;
+}
+.footer--list {
+  @media (--medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.footer--list--item {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}

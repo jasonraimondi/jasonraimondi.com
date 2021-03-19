@@ -21,6 +21,8 @@
 @import 'css/partials/_top-bar.css';
 @import 'css/partials/_breadcrumbs.css';
 @import 'css/partials/_pagination.css';
+@import 'css/partials/_related-posts.css';
+@import 'css/partials/_footer.css';
 
 @import 'css/components/_image-gallery.css';
 @import 'css/components/_image-pop.css';

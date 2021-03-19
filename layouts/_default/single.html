@@ -21,34 +21,30 @@
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
-<article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
+
+<article class="single" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="single--header">
         {{ partial "image.html" . }}
-        <h1 itemprop="name headline" class="font-semibold">{{ .Title }}</h1>
-        <div class="post-date-edit-wrapper">
-            <p class="post-date">
-                <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
-                    <span itemprop="name">{{ .Site.Params.Name }}</span>
-                </span>
-                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                    {{ .Date.Format "January 2, 2006" }}
+        <h1 class="single--title" itemprop="name headline">{{ .Title }}</h1>
+        <p class="single--date">
+            <span class="single--date--author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span class="single--date--author-name" itemprop="name">{{ .Site.Params.Name }}</span>
+            </span>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"> {{ .Date.Format "January 2, 2006" }}</time>
+            {{ if ne .Date .Page.Lastmod }}
+            <span class="single--date--modified">
+                <span> | </span>Modified:&nbsp;
+                <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Page.Lastmod.Format "January 2, 2006" }}
                 </time>
-                {{ if ne .Date .Page.Lastmod }}
-                    <span class="post-modified-date">
-                        <span class="split"> | </span>Modified:&nbsp;
-                        <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-                            {{ .Page.Lastmod.Format "January 2, 2006" }}
-                        </time>
-                    </span>
-                {{ end }}
-            </p>
-        {{ partial "edit-on-github.html" . }}
-        </div>
+            </span>
+            {{ end }}
+        </p>
     </header>
-    <section id="post-content">
-        <ul id="post-tags-list">
-            {{ $taxonomyCategory := "categories" }}
-            {{ with .Param $taxonomyCategory }}
+    <section class="single--post">
+        {{ $taxonomyCategory := "categories" }}
+        {{ with .Param $taxonomyCategory }}
+        <ul class="single--post--tags">
                 {{ range $index, $category := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
                         <li style="margin-right:5px">
@@ -62,14 +58,12 @@
             {{ with .Param $taxonomyTag }}
                 {{ range $index, $tag := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
-                        <li style="margin-right:5px">
-                            <a href="{{ .RelPermalink }}" class="label inline">{{ $tag | urlize }}</a>
-                        </li>
+                        <li><a href="{{ .RelPermalink }}" class="label">{{ $tag | urlize }}</a></li>
                     {{ end }}
             {{ end }}
-            {{ end }}
         </ul>
-        <article class="post-body" itemprop="articleBody">
+        {{ end }}
+        <article class="single--post-body" itemprop="articleBody">
             {{ if .Params.toc }}
             {{ .TableOfContents }}
             {{ end}}
@@ -78,12 +72,6 @@
     </section>
 
     {{ partial "related-posts.html" . }}
-
-    {{ if .Params.comments }}
-    <section>
-        {{ template "_internal/disqus.html" . }}
-    </section>
-    {{ end }}
 </article>
 
 {{- $typescript := resources.Get "js/main.ts" | js.Build (dict "minify" false) | fingerprint -}}
