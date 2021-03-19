@@ -4,6 +4,78 @@
   font-size: var(--h2);
 }
 .single--post-body {
+  p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+  .post-body > a {
+    display: block;
+  }
+
+  a,
+  ol,
+  ul,
+  div,
+  pre {
+    margin-bottom: 1rem;
+  }
+
+  li > ul {
+    margin-bottom: 0;
+  }
+
+  small {
+    line-height: 1.2;
+  }
+
+  ol,
+  ul {
+    margin-left: 0.25rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-link {
+    margin-right: 0.5rem;
+  }
+}
+.single--post--tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  li {
+    margin-right: 0.5em;
+  }
+
+  a {
+    margin: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+#TableOfContents {
+  > ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  li > ul {
+    margin-left: 0;
+  }
 }
 
 .edit-on-github {

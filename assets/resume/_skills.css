@@ -10,8 +10,8 @@
 
 #skills .label {
   font-size: var(--text-md);
-  margin-right: 1em;
-  margin-bottom: 1em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
 
   @media print {
     padding: 0;

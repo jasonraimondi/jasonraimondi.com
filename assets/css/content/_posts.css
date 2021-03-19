@@ -3,21 +3,7 @@
 }
 
 #post-tags-list {
-  display: flex;
-  flex-wrap: wrap;
 
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    margin: 0;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
 }
 
 .image-credit {
@@ -37,68 +23,6 @@
 #post-content {
   height: 100%;
   width: 100%;
-
-  p {
-    line-height: 1.8;
-  }
-
-  .post-body > a {
-    display: block;
-  }
-
-  a,
-  ol,
-  ul,
-  div,
-  pre {
-    margin-bottom: 1rem;
-  }
-
-  li > ul {
-    margin-bottom: 0;
-  }
-
-  small {
-    line-height: 1.2;
-  }
-
-  ol,
-  ul {
-    margin-left: 0.25rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .header-link {
-    margin-right: 0.5rem;
-  }
-
-  #TableOfContents {
-    > ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin-left: 0;
-    }
-    li > ul {
-      margin-left: 0;
-    }
-  }
-
-  .asciicast  {
-    width: 100%;
-
-    iframe {
-      width: 100%;
-    }
-  }
 }
 
 .post-date {

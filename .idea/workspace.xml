@@ -6,23 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/partials/_footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/partials/_related-posts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/base/_code.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_headings.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_headings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/content/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/content/_posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/content/_posts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_list.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/lib/pygment.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/lib/pygment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/_skills.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_skills.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/edit-on-github.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/edit-on-github.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/footer_links.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/footer_links.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/page_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/related-posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/related-posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/resume-iframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +144,7 @@
       <workItem from="1615697701253" duration="3933000" />
       <workItem from="1615943658501" duration="12061000" />
       <workItem from="1616106600339" duration="3992000" />
-      <workItem from="1616128843587" duration="1925000" />
+      <workItem from="1616128843587" duration="5678000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>

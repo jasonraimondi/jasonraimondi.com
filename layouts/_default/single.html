@@ -47,9 +47,7 @@
         <ul class="single--post--tags">
                 {{ range $index, $category := . }}
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
-                        <li style="margin-right:5px">
-                            <a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a>
-                        </li>
+                        <li><a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a></li>
                     {{ end }}
                 {{ end }}
             {{ end }}

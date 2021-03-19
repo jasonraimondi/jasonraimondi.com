@@ -17,6 +17,7 @@ module.exports = {
         'postcss-custom-media': {
             importFrom: [{
                 customMedia: {
+                    '--light': '(prefers-color-scheme: light)',
                     '--dark': '(prefers-color-scheme: dark)',
                     '--xsmall': `(min-width: ${xs}px)`,
                     '--xsmall-only': `(max-width: ${(sm - 1)}px)`,
