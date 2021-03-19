@@ -1,15 +1,13 @@
 <li>
-  <a class="post-list-anchor" href="{{ .Permalink | relURL }}">
-    <h3 class="post-list-title">{{ .Title }}</h3>
-  </a>
-  <p class="post-list-date">
+  <h3 class="list-item--title"><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
+  <p class="list-item--date">
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
     {{ .Date.Format "January 2, 2006" }}
     </time>
   </p>
   {{ if .Description }}
-    <p class="post-list-excerpt">{{ .Description | safeHTML }}</p>
+    <p class="list-item--description">{{ .Description | safeHTML }}</p>
   {{ else }}
-    <p class="post-list-excerpt">{{ .Summary | safeHTML }}</p>
+    <p class="list-item--description">{{ .Summary | safeHTML }}</p>
   {{ end }}
 </li>

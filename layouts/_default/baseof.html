@@ -2,49 +2,13 @@
 <html>
 {{ partial "head.html" . }}
 <body>
-<noscript>
-    <p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p>
-</noscript>
-<main class="main-content">
-    <nav class="main-nav">
-        <a class="avatar" href="/">
-            {{ $smallWEBP := .Site.Params.ProfileURL.SmallWEBP }}
-            {{ $largeWEBP := .Site.Params.ProfileURL.LargeWEBP }}
-            {{ $smallJPG := .Site.Params.ProfileURL.SmallJPG }}
-            {{ $largeJPG := .Site.Params.ProfileURL.LargeJPG }}
-            <picture>
-                <source srcset="{{ $smallWEBP }}, {{ $largeWEBP }} 2x" type="image/webp">
-                <source srcset="{{ $smallJPG }}, {{ $largeJPG }} 2x" type="image/jpeg">
-                <img src="{{ $smallJPG }}" alt="{{ .Site.Params.Name }}'s Profile Picture">
-            </picture>
-        </a>
-
-        <div>
-            {{ if not .IsHome }}
-            <h2 class="nav-title">
-                <a href="/">{{ .Site.Params.Title }}</a>
-            </h2>
-            {{ end }}
-
-            <ul class="nav-links list-reset">
-                {{ range .Site.Params.MainMenu.Link }}
-                <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
-                {{ end }}
-                <li>
-                    <a href="{{ "/resume" | relURL }}">Resume</a>
-                    <a style="margin-left: 0.5rem;" href="{{ "/resume.pdf" | relURL }}" target="_blank" class="label inline">
-                        <span>pdf</span>
-                    </a>
-                    <a style="margin-left: 0.5rem;" href="{{ "/resume.json" | relURL }}" target="_blank" class="label inline">
-                        <span>json</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<noscript><p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p></noscript>
+<main class="container padded center">
+    {{ partial "nav/top_bar.html" . }}
 
     {{ block "main" . }}
     {{ end }}
+
     {{ partial "footer_links.html" . }}
 </main>
 {{ partial "footer_includes.html" . }}

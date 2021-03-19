@@ -7,7 +7,7 @@
 </article>
 {{ end }}
 
-<ul class="list-reset post-list">
+<ul class="list">
     {{ range .Paginator.Pages.ByDate.Reverse }}
         {{ partial "page_list.html" . }}
     {{ end }}

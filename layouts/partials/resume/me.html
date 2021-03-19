@@ -1,0 +1,13 @@
+<div id="me" class="resume-grid section">
+    <div class="left-column">
+        <h1 class="hidden">{{ .me.name }}</h1>
+        <p class="first name"><a href="{{ .me.website }}" class="unstyled">Jason</a></p>
+    </div>
+
+    <div class="main-column about-me">
+        <p class="last name"><a href="{{ .me.website }}" class="unstyled">Raimondi</a></p>
+        <h2 class="job-title">{{ .me.label }}</h2>
+    </div>
+
+    {{ partial "resume/links.html" (dict "context" . "me" .me) }}
+</div>

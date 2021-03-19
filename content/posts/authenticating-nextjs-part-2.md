@@ -65,7 +65,7 @@ http://localhost:3000/dashboard # protected page authed users only
 The first thing that we need to do though is create the directory for our Next.js project, and initialize npm. We are also going to need to create a **pages** directory for Next.js or it will freak out.
 
 ```bash
-mkdir -p ./pages
+mkdir -p ./layouts
 npm init
 ```
 
@@ -100,7 +100,7 @@ Add the following scripts to your `package.json` file.
 After we have the `./pages` directory, we can boot the Next.js application. 
 
 ```bash
-mkdir pages
+mkdir layouts
 npm run dev
 > ssr-web@1.0.0 dev /Users/jason/go/src/git.jasonraimondi.com/jason/nextjs-jwt-example
 > next
@@ -134,7 +134,7 @@ export function Links() {
 Now we can add our main index page with two links, one home, and one to a not-yet-existing Login page.
 
 ```jsx
-// pages/index.tsx
+// layouts/index.tsx
 
 import React from "react";
 import { Links } from "../components/links"
@@ -153,7 +153,7 @@ export default Index;
 Now we can add the login form. First let's get a working form that updates our form fields.
 
 ```jsx
-// pages/login.tsx
+// layouts/login.tsx
 
 import React, { useState } from "react";
 import { Links } from "../components/links";
@@ -231,7 +231,7 @@ Now let's create an _postLogin_ api call with [axios](https://github.com/axios/a
 // services/rest_service.ts
 
 import axios, { AxiosRequestConfig } from "axios";
-import { LoginInputs } from "../pages/login";
+import { LoginInputs } from "../layouts/login";
 import { AuthToken } from "./auth_token";
 import { catchAxiosError } from "./error";
 
@@ -431,7 +431,7 @@ We are going to be creating a dashboard page that is only going to be visible to
 We are able to access the key **auth** off of the props passed into the **Dashboard** component kind of magically. 
 
 ```jsx
-// pages/dashboard.tsx
+// layouts/dashboard.tsx
 
 import React from "react"
 import { Links } from "../components/links";
@@ -485,13 +485,13 @@ export const redirectToLogin = (server?: ServerResponse) => {
   const login = "/login?redirected=true";
   if (server) {
     // @see https://github.com/zeit/next.js/wiki/Redirecting-in-%60getInitialProps%60
-    // server rendered pages need to do a server redirect
+    // server rendered layouts need to do a server redirect
     server.writeHead(302, {
       Location: login,
     });
     server.end();
   } else {
-    // only client side pages have access to next/router
+    // only client side layouts have access to next/router
     Router.push(login);
   }
 };
@@ -541,7 +541,7 @@ So now after a successful login attempt, we will see our dashboard with the full
 So now that we've added the logout method to **AuthToken**, we can go ahead and access it off of our handy-dandy **auth** prop.
 
 ```jsx
-// pages/dashboard.tsx
+// layouts/dashboard.tsx
 
 import React from "react"
 import { Links } from "../components/links";
@@ -572,7 +572,7 @@ You can see that immediately on logout the user is redirected to the login page.
 ### Bonus: Add a logout page
 
 ```jsx
-// pages/logout.tsx
+// layouts/logout.tsx
 
 import { Component } from "react";
 import { AuthProps, privateRoute } from "../components/private_route";

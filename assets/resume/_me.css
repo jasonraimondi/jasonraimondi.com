@@ -1,0 +1,99 @@
+#me {
+  padding-top: 1rem;
+
+  @media (--medium) {
+    padding-top: 2rem;
+    position: relative;
+  }
+}
+
+.name {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: var(--text-xxl);
+
+  @media (--medium) {
+    font-size: 5rem;
+    height: 5rem;
+  }
+  @media (--large) {
+    font-size: 6rem;
+    height: 6rem;
+  }
+  @media (--xlarge) {
+    font-size: 7rem;
+    height: 7rem;
+  }
+}
+
+.first {
+  font-weight: var(--font-medium);
+}
+
+.last {
+  font-weight: var(--font-black);
+}
+
+.job-title {
+  font-size: var(--text-lg);
+  text-transform: uppercase;
+
+  @media (--medium) {
+    margin: 0;
+    height: var(--text-lg);
+  }
+}
+
+@media (--medium) {
+  .last, .job-title {
+    @mixin stretch;
+  }
+}
+
+.go-home {
+  @media print {
+    display: none;
+  }
+
+  @media (--medium) {
+    display: none;
+  }
+}
+
+#contact {
+  display: flex;
+
+  @media (--medium) {
+    display: none;
+  }
+
+  @media (--xlarge) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    margin-right: -14rem;
+  }
+
+
+  li {
+    padding-bottom: 0.5em;
+  }
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-external-links {
+  text-align: right;
+
+  @media (--medium) {
+    text-align: initial;
+    margin-top: 1rem;
+  }
+
+  @media print {
+    display: none;
+  }
+}

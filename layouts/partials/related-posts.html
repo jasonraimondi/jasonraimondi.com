@@ -1,9 +1,9 @@
 {{ $related := .Site.RegularPages.RelatedIndices . "tags" "date" | first 5 }}
 {{ with $related }}
+<hr>
 <section class="related-posts">
-    <hr>
     <h4>Related Posts</h4>
-    <ul class="list-reset">
+    <ul>
         {{ range . }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}

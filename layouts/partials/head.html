@@ -62,13 +62,11 @@
     }
 </style>
 
+{{ $style := resources.Get "css/style.css" }}
 {{ if .Site.IsServer }}
-    {{ $css := resources.Get "css/style.scss" }}
-    {{ $style := $css | resources.ToCSS | resources.PostCSS }}
-    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}">
+    {{ $css := $style | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
 {{ else }}
-    {{ $css := resources.Get "css/style.scss" }}
-    {{ $style := $css | resources.ToCSS | resources.PostCSS | resources.Minify | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
+    {{ $css := $style | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
 {{ end }}
-

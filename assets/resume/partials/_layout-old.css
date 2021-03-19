@@ -1,0 +1,74 @@
+#resume-container {
+  display: grid;
+  grid-template-areas:
+        "me"
+        "experience"
+        "education"
+        "skill";
+  grid-row-gap: 1rem;
+
+  @media (--large) {
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+#profiles {
+  grid-area: profile;
+}
+
+#experiences {
+  grid-area: experience;
+}
+
+#educations {
+  grid-area: education;
+}
+
+#skills {
+  grid-area: skill;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-areas:
+      "left-column main-column";
+  grid-template-columns: 33.33% minmax(0, 1fr);
+  grid-column-gap: 1rem;
+
+  @media (--large) {
+    grid-row-gap: 1rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#me {
+  display: none;
+  position: relative;
+}
+
+@media (--small) {
+  #me.resume-grid {
+    display: grid;
+    grid-template-areas:
+        "left-column main-column";
+    grid-template-columns: 33.33% minmax(0, 1fr);
+  }
+}
+
+.main-column {
+  grid-area: main-column;
+}
+
+.left-column {
+  grid-area: left-column;
+
+  @media (--small) {
+    text-align: right;
+    margin-right: 1rem;
+  }
+}

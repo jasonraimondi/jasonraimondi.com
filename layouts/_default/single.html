@@ -10,23 +10,23 @@
 {{ end }}
 
 {{ define "homeicon" }}
-<svg class="homeicon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<svg class="breadcrumbs--home" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
 <g><path d="M500,71.3l-490,490l91.9,91.9l91.9-91.9L255,928.8h183.8V745h122.5v183.8H745l61.3-367.5l91.9,91.9l91.9-91.9L500,71.3z"/></g>
 </svg>
 {{ end }}
 
 {{ define "main" }}
 
-<ul  class="breadcrumbs">
+<ul class="breadcrumbs">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
 <article class="post-container" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         {{ partial "image.html" . }}
-        <h1 itemprop="name headline">{{ .Title }}</h1>
+        <h1 itemprop="name headline" class="font-semibold">{{ .Title }}</h1>
         <div class="post-date-edit-wrapper">
-            <p class="post-list-date">
+            <p class="post-date">
                 <span itemprop="author" itemscope itemtype="http://schema.org/Person" style="display: none;">
                     <span itemprop="name">{{ .Site.Params.Name }}</span>
                 </span>
@@ -46,7 +46,7 @@
         </div>
     </header>
     <section id="post-content">
-        <ul id="post-tags-list" class="list-reset">
+        <ul id="post-tags-list">
             {{ $taxonomyCategory := "categories" }}
             {{ with .Param $taxonomyCategory }}
                 {{ range $index, $category := . }}

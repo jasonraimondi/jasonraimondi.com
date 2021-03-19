@@ -62,7 +62,7 @@ If you open up your `services/rest_services.ts` file, you should have the [_logi
 // services/rest_service.ts
 
 import axios, { AxiosRequestConfig } from "axios";
-import { LoginInputs } from "../pages/login";
+import { LoginInputs } from "../layouts/login";
 import { catchAxiosError } from "./error";
 
 // this method hits our unrestricted api endpoint at
@@ -127,7 +127,7 @@ export function catchAxiosError(err: AxiosError): ErrorResponse {
 Now let's add the `fetchUnrestricted` API call to our [server's unrestricted endpoint]({{< relref "posts/authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) in the asynchronous `getInitialProps` method that is available on all Next.js pages. 
 
 ```jsx
-// pages/index.tsx
+// layouts/index.tsx
 
 import { NextPageContext } from "next";
 import React from "react";
@@ -258,7 +258,7 @@ const get = async (url: string, config: AxiosRequestConfig = {}) => {
 Now let's add the `fetchRestricted` method to our asynchronous `getInitialProps` function available on all Next.js pages. We need to pass the required AuthToken to the `fetchRestricted` method so the call will have the proper credentials to view the response.
 
 ```jsx
-// pages/dashboard.tsx
+// layouts/dashboard.tsx
 
 import React  from "react"
 import { ApiCallout } from "../components/api_callout";

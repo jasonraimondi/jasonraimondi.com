@@ -1,0 +1,19 @@
+.home h1 {
+  letter-spacing: -2px;
+}
+
+.home h2 {
+  letter-spacing: -1.5px;
+}
+
+.home h3 {
+  letter-spacing: -1px;
+}
+
+.animoji-me {
+  img {
+    height: 3rem;
+    position: relative;
+    top: 0.15em;
+  }
+}

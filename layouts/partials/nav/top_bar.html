@@ -1,0 +1,32 @@
+<nav class="top-bar">
+    <a class="avatar" href="/">
+        {{ $smallWEBP := .Site.Params.ProfileURL.SmallWEBP }}
+        {{ $largeWEBP := .Site.Params.ProfileURL.LargeWEBP }}
+        {{ $smallJPG := .Site.Params.ProfileURL.SmallJPG }}
+        {{ $largeJPG := .Site.Params.ProfileURL.LargeJPG }}
+        <picture>
+            <source srcset="{{ $smallWEBP }}, {{ $largeWEBP }} 2x" type="image/webp">
+            <source srcset="{{ $smallJPG }}, {{ $largeJPG }} 2x" type="image/jpeg">
+            <img src="{{ $smallJPG }}" alt="{{ .Site.Params.Name }}'s Profile Picture">
+        </picture>
+    </a>
+
+
+
+    <ul class="top-bar--nav">
+        {{ if not .IsHome }}
+        <li><h2 class="top-bar--title"><a href="/" class="unstyled">{{ .Site.Params.Title }}</a></h2></li>
+        {{ end }}
+        <li>
+            <ul class="topbar--nav--itemlist">
+                {{ range .Site.Params.MainMenu.Link }}
+                <li class="mr-2"><a href="{{ .url | relURL }}">{{ .name }}</a></li>
+                {{ end }}
+                <li>
+                    <a href="{{ "/resume" | relURL }}" class="mr-1">Resume</a>
+                    <a href="{{ "/resume.json" | relURL }}" class="label" target="_blank"><span>json</span></a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

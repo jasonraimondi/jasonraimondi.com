@@ -1,20 +1,13 @@
 {{ with $.Site.Params.ExternalMenu }}
-{{ if .IsHome }}
-<style>
-    .over-there-links {
-        border-top: none !important;
-    }
-</style>
-{{ end }}
-<ul class="over-there-links list-reset">
-    <li class="title">
-        <h3 class="font-mono" style="margin: 0;">{{ .Title }}</h3>
-    </li>
-    {{ with $.Site.Params.Twitter}}
-    <li><a href="https://twitter.com/{{ . }}" target="_blank" rel="nofollow">Twitter</a></li>
-    {{ end }}
-    {{ range .Link }}
-    <li><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
-    {{ end }}
-</ul>
+<section class="mt-4">
+    <h3 class="font-mono mb-2">{{ .Title }}</h3>
+    <ul class="flex">
+        {{ with $.Site.Params.Twitter}}
+        <li class="mr-4"><a href="https://twitter.com/{{ . }}" target="_blank" rel="nofollow">Twitter</a></li>
+        {{ end }}
+        {{ range .Link }}
+        <li class="mr-4"><a href="{{ .url | relURL }}" target="_blank" rel="nofollow">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
+</section>
 {{ end }}

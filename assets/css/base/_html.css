@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: var(--font-family-sans);
+  font-size: 100%;
+
+  background-color: var(--colors-white);
+  color: var(--colors-black);
+
+  @media (--dark) {
+    background-color: var(--colors-black);
+    color: var(--colors-white);
+  }
+
+  @media (--large) {
+    font-size: 110%;
+  }
+}

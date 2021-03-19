@@ -1,103 +1,34 @@
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+<!doctype html>
+<html lang="en">
 {{ $resume := getJSON "./static/resume.json" }}
-{{ $me := $resume.basics }}
-{{ $work := $resume.work }}
-{{ $education := $resume.education }}
-{{ $skills := $resume.skills }}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ $resume.basics.name }}'s Resume</title>
+    {{ $style := resources.Get "resume/style.css" }}
+    {{ if .Site.IsServer }}
+        {{ $css := $style | resources.PostCSS }}
+        <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
+    {{ else }}
+        {{ $css := $style | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+        <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
+    {{ end }}
+</head>
+<body>
 
-<style>
-  body {
-    display: grid;
-    grid-template-areas:
-    "contact contact contact"
-    "work work education"
-    "work work education"
-    "skills skills skills";
-    /*grid-template-rows: 80px 1fr 70px;*/
-    /*grid-template-columns: 20% 1fr 15%;*/
-    /*grid-row-gap: 10px;*/
-    /*grid-column-gap: 10px;*/
-    /*height: 100vh;*/
-    /*margin: 0;*/
-  }
-  #work {
-    background-color: lime;
-    grid-area: work;
-  }
-  #contact {
-    background-color: tomato;
-    grid-area: contact;
-  }
-  #education {
-    background-color: red;
-    grid-area: education;
-  }
-  #skills {
-    background-color: blue;
-    grid-area: skills;
-  }
-</style>
+<div id="resume" class="container center">
+    <a href="/" class="go-home">&larr; Back Home</a>
 
-<div id="contact">
-    <img src="{{ $me.picture }}" alt="{{ $me.name }} profile image" title="{{ $me.name }} profile image">
+    {{ partial "resume/me.html" (dict "context" . "me" $resume.basics) }}
+    
+    {{ partial "resume/experience.html" (dict "context" . "works" $resume.work) }}
 
-    <h1>{{ $me.name }}</h1>
-    <h2>{{ $me.label }}</h2>
+    {{ partial "resume/education.html" (dict "context" . "educations" $resume.education) }}
 
-    <p>{{ $me.summary }}</p>
-
-    <ul>
-        <li>{{ $me.phone }}</li>
-        <li>{{ $me.email }}</li>
-    </ul>
+    {{ partial "resume/skill.html" (dict "context" . "skills" $resume.skills) }}
 </div>
 
-<ul id="profiles">
-    {{ range $me.profiles }}
-    <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .network }}</a></li>
-    {{ end }}
-</ul>
-
-<ul id="work">
-    {{ range $work }}
-    <li>
-        <p>{{ .company }}</p>
-        <p>{{ .position }}</p>
-        <p>{{ .website }}</p>
-        <p>{{ .startDate }}</p>
-        <p>{{ .endDate }}</p>
-        <p>{{ .summary }}</p>
-        <ul>
-            {{ range .highlights }}
-            <li>{{ . }}</li>
-            {{ end }}
-        </ul>
-    </li>
-    {{ end }}
-</ul>
-
-<ul id="education">
-    {{ range $education }}
-    <li>
-        <p>{{ .institution }}</p>
-        <p>{{ .area }}</p>
-        <p>{{ .studyType }}</p>
-        <p>{{ .endDate }}</p>
-    </li>
-    {{ end }}
-</ul>
-
-
-<ul id="skills">
-    {{ range $skills }}
-    <li>
-        <p>{{ .name }}</p>
-        <ul>
-            {{ range .keywords }}
-            <li>{{ . }}</li>
-            {{ end }}
-        </ul>
-    </li>
-    {{ end }}
-</ul>
+</body>
+</html>
