@@ -3,7 +3,7 @@ RUN apk add --update nodejs npm
 WORKDIR /app
 COPY package-lock.json package.json /app/
 RUN npm ci
-COPY config.toml tailwind.config.js postcss.config.js /app/
+COPY config.toml postcss.config.js /app/
 COPY assets/ /app/assets/
 COPY content/ /app/content/
 COPY layouts/ /app/layouts/
