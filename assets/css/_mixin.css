@@ -1,11 +1,13 @@
 @define-mixin stretch {
+  /**
   text-align: justify;
   text-justify: inter-character;
-  &:after{
+  &::after{
     content: '';
     width: 100%;
     display: inline-block;
   }
+  */
 }
 
 @define-mixin scrollable {

@@ -11,12 +11,12 @@
   li {
     display: inline-block;
 
-    &:after {
+    &::after {
       content: "/";
       margin: 0 0.15em;
     }
 
-    &:last-child:after {
+    &:last-child::after {
       content: none;
     }
   }
