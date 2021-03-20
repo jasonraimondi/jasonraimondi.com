@@ -23,8 +23,10 @@
   margin-top: 0;
   margin-bottom: 0;
 
-  a {
-    color: var(--colors-black);
+  @media print {
+    a {
+      color: var(--colors-black);
+    }
   }
 }
 
