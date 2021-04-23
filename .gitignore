@@ -1,6 +1,5 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/node,hugo,webstorm
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,hugo,webstorm
+### Obsidian ###
+/content/.obsidian
 
 ### Hugo ###
 # Generated files by hugo
