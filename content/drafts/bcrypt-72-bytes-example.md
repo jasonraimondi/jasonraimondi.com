@@ -44,7 +44,6 @@ export function verifyPassword(attempt: string, hashedPassword: string): Promise
 ```
 
 
-
 ```ts
 // we need to make this test pass without changing our assertion
 it("invalid password using bcrypt only fails verification", async () => {
@@ -112,7 +111,7 @@ export async function hashWithSalt(password: string): Promise<string> {
 }
 ```
 
-Is it necessary for everything? Most likely not. Does it hurt to add it? Definintely not.
+Is it necessary for everything? Most likely not. Does it hurt to add it? Nope.
 
 Sources:
 

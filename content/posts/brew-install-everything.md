@@ -16,8 +16,6 @@ tags:
 title: Brew install everything
 ---
 
-*Note: This is a modified and updated version of my original post [here](http://blog.eventfarm.com/developers/fresh-mac-now-what-brew-install-everything) on the Event Farm Engineering blog on Mar 14, 2016.*
-
 #### Install Brew
 
 Visit [Homebrew](http://brew.sh/) for the download link.. Before you are able to install Homebrew, you first need to have [Xcode installed](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) and up to date. Open up your Terminal and agree to the Xcode and Apple SDKs Agreement by type `sudo xcodebuild -license` and then type 'agree' to agree.
