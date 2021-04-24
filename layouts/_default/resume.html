@@ -33,4 +33,9 @@
 </div>
 
 </body>
+
+{{ if not .Site.IsServer }}
+    {{ .Site.Params.AnalyticsSnippet | safeHTML }}
+{{ end }}
+
 </html>
