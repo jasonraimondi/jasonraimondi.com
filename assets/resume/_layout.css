@@ -24,6 +24,7 @@
   margin-bottom: 0;
 
   @media print {
+    padding-bottom: 0.25em;
     a {
       color: var(--colors-black);
     }
@@ -34,6 +35,9 @@
   font-weight: var(--font-medium);
   font-size: var(--text-md);
   padding-bottom: 0.5em;
+  @media print {
+    padding-bottom: 0.25em;
+  }
 }
 
 .item-date {

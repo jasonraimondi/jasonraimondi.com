@@ -5,6 +5,10 @@
     padding-top: 2rem;
     position: relative;
   }
+
+  @media print {
+    padding-bottom: 0;
+  }
 }
 
 .name {

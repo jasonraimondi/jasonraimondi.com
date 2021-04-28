@@ -18,3 +18,9 @@
 @import 'resume/_me.css';
 @import 'resume/_skills.css';
 @import 'resume/_contact.css';
+
+@media print {
+  html {
+    font-size: 90%;
+  }
+}
