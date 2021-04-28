@@ -9,7 +9,7 @@ serve:
 	hugo serve -D
 
 build:
-	hugo --gc --cleanDestinationDir --minify
+	hugo --gc --cleanDestinationDir
 
 push:
 	hugo deploy -v --maxDeletes -1 --invalidateCDN true

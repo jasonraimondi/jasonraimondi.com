@@ -19,7 +19,7 @@ jobs:
       - name: Hugo Build
         run: |
           npm ci
-          $HOME/hugo --gc --cleanDestinationDir --minify
+          $HOME/hugo --gc --cleanDestinationDir
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
         run: $HOME/hugo -v deploy --maxDeletes -1 --invalidateCDN true
