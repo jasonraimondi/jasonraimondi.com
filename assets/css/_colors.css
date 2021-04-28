@@ -34,6 +34,28 @@
   --colors-purple-800: #5B21B6;
   --colors-purple-900: #4C1D95;
 
+  --colors-rose-50: #fff1f2;
+  --colors-rose-100: #ffe4e6;
+  --colors-rose-200: #fecdd3;
+  --colors-rose-300: #fda4af;
+  --colors-rose-400: #fb7185;
+  --colors-rose-500: #f43f5e;
+  --colors-rose-600: #e11d48;
+  --colors-rose-700: #be123c;
+  --colors-rose-800: #9f1239;
+  --colors-rose-900: #881337;
+
+  --colors-lightBlue-50: #f0f9ff;
+  --colors-lightBlue-100: #e0f2fe;
+  --colors-lightBlue-200: #bae6fd;
+  --colors-lightBlue-300: #7dd3fc;
+  --colors-lightBlue-400: #38bdf8;
+  --colors-lightBlue-500: #0ea5e9;
+  --colors-lightBlue-600: #0284c7;
+  --colors-lightBlue-700: #0369a1;
+  --colors-lightBlue-800: #075985;
+  --colors-lightBlue-900: #0c4a6e;
+
   --colors-white: var(--colors-gray-50);
   --colors-black: var(--colors-gray-800);
 }

@@ -1,4 +1,3 @@
-<!-- Minify and fingerprint on production build only -->
 {{ if not .Site.IsServer }}
     {{ .Site.Params.AnalyticsSnippet | safeHTML }}
 {{ end }}

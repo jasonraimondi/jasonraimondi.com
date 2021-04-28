@@ -144,7 +144,6 @@
       "keywords": [
         "TypeScript",
         "JavaScript",
-        "ESM",
         "React.js",
         "Angular",
         "Electron",
@@ -172,18 +171,16 @@
         "Kubernetes",
         "Docker",
         "AWS",
-        "RDS",
-        "Auto Scaling",
+        "Autoscaling",
         "CI/CD",
-        "SSL",
-        "Cron/Queues",
-        "SQL",
-        "LEMP"
+        "Queues"
       ]
     },
     {
       "name": "Design",
       "keywords": [
+        "Figma",
+        "GIMP",
         "Photoshop",
         "Illustrator",
         "InDesign",

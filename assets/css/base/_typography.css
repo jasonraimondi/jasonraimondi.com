@@ -4,9 +4,16 @@ p {
 
 ol,
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+ol {
+  list-style: number;
+}
+
+ul {
+  list-style: none;
 }
 
 .font-mono {

@@ -9,7 +9,7 @@ image: /posts/2020/02/openstreetmaps.png
 slug: add-location-data-to-images
 tags:
 - bash
-title: Add location data to images
+title: Add location data to a jpg that is missing it
 ---
  
 

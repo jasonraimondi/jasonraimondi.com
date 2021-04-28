@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
-{{ partial "head.html" . }}
+<html lang="en" class="no-js">
+{{ partial "head/head.html" . }}
 <body>
 <noscript><p class="noscript">Things would be a lot easier if you just enabled JavaScript.</p></noscript>
 <main class="container padded center">
-    {{ partial "nav/top_bar.html" . }}
+    {{- partial "nav/top_bar.html" . -}}
 
-    {{ block "main" . }}
-    {{ end }}
+    {{- block "main" . }}{{ end -}}
 
-    {{ partial "footer_links.html" . }}
+    {{- partial "footer/links.html" . -}}
 </main>
-{{ partial "footer_includes.html" . }}
+{{- partial "footer/includes.html" . -}}
 </body>
 </html>

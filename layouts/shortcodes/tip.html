@@ -1,0 +1,6 @@
+{{- $type := default "info" (.Get 0) -}}
+{{- $title := default $type (.Get 1) -}}
+<div class="tip tip--{{ $type }}">
+    <span class="tip--title">{{ $title | markdownify }}</span>
+    {{ .Inner | markdownify }}
+</div>

@@ -1,35 +1,30 @@
 <!doctype html>
-<html lang="en">
-{{ $resume := getJSON "./static/resume.json" }}
+<html lang="en" class="no-js">
+{{ $resume := getJSON "./content/resume.json" -}}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $resume.basics.name }}'s Resume</title>
-    {{ $style := resources.Get "resume/style.css" }}
-    {{ if .Site.IsServer }}
-        {{ $css := $style | resources.PostCSS }}
+    {{ $style := resources.Get "resume/style.css" -}}
+    {{ if .Site.IsServer -}}
+        {{ $css := $style | resources.PostCSS -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
     {{ else }}
-        {{ $css := $style | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+        {{ $css := $style | resources.PostCSS | resources.Minify | resources.Fingerprint -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
-    {{ end }}
+    {{ end -}}
 </head>
 <body>
 
 <div id="resume" class="container center">
     <a href="/" class="go-home">&larr; Back Home</a>
-
-    {{ partial "resume/me.html" (dict "context" . "me" $resume.basics) }}
-
-    {{ partial "resume/contact.html" (dict "context" . "me" $resume.basics) }}
-
-    {{ partial "resume/experience.html" (dict "context" . "works" $resume.work) }}
-
-    {{ partial "resume/education.html" (dict "context" . "educations" $resume.education) }}
-
-    {{ partial "resume/skill.html" (dict "context" . "skills" $resume.skills) }}
+    {{- partial "resume/me.html" (dict "context" . "me" $resume.basics) -}}
+    {{- partial "resume/contact.html" (dict "context" . "me" $resume.basics) -}}
+    {{- partial "resume/experience.html" (dict "context" . "works" $resume.work) -}}
+    {{- partial "resume/education.html" (dict "context" . "educations" $resume.education) -}}
+    {{- partial "resume/skill.html" (dict "context" . "skills" $resume.skills) -}}
 </div>
 
 </body>

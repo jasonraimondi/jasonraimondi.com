@@ -1,8 +1,10 @@
-.single {
-}
-.single .single--title {
+.single--title {
   font-size: var(--h2);
   margin: 0 0 0.25em;
+
+  @media (--large) {
+    font-size: var(--h1)
+  }
 }
 .single--image {
   margin-bottom: 1rem;
@@ -59,12 +61,19 @@
 
   ol,
   ul {
-    list-style: disc;
     margin-left: 1em;
 
     li {
       margin-bottom: 0.25em;
     }
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: number;
   }
 
   h1,
@@ -93,10 +102,37 @@
   }
 }
 
+.footnotes {
+  hr {
+    color: var(--colors-gray-100);
+    margin: 2rem;
+  }
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: var(--font-semibold);
+  padding-bottom: 1rem;
+
+  ol::before {
+    content: "Sources:"
+  }
+
+  li {
+    margin-left: 1.5rem;
+
+    &:first-child {
+      margin-top: 0.5rem;
+    }
+  }
+
+  a {
+    font-weight: var(--font-medium);
+  }
+}
+
 .edit-on-github {
-  font-size: 80%;
+  font-size: 0.8em;
   font-weight: 400;
-  border-radius: 3px;
+  border-radius: 0.25em;
   display: inline-flex;
   align-self: start;
 

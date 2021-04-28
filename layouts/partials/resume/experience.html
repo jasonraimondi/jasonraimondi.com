@@ -2,7 +2,7 @@
     <header class="resume-grid">
         <h3 class="left-column section-title">Experience</h3>
     </header>
-    {{ range .works }}
+    {{ range .works -}}
     <article class="resume-grid item">
         <div class="left-column">
             <p class="item-title">
@@ -16,10 +16,10 @@
             <p class="item-date">{{ dateFormat "Jan 2006" .startDate }} - {{ if eq .endDate "present" }}present{{ else }}{{ dateFormat "Jan 2006" .endDate }}{{ end }}</p>
         </div>
         <ul class="main-column item-list">
-            {{ range .highlights }}
+            {{ range .highlights -}}
             <li>{{ . | markdownify }}</li>
-            {{ end }}
+            {{ end -}}
         </ul>
     </article>
-    {{ end }}
+    {{ end -}}
 </section>
