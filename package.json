@@ -11,7 +11,15 @@
     "postcss-import": "^14.0.0",
     "postcss-mixins": "^7.0.3",
     "postcss-nested": "^5.0.5",
+    "start-server-and-test": "^1.12.1",
     "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "start": "hugo serve -D",
+    "start:ci": "$HOME/hugo serve -D",
+    "create-resume": "npm --prefix snapshotter run create-resume",
+    "gen:resume": "start-server-and-test start http://localhost:1313 create-resume",
+    "gen:resume:ci": "start-server-and-test start:ci http://localhost:1313 create-resume"
   },
   "browserslist": [
     "last 1 version",

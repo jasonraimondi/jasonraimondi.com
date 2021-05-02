@@ -11,6 +11,7 @@ jobs:
       - name: Install Hugo
         run: |
           HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+          mkdir $HOME/bin
           wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DOWNLOAD}
           tar xvzf ${HUGO_DOWNLOAD} hugo
           mv hugo $HOME/hugo
@@ -20,6 +21,8 @@ jobs:
         run: |
           npm ci
           $HOME/hugo --gc --cleanDestinationDir
+          npm --prefix snapshotter ci
+          npm run gen:resume:ci
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
         run: $HOME/hugo -v deploy --maxDeletes -1 --invalidateCDN true
