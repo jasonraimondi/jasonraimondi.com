@@ -34,9 +34,9 @@
       "endDate": "present",
       "summary": "Software Engineer",
       "highlights": [
-        "Refactored a legacy Capybara test suite into Cypress, including parallelization of tests, speeding up average CI build time from 60+ minutes to ~12 minutes.",
-        "Implemented AWS Elastic Kubernetes Service that resulted in a roughly 20x node scaling increase by using with horizontal node and vertical pod autoscaling.",
-        "Decoupled a legacy AngularJS from a Rails monolith into an Angular 8+ SPA."
+        "Refactored a legacy Capybara test suite into Cypress, including parallelization of tests, speeding up average CI test time from 60+ minutes to ~12 minutes.",
+        "Redeployed Ruby on Rails application from Opsworks to AWS Elastic Kubernetes Service, resulting 20x node scaling increase by using with horizontal node and vertical pod autoscaling.",
+        "Decoupled legacy angular.js (ng1) application from a Rails monolith, moving into an Angular 8+ SPA."
       ]
     },
     {
