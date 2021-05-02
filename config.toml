@@ -20,8 +20,6 @@ ignorefiles = [ "content/.obsidian/.*" ]
   twitter = "jsonmamondi"
   name = "Jason Raimondi"
   email = "jason@raimondi.us"
-  resumePDF = "/resume/JasonRaimondi-Resume-3.3.0.pdf"
-  resumeJSON = "/resume.json"
   analyticsSnippet = """
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
