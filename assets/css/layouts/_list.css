@@ -23,6 +23,7 @@
 }
 .list-item--date {
   @mixin date-item;
+  margin-top: 1em;
 }
 .list-item--description {
   line-height: 1.4;

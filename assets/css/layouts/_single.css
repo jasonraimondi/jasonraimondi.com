@@ -12,6 +12,7 @@
 
 .single--date {
   @mixin date-item;
+  margin-bottom: 1em;
 }
 
 .single--post--block1 {

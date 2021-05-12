@@ -6,7 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change beforePath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_mixin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_mixin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +60,11 @@
       <recent name="$PROJECT_DIR$/assets/resume" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/layouts/partials/footer" />
       <recent name="$PROJECT_DIR$/layouts/partials/head" />
       <recent name="$PROJECT_DIR$/layouts/shortcodes" />
-      <recent name="$PROJECT_DIR$/assets/css/partials" />
     </key>
   </component>
   <component name="RunManager" selected="npm.algolia">
@@ -142,6 +145,7 @@
       <workItem from="1619151816826" duration="8877000" />
       <workItem from="1619239164823" duration="9917000" />
       <workItem from="1619584699161" duration="6800000" />
+      <workItem from="1620794442661" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
