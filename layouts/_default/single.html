@@ -37,23 +37,11 @@
                 <span itemprop="name">{{ .Site.Params.Name }}</span>
             </div>
         </h1>
-
-        <p class="single--date">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"> {{ .Date.Format "January 2, 2006" }}</time>
-            {{ if ne .Date .Page.Lastmod }}
-            <span class="single--date--modified">
-                <span> | </span>Modified:&nbsp;
-                <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-                    {{ .Page.Lastmod.Format "January 2, 2006" }}
-                </time>
-            </span>
-            {{ end }}
-        </p>
     </header>
     <section class="single--post">
         {{ $taxonomyCategory := "categories" }}
         {{ with .Param $taxonomyCategory }}
-        <div class="single--post--block1">
+        <section class="single--post--block1">
             <ul class="single--post--tags">
                 {{ range $index, $category := . }}
                 {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
@@ -73,7 +61,22 @@
             {{ end }}
 
             {{ partial "edit-on-github.html" . }}
-        </div>
+        </section>
+
+        <section>
+            <p class="single--date">
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"> {{ .Date.Format "January 2, 2006" }}</time>
+                {{ if ne .Date .Page.Lastmod }}
+                <span class="single--date--modified">
+                <span> | </span>Modified:&nbsp;
+                <time datetime="{{ .Page.Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Page.Lastmod.Format "January 2, 2006" }}
+                    </time>
+            </span>
+                {{ end }}
+            </p>
+        </section>
+
 
         <article class="single--post-body" itemprop="articleBody">
             {{ if .Params.toc }}
