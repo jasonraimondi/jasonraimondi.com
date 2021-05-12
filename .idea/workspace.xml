@@ -6,11 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/resume.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/resume.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/resume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_mixin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_mixin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/base/_code.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/.obsidian" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/drafts" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -54,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/drafts" />
       <recent name="$PROJECT_DIR$/content/.obsidian" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/assets/css/partials" />
       <recent name="$PROJECT_DIR$/assets/resume" />
-      <recent name="$PROJECT_DIR$/assets/resume/partial" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content" />
@@ -91,6 +92,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Hugo.Develop" />
       <item itemvalue="Makefile Target.serve" />
       <item itemvalue="npm.algolia" />
     </list>
