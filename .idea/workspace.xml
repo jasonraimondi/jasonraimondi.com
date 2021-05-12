@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change afterPath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_mixin.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_mixin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_code.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_code.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/react-use-effect-void.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
