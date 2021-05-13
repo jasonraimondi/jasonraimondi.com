@@ -1,5 +1,5 @@
 ---
-title: Single line async React.useEffect statements using the void operator
+title: Single line async useEffect statements using the void operator
 description: Use JavaScript's void operator to create single line async useEffect functions.
 slug: return-promises-to-react-use-effect-with-javascript-void
 date: 2021-05-11T09:25:00-0700
@@ -9,17 +9,17 @@ categories:
 tags:
 - react
 - hooks
+- use-effect
 ---
 
-If you are wondering how you can return promises to `useEffect` without React throwing an error, you can use the [`void` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void) in your response.
+Return a promise directly to your `useEffect`  functions without React throwing an errors using the [`void` operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void). This allows you to create really compact `useEffect` functions while dealing with promises or async functions. 
+
+Imagine that you had an asynchronous `fetchApi` function and it returns a Promise. Typically, if you'd return this function directly to 
+
 
 ```ts
 useEffect(() => void fetchApi(), []);
 ```
-
-This allows you to create really compact `useEffect` functions while dealing with promises or async functions.
-
-## Example useEffect with void fetch
 
 Here we compose our async function called `fetchApi` where we handle all of our asynchronous data handling. We can then combine useEffect and void to call the function in a single line. 
 
