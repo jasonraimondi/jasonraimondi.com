@@ -10,7 +10,6 @@ categories:
 tags:
 - nodejs
 - semantic-version
-draft: true
 ---
 
 ## Create a prerelease version
