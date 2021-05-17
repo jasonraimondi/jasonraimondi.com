@@ -12,7 +12,7 @@ tags:
 title: Absolute Imports in NextJS
 ---
 
-Fully Qualified Namespaces allow you to use absolute import paths instead of the relative hell that typically exists.
+Fully qualified name[spaces] (FQN) allow you to use absolute import paths instead of the relative hell that typically exists.
 
 <!--more-->
 

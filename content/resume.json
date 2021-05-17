@@ -57,8 +57,8 @@
       "endDate": "2019-03-01",
       "summary": "Senior Software Engineer",
       "highlights": [
-        "Test Drove the re-architecture of the API code base, decoupling the codebase from CakePHP 2.x, to a PHP 7 application built using Domain Driven Design based on CQS principles. The project is routed through Lumen and maintains over 85% code coverage.",
-        "Authored middleware client applications that consumed the Event Farm Rest API for internal and external projects in Golang, Node.js and PHP."
+        "Test Drove a re-architecture of a legacy PHP 5 code base, decoupling the API from CakePHP 2.x to a custom PHP 7 application routed through Lumen, with ~85% code coverage and built using Domain Driven Design and CQS principles.",
+        "Authored middleware client applications that consumed the Event Farm Rest API such as a custom event landing page builder, custom event signup flows, built in Golang and Node.js"
       ]
     },
     {
@@ -70,8 +70,7 @@
       "summary": "Software Engineer",
       "highlights": [
         "Built an auto generating clients for the Event Farm API. These were generated for clients in PHP, Typescript, Golang, Python, Swift and Java. These libraries assisted the consumption of the Event Farm Rest API and were used in the official mobile apps as well as the web application.",
-        "Headed the custom integrations between Event Farm and Salesforce, a market leading integration between the two platforms.",
-        "Open Sourced our Salesforce Rest API for PHP7 that was used internally."
+        "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open sourced the PHP 7 Salesforce Rest API (restforce-php) that we built and used internally for the integrations."
       ]
     },
     {
@@ -82,10 +81,9 @@
       "endDate": "2015-11-01",
       "highlights": [
         "Led team of 4 developers building a SaaS Application for Advertising Agencies to monitor ROI and Reactions to TV Campaigns.",
-        "Maintained LEMP stack on CentOS dedicated private servers receiving anywhere from 60-600 requests per minute.",
-        "Integrated various web 3rd party services including Google and Twilio into custom PHP MVC applications.",
-        "Redesigned and implemented the update to [WDIV Click on Detroit “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application.",
-        "Updated and optimized existing projects in PHP MVC frameworks including Laravel, Code Igniter, and FuelPHP."
+        "Maintained LEMP stack on CentOS dedicated private servers.",
+        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter, to Laravel, and FuelPHP. Integrated various web 3rd party services including Google and Twilio into these custom applications.",
+        "Redesigned and implemented the update to [WDIV Click on Detroit “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application."
       ]
     },
     {
