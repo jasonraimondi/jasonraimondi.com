@@ -17,11 +17,6 @@
         "network": "GitHub",
         "username": "jasonraimondi",
         "url": "https://github.com/jasonraimondi"
-      },
-      {
-        "network": "Leetcode",
-        "username": "jasonraimondi",
-        "url": "https://leetcode.com/jasonraimondi"
       }
     ]
   },
@@ -45,8 +40,7 @@
       "startDate": "2014-01-01",
       "endDate": "present",
       "highlights": [
-        "Constructs and manages web applications for clients with varying complexity, from simple static HTML to custom built applications.",
-        "Builds and maintains web applications depending on client needs, these range from PHP/LEMP stacks to Node.js and Golang applications."
+        "Constructs and manages web applications for clients with varying complexity, from simple static HTML to custom built applications. Depending on client needs, these range from PHP/LEMP stacks to Node.js and Golang applications."
       ]
     },
     {
@@ -57,8 +51,8 @@
       "endDate": "2019-03-01",
       "summary": "Senior Software Engineer",
       "highlights": [
-        "Test Drove a re-architecture of a legacy PHP 5 code base, decoupling the API from CakePHP 2.x to a custom PHP 7 application routed through Lumen, with ~85% code coverage and built using Domain Driven Design and CQS principles.",
-        "Authored middleware client applications that consumed the Event Farm Rest API such as a custom event landing page builder, custom event signup flows, built in Golang and Node.js"
+        "Test drove re-architecture of a legacy PHP 5 code base, decoupling an untested CakePHP 2.x monolith, to a custom PHP 7 API routed through Lumen and an Angular SPA. The project maintained an 85%+ code coverage and was built using Domain Driven Design (DDD) and Command Query Separation (CQS) principles.",
+        "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder, custom event signup flows, and custom event registration pages"
       ]
     },
     {
@@ -69,8 +63,8 @@
       "endDate": "2018-09-01",
       "summary": "Software Engineer",
       "highlights": [
-        "Built an auto generating clients for the Event Farm API. These were generated for clients in PHP, Typescript, Golang, Python, Swift and Java. These libraries assisted the consumption of the Event Farm Rest API and were used in the official mobile apps as well as the web application.",
-        "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open sourced the PHP 7 Salesforce Rest API (restforce-php) that we built and used internally for the integrations."
+        "Built auto generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on github at ([eventfarm/javascript-sdk](https://github.com/eventfarm/javascript-sdk)) and ([eventfarm/golang-sdk](https://github.com/eventfarm/golang-sdk)) and were used in the official mobile apps as well as the web application.",
+        "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open sourced the PHP 7 Salesforce Rest API ([restforcephp](https://github.com/eventfarm/restforcephp)) that we built and used internally for the integrations."
       ]
     },
     {
@@ -81,7 +75,7 @@
       "endDate": "2015-11-01",
       "highlights": [
         "Led team of 4 developers building a SaaS Application for Advertising Agencies to monitor ROI and Reactions to TV Campaigns.",
-        "Maintained LEMP stack on CentOS dedicated private servers.",
+        "Maintained LEMP stacks on dedicated private servers.",
         "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter, to Laravel, and FuelPHP. Integrated various web 3rd party services including Google and Twilio into these custom applications.",
         "Redesigned and implemented the update to [WDIV Click on Detroit “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application."
       ]
@@ -93,7 +87,7 @@
       "endDate": "2014-01-01",
       "highlights": [
         "Utilized existing web technologies including WordPress, Laravel and Drupal to create small businesses and artist portfolios websites.",
-        "Video editing, closed captioning and video motion graphics for clients."
+        "Custom video editing, closed captioning, and video motion graphics for clients."
       ]
     },
     {
@@ -102,10 +96,8 @@
       "startDate": "2011-05-01",
       "endDate": "2014-01-01",
       "highlights": [
-        "Executed projects with clients to create projects from concept to finished, printed works.",
-        "Communicated with clients on a range of works from large scale banners to business cards.",
-        "Designed vector and raster graphics using Illustrator and Photoshop.",
-        "Upgraded several workstations by building custom machines serveing as state of the art graphic editing stations and print servers."
+        "Completed graphic projects while collaborating with clients, designing vector and raster graphics using Illustrator and Photoshop from concept to printed works.",
+        "Built custom workstations serving as state of the art graphic editing stations and custom print servers."
       ]
     },
     {
@@ -124,7 +116,7 @@
       "startDate": "2008-06-01",
       "endDate": "2010-12-01",
       "highlights": [
-        "Assisted the front-end and design of a custom built web app in old-school PHP that was for selling student college football tickets."
+        "Assisted the design and HTML/CSS of a custom built web app for selling student college football tickets built in old-school procedural PHP."
       ]
     }
   ],

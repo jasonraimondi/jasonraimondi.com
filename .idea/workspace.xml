@@ -7,9 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2021-05-12-use-npm-version-to-semantically-version.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2021-05-12-use-npm-version-to-semantically-version.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/absolute-imports-in-next-js-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/absolute-imports-in-next-js-typescript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1620794442661" duration="164000" />
       <workItem from="1620880216930" duration="1085000" />
       <workItem from="1620881319922" duration="1839000" />
-      <workItem from="1621231088663" duration="1152000" />
+      <workItem from="1621231088663" duration="3171000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
