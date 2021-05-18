@@ -132,50 +132,62 @@
     {
       "name": "Front End",
       "keywords": [
+        "HTML5",
+        "CSS/PostCSS",
         "TypeScript",
         "JavaScript",
-        "React.js",
+        "React",
         "Angular",
-        "Electron",
-        "Webpack"
+        "Electron"
       ]
     },
     {
       "name": "Back End",
       "keywords": [
-        "GraphQL",
-        "TypeScript",
-        "Node.js",
+        "Testing",
+        "PHP 7+",
+        "TypeScript/Node.js",
         "Ruby/Rails",
-        "PHP",
         "SQL",
-        "OAuth2",
         "Laravel",
-        "Entity Mapper",
-        "Active Record"
+        "OAuth2",
+        "REST",
+        "GraphQL"
       ]
     },
     {
-      "name": "Ops",
+      "name": "Testing",
       "keywords": [
-        "Kubernetes",
+        "Cypress",
+        "Jest",
+        "Mocha/Chai",
+        "Rspec",
+        "PHPUnit"
+      ]
+    },
+    {
+      "name": "Devops",
+      "keywords": [
         "Docker",
+        "Kubernetes",
         "AWS",
-        "Autoscaling",
+        "Pod Autoscaling",
+        "Node Autoscaling",
         "CI/CD",
-        "Queues"
+        "GitOPS",
+        "Queueing"
       ]
     },
     {
       "name": "Design",
       "keywords": [
-        "Figma",
-        "GIMP",
         "Photoshop",
         "Illustrator",
         "InDesign",
         "Premier Pro",
-        "After Effects"
+        "After Effects",
+        "Figma",
+        "GIMP"
       ]
     }
   ]
