@@ -12,8 +12,6 @@ tags:
 - semantic-version
 ---
 
-
-
 ## Create a prerelease version
 
 If you are on version `1.0.0` and you want to go to `1.1.0-beta.0` you would use the **preminor** command. In addition to **preminor**, there are also **premajor** and **prepatch**. You can use `--preid=beta` (or identifier you want such as `alpha`, `beta`, or `rc`) to label your prerelease.

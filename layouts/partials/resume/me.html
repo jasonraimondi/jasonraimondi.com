@@ -5,16 +5,18 @@
     </div>
 
     <div class="main-column about-me">
-        <p class="last name"><a href="{{ .me.website }}" class="unstyled">
-            <span>R</span>
-            <span>A</span>
-            <span>I</span>
-            <span>M</span>
-            <span>O</span>
-            <span>N</span>
-            <span>D</span>
-            <span>I</span>
-        </a></p>
+        <p class="last name">
+            <a href="{{ .me.website | safeURL }}" class="unstyled">
+                <span>R</span>
+                <span>A</span>
+                <span>I</span>
+                <span>M</span>
+                <span>O</span>
+                <span>N</span>
+                <span>D</span>
+                <span>I</span>
+            </a>
+        </p>
         <h2 class="job-title">
             <span>S</span>
             <span>O</span>
@@ -24,7 +26,7 @@
             <span>A</span>
             <span>R</span>
             <span>E</span>
-            <span></span>
+            <span>&nbsp;</span>
             <span>E</span>
             <span>N</span>
             <span>G</span>

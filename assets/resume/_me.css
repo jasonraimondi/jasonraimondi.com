@@ -14,7 +14,7 @@
 .name {
   text-transform: uppercase;
   line-height: 1;
-  font-size: var(--text-xxl);
+  font-size: 4rem;
 
   @media (--medium) {
     font-size: 5rem;
@@ -40,6 +40,13 @@
 
 .last {
   font-weight: var(--font-black);
+
+  span {
+    margin-left: -0.75rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .job-title {

@@ -19,7 +19,6 @@
 <body>
 
 <div id="resume" class="container center">
-    <a href="/" class="go-home">&larr; Back Home</a>
     {{- partial "resume/me.html" (dict "context" . "me" $resume.basics) -}}
     {{- partial "resume/contact.html" (dict "context" . "me" $resume.basics) -}}
     {{- partial "resume/experience.html" (dict "context" . "works" $resume.work) -}}
