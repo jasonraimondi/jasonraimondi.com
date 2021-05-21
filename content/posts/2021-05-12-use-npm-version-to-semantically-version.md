@@ -1,6 +1,6 @@
 ---
-title: Using `npm version` to create prerelease tags
-description: Use the npm version command to semantically version your node project
+title: How to use `npm version` to create prerelease tags
+description: A short and quick guide with examples on how to use the npm version command to semantically version your node project with prereleases
 slug: use-the-npm-version-command-to-semantically-version-your-node-project
 date: 2021-05-12T09:25:00-0700
 categories:
