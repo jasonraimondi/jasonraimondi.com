@@ -1,3 +1,13 @@
+:root {
+  --resume-line-height: 1.4;
+}
+
+@media (--medium) {
+  :root {
+    --resume-line-height: 1.6;
+  }
+}
+
 .section {
   padding-bottom: 1rem;
 
@@ -19,12 +29,11 @@
 
 .item-title {
   font-weight: var(--font-bold);
-  padding-bottom: 0.5em;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: var(--resume-line-height);
 
   @media print {
-    padding-bottom: 0.25em;
     a {
       color: var(--colors-black);
     }
@@ -34,16 +43,14 @@
 .item-subtitle {
   font-weight: var(--font-medium);
   font-size: var(--text-md);
-  padding-bottom: 0.5em;
-  @media print {
-    padding-bottom: 0.25em;
-  }
+  line-height: var(--resume-line-height);
 }
 
 .item-date {
-  font-weight: var(--font-medium);
-  font-size: var(--text-sm);
+  font-weight: var(--font-light);
+  font-size: var(--text-md);
   font-style: italic;
+  line-height: var(--resume-line-height);
 }
 
 .item {
@@ -61,7 +68,7 @@
 .item-list li {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  line-height: 1.4;
+  line-height: var(--resume-line-height);
 
   @media (--medium) {
     padding-top: 0;

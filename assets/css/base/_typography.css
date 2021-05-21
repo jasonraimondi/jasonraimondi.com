@@ -16,6 +16,10 @@ ul {
   list-style: none;
 }
 
+.small {
+  font-size: 0.9em;
+}
+
 .font-mono {
   font-family: var(--font-family-mono);
 }

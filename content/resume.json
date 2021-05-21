@@ -133,6 +133,44 @@
       "endDate": "2013-08-01"
     }
   ],
+  "publications": [
+    {
+      "name": "typescript-oauth2-server",
+      "releaseDate": "2020-10-19",
+      "website": "https://github.com/jasonraimondi/typescript-oauth2-server",
+      "summary": "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
+    },
+    {
+      "name": "use-notify-rxjs",
+      "releaseDate": "2021-02-17",
+      "website": "https://github.com/jasonraimondi/use-notify-rxjs",
+      "summary": "Simple, design-free toast notifications using rxjs."
+    },
+    {
+      "name": "url-to-png",
+      "releaseDate": "2018-08-01",
+      "website": "https://github.com/jasonraimondi/url-to-png",
+      "summary": "Dynamic screenshots for the web over a simple http api."
+    },
+    {
+      "name": "locatizor",
+      "releaseDate": "2020-03-03",
+      "website": "https://github.com/jasonraimondi/locatizor",
+      "summary": "Desktop app to add GPS data to jpg's that are missing location (Mac OS/Linux)."
+    },
+    {
+      "name": "traverse",
+      "releaseDate": "2019-04-09",
+      "website": "https://github.com/jasonraimondi/traverse",
+      "summary": "Desktop app for explore trending GitHub repos (Mac OS/Linux)."
+    },
+    {
+      "name": "restforcephp",
+      "releaseDate": "2016-11-21",
+      "website": "https://github.com/eventfarm/restforcephp",
+      "summary": "PHP API client library for Salesforce."
+    }
+  ],
   "skills": [
     {
       "name": "Front End",
