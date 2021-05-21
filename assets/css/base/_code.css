@@ -1,6 +1,6 @@
 code {
   font-family: var(--font-family-mono);
-  line-height: 1.8;
+  line-height: inherit;
 }
 
 pre {
@@ -56,8 +56,7 @@ span {
     white-space: nowrap;
     color: var(--colors-black);
     background-color: var(--colors-gray-300);
-    padding: 0.25em 0.4em 0.15em;
-    line-height: 1;
+    padding: 0.025em .4em .05em;
     border-radius: 0.25em;
 
     @media (--dark) {
