@@ -39,26 +39,26 @@
         </h1>
     </header>
     <section class="single--post">
-        {{ $taxonomyCategory := "categories" }}
-        {{ with .Param $taxonomyCategory }}
         <section class="single--post--block1">
             <ul class="single--post--tags">
-                {{ range $index, $category := . }}
-                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
+                {{ $taxonomyCategory := "categories" -}}
+                {{ with .Param $taxonomyCategory -}}
+                    {{ range $index, $category := . -}}
+                        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyCategory $category) -}}
                 <li><a href="{{ .RelPermalink }}" class="label inline">{{ $category | urlize }}</a></li>
+                        {{ end -}}
+                    {{ end -}}
                 {{ end -}}
-                {{ end -}}
-                {{ end }}
 
-                {{ $taxonomyTag := "tags" }}
-                {{ with .Param $taxonomyTag }}
-                {{ range $index, $tag := . }}
-                {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
-                <li><a href="{{ .RelPermalink }}" class="label">{{ $tag | urlize }}</a></li>
-                {{ end }}
-                {{ end }}
+                {{ $taxonomyTag := "tags" -}}
+                {{ with .Param $taxonomyTag -}}
+                    {{ range $index, $tag := . -}}
+                        {{ with $.Site.GetPage (printf "/%s/%s" $taxonomyTag $tag) -}}
+                        <li><a href="{{ .RelPermalink }}" class="label">{{ $tag | urlize }}</a></li>
+                        {{ end -}}
+                    {{ end -}}
+                {{ end -}}
             </ul>
-            {{ end }}
 
             {{ partial "edit-on-github.html" . }}
         </section>
