@@ -6,13 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change afterPath="$PROJECT_DIR$/layouts/partials/resume/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/base/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/base/_typography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resume/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resume/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/resume.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +149,8 @@
       <workItem from="1621231088663" duration="8293000" />
       <workItem from="1621486686135" duration="2203000" />
       <workItem from="1621491150660" duration="4765000" />
-      <workItem from="1621580317991" duration="18000" />
+      <workItem from="1621580317991" duration="67000" />
+      <workItem from="1621657509633" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
