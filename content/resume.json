@@ -32,13 +32,12 @@
       "website": "https://hitrecord.org",
       "startDate": "2019-04-01",
       "endDate": "present",
-      "summary": "Software Engineer",
       "highlights": [
-        "Automated our release workflow that made tickets very obvious on what environment they were on TODO TODO",
-        "Created dynamic review environments for QA and Product Managers to view and approve work for all incoming pull requests.",
-        "Redeployed Ruby on Rails application from Opsworks to AWS Elastic Kubernetes Service, resulting 20x node scaling increase by using with horizontal node and vertical pod autoscaling.",
-        "Refactored a legacy Capybara test suite into Cypress, including parallelization of tests, speeding up average CI test time from 60+ minutes to ~12 minutes.",
-        "Decoupled legacy angular.js (ng1) application from a Rails monolith, moving into an Angular 8+ SPA."
+        "__ Updated our software release workflow by making it very obvious current environment containing the code change for each ticket s.",
+        "__ Deployed our Ruby on Rails application on AWS EKS (k8s), allowing large spikes in traffic by monitoring our puma threads and scaling our infrastructure vertically to additional nodes (and pods).",
+        "Automated dynamic review environment creation that allowed QA testing for all incoming merge requests.",
+        "Refactored a legacy integration test suite into Cypress with parallelized workers, speeding up average CI test time from 60+ minutes to ~12 minutes.",
+        "Decoupled legacy javascript application from a Rails templates to an Angular 8+ SPA."
       ]
     },
     {
@@ -46,8 +45,10 @@
       "position": "Owner, Software Consultant",
       "startDate": "2014-01-01",
       "endDate": "present",
+      "summary": "__ I began freelancing in 2009",
       "highlights": [
-        "Constructs and manages web applications for clients with varying complexity, from simple static HTML to custom built applications. Depending on client needs, these range from PHP/LEMP stacks to Node.js and Golang applications."
+        "Constructs and manages web applications for clients with varying complexity, from custom-built web applications in the client’s language of choice to simple static HTML sites.",
+        "Custom server builds, server installs, infrastructure buildout, web hosting."
       ]
     },
     {
@@ -56,10 +57,10 @@
       "website": "https://eventfarm.com",
       "startDate": "2018-09-01",
       "endDate": "2019-03-01",
-      "summary": "Senior Software Engineer",
+      "summary": "__ Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. ",
       "highlights": [
-        "Test drove re-architecture of a legacy PHP 5 code base, decoupling an untested CakePHP 2.x monolith, to a custom PHP 7 API routed through Lumen and an Angular SPA. The project maintained an 85%+ code coverage and was built using Domain Driven Design (DDD) and Command Query Separation (CQS) principles.",
-        "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder, custom event signup flows, and custom event registration pages"
+        "Test drove re-architecture of a legacy PHP 5 codebase, decoupling an untested CakePHP 2.x monolith, to a custom PHP 7 API routed through Lumen and an Angular SPA. The project maintained 85%+ code coverage and was built using Domain-Driven Design (DDD) and Command Query Separation (CQS) principles.",
+        "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder for organizers to use so they could create and update , custom event signup flows, and custom event registration pages."
       ]
     },
     {
@@ -68,10 +69,21 @@
       "website": "https://eventfarm.com",
       "startDate": "2016-02-01",
       "endDate": "2018-09-01",
-      "summary": "Software Engineer",
+      "summary": "Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. During my time there, I worked on adding features to web platform, including the frontend web client and backend API.",
       "highlights": [
-        "Built auto generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on github at ([eventfarm/javascript-sdk](https://github.com/eventfarm/javascript-sdk)) and ([eventfarm/golang-sdk](https://github.com/eventfarm/golang-sdk)) and were used in the official mobile apps as well as the web application.",
-        "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open sourced the PHP 7 Salesforce Rest API ([restforcephp](https://github.com/eventfarm/restforcephp)) that we built and used internally for the integrations."
+        "Built auto-generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift, and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on GitHub at (eventfarm/javascript-sdk) and (eventfarm/golang-sdk). These client libraries were consumed in the official mobile apps as well as the web application.",
+        "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open-sourced the PHP 7 Salesforce Rest API (restforcephp) that we built and used internally for the integrations."
+      ]
+    },
+    {
+      "company": "__ Recovery Passport",
+      "position": "Full Stack Web Developer",
+      "website": "https://www.linkedin.com/company/recovery-passport/about/",
+      "startDate": "2015-11-10",
+      "endDate": "2017-04-26",
+      "summary": "Recovery Passport was a three tiered system with counselors, members, and supporters, and was used by alcohol and mental health recovery clinics around South Florida. Members were able to add journals or goals, and were asked to check in daily. Counselors could monitor and comment on the members status, and supporters could see and comment on public journals of their members.",
+      "highlights": [
+        "Built a Laravel 5.x MVP that was used by ~1000 users over 15 facilities in Florida."
       ]
     },
     {
@@ -80,48 +92,43 @@
       "website": "https://www.linkedin.com/company/web-services-llc/about/",
       "startDate": "2014-06-01",
       "endDate": "2015-11-01",
+      "summary": "__ My primary work at Web Services was creating and maintaining web applications for local news stations located around the country. In addition to these applications, we were developing a tool called AdStat that would monitor CTA's in TV Spots and compare the CTA responses to the commercial airtime. During my time at Web Services, I worked on supporting existing web applications while also working on greenfield development of the AdStat application.",
       "highlights": [
         "Led team of 4 developers building a SaaS Application for Advertising Agencies to monitor ROI and Reactions to TV Campaigns.",
-        "Maintained LEMP stacks on dedicated private servers.",
-        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter, to Laravel, and FuelPHP. Integrated various web 3rd party services including Google and Twilio into these custom applications.",
-        "Redesigned and implemented the update to [WDIV Click on Detroit “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application."
-      ]
-    },
-    {
-      "company": "Freelancer",
-      "position": "Professional Freelancer",
-      "startDate": "2009-08-01",
-      "endDate": "2014-01-01",
-      "highlights": [
-        "Utilized existing web technologies including WordPress, Laravel and Drupal to create small businesses and artist portfolios websites.",
-        "Custom video editing, closed captioning, and video motion graphics for clients."
+        "__ Maintained LEMP stacks on dedicated private servers.",
+        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP. Integrated various web 3rd party services including Google and Twilio into these custom applications.",
+        "Redesigned and implemented the update to [WDIV Click on Detroit's “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application."
       ]
     },
     {
       "company": "ACE Blueprinting & Graphics",
       "position": "Graphic Designer",
+      "website": "https://aceblueprinting.com/",
       "startDate": "2011-05-01",
       "endDate": "2014-01-01",
+      "summary": "ACE Blueprinting & Graphics is a local printing shop in Ft. Lauderdale, FL. I worked as a Graphic Design Intern here for several summers, working with clients on print products from design to delivery. In addition to my graphic design work, I also modernized workstations by custom builting several PC's that were used as graphic design stations and others as printservers.",
       "highlights": [
         "Completed graphic projects while collaborating with clients, designing vector and raster graphics using Illustrator and Photoshop from concept to printed works.",
-        "Built custom workstations serving as state of the art graphic editing stations and custom print servers."
+        "Built custom PC workstations serving as state-of-the-art graphic editing stations and custom print servers."
       ]
     },
     {
       "company": "Florida Sea Grant",
       "position": "Front End Developer",
+      "website": "https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/",
       "startDate": "2012-04-01",
       "endDate": "2012-07-01",
+      "summary": "__ Collaborated with two Ph.D. candidates to gather data that was used to research community uses of the Sarasota Bay and the Ace Basin.",
       "highlights": [
-        "Authored a PHP + jQuery + Google Maps based interactive survey's to gather data on Florida's Sarasota Bay & South Carolina's Ace Basin.",
-        "Collaborated with two PhD candidates to gather data that was used to research community uses of the Sarasota Bay and the Ace Basin."
+        "Authored a PHP + jQuery + Google Maps-based interactive survey to gather data on the [Sarasota Bay](https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/) in Florida and the [Ace Basin](https://web.archive.org/web/20130921231828/http://acebasinsurvey.org/) in South Carolina."
       ]
     },
     {
       "company": "Student Game Day LLC",
       "position": "Web Designer",
+      "website": "https://web.archive.org/web/20080917053305/http://www.studentgameday.com/",
       "startDate": "2008-06-01",
-      "endDate": "2010-12-01",
+      "endDate": "2009-12-01",
       "highlights": [
         "Assisted the design and HTML/CSS of a custom built web app for selling student college football tickets built in old-school procedural PHP."
       ]
@@ -132,7 +139,15 @@
       "institution": "University of Florida",
       "area": "Digital Media",
       "studyType": "Bachelor of Fine Arts",
-      "endDate": "2013-08-01"
+      "endDate": "2013-08-01",
+      "courses": [
+        "Video Art",
+        "Programming for Artists",
+        "3D Modeling",
+        "Game Design",
+        "Color Theory",
+        "Typography"
+      ]
     }
   ],
   "publications": [
@@ -140,7 +155,7 @@
       "name": "typescript-oauth2-server",
       "releaseDate": "2020-10-19",
       "website": "https://github.com/jasonraimondi/typescript-oauth2-server",
-      "summary": "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
+      "summary": "A standards-compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
     },
     {
       "name": "use-notify-rxjs",
@@ -189,12 +204,14 @@
     {
       "name": "Back End",
       "keywords": [
-        "Testing",
+        "Node.js",
+        "TypeScript",
+        "Ruby on Rails",
         "PHP 7+",
-        "TypeScript/Node.js",
-        "Ruby/Rails",
-        "SQL",
         "Laravel",
+        "OOP",
+        "Testing",
+        "SQL",
         "OAuth2",
         "REST",
         "GraphQL"
@@ -205,7 +222,6 @@
       "keywords": [
         "Cypress",
         "Jest",
-        "Mocha/Chai",
         "Rspec",
         "PHPUnit"
       ]

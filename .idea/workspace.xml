@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
@@ -7,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +155,12 @@
       <workItem from="1621486686135" duration="2203000" />
       <workItem from="1621491150660" duration="4765000" />
       <workItem from="1621580317991" duration="67000" />
-      <workItem from="1621657509633" duration="1791000" />
+      <workItem from="1621657509633" duration="2377000" />
+      <workItem from="1623300554421" duration="5478000" />
+      <workItem from="1623557251340" duration="1986000" />
+      <workItem from="1623562286325" duration="5429000" />
+      <workItem from="1623639958629" duration="2272000" />
+      <workItem from="1623651464484" duration="1493000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
@@ -171,6 +181,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
