@@ -45,7 +45,7 @@ ignorefiles = [ "content/.obsidian/.*" ]
 
 [Params.EditLink]
   name = "GitHub"
-  link = "https://github.com/jasonraimondi/jasonraimondi.com"
+  link = "https://github.com/jasonraimondi/jasonraimondi"
 
 [Params.MainMenu]
 [[Params.MainMenu.Link]]
