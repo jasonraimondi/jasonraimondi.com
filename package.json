@@ -3,6 +3,7 @@
   "license": "MIT",
   "version": "0.0.0-rc1",
   "devDependencies": {
+    "@jmondi/mobile-first": "^1.0.0",
     "autoprefixer": "^10.2.5",
     "normalize.css": "^8.0.1",
     "postcss": "^8.2.8",

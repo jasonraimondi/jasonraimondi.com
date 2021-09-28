@@ -6,6 +6,7 @@ copyright = "© 2019 Jason Raimondi"
 
 paginate = 15
 
+
 # disqusShortname = "jasonraimondi"
 
 pygmentsCodeFences=true

@@ -41,6 +41,10 @@
 .last {
   font-weight: var(--font-black);
 
+  @media print {
+    margin-bottom: -1.25rem;
+  }
+
   span {
     margin-left: -0.75rem;
     &:first-child {

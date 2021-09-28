@@ -21,6 +21,7 @@
 <div id="resume" class="container center">
     {{- partial "resume/me.html" (dict "context" . "me" $resume.basics) -}}
     {{- partial "resume/contact.html" (dict "context" . "me" $resume.basics) -}}
+    {{- partial "resume/summary.html" (dict "context" . "me" $resume.basics) -}}
     {{- partial "resume/experience.html" (dict "context" . "works" $resume.work) -}}
     {{- partial "resume/education.html" (dict "context" . "educations" $resume.education) -}}
     {{- partial "resume/projects.html" (dict "context" . "publications" $resume.publications) -}}

@@ -3,15 +3,18 @@
     <div class="main-column contact-section">
         <ul class="contact-details">
             <li class="email"><a href="mailto:{{ .me.email }}" class="unstyled">{{ .me.email }}</a></li>
-            <li class="web"><a href="{{ .me.website }}" class="unstyled">{{ .me.website }}</a></li>
+            <li>{{ .me.location.city }}, {{ .me.location.region }} </li>
             {{ with .me.phone }}
             {{ $telephone := (replaceRE "[^0-9]+" "" .) -}}
             <li class="tel"><a href="tel:{{ $telephone }}" class="unstyled">{{ . }}</a></li>
-            {{ end }}
+            {{ end -}}
+            <li class="web"><a href="{{ .me.website }}" class="unstyled">{{ .me.website }}</a></li>
         </ul>
         <ul class="contact-external-links">
             {{ range .me.profiles -}}
+            {{ if not (hasPrefix .network "__") -}}
             <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .network }}</a></li>
+            {{ end -}}
             {{ end -}}
         </ul>
     </div>

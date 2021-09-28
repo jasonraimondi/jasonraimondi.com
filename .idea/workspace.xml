@@ -9,67 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change afterPath="$PROJECT_DIR$/assets/js/about-me.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/misc/me/zombie-ruby-trimmed@1x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/misc/me/zombie-ruby-trimmed@1x.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/misc/me/zombie-ruby-trimmed@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/misc/me/zombie-ruby-trimmed@2x.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archetypes/default.md" beforeDir="false" afterPath="$PROJECT_DIR$/archetypes/default.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/src/posts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/post.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/drafts/conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/conways-game-of-life-in-typescript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/drafts/signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/signing-gpg-keys.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/drafts/zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/zfs-is-a-great-file-system.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2016-05-05-setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2016-05-05-setting-up-laravel-with-foundation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-01-16-brew-install-everything.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-01-16-brew-install-everything.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-04-12-update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-04-12-update-php-homebrew.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-08-21-docker-compose-traefik-lets-encrypt.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-08-21-docker-compose-traefik-lets-encrypt.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-08-23-testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-08-23-testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-10-05-command-bus.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-05-command-bus.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-10-10-getting-rid-of-hiccups.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-10-getting-rid-of-hiccups.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-10-10-optimizing-your-dockerfile-build-and-layers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-10-optimizing-your-dockerfile-build-and-layers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-10-11-using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-11-using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-11-27-auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-11-27-auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2018-12-13-using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-12-13-using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-02-21-what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-02-21-what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-02-23-absolute-imports-typescript-webpack.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-02-23-absolute-imports-typescript-webpack.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-03-14-automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-03-14-automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-03-14-exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-03-14-exec-command-nodejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-04-18-enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-04-18-enhance-static-site-and-markdown-with-vuejs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-04-24-enhance-macos-quick-look.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-04-24-enhance-macos-quick-look.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2019-09-11-absolute-imports-in-next-js-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-09-11-absolute-imports-in-next-js-typescript.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2020-02-25-add-location-data-to-images.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-02-25-add-location-data-to-images.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2020-09-03-encrypting-zfs-filesystem.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-09-03-encrypting-zfs-filesystem.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2020-09-03-semantic-commit-messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-09-03-semantic-commit-messages.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/2020-10-13-local-and-session-storage-helpers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-10-13-local-and-session-storage-helpers.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/things/can-i-poop.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/can-i-poop.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/things/flipp.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/flipp.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/things/recovery-passport.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/recovery-passport.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/things/traverse-2-electric-boogaloo.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/things/traverse-2-electric-boogaloo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/wishlist.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/wishlist.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/head/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/head/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/nav/top_bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/android-chrome-384x384.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/browserconfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/humans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/humans.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/safari-pinned-tab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/resume/_me.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_me.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/summary.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
