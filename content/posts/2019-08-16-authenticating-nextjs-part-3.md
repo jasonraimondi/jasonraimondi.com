@@ -22,7 +22,7 @@ title: Add server side rendered async api calls to your Next.js application that
 
 ## Overview
 
-* In [the first part]({{< relref "/posts/authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
+* In [the first part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
 * In [the previous part]({{< ref "/posts/authenticating-nextjs-part-2.md" >}}) we created the user facing Next.js application
 * In [this part]({{< ref "/posts/authenticating-nextjs-part-3.md" >}}) we will be adding pre-render async api calls to our Next.js application
 
@@ -55,7 +55,7 @@ export function ApiCallout({ message }: any) {
 
 ## Add rest call go unprotected page
 
-If you open up your `services/rest_services.ts` file, you should have the [_login_ **POST** method set up from previously]({{< relref "/posts/authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
+If you open up your `services/rest_services.ts` file, you should have the [_login_ **POST** method set up from previously]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-2#add-login-api-call" >}}), so now we need to go ahead and make a _fetchUnrestricted_ **GET** method.
 
 ```typescript
 // services/rest_service.ts
@@ -158,7 +158,7 @@ export default Index;
 
 {{< image/pop src="/posts/2019/08/show-echo-server-logs-with-frontend-api-call.gif" alt="Shows the echo server logs along side the Next.js application navigation" >}}
 
-Our REST API [from previously]({{< relref "/posts/authenticating-nextjs-part-1.md" >}}) needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
+Our REST API [from previously]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}) needs to be running in order to get a successful response. Neither the index page nor the server's unrestricted endpoint require authorization, so anyone should be able to visit the page successfully, including search engine bots.
 
 ## See the api response in the page rendered "View Source"
 

@@ -22,7 +22,7 @@ title: Secure a Next.js application with JWT, and a private route higher order c
 
 ## Overview
 
-* In [the previous part]({{< relref "/posts/authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
+* In [the previous part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
 * In [this part]({{< ref "/posts/authenticating-nextjs-part-2.md" >}}) we will be creating the user facing Next.js application
 * In [the next part]({{< ref "/posts/authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
 
