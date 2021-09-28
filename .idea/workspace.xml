@@ -9,9 +9,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/absolute-imports-in-next-js-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-09-11-absolute-imports-in-next-js-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/absolute-imports-typescript-webpack.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-02-23-absolute-imports-typescript-webpack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/add-location-data-to-images.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-02-25-add-location-data-to-images.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-11-27-auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-03-14-automatically-adding-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/enhance-macos-quick-look.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-04-24-enhance-macos-quick-look.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/enhance-static-site-and-markdown-with-vuejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-04-18-enhance-static-site-and-markdown-with-vuejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-03-14-exec-command-nodejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/getting-rid-of-hiccups.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-10-getting-rid-of-hiccups.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/local-and-session-storage-helpers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-10-13-local-and-session-storage-helpers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/optimizing-your-dockerfile-build-and-layers.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-10-optimizing-your-dockerfile-build-and-layers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/semantic-commit-messages.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-09-03-semantic-commit-messages.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/setting-up-gogs-with-docker.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2017-09-04-setting-up-gogs-with-docker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2016-05-05-setting-up-laravel-with-foundation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-09-06-showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/system76-lemur-pro-initial-reactions.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-07-01-system76-lemur-pro-initial-reactions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/terraform-s3-static-site-with-cloudfront.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-06-23-terraform-s3-static-site-with-cloudfront.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-08-23-testing-a-typescript-react-app-using-ts-jest-not-create-react-app.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-04-12-update-php-homebrew.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-12-13-using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-10-11-using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-02-21-what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +185,7 @@
       <workItem from="1623562286325" duration="5429000" />
       <workItem from="1623639958629" duration="2272000" />
       <workItem from="1623651464484" duration="1493000" />
+      <workItem from="1632807661442" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
