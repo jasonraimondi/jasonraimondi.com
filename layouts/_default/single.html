@@ -17,10 +17,6 @@
 
 {{ define "main" }}
 
-<ul class="breadcrumbs">
-  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-</ul>
-
 <article class="single" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="single--header">
         {{ if isset .Params "image" }}
