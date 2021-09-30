@@ -36,7 +36,7 @@ This page lists software and hardware I use on a daily basis.
 
 #### Software
 
-* **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
+* **[Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)** -- [Use Alfred to switch from Google Chrome to Firefox]({{< ref "/posts/2018-12-13-using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox.md" >}}).
 * **[Alfred](https://www.alfredapp.com/)** -- Alfred is great, use [workflows to enhance](https://github.com/zenorocha/alfred-workflows). It also comes with a clipboard history manager and tool to store your text snippets.
 * **[Rectangle](https://github.com/rxhanson/Rectangle)** -- The greatest keybinding specific alternative to better touch tool
 * **[Little Snitch](https://www.obdev.at/products/littlesnitch/index.html)** -- Little Snitch is a really nice GUI firewall for Mac. You can use it to monitor your Mac's networking, and even entirely block network access all together from running applications. 

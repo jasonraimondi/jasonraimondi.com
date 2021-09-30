@@ -1,6 +1,6 @@
 ---
 aliases:
-- /posts/authenticating-nextjs-part-3/
+- relref "/posts/2019-08-16-authenticating-3/
 categories:
 - software
 - frontend
@@ -23,8 +23,8 @@ title: Add server side rendered async api calls to your Next.js application that
 ## Overview
 
 * In [the first part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
-* In [the previous part]({{< ref "/posts/authenticating-nextjs-part-2.md" >}}) we created the user facing Next.js application
-* In [this part]({{< ref "/posts/authenticating-nextjs-part-3.md" >}}) we will be adding pre-render async api calls to our Next.js application
+* In [the previous part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-2.md" >}}) we created the user facing Next.js application
+* In [this part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-3.md" >}}) we will be adding pre-render async api calls to our Next.js application
 
 ## Source Code
 
@@ -123,7 +123,7 @@ export function catchAxiosError(err: AxiosError): ErrorResponse {
 
 ## Add a pre-render async API call to the index page
 
-Now let's add the `fetchUnrestricted` API call to our [server's unrestricted endpoint]({{< relref "posts/authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) in the asynchronous `getInitialProps` method that is available on all Next.js pages. 
+Now let's add the `fetchUnrestricted` API call to our [server's unrestricted endpoint]({{< relref "posts/2019-08-16-authenticating-nextjs-part-1.md#add-the-unrestricted-open-endpoint" >}}) in the asynchronous `getInitialProps` method that is available on all Next.js pages. 
 
 ```jsx
 // layouts/index.tsx
