@@ -7,7 +7,7 @@ description: My name is Jason Raimondi and I am a Full Stack Software Engineer b
   and client web applications. I am a technologist and all around computer geek; give
   me a computer and I will be hacking in minutes, occupied for days.
 images: 
-- /misc/me/hitrecord-everyone-2019.jpg
+- /misc/me/zombie-ruby-purple.1000x.png
 lastmod: "2019-03-13T00:00:00-07:00"
 layout: empty
 title: Jason Raimondi
