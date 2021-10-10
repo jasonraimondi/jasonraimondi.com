@@ -4,7 +4,8 @@ categories:
 comments: true
 date: "2020-10-13T10:46:00-07:00"
 description: Local storage and session storage helpers for the window. Prefixes keys while handling json encoding/decoding as well as null values.
-image: /posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
+images: 
+- /posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
 imageCredit: '@morais_afonso https://unsplash.com/photos/JXgdQzexK9M'
 slug: local-and-session-storage-helpers
 tags:

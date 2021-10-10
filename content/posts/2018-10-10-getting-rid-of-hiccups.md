@@ -5,7 +5,8 @@ date: "2018-10-10T00:00:00-07:00"
 description: I found this the other day when I had the hiccups a few different days.
   Posting it here because it worked amazing and I do not ever want to forget this
   technique.
-image: /posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg
+images: 
+- /posts/_covers/owen-beard-DK8jXx1B-1c-unsplash.jpg
 imageCredit: '@owenbeard https://unsplash.com/photos/DK8jXx1B-1c'
 slug: getting-rid-of-hiccups
 tags:

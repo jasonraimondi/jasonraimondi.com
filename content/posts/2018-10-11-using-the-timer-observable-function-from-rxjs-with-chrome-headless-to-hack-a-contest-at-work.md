@@ -6,7 +6,8 @@ comments: true
 date: "2018-10-11T00:00:00-07:00"
 description: 'The official rules read: “Everyone has their own tagged link that points
   to the landing page — each unique click = 1 point”. Interesting, very interesting.'
-image: /posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
+images: 
+- /posts/_covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
 slug: using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work
 tags:
 - rxjs

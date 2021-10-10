@@ -5,7 +5,8 @@ date: 2020-02-25T10:16:00-0800
 description: When you take photos with a camera without a GPS, like say, a DSLR, the
   photos don't include location data. Follow this guide to bulk add location data
   to images using `exiftool`
-image: /posts/2020/02/openstreetmaps.png
+images: 
+- /posts/2020/02/openstreetmaps.png
 slug: add-location-data-to-images
 tags:
 - bash

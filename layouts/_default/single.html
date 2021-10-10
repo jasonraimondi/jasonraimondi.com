@@ -19,14 +19,6 @@
 
 <article class="single" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="single--header">
-        {{ if isset .Params "image" }}
-        <div class="single--image">
-            <img id="js-feature-image" src="{{ .Params.Image | relURL }}" style="width: 100%" alt="{{ .Params.ImageAlt | relURL }}" />
-            <small id="js-feature-image-credit" class="image-credit">{{ .Params.ImageCredit | relURL }}</small>
-        </div>
-        {{ end }}
-
-
         <h1 class="single--title" itemprop="name headline">
             {{ .Title }}
             <div class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -86,7 +78,7 @@
     {{ partial "related-posts.html" . }}
 </article>
 
-{{- $typescript := resources.Get "js/main.ts" | js.Build (dict "minify" false) | fingerprint -}}
+{{- $typescript := resources.Get "js/post.ts" | js.Build (dict "minify" false) | fingerprint -}}
 <script type="text/javascript" src="{{ $typescript.Permalink }}" integrity="{{ $typescript.Data.Integrity }}"></script>
 
 {{ end }}

@@ -5,7 +5,8 @@ comments: true
 date: "2018-08-23T00:00:00-07:00"
 description: Lets create a TypesScript React app without using the cli tool Create
   React App. This allows you to create a custom build specific to your deploy process.
-image: /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+images: 
+- /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
 slug: testing-a-typescript-react-app-using-ts-jest-not-create-react-app
 tags:
 - react

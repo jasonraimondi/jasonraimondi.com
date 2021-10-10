@@ -6,7 +6,8 @@ comments: true
 date: "2019-02-21T00:00:00-08:00"
 description: Adding this file will give you some control on the compilation of TypeScript
   into JavaScript.
-image: /posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
+images: 
+- /posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
 imageAlt: ""
 imageConfig: '@mpho_mojapelo https://unsplash.com/photos/UHDx3BHlFvY'
 slug: what-is-a-tsconfig-file-and-why-do-you-need-it

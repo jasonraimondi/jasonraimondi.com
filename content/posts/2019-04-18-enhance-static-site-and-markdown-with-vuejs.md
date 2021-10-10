@@ -5,7 +5,8 @@ comments: true
 date: "2019-04-18T00:00:00-07:00"
 description: Write inline web components in markdown posts to enhancing your static
   site
-image: /posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg
+images: 
+- /posts/_covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg
 slug: enhancing-your-static-site-and-markdown-posts-with-vuejs
 tags:
 - vue.js

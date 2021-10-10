@@ -8,7 +8,8 @@ categories:
 date: "2019-03-18T00:00:00-07:00"
 description: Recovery Passport  is a three tiered support system for mental and drug
   rehab members, counselors, and those closest to them, supporters.
-image: /posts/2019/03/recovery-passport/recovery-passport_1_feature.png
+images: 
+- /posts/2019/03/recovery-passport/recovery-passport_1_feature.png
 slug: recovery-passport-three-tiered-support-system
 tags:
 - vue.js

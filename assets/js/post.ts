@@ -1,5 +1,8 @@
-const addHeaderDeepLinks = function () {
+function addHeaderDeepLinks() {
     const postDoc = document.getElementById('post-content');
+
+    if (!postDoc) return;
+
     const elements = [
         postDoc.getElementsByTagName('h2'),
         postDoc.getElementsByTagName('h3'),
@@ -17,10 +20,11 @@ const addHeaderDeepLinks = function () {
             header.insertBefore(anchor, header.firstChild);
         }
     }
-};
+}
 
-const updateCreditWithLink = function () {
+function updateCreditWithLink() {
     const credit = document.getElementById('js-feature-image-credit');
+
     if (!credit) return;
 
     const [username, url] = credit.innerText.split(' ');
@@ -39,11 +43,14 @@ const updateCreditWithLink = function () {
     credit.insertBefore($url, credit.firstChild);
     credit.insertBefore(document.createTextNode(' '), credit.firstChild);
     credit.insertBefore($username, credit.firstChild);
-};
+}
 
-const sendExternalLinksToNewTab = function () {
-    const $postDoc = document.getElementById('post-content');
-    const $links = $postDoc.getElementsByTagName('a');
+function sendExternalLinksToNewTab() {
+    const postDoc = document.getElementById('post-content');
+
+    if (!postDoc) return;
+
+    const $links = postDoc.getElementsByTagName('a');
 
     for (let i = 0, linksLength = $links.length; i < linksLength; i++) {
         if ($links[i].hostname !== window.location.hostname) {
@@ -51,8 +58,10 @@ const sendExternalLinksToNewTab = function () {
             $links[i].rel = 'nofollow';
         }
     }
-};
+}
 
-addHeaderDeepLinks();
-updateCreditWithLink();
-sendExternalLinksToNewTab();
+void (function () {
+    addHeaderDeepLinks();
+    updateCreditWithLink();
+    sendExternalLinksToNewTab();
+})();

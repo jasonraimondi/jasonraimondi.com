@@ -7,7 +7,8 @@ categories:
 - backend
 date: 2019-08-16T05:30:00-0700
 description: Add api calls to your application that can all be resolved before the initial render, giving the user (or bot) a fully loaded page right from the get-go.
-image: /posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg
+images: 
+- /posts/_covers/alan-scales-1_WMZARl81c-unsplash.jpg
 imageAlt: photo of rocket ship inside warehouse
 imageCredit: '@ascales https://unsplash.com/photos/1_WMZARl81c'
 slug: add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load

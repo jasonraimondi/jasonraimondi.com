@@ -5,7 +5,8 @@ comments: true
 date: "2018-12-13T00:00:00-08:00"
 description: Now every time I am about to launch Chrome, I see the "Launch Firefox
   Instead of Chrome" launcher.
-image: /posts/2018/12/alfred-chrome-to-firefox-workflow.png
+images: 
+- /posts/2018/12/alfred-chrome-to-firefox-workflow.png
 slug: using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox
 tags:
 - alfred

@@ -38,10 +38,10 @@ ignorefiles = [ "content/.obsidian/.*" ]
 """
 
 [Params.ProfileURL]
-  smallJPG = "/misc/me/zombie-avatar.png"
-  smallWEBP = "/misc/me/zombie-avatar.webp"
-  largeJPG = "/misc/me/zombie-avatar@2x.png"
-  largeWEBP = "/misc/me/zombie-avatar@2x.webp"
+  smallJPG = "/misc/me/zombie-ruby-trimmed@1x.png"
+  smallWEBP = "/misc/me/zombie-ruby-trimmed@1x.webp"
+  largeJPG = "/misc/me/zombie-ruby-trimmed@2x.png"
+  largeWEBP = "/misc/me/zombie-ruby-trimmed@2x.webp"
 
 [Params.EditLink]
   name = "GitHub"
@@ -61,7 +61,7 @@ ignorefiles = [ "content/.obsidian/.*" ]
 [Params.Projects]
 [[Params.Projects.Link]]
   name = "🔐 typescript-oauth2-server"
-  url = "https://github.com/jasonraimondi/typescript-oauth2-server"
+  url = "https://github.com/jasonraimondi/ts-oauth2-server"
   description = "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. "
 [[Params.Projects.Link]]
   name = "🖼️ url-to-png"

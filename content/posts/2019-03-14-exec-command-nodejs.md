@@ -5,7 +5,8 @@ comments: true
 date: "2019-03-14T00:00:00-07:00"
 description: Using the exec command in Node.js is pretty simple, first import the
   exec function, and then call it.
-image: /posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg
+images: 
+- /posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg
 imageAlt: photography of black dial telephone
 imageCredit: '@gypsycompassrose https://unsplash.com/photos/fnlNwb5sB5Y'
 slug: exec-command-in-nodejs

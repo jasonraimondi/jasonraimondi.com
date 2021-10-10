@@ -11,7 +11,8 @@ date: "2017-11-01T00:00:00-07:00"
 description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
   Keep the window open for a few minutes during week day business hours and watch
   the room status. It will change without the need of a refresh.
-image: /posts/2017/11/canipoop/canipoop-alfredo.png
+images: 
+- /posts/2017/11/canipoop/canipoop-alfredo.png
 slug: can-i-poop
 tags:
 - javascript

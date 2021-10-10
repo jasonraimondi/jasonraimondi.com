@@ -6,7 +6,8 @@ categories:
 comments: true
 date: "2019-03-14T00:00:00-07:00"
 description: Traverse was rewritten open sourced!
-image: /posts/_covers/traverse-featured-mini.png
+images: 
+- /posts/_covers/traverse-featured-mini.png
 slug: traverse-2-electric-boogaloo
 tags:
 - electron

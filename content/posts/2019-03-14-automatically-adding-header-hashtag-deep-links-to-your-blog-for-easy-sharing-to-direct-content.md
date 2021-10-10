@@ -5,7 +5,8 @@ comments: true
 date: "2019-03-14T00:00:00-07:00"
 description: A vanilla JS solution to adding header deep links to your blog for easy sharing
   to direct content
-image: /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+images: 
+- /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: adding-vanilla-js-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content
 tags:
 - javascript
