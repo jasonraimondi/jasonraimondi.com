@@ -1,5 +1,7 @@
 
 .top-bar {
+  margin-bottom: 2rem;
+
   @media (--medium) {
     display: flex;
     font-size: var(--text-lg);

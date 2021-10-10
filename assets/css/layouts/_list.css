@@ -1,6 +1,4 @@
 .list {
-  margin-top: 2rem;
-
   > li {
     padding-bottom: 0.5em;
 /*     border-bottom: 1px solid var(--colors-gray-300); */
