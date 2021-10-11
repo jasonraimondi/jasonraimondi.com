@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $resume.basics.name }}'s Resume</title>
     {{ $style := resources.Get "resume/style.css" -}}
-    {{ if .Site.IsServer -}}
+    {{ if site.IsServer -}}
         {{ $css := $style | resources.PostCSS -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
     {{ else }}
@@ -30,7 +30,7 @@
 
 </body>
 
-{{ if not .Site.IsServer }}
+{{ if not site.IsServer }}
     {{ .Site.Params.AnalyticsSnippet | safeHTML }}
 {{ end }}
 
