@@ -1,7 +1,4 @@
 {{- $website := default .me.website -}}
-{{- if site.IsServer -}}
-  {{- $website = "/" | safeURL -}}
-{{- end -}}
 
 <div id="me" class="resume-grid section">
     <div class="left-column">
