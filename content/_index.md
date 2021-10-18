@@ -37,8 +37,8 @@ Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the softwar
 </div>
 
 <style>
-#adjective1,
-#adjective2 {
+#adjective1-disable,
+#adjective2-disable {
   background-image: linear-gradient(#ffffff 50%, var(--colors-white) 50%);
   background-repeat: repeat-x;
 
