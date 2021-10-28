@@ -33,7 +33,7 @@ You just need to visit the ol node directory
 # Enter what version you want
 VERSION=14.18.0
 # Download and extract
-wget -c https://nodejs.org/dist/v14.18.0/node-v$VERSION-darwin-x64.tar.gz -O - | tar -xz
+wget -c https://nodejs.org/dist/v$VERSION/node-v$VERSION-darwin-x64.tar.gz -O - | tar -xz
 # 
 mv node-v$VERSION-darwin-x64 $ASDF_DIR/installs/nodejs/$VERSION
 ```
