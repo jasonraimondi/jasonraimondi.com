@@ -23,6 +23,7 @@ ignorefiles = [ "content/.obsidian/.*" ]
   email = "jason@raimondi.us"
   analyticsSnippet = """
 <script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
 """
 
 [Params.ProfileURL]
