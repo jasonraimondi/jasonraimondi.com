@@ -22,20 +22,7 @@ ignorefiles = [ "content/.obsidian/.*" ]
   name = "Jason Raimondi"
   email = "jason@raimondi.us"
   analyticsSnippet = """
-<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-<script>
-    (function(f, a, t, h, o, m){
-        a[h]=a[h]||function(){
-            (a[h].q=a[h].q||[]).push(arguments)
-        };
-        o=f.createElement('script'),
-            m=f.getElementsByTagName('script')[0];
-        o.async=1; o.src=t; o.id='fathom-script';
-        m.parentNode.insertBefore(o,m)
-    })(document, window, '//analytics.designcanvas.digital/tracker.js', 'fathom');
-    fathom('set', 'siteId', 'YJMFD');
-    fathom('trackPageview');
-</script>
+<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.js"></script>
 """
 
 [Params.ProfileURL]
