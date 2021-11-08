@@ -11,9 +11,9 @@ title: Uses
 
 This page lists software and hardware I use on a daily basis.
 
-#### Workstation
+## Workstation
 
-* MacBook Pro M1 Max 14
+* [MacBook Pro M1 Max 14](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-gray-10-core-cpu-16-core-gpu-1tb)
 * [Dell 32-Inch 4K Monitor](https://www.amazon.com/gp/product/B07HDBD9CM) 
 * [Laptop Arm Mount](https://www.amazon.com/gp/product/B010QZD6I6)
 * [Dual Arm Monitor Stand](https://www.amazon.com/gp/product/B00MIBN71I)
@@ -23,7 +23,7 @@ This page lists software and hardware I use on a daily basis.
 * [CyberPower Power Supply](https://www.amazon.com/gp/product/B00429N19W)
 * [Giant Mousepad](https://www.amazon.com/gp/product/B01AS8ROZ2)
 
-#### Favorite
+## Favorite
 
 * [IntelliJ](https://www.jetbrains.com/)
 * [Firefox](https://www.mozilla.org/en-US/firefox/)
@@ -34,7 +34,7 @@ This page lists software and hardware I use on a daily basis.
 * [Keeping You Awake](https://github.com/newmarcel/KeepingYouAwake)
 * [Docker](https://www.docker.com/)
 
-#### Self Hosted
+## Self Hosted
 
 * [Gitea](https://gitea.io/en-us/)
 * [Fathom Analytics](https://usefathom.com/)
@@ -42,7 +42,7 @@ This page lists software and hardware I use on a daily basis.
 * [Jellyfin](https://jellyfin.media)
 * [FreshRSS](https://www.freshrss.org/)
 
-#### Current Favorite Stack
+## Current Favorite Stack
 
 * TypeScript/JS
 * PNPM
