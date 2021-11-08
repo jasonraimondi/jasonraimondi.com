@@ -15,13 +15,13 @@ This page lists software and hardware I use on a daily basis.
 
 * [MacBook Pro M1 Max 14](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-gray-10-core-cpu-16-core-gpu-1tb)
 * [Dell 32-Inch 4K Monitor](https://www.amazon.com/gp/product/B07HDBD9CM) 
-* [Laptop Arm Mount](https://www.amazon.com/gp/product/B010QZD6I6)
-* [Dual Arm Monitor Stand](https://www.amazon.com/gp/product/B00MIBN71I)
 * [Moonlander Mark 1 Split Ergonomic Keyboard](https://www.zsa.io/moonlander/)
 * [Logitech MX Master 3 Wireless Mouse](https://www.amazon.com/gp/product/B07S395RWD)
 * [Bose Quiet Comfort 35](https://www.amazon.com/gp/product/B0756CYWWD)
-* [CyberPower Power Supply](https://www.amazon.com/gp/product/B00429N19W)
 * [Giant Mousepad](https://www.amazon.com/gp/product/B01AS8ROZ2)
+* [CyberPower Power Supply](https://www.amazon.com/gp/product/B00429N19W)
+* [Laptop Arm Mount](https://www.amazon.com/gp/product/B010QZD6I6)
+* [Dual Arm Monitor Stand](https://www.amazon.com/gp/product/B00MIBN71I)
 
 ## Softwares
 
