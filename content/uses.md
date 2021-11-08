@@ -11,7 +11,7 @@ title: Uses
 
 This page lists software and hardware I use on a daily basis.
 
-## Workstation
+## Hardwares
 
 * [MacBook Pro M1 Max 14](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-gray-10-core-cpu-16-core-gpu-1tb)
 * [Dell 32-Inch 4K Monitor](https://www.amazon.com/gp/product/B07HDBD9CM) 
@@ -23,7 +23,7 @@ This page lists software and hardware I use on a daily basis.
 * [CyberPower Power Supply](https://www.amazon.com/gp/product/B00429N19W)
 * [Giant Mousepad](https://www.amazon.com/gp/product/B01AS8ROZ2)
 
-## Favorite
+## Softwares
 
 * [IntelliJ](https://www.jetbrains.com/)
 * [Firefox](https://www.mozilla.org/en-US/firefox/)
@@ -41,13 +41,3 @@ This page lists software and hardware I use on a daily basis.
 * [Invoice Ninja](https://www.invoiceninja.com/)
 * [Jellyfin](https://jellyfin.media)
 * [FreshRSS](https://www.freshrss.org/)
-
-## Current Favorite Stack
-
-* TypeScript/JS
-* PNPM
-* NestJS
-* Jest
-* GraphQL
-* GraphQL Code Generator
-* SvelteKit
