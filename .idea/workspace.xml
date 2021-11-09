@@ -9,12 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resume/_layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/resume/_me.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/resume/_me.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/resume.json" beforeDir="false" afterPath="$PROJECT_DIR$/content/resume.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/partials/resume/summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/resume/summary.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +45,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/static/resume.png" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/misc/me" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/posts" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/static/misc/me" />
       <recent name="$PROJECT_DIR$/layouts/partials/resume" />
       <recent name="$PROJECT_DIR$/content/drafts" />
       <recent name="$PROJECT_DIR$/content/.obsidian" />
-      <recent name="$PROJECT_DIR$/content/posts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/js" />
@@ -166,6 +162,13 @@
       <workItem from="1623651464484" duration="1493000" />
       <workItem from="1632807661442" duration="435000" />
       <workItem from="1633842864424" duration="9320000" />
+      <workItem from="1635314664650" duration="284000" />
+      <workItem from="1635356513328" duration="11000" />
+      <workItem from="1635399877479" duration="3333000" />
+      <workItem from="1635441193548" duration="887000" />
+      <workItem from="1635897619444" duration="165000" />
+      <workItem from="1636335399206" duration="2166000" />
+      <workItem from="1636419316536" duration="11576000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>
