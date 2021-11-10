@@ -8,8 +8,6 @@ date: 2019-08-16T03:30:00-0700
 description: Create a secured REST Api using JWT and Golang
 images: 
 - /posts/_covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg
-imageAlt: snow-covered mountains
-imageCredit: '@graphicnode https://unsplash.com/photos/Bd7YLDIXJXg'
 slug: create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang
 tags:
 - authenticating-nextjs

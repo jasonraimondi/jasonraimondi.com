@@ -8,8 +8,6 @@ description: Adding this file will give you some control on the compilation of T
   into JavaScript.
 images: 
 - /posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
-imageAlt: ""
-imageConfig: '@mpho_mojapelo https://unsplash.com/photos/UHDx3BHlFvY'
 slug: what-is-a-tsconfig-file-and-why-do-you-need-it
 tags:
 - typescript

@@ -9,7 +9,6 @@ description: Laravel Elixir is a wrapper around a traditional Gulp build system 
   provides a clean, fluent API for defining basic Gulp Tasks.
 images: 
 - /posts/2016/05/2015-05-05-cover-photo-fixed.png
-imageAlt: laravel and foundation logos
 slug: setting-up-laravel-with-foundation
 tags:
 - php

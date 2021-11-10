@@ -1,14 +1,14 @@
 ---
-categories:
-- ops
+title: How to create a bootable Ubuntu install USB from Mac OS.
+slug: create-a-bootable-usb
 date: "2020-06-02T16:00:00-07:00"
 lastmod: "2020-07-16T21:00:00-07:00"
 description: A reminder on how to create a bootable usb from a Mac 
-slug: create-a-bootable-usb
+categories:
+- ops
 tags:
 - linux
 - ubuntu
-title: How to create a bootable Ubuntu install USB from Mac OS.
 ---
 
 I've been doing this for over a decade, and finally decided to document it.

@@ -8,8 +8,6 @@ description: Signing Git commits with GPG Key.
 draft: true
 images: 
 - /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: code-syntax-highlighting-with-pygment
 tags:
 - hugo

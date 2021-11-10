@@ -7,8 +7,6 @@ description: Using the exec command in Node.js is pretty simple, first import th
   exec function, and then call it.
 images: 
 - /posts/_covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg
-imageAlt: photography of black dial telephone
-imageCredit: '@gypsycompassrose https://unsplash.com/photos/fnlNwb5sB5Y'
 slug: exec-command-in-nodejs
 tags:
 - javascript

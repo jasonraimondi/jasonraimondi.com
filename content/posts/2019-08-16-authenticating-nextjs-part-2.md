@@ -10,8 +10,6 @@ lastmod: 2020-06-24T08:50:00-0700
 description: Authenticating and securing a Next.js application
 images: 
 - /posts/_covers/meric-dagli-i_14EbINjKY-unsplash.jpg
-imageAlt: photo of rocket ship inside warehouse
-imageCredit: '@meric https://unsplash.com/photos/i_14EbINjKY'
 slug: secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component
 tags:
 - authenticating-nextjs

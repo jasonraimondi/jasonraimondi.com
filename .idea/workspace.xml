@@ -9,8 +9,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c62ab1b-3d60-4e5f-a1ca-b778b50a5ff1" name="Default Changelist" comment="chore, docs, feat, fix, refactor, style, test">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archetypes/default.md" beforeDir="false" afterPath="$PROJECT_DIR$/archetypes/default.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/_typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/layouts/_single.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/layouts/_single.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/conways-game-of-life-in-typescript.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/conways-game-of-life-in-typescript.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/signing-gpg-keys.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/signing-gpg-keys.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/drafts/zfs-is-a-great-file-system.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/drafts/zfs-is-a-great-file-system.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2016-05-05-setting-up-laravel-with-foundation.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2016-05-05-setting-up-laravel-with-foundation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2018-04-12-update-php-homebrew.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2018-04-12-update-php-homebrew.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2019-02-21-what-is-a-tsconfig-file-and-why-do-you-need-it.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-02-21-what-is-a-tsconfig-file-and-why-do-you-need-it.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2019-03-14-exec-command-nodejs.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-03-14-exec-command-nodejs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-1.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-2.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-3.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2019-08-16-authenticating-nextjs-part-3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2020-06-02-create-a-bootable-usb.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2020-06-02-create-a-bootable-usb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/2021-11-08-connecting-hardhat-and-ethers-to-sveltekit.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/2021-11-08-connecting-hardhat-and-ethers-to-sveltekit.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/uses.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/uses.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/wishlist.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/wishlist.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +66,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -168,7 +185,8 @@
       <workItem from="1635441193548" duration="887000" />
       <workItem from="1635897619444" duration="165000" />
       <workItem from="1636335399206" duration="2166000" />
-      <workItem from="1636419316536" duration="11576000" />
+      <workItem from="1636419316536" duration="12321000" />
+      <workItem from="1636516852493" duration="9881000" />
     </task>
     <task id="LOCAL-00001" summary="Add additional info to create-a-bootable-usb.md">
       <created>1594959390924</created>

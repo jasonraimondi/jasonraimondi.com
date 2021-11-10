@@ -5,8 +5,6 @@ date: 2021-11-08T16:56:23-08:00
 description: ""
 images: 
 - /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 categories: 
 - frontend
 tags: 
@@ -14,7 +12,6 @@ tags:
 - web3
 - svelte
 draft: true
-toc: false
 ---
 
 We are going to create a monorepo with two projects:
@@ -44,6 +41,7 @@ echo ".idea/" >> .gitignore
 Let's populate our `pnpm-workspace.yaml` file with the following content:
 
 ```yaml
+# pnpm-workspace.yaml
 workspaces:
   - dapp
   - web
@@ -56,6 +54,8 @@ git add .
 git commit -m "init: pnpm init -y"
 ```
 
+[Example Repository](https://github.com/jasonraimondi/my-dapp-monorepo/commit/b696c758ff8892f63ab0eec93c3ea138dbcd3c10)
+
 Next let's move onto creating the hardhat application.
 
 ## Create the hardhat project
@@ -67,10 +67,10 @@ mkdir dapp
 cd dapp
 ```
 
-Then run the command `pnpx hardhat` and follow the instructions.
+Then run the command `pnpx hardhat` and follow the instructions to create a sample project.
 
-```bash
-pnpx hardhat
+```md
+$ pnpx hardhat
 
 888    888                      888 888               888
 888    888                      888 888               888
@@ -85,57 +85,68 @@ pnpx hardhat
 
 ✔ What do you want to do? · Create an advanced sample project that uses TypeScript
 ✔ Hardhat project root: · hardhat-sveltekit-monorepo/dapp
-✔ Do you want to add a .gitignore? (Y/n) · y
-✔ Do you want to install this sample project's dependencies with npm (hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-etherscan dotenv eslint eslint-config-prettier eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise hardhat-gas-reporter prettier prettier-plugin-solidity solhint solidity-coverage @typechain/ethers-v5 @typechain/hardhat @typescript-eslint/eslint-plugin @typescript-eslint/parser @types/chai @types/node @types/mocha ts-node typechain typescript)? (Y/n) · n
+✔ Do you want to add a .gitignore? (Y/n) · Y
+✔ Do you want to install this sample project's dependencies with npm (...)? (Y/n) · N
 ```
-
-The options chosen when creating our hardhat project are the following:
-
-* Create an _advanced sample project that uses TypeScript_
-* Create the hardhat _project root at my-dapp-monorepo/dapp_
-* _Yes add a .gitignore_
-* _No do not install the sample dependencies_ with npm (we will use pnpm instead)
+Note: **No** for the last selection about installing dependencies with npm
 
 ### Install hardhat dependencies with pnpm
 
-Since we didn't use npm to install our hardhat dependencies, now is the time to install then with pnpm.
+Since we didn't use npm to install our hardhat dependencies with npm, we can add them with pnpm.
 
 ```bash
-pnpm import
-rm -f package-lock.json
+pnpm add -D hardhat @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-etherscan dotenv eslint eslint-config-prettier eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise hardhat-gas-reporter prettier prettier-plugin-solidity solhint solidity-coverage @typechain/ethers-v5 @typechain/hardhat @typescript-eslint/eslint-plugin @typescript-eslint/parser @types/chai @types/node @types/mocha ts-node typechain typescript
 ```
 
-If you are ocd like me and you want to flush our node_modules and have pnpm reinstall from scratch:
-
-```bash
-rm -rf node_modules
-pnpm install
-```
-
-Now let's update our `package.json` and add a name, version, and a few scripts.
+Now let's update our `package.json` and add a name, version, and a few scripts. The name and version are necessary so you can install this package into our SvelteKit app.
 
 ```json
+// dapp/package.json
 {
   "name": "my-hardhat-app",
   "version": "1.0.0",
   "scripts": {
+    "compile": "hardhat compile",
     "node": "hardhat node",
     "deploy": "hardhat run scripts/deploy.ts --network localhost"
   }
 }
 ```
 
-When using the hardhat network with metamask, we need to add the chainId to the hardhat network provider to our `hardhat.config.js` file. If you don't do this, you will run into the error: _Trying to send a raw transaction with an invalid chainId. The expected chainId is 31337._
+### MetaMask quirk
 
-```json
+When using the [hardhat network with metamask](https://hardhat.org/metamask-issue.html), we need to add the chainId to the hardhat network provider to our `hardhat.config.js` file.
+
+If you see the error `Trying to send a raw transaction with an invalid chainId. The expected chainId is 31337.`, this is why.
+
+```js
+// dapp/hardhat.config.js
 {
-  solidity: "0.8.4",
   networks: {
     hardhat: {
       chainId: 1337
     }
-    ...
+  }
 }
+```
+
+### Save your hardhat `dapp` project
+
+Let's save our work.
+
+```bash
+git add .
+git commit -m "init: add hardhat to /dapp"
+```
+
+[Example Repository](https://github.com/jasonraimondi/my-dapp-monorepo/tree/0f8300cfb4a938e6f78cbe01eceffd4c4cf1857e)
+
+### Compile our contracts
+
+We need to [compile our contracts](https://hardhat.org/guides/compile-contracts.html) into artifacts that we can use in our SvelteKit app.
+
+```bash
+pnpm compile
 ```
 
 ### Boot a local hardhat node and deploy the contracts
@@ -149,9 +160,9 @@ pnpm node
 
 The second command will deploy our contracts to the local network.
 
-```bash
-cd dapp
-pnpm deploy
+```md
+$ cd dapp
+$ pnpm deploy
 
 > my-hardhat-app@ deploy /Users/jason/Code/playground/hardhat-sveltekit-monorepo/dapp
 > hardhat run scripts/deploy.ts --network localhost
@@ -160,24 +171,16 @@ No need to generate any newer typings.
 Greeter deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 ```
 
-Take note of the contract address, we are going to need to use it in our sveltekit project so we can use our contracts.
+Take note of the contract address, we are going to need to use it in our SvelteKit project as `VITE_GREETER_ADDRESS` so we can use our contracts.
 
-### Save your hardhat `dapp` project
 
-Let's save our work.
+## Create the SvelteKit `web` project
 
-```bash
-git add .
-git commit -m "init: add hardhat to /dapp"
-```
+Starting in the monorepo root, let's run the pnpm init command to create the SvelteKit project.
 
-## Create the sveltekit `web` project
-
-Starting in the monorepo root, let's run the pnpm init command to create the sveltekit project.
-
-```bash
-cd my-dapp-monorepo
-pnpm init svelte@next web
+```md
+$ cd my-dapp-monorepo
+$ pnpm init svelte@next web
 
 Welcome to SvelteKit!
 
@@ -191,23 +194,16 @@ If you encounter a problem, open an issue on https://github.com/sveltejs/kit/iss
 ✔ Add Prettier for code formatting? Yes
 ```
 
-The options I chose when creating my sveltekit project are the following:
-
-* Create a _Skeleton project_
-* _Yes, use TypeScript_
-* _Yes, use ESLint_
-* _Yes, use Prettier_
-
-Feel free to choose whatever you want, it's up to you.
+Feel free to choose whatever you want, it's up to you. My example will be using TypeScript.
 
 ```bash
 cd web
 pnpm install
 ```
 
-Now we have an empty sveltekit project, we can start by "installing" both our dapp project and ethers into the sveltekit project.
+Now we have an empty SvelteKit project, we can start by "installing" both our dapp project and ethers into the SvelteKit project.
 
-## Connect our hardhat workspace to our sveltekit project
+## Connect our hardhat workspace to our SvelteKit project
 
 ```bash
 pnpm add my-hardhat-app
@@ -216,6 +212,7 @@ pnpm add my-hardhat-app
 This is going to add a workspace dependency in our `package.json` that will look like the following.
 
 ```json
+// web/package.json
 {
   "dependencies": {
     "my-hardhat-app": "workspace:^1.0.0",
@@ -225,7 +222,7 @@ This is going to add a workspace dependency in our `package.json` that will look
 }
 ```
 
-This will allow us to use our dapp project in our sveltekit project as if it was any other installed node_module.
+This will allow us to use our dapp project in our SvelteKit project as if it was any other installed node_module.
 
 ### Install ethers dependencies to sveltekit
 
@@ -233,10 +230,12 @@ This will allow us to use our dapp project in our sveltekit project as if it was
 pnpm add ethers @ethersproject/providers
 ```
 
-### Load ethers and the Greeter contract into svelte
+### Load the Greeter contract into SvelteKit using Ethers
+
+Let's first see the whole component, and then we'll go through each piece.
 
 ```svelte
-<!-- src/routes/index.svelte -->
+<!-- web/src/routes/index.svelte -->
 <script lang="ts">
   import { ethers } from 'ethers';
   import { onMount } from 'svelte';
@@ -250,31 +249,21 @@ pnpm add ethers @ethersproject/providers
 
   let hasEth = false;
   let userAddress: string;
-  let contract: Greeter;
+  let greeter: Greeter;
 
   onMount(() => {
-    // @see https://docs.metamask.io/guide/mobile-best-practices.html#provider-availability
-    if (window.ethereum) {
-      initializeEthereum();
-    } else {
-      window.addEventListener('ethereum#initialized', initializeEthereum, { once: true });
-      setTimeout(initializeEthereum, 3000);
-    }
+    if (!window.ethereum) return;
+    
+    hasEth = true;
+    
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    
+    greeter = new ethers.Contract(
+      import.meta.env.VITE_GREETER_ADDRESS,
+      GreeterArtifact.abi,
+      provider.getSigner(0),
+    ) as Greeter;
   });
-
-  function initializeEthereum() {
-    if (window.ethereum?.isMetaMask) {
-      hasEth = true;
-
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-      contract = new ethers.Contract(
-        import.meta.env.VITE_GREETER_ADDRESS,
-        GreeterArtifact.abi,
-        provider.getSigner(0)
-      ) as Greeter;
-    }
-  }
 
   async function initializeWallet() {
     await setCurrentAddress();
@@ -290,29 +279,76 @@ pnpm add ethers @ethersproject/providers
 
   async function setCurrentAddress(address?: string) {
     if (!address) [address] = await window.ethereum.request({ method: 'eth_requestAccounts' });
-
-    if (typeof address === 'string') {
-      userAddress = address;
-    } else {
-      userAddress = undefined;
-    }
+    userAddress = typeof address === "string" ? address : undefined;
   }
 </script>
 
 {#if !hasEth}
   <p>You need to install <a href="https://metamask.io/">MetaMask!</a></p>
-{:else if userAddress && contract}
-  <Greeting contract={contract} />
+{:else if userAddress && greeter}
+  <GetGreeting contract={greeter} />
   <hr>
-  <SetGreeting contract={contract} />
+  <SetGreeting contract={greeter} />
 {:else}
   <p>Connect your wallet to get started.</p>
   <button type="button" on:click={initializeWallet}>Connect Wallet</button>
 {/if}
 ```
 
+#### OnMount
+
+```typescript
+let hasEth = false;
+let greeter: Greeter;
+
+onMount(() => {
+  if (!window.ethereum) return;
+
+  hasEth = true;
+
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+
+  greeter = new ethers.Contract(
+    import.meta.env.VITE_GREETER_ADDRESS,
+    GreeterArtifact.abi,
+    provider.getSigner(0),
+  ) as Greeter;
+});
+```
+
+In our `onMount` function, we are first checking to see if `window.ethereum` exists. This check makes sure the user has an ethereum wallet installed and available to use. In my case, I'm using MetaMask.
+
+Once we know that we have a wallet installed, we then need to create a new contract `Greeter` that we are going to use in the `GetGreeting` and `SetGreeting` components.
+
+#### Initialize Wallet
+
+```typescript
+async function initializeWallet() {
+  await setCurrentAddress();
+
+  window.ethereum.on('accountsChanged', async ([userAddress]) => {
+    await setCurrentAddress(userAddress);
+  });
+
+  window.ethereum.on('chainChanged', async () => {
+    await setCurrentAddress();
+  });
+}
+
+async function setCurrentAddress(address?: string) {
+  if (!address) [address] = await window.ethereum.request({ method: 'eth_requestAccounts' });
+  userAddress = typeof address === "string" ? address : undefined;
+}
+```
+
+When we initialize our wallet, we are also going to add event listeners using the ethereum object to watch for either `accountsChanged` or `chainChanged`. These events are fired when the user changes their wallet address, or when the user changes the chain.
+
+When either the `accountsChanged` or `chainChanged` event is fired, we are calling `setCurrentAddress` with the new address.
+
+### GetGreeting
+
 ```svelte
-<!-- Greeting.svelte -->
+<!-- web/src/lib/components/GetGreeting.svelte -->
 <script lang="ts">
   import type { Greeter } from 'my-hardhat-app/typechain';
 
@@ -330,8 +366,12 @@ pnpm add ethers @ethersproject/providers
 </div>
 ```
 
+This component [retrieves the current message](https://github.com/jasonraimondi/my-dapp-monorepo/blob/0f8300cfb4a938e6f78cbe01eceffd4c4cf1857e/dapp/contracts/Greeter.sol#L14-L16) in the contract.
+
+### SetGreeting
+
 ```svelte
-<!-- SetGreeting.svelte -->
+<!-- web/src/lib/components/SetGreeting.svelte -->
 <script lang="ts">
   import type { Greeter } from 'my-hardhat-app/typechain';
 
@@ -349,4 +389,15 @@ pnpm add ethers @ethersproject/providers
   <input type="text" bind:value={setGreetingValue} />
   <button type="button" on:click={setGreeting}>Set Greeting</button>
 </div>
+```
+
+This component [sets the current message](https://github.com/jasonraimondi/my-dapp-monorepo/blob/0f8300cfb4a938e6f78cbe01eceffd4c4cf1857e/dapp/contracts/Greeter.sol#L18-L21) in the contract.
+
+This is going to prompt a MetaMask transaction requiring you to pay a small gas fee. 
+
+### Dotenv
+
+```env
+# web/src/.env
+VITE_GREETER_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3
 ```

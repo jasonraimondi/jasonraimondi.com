@@ -6,8 +6,6 @@ description: Conways Game of Life TypeScript.
 draft: true
 images: 
 - /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: conways-game-of-life-typescript
 tags:
 - typescript

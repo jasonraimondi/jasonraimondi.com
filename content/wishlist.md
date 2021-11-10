@@ -3,8 +3,6 @@ date: "2020-05-12T00:00:00-08:00"
 description: Wish List
 images: 
 - /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
-imageAlt: person using computer on brown wooden table
-imageCredit: '@robertbye https://unsplash.com/photos/BY34glOW7wA'
 lastmod: "2020-05-12T00:00:00-08:00"
 title: Wish List
 ---

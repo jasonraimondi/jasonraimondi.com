@@ -9,8 +9,6 @@ description: Yes, zfs send is faster. It doesn’t need to parse everything, it 
 draft: true
 images: 
 - /posts/_covers/under-construction.jpg
-imageAlt: under construction crane
-imageCredit: '@hojipago https://unsplash.com/photos/D46mXLsQRJw'
 slug: zfs
 tags:
 - vue.js
