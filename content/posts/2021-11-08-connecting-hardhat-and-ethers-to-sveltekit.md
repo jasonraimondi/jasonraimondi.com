@@ -16,8 +16,8 @@ draft: true
 
 We are going to create a monorepo with two projects:
 
-* `dapp` -- A [hardhat](https://hardhat.org/) project, containing our Solidity contracts and related deployment code. 
-* `web` -- A [sveltekit](https://kit.svelte.dev/) application that connects to our hardhat project to use the deployed contracts.
+* `dapp` -- The [Hardhat](https://hardhat.org/) project, containing our Solidity contracts and related deployment code. 
+* `web` -- The [SvelteKit](https://kit.svelte.dev/) web gui that uses our Solidity contracts.
 
 ## Install PNPM
 
@@ -149,6 +149,8 @@ We need to [compile our contracts](https://hardhat.org/guides/compile-contracts.
 pnpm compile
 ```
 
+The compiled contracts can be found in the `dapp/artifacts/` directory, and are ignored by git.
+
 ### Boot a local hardhat node and deploy the contracts
 
 In two separate terminals, run the following commands. The first command will start a local hardhat node. We'll leave these running for the remainder of the demo.
@@ -230,9 +232,70 @@ This will allow us to use our dapp project in our SvelteKit project as if it was
 pnpm add ethers @ethersproject/providers
 ```
 
-### Load the Greeter contract into SvelteKit using Ethers
+Then let's just commit and push to git to save our progress so far.
 
-Let's first see the whole component, and then we'll go through each piece.
+```bash
+cd my-dapp-monorepo
+git add .
+git commit -m "init: install sveltekit and ethers to web/"
+```
+
+### Identify and load user wallet and address
+
+Let's update the `index.svelte` file in our routes and add an `onMount` event that checks if we have `window.ethereum` available. 
+
+```svelte
+<!-- web/src/routes/index.svelte -->
+<script lang="ts">
+  import { onMount } from 'svelte';
+  
+  let hasEth = false;
+    
+  onMount(() => {
+    if (!window.ethereum) return;
+    hasEth = true;
+  });
+  
+  async function initializeWallet() {
+    await setCurrentAddress();
+
+    // check if the user switches wallets and update current address
+    window.ethereum.on('accountsChanged', async ([userAddress]) => {
+      await setCurrentAddress(userAddress);
+    });
+  }
+
+  async function setCurrentAddress(address?: string) {
+    // I am not convinced this is the best method to get the current address, but it works for now.
+    if (!address) [address] = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    userAddress = typeof address === "string" ? address : undefined;
+  }
+</script>
+
+{#if !hasEth}
+  <p>You need to install <a href="https://metamask.io/">MetaMask!</a></p>
+{:else}
+  <p>Connect your wallet to get started.</p>
+  <button type="button" on:click={initializeWallet}>Connect Wallet</button>
+{/if}
+```
+
+### Add types to `window.ethereum`
+
+If you are using typescript you might need to give a typing to `window.ethereum`. 
+
+```typescript
+// web/src/global.d.ts
+declare global {
+  interface Window {
+    ethereum: any;
+  }
+}
+```
+
+If you happen to know how to type `window.ethereum` better than `any`, please shoot me a tweet at {{< twitter >}} and let me know. I tried to find actual typings and was unsuccessful. 
+
+### Load the Greeter contract into SvelteKit using Ethers
 
 ```svelte
 <!-- web/src/routes/index.svelte -->
@@ -268,10 +331,12 @@ Let's first see the whole component, and then we'll go through each piece.
   async function initializeWallet() {
     await setCurrentAddress();
 
+    // check if the user switches wallets and update current address
     window.ethereum.on('accountsChanged', async ([userAddress]) => {
       await setCurrentAddress(userAddress);
     });
 
+    // check if the user switches network chain and update current address
     window.ethereum.on('chainChanged', async () => {
       await setCurrentAddress();
     });
