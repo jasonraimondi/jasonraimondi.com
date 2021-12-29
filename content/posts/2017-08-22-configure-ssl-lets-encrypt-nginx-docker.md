@@ -30,7 +30,7 @@ openssl dhparam -out dhparam.pem 2048
 
 ### 2. Set Nginx to Listen on Port 80
 
-The first run is going to be a little bit different than subsequent ones. We are going to need to modify our sites nginx configuration to listen on Port 80 instead of 443.
+The first run is going to be a little bit different than subsequent ones. We're going to need to modify our sites nginx configuration to listen on Port 80 instead of 443.
 
 ```nginx
 server {
@@ -117,7 +117,7 @@ add_header Strict-Transport-Security “max-age=31536000”;
 
 ### 5. Include Let’s Encrypt Default Location
 
-Include a Let’s Encrypt default location out of the webroot.
+Include a Let’s Encrypt default location out of the web root.
 
 Inside of the docker image, this should be located at:
 

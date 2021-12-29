@@ -19,22 +19,6 @@ function addHeaderDeepLinks() {
     }
 }
 
-function sanitizeLinks() {
-    const $div = document.getElementById('js-single');
-
-    if (!$div) return;
-
-    const $links = $div.getElementsByTagName('a');
-
-    for (let i = 0, linksLength = $links.length; i < linksLength; i++) {
-        if ($links[i].hostname !== window.location.hostname) {
-            $links[i].target = '_blank';
-            $links[i].rel = 'noopener';
-        }
-    }
-}
-
 void (function () {
     addHeaderDeepLinks();
-    sanitizeLinks();
 })();

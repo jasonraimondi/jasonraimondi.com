@@ -16,4 +16,7 @@
 {{- $aboutMe := resources.Get "js/about-me.ts" | js.Build (dict "minify" false) | fingerprint -}}
 <script type="text/javascript" src="{{ $aboutMe.Permalink }}" integrity="{{ $aboutMe.Data.Integrity }}"></script>
 
+{{- $links := resources.Get "js/links.ts" | js.Build (dict "minify" false) | fingerprint -}}
+<script type="text/javascript" src="{{ $links.Permalink }}" integrity="{{ $links.Data.Integrity }}"></script>
+
 </html>

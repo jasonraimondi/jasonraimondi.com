@@ -22,12 +22,13 @@ Binary not found for version 14.18.0
 
 ## Why does it happen?
 
-The reason is that there are no prebuilt binaries for Apple Silicon (darwin-arm64) bundles provided by the Node team for these older versions of node. This isnt really a problem, since the M1 Mac can use programs compiled for intel x86.
+The reason is that there are no prebuilt binaries for Apple Silicon (darwin-arm64) bundles provided by the Node team for these older versions of node. This isn't a problem, since an M1 Mac can use programs compiled for Intel x86.
 
 ## How to fix it?
 
 First [find the version](https://nodejs.org/en/download/releases/) of Node you are looking to install. For me, it was [v14.18.0](https://nodejs.org/dist/v14.18.0/)
-You just need to visit the ol node directory
+
+You just need to visit the node directory
 
 ```bash
 # Enter what version you want
@@ -40,7 +41,7 @@ mv node-v$VERSION-darwin-x64 $ASDF_DIR/installs/nodejs/$VERSION
 
 ## Reshim and reload
 
-This [recreates the shims](http://asdf-vm.com/manage/core.html#reshim) for the current version of a package. This might technically not be necessary, but it is harmless to work.
+This [recreates the shims](http://asdf-vm.com/manage/core.html#reshim) for the current version of a package. This might technically not be necessary, but it's harmless to work.
 
 ```bash
 asdf reshim nodejs

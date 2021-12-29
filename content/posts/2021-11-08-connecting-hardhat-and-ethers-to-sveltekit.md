@@ -248,14 +248,15 @@ Let's update the `index.svelte` file in our routes and add an `onMount` event th
 <!-- web/src/routes/index.svelte -->
 <script lang="ts">
   import { onMount } from 'svelte';
-  
+
   let hasEth = false;
-    
+  let userAddress: string|undefined;
+
   onMount(() => {
     if (!window.ethereum) return;
     hasEth = true;
   });
-  
+
   async function initializeWallet() {
     await setCurrentAddress();
 
@@ -274,9 +275,11 @@ Let's update the `index.svelte` file in our routes and add an `onMount` event th
 
 {#if !hasEth}
   <p>You need to install <a href="https://metamask.io/">MetaMask!</a></p>
-{:else}
+{:else if !userAddress}
   <p>Connect your wallet to get started.</p>
   <button type="button" on:click={initializeWallet}>Connect Wallet</button>
+{:else}
+  <p>Your address is {userAddress}</p>
 {/if}
 ```
 
@@ -295,6 +298,15 @@ declare global {
 
 If you happen to know how to type `window.ethereum` better than `any`, please shoot me a tweet at {{< twitter >}} and let me know. I tried to find actual typings and was unsuccessful. 
 
+### Save our client
+
+Now that we have connected our Svelte application to metamask, let's save our work.
+
+```bash
+git add .
+git commit -m "feat: connect client to metamask wallet"
+```
+
 ### Load the Greeter contract into SvelteKit using Ethers
 
 ```svelte
@@ -311,7 +323,7 @@ If you happen to know how to type `window.ethereum` better than `any`, please sh
   import SetGreeting from '$lib/components/SetGreeting.svelte';
 
   let hasEth = false;
-  let userAddress: string;
+  let userAddress: string|undefined;
   let greeter: Greeter;
 
   onMount(() => {

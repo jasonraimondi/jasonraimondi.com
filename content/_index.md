@@ -12,21 +12,20 @@ lastmod: "2019-03-13T00:00:00-07:00"
 layout: empty
 title: Jason Raimondi
 ---
+
 <div class="home">
 
-<h1 class="animoji-me">Hey :wave:, I'm Jason.</h1>
+<h1 class="animoji-me">Hey :wave:, I'm {{< index/find-on-twitter >}}.</h1>
 
 ## I am a <span id="adjective1">technologist</span> and <span id="adjective2">computer geek</span>.
 
-I work at <a href="//twitter.com/hitrecord" target="_blank" rel="nofollow noopener">@HITRECORD</a> as a Staff Software Engineer.
+I work at [@HITRECORD](//twitter.com/hitrecord) as a Staff Software Engineer.
 
 I have been developing for the web since 2007. I've worked on everything from terrible old-school procedural spaghetti :spaghetti: monsters, to MVC frameworks, to 100% tested domain-driven applications. Early on, I was developing traditional server-rendered PHP applications. These days, I can work on whatever you need.
 
 I have professional experience building modular, horizontally scalable applications.
 
 If I’m not hanging out with my amazing [wife](//kimcalderone.com) and pup, I am most likely <span id="doing1">learning a new language</span> or <span id="doing2">practicing software architecture design patterns</span>.
-
-{{< index/find-on-twitter >}}
 
 {{< index/recent-projects >}}
 
