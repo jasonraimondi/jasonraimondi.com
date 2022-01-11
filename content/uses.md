@@ -11,7 +11,7 @@ This page lists software and hardware I use on a daily basis.
 
 ## Hardwares
 
-* [MacBook Pro M1 Max 14](https://www.apple.com/shop/buy-mac/macbook-pro/14-inch-space-gray-10-core-cpu-16-core-gpu-1tb)
+* [MacBook Pro](https://www.apple.com/shop/buy-mac/macbook-pro)
 * [Dell 32-Inch 4K Monitor](https://www.amazon.com/gp/product/B07HDBD9CM) 
 * [Moonlander Mark 1 Split Ergonomic Keyboard](https://www.zsa.io/moonlander/)
 * [Logitech MX Master 3 Wireless Mouse](https://www.amazon.com/gp/product/B07S395RWD)
