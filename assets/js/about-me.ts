@@ -8,9 +8,13 @@ const adjectives2 = [
   "computer geek", "computer geek", "computer geek",
   "dog lover", "dog lover",
   "hacker",
+  "gamer",
 ];
 
 const doings = [
+  "playing frisbee with Ruby",
+  "out on a hike",
+  "playing video games",
   "downloading Linux ISO's",
   "securing my network",
   "learning a new language",
@@ -21,7 +25,7 @@ const doings = [
 function arrSample(arr) {
   const id = Math.floor(Math.random() * arr.length);
   return [arr[id], id];
-};
+}
 
 function setDoingThings(span) {
   const [doings1, id1] = arrSample(doings);
