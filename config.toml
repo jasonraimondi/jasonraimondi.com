@@ -53,17 +53,13 @@ ignorefiles = [ "content/.obsidian/.*" ]
   url = "https://github.com/jasonraimondi/ts-oauth2-server"
   description = "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. "
 [[Params.Projects.Link]]
+  name = "👀 promise-watch"
+  url = "https://github.com/promise-watch/promise-watch"
+  description = "An Api/E2E monitor that runs promises on intervals and sends notifications on errors. Supports playwright for reliable E2E testing. Has prebuilt notifiers for SMTP, Slack, and Pushover, and can support any custom notifier."
+[[Params.Projects.Link]]
   name = "🖼️ url-to-png"
   url = "https://github.com/jasonraimondi/url-to-png"
   description = "Dynamic screenshots for the web over a simple http api"
-[[Params.Projects.Link]]
-  name = "🦄 angular-unicornify"
-  url = "https://github.com/jasonraimondi/angular-unicornify"
-  description = "Easily add unicorn's to your Angular site"
-[[Params.Projects.Link]]
-  name = "🛎️ use-nofity-rxjs"
-  url = "https://github.com/jasonraimondi/use-notify-rxjs"
-  description = "React hook for design free toasts using rxjs"
 [[Params.Projects.Link]]
   name = "🧭 traverse"
   url = "/posts/traverse-2-electric-boogaloo"
