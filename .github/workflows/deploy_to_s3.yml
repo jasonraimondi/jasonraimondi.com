@@ -1,5 +1,10 @@
 name: deploy to s3
 
+env:
+  HUGO_VERSION: 0.88.1
+  NODE_VERSION: 16.14.0
+  PNPM_VERSION: 6.22.2
+
 on: push
 
 jobs:
@@ -8,6 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
       - name: Install Hugo
         run: |
           HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
@@ -15,14 +28,9 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_DOWNLOAD}
           tar xvzf ${HUGO_DOWNLOAD} hugo
           mv hugo $HOME/hugo
-        env:
-          HUGO_VERSION: 0.88.1
-      - name: Hugo Build
-        run: |
-          npm ci
-          npm --prefix snapshotter ci
-          npm run gen:resume:ci
-          $HOME/hugo --gc --cleanDestinationDir
+      - run: pnpm install --frozen-lockfile --production false
+      - run: pnpm gen:resume:ci
+      - run: $HOME/hugo --gc --cleanDestinationDir
       - name: Deploy to S3
         if: github.ref == 'refs/heads/master'
         run: $HOME/hugo -v deploy --maxDeletes -1 --invalidateCDN true

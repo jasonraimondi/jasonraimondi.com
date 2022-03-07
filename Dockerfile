@@ -1,8 +1,19 @@
+FROM node:16.14.0-alpine3.14 as node
+
 FROM klakegg/hugo:0.81.0-ext-alpine as builder
-RUN apk add --update nodejs npm
+
+## Install node and yarn from node image
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+
+RUN apk add --update --no-cache curl \
+    && curl -fsSL 'https://github.com/pnpm/pnpm/releases/download/v6.32.2/pnpm-linuxstatic-x64' -o /usr/local/bin/pnpm \
+    && chmod +x /usr/local/bin/pnpm
+
 WORKDIR /app
-COPY package-lock.json package.json /app/
-RUN npm ci
+
+COPY pnpm-lock.yaml package.json /app/
+RUN pnpm install --frozen-lockfile --production false
 COPY config.toml postcss.config.js /app/
 COPY assets/ /app/assets/
 COPY content/ /app/content/
