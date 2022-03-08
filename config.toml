@@ -55,7 +55,7 @@ ignorefiles = [ "content/.obsidian/.*" ]
 [[Params.Projects.Link]]
   name = "👀 promise-watch"
   url = "https://github.com/promise-watch/promise-watch"
-  description = "An Api/E2E monitor that runs promises on intervals and sends notifications on errors. Supports playwright for reliable E2E testing. Has prebuilt notifiers for SMTP, Slack, and Pushover, and can support any custom notifier."
+  description = "An Api/E2E monitor that runs promises on intervals and sends notifications on errors."
 [[Params.Projects.Link]]
   name = "🖼️ url-to-png"
   url = "https://github.com/jasonraimondi/url-to-png"
