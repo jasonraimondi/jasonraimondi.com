@@ -4,4 +4,8 @@
 
 #### I am a technologist and computer geek.
 
-![Github readme stats for jasonraimondi](https://github-readme-stats.vercel.app/api?username=jasonraimondi&show_icons=true&locale=en)
+![Jason's GitHub stats](https://github-readme-stats.vercel.app/api?username=jasonraimondi&show_icons=true&locale=en&count_private=true&theme=dracula)
+
+<!--
+![Jason's Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jasonraimondi&hide=css,html,java,processing,pure%20data&layout=compact&langs_count=6&theme=dracula)
+-->
