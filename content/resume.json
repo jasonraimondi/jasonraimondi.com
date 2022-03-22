@@ -38,23 +38,12 @@
       "endDate": "present",
       "summary": "__",
       "highlights": [
-        "__ Updated our software release workflow by making it very obvious current environment containing the code change for each ticket s.",
-        "Deployed our Ruby on Rails application on AWS EKS (k8s) with autoscaling. By monitoring our puma total threads used vs available, our application is able to handle large spikes in traffic by scaling our infrastructure to additional nodes (and pods).",
-        "Created a sytem to deploy review environments based on merge requests to our staging cluster. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
+        "__ Updated our software release workflow by making it very obvious current environment containing the code change for each ticket.",
+        "Deployed our Ruby on Rails application on AWS EKS with autoscaling. Our application is able to handle large spikes in traffic by monitoring our puma total threads used vs available and scaling our infrastructure to additional nodes (and pods).",
+        "Created a system to deploy review environments for open merge requests. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
         "Refactored a legacy integration test suite into Cypress with parallelized workers, speeding up average CI test time from 60+ minutes to ~12 minutes.",
+        "Updated our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Decoupled legacy jquery + angular.js javascript application from Rails erb templates to an Angular SPA."
-      ]
-    },
-    {
-      "company": "Digital Canvas Design LLC",
-      "position": "Owner, Software Consultant",
-      "startDate": "2014-01-01",
-      "endDate": "present",
-      "summary": "__ I began freelancing in 2009",
-      "highlights": [
-        "Constructs and manages web applications for clients with varying complexity, from custom-built web applications in the client’s language of choice to simple static HTML sites.",
-        "__ Consults with businesses over application structure, security voulnerabilities, etc. ",
-        "Custom server builds, server installs, infrastructure buildout, web hosting."
       ]
     },
     {
@@ -65,8 +54,8 @@
       "endDate": "2019-03-01",
       "summary": "Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. During my time there, I worked on adding features to web platform, including the frontend web client and backend API.",
       "highlights": [
-        "Test drove re-architecture of a legacy PHP 5 codebase, decoupling an untested CakePHP 2.x monolith, to a custom PHP 7 API routed through Lumen and an Angular SPA. The project maintained 85%+ code coverage and was built using Domain-Driven Design (DDD) and Command Query Separation (CQS) principles.",
-        "Built auto-generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift, and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on GitHub at (eventfarm/javascript-sdk) and (eventfarm/golang-sdk). These client libraries were consumed in the official mobile apps as well as the web application."
+        "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder for organizers to use so they could create and update, custom event signup flows, and custom event registration pages.",
+        "Built auto-generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift, and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on GitHub at [javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/golang-sdk). These client libraries were consumed in the official mobile apps as well as the web application."
       ]
     },
     {
@@ -76,9 +65,20 @@
       "startDate": "2016-02-01",
       "endDate": "2018-09-01",
       "highlights": [
-        "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder for organizers to use so they could create and update , custom event signup flows, and custom event registration pages.",
+        "Test-drove the re-architecture of a legacy PHP 5 codebase. Decoupled an untested CakePHP 2.x monolith, to a tested PHP 7 API and an Angular SPA. The project maintained 85%+ code coverage and was built using Domain-Driven Design (DDD) and Command Query Separation (CQS) principles.",
         "Headed a custom integration between Salesforce and Event Farm. The integrations would sync the status of Salesforce Leads and Contacts to event attendees and their event status (accepted, declined, checked-in, etc). Open-sourced the PHP 7 Salesforce Rest API (restforcephp) that we built and used internally for the integrations.",
         "Contributed to and maintained a CakePHP API and AngularJS/Angular."
+      ]
+    },
+    {
+      "company": "Digital Canvas Design LLC",
+      "position": "Owner, Software Consultant",
+      "startDate": "2014-01-01",
+      "endDate": "2022-01-01",
+      "summary": "__ I began freelancing in 2009",
+      "highlights": [
+        "Built and maintained custom web applications for clients with varying complexity.",
+        "Custom server builds, server installs, infrastructure buildout, web hosting."
       ]
     },
     {
@@ -100,8 +100,9 @@
       "endDate": "2015-11-01",
       "summary": "At Web Services, I created and maintained embedded web applications for local news station around the country. Applications ranged from adopt-a-pet services to restaurant inspections. I also worked on internal tooling as well as a development on a tv ad tracking service.",
       "highlights": [
-        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP. Integrated various web 3rd party services including Google and Twilio into these custom applications.",
-        "Redesigned and implemented the update to [WDIV Click on Detroit's “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application."
+        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP.",
+        "Integrated various web 3rd party services including Google and Twilio into customer applications.",
+        "Updated and modernized [WDIV Click on Detroit's “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application in from a Laravel 3.x application to Laravel 5.1 LTS."
       ]
     },
     {
@@ -113,8 +114,7 @@
       "summary": "ACE Blueprinting & Graphics is a local printing shop in Ft. Lauderdale, FL where I worked as a Graphic Design Intern here for several summers.",
       "highlights": [
         "Completed graphic projects while collaborating with clients, designing vector and raster graphics using Illustrator and Photoshop from concept to printed works.",
-        "Built custom PC workstations serving as state-of-the-art graphic editing stations and custom print servers.",
-        "__ In addition to my graphic design work, I also modernized workstations by custom builting several PC's that were used as graphic design stations and others as printservers"
+        "Built custom PC workstations serving as state-of-the-art graphic editing stations and custom print servers."
       ]
     },
     {
@@ -164,10 +164,10 @@
       "summary": "A standards-compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
     },
     {
-      "name": "use-notify-rxjs",
-      "releaseDate": "2021-02-17",
-      "website": "https://github.com/jasonraimondi/use-notify-rxjs",
-      "summary": "Simple, design-free toast notifications using rxjs."
+      "name": "promise-watch",
+      "releaseDate": "2022-03-01",
+      "website": "https://github.com/promise-watch/promise-watch",
+      "summary": "An Api/E2E monitor that runs promises on intervals and sends notifications on errors."
     },
     {
       "name": "url-to-png",
@@ -196,65 +196,44 @@
   ],
   "skills": [
     {
-      "name": "Front End",
+      "name": "Frontend",
       "keywords": [
-        "HTML5",
-        "CSS/PostCSS",
         "TypeScript",
         "JavaScript",
-        "React",
-        "Angular",
-        "Electron"
+        "HTML5/CSS",
+        "E2E Testing",
+        "Unit Testing",
+        "<Insert frontend framework here>"
       ]
     },
     {
-      "name": "Back End",
+      "name": "Backend",
       "keywords": [
         "Node.js",
-        "TypeScript",
-        "Ruby on Rails",
+        "Ruby",
         "PHP 7+",
-        "Laravel",
-        "OOP",
-        "Testing",
-        "SQL",
-        "OAuth2",
-        "REST",
-        "GraphQL"
-      ]
-    },
-    {
-      "name": "Testing",
-      "keywords": [
-        "Cypress",
-        "Jest",
-        "Rspec",
-        "PHPUnit"
+        "E2E Testing",
+        "Unit Testing",
+        "OAuth",
+        "Object oriented programming",
+        "Queues",
+        "Relational databases",
+        "Document databases",
+        "Key-Value databases",
+        "<Insert backend framework here>"
       ]
     },
     {
       "name": "Devops",
       "keywords": [
-        "Docker",
         "Kubernetes",
+        "Terraform",
+        "GitOps",
         "AWS",
-        "Pod Autoscaling",
-        "Node Autoscaling",
-        "CI/CD",
-        "GitOPS",
-        "Queueing"
-      ]
-    },
-    {
-      "name": "Design",
-      "keywords": [
-        "Photoshop",
-        "Illustrator",
-        "InDesign",
-        "Premier Pro",
-        "After Effects",
-        "Figma",
-        "GIMP"
+        "Continuous Integration",
+        "Continuous Deployment",
+        "Autoscaling",
+        "Docker"
       ]
     }
   ]
