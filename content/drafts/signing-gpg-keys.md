@@ -7,7 +7,7 @@ date: "2019-03-19T00:00:00-07:00"
 description: Signing Git commits with GPG Key.
 draft: true
 images: 
-- /posts/_covers/under-construction.jpg
+- /covers/under-construction.jpg
 slug: code-syntax-highlighting-with-pygment
 tags:
 - hugo

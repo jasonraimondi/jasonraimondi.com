@@ -2,7 +2,7 @@
 date: "2019-03-19T00:00:00-07:00"
 description: This page lists software and hardware I use on a daily basis.
 images: 
-- /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+- /covers/robert-bye-BY34glOW7wA-unsplash.jpg
 lastmod: "2020-02-21T00:00:00-08:00"
 title: Uses
 ---

@@ -6,7 +6,7 @@ comments: true
 date: "2018-04-12T00:00:00-07:00"
 description: Update PHP on your Mac using after the homebrew/php tap has been deprecated.
 images: 
-- /posts/_covers/christin-hume-08tX2fsuSLg-unsplash.jpg
+- /covers/christin-hume-08tX2fsuSLg-unsplash.jpg
 slug: update-php-homebrew
 tags:
 - macos

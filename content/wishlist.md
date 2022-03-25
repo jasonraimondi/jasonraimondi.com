@@ -2,7 +2,7 @@
 date: "2020-05-12T00:00:00-08:00"
 description: Wish List
 images: 
-- /posts/_covers/robert-bye-BY34glOW7wA-unsplash.jpg
+- /covers/robert-bye-BY34glOW7wA-unsplash.jpg
 lastmod: "2020-05-12T00:00:00-08:00"
 title: Wish List
 ---

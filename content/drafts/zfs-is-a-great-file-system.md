@@ -8,7 +8,7 @@ description: Yes, zfs send is faster. It doesn’t need to parse everything, it 
   finds all the blocks that have changed between the snapshots.
 draft: true
 images: 
-- /posts/_covers/under-construction.jpg
+- /covers/under-construction.jpg
 slug: zfs
 tags:
 - vue.js

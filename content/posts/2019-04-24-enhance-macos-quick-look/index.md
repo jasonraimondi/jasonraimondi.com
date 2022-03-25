@@ -7,7 +7,7 @@ description: The Quick Look feature on macOS (&#8984; + Space) an incredible tim
   saving tool. Upgrading it to support more filetypes will make you even more of a
   macOS ninja.
 images: 
-- /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+- /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: enhance-macos-quick-look
 tags:
 - productivity

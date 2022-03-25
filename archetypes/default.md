@@ -4,7 +4,7 @@ slug: "{{ .Name | urlize }}"
 date: {{ .Date }}
 description: ""
 images: 
-- /posts/_covers/under-construction.jpg
+- /covers/under-construction.jpg
 categories: []
 tags: []
 draft: true

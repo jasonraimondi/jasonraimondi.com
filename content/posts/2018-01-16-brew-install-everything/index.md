@@ -7,7 +7,7 @@ description: So you just got yourself a fresh Mac, now what? Getting your Mac co
   to your workflow is essential to productivity.  You spend the better part of every
   day using it, it is worth spending the time to get it set up right the first time.
 images: 
-- /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+- /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: brew-install-everything
 tags:
 - apple

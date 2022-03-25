@@ -8,7 +8,7 @@ description: Drone.io is a great, Docker based alternative to Jenkins that is a 
   building your images for you, especially images that have a build stage, is to use
   a multi-stage Dockerfile
 images: 
-- /posts/_covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg
+- /covers/jason-raimondi-PBtuf1i48Ow-unsplash.jpg
 slug: auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile
 tags:
 - docker

@@ -7,7 +7,7 @@ date: "2019-02-21T00:00:00-08:00"
 description: Adding this file will give you some control on the compilation of TypeScript
   into JavaScript.
 images: 
-- /posts/_covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
+- /covers/mpho-mojapelo-UHDx3BHlFvY-unsplash.jpg
 slug: what-is-a-tsconfig-file-and-why-do-you-need-it
 tags:
 - typescript

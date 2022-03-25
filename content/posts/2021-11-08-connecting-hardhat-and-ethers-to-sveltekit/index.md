@@ -4,7 +4,7 @@ slug: "connecting-hardhat-and-ethersjs-to-sveltekit"
 date: 2021-11-08T16:56:23-08:00
 description: ""
 images: 
-- /posts/_covers/under-construction.jpg
+- /covers/under-construction.jpg
 categories: 
 - frontend
 tags: 

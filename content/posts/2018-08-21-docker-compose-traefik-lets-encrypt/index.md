@@ -7,7 +7,7 @@ description: If you’ve ever configured Docker + Nginx + Lets Encrypt before, i
   some time. Tools like Certbot have made this process easier, but they are not without
   flaws, especially when deploying to a docker environment. Traefik makes it a cinch.
 images: 
-- /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+- /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: docker-compose-traefik-lets-encrypt
 tags:
 - docker-compose

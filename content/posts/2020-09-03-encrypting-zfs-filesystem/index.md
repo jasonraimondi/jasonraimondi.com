@@ -4,7 +4,7 @@ categories:
 date: "2020-09-03T13:00:00-07:00"
 description: Encrypt your zfs filesystems with an encryption key
 images: 
-- /posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
+- /covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
 imageCredit: '@morais_afonso https://unsplash.com/photos/JXgdQzexK9M'
 slug: encrypting-zfs-filesystem
 tags:

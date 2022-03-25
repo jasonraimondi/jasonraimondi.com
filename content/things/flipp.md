@@ -11,7 +11,7 @@ date: "2017-11-14T00:00:00-08:00"
 description: At Event Farm, we love throwing cool events with engaging, interactive
   technology. This was a little something a few coworkers and I created at Event Farm.
 images: 
-- /posts/_covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg
+- /covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg
 slug: flipp
 tags:
 - javascript

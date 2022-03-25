@@ -7,7 +7,7 @@ description: Too many layers and your machines take a large amount of storage an
   can take a long time to download and extract.  Too few layers and the machine takes
   F  O  R  E  V  E  R to rebuild.
 images: 
-- /posts/_covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
+- /covers/afonso-morais-JXgdQzexK9M-unsplash.jpg
 slug: optimizing-your-dockerfile-build-and-layers
 tags:
 - docker

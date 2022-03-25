@@ -7,7 +7,6 @@ categories: []
 tags: 
 - podcasts
 - infosec
-toc: false
 ---
 
 - Crazy video game hacking story - https://darknetdiaries.com/episode/7/

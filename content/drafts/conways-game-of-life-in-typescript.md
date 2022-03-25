@@ -5,7 +5,7 @@ date: "2019-03-26T00:00:00-07:00"
 description: Conways Game of Life TypeScript.
 draft: true
 images: 
-- /posts/_covers/under-construction.jpg
+- /covers/under-construction.jpg
 slug: conways-game-of-life-typescript
 tags:
 - typescript

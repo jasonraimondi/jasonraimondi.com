@@ -8,7 +8,7 @@ comments: true
 date: "2019-02-23T00:00:00-08:00"
 description: Absolute Imports in TypeScript using the tsconfig path resolver.
 images: 
-- /posts/_covers/graphic-node-TAHXyTpQBck-unsplash.jpg
+- /covers/graphic-node-TAHXyTpQBck-unsplash.jpg
 lastmod: "2019-10-01T00:00:00-07:00"
 slug: absolute-imports-with-typescript-and-webpack
 tags:

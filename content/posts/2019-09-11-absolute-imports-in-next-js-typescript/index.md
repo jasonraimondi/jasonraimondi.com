@@ -5,7 +5,7 @@ categories:
 date: 2019-09-11T05:30:00-0700
 draft: true
 images: 
-- /posts/_covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
+- /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: absolute-imports-in-next-js-typescript
 tags:
 - nextjs
