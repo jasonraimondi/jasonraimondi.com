@@ -21,9 +21,9 @@ title: Secure a Next.js application with JWT, and a private route higher order c
 
 ## Overview
 
-* In [the previous part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}) we created the JWT secured REST API
-* In [this part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-2.md" >}}) we will be creating the user facing Next.js application
-* In [the next part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-3.md" >}}) we will add pre-render async api calls to our Next.js application
+* In [the previous part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1" >}}) we created the JWT secured REST API
+* In [this part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-2" >}}) we will be creating the user facing Next.js application
+* In [the next part]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-3" >}}) we will add pre-render async api calls to our Next.js application
 
 ### Update as of June 24, 2020
  
@@ -520,7 +520,7 @@ Now users will actually be redirected on login, thus protecting our dashboard. T
 
 ### Successful login to dashboard
 
-So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined previously]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1.md" >}}).
+So now after a successful login attempt, we will see our dashboard with the full **AuthToken** details spread out. The authenticated user's email is _rickety\_cricket@example.com_, their session is valid, which means the token is not expired. You can also see the token itself, as well as the expiration date. In our case, the token expiration is set from our [RESTful server defined previously]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-1" >}}).
 
 {{< image/pop src="/posts/2019/08/login-to-dashboard.gif" alt="Login to dashboard" >}}
 
@@ -591,4 +591,4 @@ export default privateRoute(Logout);
 
 You can add a simple logout page which would allow users to navigate to `/logout` to be logged out which would be a much more typical use case.
 
-### Continue to [part 3 - adding pre-render asynchronous calls using **getInitialProps**.]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-3.md" >}})
+### Continue to [part 3 - adding pre-render asynchronous calls using **getInitialProps**.]({{< relref "/posts/2019-08-16-authenticating-nextjs-part-3" >}})

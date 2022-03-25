@@ -21,7 +21,7 @@ title: Showing code coverage for a React app using Code Climate and Travis CI
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/test_coverage)](https://codeclimate.com/github/jasonraimondi/traverse/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ad2b588b8f655bc8f384/maintainability)](https://codeclimate.com/github/jasonraimondi/traverse/maintainability)
 
-{{< image/pop src="/posts/2018/09/show-code-coverage-code-climate/readme-badges.png" alt="Test coverage badges in GitHub README.md" >}}
+{{< image/pop src="/posts/2018/09/show-code-coverage-code-climate/readme-badges.png" alt="Test coverage badges in GitHub README" >}}
 
 The other day I was trying to figure out how to use [Code Climate](https://codeclimate.com/) to generate Code Coverage for a Electron/React app I am building in TypeScript. I've used Code Climate in the past for generating code coverage with PHP projects with success and remember it being really easy to set up.
 
