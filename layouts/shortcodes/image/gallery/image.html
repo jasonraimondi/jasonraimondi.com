@@ -1,9 +1,11 @@
-{{- $src := .Get "src" -}}
+{{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
 
+{{- $img := $src.Resize "x500" }}
+
 {{- with .Parent -}}
-    <a class="image-gallery-anchor" href="{{ $src }}">
-        <img class="image-gallery-image" src="{{ $src }}" alt="{{ $alt }}" title="{{ $alt }}" />
+    <a class="image-gallery-anchor" href="{{ $img.RelPermalink | safeURL }}">
+        <img class="image-gallery-image" src="{{ $img.RelPermalink | safeURL }}" alt="{{ $alt }}" title="{{ $alt }}" />
         <small class="image-alt-text">{{ $alt }}</small>
     </a>
 {{- else -}}
