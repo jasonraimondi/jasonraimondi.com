@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "hugo serve -D",
+    "build": "hugo",
     "start:ci": "$HOME/hugo serve -D",
     "create-resume": "npm --prefix snapshotter run create-resume",
     "gen:resume": "start-server-and-test start http://localhost:1313 create-resume",
