@@ -6,7 +6,6 @@ categories:
 - frontend
 - backend
 - hardware
-comments: true
 date: "2017-11-01T00:00:00-07:00"
 description: A live view of Event Farm's upstairs/downstairs bathroom occupation status.
   Keep the window open for a few minutes during week day business hours and watch
@@ -62,4 +61,4 @@ The whole suite of canipoop apps is available at [https://github.com/pdt256/cani
     {{< image/gallery/image src="imgs/canipoop-arduino-enclosure.jpg" alt="Arduino enclosure" >}}
     {{< image/gallery/image src="imgs/canipoop-arduino-1.jpg" alt="Arduino Layout 1" >}}
     {{< image/gallery/image src="imgs/canipoop-ardunio-2.jpg" alt="Arduino Layout 2" >}}
-{{< \/image/gallery/frame >}}
+{{< /image/gallery/frame >}}
