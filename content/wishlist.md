@@ -7,7 +7,6 @@ lastmod: "2020-05-12T00:00:00-08:00"
 title: Wish List
 ---
 
-* **[Lounge Pants - any color or pattern](https://www.meundies.com/products/the-lounge-pant?pc=BL)**
 * **[Transparent Padlock with Broken Key](https://www.crazymaxdeal.com/products/transparent-padlock-with-broken-key?_pos=3&_sid=df0a03859&_ss=r)**
 * **[Outdoor Organizer](https://www.amazon.com/gp/product/B07H3L1H63)**
 * **[Maui Jim Sunglasses](https://www.amazon.com/gp/product/B07TMPWGDJ)**
