@@ -6,7 +6,7 @@
     <picture class="image-gallery-image">
       <source srcset='{{ ($src.Resize "x500 webp").RelPermalink | safeURL }}, {{ ($src.Resize "x1000 webp").RelPermalink | safeURL }} 2x' type="image/webp">
       <source srcset='{{ ($src.Resize "x500 jpg").RelPermalink | safeURL }}, {{ ($src.Resize "x1000 jpg").RelPermalink | safeURL }} 2x' type="image/jpg">
-      <img src='{{ ($src.Resize "x500 webp").RelPermalink | safeURL }}' alt="{{ $alt }}">
+      <img src='{{ ($src.Resize "x500 jpg").RelPermalink | safeURL }}' alt="{{ $alt }}">
     </picture>
     <small class="image-alt-text">{{ $alt }}</small>
   </a>
