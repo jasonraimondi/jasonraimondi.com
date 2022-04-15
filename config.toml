@@ -2,7 +2,7 @@ baseurl = "https://jasonraimondi.com"
 title = "Software Engineer"
 languageCode = "en-us"
 enableEmoji = true
-copyright = "© 2019 Jason Raimondi"
+copyright = "© 2022 Jason Raimondi"
 
 paginate = 15
 timeout = 120000
