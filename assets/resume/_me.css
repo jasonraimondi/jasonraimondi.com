@@ -60,6 +60,7 @@
   @media (--medium) {
     margin: 0;
     height: var(--text-lg);
+    padding: 0 0.5rem;
   }
 }
 

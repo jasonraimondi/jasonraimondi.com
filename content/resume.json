@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Jason Raimondi",
-    "label": "Software Engineer",
+    "label": "Senior Software Engineer",
     "picture": "https://jasonraimondi.com/misc/me/avatar-2021.jpg",
     "email": "resume@raimondi.us",
     "website": "https://jasonraimondi.com",
-    "summary": "Hi, I'm Jason. I am a Full Stack Software Engineer. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. I am a technologist and all-around computer geek. Give me a computer and I will be hacking in minutes, occupied for days.",
+    "summary": "Hi, I'm Jason. I am a Senior Full Stack Software Engineer. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. I am a polyglot.",
     "location": {
       "city": "Los Angeles",
       "countryCode": "US",
@@ -32,7 +32,7 @@
   "work": [
     {
       "company": "HitRECord",
-      "position": "Software Engineer",
+      "position": "Senior Software Engineer",
       "website": "https://hitrecord.org",
       "startDate": "2019-04-01",
       "endDate": "present",
@@ -41,7 +41,7 @@
         "__ Updated our software release workflow by making it very obvious current environment containing the code change for each ticket.",
         "Deployed our Ruby on Rails application on AWS EKS with autoscaling. Our application is able to handle large spikes in traffic by monitoring our puma total threads used vs available and scaling our infrastructure to additional nodes (and pods).",
         "Created a system to deploy review environments for open merge requests. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
-        "Refactored a legacy integration test suite into Cypress with parallelized workers, speeding up average CI test time from 60+ minutes to ~12 minutes.",
+        "Refactored a legacy integration test suite from Selenium to a parallel Cypress setup, speeding up average CI test time from 60+ minutes to ~12 minutes.",
         "Updated our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Decoupled legacy jquery + angular.js javascript application from Rails erb templates to an Angular SPA."
       ]
