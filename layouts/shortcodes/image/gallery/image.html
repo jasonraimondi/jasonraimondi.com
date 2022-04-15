@@ -1,13 +1,15 @@
 {{- $src := .Page.Resources.GetMatch (.Get "src") -}}
 {{- $alt := .Get "alt" -}}
 
-{{- $img := $src.Resize "x500" }}
+{{- $imgBig := $src.Resize "x2000" }}
 
 {{- with .Parent -}}
-    <a class="image-gallery-anchor" href="{{ $img.RelPermalink | safeURL }}">
-        <img class="image-gallery-image" src="{{ $img.RelPermalink | safeURL }}" alt="{{ $alt }}" title="{{ $alt }}" />
-        <small class="image-alt-text">{{ $alt }}</small>
-    </a>
-{{- else -}}
-    NOTHING HERE
+  <a class="image-gallery-anchor" target="_blank" href="{{ $imgBig.RelPermalink | safeURL }}">
+    <picture class="image-gallery-image">
+      <source srcset='{{ ($src.Resize "x500 webp").RelPermalink | safeURL }}, {{ ($src.Resize "x1000 webp").RelPermalink | safeURL }} 2x' type="image/webp">
+      <source srcset='{{ ($src.Resize "x500 jpg").RelPermalink | safeURL }}, {{ ($src.Resize "x1000 jpg").RelPermalink | safeURL }} 2x' type="image/jpg">
+      <img src='{{ ($src.Resize "x500 jpg").RelPermalink | safeURL }}' alt="{{ $alt }}">
+    </picture>
+    <small class="image-alt-text">{{ $alt }}</small>
+  </a>
 {{- end }}

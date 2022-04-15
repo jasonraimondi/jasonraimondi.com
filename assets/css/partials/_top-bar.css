@@ -46,24 +46,32 @@
   height: 4rem;
   margin-bottom: 0.5rem;
 
-img {
-  height: 100%;
-  border-radius: 0.5rem;
-}
+  picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
-@media (--medium) {
-  height: 5rem;
-}
+  img {
+    height: 100%;
+    border-radius: 0.5rem;
+  }
 
-@media (--large) {
-  height: 6rem;
-}
+  @media (--medium) {
+    height: 5rem;
+    transform: scale(1.2);
+  }
 
-@media (--xlarge) {
-  height: 7rem;
-}
+  @media (--large) {
+    height: 6rem;
+    transform: scale(1.4);
+  }
 
-@media (--xxlarge) {
-  height: 8rem;
-}
+  @media (--xlarge) {
+    height: 7rem;
+  }
+
+  @media (--xxlarge) {
+    height: 8rem;
+  }
 }
