@@ -65,6 +65,10 @@ ignorefiles = [ "content/.obsidian/.*" ]
   url = "/posts/traverse-2-electric-boogaloo"
   description = "Desktop app for explore trending GitHub repos (Mac OS/Linux)"
 [[Params.Projects.Link]]
+  name = "🔧 @jmondi/packages"
+  url = "https://github.com/jasonraimondi/jmondi"
+  description = "A collection of utility packages for use in a variety of projects. "
+[[Params.Projects.Link]]
   name = "🗺️ locatizor"
   url = "https://github.com/jasonraimondi/locatizor"
   description = "Desktop app to add GPS data to jpg's that are missing location (Mac OS/Linux)"
@@ -82,14 +86,8 @@ ignorefiles = [ "content/.obsidian/.*" ]
   name = "LinkedIn"
   url = "https://linkedin.com/in/jasonraimondi"
 [[Params.ExternalMenu.Link]]
-  name = "GoodReads"
-  url = "https://www.goodreads.com/jasonraimondi"
-[[Params.ExternalMenu.Link]]
   name = "Vimeo"
   url = "https://vimeo.com/jasonraimondi"
-[[Params.ExternalMenu.Link]]
-  name = "Leetcode"
-  url = "https://leetcode.com/jasonraimondi"
 
 [languages]
   [languages.en]
