@@ -55,7 +55,7 @@
       "summary": "Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. During my time there, I worked on adding features to web platform, including the frontend web client and backend API.",
       "highlights": [
         "Authored middleware client applications built in Golang and Node.js that consumed the Event Farm Rest API. Example applications include a custom event landing page builder for organizers to use so they could create and update, custom event signup flows, and custom event registration pages.",
-        "Built auto-generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift, and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on GitHub at [javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/golang-sdk). These client libraries were consumed in the official mobile apps as well as the web application."
+        "Built auto-generating client libraries for the Event Farm API. Clients were generated in PHP, Typescript, Golang, Python, Swift, and Java, and assisted in the consumption of the Event Farm Rest API. Typescript and Golang libraries were opened sourced and are available on GitHub at [javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/go-sdk). These client libraries were consumed in the official mobile apps as well as the web application."
       ]
     },
     {
