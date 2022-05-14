@@ -36,9 +36,7 @@
       "website": "https://hitrecord.org",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
-      "summary": "__",
       "highlights": [
-        "__ Updated our software release workflow by making it very obvious current environment containing the code change for each ticket.",
         "Deployed our Ruby on Rails application on AWS EKS with autoscaling. Our application is able to handle large spikes in traffic by monitoring our puma total threads used vs available and scaling our infrastructure to additional nodes (and pods).",
         "Created a system to deploy review environments for open merge requests. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
         "Refactored a legacy integration test suite from Selenium to a parallel Cypress setup, speeding up average CI test time from 60+ minutes to ~12 minutes.",
@@ -74,22 +72,11 @@
       "company": "Digital Canvas Design LLC",
       "position": "Owner, Software Consultant",
       "startDate": "2014-01-01",
-      "endDate": "2022-01-01",
-      "summary": "__ I began freelancing in 2009",
+      "endDate": "2020-05-01",
       "highlights": [
-        "Built and maintained custom web applications for clients with varying complexity.",
-        "Custom server builds, server installs, infrastructure buildout, web hosting."
-      ]
-    },
-    {
-      "company": "__ Recovery Passport",
-      "position": "Full Stack Web Developer",
-      "website": "https://www.linkedin.com/company/recovery-passport/about/",
-      "startDate": "2015-11-10",
-      "endDate": "2017-04-26",
-      "summary": "Recovery Passport was a three-tiered system with counselors, members, and supporters, and was used by alcohol and mental health recovery clinics around South Florida. Members were able to add journals or goals and were asked to check in daily. Counselors could monitor and comment on the member's status, and supporters could see and comment on public journals of their members.",
-      "highlights": [
-        "Built a Laravel 5.x MVP that was used by ~1000 users over 15 facilities in Florida."
+        "Built [Recovery Passport](https://www.linkedin.com/company/recovery-passport/about/), a three-tiered recovery assistance system with counselors, members, and supporters. Built an MVP that was used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
+        "Maintained custom web applications in PHP, Ruby, Nodejs, and Golang for clients with varying complexity.",
+        "Infrastructure build out, web hosting, custom server builds, server installs."
       ]
     },
     {
