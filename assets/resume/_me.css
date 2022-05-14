@@ -88,6 +88,10 @@
   }
 }
 
+.short-col {
+  margin-top: -0.75rem;
+}
+
 .downloader {
   position: absolute;
   top: 1.5rem;

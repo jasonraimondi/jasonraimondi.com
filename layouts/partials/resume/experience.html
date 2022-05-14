@@ -9,7 +9,7 @@
     {{ $prev := index $works (sub $idx 1) }}
 
     {{ if not (hasPrefix $work.company "__") -}}
-    <article class="resume-grid item">
+    <article class="resume-grid item {{ if (eq $work.company $prev.company) }}short-col{{ end }}">
         <div class="left-column">
             <p class="item-title">
             {{ if not (eq $work.company $prev.company) }}
