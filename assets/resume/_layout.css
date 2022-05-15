@@ -46,6 +46,10 @@
   line-height: var(--resume-line-height);
 }
 
+.item-subtitle.additional {
+  margin-top: 1rem;
+}
+
 .item-date {
   font-weight: var(--font-light);
   font-size: var(--text-md);
@@ -79,10 +83,10 @@
 .item-bullet {
   display: none;
 
-  position: relative; 
-  top: -2px; 
-  width: 0.4em; 
-  height: 0.4em; 
+  position: relative;
+  top: -2px;
+  width: 0.4em;
+  height: 0.4em;
   padding-right: 0.25em;
 
   @media (--medium) {
