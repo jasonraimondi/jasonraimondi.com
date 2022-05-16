@@ -37,10 +37,10 @@
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
       "highlights": [
-        "Deployed our Ruby on Rails application on AWS EKS with autoscaling. Our application is able to handle large spikes in traffic by monitoring our puma total threads used vs available and scaling our infrastructure to additional nodes (and pods).",
+        "Redeployed a Ruby on Rails application on AWS EKS. Monitored and autoscaled on remaining puma threads available, which allowed us to handle large spikes in traffic by autoscaling our infrastructure.",
         "Created a system to deploy review environments for open merge requests. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
+        "Sped up our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Refactored a legacy integration test suite from Selenium to a parallel Cypress setup, speeding up average CI test time from 60+ minutes to ~12 minutes.",
-        "Updated our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Decoupled legacy jquery + angular.js javascript application from Rails erb templates to an Angular SPA."
       ]
     },
