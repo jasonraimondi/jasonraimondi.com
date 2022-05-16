@@ -69,7 +69,19 @@
       ]
     },
     {
-      "company": "Digital Canvas Design LLC",
+      "company": "Recovery Passport",
+      "position": "Full Stack Web Developer",
+      "website": "https://www.linkedin.com/company/recovery-passport/about/",
+      "startDate": "2015-11-10",
+      "endDate": "2017-04-26",
+      "highlights": [
+        "Solo developer that built web based journaling system for alcohol and mental health recovery clinics using Laravel, MySQL and Vuejs.",
+        "Built an MVP that was used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
+        "Deployed application using Docker on Digital Ocean."
+      ]
+    },
+    {
+      "company": "__ Digital Canvas Design LLC",
       "position": "Owner / Consultant",
       "startDate": "2014-01-01",
       "endDate": "2020-05-01",
