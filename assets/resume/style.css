@@ -19,6 +19,10 @@
 @import 'resume/_skills.css';
 @import 'resume/_contact.css';
 
+:root {
+  --font-family-sans: Roboto, Ubuntu, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+}
+
 @media print {
   html {
     font-size: 90%;
