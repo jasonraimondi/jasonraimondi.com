@@ -21,6 +21,12 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
+      - name: Install Google Fonts
+        run: |
+          wget -O Fira_Sans.zip https://fonts.google.com/download?family=Fira%20Sans
+          unzip -d fira_sans/ Fira_Sans.zip
+          mv fira_sans /usr/share/fonts/
+          fc-cache -fv
       - name: Install Hugo
         run: |
           HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
