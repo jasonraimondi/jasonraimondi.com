@@ -19,13 +19,13 @@ title: Jason Raimondi
 
 ## I am a <span id="adjective1">technologist</span> and <span id="adjective2">computer geek</span>.
 
-I work at [@HITRECORD](//twitter.com/hitrecord) as a Staff Software Engineer.
+I work at [@HITRECORD](//twitter.com/hitrecord) as a Senior Software Engineer.
 
 I have been developing for the web since 2007. I've worked on everything from terrible old-school procedural spaghetti :spaghetti: monsters, to MVC frameworks, to 100% tested domain-driven applications. Early on, I was developing traditional server-rendered PHP applications. These days, I can work on whatever you need.
 
 I have professional experience building modular, horizontally scalable applications.
 
-If I’m not hanging out with my amazing [wife](//kimcalderone.com) and pup, I am most likely <span id="doing1">learning a new language</span> or <span id="doing2">practicing software architecture design patterns</span>.
+If I’m not hanging out with my amazing [wife](//kimcalderone.com) and [pup](https://jasonraimondi.com/images/zombie-avatar_hu9363f3c1e4663e069451d44174bd9478_83191_0x1000_resize_q75_h2_box_3.webp), I am most likely <span id="doing1">learning a new language</span> or <span id="doing2">practicing software architecture design patterns</span>.
 
 {{< index/recent-projects >}}
 
