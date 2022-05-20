@@ -75,7 +75,7 @@
       "endDate": "2017-04-26",
       "highlights": [
         "Solo developer that built web based journaling system for alcohol and mental health recovery clinics using Laravel, MySQL and Vuejs.",
-        "Built an MVP that was used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
+        "Maintained an MVP that was used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
         "Deployed application using Docker on Digital Ocean."
       ]
     },
@@ -98,9 +98,8 @@
       "endDate": "2015-11-01",
       "summary": "At Web Services, I created and maintained embedded web applications for local news station around the country. Applications ranged from adopt-a-pet services to restaurant inspections. I also worked on internal tooling as well as a development on a tv ad tracking service.",
       "highlights": [
-        "Built and maintained various PHP MVC applications for local news stations. Applications were built in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP.",
-        "__ Improved web scrapers",
-        "Integrated various web 3rd party services including Google and Twilio into customer applications.",
+        "Built analytics application for advertising agencies that imported and normalized tv commercial buys and compared them against CTA's in the commercials. Integrated various web 3rd party services including Web Analytics, SMS, Social Hashtags to compare against commercial runtimes.",
+        "Maintained various PHP MVC applications and web scrapers for local news stations that ranged from adopt-a-pet to restaurant inspections. Applications were built in an assortment of MVC frameworks including Laravel, CodeIgniter, and FuelPHP.",
         "Updated and modernized [WDIV Click on Detroit's “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application in from a Laravel 3.x application to Laravel 5.1 LTS."
       ]
     },
@@ -175,22 +174,10 @@
       "summary": "Dynamic screenshots for the web over a simple http api."
     },
     {
-      "name": "locatizor",
-      "releaseDate": "2020-03-03",
-      "website": "https://github.com/jasonraimondi/locatizor",
-      "summary": "Desktop app to add GPS data to jpg's that are missing location (Mac OS/Linux)."
-    },
-    {
       "name": "traverse",
       "releaseDate": "2019-04-09",
       "website": "https://github.com/jasonraimondi/traverse",
       "summary": "Desktop app for explore trending GitHub repos (Mac OS/Linux)."
-    },
-    {
-      "name": "restforcephp",
-      "releaseDate": "2016-11-21",
-      "website": "https://github.com/eventfarm/restforcephp",
-      "summary": "PHP API client library for Salesforce."
     }
   ],
   "skills": [

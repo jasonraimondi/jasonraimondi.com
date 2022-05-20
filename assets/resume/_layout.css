@@ -32,12 +32,6 @@
   margin-top: 0;
   margin-bottom: 0;
   line-height: var(--resume-line-height);
-
-  @media print {
-    a {
-      color: var(--colors-black);
-    }
-  }
 }
 
 .item-subtitle {
