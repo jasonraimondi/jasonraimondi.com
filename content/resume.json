@@ -37,11 +37,10 @@
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
       "highlights": [
-        "Deployed Ruby on Rails application to AWS EKS. Monitored and autoscaled on remaining puma threads available, which allowed us to handle large spikes in traffic by autoscaling our infrastructure.",
-        "Created a system to deploy review environments for open merge requests. This allowed both developers and QA an opportunity to see and manually test an isolated environment for all incoming merge requests.",
-        "Sped up our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
-        "Refactored a legacy integration test suite from Selenium to a parallel Cypress setup, speeding up average CI test time from 60+ minutes to ~12 minutes.",
-        "Decoupled legacy jquery + angular.js javascript application from Rails erb templates to an Angular SPA."
+        "Created a system to spin up review environments for open merge requests, allowing QA to manually test and see an isolated environment for all incoming merge requests. This ultimately enabled us to update our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
+        "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
+        "Decoupled an angular.js application in Rails erb templates to an Angular SPA + Rails API.",
+        "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to a Cypress."
       ]
     },
     {
@@ -99,7 +98,8 @@
       "endDate": "2015-11-01",
       "summary": "At Web Services, I created and maintained embedded web applications for local news station around the country. Applications ranged from adopt-a-pet services to restaurant inspections. I also worked on internal tooling as well as a development on a tv ad tracking service.",
       "highlights": [
-        "Built and maintained various PHP MVC applications in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP.",
+        "Built and maintained various PHP MVC applications for local news stations. Applications were built in an assortment of frameworks, from Code Igniter to Laravel, and FuelPHP.",
+        "__ Improved web scrapers",
         "Integrated various web 3rd party services including Google and Twilio into customer applications.",
         "Updated and modernized [WDIV Click on Detroit's “Vote 4 the Best”](https://www.clickondetroit.com/vote-4-the-best/) voting application in from a Laravel 3.x application to Laravel 5.1 LTS."
       ]
