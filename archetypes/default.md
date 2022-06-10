@@ -8,5 +8,4 @@ images:
 categories: []
 tags: []
 draft: true
-toc: false
 ---

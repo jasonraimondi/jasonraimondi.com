@@ -158,7 +158,7 @@ cacheControl = "max-age=31536000, no-transform, public"
 gzip = false
 
 [[deployment.matchers]]
-pattern = "^.+\\.(html|xml|json)$"
+pattern = "^.+\\.(html|txt|xml|json)$"
 gzip = true
 
 [outputs]
