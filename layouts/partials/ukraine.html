@@ -25,3 +25,6 @@
         Slava Ukraini!
     </a>
 </div>
+
+{{- $russia := resources.Get "js/fuck-putins-russia.ts" | js.Build (dict "minify" false) | fingerprint -}}
+<script type="text/javascript" src="{{ $russia.Permalink }}" integrity="{{ $russia.Data.Integrity }}"></script>
