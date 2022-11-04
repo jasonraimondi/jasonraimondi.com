@@ -1,11 +1,10 @@
 ---
+archived: true
 categories:
 - workflow
 comments: true
 date: "2018-01-16T00:00:00-08:00"
-description: So you just got yourself a fresh Mac, now what? Getting your Mac configured
-  to your workflow is essential to productivity.  You spend the better part of every
-  day using it, it is worth spending the time to get it set up right the first time.
+description: So you just got yourself a fresh Mac, now what? Getting your Mac configured to your workflow is essential to productivity.  You spend the better part of every day using it, it is worth spending the time to get it set up right the first time.
 images: 
 - /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: brew-install-everything

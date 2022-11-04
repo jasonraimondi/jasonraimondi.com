@@ -1,4 +1,5 @@
 ---
+archived: true
 categories:
 - ops
 comments: true
