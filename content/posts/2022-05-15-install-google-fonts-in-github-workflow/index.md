@@ -3,8 +3,8 @@ title: "Install Google Fonts in Github Workflow"
 slug: "install-google-fonts-in-github-workflow"
 date: 2022-05-15T20:36:13-07:00
 description: "An example workflow showing how to install Google Fonts into a Github Workflow"
-images: 
-- /covers/under-construction.jpg
+# images: 
+# - /covers/under-construction.jpg
 categories: 
 - ops
 tags:
