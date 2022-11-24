@@ -296,8 +296,6 @@ declare global {
 }
 ```
 
-If you happen to know how to type `window.ethereum` better than `any`, please shoot me a tweet at {{< twitter >}} and let me know. I tried to find actual typings and was unsuccessful. 
-
 ### Save our client
 
 Now that we have connected our Svelte application to metamask, let's save our work.
