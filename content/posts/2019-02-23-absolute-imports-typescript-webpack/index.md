@@ -1,4 +1,5 @@
 ---
+archived: true
 aliases:
 - /posts/fully-qualified-name-in-typescript-absolute-imports/
 categories:

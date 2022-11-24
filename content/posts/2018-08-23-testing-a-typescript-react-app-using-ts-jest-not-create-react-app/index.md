@@ -1,4 +1,5 @@
 ---
+archived: true
 categories:
 - frontend
 comments: true
