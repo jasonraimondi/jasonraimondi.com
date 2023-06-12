@@ -31,9 +31,17 @@
   },
   "work": [
     {
+      "company": "Repeat",
+      "position": "Senior Software Engineer",
+      "website": "https://www.getrepeat.io/",
+      "startDate": "2022-06-01",
+      "endDate": "present",
+      "highlights": []
+    },
+    {
       "company": "HitRECord",
       "position": "Senior Software Engineer",
-      "website": "https://hitrecord.org",
+      "website": "https://web.archive.org/web/20220730210219/https://hitrecord.org/",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
       "highlights": [
