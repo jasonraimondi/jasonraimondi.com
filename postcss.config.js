@@ -23,5 +23,6 @@ module.exports = {
         "nesting-rules": true,
       },
     },
+    cssnano: { preset: ["default"] },
   },
 };
