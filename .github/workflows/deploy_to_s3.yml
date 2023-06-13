@@ -2,25 +2,23 @@ name: deploy to s3
 
 env:
   HUGO_VERSION: 0.93.2
-  NODE_VERSION: 16.14.0
-  PNPM_VERSION: 6.22.2
 
 on: push
 
 jobs:
   build:
-    name: deploy to s3
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2
         with:
-          version: ${{ env.PNPM_VERSION }}
-      - uses: actions/setup-node@v2
+          version: "8.x"
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: '.tool-versions'
           cache: pnpm
           cache-dependency-path: pnpm-lock.yaml
+          registry-url: "https://registry.npmjs.org"
       - name: Install Google Fonts
         run: |
           wget -O Fira_Sans.zip https://fonts.google.com/download?family=Fira%20Sans
