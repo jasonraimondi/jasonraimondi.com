@@ -33,6 +33,7 @@ jobs:
           tar xvzf ${HUGO_DOWNLOAD} hugo
           mv hugo $HOME/hugo
       - run: pnpm install --frozen-lockfile --production false
+      - run: npx playwright install --with-deps
       - run: pnpm gen:resume:ci
       - run: $HOME/hugo --gc --cleanDestinationDir
       - name: Deploy to S3
