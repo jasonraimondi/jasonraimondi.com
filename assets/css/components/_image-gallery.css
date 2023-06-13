@@ -6,7 +6,7 @@
 }
 
 .image-gallery-image,
-.image-gallery-image img{
+.image-gallery-image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -21,7 +21,7 @@
   font-style: italic;
   color: var(--colors-gray-500);
 
-  a:hover {
+  & a:hover {
     background-image: none !important;
   }
 }

@@ -1,51 +1,50 @@
 .paginator {
-    width: 100%;
-    max-width: 300px;
-    margin: 2rem 0;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem 0;
 }
 
 .pagination {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 
-    li {
-        margin: 0;
-        padding: 0;
+  & li {
+    margin: 0;
+    padding: 0;
 
-        a {
-            padding: 4px 8px;
-            background-color: var(--colors-green-500);
-            color: var(--colors-white);
-            text-decoration: none;
+    & a {
+      padding: 4px 8px;
+      background-color: var(--colors-green-500);
+      color: var(--colors-white);
+      text-decoration: none;
 
-            @media (--dark) {
-                background-color: var(--colors-purple-500);
-            }
+      @media (--dark) {
+        background-color: var(--colors-purple-500);
+      }
 
-            &:hover {
-                background-color: var(--colors-green-800);
-                color: var(--colors-white);
-
-                @media (--dark) {
-                    background-color: var(--colors-purple-300);
-                }
-            }
-        }
-    }
-
-    .disabled a {
+      &:hover {
+        background-color: var(--colors-green-800);
         color: var(--colors-white);
-        background-color: var(--colors-gray-800);
-        pointer-events: none;
-        cursor: default;
-        text-decoration: none;
-    }
 
+        @media (--dark) {
+          background-color: var(--colors-purple-300);
+        }
+      }
+    }
+  }
+
+  & .disabled a {
+    color: var(--colors-white);
+    background-color: var(--colors-gray-800);
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
 }
 
 .page-item.active .page-link {
-    background-color: var(--colors-gray-800);
-    cursor: default;
-    pointer-events: none;
+  background-color: var(--colors-gray-800);
+  cursor: default;
+  pointer-events: none;
 }

@@ -36,7 +36,7 @@
 .asciicast  {
   width: 100%;
 
-  iframe {
+  & iframe {
     width: 100%;
   }
 }

@@ -18,11 +18,11 @@
   text-transform: uppercase;
   font-weight: var(--font-semibold);
 
-  li {
+  & li {
     margin-right: 1em;
   }
 
-  .label {
+  & .label {
     position: relative;
     bottom: 2px;
   }
@@ -46,13 +46,13 @@
   height: 4rem;
   margin-bottom: 0.5rem;
 
-  picture {
+  & picture {
     display: block;
     height: 100%;
     width: 100%;
   }
 
-  img {
+  & img {
     height: 100%;
     border-radius: 0.5rem;
   }

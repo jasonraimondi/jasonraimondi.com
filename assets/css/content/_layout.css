@@ -13,7 +13,7 @@
     margin-top: 2rem;
   }
 
-  .label {
+  & .label {
     position: relative;
     top: -2px;
     margin-left: 0.25rem;
@@ -23,7 +23,7 @@
 .over-there-links {
   margin-bottom: 2rem;
 
-  p {
+  & p {
     margin: 0;
   }
 
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
 
-    li {
+    & li {
       margin-left: 1rem;
 
       &:first-child {
@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
 
-  a {
+  & a {
     color: var(--colors-black);
 
     @media (--dark) {
@@ -88,7 +88,7 @@
     margin-left: 1rem;
   }
 
-  > li {
+  & > li {
     display: flex;
     align-self: center;
     padding-left: 1rem;
@@ -113,11 +113,11 @@
   align-items: center;
   grid-area: menutoggle;
 
-  p {
+  & p {
     font-size: 0.75rem;
   }
 
-  .close {
+  & .close {
     display: none;
   }
 

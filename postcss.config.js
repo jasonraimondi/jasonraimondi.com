@@ -6,7 +6,6 @@ module.exports = {
       path: [resolve(__dirname, "assets")],
     },
     "postcss-mixins": {},
-    "postcss-nested": {},
     "postcss-custom-media-generator": {
       "--light": "prefers-color-scheme: light",
       "--dark": "prefers-color-scheme: dark",

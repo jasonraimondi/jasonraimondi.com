@@ -25,11 +25,11 @@
   display: flex;
   flex-wrap: wrap;
 
-  li {
+  & li {
     margin-right: 0.5em;
   }
 
-  a {
+  & a {
     margin: 0;
 
     &:hover,
@@ -42,73 +42,73 @@
 .single--post-body {
   padding-top: 1rem;
 
-  p,
-  a,
-  ol,
-  ul,
-  div,
-  pre {
+  & p,
+  & a,
+  & ol,
+  & ul,
+  & div,
+  & pre {
     margin-bottom: 1em;
     line-height: 1.5;
   }
 
-  li > ul {
+  & li > ul {
     margin-bottom: 0;
   }
 
-  small {
+  & small {
     line-height: 1.2;
   }
 
-  ol,
-  ul {
+  & ol,
+  & ul {
     margin-left: 1em;
 
-    li {
+    & li {
       margin-bottom: 0.25em;
     }
   }
 
-  ul {
+  & ul {
     list-style: disc;
   }
 
-  ol {
+  & ol {
     list-style: number;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
 
-  p > code {
+  & p > code {
     word-break: break-all;
   }
 
-  .header-link {
+  & .header-link {
     margin-right: 0.5em;
   }
 }
 
 #TableOfContents {
-  > ul {
+  & > ul {
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
   }
-  li > ul {
+  & li > ul {
     margin-left: 0;
   }
 }
 
 .footnotes {
-  hr {
+  & hr {
     color: var(--colors-gray-100);
     margin: 2rem;
   }
@@ -117,11 +117,11 @@
   font-weight: var(--font-semibold);
   padding-bottom: 1rem;
 
-  ol::before {
+  & ol::before {
     content: "Sources:"
   }
 
-  li {
+  & li {
     margin-left: 1.5rem;
 
     &:first-child {
@@ -129,7 +129,7 @@
     }
   }
 
-  a {
+  & a {
     font-weight: var(--font-medium);
   }
 }
@@ -141,11 +141,11 @@
   display: inline-flex;
   align-self: start;
 
-  a {
+  & a {
     display: inline-block;
   }
 
-  svg {
+  & svg {
     height: 1rem;
     margin-right: 0.5rem;
     fill: currentColor;

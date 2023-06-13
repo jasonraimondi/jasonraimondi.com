@@ -8,7 +8,7 @@
   overflow-x: auto;
   margin: 2em 0 1em;
 
-  li {
+  & li {
     display: inline-block;
 
     &::after {
