@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  const resumePath = "../static/resume";
+  const resumePath = "./static/resume";
   try {
     await page.goto('http://localhost:1313/resume');
   } catch {

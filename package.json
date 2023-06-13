@@ -3,9 +3,11 @@
   "license": "MIT",
   "version": "0.0.0-rc1",
   "devDependencies": {
+    "@jmondi/tsconfig": "0.2.0-alpha.3",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
     "normalize.css": "^8.0.1",
+    "playwright": "^1.35.0",
     "postcss": "^8.4.24",
     "postcss-cli": "^10.1.0",
     "postcss-custom-media-generator": "^1.1.0",
@@ -13,14 +15,15 @@
     "postcss-mixins": "^9.0.4",
     "postcss-preset-env": "^8.4.2",
     "start-server-and-test": "^2.0.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },
   "scripts": {
     "dev": "hugo serve -D",
     "build": "hugo --gc --cleanDestinationDir",
     "start:ci": "$HOME/hugo serve -D",
-    "create-resume": "npm --prefix snapshotter run create-resume",
-    "gen:resume": "start-server-and-test start http://localhost:1313 create-resume",
+    "create-resume": "ts-node ./resume-snapshotter.ts",
+    "gen:resume": "start-server-and-test dev http://localhost:1313 create-resume",
     "gen:resume:ci": "start-server-and-test start:ci http://localhost:1313 create-resume"
   },
   "browserslist": [
