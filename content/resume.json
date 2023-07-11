@@ -63,7 +63,7 @@
       "endDate": "2019-03-01",
       "summary": "Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. During my time there, I worked on adding features to web platform, including the frontend web client and backend API.",
       "highlights": [
-        "Spearheaded the modernization of a legacy PHP 5 system. Successfully transitioned it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application, adhering to Domain-Driven Design (DDD) and Command Query Separation (CQS) principles. Accomplished 85%+ code coverage to ensure robust and reliable functionality.",
+        "Led the modernization of a legacy PHP 5 system. Successfully transitioned it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application, adhering to Domain-Driven Design (DDD) and Command Query Separation (CQS) principles. Accomplished 85%+ code coverage to ensure robust and reliable functionality.",
         "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API. I created solutions like a custom event landing page builder, enabling organizers to design and update event signup flows and registration pages, resulting in enhanced user experience and streamlined event management."
       ]
     },
