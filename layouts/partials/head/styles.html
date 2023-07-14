@@ -6,7 +6,7 @@
   }
 </style>
 
-{{ $style := resources.Get "css/style.css" }}
+{{ $style := resources.Get "style.css" }}
 {{ if site.IsServer -}}
   {{- $css := $style | resources.PostCSS -}}
   <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">

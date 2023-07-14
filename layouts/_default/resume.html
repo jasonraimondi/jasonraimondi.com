@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $resume.basics.name }}'s Resume</title>
-    {{ $style := resources.Get "resume/style.css" -}}
+    {{ $style := resources.Get "resume.css" -}}
     {{ if site.IsServer -}}
         {{ $css := $style | resources.PostCSS -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
