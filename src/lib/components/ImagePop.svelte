@@ -1,0 +1,87 @@
+<script lang="ts">
+  export let src: string;
+  export let alt: string;
+  export let portrait = false;
+</script>
+
+<div class="image-pop-container {portrait ? 'portrait' : ''}">
+  <img {src} {alt} title={alt} class="pops" />
+  <small class="image-pop-title">{alt}</small>
+</div>
+
+<style lang="postcss">
+  .image-pop-container {
+    margin: 15px auto 30px;
+
+    & :global(.portrait) {
+      @media (--large) {
+        margin: 0;
+        margin-right: 30%;
+      }
+
+      @media (--xlarge) {
+        margin: 0;
+        margin-right: 40%;
+      }
+
+      @media (--xxlarge) {
+        margin: 0;
+        margin-right: 50%;
+      }
+    }
+  }
+
+  .image-pop-container > img {
+    margin: 10px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  }
+
+  .image-pop-title {
+    font-style: italic;
+    color: var(--colors-gray-500);
+    font-smooth: always;
+  }
+
+  .pops {
+    max-width: 100%;
+    width: 100%;
+    transition: all 200ms;
+  }
+
+  @media (--large) {
+    .pops:hover {
+      max-width: 104% !important;
+      width: 104% !important;
+      margin-left: -2%;
+    }
+
+    .portrait .pops:hover {
+      margin-left: 0;
+    }
+  }
+
+  @media (--xlarge) {
+    .pops:hover {
+      max-width: 106% !important;
+      width: 106% !important;
+      margin-left: -3%;
+    }
+
+    .portrait .pops:hover {
+      margin-left: 0;
+    }
+  }
+
+  @media (--xxlarge) {
+    .pops:hover {
+      max-width: 110% !important;
+      width: 110% !important;
+      margin-left: -5%;
+    }
+
+    .portrait .pops:hover {
+      margin-left: 0;
+    }
+  }
+</style>

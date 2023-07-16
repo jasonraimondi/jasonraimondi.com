@@ -1,0 +1,32 @@
+@media print {
+  .skills {
+    display: none;
+  }
+}
+
+skill-title {
+  margin: 0;
+}
+
+.skill-section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .label {
+  font-size: var(--text-md);
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  @media print {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media print {
+  .skill-item {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}

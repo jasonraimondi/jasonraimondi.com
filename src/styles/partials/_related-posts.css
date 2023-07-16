@@ -1,0 +1,12 @@
+.related-posts {
+  margin: 2rem 0;
+}
+.related-posts--title {
+  margin: 0 0 1em;
+}
+.related-posts--list {
+}
+.related-posts--list--item {
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,33 @@
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style: number;
+}
+
+ul {
+  list-style: none;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.font-mono {
+  font-family: var(--font-family-mono);
+}
+
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--font-family-serif);
+}

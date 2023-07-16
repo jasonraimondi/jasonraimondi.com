@@ -1,0 +1,12 @@
+<script lang="ts">
+  export let me: Basics;
+</script>
+
+{#if !me.summary.startsWith("__")}
+  <section id="experiences" class="section">
+    <header class="resume-grid">
+      <h3 class="left-column section-title">Summary</h3>
+      <p class="main-column" style="margin-top:1em;line-height: 1.6">{me.summary}</p>
+    </header>
+  </section>
+{/if}
