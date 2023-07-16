@@ -5,7 +5,7 @@
     "picture": "https://jasonraimondi.com/misc/me/avatar-2021.jpg",
     "email": "resume@raimondi.us",
     "website": "https://jasonraimondi.com",
-    "summary": "Hi, I'm Jason. I am a Senior Full Stack Software Engineer. I have been developing for the web since 2007. I’ve worked on everything from old-school procedural monsters, to MVC frameworks, to fully tested domain-driven applications.",
+    "summary": "Hi, I'm Jason. I am a Senior Full Stack Software Engineer with experience in web development since 2007. I have a strong background in developing MVC frameworks and fully tested domain-driven applications. I am passionate about streamlining processes, enhancing test coverage, and improving application performance.",
     "location": {
       "city": "St. Petersburg",
       "countryCode": "US",
@@ -52,7 +52,7 @@
         "Created a system to spin up review environments for open merge requests, allowing QA to manually test and see an isolated environment for all incoming merge requests. This ultimately enabled us to update our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
         "Decoupled an angular.js application in Rails erb templates to an Angular SPA + Rails API.",
-        "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to a Cypress."
+        "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to Cypress."
       ]
     },
     {
@@ -61,10 +61,10 @@
       "website": "https://eventfarm.com",
       "startDate": "2018-09-01",
       "endDate": "2019-03-01",
-      "summary": "Event Farm is a marketing platform built for event organizers to plan, market, monitor, and review event data. During my time there, I worked on adding features to web platform, including the frontend web client and backend API.",
+      "summary": "At Event Farm, a marketing platform for event organizers, I contributed to the modernization and development of features for the web platform, including the frontend web client and backend API.",
       "highlights": [
-        "Led the modernization of a legacy PHP 5 system. Successfully transitioned it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application, adhering to Domain-Driven Design (DDD) and Command Query Separation (CQS) principles. Accomplished 85%+ code coverage to ensure robust and reliable functionality.",
-        "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API. I created solutions like a custom event landing page builder, enabling organizers to design and update event signup flows and registration pages, resulting in enhanced user experience and streamlined event management."
+        "Led the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
+        "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API, including a custom event landing page builder that enhanced user experience and streamlined event management."
       ]
     },
     {
@@ -74,9 +74,9 @@
       "startDate": "2016-02-01",
       "endDate": "2018-09-01",
       "highlights": [
-        "Led the development of a Salesforce and Event Farm integration, streamlining attendee management. This solution updated the status of Salesforce Leads and Contacts in sync with attendees' event status. In addition, I open-sourced the [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) we built and used for the integration, contributing to the broader developer community.",
-        "Created auto-generating client libraries for the Event Farm API in multiple languages, including PHP, Typescript, Golang, Swift, and Java. I open-sourced the Typescript and Golang libraries on GitHub ([javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/go-sdk)), empowering developers and aiding API consumption. These libraries were incorporated in the official mobile apps and the web application, boosting system interoperability and efficiency.",
-        "Maintained and improved a CakePHP API and AngularJS/Angular application, ensuring its responsiveness and efficiency, which significantly improved user experience."
+        "Led the development of a Salesforce and Event Farm integration, streamlining attendee management. Open-sourced the [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) used for the integration, contributing to the developer community.",
+        "Created auto-generating client libraries for the Event Farm API in multiple languages, including PHP, Typescript, Golang, Swift, and Java. Open-sourced the Typescript and Golang libraries on GitHub ([javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/go-sdk)) for improved system interoperability and efficiency.",
+        "Maintained and improved a CakePHP API and AngularJS/Angular application, ensuring responsiveness and efficiency for enhanced user experience."
       ]
     },
     {
@@ -86,7 +86,7 @@
       "startDate": "2015-11-10",
       "endDate": "2017-04-26",
       "highlights": [
-        "Solo designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vuejs. This tool streamlined therapy processes and enhanced patient engagement.",
+        "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vuejs. Streamlined therapy processes and enhanced patient engagement.",
         "Sustained a Minimum Viable Product that served approximately 1,000 patients across multiple clinics in South Florida, demonstrating its real-world utility and positive impact on mental health recovery.",
         "Leveraged Docker for deployment on Digital Ocean, ensuring efficient application management and consistent run-time environment."
       ]
@@ -97,9 +97,9 @@
       "startDate": "2014-01-01",
       "endDate": "2020-05-01",
       "highlights": [
-        "Built [Recovery Passport](https://www.linkedin.com/company/recovery-passport/about/), a three-tiered recovery assistance system with counselors, members, and supporters. Built an MVP that was used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
+        "Designed and built [Recovery Passport](https://www.linkedin.com/company/recovery-passport/about/), a three-tiered recovery assistance system with counselors, members, and supporters, used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida.",
         "Maintained custom web applications in PHP, Ruby, Nodejs, and Golang for clients with varying complexity.",
-        "Infrastructure build out, web hosting, custom server builds, server installs."
+        "Provided infrastructure build out, web hosting, and custom server builds and installations."
       ]
     },
     {
@@ -108,11 +108,11 @@
       "website": "https://www.linkedin.com/company/web-services-llc/about/",
       "startDate": "2014-06-01",
       "endDate": "2015-11-01",
-      "summary": "Web Services LLC enabled me to create varied, impactful embedded web applications for nationwide news stations, while also refining internal tools and a TV ad tracking service.",
+      "summary": "At Web Services LLC, I created impactful embedded web applications for nationwide news stations, while also refining internal tools and a TV ad tracking service.",
       "highlights": [
-        "Devised an analytics application for advertising agencies, which enhanced marketing strategies by correlating commercial airtime with customer response via web analytics, SMS, and social hashtags.",
-        "Preserved and upgraded numerous PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations. Expertise extended across MVC frameworks like Laravel, CodeIgniter, and FuelPHP.",
-        "Successfully modernized WDIV Click on Detroit's 'Vote 4 the Best' voting application, transitioning from Laravel 3.x to Laravel 5.1 LTS, thereby improving performance and maintainability."
+        "Developed an analytics application for advertising agencies, correlating commercial airtime with customer response through web analytics, SMS, and social hashtags.",
+        "Preserved and upgraded numerous PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations using Laravel, CodeIgniter, and FuelPHP.",
+        "Modernized WDIV Click on Detroit's 'Vote 4 the Best' voting application, transitioning from Laravel 3.x to Laravel 5.1 LTS, improving performance and maintainability."
       ]
     },
     {
@@ -121,10 +121,10 @@
       "website": "https://aceblueprinting.com/",
       "startDate": "2011-05-01",
       "endDate": "2014-01-01",
-      "summary": "At ACE Blueprinting & Graphics, a Ft. Lauderdale printing shop, I spent several summers as a Graphic Designer, honing my craft and delivering high-quality design solutions.",
+      "summary": "At ACE Blueprinting & Graphics, a Ft. Lauderdale printing shop, I honed my design skills and delivered high-quality design solutions.",
       "highlights": [
-        "Executed a range of graphic projects, where I took responsibility for the full design lifecycle - from concept creation to the final print. My design work, using Illustrator and Photoshop, demonstrated a keen understanding of both vector and raster graphics.",
-        "Designed and assembled custom PC workstations, facilitating cutting-edge graphic editing and efficient print server operations, significantly enhancing productivity."
+        "Executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print using Illustrator and Photoshop.",
+        "Designed and assembled custom PC workstations, facilitating cutting-edge graphic editing and efficient print server operations for enhanced productivity."
       ]
     },
     {
@@ -133,7 +133,7 @@
       "website": "https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/",
       "startDate": "2012-04-01",
       "endDate": "2012-07-01",
-      "summary": "Collaborated with two Ph.D. candidates to gather data that was used to research community uses of the Sarasota Bay and the Ace Basin.",
+      "summary": "Collaborated with two Ph.D. candidates to gather data used for community research on the Sarasota Bay and the Ace Basin.",
       "highlights": [
         "Authored a PHP + jQuery + Google Maps-based interactive survey to gather data on the [Sarasota Bay](https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/) in Florida and the [Ace Basin](https://web.archive.org/web/20130921231828/http://acebasinsurvey.org/) in South Carolina."
       ]
@@ -144,9 +144,9 @@
       "website": "https://web.archive.org/web/20080917053305/http://www.studentgameday.com/",
       "startDate": "2008-06-01",
       "endDate": "2009-12-01",
-      "summary": "Student Game Day was a company/site some friends in college created while attending UF that was a tool to ",
+      "summary": "At Student Game Day, a tool for selling student college football tickets, I assisted in the design and HTML/CSS of a custom-built web app using procedural PHP.",
       "highlights": [
-        "Assisted the design and HTML/CSS of a custom built web app for selling student college football tickets built in old-school procedural PHP."
+        "Contributed to the design and HTML/CSS of a custom-built web app for selling student college football tickets, built with procedural PHP."
       ]
     }
   ],
@@ -171,7 +171,7 @@
       "name": "typescript-oauth2-server",
       "releaseDate": "2020-10-19",
       "website": "https://github.com/jasonraimondi/typescript-oauth2-server",
-      "summary": "A standards-compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
+      "summary": "An implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
     },
     {
       "name": "promise-watch",
@@ -189,7 +189,7 @@
       "name": "traverse",
       "releaseDate": "2019-04-09",
       "website": "https://github.com/jasonraimondi/traverse",
-      "summary": "Desktop app for explore trending GitHub repos (Mac OS/Linux)."
+      "summary": "Desktop app to explore trending GitHub repos (Mac OS/Linux)."
     }
   ],
   "skills": [
