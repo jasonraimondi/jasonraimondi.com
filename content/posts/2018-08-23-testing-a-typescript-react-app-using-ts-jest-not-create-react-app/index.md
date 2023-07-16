@@ -22,7 +22,7 @@ There is very little documentation on setting up a TypeScript React project that
 
 The [Create React App]([GitHub - facebook/create-react-app: Create React apps with no build configuration.](https://github.com/facebook/create-react-app)) helper works great for greenfield projects, or projects that are not going to deviate at all from the structure and tools the Create React App helper gives you.
 
-![Jest Results with Code Coverage](/posts/2018/09/testing-typescript-react-app/intellij-test-suite.png)
+![Jest Results with Code Coverage](./imgs/intellij-test-suite.png)
 
 My goal is to give you a fairly slim (while remaining production ready) tested, TypeScript React app, WITH code coverage.
 
@@ -137,7 +137,7 @@ Now you are going to nee do edit our `jest.config.js`, this time adding a module
 You can manually run the tests with the `npm run test` command.
 
 ```bash
-$ npm run test                                                                                                                                                                                     ✘ 1
+$ npm run test
 
 > @jmondi/typescript-react-starter@ test /Users/jraimondi/Code/typescript-react-starter
 > jest
@@ -156,6 +156,6 @@ Ran all test suites.
 
 If you are using an IntelliJ IDE (PHPStorm, WebStorm, etc), I’ve already gone and added a Jest Runner called  “Unit Test” that you can either manually trigger, or use the convenient `ctrl + r`  running that IntelliJ offers.
 
-![IntelliJ Unit Test Runner](/posts/2018/09/testing-typescript-react-app/intellij-test-runner.png)
+![IntelliJ Unit Test Runner](./imgs/intellij-test-runner.png)
 
 The github repository for this post can be found here: [jasonraimondi/typescript-react-starter](https://github.com/jasonraimondi/typescript-react-starter)
