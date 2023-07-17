@@ -21,11 +21,6 @@
         "network": "LinkedIn",
         "username": "jasonraimondi",
         "url": "https://www.linkedin.com/in/jasonraimondi/"
-      },
-      {
-        "network": "__ Polywork",
-        "username": "jasonraimondi",
-        "url": "https://polywork.com/jasonraimondi"
       }
     ]
   },
@@ -48,6 +43,7 @@
       "website": "https://web.archive.org/web/20220730210219/https://hitrecord.org/",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
+      "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of the end-to-end test suite.",
       "highlights": [
         "Created a system to spin up review environments for open merge requests, allowing QA to manually test and see an isolated environment for all incoming merge requests. This ultimately enabled us to update our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
@@ -86,9 +82,9 @@
       "startDate": "2015-11-10",
       "endDate": "2017-04-26",
       "highlights": [
-        "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vuejs. Streamlined therapy processes and enhanced patient engagement.",
+        "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vue.js. Streamlined therapy processes and enhanced patient engagement.",
         "Sustained a Minimum Viable Product that served approximately 1,000 patients across multiple clinics in South Florida, demonstrating its real-world utility and positive impact on mental health recovery.",
-        "Leveraged Docker for deployment on Digital Ocean, ensuring efficient application management and consistent run-time environment."
+        "Leveraged Docker for deployment on Digital Ocean, ensuring efficient application management and consistent runtime environment."
       ]
     },
     {
@@ -124,7 +120,7 @@
       "summary": "At ACE Blueprinting & Graphics, a Ft. Lauderdale printing shop, I honed my design skills and delivered high-quality design solutions.",
       "highlights": [
         "Executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print using Illustrator and Photoshop.",
-        "Designed and assembled custom PC workstations, facilitating cutting-edge graphic editing and efficient print server operations for enhanced productivity."
+        "Designed and assembled custom PC workstations to facilitate cutting-edge graphic editing and efficient print server operations for enhanced productivity."
       ]
     },
     {
@@ -177,13 +173,13 @@
       "name": "promise-watch",
       "releaseDate": "2022-03-01",
       "website": "https://github.com/promise-watch/promise-watch",
-      "summary": "An Api/E2E monitor that runs promises on intervals and sends notifications on errors."
+      "summary": "An API/E2E monitor that runs promises on intervals and sends notifications on errors."
     },
     {
       "name": "url-to-png",
       "releaseDate": "2018-08-01",
       "website": "https://github.com/jasonraimondi/url-to-png",
-      "summary": "Dynamic screenshots for the web over a simple http api."
+      "summary": "Dynamic screenshots for the web over a simple HTTP API."
     },
     {
       "name": "traverse",
@@ -213,7 +209,7 @@
         "E2E Testing",
         "Unit Testing",
         "OAuth",
-        "Object oriented programming",
+        "Object-oriented programming",
         "Queues",
         "Relational databases",
         "Document databases",
