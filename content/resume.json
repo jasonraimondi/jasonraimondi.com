@@ -46,9 +46,9 @@
       "endDate": "2022-05-01",
       "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of the end-to-end test suite.",
       "highlights": [
-        "Created a system to spin up review environments for open merge requests, allowing QA to manually test and see an isolated environment for all incoming merge requests. This ultimately enabled us to update our deployment schedule from bi/weekly to continuous deployment for each merged pull request.",
         "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
-        "Decoupled an angular.js application in Rails erb templates to an Angular SPA + Rails API.",
+        "Developed a system for creating separate review environments for each open merge request, enabling QA to perform focused testing. This change significantly improved our deployment process, shifting us from bi-weekly releases to a continuous deployment.",
+        "Successfully orchestrated the decoupling of a legacy Angular.js 1 system from Rails templates, transitioning it into an Angular Single-Page Application (SPA) with a Rails API integration. Demonstrated meticulous attention to detail in conducting comprehensive testing and debugging to guarantee a seamless transition and preemptively eradicate potential issues during the decoupling process.",
         "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to Cypress."
       ]
     },
