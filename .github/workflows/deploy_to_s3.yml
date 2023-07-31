@@ -1,7 +1,7 @@
 name: deploy to s3
 
 env:
-  HUGO_VERSION: 0.110.0
+  HUGO_VERSION: 0.116.0
 
 on: push
 

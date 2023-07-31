@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY pnpm-lock.yaml package.json /app/
 RUN pnpm install --frozen-lockfile --production false
-COPY config.toml postcss.config.js /app/
+COPY hugo.toml postcss.config.js /app/
 COPY assets/ /app/assets/
 COPY content/ /app/content/
 COPY layouts/ /app/layouts/
