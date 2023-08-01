@@ -13,7 +13,7 @@ pygmentsCodeFences=true
 pygmentsUseClasses=true
 
 defaultContentLanguage = "en"
-ignorefiles = [ "content/.obsidian/.*" ]
+ignorefiles = []
 
 [Params]
   title = "jasonraimondi.com"
