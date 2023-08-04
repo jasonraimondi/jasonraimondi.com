@@ -44,7 +44,7 @@
       "website": "https://web.archive.org/web/20220730210219/https://hitrecord.org/",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
-      "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of the end-to-end test suite.",
+      "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of our continuous integration.",
       "highlights": [
         "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
         "Developed a system for creating separate review environments for each open merge request, enabling QA to perform focused testing. This change significantly improved our deployment process, shifting us from bi-weekly releases to a continuous deployment.",
@@ -58,7 +58,7 @@
       "website": "https://eventfarm.com",
       "startDate": "2018-09-01",
       "endDate": "2019-03-01",
-      "summary": "At Event Farm, a marketing platform for event organizers, I contributed to the modernization and development of features for the web platform, including the frontend web client and backend API.",
+      "summary": "At Event Farm, I played a key role in the modernization and development of features for the web platform. This included both the frontend web client and backend API. Additionally, I contributed to the development of a Salesforce and Event Farm integration, streamlining attendee management.",
       "highlights": [
         "Led the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
         "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API, including a custom event landing page builder that enhanced user experience and streamlined event management."
@@ -82,6 +82,7 @@
       "website": "https://www.linkedin.com/company/recovery-passport/about/",
       "startDate": "2015-11-10",
       "endDate": "2017-04-26",
+      "summary": "I designed and built Recovery Passport, a three-tiered recovery assistance system used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida. I also provided custom web applications and infrastructure services for clients.",
       "highlights": [
         "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vue.js. Streamlined therapy processes and enhanced patient engagement.",
         "Sustained a Minimum Viable Product that served approximately 1,000 patients across multiple clinics in South Florida, demonstrating its real-world utility and positive impact on mental health recovery.",
@@ -105,20 +106,20 @@
       "website": "https://www.linkedin.com/company/web-services-llc/about/",
       "startDate": "2014-06-01",
       "endDate": "2015-11-01",
-      "summary": "At Web Services LLC, I created impactful embedded web applications for nationwide news stations, while also refining internal tools and a TV ad tracking service.",
+      "summary": "At Web Services LLC, I created impactful embedded web applications for nationwide news stations and refined internal tools. Additionally, I built a TV ad tracking service that correlated commercial airtime with customer response through web analytics, SMS, and social hashtags.",
       "highlights": [
         "Developed an analytics application for advertising agencies, correlating commercial airtime with customer response through web analytics, SMS, and social hashtags.",
-        "Preserved and upgraded numerous PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations using Laravel, CodeIgniter, and FuelPHP.",
+        "Delivered several PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations using Laravel and FuelPHP.",
         "Modernized WDIV Click on Detroit's 'Vote 4 the Best' voting application, transitioning from Laravel 3.x to Laravel 5.1 LTS, improving performance and maintainability."
       ]
     },
     {
       "company": "ACE Blueprinting & Graphics",
       "position": "Graphic Designer",
-      "website": "https://aceblueprinting.com/",
+      "website": "https://web.archive.org/web/20140516214736/http://aceblueprinting.com/",
       "startDate": "2011-05-01",
       "endDate": "2014-01-01",
-      "summary": "At ACE Blueprinting & Graphics, a Ft. Lauderdale printing shop, I honed my design skills and delivered high-quality design solutions.",
+      "summary": "At ACE Blueprinting & Graphics, I executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print.",
       "highlights": [
         "Executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print using Illustrator and Photoshop.",
         "Designed and assembled custom PC workstations to facilitate cutting-edge graphic editing and efficient print server operations for enhanced productivity."
@@ -130,7 +131,7 @@
       "website": "https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/",
       "startDate": "2012-04-01",
       "endDate": "2012-07-01",
-      "summary": "Collaborated with two Ph.D. candidates to gather data used for community research on the Sarasota Bay and the Ace Basin.",
+      "summary": "At the Florida Sea Grant, I collaborated with two Ph.D. candidates to gather data used for community research on the Sarasota Bay and the Ace Basin.",
       "highlights": [
         "Collaborated with [Jarrod Loerzel](https://www.linkedin.com/in/jarrod-loerzel-ba96a238/) from the College of Charleston and [Zachary Cole](https://www.linkedin.com/in/zachary-cole-416a5484/) from the University of Florida to gather public sentiment data on local waterways.",
         "Developed a survey platform, utilizing PHP, jQuery, and Google Maps technologies, to collect data on the environmental conditions of [Sarasota Bay](https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/) in Florida and the [Ace Basin](https://web.archive.org/web/20130921231828/http://acebasinsurvey.org/) in South Carolina."
@@ -142,7 +143,7 @@
       "website": "https://web.archive.org/web/20080917053305/http://www.studentgameday.com/",
       "startDate": "2008-06-01",
       "endDate": "2009-12-01",
-      "summary": "At Student Game Day, a tool for selling student college football tickets, I assisted in the design and HTML/CSS of a custom-built web app using procedural PHP.",
+      "summary": "At Student Game Day LLC, a tool for selling student college football tickets, I assisted in the design and HTML/CSS of a custom-built web app using procedural PHP",
       "highlights": [
         "Contributed to the design and HTML/CSS of a custom-built web app for selling student college football tickets, built with procedural PHP."
       ]
