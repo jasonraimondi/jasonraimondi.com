@@ -1,4 +1,4 @@
-const {resolve} = require("path");
+const { resolve } = require("path");
 
 module.exports = {
   plugins: {
@@ -22,6 +22,8 @@ module.exports = {
         "nesting-rules": true,
       },
     },
-    ...(process.env.HUGO_ENVIRONMENT === "production" && { cssnano: { preset: ["default"] } })
+    ...(process.env.HUGO_ENVIRONMENT === "production" && {
+      cssnano: { preset: ["default"] },
+    }),
   },
 };

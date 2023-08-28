@@ -13,16 +13,16 @@
         <li><h2 class="top-bar--title"><a href="/" class="unstyled">{{ .Site.Params.Title }}</a></h2></li>
         {{ end -}}
         <li>
-            <ul class="topbar--nav--itemlist">
-                {{ range .Site.Params.MainMenu.Link -}}
-                <li class="mr-2"><a href="{{ .url | relURL }}">{{ .name }}</a></li>
-                {{ end -}}
-                <li>
-                    <a href="{{ "/resume" | relURL }}" class="mr-1">Resume</a>
-                    <a href="{{ "/resume.pdf" | relURL }}" class="label" target="_blank"><span>pdf</span></a>
-                    <a href="{{ "/resume.json" | relURL }}" class="label" target="_blank"><span>json</span></a>
-                </li>
-            </ul>
+          <ul class="topbar--nav--itemlist">
+            <li class="mr-2"><a href="{{ "/posts" | relURL }}">Posts</a></li>
+            <li class="mr-2"><a href="{{ "/things" | relURL }}">Apps</a></li>
+            <li class="mr-2"><a href="{{ "/uses" | relURL }}">Uses</a></li>
+            <li>
+              <a href="{{ "/resume" | relURL }}" class="mr-1">Resume</a>
+              <a href="{{ "/resume.pdf" | relURL }}" class="label" target="_blank"><span>pdf</span></a>
+              <a href="{{ "/resume.json" | relURL }}" class="label" target="_blank"><span>json</span></a>
+            </li>
+          </ul>
         </li>
     </ul>
 </nav>

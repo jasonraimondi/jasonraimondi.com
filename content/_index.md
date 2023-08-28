@@ -29,10 +29,6 @@ If I’m not hanging out with my amazing [wife](//kimcalderone.com) and [pup](ht
 
 {{< index/recent-projects >}}
 
-### Curious about how I work?
-
-Check out my [uses]({{< ref "/uses" >}}) page for a full list of all the software, gadgets, and services I use.
-
 </div>
 
 <style>

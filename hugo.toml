@@ -1,6 +1,5 @@
 baseurl = "https://jasonraimondi.com"
 title = "Software Engineer"
-languageCode = "en-us"
 enableEmoji = true
 copyright = "© 2023 Jason Raimondi"
 
@@ -14,85 +13,6 @@ pygmentsUseClasses=true
 
 defaultContentLanguage = "en"
 ignorefiles = []
-
-[Params]
-  title = "jasonraimondi.com"
-  description = "My name is Jason Raimondi and I am a Full Stack Software Engineer. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
-  name = "Jason Raimondi"
-  email = "jason@raimondi.us"
-  analyticsSnippet = """
-<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.js"></script>
-<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
-"""
-
-[Params.ProfileURL]
-  smallJPG = "/misc/me/zombie-ruby-trimmed@1x.png"
-  smallWEBP = "/misc/me/zombie-ruby-trimmed@1x.webp"
-  largeJPG = "/misc/me/zombie-ruby-trimmed@2x.png"
-  largeWEBP = "/misc/me/zombie-ruby-trimmed@2x.webp"
-
-[Params.EditLink]
-  name = "GitHub"
-  link = "https://github.com/jasonraimondi/jasonraimondi"
-
-[Params.MainMenu]
-[[Params.MainMenu.Link]]
-  name = "Posts"
-  url = "/posts"
-[[Params.MainMenu.Link]]
-  name = "Apps"
-  url = "/things"
-[[Params.MainMenu.Link]]
-  name = "Uses"
-  url = "/uses"
-
-[Params.Projects]
-[[Params.Projects.Link]]
-  name = "🔐 typescript-oauth2-server"
-  url = "https://github.com/jasonraimondi/ts-oauth2-server"
-  description = "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript. "
-[[Params.Projects.Link]]
-  name = "👀 promise-watch"
-  url = "https://github.com/promise-watch/promise-watch"
-  description = "An Api/E2E monitor that runs promises on intervals and sends notifications on errors."
-[[Params.Projects.Link]]
-  name = "🖼️ url-to-png"
-  url = "https://github.com/jasonraimondi/url-to-png"
-  description = "Dynamic screenshots for the web over a simple http api"
-[[Params.Projects.Link]]
-  name = "🧭 traverse"
-  url = "/posts/traverse-2-electric-boogaloo"
-  description = "Desktop app for explore trending GitHub repos (Mac OS/Linux)"
-[[Params.Projects.Link]]
-  name = "🖨️ Printables"
-  url = "https://github.com/jasonraimondi/printables"
-  description = "A collection of models and random things to 3d print "
-[[Params.Projects.Link]]
-  name = "💼 restforce-php"
-  url = "https://github.com/eventfarm/restforcephp"
-  description = "PHP API client library for Salesforce"
-[[Params.Projects.Link]]
-  name = "🚀 go-sdk"
-  url = "https://github.com/eventfarm/go-sdk"
-  description = "A Golang API client library for the Event Farm API"
-
-[Params.ExternalMenu]
-  title = "Follow Me Online Here:"
-[[Params.ExternalMenu.Link]]
-  name = "GitHub"
-  url = "https://github.com/jasonraimondi"
-[[Params.ExternalMenu.Link]]
-  name = "LinkedIn"
-  url = "https://linkedin.com/in/jasonraimondi"
-[[Params.ExternalMenu.Link]]
-  name = "Vimeo"
-  url = "https://vimeo.com/jasonraimondi"
-
-[languages]
-  [languages.en]
-    lang = "en"
-    languageName = "English"
-    weight = 1
 
 [sitemap]
   changefreq = "daily"
@@ -108,7 +28,6 @@ ignorefiles = []
 # Files that match the regular expressions in the "Order" list
 # will be uploaded first, in the listed order.
 # order = [".jpg$", ".gif$"]
-
 
 [[deployment.targets]]
 # An arbitrary name for this target.
@@ -133,3 +52,23 @@ gzip = true
 
 [outputs]
 home = ["HTML", "RSS"]
+
+[Params]
+  title = "jasonraimondi.com"
+  description = "My name is Jason Raimondi and I am a Full Stack Software Engineer. My professional focus has been in web systems; everything from designing to building and deploying server and client web applications. What I really am is a technologist and all around computer geek. Give me a computer and I will be hacking in minutes, occupied for days."
+  name = "Jason Raimondi"
+  email = "jason@raimondi.us"
+  analyticsSnippet = """
+<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="jasonraimondi.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+"""
+
+[Params.ProfileURL]
+  smallJPG = "/misc/me/zombie-ruby-trimmed@1x.png"
+  smallWEBP = "/misc/me/zombie-ruby-trimmed@1x.webp"
+  largeJPG = "/misc/me/zombie-ruby-trimmed@2x.png"
+  largeWEBP = "/misc/me/zombie-ruby-trimmed@2x.webp"
+
+[Params.EditLink]
+  name = "GitHub"
+  link = "https://github.com/jasonraimondi/jasonraimondi"

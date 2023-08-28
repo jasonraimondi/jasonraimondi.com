@@ -1,0 +1,13 @@
+{{ with $.Site.Data.books }}
+<div class="recent-books">
+    <h3 class="recent-books--title">Books:</h3>
+    <ul class="recent-books--list">
+        {{ range $i, $p := .books }}
+        <li class="recent-books--list--item">
+            <a href="{{ $p.url | relURL }}">{{ $p.name }}</a>
+            {{ with $p.description }}- {{ . }}{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
