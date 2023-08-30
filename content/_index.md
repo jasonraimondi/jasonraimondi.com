@@ -27,7 +27,7 @@ I have professional experience building modular, horizontally scalable applicati
 
 If I’m not hanging out with my amazing [wife](//kimcalderone.com) and [pup](https://jasonraimondi.com/images/zombie-avatar_hu9363f3c1e4663e069451d44174bd9478_83191_0x1000_resize_q75_h2_box_3.webp), I am most likely <span id="doing1">learning a new language</span> or <span id="doing2">practicing software architecture design patterns</span>.
 
-{{< index/recent-projects >}}
+{{< index/recent-projects limit="7" >}}
 
 </div>
 
