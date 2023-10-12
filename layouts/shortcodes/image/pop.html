@@ -7,5 +7,5 @@
          title="{{ $alt }}"
          class="pops"
     >
-    <small class="image-pop-title">{{ $alt }}</small>
+    {{ if not (.Get "nodesc") }}<small class="image-pop-title">{{ $alt }}</small>{{ end }}
 </div>

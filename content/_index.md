@@ -15,7 +15,7 @@ title: Jason Raimondi
 
 <div class="home">
 
-<h1 class="animoji-me">Hey :wave:, I'm Jason.</h1>
+# Hey :wave:, I'm Jason.
 
 ## I am a <span id="adjective1">technologist</span> and <span id="adjective2">computer geek</span>.
 
