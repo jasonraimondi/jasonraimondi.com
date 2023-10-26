@@ -17,7 +17,9 @@ title: Uses
 
 ## Software
 
+* [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 * [IntelliJ](https://www.jetbrains.com/)
+* [Sublime Merge](https://www.sublimemerge.com/)
 
 ## Self Hosted
 
