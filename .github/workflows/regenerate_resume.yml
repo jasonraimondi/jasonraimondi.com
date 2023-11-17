@@ -1,0 +1,34 @@
+name: Regenerate Resume
+
+on:
+  push:
+    paths:
+      - '.github/workflows/regenerate_resume.yml'
+      - 'content/resume.json'
+      - 'resume-snapshotter.ts'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup
+      - run: pnpm install --frozen-lockfile
+      - run: npx playwright install --with-deps chromium
+      - run: pnpm gen:resume:ci
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          file_pattern: 'resume.*'
+          commit_message: Update generated README
+          branch: main
+          commit_user_name: resume-generator 🤖
+          commit_user_email: actions@github.com
+          commit_author: resume-generator 🤖 <actions@github.com>
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
