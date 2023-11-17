@@ -1,9 +1,10 @@
 import { chromium } from 'playwright';
+import { join } from "path";
 
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  const resumePath = "./static/resume";
+  const resumePath = join(__dirname, "./static/resume");
   try {
     await page.goto('http://localhost:1313/resume');
   } catch {
