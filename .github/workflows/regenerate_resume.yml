@@ -20,8 +20,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          file_pattern: 'resume.*'
-          commit_message: Update generated README
+          file_pattern: 'static/resume.*'
+          commit_message: | 
+            chore: generate update resume [skip ci]
           branch: main
           commit_user_name: resume-generator 🤖
           commit_user_email: actions@github.com

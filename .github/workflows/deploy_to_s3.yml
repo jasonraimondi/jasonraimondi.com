@@ -3,7 +3,12 @@ name: deploy to s3
 env:
   HUGO_VERSION: 0.117.0
 
-on: push
+on:
+  push:
+    paths-ignore:
+      - '.github/workflows/regenerate_resume.yml'
+      - 'content/resume.json'
+      - 'resume-snapshotter.ts'
 
 jobs:
   build:
