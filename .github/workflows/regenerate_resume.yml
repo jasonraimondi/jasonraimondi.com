@@ -22,7 +22,7 @@ jobs:
         with:
           file_pattern: 'static/resume.*'
           commit_message: | 
-            chore: generate update resume [skip ci]
+            gen: generate update resume
           branch: main
           commit_user_name: resume-generator 🤖
           commit_user_email: actions@github.com
