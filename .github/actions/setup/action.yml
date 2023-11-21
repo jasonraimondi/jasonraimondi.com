@@ -23,7 +23,7 @@ runs:
       shell: bash
     - name: Install Hugo
       env:
-        HUGO_VERSION: 0.117.0
+        HUGO_VERSION: 0.120.3
       run: |
         HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
         mkdir $HOME/bin
