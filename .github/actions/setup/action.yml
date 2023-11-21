@@ -21,6 +21,7 @@ runs:
 
     # Cache for Google Fonts
     - name: Cache Google Fonts
+      id: cache-fonts
       uses: actions/cache@v3
       with:
         path: /usr/share/fonts
