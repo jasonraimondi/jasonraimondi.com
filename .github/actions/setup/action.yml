@@ -1,6 +1,10 @@
 name: Setup
 description: Setup node/pnpm version and install dependencies
 
+inputs:
+  hugo_version:
+    description: 'AWS Access Key ID'
+    required: true
 
 runs:
   using: composite
@@ -19,8 +23,8 @@ runs:
     - name: Cache Google Fonts
       uses: actions/cache@v3
       with:
-        path: /usr/share/fonts/fira_sans
-        key: ${{ runner.os }}-google-fonts
+        path: /usr/share/fonts
+        key: google-fonts-${{ inputs.hugo_version }}
     - name: Install Google Fonts
       if: steps.cache-fonts.outputs.cache-hit != 'true'
       run: |
@@ -35,11 +39,11 @@ runs:
       uses: actions/cache@v3
       with:
         path: ${{ github.workspace }}/hugo-cache
-        key: hugo-${{ env.HUGO_VERSION }}
+        key: hugo-${{ inputs.hugo_version }}
     - name: Install Hugo
       if: steps.cache-hugo.outputs.cache-hit != 'true'
       env:
-        HUGO_VERSION: 0.120.3
+        HUGO_VERSION: ${{ inputs.hugo_version }}
       run: |
         HUGO_DOWNLOAD=hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
         mkdir $HOME/bin

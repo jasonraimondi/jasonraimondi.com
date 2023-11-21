@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/setup
+        with:
+          hugo_version: "0.120.3"
       - run: pnpm install --frozen-lockfile
       - run: npx playwright install --with-deps chromium
       - run: pnpm gen:resume:ci

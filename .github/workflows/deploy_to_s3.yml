@@ -1,8 +1,5 @@
 name: deploy to s3
 
-env:
-  HUGO_VERSION: 0.117.0
-
 on:
   push:
     paths-ignore:
@@ -16,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/setup
+        with:
+          hugo_version: "0.120.3"
       - run: pnpm install --frozen-lockfile
       - uses: ./.github/actions/build_and_deploy
         with:
