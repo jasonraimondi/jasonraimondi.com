@@ -34,7 +34,7 @@
       "summary": "At Repeat, I focus on streamlining the customer onboarding process, enhancing test coverage, and improving application performance. My role involves extensive work with Shopify apps and Ruby on Rails.",
       "highlights": [
         "Created a Shopify public app that streamlined customer onboarding. Enabled self-service onboarding capabilities, reducing reliance on customer service.",
-        "Contributed to a Ruby on Rails REST API, utilizing rspec for code testing. Streamlined customer onboarding, eliminating the need for customer service involvement.",
+        "Contributed to a Ruby on Rails API, utilizing rspec for code testing. Streamlined customer onboarding, eliminating the need for customer service involvement.",
         "Implemented an end-to-end testing suite using Cypress for a Shopify embedded app. Increased testing coverage and improved application robustness. Ensured a high-quality user experience and minimized production risks."
       ]
     },
