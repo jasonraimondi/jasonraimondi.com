@@ -14,14 +14,30 @@ runs:
         cache: pnpm
         cache-dependency-path: pnpm-lock.yaml
         registry-url: "https://registry.npmjs.org"
+
+    # Cache for Google Fonts
+    - name: Cache Google Fonts
+      uses: actions/cache@v3
+      with:
+        path: /usr/share/fonts/fira_sans
+        key: ${{ runner.os }}-google-fonts
     - name: Install Google Fonts
+      if: steps.cache-fonts.outputs.cache-hit != 'true'
       run: |
         wget -O Fira_Sans.zip https://fonts.google.com/download?family=Fira%20Sans
         unzip -d fira_sans/ Fira_Sans.zip
         mv fira_sans /usr/share/fonts/
         fc-cache -fv
       shell: bash
+
+    - name: Cache Hugo
+      id: cache-hugo
+      uses: actions/cache@v3
+      with:
+        path: ${{ github.workspace }}/hugo-cache
+        key: hugo-${{ env.HUGO_VERSION }}
     - name: Install Hugo
+      if: steps.cache-hugo.outputs.cache-hit != 'true'
       env:
         HUGO_VERSION: 0.120.3
       run: |
