@@ -51,7 +51,7 @@ pattern = "^.+\\.(html|txt|xml|json)$"
 gzip = true
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "SITEMAP"]
 
 [Params]
   title = "jasonraimondi.com"
