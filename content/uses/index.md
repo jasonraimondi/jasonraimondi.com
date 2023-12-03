@@ -2,12 +2,12 @@
 date: "2019-03-19T00:00:00-07:00"
 description: This page lists software and hardware I use on a daily basis.
 images: 
-- /images/battlestation.jpg
+- ./battlestation.jpg
 lastmod: "2023-10-11T00:00:00-08:00"
 title: Uses
 ---
 
-{{< image/pop src="/images/battlestation.jpg" alt="Battlestation" nodesc="true" >}}
+{{< image/pop src="./battlestation.jpg" alt="Battlestation" nodesc="true" >}}
 
 ## Hardware
 
