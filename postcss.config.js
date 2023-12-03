@@ -22,8 +22,8 @@ module.exports = {
         "nesting-rules": true,
       },
     },
-    ...(process.env.HUGO_ENVIRONMENT === "production" && {
-      cssnano: { preset: ["default"] },
-    }),
+    // ...(process.env.HUGO_ENVIRONMENT === "production" && {
+    //   cssnano: { preset: ["default"] },
+    // }),
   },
 };
