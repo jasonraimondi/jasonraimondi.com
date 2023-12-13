@@ -33,9 +33,11 @@
       "endDate": "present",
       "summary": "At Repeat, I focus on streamlining the customer onboarding process, enhancing test coverage, and improving application performance. My role involves extensive work with Shopify apps and Ruby on Rails.",
       "highlights": [
-        "Created a Shopify public app that streamlined customer onboarding. Enabled self-service onboarding capabilities, reducing reliance on customer service.",
-        "Contributed to a Ruby on Rails API, utilizing rspec for code testing. Streamlined customer onboarding, eliminating the need for customer service involvement.",
-        "Implemented an end-to-end testing suite using Cypress for a Shopify embedded app. Increased testing coverage and improved application robustness. Ensured a high-quality user experience and minimized production risks."
+        "Built the first Shopify Public App for Repeat that enabled customers to get started with Repeat by offering a self serve onboarding capability; this ended up streamlining the customer onboarding experience, and reduced their reliance on customer service.",
+        "Authored the Shopify Selling Plans API in the Repeat Shopping Cart, allowing customers to purchase subscriptions and one-time products in the same transaction.",
+        "__ Extended and improved the Ruby on Rails API that powers Repeat",
+        "Refactored an unruly Express API into a modularized Nestjs API, improving code maintainability and testability, allowing us to deliver a more consistent and reliable Shopify Public App",
+        "Implemented an end-to-end testing suite using Cypress for a Shopify Public App and increased testing coverage and improved application robustness all around, ensuring a high-quality user experience and minimal production risks."
       ]
     },
     {
@@ -46,7 +48,8 @@
       "endDate": "2022-05-01",
       "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of our continuous integration.",
       "highlights": [
-        "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic. Monitored and autoscaled based on remaining puma threads available.",
+        "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic by auto-scaling based on Puma threads availability.",
+        "Monitored application performance and used the data learned to improve existing code, enhance API response times and address scalability concerns, improving the end user experience.",
         "Developed a system for creating separate review environments for each open merge request, enabling QA to perform focused testing. This change significantly improved our deployment process, shifting us from bi-weekly releases to a continuous deployment.",
         "Successfully orchestrated the decoupling of a legacy Angular.js 1 system from Rails templates, transitioning it into an Angular Single-Page Application (SPA) with a Rails API integration. Demonstrated meticulous attention to detail in conducting comprehensive testing and debugging to guarantee a seamless transition and preemptively eradicate potential issues during the decoupling process.",
         "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to Cypress."
