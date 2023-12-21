@@ -63,7 +63,7 @@
       "endDate": "2019-03-01",
       "summary": "At Event Farm, I played a key role in the modernization and development of features for the web platform. This included both the frontend web client and backend API. Additionally, I contributed to the development of a Salesforce and Event Farm integration, streamlining attendee management.",
       "highlights": [
-        "Led the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
+        "Contributed to the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
         "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API, including a custom event landing page builder that enhanced user experience and streamlined event management."
       ]
     },
@@ -74,8 +74,7 @@
       "startDate": "2016-02-01",
       "endDate": "2018-09-01",
       "highlights": [
-        "Led the development of a Salesforce and Event Farm integration, streamlining attendee management. Open-sourced the [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) used for the integration, contributing to the developer community.",
-        "Created auto-generating client libraries for the Event Farm API in multiple languages, including PHP, Typescript, Golang, Swift, and Java. Open-sourced the Typescript and Golang libraries on GitHub ([javascript-sdk](https://github.com/eventfarm/javascript-sdk) and [golang-sdk](https://github.com/eventfarm/go-sdk)) for improved system interoperability and efficiency.",
+        "Integrated Salesforce with Event Farm, streamlining attendee management. Open-sourced the [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) used for the integration, contributing to the developer community.",
         "Maintained and improved a CakePHP API and AngularJS/Angular application, ensuring responsiveness and efficiency for enhanced user experience."
       ]
     },
