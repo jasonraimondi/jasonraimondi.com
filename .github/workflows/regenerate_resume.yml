@@ -5,6 +5,9 @@ on:
     paths:
       - '.github/workflows/regenerate_resume.yml'
       - 'content/resume.json'
+      - 'assets/resume.css'
+      - 'assets/resume/*.css'
+      - 'layouts/_default/resume.html'
       - 'resume-snapshotter.ts'
 
 jobs:
