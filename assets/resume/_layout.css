@@ -17,14 +17,9 @@
 }
 
 .section-title {
-  margin: 1em 0;
   text-transform: uppercase;
   font-weight: var(--font-black);
   font-size: var(--text-lg);
-
-  &.contact {
-    margin-top: 1rem;
-  }
 }
 
 .item-title {

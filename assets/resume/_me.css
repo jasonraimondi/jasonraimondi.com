@@ -1,8 +1,8 @@
 #me {
-  padding-top: 1rem;
+  padding: 1rem 0 0.5rem;
 
   @media (--medium) {
-    padding-top: 2rem;
+    padding: 2rem 0 0;
     position: relative;
   }
 
@@ -42,25 +42,25 @@
   font-weight: var(--font-black);
 
   @media print {
-    margin-bottom: -1.25rem;
+    padding-bottom: -1.25rem;
   }
 
   span {
-    margin-left: -0.75rem;
+    padding-left: -0.75rem;
     &:first-child {
-      margin-left: 0;
+      padding-left: 0;
     }
   }
 }
 
 .job-title {
+  margin: 0.25rem 0;
   font-size: var(--text-lg);
   text-transform: uppercase;
 
   @media (--medium) {
     margin: 0;
     height: var(--text-lg);
-    padding: 0 0.5rem;
   }
 }
 
@@ -89,7 +89,7 @@
 }
 
 .short-col {
-  margin-top: -0.75rem;
+  padding-top: -0.75rem;
 }
 
 .downloader {
@@ -99,7 +99,7 @@
 
   @media (--medium) {
     right: -4rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
 
   @media print {

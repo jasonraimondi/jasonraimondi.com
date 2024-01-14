@@ -3,8 +3,11 @@
 }
 
 .contact-details, .contact-external-links {
-  margin-top: 1rem;
   line-height: 1.4;
+
+  @media (--medium) {
+    margin-top: 1rem;
+  }
 }
 
 .contact-details {
