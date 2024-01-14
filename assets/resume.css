@@ -20,8 +20,15 @@
 @import 'resume/_contact.css';
 
 :root {
-  --font-family-sans: Fira Sans, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  font-family: 'Public Sans', Helvetica Neue, system-ui, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 @media print {
   html {

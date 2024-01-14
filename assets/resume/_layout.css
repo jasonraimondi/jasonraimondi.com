@@ -36,13 +36,12 @@
 }
 
 .item-subtitle.additional {
-  margin-top: 1rem;
+  /** margin-top: 1rem; */
 }
 
 .item-date {
   font-weight: var(--font-light);
   font-size: var(--text-md);
-  font-style: italic;
   line-height: var(--resume-line-height);
 }
 
