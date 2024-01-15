@@ -38,4 +38,9 @@
   --font-bold: 700;
   --font-extrabold: 800;
   --font-black: 900;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
