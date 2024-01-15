@@ -1,3 +1,9 @@
+.contact {
+  @media print {
+    margin-top: 0;
+  }
+}
+
 .contact-section {
   display: flex;
 }
