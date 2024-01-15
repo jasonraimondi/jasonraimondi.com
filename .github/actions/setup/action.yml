@@ -29,8 +29,8 @@ runs:
     - name: Install Google Fonts
       if: steps.cache-fonts.outputs.cache-hit != 'true'
       run: |
-        wget -O Fira_Sans.zip https://fonts.google.com/download?family=Fira%20Sans
-        unzip -q Fira_Sans.zip -d fira_sans/ && mv fira_sans/* /usr/share/fonts/
+        wget -O inter.zip https://fonts.google.com/download?family=Inter
+        unzip -q inter.zip -d inter/ && mv inter/* /usr/share/fonts/
         fc-cache -fv
       shell: bash
 

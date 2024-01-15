@@ -3,11 +3,13 @@ name: deploy to s3
 on:
   push:
     paths-ignore:
+      - '.github/actions/setup/action.yml'
       - '.github/workflows/regenerate_resume.yml'
-      - 'content/resume.json'
       - 'assets/resume.css'
       - 'assets/resume/*.css'
+      - 'content/resume.json'
       - 'layouts/_default/resume.html'
+      - 'layouts/partials/*.html'
       - 'resume-snapshotter.ts'
 
 jobs:

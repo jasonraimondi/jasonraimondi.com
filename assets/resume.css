@@ -25,17 +25,21 @@
   font-weight: 100 900;
 }
 
-:root {
-  --font-family-sans: 'Inter', Helvetica Neue, system-ui, sans-serif;
+#resume {
+  --font-family-sans: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
 }
 
-# resume {
-  font-weight: 500;
+.print-only {
+  display: none;
 }
 
 @media print {
   html {
     font-size: 90%;
+  }
+  .print-only {
+    display: block;
   }
   .print-hide {
     display: none;
