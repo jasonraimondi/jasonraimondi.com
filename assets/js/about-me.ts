@@ -1,12 +1,17 @@
 const adjectives1 = [
-  "technologist","technologist",
-  "technophile","technophile",
+  "technologist",
+  "technologist",
+  "technophile",
+  "technophile",
   "tinkerer",
 ];
 
 const adjectives2 = [
-  "computer geek", "computer geek", "computer geek",
-  "dog lover", "dog lover",
+  "computer geek",
+  "computer geek",
+  "computer geek",
+  "dog lover",
+  "dog lover",
   "hacker",
   "gamer",
 ];
@@ -33,7 +38,7 @@ function setDoingThings(span) {
   span.textContent = doings1;
 }
 
-void (function () {
+function updatePage() {
   const adj1 = document.getElementById("adjective1");
   const adj2 = document.getElementById("adjective2");
 
@@ -45,4 +50,9 @@ void (function () {
 
   if (do1) setDoingThings(do1);
   if (do2) setDoingThings(do2);
+}
+
+void (function () {
+  updatePage();
+  setInterval(updatePage, 60000);
 })();

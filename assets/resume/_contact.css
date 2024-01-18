@@ -1,7 +1,7 @@
 .contact {
-  @media print {
+  /**@media print {
     margin-top: 0;
-  }
+  }*/
 }
 
 .contact-section {
@@ -10,10 +10,6 @@
 
 .contact-details, .contact-external-links {
   line-height: 1.4;
-
-  @media (--medium) {
-    margin-top: 1rem;
-  }
 }
 
 .contact-details {

@@ -19,6 +19,24 @@
 @import 'resume/_skills.css';
 @import 'resume/_contact.css';
 
+
+:root {
+  --font-family-sans: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --resume-line-height: 1.4;
+}
+
+@media (--medium) {
+  :root {
+    --resume-line-height: 1.6;
+  }
+}
+
+@media print {
+  :root {
+    --resume-line-height: 1.3;
+  }
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('fonts/Inter-VariableFont_wght.ttf') format('truetype');
@@ -26,12 +44,15 @@
 }
 
 #resume {
-  --font-family-sans: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 500;
 }
 
 .print-only {
   display: none;
+}
+
+html {
+  line-height: var(--resume-line-height);
 }
 
 @media print {

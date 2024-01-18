@@ -36,10 +36,19 @@
 
 .first {
   font-weight: var(--font-medium);
+
+  @media (--medium) {
+    position: relative;
+    left: 8px;
+  }
 }
 
 .last {
   font-weight: var(--font-black);
+
+  @media (--medium) {
+    transform: scaleX(1.0125);
+  }
 
   @media print {
     padding-bottom: -1.25rem;
@@ -94,7 +103,7 @@
 
 .downloader {
   position: absolute;
-  top: 1.5rem;
+  top: 2rem;
   right: 1.5rem;
 
   @media (--medium) {
