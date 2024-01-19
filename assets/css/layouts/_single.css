@@ -71,10 +71,19 @@
 
   & ul {
     list-style: disc;
+
+    &.unstyled {
+      list-style: none;
+      margin: 0;
+    }
   }
 
   & ol {
     list-style: number;
+
+    &.unstyled {
+      list-style: none;
+    }
   }
 
   & h1,

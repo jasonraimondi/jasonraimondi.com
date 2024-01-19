@@ -1,0 +1,12 @@
+{{ with $.Site.Data.archives }}
+<div>
+    <ul class="unstyled">
+        {{ range $i, $p := .archives }}
+        <li>
+            <h3><a href="{{ $p.url | relURL }}" target="_blank" rel="noopener">{{ $p.name }}</a></h3>
+            {{ with $p.description }}<p>- {{ . | markdownify }}</p>{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
