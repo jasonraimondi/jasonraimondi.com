@@ -1,0 +1,11 @@
+{{ $variant := .Get 0 }}
+{{ $title := .Get 1 }}
+
+<div class="tipboard-wrapper {{ $variant }}">
+  <div class="tipboard">
+    {{ with $title }}<p class="title">{{ . | markdownify }}</p>{{ end }}
+    {{ if strings.ContainsNonSpace .Inner }}
+      <p>{{ .Inner | markdownify }}</p>
+    {{ end }}
+  </div>
+</div>
