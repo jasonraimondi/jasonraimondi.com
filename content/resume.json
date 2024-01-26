@@ -26,13 +26,14 @@
   },
   "work": [
     {
-      "company": "Repeat",
+      "company": "__ Repeat",
       "position": "Senior Software Engineer",
       "website": "https://www.getrepeat.io/",
       "startDate": "2022-06-01",
       "endDate": "present",
       "summary": "At Repeat, I focus on streamlining the customer onboarding process, enhancing test coverage, and improving application performance. My role involves extensive work with Shopify apps and Ruby on Rails.",
       "highlights": [
+        "__ Led the upgrade of a legacy Klaviyo integration to incorporate the latest OAuth authentication, resulting in our app's inclusion in Klaviyo’s integration catalog. This enhancement increased company visibility by [X%] and generated a [Y%] rise in inbound leads, contributing to business growth.",
         "Built the first Shopify Public App for Repeat that enabled customers to get started with Repeat by offering a self serve onboarding capability; this ended up streamlining the customer onboarding experience, and reduced their reliance on customer service.",
         "Authored the Shopify Selling Plans API in the Repeat Shopping Cart, allowing customers to purchase subscriptions and one-time products in the same transaction.",
         "__ Extended and improved the Ruby on Rails API that powers Repeat",
