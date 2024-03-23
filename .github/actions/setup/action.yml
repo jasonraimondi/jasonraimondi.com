@@ -19,21 +19,6 @@ runs:
         cache-dependency-path: pnpm-lock.yaml
         registry-url: "https://registry.npmjs.org"
 
-    # Cache for Google Fonts
-    - name: Cache Google Fonts
-      id: cache-fonts
-      uses: actions/cache@v3
-      with:
-        path: /usr/share/fonts
-        key: google-fonts-${{ inputs.hugo_version }}
-    - name: Install Google Fonts
-      if: steps.cache-fonts.outputs.cache-hit != 'true'
-      run: |
-        wget -O inter.zip https://fonts.google.com/download?family=Inter
-        unzip -q inter.zip -d inter/ && mv inter/* /usr/share/fonts/
-        fc-cache -fv
-      shell: bash
-
     - name: Cache Hugo
       id: cache-hugo
       uses: actions/cache@v3
