@@ -6,8 +6,8 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/public" />
-      <excludeFolder url="file://$MODULE_DIR$/assets/css/lib" />
       <excludeFolder url="file://$MODULE_DIR$/resources" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/css-resume/lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

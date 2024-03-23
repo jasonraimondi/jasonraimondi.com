@@ -1,0 +1,61 @@
+:root {
+  --colors-transparent: transparent;
+
+  --colors-gray-50: #F9FAFB;
+  --colors-gray-100: #F3F4F6;
+  --colors-gray-200: #E5E7EB;
+  --colors-gray-300: #D1D5DB;
+  --colors-gray-400: #9CA3AF;
+  --colors-gray-500: #6B7280;
+  --colors-gray-600: #4B5563;
+  --colors-gray-700: #374151;
+  --colors-gray-800: #1F2937;
+  --colors-gray-900: #111827;
+
+  --colors-green-50: #ECFDF5;
+  --colors-green-100: #D1FAE5;
+  --colors-green-200: #A7F3D0;
+  --colors-green-300: #6EE7B7;
+  --colors-green-400: #34D399;
+  --colors-green-500: #10B981;
+  --colors-green-600: #059669;
+  --colors-green-700: #047857;
+  --colors-green-800: #065F46;
+  --colors-green-900: #064E3B;
+
+  --colors-purple-50: #F5F3FF;
+  --colors-purple-100: #EDE9FE;
+  --colors-purple-200: #DDD6FE;
+  --colors-purple-300: #C4B5FD;
+  --colors-purple-400: #A78BFA;
+  --colors-purple-500: #8B5CF6;
+  --colors-purple-600: #7C3AED;
+  --colors-purple-700: #6D28D9;
+  --colors-purple-800: #5B21B6;
+  --colors-purple-900: #4C1D95;
+
+  --colors-rose-50: #fff1f2;
+  --colors-rose-100: #ffe4e6;
+  --colors-rose-200: #fecdd3;
+  --colors-rose-300: #fda4af;
+  --colors-rose-400: #fb7185;
+  --colors-rose-500: #f43f5e;
+  --colors-rose-600: #e11d48;
+  --colors-rose-700: #be123c;
+  --colors-rose-800: #9f1239;
+  --colors-rose-900: #881337;
+
+  --colors-lightBlue-50: #f0f9ff;
+  --colors-lightBlue-100: #e0f2fe;
+  --colors-lightBlue-200: #bae6fd;
+  --colors-lightBlue-300: #7dd3fc;
+  --colors-lightBlue-400: #38bdf8;
+  --colors-lightBlue-500: #0ea5e9;
+  --colors-lightBlue-600: #0284c7;
+  --colors-lightBlue-700: #0369a1;
+  --colors-lightBlue-800: #075985;
+  --colors-lightBlue-900: #0c4a6e;
+
+  --colors-white: var(--colors-gray-50);
+  --colors-black: var(--colors-gray-800);
+}

@@ -1,28 +1,35 @@
 @import 'normalize.css';
 
-@import 'css/_mixin.css';
-@import 'css/_base.css';
-@import 'css/_colors.css';
-@import 'css/_typography.css';
+@import 'css-resume/_mixin.css';
+@import 'css-resume/_base.css';
+@import 'css-resume/_colors.css';
+@import 'css-resume/_typography.css';
 
-@import 'css/base/_html.css';
-@import 'css/base/_headings.css';
-@import 'css/base/_typography.css';
-@import 'css/base/_anchor.css';
-@import 'css/base/_noscript.css';
-@import 'css/base/_img.css';
-@import 'css/base/_container.css';
-@import 'css/base/_label.css';
+@import 'css-resume/base/_html.css';
+@import 'css-resume/base/_headings.css';
+@import 'css-resume/base/_typography.css';
+@import 'css-resume/base/_anchor.css';
+@import 'css-resume/base/_noscript.css';
+@import 'css-resume/base/_img.css';
+@import 'css-resume/base/_container.css';
+@import 'css-resume/base/_label.css';
 
-@import 'resume/_layout.css';
-@import 'resume/_me.css';
-@import 'resume/_skills.css';
-@import 'resume/_contact.css';
-
+@import 'css-resume/resume/_layout.css';
+@import 'css-resume/resume/_me.css';
+@import 'css-resume/resume/_skills.css';
+@import 'css-resume/resume/_contact.css';
 
 :root {
-  --font-family-sans: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --resume-line-height: 1.4;
+}
+
+html {
+  font-family: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 100%;
+
+  @media (--large) {
+    font-size: 20px;
+  }
 }
 
 @media (--medium) {
@@ -37,11 +44,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('fonts/Inter-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900;
-}
 
 #resume {
   font-weight: 500;
@@ -59,9 +61,11 @@ html {
   html {
     font-size: 90%;
   }
+
   .print-only {
     display: block;
   }
+
   .print-hide {
     display: none;
   }

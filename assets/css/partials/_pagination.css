@@ -14,6 +14,7 @@
     padding: 0;
 
     & a {
+      border-radius: 0.25em;
       padding: 4px 8px;
       background-color: var(--colors-green-500);
       color: var(--colors-white);

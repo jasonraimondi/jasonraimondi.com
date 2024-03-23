@@ -4,8 +4,8 @@ html, body {
 }
 
 html {
-  font-family: var(--font-family-serif);
-  font-size: 18px;
+  font-family: var(--font-family-sans);
+  font-size: 100%;
 
   background-color: var(--colors-white);
   color: var(--colors-black);
@@ -16,7 +16,7 @@ html {
   }
 
   @media (--large) {
-    font-size: 20px;
+    font-size: 110%;
   }
 
 

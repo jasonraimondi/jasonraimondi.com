@@ -107,7 +107,7 @@
   right: 1.5rem;
 
   @media (--medium) {
-    right: -4rem;
+    right: -5rem;
     padding-top: 1rem;
   }
 

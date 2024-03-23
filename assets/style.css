@@ -1,5 +1,6 @@
 @import 'normalize.css';
 
+@import 'css/_font-face.css';
 @import 'css/_mixin.css';
 @import 'css/_base.css';
 @import 'css/_colors.css';

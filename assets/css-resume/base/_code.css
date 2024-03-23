@@ -1,0 +1,67 @@
+code {
+  font-family: var(--font-family-mono);
+  line-height: inherit;
+}
+
+pre {
+  border-radius: 0.5em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  tab-size: 2;
+  hyphens: none;
+  padding: 1em;
+
+  margin: 1em 0;
+  overflow: auto;
+  font-family: var(--font-family-mono);
+  font-size: 0.8rem;
+
+  background: inherit;
+  @include scrollable;
+
+  & code {
+    font-size: inherit;
+  }
+}
+
+.highlight pre {
+  color: var(--colors-white);
+  background-color: var(--colors-black);
+}
+
+.highlight > pre > code {
+  padding: 0;
+  background-color: transparent;
+}
+
+@media (--dark) {
+  .highlight pre {
+    background-color: var(--colors-gray-900);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+li,
+strong,
+span {
+  & > code {
+    white-space: nowrap;
+    color: var(--colors-black);
+    background-color: var(--colors-gray-300);
+    padding: 0.025em .4em .05em;
+    border-radius: 0.25em;
+
+    @media (--dark) {
+      color: var(--colors-gray-300);
+      background-color: var(--colors-gray-900);
+    }
+  }
+}
