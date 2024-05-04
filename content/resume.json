@@ -31,7 +31,7 @@
       "website": "https://www.getrepeat.io/",
       "startDate": "2022-06-01",
       "endDate": "present",
-      "summary": "At Repeat, I focus on streamlining the customer onboarding process, enhancing test coverage, and improving application performance. My role involves extensive work with Shopify apps and Ruby on Rails.",
+      "summary": "Repeat boosts repurchase rate by automatically delivering personalized messaging at high-leverage Moments",
       "highlights": [
         "__ Led the upgrade of a legacy Klaviyo integration to incorporate the latest OAuth authentication, resulting in our app's inclusion in Klaviyo’s integration catalog. This enhancement increased company visibility by [X%] and generated a [Y%] rise in inbound leads, contributing to business growth.",
         "Built the first Shopify Public App for Repeat that enabled customers to get started with Repeat by offering a self serve onboarding capability; this ended up streamlining the customer onboarding experience, and reduced their reliance on customer service.",
@@ -47,7 +47,7 @@
       "website": "https://web.archive.org/web/20220730210219/https://hitrecord.org/",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
-      "summary": "At HitRECord, I led the development of various projects aimed at improving efficiency and scalability. I also played a key role in migrating a Ruby on Rails application to AWS EKS and improving the performance of our continuous integration.",
+      "summary": "HitRecord is a place where creators can come and jam together on films, music, writing, and art. Co-founded by Joseph Gordon-Levitt.",
       "highlights": [
         "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic by auto-scaling based on Puma threads availability.",
         "Monitored application performance and used the data learned to improve existing code, enhance API response times and address scalability concerns, improving the end user experience.",
@@ -62,7 +62,7 @@
       "website": "https://eventfarm.com",
       "startDate": "2018-09-01",
       "endDate": "2019-03-01",
-      "summary": "At Event Farm, I played a key role in the modernization and development of features for the web platform. This included both the frontend web client and backend API. Additionally, I contributed to the development of a Salesforce and Event Farm integration, streamlining attendee management.",
+      "summary": "__ Event Farm is a suite of event management tools.",
       "highlights": [
         "Contributed to the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
         "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API, including a custom event landing page builder that enhanced user experience and streamlined event management."
@@ -85,7 +85,7 @@
       "website": "https://www.linkedin.com/company/recovery-passport/about/",
       "startDate": "2015-11-10",
       "endDate": "2017-04-26",
-      "summary": "I designed and built Recovery Passport, a three-tiered recovery assistance system used by ~1000 alcohol and mental health recovery patients at several clinics around South Florida. I also provided custom web applications and infrastructure services for clients.",
+      "summary": "Recovery Passport is a three-tiered recovery assistance and journalizing system used by alcohol and mental health recovery patients at several clinics around South Florida.",
       "highlights": [
         "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vue.js. Streamlined therapy processes and enhanced patient engagement.",
         "Sustained a Minimum Viable Product that served approximately 1,000 patients across multiple clinics in South Florida, demonstrating its real-world utility and positive impact on mental health recovery.",
