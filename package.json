@@ -3,6 +3,9 @@
   "license": "UNLICENSED",
   "private": true,
   "version": "1.0.0",
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "cssnano": "^6.0.3",
