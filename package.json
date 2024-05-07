@@ -6,6 +6,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "cssnano": "^6.0.3",
+    "hugo-bin": "^0.122.7",
     "normalize.css": "^8.0.1",
     "playwright": "^1.41.0",
     "postcss": "^8.4.33",
@@ -21,7 +22,7 @@
   "scripts": {
     "dev": "hugo serve -D",
     "build": "hugo --gc --cleanDestinationDir",
-    "start:ci": "$HOME/hugo serve -D",
+    "start:ci": "hugo serve -D",
     "create-resume": "ts-node ./resume-snapshotter.ts",
     "gen:resume": "start-server-and-test dev http://localhost:1313 create-resume",
     "gen:resume:ci": "start-server-and-test start:ci http://localhost:1313 create-resume"
