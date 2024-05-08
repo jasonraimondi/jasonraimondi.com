@@ -9,7 +9,7 @@ on:
       - 'assets/resume/*.css'
       - 'content/resume.json'
       - 'layouts/_default/resume.html'
-      - 'layouts/partials/*.html'
+      - 'layouts/partials/resume/*.html'
       - 'resume-snapshotter.ts'
 
 jobs:
