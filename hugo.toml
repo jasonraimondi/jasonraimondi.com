@@ -23,33 +23,6 @@ ignorefiles = []
 [markup.goldmark.renderer]
   unsafe = true
 
-[deployment]
-# By default, files are uploaded in an arbitrary order.
-# Files that match the regular expressions in the "Order" list
-# will be uploaded first, in the listed order.
-# order = [".jpg$", ".gif$"]
-
-[[deployment.targets]]
-# An arbitrary name for this target.
-name = "aws3"
-URL = "s3://jasonraimondi-com-62a80b1e-61f2-4010-843d-48ba047503e8n?region=us-east-2"
-cloudFrontDistributionID = "EBQ4EZAMJP74N"
-
-[[deployment.matchers]]
-#  Cache static assets for 1 year.
-pattern = "^.+\\.(js|css|svg|ttf)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = true
-
-[[deployment.matchers]]
-pattern = "^.+\\.(png|jpg|webp|gif)$"
-cacheControl = "max-age=31536000, no-transform, public"
-gzip = false
-
-[[deployment.matchers]]
-pattern = "^.+\\.(html|txt|xml|json)$"
-gzip = true
-
 [outputs]
 home = ["HTML", "RSS", "SITEMAP"]
 
