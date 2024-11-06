@@ -1,6 +1,6 @@
 ---
 layout: redirect
-to: "https://www.thingstogetme.com/921906ad0d11"
+to: "https://www.thingstogetme.com/1332877ab620d"
 aliases:
 - /christmas-list/
 ---
