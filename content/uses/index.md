@@ -45,10 +45,14 @@ Checkout the Repository: https://github.com/jasonraimondi/dotfiles
 ```
 {{< /tipboard >}}
 
-## Moonlander Layout
+## Layout
 
-The Moonlander is the greatest keyboard of all time. 
+The greatest keyboards of all time. 
 
 <div style="padding-top: 60%; position: relative;">
 	<iframe src="https://configure.zsa.io/embed/moonlander/layouts/DwndN/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%"></iframe>
+</div>
+
+<div style="padding-top: 60%; position: relative;">
+	<iframe src="https://configure.zsa.io/embed/voyager/layouts/4qQw3/latest/0" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%"></iframe>
 </div>
