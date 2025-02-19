@@ -21,7 +21,7 @@ video {
 }
 
 .video-container video {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .video-portrait {

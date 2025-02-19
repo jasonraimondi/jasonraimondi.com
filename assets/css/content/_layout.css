@@ -48,10 +48,10 @@
   align-items: center;
 
   & a {
-    color: var(--colors-black);
+    color: var(--color-black);
 
     @media (--dark) {
-      color: var(--colors-gray-500);
+      color: var(--color-gray-500);
     }
   }
 
@@ -121,11 +121,11 @@
     display: none;
   }
 
-  color: var(--colors-gray-800);
-  background-color: var(--colors-gray-300);
+  color: var(--color-gray-800);
+  background-color: var(--color-gray-300);
 
   @media (--dark) {
-    color: var(--colors-gray-300);
+    color: var(--color-gray-300);
     background-color: var(--colors-gray-800);
   }
 }

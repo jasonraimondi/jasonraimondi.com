@@ -118,7 +118,7 @@
 
 .footnotes {
   & hr {
-    color: var(--colors-gray-100);
+    color: var(--color-gray-100);
     margin: 2rem;
   }
   font-size: 0.8em;

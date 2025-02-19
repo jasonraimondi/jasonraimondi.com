@@ -15,7 +15,7 @@ pre {
 
   margin: 1em 0;
   overflow: auto;
-  font-family: var(--font-family-mono);
+  font-family: var(--font-family-mono), serif;
   font-size: 0.8rem;
 
   background: inherit;

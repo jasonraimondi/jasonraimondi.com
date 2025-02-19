@@ -34,7 +34,7 @@ If I’m not hanging out with my amazing [wife](//kimcalderone.com) and [pup](ht
 <style>
 #adjective1-disable,
 #adjective2-disable {
-  background-image: linear-gradient(#ffffff 50%, var(--colors-white) 50%);
+  background-image: linear-gradient(#ffffff 50%, var(--color-white) 50%);
   background-repeat: repeat-x;
 
   background-position: 0 1.5rem;

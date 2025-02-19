@@ -26,17 +26,32 @@
   },
   "work": [
     {
-      "company": "__ Repeat",
+      "company": "__Stamped.io",
+      "position": "Senior Software Engineer",
+      "website": "https://www.getrepeat.io/",
+      "startDate": "2024-05-01",
+      "endDate": "present",
+      "summary": "",
+      "highlights": [
+        "Bundle",
+        "Bundle Mapping",
+        "Ruby Rails Migration",
+        "Admin App Experience",
+        "Shopify Opt In App Experience",
+        "Sidekiq to SQS"
+      ]
+    },
+    {
+      "company": "__Repeat (acquired by Stamped.io)",
       "position": "Senior Software Engineer",
       "website": "https://www.getrepeat.io/",
       "startDate": "2022-06-01",
-      "endDate": "present",
+      "endDate": "2024-05-01",
       "summary": "Repeat boosts repurchase rate by automatically delivering personalized messaging at high-leverage Moments",
       "highlights": [
         "__ Led the upgrade of a legacy Klaviyo integration to incorporate the latest OAuth authentication, resulting in our app's inclusion in Klaviyo’s integration catalog. This enhancement increased company visibility by [X%] and generated a [Y%] rise in inbound leads, contributing to business growth.",
         "Built the first Shopify Public App for Repeat that enabled customers to get started with Repeat by offering a self serve onboarding capability; this ended up streamlining the customer onboarding experience, and reduced their reliance on customer service.",
         "Authored the Shopify Selling Plans API in the Repeat Shopping Cart, allowing customers to purchase subscriptions and one-time products in the same transaction.",
-        "__ Extended and improved the Ruby on Rails API that powers Repeat",
         "Refactored an unruly Express API into a modularized Nestjs API, improving code maintainability and testability, allowing us to deliver a more consistent and reliable Shopify Public App",
         "Implemented an end-to-end testing suite using Cypress for a Shopify Public App and increased testing coverage and improved application robustness all around, ensuring a high-quality user experience and minimal production risks."
       ]
@@ -111,7 +126,7 @@
       "endDate": "2015-11-01",
       "summary": "At Web Services LLC, I created impactful embedded web applications for nationwide news stations and refined internal tools. Additionally, I built a TV ad tracking service that correlated commercial airtime with customer response through web analytics, SMS, and social hashtags.",
       "highlights": [
-        "Developed an analytics application for advertising agencies, correlating commercial airtime with customer response through web analytics, SMS, and social hashtags.",
+        "Developed an MVP analytics application for advertising agencies, correlating commercial airtime with customer response through web analytics, SMS, and social hashtags.",
         "Delivered several PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations using Laravel and FuelPHP.",
         "Modernized WDIV Click on Detroit's 'Vote 4 the Best' voting application, transitioning from Laravel 3.x to Laravel 5.1 LTS, improving performance and maintainability."
       ]

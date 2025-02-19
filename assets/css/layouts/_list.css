@@ -1,7 +1,7 @@
 .list {
   & > li {
     padding-bottom: 0.5em;
-/*     border-bottom: 1px solid var(--colors-gray-300); */
+/*     border-bottom: 1px solid var(--color-gray-300); */
     margin-bottom: 1em;
 
     &:last-child {
@@ -9,7 +9,7 @@
     }
 
     @media (--dark) {
-      border-color: var(--colors-gray-200);
+      border-color: var(--color-gray-200);
     }
   }
 }

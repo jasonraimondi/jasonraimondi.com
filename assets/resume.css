@@ -2,7 +2,7 @@
 
 @import 'css-resume/_mixin.css';
 @import 'css-resume/_base.css';
-@import 'css-resume/_colors.css';
+@import 'css/_colors.css';
 @import 'css-resume/_typography.css';
 
 @import 'css-resume/base/_html.css';

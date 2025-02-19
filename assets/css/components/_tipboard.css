@@ -12,9 +12,9 @@
   width: 100%;
   font-weight: 500;
 
-  color: var(--colors-gray-600);
-  background-color: var(--colors-gray-200);
-  border: 1px solid var(--colors-gray-600);
+  color: var(--color-gray-600);
+  background-color: var(--color-gray-200);
+  border: 1px solid var(--color-gray-600);
 }
 
 .tipboard .title {
@@ -24,9 +24,9 @@
 }
 
 .tipboard-wrapper.info .tipboard {
-  color: var(--colors-green-600);
-  background-color: var(--colors-green-200);
-  border: 1px solid var(--colors-green-600);
+  color: var(--color-green-600);
+  background-color: var(--color-green-200);
+  border: 1px solid var(--color-green-600);
 
   @media (--dark) {
     color: var(--colors-purple-600);

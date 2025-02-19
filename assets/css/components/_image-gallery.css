@@ -19,7 +19,7 @@
 .image-gallery-anchor {
   text-decoration: none;
   font-style: italic;
-  color: var(--colors-gray-500);
+  color: var(--color-gray-500);
 
   & a:hover {
     background-image: none !important;

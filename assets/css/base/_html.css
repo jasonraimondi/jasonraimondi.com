@@ -7,12 +7,12 @@ html {
   font-family: var(--font-family-serif);
   font-size: 18px;
 
-  background-color: var(--colors-white);
-  color: var(--colors-black);
+  background-color: var(--color-white);
+  color: var(--color-black);
 
   @media (--dark) {
-    background-color: var(--colors-black);
-    color: var(--colors-white);
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
   }
 
   @media (--large) {

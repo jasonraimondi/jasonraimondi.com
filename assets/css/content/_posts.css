@@ -1,5 +1,5 @@
 .date {
-  color: var(--colors-gray-500);
+  color: var(--color-gray-500);
 }
 
 .image-credit {
@@ -8,9 +8,9 @@
   margin-bottom: 1rem;
   & a {
     font-size: 0.7rem;
-    color: var(--colors-gray-500);
+    color: var(--color-gray-500);
     &:hover {
-      color: var(--colors-gray-800);
+      color: var(--color-gray-800);
       text-decoration: none;
     }
   }
@@ -25,10 +25,10 @@
   display: inline-block;
   font-style: italic;
   font-size: var(--text-xs);
-  color: var(--colors-gray-500);
+  color: var(--color-gray-500);
 
   @media (--dark) {
-    color: var(--colors-gray-300);
+    color: var(--color-gray-300);
   }
 
   @media (--large) {

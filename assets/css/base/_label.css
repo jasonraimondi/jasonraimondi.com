@@ -1,13 +1,13 @@
 .label {
   display: inline-block;
-  background-color: var(--colors-green-500);
-  color: var(--colors-white);
+  background-color: var(--color-green-500);
+  color: var(--color-white);
   font-size: 0.7em;
   padding: 2px 4px;
   border-radius: 0.25em;
 
   @media (--dark) {
-    color: var(--colors-white);
+    color: var(--color-white);
     background-color: var(--colors-purple-500);
   }
 

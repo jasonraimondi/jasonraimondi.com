@@ -1,16 +1,16 @@
 /** https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css */
-.highlight .hll { background-color: var(--colors-black) }
-.highlight .c { color: var(--colors-gray-400) } /* Comment */
+.highlight .hll { background-color: var(--color-black) }
+.highlight .c { color: var(--color-gray-400) } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */
 .highlight .l { color: #ae81ff } /* Literal */
 .highlight .n { color: #f8f8f2 } /* Name */
 .highlight .o { color: #f92672 } /* Operator */
 .highlight .p { color: #f8f8f2 } /* Punctuation */
-.highlight .cm { color: var(--colors-gray-400) } /* Comment.Multiline */
-.highlight .cp { color: var(--colors-gray-400) } /* Comment.Preproc */
-.highlight .c1 { color: var(--colors-gray-400) } /* Comment.Single */
-.highlight .cs { color: var(--colors-gray-400) } /* Comment.Special */
+.highlight .cm { color: var(--color-gray-400) } /* Comment.Multiline */
+.highlight .cp { color: var(--color-gray-400) } /* Comment.Preproc */
+.highlight .c1 { color: var(--color-gray-400) } /* Comment.Single */
+.highlight .cs { color: var(--color-gray-400) } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
 .highlight .kc { color: #66d9ef } /* Keyword.Constant */
@@ -60,6 +60,6 @@
 .highlight .il { color: #ae81ff } /* Literal.Number.Integer.Long */
 
 .highlight .gh { } /* Generic Heading & Diff Header */
-.highlight .gu { color: var(--colors-gray-400); } /* Generic.Subheading & Diff Unified/Comment? */
+.highlight .gu { color: var(--color-gray-400); } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */

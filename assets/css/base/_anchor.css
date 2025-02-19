@@ -1,37 +1,37 @@
 a {
-  color: var(--colors-green-500);
+  color: var(--color-green-500);
   transition: color 0.2s ease;
   text-decoration: none;
 
   &[href]:focus,
   &[href]:hover,
   &[href]:active {
-    color: var(--colors-green-800);
+    color: var(--color-green-800);
     text-decoration: none;
   }
 
   @media (--dark) {
-    color: var(--colors-purple-500);
+    color: var(--color-purple-500);
 
     &[href]:focus,
     &[href]:hover,
     &[href]:active {
-      color: var(--colors-purple-200);
+      color: var(--color-purple-200);
     }
   }
 
   &.unstyled {
-    color: var(--colors-gray-800);
+    color: var(--color-gray-800);
 
     &:hover {
-      color: var(--colors-gray-800);
+      color: var(--color-gray-800);
     }
 
     @media (--dark) {
-      color: var(--colors-white);
+      color: var(--color-white);
 
       &:hover {
-        color: var(--colors-white);
+        color: var(--color-white);
       }
     }
   }
