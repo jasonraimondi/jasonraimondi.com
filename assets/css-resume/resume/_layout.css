@@ -52,8 +52,8 @@
 
 @media (--medium) {
   .item-well {
-    background-color: var(--colors-gray-200);
-    color: var(--colors-gray-600);
+    background-color: var(--color-gray-200);
+    color: var(--color-gray-600);
     border-radius: 5px;
     font-weight: var(--font-semibold);
     margin-bottom: 0;

@@ -28,6 +28,6 @@
   color: var(--color-gray-500);
 
   @media (--dark) {
-    color: var(--colors-gray-200);
+    color: var(--color-gray-200);
   }
 }

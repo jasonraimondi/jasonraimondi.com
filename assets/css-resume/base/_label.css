@@ -1,18 +1,18 @@
 .label {
   display: inline-block;
-  background-color: var(--colors-green-500);
-  color: var(--colors-white);
+  background-color: var(--color-green-500);
+  color: var(--color-white);
   font-size: 0.7em;
   padding: 2px 4px;
   border-radius: 0.25em;
 
   @media (--dark) {
-    color: var(--colors-white);
-    background-color: var(--colors-purple-500);
+    color: var(--color-white);
+    background-color: var(--color-purple-500);
   }
 
   & a {
-    color: var(--colors-white);
+    color: var(--color-white);
     text-decoration: none;
   }
 
@@ -33,12 +33,12 @@
   a[href]:hover,
   a[href]:visited {
     text-decoration: none;
-    color: var(--colors-white);
-    background-color: var(--colors-green-700);
+    color: var(--color-white);
+    background-color: var(--color-green-700);
 
     @media (--dark) {
-      color: var(--colors-gray-800);
-      background-color: var(--colors-purple-200);
+      color: var(--color-gray-800);
+      background-color: var(--color-purple-200);
     }
   }
 }

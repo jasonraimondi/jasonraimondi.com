@@ -27,8 +27,8 @@ pre {
 }
 
 .highlight pre {
-  color: var(--colors-white);
-  background-color: var(--colors-black);
+  color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 .highlight > pre > code {
@@ -38,7 +38,7 @@ pre {
 
 @media (--dark) {
   .highlight pre {
-    background-color: var(--colors-gray-900);
+    background-color: var(--color-gray-900);
   }
 }
 
@@ -54,14 +54,14 @@ strong,
 span {
   & > code {
     white-space: nowrap;
-    color: var(--colors-black);
-    background-color: var(--colors-gray-300);
+    color: var(--color-black);
+    background-color: var(--color-gray-300);
     padding: 0.025em .4em .05em;
     border-radius: 0.25em;
 
     @media (--dark) {
-      color: var(--colors-gray-300);
-      background-color: var(--colors-gray-900);
+      color: var(--color-gray-300);
+      background-color: var(--color-gray-900);
     }
   }
 }

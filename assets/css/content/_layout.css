@@ -126,7 +126,7 @@
 
   @media (--dark) {
     color: var(--color-gray-300);
-    background-color: var(--colors-gray-800);
+    background-color: var(--color-gray-800);
   }
 }
 

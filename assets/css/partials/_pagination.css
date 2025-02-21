@@ -29,15 +29,15 @@
         color: var(--color-white);
 
         @media (--dark) {
-          background-color: var(--colors-purple-300);
+          background-color: var(--color-purple-300);
         }
       }
     }
   }
 
   & .disabled a {
-    color: var(--colors-white);
-    background-color: var(--colors-gray-800);
+    color: var(--color-white);
+    background-color: var(--color-gray-800);
     pointer-events: none;
     cursor: default;
     text-decoration: none;
@@ -45,7 +45,7 @@
 }
 
 .page-item.active .page-link {
-  background-color: var(--colors-gray-800);
+  background-color: var(--color-gray-800);
   cursor: default;
   pointer-events: none;
 }
