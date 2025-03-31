@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en" class="no-js">
-{{ $resume := getJSON "./content/resume.json" -}}
+{{ $resume := dict }}
+{{ $path := "./resume.json" }}
+
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $resume = . }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -13,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
 
     {{ $style := resources.Get "resume.css" -}}
-    {{ if site.IsServer -}}
-        {{ $css := $style | resources.PostCSS -}}
+    {{ if hugo.IsServer -}}
+        {{ $css := $style | css.PostCSS -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}">
     {{ else }}
-        {{ $css := $style | resources.PostCSS | resources.Minify | resources.Fingerprint -}}
+        {{ $css := $style | css.PostCSS | resources.Minify | resources.Fingerprint -}}
         <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
     {{ end -}}
 </head>
@@ -35,7 +44,7 @@
 
 </body>
 
-{{ if not site.IsServer }}
+{{ if not hugo.IsServer }}
     {{ .Site.Params.AnalyticsSnippet | safeHTML }}
 {{ end }}
 

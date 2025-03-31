@@ -7,7 +7,7 @@ on:
       - '.github/workflows/regenerate_resume.yml'
       - 'assets/resume.css'
       - 'assets/resume/*.css'
-      - 'content/resume.json'
+      - '../../assets/resume.json'
       - 'layouts/_default/resume.html'
       - 'layouts/partials/resume/*.html'
       - 'resume-snapshotter.ts'
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: npx playwright install --with-deps chromium

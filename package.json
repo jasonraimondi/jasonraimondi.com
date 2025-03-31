@@ -7,20 +7,20 @@
     "buildTags": "extended"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
-    "cssnano": "^6.0.3",
-    "hugo-bin": "^0.122.7",
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "hugo-bin": "^0.142.0",
     "normalize.css": "^8.0.1",
-    "playwright": "^1.41.0",
-    "postcss": "^8.4.33",
-    "postcss-cli": "^11.0.0",
+    "playwright": "^1.51.1",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
     "postcss-custom-media-generator": "^1.1.0",
-    "postcss-import": "^16.0.0",
-    "postcss-mixins": "^9.0.4",
-    "postcss-preset-env": "^9.3.0",
-    "start-server-and-test": "^2.0.3",
+    "postcss-import": "^16.1.0",
+    "postcss-mixins": "^11.0.3",
+    "postcss-preset-env": "^10.1.5",
+    "start-server-and-test": "^2.0.11",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.8.2"
   },
   "scripts": {
     "dev": "hugo serve -D",

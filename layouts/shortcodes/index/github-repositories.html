@@ -1,4 +1,4 @@
-{{ with getJSON "https://api.github.com/users/jasonraimondi/repos?q=&page=1&per_page=50&sort=updated&direction=desc"  }}
+{{ with resources.Get "https://api.github.com/users/jasonraimondi/repos?q=&page=1&per_page=50&sort=updated&direction=desc"  }}
 <ul class="footer--list" style="margin-left: 0;">
   {{ range . }}
     <li class="repo-list-card">

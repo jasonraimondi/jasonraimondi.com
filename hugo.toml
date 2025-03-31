@@ -1,9 +1,8 @@
 baseurl = "https://jasonraimondi.com"
 title = "Software Engineer"
 enableEmoji = true
-copyright = "© 2024 Jason Raimondi"
+copyright = "© 2025 Jason Raimondi"
 
-paginate = 15
 timeout = 120000
 
 # disqusShortname = "jasonraimondi"
@@ -13,6 +12,9 @@ pygmentsUseClasses=true
 
 defaultContentLanguage = "en"
 ignorefiles = []
+
+[pagination]
+pagerSize=15
 
 [sitemap]
   changefreq = "daily"
@@ -45,3 +47,11 @@ home = ["HTML", "RSS", "SITEMAP"]
 [Params.EditLink]
   name = "GitHub"
   link = "https://github.com/jasonraimondi/jasonraimondi"
+
+[module]
+  [[module.mounts]]
+    source = "content/resume.json"
+    target = "assets/resume.json"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
