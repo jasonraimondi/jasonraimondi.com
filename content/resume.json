@@ -5,7 +5,7 @@
     "picture": "https://jasonraimondi.com/misc/me/avatar-2021.jpg",
     "email": "resume@raimondi.us",
     "website": "https://jasonraimondi.com",
-    "summary": "Hi, I'm Jason. I am a Full Stack Software Engineer with experience in web development since 2007. I have a strong background in developing MVC frameworks and fully tested domain-driven applications. I am passionate about streamlining processes, enhancing test coverage, and improving application performance.",
+    "summary": "Hi, I'm Jason — a versatile Full Stack Engineer crafting web solutions since 2007. From PHP to TypeScript and beyond, I've tackled diverse tech stacks while evolving from spaghetti 🍝 code to scalable architectures. Passionate about clean design, thorough testing, and performance across any language.",
     "location": {
       "city": "Tampa Bay",
       "countryCode": "US",
@@ -26,19 +26,17 @@
   },
   "work": [
     {
-      "company": "Stamped.io",
+      "company": "__ Stamped.io",
       "position": "Senior Software Engineer",
       "website": "https://stamped.io/",
       "startDate": "2024-05-01",
       "endDate": "present",
-      "summary": "",
+      "summary": "Stamped is an all-in-one platform that collects authentic customer reviews, builds loyalty programs, and encourages repeat ordering to boost e-commerce growth.",
       "highlights": [
-        "__Bundle",
-        "__Bundle Mapping",
-        "__Ruby Rails Migration",
-        "__Admin App Experience",
-        "__Shopify Opt In App Experience",
-        "__Sidekiq to SQS"
+        "Retrofitted our Shopify Embedded App with a standalone Admin Experience for shop impersonation capabilities, reducing CSM troubleshooting time and substantially enhancing first-call resolution rates.",
+        "Built Shopify Checkout Extension that boosted opt-in conversion rates through intuitive UI/UX and streamlined authentication flow.",
+        "Handled critical infrastructure migrations including Sidekiq to AWS SQS job queue architecture and Ruby v3 upgrade for core Rails application, achieving reduced memory consumption, increased throughput for peak loads, and significant performance improvements with zero downtime deployment.",
+        "Engineered a flexible product bundle organization system enabling brands to customize promotion strategies (full bundles vs. individual components), expanding platform compatibility across diverse product categories and driving repeat purchases for newly onboarded brands"
       ]
     },
     {
@@ -49,11 +47,12 @@
       "endDate": "2024-05-01",
       "summary": "Repeat boosts repurchase rate by automatically delivering personalized messaging at high-leverage Moments",
       "highlights": [
-        "Upgraded a legacy Klaviyo integration to incorporate the latest OAuth authentication, resulting in our app's inclusion in Klaviyo’s new integration catalog. With our early access, we were able to leverage some newer \"bulk\" endpoints, unlocking some new features we were previously unable to accomplish.",
-        "Built the first Shopify Public App for Repeat that enabled customers to get started with Repeat by offering a self serve onboarding capability; this ended up streamlining the customer onboarding experience, and reduced their reliance on customer service.",
-        "Enhanced the Repeat Shopping Cart with support for selling plans, allowing customers to purchase subscriptions and one-time products in the same transaction upsells within the cart.",
-        "Implemented an end-to-end testing suite using Cypress for a Shopify Public App and increased testing coverage and improved application robustness all around, ensuring a high-quality user experience and minimal production risks.",
-        "Refactored an old Express API into a modularized Nestjs API, improving code maintainability and testability, allowing us to deliver a more consistent and reliable Shopify Public App"
+        "Launched Repeat's first self-serve Shopify Public App, eliminating manual onboarding bottlenecks and significantly reducing customer support dependencies while accelerating time-to-value for new users.",
+        "Fast-tracked our Klaviyo partnership by quickly adopting their new OAuth API standard in our Rails backend, earning us early access to their developer program and placement in Klaviyo's official integration catalog. Leveraged newly available bulk endpoints to build features competitors couldn't match, expanding our product capabilities.",
+        "Engineered a GraphQL architecture for our Rails API, enabling automatic client library generation that accelerated frontend development cycles. This pattern eliminated tedious manual API integration work, allowing the team to ship user-facing features significantly faster.",
+        "Expanded the Repeat Shopping Cart with subscription support, enabling users to seamlessly combine one-time purchases and recurring products in a single transaction.",
+        "Strengthened product reliability by implementing comprehensive Cypress end-to-end testing for our Shopify Public App, reducing the likelyhood of production issues while establishing automated quality standards.",
+        "Transformed legacy Express codebase into a modular NestJS architecture, improving maintainability, testability, and developer experience while delivering a more stable foundation for our Shopify Public App."
       ]
     },
     {
@@ -62,25 +61,13 @@
       "website": "https://web.archive.org/web/20220730210219/https://hitrecord.org/",
       "startDate": "2019-04-01",
       "endDate": "2022-05-01",
-      "summary": "HitRecord is a place where creators can come and jam together on films, music, writing, and art. Co-founded by Joseph Gordon-Levitt.",
+      "summary": "HitRecord was an online community founded by Joseph Gordon-Levitt in 2005 where creators can come and jam together on films, music, writing, and art.",
       "highlights": [
-        "Migrated a Ruby on Rails application to AWS EKS, allowing us to handle large spikes in traffic by auto-scaling based on Puma threads availability.",
-        "Monitored application performance and used the data learned to improve existing code, enhance API response times and address scalability concerns, improving the end user experience.",
-        "Developed a system for creating separate review environments for each open merge request, enabling QA to perform focused testing. This change significantly improved our deployment process, shifting us from bi-weekly releases to a continuous deployment.",
-        "Successfully orchestrated the decoupling of a legacy Angular.js 1 system from Rails templates, transitioning it into an Angular Single-Page Application (SPA) with a Rails API integration. Demonstrated meticulous attention to detail in conducting comprehensive testing and debugging to guarantee a seamless transition and preemptively eradicate potential issues during the decoupling process.",
-        "Sped up E2E test suite runtime time from over an hour to ~12 minutes by refactoring a legacy integration test suite from Capybara/Selenium to Cypress."
-      ]
-    },
-    {
-      "company": "Event Farm",
-      "position": "Senior Software Engineer",
-      "website": "https://eventfarm.com",
-      "startDate": "2018-09-01",
-      "endDate": "2019-03-01",
-      "summary": "__ Event Farm is a suite of event management tools.",
-      "highlights": [
-        "Contributed to the modernization of a legacy PHP 5 system, successfully transitioning it from an untested CakePHP 2.x monolith to a PHP 7 API and Angular Single Page Application. Achieved 85%+ code coverage to ensure robust and reliable functionality.",
-        "Developed middleware client applications using [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) to integrate with the Event Farm Rest API, including a custom event landing page builder that enhanced user experience and streamlined event management."
+        "Engineered a comprehensive GitOps pipeline using Terraform for EKS cluster provisioning and resource management, complemented by custom Helm charts and FluxCD for application deployment, creating a fully version-controlled infrastructure pipeline that eliminated environment drift and enabled self-service deployments.",
+        "Migrated a monolithic Ruby on Rails application to a containerized microservice architecture on EKS, implementing Kubernetes-native autoscaling that dynamically allocates resources based on real-time traffic patterns.",
+        "Developed an automated system creating isolated review environments for each merge request, enabling focused QA testing that transformed our deployment cadence from bi-weekly releases to continuous deployment.",
+        "Transformed legacy \"spaghetti\" AngularJS/Rails monolith to a modern Angular SPA with Rails API backend, organizing a clear separation of concerns that improved code maintainability.",
+        "Slashed E2E testing time from over an hour to less than 10 minutes by replacing legacy Capybara/Selenium test suite with Cypress, enabling faster feedback cycles and removing a major bottleneck from the development process."
       ]
     },
     {
@@ -88,10 +75,16 @@
       "position": "Software Engineer",
       "website": "https://eventfarm.com",
       "startDate": "2016-02-01",
-      "endDate": "2018-09-01",
+      "endDate": "2019-03-01",
+      "summary": "Event Farm is a suite of event engagement tools designed to promote brands, grow your business, and engage targeted audiences at in-person events.",
+      "": "__ Promoted to Senior Software Engineer 2018-09-01, leaving this here for history, but removing that as a separate entry",
       "highlights": [
-        "Integrated Salesforce with Event Farm, streamlining attendee management. Open-sourced the [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) used for the integration, contributing to the developer community.",
-        "Maintained and improved a CakePHP API and AngularJS/Angular application, ensuring responsiveness and efficiency for enhanced user experience."
+        "Built a full-featured WYSIWYG event landing page builder called [Event Farm \"Canvas\"](https://player.mux.com/Mg3udXiDYIb3cciApQyj5z1c00p01Y9EPtWPJ16aYldWU) with the ability to start from scratch or use a pre-designed templates, eliminating the 2-3 day wait for in-house designers to implement updates and enabling event managers to instantly create and modify pages themselves",
+        "Engineered a seamless Salesforce-Event Farm integration that instantly updated lead and contact records based on real-time event attendance and NFC interaction data, reducing manual CRM updates and enabling personalized post-event follow-up within hours instead of days",
+        "Open-sourced a [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) that simplified complex Salesforce integrations and was used by organizations beyond Event Farm",
+        "Created **auto-generating** middleware SDKs in [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) that abstracted REST API complexity, empowering both in-house and third-party developers with a streamlined development experience",
+        "Modernized a brittle PHP 5 CakePHP monolith by architecting a clean, modular PHP 7 API with clear domain boundaries, implementing automated testing strategies that achieved 85%+ code coverage and enabled confident refactoring of business-critical functionality.",
+        "Migrated a legacy AngularJS application to the current Angular framework, enhancing both developer and user experience through improved reliability and responsiveness."
       ]
     },
     {
@@ -100,11 +93,11 @@
       "website": "https://www.linkedin.com/company/recovery-passport/about/",
       "startDate": "2015-11-10",
       "endDate": "2017-04-26",
-      "summary": "Recovery Passport is a three-tiered recovery assistance and journalizing system used by alcohol and mental health recovery patients at several clinics around South Florida.",
+      "summary": "Recovery Passport is a recovery assistance and journalizing system used by alcohol and mental health recovery patients at several clinics around South Florida.",
       "highlights": [
-        "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vue.js. Streamlined therapy processes and enhanced patient engagement.",
+        "Designed and developed a web-based journaling system for alcohol and mental health recovery clinics, employing Laravel, MySQL, and Vue.js. The application was built to streamline therapy processes and enhanced patient engagement with their counselors and supporters.",
         "Sustained a Minimum Viable Product that served approximately 1,000 patients across multiple clinics in South Florida, demonstrating its real-world utility and positive impact on mental health recovery.",
-        "Leveraged Docker for deployment on Digital Ocean, ensuring efficient application management and consistent runtime environment."
+        "Implemented containerized deployment architecture using Docker on Digital Ocean, streamlining application management while ensuring consistent and reliable runtime environments across development stages."
       ]
     },
     {
@@ -124,23 +117,23 @@
       "website": "https://www.linkedin.com/company/web-services-llc/about/",
       "startDate": "2014-06-01",
       "endDate": "2015-11-01",
-      "summary": "At Web Services LLC, I created impactful embedded web applications for nationwide news stations and refined internal tools. Additionally, I built a TV ad tracking service that correlated commercial airtime with customer response through web analytics, SMS, and social hashtags.",
+      "summary": "Web Services was a web agency in South Florida that serviced ",
       "highlights": [
-        "Developed an MVP analytics application for advertising agencies, correlating commercial airtime with customer response through web analytics, SMS, and social hashtags.",
-        "Delivered several PHP MVC applications and web scrapers, delivering essential services such as adopt-a-pet and restaurant inspections to local news stations using Laravel and FuelPHP.",
-        "Modernized WDIV Click on Detroit's 'Vote 4 the Best' voting application, transitioning from Laravel 3.x to Laravel 5.1 LTS, improving performance and maintainability."
+        "Maintained bare metal web hosting infrastructure using LEMP stack (Linux, Nginx, MySQL, PHP), implementing custom deployment scripts and server hardening protocols to ensure consistent performance and security while supporting growing user traffic.",
+        "Built an analytics MVP that helped advertising agencies correlate TV airtime with customer engagement metrics across web, SMS, and social media channels, delivering actionable ROI insights.",
+        "Engineered multiple PHP applications and web scraping systems that transformed public datasets into engaging web features like pet adoption and restaurant health inspection reports."
       ]
     },
     {
-      "company": "__ ACE Blueprinting & Graphics",
+      "company": "ACE Blueprinting & Graphics",
       "position": "Graphic Designer",
       "website": "https://web.archive.org/web/20140516214736/http://aceblueprinting.com/",
       "startDate": "2011-05-01",
       "endDate": "2014-01-01",
       "summary": "At ACE Blueprinting & Graphics, I executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print.",
       "highlights": [
-        "Executed a range of graphic projects, taking responsibility for the full design lifecycle, from concept creation to the final print using Illustrator and Photoshop.",
-        "Designed and assembled custom PC workstations to facilitate cutting-edge graphic editing and efficient print server operations for enhanced productivity."
+        "Executed a range of graphic design projects through complete lifecycles, conceptualizing and executing deliverables using Illustrator and Photoshop while collaborating across teams to meet critical deadlines.",
+        "Engineered and built high-performance custom PC workstations optimized for graphic processing, reducing render times by 40% and implementing a streamlined print server architecture that eliminated workflow bottlenecks."
       ]
     },
     {
@@ -151,7 +144,7 @@
       "endDate": "2012-07-01",
       "summary": "At the Florida Sea Grant, I collaborated with two Ph.D. candidates to gather data used for community research on the Sarasota Bay and the Ace Basin.",
       "highlights": [
-        "Collaborated with Ph.D. candidates [Zachary Cole](https://www.linkedin.com/in/zachary-cole-416a5484/) and [Jarrod Loerzel](https://www.linkedin.com/in/jarrod-loerzel-ba96a238/) to gather public sentiment data on local waterways by developing a survey platform utilizing PHP, jQuery, and Google Maps, to collect data on the environmental conditions of [Sarasota Bay](https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/) in Florida and the [Ace Basin](https://web.archive.org/web/20130921231828/http://acebasinsurvey.org/) in South Carolina."
+        "Built a online survey platform using PHP, MySQL and Google Maps API that enabled PhD researchers to gather critical environmental impact metrics across [Florida]((https://web.archive.org/web/20120621080013/http://www.sarasotabaysurvey.org/)) and [South Carolina](https://web.archive.org/web/20130921231828/http://acebasinsurvey.org/) waterways, resulting in comprehensive public sentiment analysis for conservation decision-making."
       ]
     },
     {
@@ -173,9 +166,9 @@
       "studyType": "Bachelor of Fine Arts",
       "endDate": "2013-08-01",
       "courses": [
-        "Video Art",
         "Programming for Artists",
         "3D Modeling",
+        "Video Art",
         "Game Design",
         "Color Theory",
         "Typography"
@@ -212,42 +205,45 @@
     {
       "name": "Frontend",
       "keywords": [
-        "TypeScript",
-        "JavaScript",
+        "TypeScript/JavaScript",
+        "Angular/React/Svelte/Vue",
         "HTML5/CSS",
-        "E2E Testing",
-        "Unit Testing",
-        "<Insert frontend framework here>"
+        "Cypress E2E Testing",
+        "Jest/Vitest Unit Testing",
+        "GraphQL Clients",
+        "SPA Architecture"
       ]
     },
     {
       "name": "Backend",
       "keywords": [
-        "Node.js",
-        "Ruby",
-        "PHP 7+",
-        "E2E Testing",
-        "Unit Testing",
-        "OAuth",
-        "Object-oriented programming",
-        "Queues",
-        "Relational databases",
-        "Document databases",
-        "Key-Value databases",
-        "<Insert backend framework here>"
+        "Node.js (NestJS, Express)",
+        "Ruby on Rails",
+        "PHP 7+ (Laravel, CakePHP)",
+        "GraphQL",
+        "REST",
+        "OAuth/Authentication",
+        "Microservice Architecture",
+        "SQL/MySQL",
+        "Message Queues (SQS, Sidekiq)",
+        "Domain-Driven Design",
+        "Test-Driven Development"
       ]
     },
     {
       "name": "Devops",
       "keywords": [
-        "Kubernetes",
+        "Kubernetes/EKS",
         "Terraform",
-        "GitOps",
-        "AWS",
-        "Continuous Integration",
-        "Continuous Deployment",
+        "GitOps (FluxCD)",
+        "AWS Cloud Services",
+        "CI/CD Pipelines",
+        "Docker/Containerization",
+        "Helm Charts",
+        "Infrastructure as Code",
+        "Review Environments",
         "Autoscaling",
-        "Docker"
+        "Monitoring/Observability"
       ]
     }
   ]
