@@ -1,3 +1,10 @@
 
 [env]
 _.path = ['{{config_root}}/node_modules/.bin']
+
+[tools]
+pnpm = "latest"
+
+[tasks.dev]
+description = "Run Dev Mode"
+run = "pnpm dev"

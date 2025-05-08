@@ -26,16 +26,16 @@
   },
   "work": [
     {
-      "company": "__ Stamped.io",
+      "company": "Stamped.io",
       "position": "Senior Software Engineer",
       "website": "https://stamped.io/",
       "startDate": "2024-05-01",
       "endDate": "present",
       "summary": "Stamped is an all-in-one platform that collects authentic customer reviews, builds loyalty programs, and encourages repeat ordering to boost e-commerce growth.",
       "highlights": [
-        "Retrofitted our Shopify Embedded App with a standalone Admin Experience for shop impersonation capabilities, reducing CSM troubleshooting time and substantially enhancing first-call resolution rates.",
+        "Added a standalone \"Admin Experience\" for the [Shopify Public App](https://apps.shopify.com/repeat) with shop impersonation capabilities, reducing CSM troubleshooting time and substantially enhancing first-call resolution rates.",
         "Built Shopify Checkout Extension that boosted opt-in conversion rates through intuitive UI/UX and streamlined authentication flow.",
-        "Handled critical infrastructure migrations including Sidekiq to AWS SQS job queue architecture and Ruby v3 upgrade for core Rails application, achieving reduced memory consumption, increased throughput for peak loads, and significant performance improvements with zero downtime deployment.",
+        "Handled critical infrastructure migrations including Sidekiq to AWS SQS job queue architecture and Ruby v3 upgrade for core Rails backend, achieving reduced memory consumption, increased throughput for peak loads, and significant performance improvements with zero downtime deployment.",
         "Engineered a flexible product bundle organization system enabling brands to customize promotion strategies (full bundles vs. individual components), expanding platform compatibility across diverse product categories and driving repeat purchases for newly onboarded brands"
       ]
     },
@@ -47,11 +47,11 @@
       "endDate": "2024-05-01",
       "summary": "Repeat boosts repurchase rate by automatically delivering personalized messaging at high-leverage Moments",
       "highlights": [
-        "Launched Repeat's first self-serve Shopify Public App, eliminating manual onboarding bottlenecks and significantly reducing customer support dependencies while accelerating time-to-value for new users.",
-        "Fast-tracked our Klaviyo partnership by quickly adopting their new OAuth API standard in our Rails backend, earning us early access to their developer program and placement in Klaviyo's official integration catalog. Leveraged newly available bulk endpoints to build features competitors couldn't match, expanding our product capabilities.",
-        "Engineered a GraphQL architecture for our Rails API, enabling automatic client library generation that accelerated frontend development cycles. This pattern eliminated tedious manual API integration work, allowing the team to ship user-facing features significantly faster.",
+        "Launched Repeat's first self-serve [Shopify Public App](https://apps.shopify.com/repeat), eliminating manual onboarding bottlenecks and significantly reducing customer support dependencies while accelerating time-to-value for new users.",
+        "Fast-tracked our Klaviyo partnership by quickly adopting their new OAuth API standard in our Rails backend, earning us early access to their developer program and placement in [Klaviyo's official integration catalog](https://integrations.klaviyo.com/repeat). Leveraged newly available bulk endpoints to build features competitors couldn't match, expanding our product capabilities.",
+        "Engineered a GraphQL architecture for our Rails backend, enabling automatic client library generation that accelerated frontend development cycles allowing the team to ship user-facing features significantly faster.",
         "Expanded the Repeat Shopping Cart with subscription support, enabling users to seamlessly combine one-time purchases and recurring products in a single transaction.",
-        "Strengthened product reliability by implementing comprehensive Cypress end-to-end testing for our Shopify Public App, reducing the likelyhood of production issues while establishing automated quality standards.",
+        "Strengthened product reliability by implementing comprehensive Cypress end-to-end testing for our [Shopify Public App](https://apps.shopify.com/repeat), reducing the likelyhood of production issues while establishing automated quality standards.",
         "Transformed legacy Express codebase into a modular NestJS architecture, improving maintainability, testability, and developer experience while delivering a more stable foundation for our Shopify Public App."
       ]
     },
