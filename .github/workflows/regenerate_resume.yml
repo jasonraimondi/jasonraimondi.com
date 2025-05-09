@@ -15,9 +15,11 @@ on:
 jobs:
   regenerate_resume:
     runs-on: ubuntu-latest
-    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    if: "! contains(github.event.head_commit.message, '[skip-resume-build]')"
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4                                                                                                          │ │
+        with:                                                                                                                                     │ │
+          fetch-depth: 0    
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: npx playwright install --with-deps chromium
@@ -28,7 +30,7 @@ jobs:
         with:
           file_pattern: 'static/resume.*'
           commit_message: | 
-            gen: generate update resume [skip ci]
+            gen: generate update resume [skip-resume-build]
           branch: main
           commit_user_name: resume-generator 🤖
           commit_user_email: actions@github.com
