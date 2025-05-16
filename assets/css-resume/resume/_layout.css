@@ -79,7 +79,10 @@
   }
 }
 
-
+.item-list li::before {
+  content: "-";
+  padding-right: 0.25rem;
+}
 
 .item-list li {
   padding-top: 0.5rem;

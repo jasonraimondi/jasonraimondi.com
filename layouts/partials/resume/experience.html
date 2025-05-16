@@ -39,7 +39,7 @@
 
             {{ range $work.highlights -}}
             {{ if not (hasPrefix . "__") -}}
-            <li>&dash; {{ . | markdownify }}</li>
+            <li>{{ . | markdownify }}</li>
             {{ end -}}
             {{ end -}}
         </ul>

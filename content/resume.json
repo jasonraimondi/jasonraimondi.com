@@ -36,7 +36,7 @@
         "Added a standalone \"Admin Experience\" for the [Shopify Public App](https://apps.shopify.com/repeat) with shop impersonation capabilities, reducing CSM troubleshooting time and substantially enhancing first-call resolution rates.",
         "Built Shopify Checkout Extension that boosted opt-in conversion rates through intuitive UI/UX and streamlined authentication flow.",
         "Handled critical infrastructure migrations including Sidekiq to AWS SQS job queue architecture and Ruby v3 upgrade for core Rails backend, achieving reduced memory consumption, increased throughput for peak loads, and significant performance improvements with zero downtime deployment.",
-        "Engineered a flexible product bundle organization system enabling brands to customize promotion strategies (full bundles vs. individual components), expanding platform compatibility across diverse product categories and driving repeat purchases for newly onboarded brands"
+        "Engineered a flexible product bundle organization system enabling brands to customize promotion strategies (full bundles vs. individual components), expanding platform compatibility across diverse product categories and driving repeat purchases for newly onboarded brands."
       ]
     },
     {
@@ -79,10 +79,10 @@
       "summary": "Event Farm is a suite of event engagement tools designed to promote brands, grow your business, and engage targeted audiences at in-person events.",
       "": "__ Promoted to Senior Software Engineer 2018-09-01, leaving this here for history, but removing that as a separate entry",
       "highlights": [
-        "Built a full-featured WYSIWYG event landing page builder called [Event Farm \"Canvas\"](https://player.mux.com/Mg3udXiDYIb3cciApQyj5z1c00p01Y9EPtWPJ16aYldWU) with the ability to start from scratch or use a pre-designed templates, eliminating the 2-3 day wait for in-house designers to implement updates and enabling event managers to instantly create and modify pages themselves",
-        "Engineered a seamless Salesforce-Event Farm integration that instantly updated lead and contact records based on real-time event attendance and NFC interaction data, reducing manual CRM updates and enabling personalized post-event follow-up within hours instead of days",
-        "Open-sourced a [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) that simplified complex Salesforce integrations and was used by organizations beyond Event Farm",
-        "Created **auto-generating** middleware SDKs in [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) that abstracted REST API complexity, empowering both in-house and third-party developers with a streamlined development experience",
+        "Built a full-featured WYSIWYG event landing page builder called [Event Farm \"Canvas\"](https://player.mux.com/Mg3udXiDYIb3cciApQyj5z1c00p01Y9EPtWPJ16aYldWU) with the ability to start from scratch or use a pre-designed templates, eliminating the 2-3 day wait for in-house designers to implement updates and enabling event managers to instantly create and modify pages themselves.",
+        "Engineered a seamless Salesforce-Event Farm integration that instantly updated lead and contact records based on real-time event attendance and NFC interaction data, reducing manual CRM updates and enabling personalized post-event follow-up within hours instead of days.",
+        "Open-sourced a [PHP 7 Salesforce Rest API](https://github.com/eventfarm/restforcephp) that simplified complex Salesforce integrations and was used by organizations beyond Event Farm.",
+        "Created **auto-generating** middleware SDKs in [Golang](https://github.com/eventfarm/go-sdk) and [Node.js](https://github.com/eventfarm/javascript-sdk) that abstracted REST API complexity, empowering both in-house and third-party developers with a streamlined development experience.",
         "Modernized a brittle PHP 5 CakePHP monolith by architecting a clean, modular PHP 7 API with clear domain boundaries, implementing automated testing strategies that achieved 85%+ code coverage and enabled confident refactoring of business-critical functionality.",
         "Migrated a legacy AngularJS application to the current Angular framework, enhancing both developer and user experience through improved reliability and responsiveness."
       ]
