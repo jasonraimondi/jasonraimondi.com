@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, '[skip-resume-build]')"
     steps:
-      - uses: actions/checkout@v4                                                                                                          │ │
-        with:                                                                                                                                     │ │
-          fetch-depth: 0    
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: npx playwright install --with-deps chromium
