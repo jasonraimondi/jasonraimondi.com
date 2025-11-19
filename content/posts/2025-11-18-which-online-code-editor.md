@@ -1,7 +1,7 @@
 ---
 title: Online Code Editor Cheat Sheet
 description: Quick comparision of CodePen, JSFiddle, JS Bin, CodeSandbox, and Stackblitz
-slug: git-squashit-squash-it-squa-shit
+slug: which-online-code-editor-cheat-sheet
 date: 2025-11-18T10:30:00-05:00
 categories:
 - frontend
