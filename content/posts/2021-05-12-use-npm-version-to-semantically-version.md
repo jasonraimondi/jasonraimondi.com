@@ -8,8 +8,8 @@ categories:
 - backend
 - frontend
 tags:
-- nodejs
-- semantic-version
+- node
+- git
 ---
 
 ## Create a prerelease version

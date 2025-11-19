@@ -11,8 +11,8 @@ images:
 slug: traverse-2-electric-boogaloo
 tags:
 - electron
-- javascript
 - typescript
+- react
 title: 'Traverse 2: Electric Boogaloo'
 ---
 

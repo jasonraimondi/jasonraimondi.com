@@ -13,8 +13,8 @@ images:
 slug: setting-up-laravel-with-foundation
 tags:
 - php
-- laravel
-- foundation-sites
+- frontend
+- javascript
 title: Setting Up Laravel Elixir with Foundation 6
 ---
 

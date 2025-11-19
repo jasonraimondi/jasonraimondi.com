@@ -11,10 +11,9 @@ images:
 - /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: docker-compose-traefik-lets-encrypt
 tags:
-- docker-compose
-- traefik
 - docker
-- lets-encrypt
+- ssl
+- self-hosted
 title: Docker Compose, Traefik 1.7 + Lets Encrypt
 ---
 

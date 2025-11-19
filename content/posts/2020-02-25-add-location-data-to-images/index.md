@@ -10,6 +10,8 @@ images:
 slug: add-location-data-to-images
 tags:
 - bash
+- macos
+- linux
 title: Add location data to a jpg that is missing it
 ---
  

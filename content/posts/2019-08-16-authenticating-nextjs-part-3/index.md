@@ -11,10 +11,10 @@ images:
 - /covers/alan-scales-1_WMZARl81c-unsplash.jpg
 slug: add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load
 tags:
-- authenticating-nextjs
 - nextjs
-- ssr
 - react
+- authentication
+- typescript
 title: Add server side rendered async api calls to your Next.js application that resolve
   before the initial page load
 ---

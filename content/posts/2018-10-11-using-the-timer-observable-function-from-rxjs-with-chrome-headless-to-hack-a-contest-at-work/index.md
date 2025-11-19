@@ -10,9 +10,8 @@ images:
 - /covers/alice-butenko-R-Zo6IjKgH0-unsplash.jpg
 slug: using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work
 tags:
-- rxjs
 - typescript
-- puppeteer
+- automation
 - docker
 title: Using the 'timer' observable from Rxjs and Chrome Headless to hack a contest
   at work

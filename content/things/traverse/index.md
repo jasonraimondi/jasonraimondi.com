@@ -6,8 +6,8 @@ lastmod: "2020-05-16T11:36:32-08:00"
 slug: traverse
 tags:
 - electron
-- javascript
 - typescript
+- react
 categories:
 - frontend
 aliases:

@@ -4,6 +4,10 @@ description: URL to PNG utility featuring parallel rendering using Puppeteer (He
   Chrome + Node.js) with storage caching via CouchDB or S3
 slug: url-to-png
 title: URL to PNG
+tags:
+- node
+- docker
+- typescript
 ---
 
 A URL to PNG generator over HTTP with a fairly simple API accessed via query params passed to the servers single endpoint.

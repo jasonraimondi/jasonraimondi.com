@@ -4,11 +4,9 @@ description: Bulk add mirror repositories to a Gitea instance by scraping reposi
   on GitHub.
 slug: deno-mirror-to-gitea
 tags:
-- deno
-- github
-- gitea
-- data hoarding
 - typescript
+- self-hosted
+- automation
 title: Deno Mirror to Gitea
 ---
 

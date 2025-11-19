@@ -14,8 +14,7 @@ lastmod: "2019-10-01T00:00:00-07:00"
 slug: absolute-imports-with-typescript-and-webpack
 tags:
 - typescript
-- webpack
-- tsconfig.json
+- frontend
 title: Absolute imports with TypeScript and Webpack
 ---
 

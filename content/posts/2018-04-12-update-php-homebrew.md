@@ -10,9 +10,9 @@ images:
 - /covers/christin-hume-08tX2fsuSLg-unsplash.jpg
 slug: update-php-homebrew
 tags:
-- macos
-- homebrew
 - php
+- homebrew
+- macos
 title: Update PHP using homebrew
 ---
 

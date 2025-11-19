@@ -9,9 +9,7 @@ images:
 - /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: brew-install-everything
 tags:
-- apple
 - macos
-- brew
 - homebrew
 title: Brew install everything
 ---

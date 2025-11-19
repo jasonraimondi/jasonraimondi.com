@@ -2,6 +2,10 @@
 title: Terraform configuration for S3 static site with CloudFront for https and Cloudflare DNS
 slug: terraform-amazon-s3-static-site-with-cloudfront-https-and-cloudflare-dns
 date: 2020-06-23T03:23:28
+tags:
+- terraform
+- aws
+- ssl
 ---
 
 In this example, I am using Cloudflare as my DNS provider, Amazon s3 for the static site hosting, and Cloudfront for https.

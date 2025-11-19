@@ -10,7 +10,7 @@ images:
 - /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: enhance-macos-quick-look
 tags:
-- productivity
+- macos
 title: Upgrade macOS Quick Look to support even more filetypes.
 ---
  

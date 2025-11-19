@@ -7,8 +7,8 @@ categories:
 - macos
 - software
 tags:
-- asdf
-- nodejs
+- node
+- macos
 ---
 
 ## Whats the problem?

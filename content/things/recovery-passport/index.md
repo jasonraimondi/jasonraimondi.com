@@ -12,9 +12,9 @@ images:
 - /posts/2019/03/recovery-passport/recovery-passport_1_feature.png
 slug: recovery-passport-three-tiered-support-system
 tags:
-- vue.js
+- vue
 - php
-- javascript
+- docker
 title: Recovery Passport
 ---
 

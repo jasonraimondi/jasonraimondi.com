@@ -11,7 +11,6 @@ images:
 slug: optimizing-your-dockerfile-build-and-layers
 tags:
 - docker
-- dockerfile
 title: Optimizing your Dockerfile build layers
 ---
 

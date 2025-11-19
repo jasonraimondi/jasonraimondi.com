@@ -7,9 +7,8 @@ categories:
 - frontend
 - backend
 tags:
-- css
-- node
-- online-workspaces
+- frontend
+- javascript
 ---
 
 ## Quick Comparison

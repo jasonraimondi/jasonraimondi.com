@@ -10,7 +10,7 @@ images:
 slug: adding-vanilla-js-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content
 tags:
 - javascript
-- blog
+- frontend
 title: A vanilla JS solution to adding header deep links to your blog for easy sharing
   to direct content
 ---

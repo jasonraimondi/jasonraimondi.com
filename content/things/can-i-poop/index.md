@@ -14,13 +14,10 @@ images:
 - /cover/canipoop-alfredo.png
 slug: can-i-poop
 tags:
+- vue
 - javascript
-- firebase
-- websockets
-- vue.js
-- raspberry-pi
-- arduino
-- alfred
+- iot
+- hardware
 title: Can I Poop?
 ---
 

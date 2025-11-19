@@ -9,7 +9,8 @@ images:
 - ./imgs/alfred-chrome-to-firefox-workflow.png
 slug: using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox
 tags:
-- alfred
+- macos
+- automation
 title: Using an Alfred workflow to assist in switching from Google Chrome to Firefox
 ---
 

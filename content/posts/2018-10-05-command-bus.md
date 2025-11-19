@@ -9,8 +9,9 @@ images:
 - /covers/sam-loyd-qy27JnsH9sU-unsplash.jpg
 slug: command-query-bus-with-ioc-container
 tags:
-- dependency injection
-- ioc
+- typescript
+- architecture
+- node
 title: Command/Query Bus with IoC Container
 ---
 

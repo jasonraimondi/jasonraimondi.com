@@ -8,7 +8,8 @@ categories:
 - ops
 tags:
 - linux
-- ubuntu
+- macos
+- bash
 ---
 
 I've been doing this for over a decade, and finally decided to document it.

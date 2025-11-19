@@ -14,10 +14,9 @@ images:
 - /covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg
 slug: flipp
 tags:
+- vue
 - javascript
-- firebase
-- websockets
-- vue.js
+- iot
 title: Flipp, the light up event
 ---
 

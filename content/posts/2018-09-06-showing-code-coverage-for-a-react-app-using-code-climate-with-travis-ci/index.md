@@ -13,9 +13,8 @@ slug: showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci
 tags:
 - react
 - typescript
-- javascript
-- code-climate
-- travis-ci
+- testing
+- ci-cd
 title: Showing code coverage for a React app using Code Climate and Travis CI
 ---
 

@@ -9,10 +9,9 @@ images:
 - /covers/ruslan-bogdanov-vfqBtntwQc8-unsplash.jpg
 slug: enhancing-your-static-site-and-markdown-posts-with-vuejs
 tags:
-- vue.js
+- vue
 - javascript
-- markdown
-- static-site
+- frontend
 title: Enhancing your static site and markdown posts with Vue.js
 ---
 

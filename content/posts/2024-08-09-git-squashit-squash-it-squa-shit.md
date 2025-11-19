@@ -7,6 +7,7 @@ categories:
 - ops
 tags:
 - git
+- bash
 ---
 
 # Git Squashit

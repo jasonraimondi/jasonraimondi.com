@@ -10,12 +10,9 @@ images:
 - /covers/graphic-node-Bd7YLDIXJXg-unsplash.jpg
 slug: create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang
 tags:
-- authenticating-nextjs
-- nextjs
-- react
-- jwt
 - golang
-- echo-framework
+- authentication
+- node
 title: Create a secured REST Api for a Next.js application using JWT and Golang
 ---
 

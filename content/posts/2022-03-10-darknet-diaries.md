@@ -4,9 +4,9 @@ slug: "darknet-diaries"
 date: 2022-03-10T20:48:22-08:00
 description: "Every episode of Darknet Diaries is worth listening to. These are a few of my favorites."
 categories: []
-tags: 
-- podcasts
-- infosec
+tags:
+- security
+- misc
 ---
 
 - Crazy video game hacking story - https://darknetdiaries.com/episode/7/

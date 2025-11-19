@@ -8,8 +8,8 @@ description: "An example workflow showing how to install Google Fonts into a Git
 categories: 
 - ops
 tags:
-- google-fonts
-- github-actions
+- ci-cd
+- bash
 ---
 
 Sharing this for my future self, and anyone else who has spent more than 10 minutes trying to install Google Font's into a Github Workflow.

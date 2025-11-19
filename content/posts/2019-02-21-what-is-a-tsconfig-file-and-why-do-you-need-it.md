@@ -11,8 +11,6 @@ images:
 slug: what-is-a-tsconfig-file-and-why-do-you-need-it
 tags:
 - typescript
-- tsconfig.json
-- tsc
 title: What is a tsconfig.json file and why do I need it?
 ---
 

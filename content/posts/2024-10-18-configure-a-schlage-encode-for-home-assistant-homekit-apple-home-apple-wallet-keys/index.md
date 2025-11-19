@@ -5,11 +5,10 @@ date: 2024-10-18T11:37:00-08:00
 description: "A comprehensive guide to setting up your Schlage Encode Plus lock with Home Assistant, HomeKit, and Apple Wallet for seamless smart home integration."
 categories: 
 - hardware
-tags: 
-- home-assistant
-- homekit
-- schlage-lock
+tags:
 - iot
+- automation
+- self-hosted
 ---
 
 ## Introduction

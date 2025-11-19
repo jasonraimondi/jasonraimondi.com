@@ -10,8 +10,8 @@ imageCredit: '@morais_afonso https://unsplash.com/photos/JXgdQzexK9M'
 slug: local-and-session-storage-helpers
 tags:
 - javascript
-- sessionstorage
-- localstorage
+- typescript
+- frontend
 title: LocalStorage and SessionStorage helpers
 ---
 

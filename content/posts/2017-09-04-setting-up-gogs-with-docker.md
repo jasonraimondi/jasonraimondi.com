@@ -9,11 +9,10 @@ description: Getting a private Git/Gogs server behind SSL is actually surprising
   on a VPS server behind SSL using Docker.
 slug: setting-up-gogs-with-docker
 tags:
-- gogs
-- ssl
-- nginx
-- lets-encrypt
 - docker
+- nginx
+- ssl
+- self-hosted
 title: Setting up a private git server using Gogs
 ---
 

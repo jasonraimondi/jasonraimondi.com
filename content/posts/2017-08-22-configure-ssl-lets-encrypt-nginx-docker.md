@@ -8,10 +8,8 @@ description: Some notes on setting up HTTPS on your server using the official Le
   Encrypt Docker Image.
 slug: configure-ssl-lets-encrypt-nginx-docker
 tags:
-- php
-- nginx
-- lets-encrypt
 - docker
+- nginx
 - ssl
 title: Configure SSL Using Let’s Encrypt, Nginx, and Docker
 ---

@@ -13,8 +13,7 @@ images:
 slug: auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile
 tags:
 - docker
-- drone.io
-- ci
+- ci-cd
 title: Auto deploy Docker containers using a self hosted CI (Drone 1.0.0-rc.1) and
   a multi stage Dockerfile
 ---

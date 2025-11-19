@@ -9,8 +9,8 @@ images:
 - /covers/wendy-scofield-fnlNwb5sB5Y-unsplash.jpg
 slug: exec-command-in-nodejs
 tags:
+- node
 - javascript
-- node.js
 title: Using the exec command in node.js
 ---
 

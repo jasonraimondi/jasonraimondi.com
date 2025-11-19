@@ -5,8 +5,8 @@ date: 2022-03-24T20:48:22-08:00
 description: "Mode 65 mechanical keyboard build-out"
 categories: 
 - hardware
-tags: 
-- mechanical-keyboards
+tags:
+- hardware
 ---
 
 {{< image/gallery/frame >}}

@@ -12,8 +12,6 @@ slug: testing-a-typescript-react-app-using-ts-jest-not-create-react-app
 tags:
 - react
 - typescript
-- webpack
-- tdd
 - testing
 title: Testing a TypeScript React app using TS-Jest without using Create React App
 ---

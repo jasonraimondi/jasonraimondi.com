@@ -10,8 +10,9 @@ description: The goal of this is to have a working development and production bu
 slug: build-a-php72-app-using-docker
 tags:
 - php
-- nginx
 - docker
+- nginx
+- ssl
 title: Building a PHP7.2 + Nginx application using Docker
 ---
 

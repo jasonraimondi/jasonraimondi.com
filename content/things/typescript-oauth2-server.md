@@ -4,10 +4,8 @@ description: A standards compliant implementation of an OAuth 2.0 authorization 
 date: "2022-01-17T00:00:00-07:00"
 tags:
 - typescript
-- nodejs
-- express
-- fastify
-- oauth2
+- node
+- authentication
 categories:
 - backend
 aliases:

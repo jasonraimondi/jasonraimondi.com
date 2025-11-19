@@ -8,8 +8,9 @@ images:
 imageCredit: '@morais_afonso https://unsplash.com/photos/JXgdQzexK9M'
 slug: encrypting-zfs-filesystem
 tags:
-- zfs
-- encryption
+- linux
+- security
+- bash
 title: Encrypting ZFS Filesystem
 ---
 

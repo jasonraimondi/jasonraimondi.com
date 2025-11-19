@@ -12,10 +12,10 @@ images:
 - /covers/meric-dagli-i_14EbINjKY-unsplash.jpg
 slug: secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component
 tags:
-- authenticating-nextjs
 - nextjs
-- ssr
 - react
+- authentication
+- typescript
 title: Secure a Next.js application with JWT, and a private route higher order component
 ---
 
