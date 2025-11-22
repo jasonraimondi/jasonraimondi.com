@@ -223,3 +223,11 @@ fabric.properties
 .idea/$CACHE_FILE$
 
 # End of https://www.toptal.com/developers/gitignore/api/node,hugo,webstorm
+
+# SvelteKit
+.svelte-kit/
+build/
+.DS_Store
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
