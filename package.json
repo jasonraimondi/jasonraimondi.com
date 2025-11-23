@@ -1,14 +1,39 @@
 {
-  "name": "jasonraimondi",
-  "license": "UNLICENSED",
+  "name": "jasonraimondi.com",
+  "version": "0.0.1",
   "private": true,
-  "version": "1.0.0",
+  "type": "module",
   "hugo-bin": {
     "buildTags": "extended"
   },
+  "scripts": {
+    "hugo:dev": "hugo serve -D",
+    "hugo:build": "hugo --gc --cleanDestinationDir",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig-sveltekit.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig-sveltekit.json --watch",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
+    "test:e2e": "playwright test",
+    "create-resume": "ts-node ./resume-snapshotter.ts",
+    "gen:resume": "start-server-and-test dev http://localhost:5173 create-resume"
+  },
   "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@sveltejs/adapter-auto": "^3.0.0",
+    "@sveltejs/kit": "^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "@types/eslint": "^9.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.6",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.36.0",
+    "globals": "^15.0.0",
     "hugo-bin": "^0.142.0",
     "normalize.css": "^8.0.1",
     "playwright": "^1.51.1",
@@ -18,17 +43,14 @@
     "postcss-import": "^16.1.0",
     "postcss-mixins": "^11.0.3",
     "postcss-preset-env": "^10.1.5",
+    "prettier": "^3.1.1",
+    "prettier-plugin-svelte": "^3.1.2",
     "start-server-and-test": "^2.0.11",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
-  },
-  "scripts": {
-    "dev": "hugo serve -D",
-    "build": "hugo --gc --cleanDestinationDir",
-    "start:ci": "hugo serve -D",
-    "create-resume": "ts-node ./resume-snapshotter.ts",
-    "gen:resume": "start-server-and-test dev http://localhost:1313 create-resume",
-    "gen:resume:ci": "start-server-and-test start:ci http://localhost:1313 create-resume"
+    "typescript": "^5.8.2",
+    "vite": "^6.0.0"
   },
   "browserslist": [
     "last 1 version",
