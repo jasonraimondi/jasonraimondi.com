@@ -1,4 +1,5 @@
 .hugo_build.lock
+.baseline-css/
 
 /static/resume.jpg
 /static/resume.png
