@@ -1,21 +1,27 @@
+/* Vendor */
 @import 'normalize.css';
 
-@import 'css/_font-face.css';
-@import 'css/_mixin.css';
-@import 'css/_base.css';
-@import 'css/_colors.css';
-@import 'css/_typography.css';
+/* Shared foundation */
+@import 'css/_shared/_base.css';
+@import 'css/_shared/_colors.css';
+@import 'css/_shared/_typography.css';
+@import 'css/_shared/_mixins.css';
 
-@import 'css/base/_html.css';
-@import 'css/base/_headings.css';
-@import 'css/base/_typography.css';
-@import 'css/base/_anchor.css';
+/* Shared base elements */
+@import 'css/_shared/base/_html.css';
+@import 'css/_shared/base/_headings.css';
+@import 'css/_shared/base/_typography.css';
+@import 'css/_shared/base/_anchor.css';
+@import 'css/_shared/base/_img.css';
+@import 'css/_shared/base/_container.css';
+@import 'css/_shared/base/_label.css';
+
+/* Site-specific */
+@import 'css/base/_font-face.css';
 @import 'css/base/_noscript.css';
-@import 'css/base/_img.css';
-@import 'css/base/_container.css';
-@import 'css/base/_label.css';
 @import 'css/base/_code.css';
 
+/* Site layouts, partials, components */
 @import 'css/layouts/_index.css';
 @import 'css/layouts/_list.css';
 @import 'css/layouts/_single.css';
