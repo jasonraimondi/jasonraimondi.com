@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "css": {
+      "command": "npx",
+      "args": ["-y", "css-mcp"]
+    }
+  }
+}

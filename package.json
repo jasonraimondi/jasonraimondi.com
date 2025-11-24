@@ -31,9 +31,9 @@
     "gen:resume:ci": "start-server-and-test start:ci http://localhost:1313 create-resume"
   },
   "browserslist": [
-    "last 1 version",
+    "last 2 versions",
     "> 1%",
-    "maintained node versions",
-    "not dead"
+    "not dead",
+    "not IE 11"
   ]
 }

@@ -17,9 +17,10 @@ module.exports = {
       xxlarge: 1536,
     },
     "postcss-preset-env": {
-      stage: 2,
+      stage: 1,
       features: {
         "nesting-rules": true,
+        "custom-media-queries": true,
       },
     },
     // ...(process.env.HUGO_ENVIRONMENT === "production" && {
