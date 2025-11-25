@@ -8,12 +8,15 @@ Eliminated CSS duplication by creating `css/_shared/` directory containing commo
 ### Created
 - `assets/css/_shared/` directory structure
 - `assets/css/_shared/` - 4 foundation files (base, colors, typography, mixins)
-- `assets/css/_shared/base/` - 7 base element files
+- `assets/css/_shared/base/` - 6 base element files (headings, typography, anchor, img, container, label)
+  - Note: _html.css was kept domain-specific due to different font requirements
 - `assets/css/README.md` - CSS organization documentation
+- `assets/css/base/_html.css` - Restored main site-specific html styles (serif font)
 
 ### Modified
-- `assets/style.css` - Updated imports to use `_shared/`
-- `assets/resume.css` - Updated imports to use `_shared/`
+- `assets/style.css` - Updated imports to use `_shared/` and domain-specific `css/base/_html.css`
+- `assets/resume.css` - Updated imports to use `_shared/` and domain-specific `css-resume/base/_html.css`
+- `assets/css-resume/base/_html.css` - Explicitly set Inter font instead of using CSS variable
 - `assets/css/content/_layout.css` - Removed unsupported `@extend`
 - Added documentation headers to entry points
 
@@ -22,7 +25,7 @@ Eliminated CSS duplication by creating `css/_shared/` directory containing commo
 - 7 duplicate base files from `css/base/`
 - 3 duplicate foundation files from `css-resume/`
 - 7 duplicate base files from `css-resume/base/`
-- **Total: 21 files deleted**
+- **Total: 20 files deleted** (note: _html.css kept domain-specific)
 
 ## Metrics
 
@@ -32,9 +35,9 @@ Eliminated CSS duplication by creating `css/_shared/` directory containing commo
 - Duplication: ~15 files duplicated between both
 
 ### After
-- Files in `css/`: ~28 CSS files (including 11 in `_shared/`)
+- Files in `css/`: ~28 CSS files (including 10 in `_shared/`)
 - Files in `css-resume/`: ~8 CSS files
-- Duplication: **0 files** (single source of truth in `_shared/`)
+- Duplication: **0 files** (single source of truth in `_shared/` for common styles)
 
 ### Build Output
 - `style.min.css`: ~30KB (unchanged)
@@ -60,7 +63,7 @@ Eliminated CSS duplication by creating `css/_shared/` directory containing commo
 
 ## Git History
 
-Total commits: 11
+Total commits: 14
 
 Key commits:
 1. `eb39c6c` - chore: ignore baseline CSS files
@@ -75,6 +78,8 @@ Key commits:
 10. `233758f` - fix: remove unsupported @extend from layout
 11. `4ac735b` - docs: add headers explaining import structure
 12. `470251c` - docs: add CSS organization README
+13. `7fce524` - docs: add refactoring summary and documentation
+14. `fd3e90b` - fix: move _html.css from shared to domain-specific
 
 ## Date
 2025-11-25
