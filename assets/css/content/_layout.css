@@ -1,5 +1,4 @@
 .main-content {
-  @extend .width-constrain;
   height: 100%;
   display: block;
 }
