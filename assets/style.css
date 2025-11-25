@@ -1,5 +1,5 @@
 /* Vendor */
-@import 'normalize.css';
+@import 'css/lib/normalize.css';
 
 /* Shared foundation */
 @import 'css/_shared/_base.css';
@@ -17,7 +17,7 @@
 @import 'css/_shared/base/_label.css';
 
 /* Site-specific */
-@import 'css/base/_font-face.css';
+@import 'css/_font-face.css';
 @import 'css/base/_noscript.css';
 @import 'css/base/_code.css';
 

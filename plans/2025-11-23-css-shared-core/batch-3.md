@@ -1,6 +1,13 @@
 # Recap
 
-Batch 2 created the `_shared/` directory and copied 11 files. Now we'll update the two entry points (`style.css` and `resume.css`) to import from the shared directory instead of their individual locations.
+**Batch 2 Results:**
+- Created `assets/css/_shared/` directory structure
+- Copied 4 foundation files to `_shared/`: _base.css, _colors.css, _typography.css, _mixins.css
+- Copied 7 base element files to `_shared/base/`
+- Total: 11 CSS files, 417 lines of shared code
+- Committed changes (e00f393, ec18e5f)
+
+Now we'll update the two entry points (`style.css` and `resume.css`) to import from the shared directory instead of their individual locations.
 
 # Batch 3: Update Entry Points
 

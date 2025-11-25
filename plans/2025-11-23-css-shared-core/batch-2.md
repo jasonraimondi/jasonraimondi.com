@@ -1,6 +1,15 @@
 # Recap
 
-Batch 1 created the feature branch and captured baseline files. Now we'll create the `css/_shared/` directory structure and copy files that will be shared between main site and resume.
+**Batch 1 Results:**
+- Created feature branch `refactor/css-shared-core`
+- Built current site with Hugo (completed in 1139ms)
+- Captured baseline CSS files:
+  - `style.min.baseline.css` (30KB)
+  - `resume.min.baseline.css` (19KB)
+- Updated `.gitignore` to exclude baseline files
+- Committed changes (eb39c6c)
+
+Now we'll create the `css/_shared/` directory structure and copy files that will be shared between main site and resume.
 
 # Batch 2: Create Shared Structure and Copy Files
 

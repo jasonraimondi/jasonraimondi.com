@@ -1,5 +1,5 @@
 /* Vendor */
-@import 'normalize.css';
+@import 'css/lib/normalize.css';
 
 /* Shared foundation */
 @import 'css/_shared/_base.css';

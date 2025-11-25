@@ -1,6 +1,12 @@
 # Recap
 
-Batch 3 updated both entry points to import from `_shared/`. Now we'll validate that the builds work correctly and perform visual regression testing to ensure no styling changes occurred.
+**Batch 3 Results:**
+- Updated `assets/style.css` with 11 shared imports from `css/_shared/` (30 total imports)
+- Updated `assets/resume.css` with 11 shared imports from `css/_shared/` (18 total imports)
+- Organized entry points with clear comment sections
+- Committed changes (94184fb, 4dd8b6d)
+
+Now we'll validate that the builds work correctly and compare file sizes to ensure no styling changes occurred.
 
 # Batch 4: Validate Builds and Visual Regression
 
