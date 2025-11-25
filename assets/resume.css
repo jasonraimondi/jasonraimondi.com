@@ -1,3 +1,19 @@
+/**
+ * Resume Stylesheet Entry Point
+ *
+ * Import Order:
+ * 1. Vendor dependencies (normalize.css)
+ * 2. Shared foundation (from css/_shared/)
+ * 3. Shared base elements (from css/_shared/base/)
+ * 4. Resume-specific overrides
+ * 5. Resume components
+ * 6. Resume-specific variables and utilities
+ *
+ * Note: Shared styles are imported from css/_shared/ and used by both
+ * the main site (style.css) and resume (this file). Resume-specific
+ * overrides follow the shared imports.
+ */
+
 /* Vendor */
 @import 'css/lib/normalize.css';
 

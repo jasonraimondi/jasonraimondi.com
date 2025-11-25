@@ -1,6 +1,14 @@
 # Recap
 
-Batch 5 deleted all duplicate files. Now we'll fix the `@extend .width-constrain` issue in `assets/css/content/_layout.css` which uses Sass syntax that PostCSS doesn't support.
+**Batch 5 Results:**
+- Deleted 21 duplicate CSS files across 4 commits
+- 4 foundation files from `css/`, 7 base files from `css/base/`
+- 3 foundation files from `css-resume/`, 7 base files from `css-resume/base/`
+- Total deletions: 823 lines of duplicate code
+- Build verified: style.css (31,064 bytes), resume.css (20,020 bytes)
+- Commits: cb983a4, afd369a, 05683e1, cc2d99f
+
+Now we'll fix the `@extend .width-constrain` issue in `assets/css/content/_layout.css` which uses Sass syntax that PostCSS doesn't support.
 
 # Batch 6: Fix @extend Issue
 
@@ -177,39 +185,7 @@ EOF
 
 Expected: Analysis document created
 
-### Step 4: Visual check for width constraints
-
-Run:
-```bash
-hugo serve -D &
-sleep 3
-```
-
-Open browser to: `http://localhost:1313/`
-
-Check:
-- [ ] Content has appropriate width constraints
-- [ ] Content doesn't stretch full viewport width
-- [ ] Layout looks correct on wide screens
-
-Run:
-```bash
-pkill hugo
-```
-
-Expected: Layout looks correct (width constraints still working)
-
-### Step 5: Make decision on template updates
-
-**If width constraints are missing:**
-- Document which templates need `.container` class added
-- Create a follow-up task in `.main-content-analysis.md`
-
-**If width constraints are working:**
-- No template changes needed
-- Document that existing HTML already handles constraints
-
-### Step 6: Commit analysis document
+### Step 4: Commit analysis document
 
 Run:
 ```bash
@@ -219,53 +195,7 @@ git commit -m "docs: analyze main-content class usage"
 
 Expected: "1 file changed"
 
----
-
-## Task 4: Test Edge Cases
-
-### Step 1: Test main content on different pages
-
-Start server:
-```bash
-hugo serve -D &
-sleep 3
-```
-
-Test pages:
-- Homepage: `http://localhost:1313/`
-- Blog list: `http://localhost:1313/posts/`
-- Single post: `http://localhost:1313/posts/[recent-post]/`
-- Resume: `http://localhost:1313/resume/`
-
-Checklist for each page:
-- [ ] Content width appropriate
-- [ ] No horizontal overflow
-- [ ] Centered or left-aligned as expected
-- [ ] Responsive behavior correct
-
-Expected: All pages render correctly
-
-### Step 2: Test responsive breakpoints
-
-Resize browser to:
-- 375px (mobile)
-- 768px (tablet)
-- 1024px (desktop)
-- 1920px (large desktop)
-
-Checklist:
-- [ ] Content doesn't stretch full width on large screens
-- [ ] Content readable on mobile
-- [ ] No layout breaks
-
-Expected: All breakpoints work correctly
-
-### Step 3: Stop server
-
-Run:
-```bash
-pkill hugo
-```
+**Note**: Visual QA testing (width constraints, responsive breakpoints) will be done manually by the developer.
 
 ---
 
@@ -275,9 +205,10 @@ You now have:
 - ✅ Removed `@extend .width-constrain` from layout
 - ✅ Verified build works without warnings
 - ✅ Analyzed .main-content usage in templates
-- ✅ Tested layout on multiple pages and breakpoints
 - ✅ Documented findings and any follow-up needed
 - ✅ All changes committed to git
+
+**Note**: Visual QA testing (layout, width constraints, responsive breakpoints) will be done manually by the developer.
 
 **Key Outcome**: The non-working Sass `@extend` syntax has been removed. If width constraints were needed, they should be handled through HTML class application (`.container`) or existing CSS patterns.
 

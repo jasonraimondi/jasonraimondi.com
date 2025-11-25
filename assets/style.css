@@ -1,3 +1,17 @@
+/**
+ * Main Site Stylesheet Entry Point
+ *
+ * Import Order:
+ * 1. Vendor dependencies (normalize.css)
+ * 2. Shared foundation (from css/_shared/)
+ * 3. Shared base elements (from css/_shared/base/)
+ * 4. Site-specific base styles
+ * 5. Site layouts, partials, and components
+ *
+ * Note: Shared styles are imported from css/_shared/ and used by both
+ * the main site (this file) and resume (resume.css)
+ */
+
 /* Vendor */
 @import 'css/lib/normalize.css';
 
