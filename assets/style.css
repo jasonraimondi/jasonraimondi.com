@@ -22,7 +22,6 @@
 @import 'css/_shared/_mixins.css';
 
 /* Shared base elements */
-@import 'css/_shared/base/_html.css';
 @import 'css/_shared/base/_headings.css';
 @import 'css/_shared/base/_typography.css';
 @import 'css/_shared/base/_anchor.css';
@@ -31,6 +30,7 @@
 @import 'css/_shared/base/_label.css';
 
 /* Site-specific */
+@import 'css/base/_html.css';
 @import 'css/_font-face.css';
 @import 'css/base/_noscript.css';
 @import 'css/base/_code.css';

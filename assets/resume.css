@@ -24,7 +24,6 @@
 @import 'css/_shared/_mixins.css';
 
 /* Shared base elements */
-@import 'css/_shared/base/_html.css';
 @import 'css/_shared/base/_headings.css';
 @import 'css/_shared/base/_typography.css';
 @import 'css/_shared/base/_anchor.css';
@@ -48,8 +47,6 @@
 }
 
 html {
-  font-family: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 100%;
   line-height: var(--resume-line-height);
 
   @media (--large) {
