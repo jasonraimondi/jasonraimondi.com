@@ -19,7 +19,13 @@ title: Jason Raimondi
 
 ## I am a <span id="adjective1">technologist</span> and <span id="adjective2">computer geek</span>.
 
-I work at [Repeat](//getrepeat.io) as a Senior Software Engineer.
+⚠️⚠️
+It has come to my attention that someone may be impersonating me.
+I am currently employed and am not applying for or seeking new opportunities.
+If you receive any communication claiming to be from me, please contact me at jason@raimondi.us.
+⚠️⚠️
+
+I work at [Intelligems](//intelligems.io) as a Senior Software Engineer.
 
 I have been developing for the web since 2007. I've worked on everything from terrible old-school spaghetti :spaghetti: monsters, to MVC frameworks, to tested domain-driven applications. Early on, I was developing traditional server-rendered PHP applications. These days, I really enjoy full stack TypeScript.
 
