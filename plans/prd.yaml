@@ -47,7 +47,7 @@ tasks:
       - Verify posts sorted by date descending
       - Verify each post shows title, date, description
       - Click post and verify navigation to detail
-    passes: false
+    passes: true
 
   - category: routes
     description: Post detail page renders content and metadata

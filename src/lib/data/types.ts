@@ -8,3 +8,15 @@ export interface Project {
 export interface ProjectsData {
 	projects: Project[];
 }
+
+export interface Post {
+	title: string;
+	slug: string;
+	date: string;
+	description: string;
+	categories?: string[];
+	tags?: string[];
+	images?: string[];
+	imageCredit?: string;
+	archived?: boolean;
+}

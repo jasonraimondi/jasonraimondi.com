@@ -69,3 +69,31 @@
 - External links in RecentProjects open in new tab with `rel="noopener"`
 - The AboutMe component uses Svelte 5 runes (`$state`, `$derived`)
 - Projects JSON is imported directly in page component
+
+## 2026-01-18: Posts List Page
+
+### Completed
+- Created `Post` TypeScript interface in `src/lib/data/types.ts`
+- Created `/posts` route with server-side data loading from `.svx` files
+- Posts are loaded via `import.meta.glob` and sorted by date descending
+- Created responsive posts list page with title, date, description, and archived badge
+- Added 3 sample posts converted from Hugo to `.svx` format for testing
+- Dark mode styles included using `:global([data-theme='dark'])` selectors
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/posts/+page.svelte` - Posts list page component
+- `src/routes/posts/+page.server.ts` - Server-side loader for .svx posts
+- `src/content/posts/git-squashit-squash-it-squa-shit.svx` - Sample post
+- `src/content/posts/use-the-npm-version-command-to-semantically-version-your-node-project.svx` - Sample post
+- `src/content/posts/darknet-diaries.svx` - Sample post
+
+### Files Modified
+- `src/lib/data/types.ts` - Added `Post` interface
+
+### Notes for Next Developer
+- Posts are loaded from `src/content/posts/*.svx` via `import.meta.glob`
+- The loader extracts metadata (frontmatter) and sorts by date descending
+- Post detail pages (`/posts/[slug]/`) still need to be implemented
+- Full content migration (39 posts) is tracked as a separate PRD task
+- The `archived` flag shows a badge when true
