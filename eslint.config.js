@@ -25,6 +25,11 @@ export default [
 			parserOptions: {
 				parser: ts.parser
 			}
+		},
+		rules: {
+			// Using resolveRoute from $app/paths directly in href attributes
+			// The rule doesn't recognize this pattern correctly
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	},
 	{

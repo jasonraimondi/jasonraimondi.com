@@ -17,7 +17,7 @@ tasks:
       - Create src/content/things/ directory
       - Create src/content/pages/ directory
       - Create src/lib/data/ for JSON data files
-    passes: false
+    passes: true
 
   - category: infrastructure
     description: Migrate CSS architecture from Hugo to SvelteKit
@@ -37,7 +37,7 @@ tasks:
       - Verify animated text rotates adjectives/activities
       - Verify recent projects section renders from JSON
       - Verify navigation links work
-    passes: false
+    passes: true
 
   - category: routes
     description: Posts list page shows all posts without pagination
@@ -191,7 +191,7 @@ tasks:
       - Verify rotation occurs with Svelte transitions
       - Verify activities text also rotates
       - Verify transitions are smooth fade/slide
-    passes: false
+    passes: true
 
   - category: functional
     description: Breadcrumbs show navigation path on nested pages

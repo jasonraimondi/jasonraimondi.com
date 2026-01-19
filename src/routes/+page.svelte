@@ -1,13 +1,16 @@
-<script>
-	// Placeholder homepage - will be implemented in later task
+<script lang="ts">
+	import AboutMe from '$lib/components/AboutMe.svelte';
+	import RecentProjects from '$lib/components/RecentProjects.svelte';
+	import projectsData from '$lib/data/projects.json';
 </script>
 
 <svelte:head>
 	<title>Jason Raimondi</title>
-	<meta name="description" content="Personal website of Jason Raimondi" />
+	<meta
+		name="description"
+		content="My name is Jason Raimondi and I am a Full Stack Software Engineer based out of Los Angeles. My focus has been in web systems, building and deploying server and client web applications."
+	/>
 </svelte:head>
 
-<main>
-	<h1>Jason Raimondi</h1>
-	<p>Site under construction - migrating from Hugo to SvelteKit</p>
-</main>
+<AboutMe />
+<RecentProjects projects={projectsData.projects} limit={16} />

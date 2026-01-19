@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
 	import '../styles/style.css';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let { children } = $props();
 </script>
@@ -9,4 +11,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 </svelte:head>
 
-{@render children()}
+<main class="container padded center">
+	<Header />
+	{@render children()}
+	<Footer />
+</main>
