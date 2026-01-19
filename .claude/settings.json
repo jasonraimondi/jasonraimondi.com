@@ -1,8 +1,28 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "mcp__css__analyze_css",
+      "mcp__svelte__get-documentation",
+      "mcp__svelte__list-sections",
+      "mcp__svelte__svelte-autofixer"
+    ]
+  },
   "mcpServers": {
+    "svelte": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@sveltejs/mcp"
+      ]
+    },
     "css": {
       "command": "npx",
-      "args": ["-y", "css-mcp"]
+      "args": [
+        "-y",
+        "css-mcp"
+      ]
     }
   }
 }
