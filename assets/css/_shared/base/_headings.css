@@ -1,5 +1,4 @@
-html,
-body {
+html {
   font-family: var(--font-family-serif);
   -webkit-font-smoothing: antialiased;
 }
