@@ -1,0 +1,323 @@
+tasks:
+  - category: infrastructure
+    description: Initialize SvelteKit project with TypeScript and required dependencies
+    steps:
+      - Create sveltekit branch from main
+      - Scaffold SvelteKit with TypeScript template
+      - Install adapter-cloudflare
+      - Install and configure mdsvex with Shiki
+      - Install @sveltejs/enhanced-img
+      - Configure PostCSS pipeline
+    passes: true
+
+  - category: infrastructure
+    description: Set up content directory structure
+    steps:
+      - Create src/content/posts/ directory
+      - Create src/content/things/ directory
+      - Create src/content/pages/ directory
+      - Create src/lib/data/ for JSON data files
+    passes: false
+
+  - category: infrastructure
+    description: Migrate CSS architecture from Hugo to SvelteKit
+    steps:
+      - Copy PostCSS partials to src/styles/
+      - Update import paths in main stylesheet
+      - Replace Pygments classes with Shiki theme
+      - Add dark mode toggle styles
+      - Verify build produces working CSS
+    passes: false
+
+  - category: routes
+    description: Homepage renders with animated about-me and projects
+    steps:
+      - Visit /
+      - Verify about-me section displays
+      - Verify animated text rotates adjectives/activities
+      - Verify recent projects section renders from JSON
+      - Verify navigation links work
+    passes: false
+
+  - category: routes
+    description: Posts list page shows all posts without pagination
+    steps:
+      - Visit /posts/
+      - Verify all posts display on single page
+      - Verify posts sorted by date descending
+      - Verify each post shows title, date, description
+      - Click post and verify navigation to detail
+    passes: false
+
+  - category: routes
+    description: Post detail page renders content and metadata
+    steps:
+      - Visit /posts/[slug]/
+      - Verify post content renders from .svx
+      - Verify breadcrumbs show Home > Posts > Title
+      - Verify archived banner shows if archived flag true
+      - Verify Edit on GitHub link points to correct path
+      - Verify SEO metadata present in head
+    passes: false
+
+  - category: routes
+    description: Things list page displays projects
+    steps:
+      - Visit /things/
+      - Verify project list displays
+      - Verify each shows title and description
+      - Click project and verify navigation to detail
+    passes: false
+
+  - category: routes
+    description: Thing detail page renders project content
+    steps:
+      - Visit /things/[slug]/
+      - Verify content renders correctly
+      - Verify breadcrumbs work
+      - Verify SEO metadata present
+    passes: false
+
+  - category: routes
+    description: Resume page renders from JSON data
+    steps:
+      - Visit /resume/
+      - Verify resume renders from resume.json
+      - Verify all sections display (basics, work, education, skills, projects)
+      - Verify styling matches design
+      - Verify PDF link works (/resume.pdf)
+    passes: false
+
+  - category: routes
+    description: Uses page renders static content
+    steps:
+      - Visit /uses/
+      - Verify static page renders
+      - Verify content displays correctly
+    passes: false
+
+  - category: components
+    description: Gist component lazy-loads GitHub embeds
+    steps:
+      - Load post containing Gist component
+      - Verify placeholder shown initially
+      - Scroll gist into viewport
+      - Verify IntersectionObserver triggers load
+      - Verify GitHub embed renders
+    passes: false
+
+  - category: components
+    description: Tip component renders styled info boxes
+    steps:
+      - Load post containing Tip component
+      - Verify styled info/warning box displays
+      - Verify inner content renders as markdown
+    passes: false
+
+  - category: components
+    description: TipBoard component renders code containers
+    steps:
+      - Load post containing TipBoard component
+      - Verify code block container renders
+      - Verify syntax highlighting applied
+    passes: false
+
+  - category: components
+    description: Quote component renders blockquotes with attribution
+    steps:
+      - Load post containing Quote component
+      - Verify blockquote displays
+      - Verify author and source metadata shown
+    passes: false
+
+  - category: components
+    description: ImagePop component opens custom lightbox on click
+    steps:
+      - Load post containing ImagePop component
+      - Click on image
+      - Verify custom lightbox modal opens
+      - Verify full-size image displayed
+      - Verify caption shown if provided
+      - Click outside modal
+      - Verify modal closes with Svelte transition
+      - Press escape key
+      - Verify modal closes
+    passes: false
+
+  - category: components
+    description: ImageGallery component displays grid with lightbox navigation
+    steps:
+      - Load post containing ImageGallery component
+      - Verify grid of images displays
+      - Click image to open lightbox
+      - Verify prev/next navigation works
+      - Verify gallery closes correctly
+    passes: false
+
+  - category: components
+    description: Video component renders HTML5 player
+    steps:
+      - Load post containing Video component
+      - Verify HTML5 video player displays
+      - Verify playback controls work
+      - Verify responsive sizing
+    passes: false
+
+  - category: components
+    description: Asciinema component embeds terminal recordings
+    steps:
+      - Load post containing Asciinema component
+      - Verify terminal recording embeds
+      - Verify playback controls work
+    passes: false
+
+  - category: functional
+    description: Dark mode toggle switches theme and persists preference
+    steps:
+      - Load site
+      - Locate theme toggle in header
+      - Click toggle
+      - Verify theme switches between light/dark
+      - Refresh page
+      - Verify preference persisted from localStorage
+      - Verify toggle overrides OS preference
+    passes: false
+
+  - category: functional
+    description: About-me animation rotates text with smooth transitions
+    steps:
+      - Load homepage
+      - Observe adjective text
+      - Verify rotation occurs with Svelte transitions
+      - Verify activities text also rotates
+      - Verify transitions are smooth fade/slide
+    passes: false
+
+  - category: functional
+    description: Breadcrumbs show navigation path on nested pages
+    steps:
+      - Visit /posts/[slug]/
+      - Verify breadcrumb trail shows path
+      - Verify each segment except current is clickable
+      - Click breadcrumb segment
+      - Verify navigation works
+    passes: false
+
+  - category: functional
+    description: Edit on GitHub links point to correct content paths
+    steps:
+      - Visit post page
+      - Locate Edit on GitHub link
+      - Verify link points to src/content/posts/[slug].svx
+      - Verify link opens in new tab
+    passes: false
+
+  - category: functional
+    description: Redirect pages generated for post aliases
+    steps:
+      - Identify post with aliases in frontmatter
+      - Build site
+      - Verify redirect HTML pages generated at old paths
+      - Visit old URL
+      - Verify meta refresh redirects to current URL
+    passes: false
+
+  - category: seo
+    description: Pages include complete SEO metadata
+    steps:
+      - Visit any page
+      - Verify title tag set correctly
+      - Verify meta description present
+      - Verify OpenGraph tags (og:title, og:description, og:image)
+      - Verify Twitter card tags
+      - Verify schema.org JSON-LD present
+    passes: false
+
+  - category: seo
+    description: RSS feed generates valid XML with all posts
+    steps:
+      - Build site
+      - Request /rss.xml
+      - Verify valid RSS 2.0 XML returned
+      - Verify all posts included
+      - Verify titles, descriptions, links correct
+    passes: false
+
+  - category: seo
+    description: Sitemap generates valid XML with all pages
+    steps:
+      - Build site
+      - Request /sitemap.xml
+      - Verify valid sitemap XML returned
+      - Verify all pages included
+      - Verify lastmod dates present
+    passes: false
+
+  - category: functional
+    description: Resume PDF generated via Playwright
+    steps:
+      - Start dev server
+      - Run resume generation script
+      - Verify Playwright screenshots /resume/ page
+      - Verify PDF generated at static/resume.pdf
+      - Verify PDF accessible at /resume.pdf
+    passes: false
+
+  - category: infrastructure
+    description: Static assets copied to build output
+    steps:
+      - Build site
+      - Verify fonts copied to output
+      - Verify cover images accessible
+      - Verify favicon.ico present
+      - Verify robots.txt present
+      - Verify humans.txt present
+    passes: false
+
+  - category: deployment
+    description: Build completes without errors
+    steps:
+      - Run npm run build
+      - Verify build completes without errors
+      - Verify all routes pre-rendered
+      - Verify output directory contains expected files
+      - Verify no broken internal links
+    passes: false
+
+  - category: deployment
+    description: Site deploys and functions on Cloudflare Pages
+    steps:
+      - Push to Cloudflare Pages
+      - Verify site accessible at domain
+      - Verify all routes work
+      - Verify static assets served correctly
+      - Verify redirects function
+    passes: false
+
+  - category: content
+    description: All blog posts migrated to .svx format
+    steps:
+      - Convert all 39 posts from .md to .svx
+      - Update frontmatter to minimal schema
+      - Replace Hugo shortcodes with Svelte components
+      - Verify all posts render correctly
+    passes: false
+
+  - category: content
+    description: All things/projects migrated to .svx format
+    steps:
+      - Convert all 9 things from .md to .svx
+      - Update frontmatter
+      - Replace shortcodes with components
+      - Verify all things render correctly
+    passes: false
+
+  - category: content
+    description: Data files converted from YAML to JSON
+    steps:
+      - Convert projects.yaml to projects.json
+      - Convert archives.yaml to archives.json
+      - Convert books.yaml to books.json
+      - Create TypeScript interfaces for each
+      - Verify data loads correctly in components
+    passes: false

@@ -1,0 +1,25 @@
+.tip {
+    background-color: var(--color-gray-200);
+    color: var(--color-black);
+    padding: 1rem;
+    border-left: 0.5rem solid var(--color-gray-400);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.tip--info {
+    background-color: var(--color-lightBlue-200);
+    border-left-color: var(--color-lightBlue-400);
+}
+
+.tip--warning {
+    background-color: var(--color-rose-200);
+    border-left-color: var(--color-rose-400);
+}
+
+.tip--title {
+    display: block;
+    text-transform: uppercase;
+    font-weight: var(--font-semibold);
+    font-size: 0.8em;
+    padding-bottom: 0.25em;
+}

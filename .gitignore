@@ -1,6 +1,10 @@
 .hugo_build.lock
 .baseline-css/
 
+### SvelteKit ###
+.svelte-kit/
+build/
+
 /static/resume.jpg
 /static/resume.png
 #/static/resume.pdf
