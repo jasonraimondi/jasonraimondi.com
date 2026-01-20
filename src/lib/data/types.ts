@@ -20,3 +20,14 @@ export interface Post {
 	imageCredit?: string;
 	archived?: boolean;
 }
+
+export interface Thing {
+	title: string;
+	slug: string;
+	date: string;
+	description: string;
+	categories?: string[];
+	tags?: string[];
+	images?: string[];
+	aliases?: string[];
+}

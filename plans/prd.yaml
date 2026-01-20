@@ -67,7 +67,7 @@ tasks:
       - Verify project list displays
       - Verify each shows title and description
       - Click project and verify navigation to detail
-    passes: false
+    passes: true
 
   - category: routes
     description: Thing detail page renders project content
@@ -76,7 +76,7 @@ tasks:
       - Verify content renders correctly
       - Verify breadcrumbs work
       - Verify SEO metadata present
-    passes: false
+    passes: true
 
   - category: routes
     description: Resume page renders from JSON data

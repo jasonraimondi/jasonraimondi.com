@@ -121,3 +121,34 @@
 - Content is rendered using `<data.content />` pattern for Svelte 5
 - Existing CSS from `_single.css` and `_breadcrumbs.css` handles styling
 - Dark mode support for ArchivedBanner uses `color-mix` for transparent backgrounds
+
+## 2026-01-19: Things List and Detail Pages
+
+### Completed
+- Created `Thing` TypeScript interface in `src/lib/data/types.ts`
+- Created `/things` route with server-side data loading from `.svx` files
+- Created `/things/[slug]` detail route with breadcrumbs and SEO metadata
+- Things are loaded via `import.meta.glob` and sorted by date descending
+- Added 3 sample things converted from Hugo to `.svx` format for testing
+- Dark mode styles included using `:global([data-theme='dark'])` selectors
+- Reused Breadcrumbs component from posts
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/things/+page.svelte` - Things list page component
+- `src/routes/things/+page.server.ts` - Server-side loader for .svx things
+- `src/routes/things/[slug]/+page.svelte` - Thing detail page component
+- `src/routes/things/[slug]/+page.server.ts` - Server-side loader for individual things
+- `src/content/things/typescript-oauth2-server.svx` - Sample thing
+- `src/content/things/url-to-png.svx` - Sample thing
+- `src/content/things/deno-mirror-to-gitea.svx` - Sample thing
+
+### Files Modified
+- `src/lib/data/types.ts` - Added `Thing` interface
+
+### Notes for Next Developer
+- Things routes mirror the posts pattern exactly
+- Things use the same frontmatter schema as posts (title, date, description, slug, tags, categories)
+- The `aliases` field is supported for URL redirects (to be implemented later)
+- Full content migration (9 things) is tracked as a separate PRD task
+- Some Hugo things use page bundles (directories with index.md + images) - these need special handling for images during full migration
