@@ -104,7 +104,7 @@ tasks:
       - Scroll gist into viewport
       - Verify IntersectionObserver triggers load
       - Verify GitHub embed renders
-    passes: false
+    passes: true
 
   - category: components
     description: Tip component renders styled info boxes
@@ -201,7 +201,7 @@ tasks:
       - Verify each segment except current is clickable
       - Click breadcrumb segment
       - Verify navigation works
-    passes: false
+    passes: true
 
   - category: functional
     description: Edit on GitHub links point to correct content paths

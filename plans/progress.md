@@ -424,3 +424,25 @@
 - At least one of `mp4` or `webm` should be provided
 - The `poster` prop is optional for thumbnail image before playback
 - Used in the Flipp project (`content/things/flipp/index.md`) for app demo videos
+
+## 2026-01-20: Gist Component
+
+### Completed
+- Created `Gist` Svelte component for lazy-loading GitHub Gist embeds
+- Uses IntersectionObserver to trigger loading when gist enters viewport
+- Shows placeholder with GitHub logo until loaded
+- Uses iframe to safely embed the gist script (GitHub's gist.js uses document.write)
+- Iframe auto-resizes using ResizeObserver
+- Dark mode support for placeholder styling
+- Also verified Breadcrumbs component was already working correctly (marked as passing in PRD)
+- All checks pass: `pnpm run lint`, `pnpm run check`
+
+### Files Created
+- `src/lib/components/Gist.svelte` - Lazy-loading GitHub Gist embed component
+
+### Notes for Next Developer
+- To use Gist in .svx files: `<script>import Gist from '$lib/components/Gist.svelte';</script>` then `<Gist user="username" id="gist_id" file="optional_filename" />`
+- The `file` prop is optional, used to show a specific file from a multi-file gist
+- Component uses iframe isolation to handle GitHub's document.write approach
+- Placeholder appears until scroll triggers IntersectionObserver (100px rootMargin)
+- ResizeObserver adjusts iframe height as gist content loads
