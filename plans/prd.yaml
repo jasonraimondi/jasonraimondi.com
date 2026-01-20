@@ -301,7 +301,7 @@ tasks:
       - Update frontmatter to minimal schema
       - Replace Hugo shortcodes with Svelte components
       - Verify all posts render correctly
-    passes: false
+    passes: true
 
   - category: content
     description: All things/projects migrated to .svx format

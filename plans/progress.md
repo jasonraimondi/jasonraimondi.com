@@ -731,3 +731,45 @@
 - Page bundles require copying images to static/ and converting shortcodes
 - mdsvex requires frontmatter at the top of the file, before any script tags
 - The RSS and sitemap endpoints now gracefully handle posts with missing metadata
+
+## 2026-01-20: Complete Blog Posts Migration (100%)
+
+### Completed
+- Migrated remaining 10 Hugo page bundle posts to .svx format:
+  - setting-up-laravel-with-foundation (Laravel Elixir + Foundation 6 setup)
+  - testing-a-typescript-react-app-using-ts-jest-not-create-react-app (Jest + TypeScript React)
+  - showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci (Code Climate + Travis CI)
+  - using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work (Puppeteer + RxJS)
+  - auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile (Drone CI)
+  - using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox (Alfred workflow)
+  - enhancing-your-static-site-and-markdown-posts-with-vuejs (Vue.js components)
+  - add-location-data-to-images (exiftool GPS data)
+  - mode-65 (mechanical keyboard build gallery with 17 images)
+  - configure-a-schlage-encode-for-home-assistant-homekit-apple-home-apple-wallet-keys (HomeKit integration)
+- Converted Hugo shortcodes to Svelte components:
+  - `image/pop` → ImagePop component
+  - `image/gallery/frame` + `image/gallery/image` → ImageGallery component
+  - `tip` → Tip component
+- Copied all associated images to `static/posts/` directories
+- All 38 content posts now migrated (39 Hugo files - 1 _index.md = 38 posts)
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- 10 new .svx files in `src/content/posts/`
+
+### Static Assets Added
+- `static/posts/setting-up-laravel-with-foundation/` - 7 PNG files
+- `static/posts/testing-a-typescript-react-app-using-ts-jest/` - 2 PNG files
+- `static/posts/code-coverage-react-code-climate-travis/` - 6 PNG files
+- `static/posts/alfred-chrome-to-firefox/` - 2 PNG files
+- `static/posts/enhance-static-site-vuejs/` - 1 JPG file
+- `static/posts/add-location-data-to-images/` - 3 PNG files
+- `static/posts/mode-65/` - 17 JPG files
+- `static/posts/2018/10/hack-contest/` - 2 PNG files
+- `static/posts/2018/11/` - 1 PNG file (activate-drone.png)
+
+### Notes for Next Developer
+- **ALL CONTENT MIGRATION IS COMPLETE** - All 38 blog posts and 8 things are now in .svx format
+- The only remaining PRD task is Cloudflare Pages deployment (requires manual push)
+- Hugo source files in `content/` can be removed after deployment verification
+- Total static assets: ~150+ images across posts and things directories
