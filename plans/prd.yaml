@@ -152,7 +152,7 @@ tasks:
       - Click image to open lightbox
       - Verify prev/next navigation works
       - Verify gallery closes correctly
-    passes: false
+    passes: true
 
   - category: components
     description: Video component renders HTML5 player

@@ -473,3 +473,39 @@
 - The `nodesc` prop hides the caption below the thumbnail image
 - Modal uses z-index 1000 and semi-transparent black backdrop (0.9 opacity)
 - Close button is positioned above the image, escape key listener is on svelte:window
+
+## 2026-01-20: ImageGallery Component
+
+### Completed
+- Created `ImageGallery` Svelte component for grid display with lightbox navigation
+- Component accepts `images` array prop with `{src, alt}` objects
+- Grid layout uses existing CSS from `_image-gallery.css` (responsive auto-fit)
+- Click image to open lightbox modal with full-size image
+- Lightbox features:
+  - Prev/next navigation buttons (disabled at bounds)
+  - Keyboard navigation: Escape to close, Arrow keys for prev/next
+  - Image counter showing "X / Y"
+  - Smooth fade transitions between images
+  - Click outside to close
+- Uses Svelte 5 runes (`$state`, `$derived`)
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `src/lib/components/ImageGallery.svelte` - Grid gallery with lightbox navigation
+
+### Notes for Next Developer
+- To use ImageGallery in .svx files:
+  ```svelte
+  <script>
+  import ImageGallery from '$lib/components/ImageGallery.svelte';
+  const images = [
+    { src: '/path/to/image1.jpg', alt: 'Description 1' },
+    { src: '/path/to/image2.jpg', alt: 'Description 2' }
+  ];
+  </script>
+  <ImageGallery {images} />
+  ```
+- The `alt` property is optional but recommended for accessibility
+- Grid uses `minmax(240px, 1fr)` for responsive columns
+- Lightbox nav buttons are disabled (not hidden) when at first/last image
+- Counter and caption shown below the image in lightbox
