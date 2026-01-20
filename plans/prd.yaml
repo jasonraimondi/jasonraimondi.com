@@ -310,7 +310,7 @@ tasks:
       - Update frontmatter
       - Replace shortcodes with components
       - Verify all things render correctly
-    passes: false
+    passes: true
 
   - category: content
     description: Data files converted from YAML to JSON

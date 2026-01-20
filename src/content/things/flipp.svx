@@ -1,0 +1,44 @@
+---
+aliases:
+- /posts/flipp/
+categories:
+- software
+- backend
+- frontend
+- hardware
+date: "2017-11-14T00:00:00-08:00"
+description: At Event Farm, we love throwing cool events with engaging, interactive technology. This was a little something a few coworkers and I created at Event Farm.
+images:
+- /covers/thor-alvis-sgrCLKYdw5g-unsplash.jpg
+slug: flipp
+tags:
+- vue
+- javascript
+- iot
+title: Flipp, the light up event
+---
+
+<script>
+import Video from '$lib/components/Video.svelte';
+import ImagePop from '$lib/components/ImagePop.svelte';
+</script>
+
+<div style="padding:56.25% 0 0 0;position:relative;margin-bottom:1.5rem;"><iframe src="https://player.vimeo.com/video/218034844?h=8a3a2e8f8c&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Flipp Event Video"></iframe></div>
+
+#### At Event Farm, we love throwing cool events with engaging, interactive technology.
+
+At what was, in my opinion, one of the best events of our 2403 Main Street Office, we had a Art/Music show and decided to add a little even tech on top, and what came out of it was Flipp.
+
+Meet Flipp:
+
+<Video portrait={true} mp4="/things/flipp/flipp-mp4.mp4" webm="/things/flipp/flipp-webm.webm" poster="/things/flipp/flipp-screenshot.png" />
+
+Flipp was an interactive piece where guests of the event could enter their phone number to get access to a controller website on their mobile devices that would allow them to vote for different artworks hanging around the office, and when they voted, they would trigger a scene change on Phillips Hue lights, signaling a vote for the particular pieces.
+
+Overall the exhibit was a huge hit, and we had a lot of fun making it.
+
+The source code of the front end is available on github at [https://github.com/jasonraimondi/hueInstallation](https://github.com/jasonraimondi/hueInstallation)
+
+Firebase Usage:
+
+<ImagePop portrait={true} src="/things/flipp/firebase-usage.png" alt="Firebase Console" />

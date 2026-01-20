@@ -631,3 +631,41 @@
 - PDF margins are set to { top: 25, bottom: 25, left: 50, right: 50 }
 - Output goes to `static/resume.pdf` which is accessible at `/resume.pdf`
 - The old `resume-snapshotter.ts` at project root can be deleted
+
+## 2026-01-20: All Things/Projects Migrated to .svx Format
+
+### Completed
+- Migrated all 8 remaining things from Hugo page bundles to `.svx` format:
+  - can-i-poop (IoT bathroom status system)
+  - flipp (interactive light installation)
+  - recovery-passport (rehab support app)
+  - traverse (GitHub explorer - closed source)
+  - traverse-2-electric-boogaloo (GitHub explorer - open source)
+- Copied all associated images to `static/things/<slug>/` directories
+- Converted Hugo shortcodes to Svelte components:
+  - `image/gallery/frame` + `image/gallery/image` → `ImageGallery`
+  - `image/pop` → `ImagePop`
+  - `video/html5` → `Video`
+  - `vimeo` → inline iframe embed
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `src/content/things/can-i-poop.svx`
+- `src/content/things/flipp.svx`
+- `src/content/things/recovery-passport.svx`
+- `src/content/things/traverse.svx`
+- `src/content/things/traverse-2-electric-boogaloo.svx`
+
+### Static Assets Added
+- `static/things/can-i-poop/` - 16 images (website screenshots, hardware photos)
+- `static/things/flipp/` - 4 files (video mp4/webm, screenshot, Firebase usage)
+- `static/things/traverse/` - 14 images (app and website screenshots)
+- `static/posts/2019/03/recovery-passport/` - 7 images (app screenshots)
+- `static/posts/2018/08/traverse/` - 1 image (pointing-mini.png for traverse-2)
+
+### Notes for Next Developer
+- Total things now migrated: 8 (can-i-poop, deno-mirror-to-gitea, flipp, recovery-passport, traverse, traverse-2-electric-boogaloo, typescript-oauth2-server, url-to-png)
+- All things now use absolute paths for images in `static/`
+- Vimeo embeds use standard responsive iframe pattern (56.25% padding for 16:9)
+- Images referenced from external URLs (GitHub raw) are kept as-is
+- Some things (recovery-passport) keep original Hugo-style paths like `/posts/2019/03/` for backward compatibility with existing links
