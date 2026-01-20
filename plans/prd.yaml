@@ -261,7 +261,7 @@ tasks:
       - Verify Playwright screenshots /resume/ page
       - Verify PDF generated at static/resume.pdf
       - Verify PDF accessible at /resume.pdf
-    passes: false
+    passes: true
 
   - category: infrastructure
     description: Static assets copied to build output

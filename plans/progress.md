@@ -608,3 +608,26 @@
   aliases:
   - /posts/old-url-slug/
   ```
+
+## 2026-01-20: Resume PDF Generation
+
+### Completed
+- Created `scripts/generate-resume-pdf.ts` for Playwright-based PDF generation
+- Script connects to local dev server (port 5173) or falls back to production URL
+- Uses `start-server-and-test` to automatically start dev server before generation
+- Updated `package.json` scripts to use new script path with `tsx` instead of `ts-node`
+- Removed old `resume-snapshotter.ts` (moved to scripts/)
+- All checks pass: `pnpm run lint`, `pnpm run check`
+
+### Files Created
+- `scripts/generate-resume-pdf.ts` - Playwright PDF generation script
+
+### Files Modified
+- `package.json` - Updated `create-resume` script to use tsx and new path
+
+### Notes for Next Developer
+- Run `pnpm gen:resume` to generate the PDF (starts dev server automatically)
+- The script uses `waitUntil: 'networkidle'` to ensure page fully loads before PDF
+- PDF margins are set to { top: 25, bottom: 25, left: 50, right: 50 }
+- Output goes to `static/resume.pdf` which is accessible at `/resume.pdf`
+- The old `resume-snapshotter.ts` at project root can be deleted
