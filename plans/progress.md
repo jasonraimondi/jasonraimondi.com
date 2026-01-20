@@ -509,3 +509,27 @@
 - Grid uses `minmax(240px, 1fr)` for responsive columns
 - Lightbox nav buttons are disabled (not hidden) when at first/last image
 - Counter and caption shown below the image in lightbox
+
+## 2026-01-20: Asciinema Component
+
+### Completed
+- Created `Asciinema` Svelte component for lazy-loading terminal recording embeds
+- Uses IntersectionObserver to trigger loading when entering viewport
+- Shows placeholder with terminal icon until loaded
+- Uses iframe to safely embed the asciinema.org player script
+- Iframe auto-resizes using ResizeObserver
+- Component accepts `id` (required) and `description` (optional) props
+- Terminal-style placeholder with dark background to match asciinema aesthetics
+- All checks pass: `pnpm run lint`, `pnpm run check`
+
+### Files Created
+- `src/lib/components/Asciinema.svelte` - Lazy-loading Asciinema terminal recording embed component
+
+### Notes for Next Developer
+- To use Asciinema in .svx files: `<script>import Asciinema from '$lib/components/Asciinema.svelte';</script>` then `<Asciinema id="your_asciinema_id" description="Optional description" />`
+- The `id` prop is the Asciinema recording ID (found in the URL: asciinema.org/a/ID)
+- The `description` prop is optional and shown in the placeholder before loading
+- Component uses iframe isolation to handle asciinema's script which may use document.write
+- Placeholder appears until scroll triggers IntersectionObserver (100px rootMargin)
+- ResizeObserver adjusts iframe height as player content loads
+- Used in the "Authenticating Next.js" post for API demo recording

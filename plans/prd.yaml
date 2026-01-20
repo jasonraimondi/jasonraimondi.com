@@ -169,7 +169,7 @@ tasks:
       - Load post containing Asciinema component
       - Verify terminal recording embeds
       - Verify playback controls work
-    passes: false
+    passes: true
 
   - category: functional
     description: Dark mode toggle switches theme and persists preference
