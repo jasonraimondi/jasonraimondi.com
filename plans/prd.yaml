@@ -210,7 +210,7 @@ tasks:
       - Locate Edit on GitHub link
       - Verify link points to src/content/posts/[slug].svx
       - Verify link opens in new tab
-    passes: false
+    passes: true
 
   - category: functional
     description: Redirect pages generated for post aliases
@@ -231,7 +231,7 @@ tasks:
       - Verify OpenGraph tags (og:title, og:description, og:image)
       - Verify Twitter card tags
       - Verify schema.org JSON-LD present
-    passes: false
+    passes: true
 
   - category: seo
     description: RSS feed generates valid XML with all posts

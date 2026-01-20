@@ -3,6 +3,7 @@
 	import type { Component } from 'svelte';
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import ArchivedBanner from '$lib/components/ArchivedBanner.svelte';
+	import EditOnGitHub from '$lib/components/EditOnGitHub.svelte';
 
 	interface Props {
 		data: {
@@ -135,6 +136,7 @@
 					{/each}
 				</ul>
 			{/if}
+			<EditOnGitHub filePath="posts/{data.metadata.slug}.svx" />
 		</section>
 
 		<section>

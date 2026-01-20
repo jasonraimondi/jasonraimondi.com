@@ -328,3 +328,28 @@
 - Available variants: `default` (gray), `info` (green/purple), `error` (rose)
 - The `title` is optional and renders as a bold heading above content
 - Component relies on global CSS from `_tipboard.css` for styling
+
+## 2026-01-20: Edit on GitHub Links
+
+### Completed
+- Created `EditOnGitHub` component with edit icon and "Improve this page" text
+- Added component to post detail page (`/posts/[slug]/`)
+- Added component to thing detail page (`/things/[slug]/`)
+- Links point to correct GitHub repository path (`src/content/{type}/{slug}.svx`)
+- Links open in new tab with `rel="noopener"`
+- Also marked SEO metadata task as complete (all pages already have full SEO including title, meta description, OpenGraph, Twitter cards, and JSON-LD)
+- All checks pass: `pnpm run check`, `pnpm run lint`
+
+### Files Created
+- `src/lib/components/EditOnGitHub.svelte` - Edit on GitHub link component
+
+### Files Modified
+- `src/routes/posts/[slug]/+page.svelte` - Added EditOnGitHub component
+- `src/routes/things/[slug]/+page.svelte` - Added EditOnGitHub component
+- `plans/prd.yaml` - Marked "Edit on GitHub links" and "SEO metadata" tasks as complete
+
+### Notes for Next Developer
+- Edit links use repository URL `https://github.com/jasonraimondi/jasonraimondi.com`
+- The component receives a `filePath` prop like `posts/{slug}.svx` or `things/{slug}.svx`
+- Links are styled using existing `.edit-on-github` CSS class from `_single.css`
+- The branch is hardcoded as `main` in the URL
