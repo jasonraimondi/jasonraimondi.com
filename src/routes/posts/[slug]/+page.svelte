@@ -13,6 +13,16 @@
 
 	let { data }: Props = $props();
 
+	const siteUrl = 'https://jasonraimondi.com';
+	const pageUrl = $derived(`${siteUrl}/posts/${data.metadata.slug}/`);
+	const imageUrl = $derived(
+		data.metadata.images?.[0]
+			? data.metadata.images[0].startsWith('http')
+				? data.metadata.images[0]
+				: `${siteUrl}${data.metadata.images[0]}`
+			: null
+	);
+
 	function formatDate(dateString: string): string {
 		const date = new Date(dateString);
 		return date.toLocaleDateString('en-US', {
@@ -22,24 +32,79 @@
 		});
 	}
 
+	function formatISODate(dateString: string): string {
+		return new Date(dateString).toISOString();
+	}
+
 	const breadcrumbItems = $derived([
 		{ label: 'Posts', href: '/posts/' },
 		{ label: data.metadata.title }
 	]);
+
+	const jsonLdScript = $derived(
+		'<script type="application/ld+json">' +
+			JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'BlogPosting',
+				headline: data.metadata.title,
+				description: data.metadata.description,
+				url: pageUrl,
+				datePublished: formatISODate(data.metadata.date),
+				dateModified: data.metadata.lastmod
+					? formatISODate(data.metadata.lastmod)
+					: formatISODate(data.metadata.date),
+				author: {
+					'@type': 'Person',
+					name: 'Jason Raimondi',
+					url: siteUrl
+				},
+				publisher: {
+					'@type': 'Person',
+					name: 'Jason Raimondi',
+					url: siteUrl
+				},
+				...(imageUrl && { image: imageUrl }),
+				...(data.metadata.tags?.length && { keywords: data.metadata.tags.join(', ') }),
+				mainEntityOfPage: {
+					'@type': 'WebPage',
+					'@id': pageUrl
+				}
+			}) +
+			'</' +
+			'script>'
+	);
 </script>
 
 <svelte:head>
 	<title>{data.metadata.title} | Jason Raimondi</title>
 	<meta name="description" content={data.metadata.description} />
+	<link rel="canonical" href={pageUrl} />
+
+	<!-- OpenGraph -->
 	<meta property="og:title" content={data.metadata.title} />
 	<meta property="og:description" content={data.metadata.description} />
 	<meta property="og:type" content="article" />
-	{#if data.metadata.images?.[0]}
-		<meta property="og:image" content={data.metadata.images[0]} />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:site_name" content="Jason Raimondi" />
+	<meta property="article:published_time" content={formatISODate(data.metadata.date)} />
+	{#if data.metadata.lastmod}
+		<meta property="article:modified_time" content={formatISODate(data.metadata.lastmod)} />
 	{/if}
-	<meta name="twitter:card" content="summary_large_image" />
+	{#if imageUrl}
+		<meta property="og:image" content={imageUrl} />
+	{/if}
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content={imageUrl ? 'summary_large_image' : 'summary'} />
 	<meta name="twitter:title" content={data.metadata.title} />
 	<meta name="twitter:description" content={data.metadata.description} />
+	{#if imageUrl}
+		<meta name="twitter:image" content={imageUrl} />
+	{/if}
+
+	<!-- JSON-LD -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
+	{@html jsonLdScript}
 </svelte:head>
 
 <Breadcrumbs items={breadcrumbItems} />

@@ -10,6 +10,29 @@
 
 	let { data }: Props = $props();
 
+	const siteUrl = 'https://jasonraimondi.com';
+	const pageUrl = `${siteUrl}/things/`;
+	const pageTitle = 'Things | Jason Raimondi';
+	const pageDescription =
+		'Projects and things built by Jason Raimondi - software, apps, and experiments.';
+
+	const jsonLdScript =
+		'<script type="application/ld+json">' +
+		JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'CollectionPage',
+			name: pageTitle,
+			description: pageDescription,
+			url: pageUrl,
+			isPartOf: {
+				'@type': 'WebSite',
+				name: 'Jason Raimondi',
+				url: siteUrl
+			}
+		}) +
+		'</' +
+		'script>';
+
 	function formatDate(dateString: string): string {
 		const date = new Date(dateString);
 		return date.toLocaleDateString('en-US', {
@@ -21,11 +44,25 @@
 </script>
 
 <svelte:head>
-	<title>Things | Jason Raimondi</title>
-	<meta
-		name="description"
-		content="Projects and things built by Jason Raimondi - software, apps, and experiments."
-	/>
+	<title>{pageTitle}</title>
+	<meta name="description" content={pageDescription} />
+	<link rel="canonical" href={pageUrl} />
+
+	<!-- OpenGraph -->
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={pageDescription} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:site_name" content="Jason Raimondi" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content={pageTitle} />
+	<meta name="twitter:description" content={pageDescription} />
+
+	<!-- JSON-LD -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
+	{@html jsonLdScript}
 </svelte:head>
 
 <section class="things-list">

@@ -2,26 +2,54 @@
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 
 	const breadcrumbItems = [{ label: 'Uses' }];
+
+	const siteUrl = 'https://jasonraimondi.com';
+	const pageUrl = `${siteUrl}/uses/`;
+	const pageTitle = 'Uses | Jason Raimondi';
+	const pageDescription = 'This page lists software and hardware I use on a daily basis.';
+	const imageUrl = `${siteUrl}/covers/battlestation.jpg`;
+
+	const jsonLdScript =
+		'<script type="application/ld+json">' +
+		JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'WebPage',
+			name: pageTitle,
+			description: pageDescription,
+			url: pageUrl,
+			image: imageUrl,
+			isPartOf: {
+				'@type': 'WebSite',
+				name: 'Jason Raimondi',
+				url: siteUrl
+			}
+		}) +
+		'</' +
+		'script>';
 </script>
 
 <svelte:head>
-	<title>Uses | Jason Raimondi</title>
-	<meta
-		name="description"
-		content="This page lists software and hardware I use on a daily basis."
-	/>
-	<meta property="og:title" content="Uses | Jason Raimondi" />
-	<meta
-		property="og:description"
-		content="This page lists software and hardware I use on a daily basis."
-	/>
+	<title>{pageTitle}</title>
+	<meta name="description" content={pageDescription} />
+	<link rel="canonical" href={pageUrl} />
+
+	<!-- OpenGraph -->
+	<meta property="og:title" content={pageTitle} />
+	<meta property="og:description" content={pageDescription} />
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:site_name" content="Jason Raimondi" />
+	<meta property="og:image" content={imageUrl} />
+
+	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Uses | Jason Raimondi" />
-	<meta
-		name="twitter:description"
-		content="This page lists software and hardware I use on a daily basis."
-	/>
+	<meta name="twitter:title" content={pageTitle} />
+	<meta name="twitter:description" content={pageDescription} />
+	<meta name="twitter:image" content={imageUrl} />
+
+	<!-- JSON-LD -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
+	{@html jsonLdScript}
 </svelte:head>
 
 <Breadcrumbs items={breadcrumbItems} />

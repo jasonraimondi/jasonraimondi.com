@@ -112,7 +112,7 @@ tasks:
       - Load post containing Tip component
       - Verify styled info/warning box displays
       - Verify inner content renders as markdown
-    passes: false
+    passes: true
 
   - category: components
     description: TipBoard component renders code containers
@@ -181,7 +181,7 @@ tasks:
       - Refresh page
       - Verify preference persisted from localStorage
       - Verify toggle overrides OS preference
-    passes: false
+    passes: true
 
   - category: functional
     description: About-me animation rotates text with smooth transitions

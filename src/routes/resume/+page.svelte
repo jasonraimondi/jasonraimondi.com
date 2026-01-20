@@ -7,6 +7,33 @@
 	const resume = $derived(data.resume);
 	const basics = $derived(resume.basics);
 
+	// SEO constants
+	const siteUrl = 'https://jasonraimondi.com';
+	const pageUrl = `${siteUrl}/resume/`;
+	const profileImage = `${siteUrl}/misc/me/zombie-ruby-trimmed@2x.png`;
+	const pageTitle = $derived(`${basics.name}'s Resume`);
+
+	const jsonLdScript = $derived(
+		'<script type="application/ld+json">' +
+			JSON.stringify({
+				'@context': 'https://schema.org',
+				'@type': 'ProfilePage',
+				name: pageTitle,
+				description: basics.summary,
+				url: pageUrl,
+				mainEntity: {
+					'@type': 'Person',
+					name: basics.name,
+					jobTitle: 'Senior Software Engineer',
+					url: basics.website,
+					email: 'jason@raimondi.us',
+					image: profileImage
+				}
+			}) +
+			'</' +
+			'script>'
+	);
+
 	function formatDate(dateStr: string): string {
 		if (dateStr === 'present') return 'present';
 		const date = new Date(dateStr);
@@ -46,12 +73,29 @@
 </script>
 
 <svelte:head>
-	<title>{basics.name}'s Resume</title>
+	<title>{pageTitle}</title>
 	<meta name="description" content={basics.summary} />
-	<meta property="og:title" content="{basics.name}'s Resume" />
+	<link rel="canonical" href={pageUrl} />
+
+	<!-- OpenGraph -->
+	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={basics.summary} />
 	<meta property="og:type" content="profile" />
-	<meta property="og:url" content="{basics.website}/resume/" />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:site_name" content="Jason Raimondi" />
+	<meta property="og:image" content={profileImage} />
+	<meta property="profile:first_name" content="Jason" />
+	<meta property="profile:last_name" content="Raimondi" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content={pageTitle} />
+	<meta name="twitter:description" content={basics.summary} />
+	<meta name="twitter:image" content={profileImage} />
+
+	<!-- JSON-LD -->
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
+	{@html jsonLdScript}
 </svelte:head>
 
 <div id="resume" class="container center">

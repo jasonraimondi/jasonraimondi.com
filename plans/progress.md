@@ -210,3 +210,75 @@
 - Work entries are processed to show company info only once when there are consecutive roles
 - The `@html` directive is used for work highlights that contain markdown links - data is trusted as it comes from the repo's own JSON file
 - Resume PDF generation via Playwright is tracked as a separate PRD task
+
+## 2026-01-19: Dark Mode Toggle
+
+### Completed
+- Created theme store with localStorage persistence and OS preference detection
+- Built ThemeToggle component with sun/moon icons
+- Added inline script to app.html to prevent flash of wrong theme on page load
+- Updated all CSS files to use `[data-theme='dark']` selector instead of `@media (--dark)` media query
+- Theme toggle integrated into Header component
+- Store initializes on mount and listens for OS preference changes
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/lib/stores/theme.ts` - Theme store with Svelte 5 runes, localStorage persistence, OS preference detection
+- `src/lib/components/ThemeToggle.svelte` - Toggle button with sun/moon SVG icons
+
+### Files Modified
+- `src/app.html` - Added inline script to set data-theme attribute before render (prevents FOUC)
+- `src/routes/+layout.svelte` - Imports and initializes theme store on mount
+- `src/lib/components/Header.svelte` - Integrated ThemeToggle component
+- `src/styles/base/_html.css` - Updated to use `[data-theme='dark']` selector
+- `src/styles/_shared/base/_anchor.css` - Updated dark mode styles
+- `src/styles/_shared/base/_label.css` - Updated dark mode styles
+- `src/styles/_shared/_mixins.css` - Removed `@media (--dark)` from date-item mixin
+- `src/styles/base/_code.css` - Updated dark mode styles
+- `src/styles/layouts/_single.css` - Updated dark mode styles for tables and dates
+- `src/styles/layouts/_list.css` - Updated dark mode styles for list items and dates
+- `src/styles/partials/_pagination.css` - Updated dark mode styles
+- `src/styles/content/_layout.css` - Updated dark mode styles for nav and menu-toggle
+- `src/styles/content/_nav.css` - Updated dark mode styles
+- `src/styles/content/_posts.css` - Updated dark mode styles for post-date
+- `src/styles/components/_tipboard.css` - Updated dark mode styles
+- `src/styles/resume/base/_html.css` - Updated to use `[data-theme='dark']` selector
+
+### Notes for Next Developer
+- Theme is stored in localStorage under key `theme-preference`
+- The inline script in app.html sets `data-theme` before first render to prevent flash
+- Theme store uses Svelte 5 runes (`$state`) for reactivity
+- CSS uses `:root[data-theme='dark']` pattern for dark mode styles
+- Store listens for OS preference changes but only applies them if user hasn't set a preference
+- ThemeToggle shows sun icon in dark mode (to switch to light) and moon icon in light mode (to switch to dark)
+
+## 2026-01-20: Tip Component
+
+### Completed
+- Created `Tip` Svelte component for styled info/warning boxes
+- Component accepts `type` prop (`info` or `warning`) and optional `title` prop
+- Uses Svelte 5 Snippets for children content
+- Dark mode styles using `color-mix` for semi-transparent backgrounds
+- Fixed ESLint parsing errors across all pages with JSON-LD `</script>` tags
+  - Used string concatenation pattern (`'</' + 'script>'`) to avoid Svelte/ESLint parsing issues
+  - Added `eslint-disable-next-line` comments for `@html` tags with trusted JSON-LD data
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/lib/components/Tip.svelte` - Styled info/warning box component
+
+### Files Modified
+- `src/routes/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/posts/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/posts/[slug]/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/resume/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/things/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/things/[slug]/+page.svelte` - Fixed JSON-LD script escaping
+- `src/routes/uses/+page.svelte` - Fixed JSON-LD script escaping
+
+### Notes for Next Developer
+- To use Tip in .svx files, import and use as: `<script>import Tip from '$lib/components/Tip.svelte';</script>` then `<Tip type="warning" title="Warning">Content here</Tip>`
+- The `type` defaults to `info` if not specified
+- The `title` defaults to the type name if not specified (e.g., "info" or "warning")
+- Pass empty string as title (`title=" "`) to hide the title completely
+- JSON-LD script tags must use string concatenation to avoid Svelte parser issues with `</script>` literals
