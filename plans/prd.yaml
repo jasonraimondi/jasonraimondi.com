@@ -128,7 +128,7 @@ tasks:
       - Load post containing Quote component
       - Verify blockquote displays
       - Verify author and source metadata shown
-    passes: false
+    passes: true
 
   - category: components
     description: ImagePop component opens custom lightbox on click

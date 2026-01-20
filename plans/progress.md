@@ -282,3 +282,24 @@
 - The `title` defaults to the type name if not specified (e.g., "info" or "warning")
 - Pass empty string as title (`title=" "`) to hide the title completely
 - JSON-LD script tags must use string concatenation to avoid Svelte parser issues with `</script>` literals
+
+## 2026-01-20: Quote Component
+
+### Completed
+- Created `Quote` Svelte component for styled blockquotes with attribution
+- Component accepts `author`, `source`, `link`, and `title` props
+- Uses Svelte 5 Snippets for children content
+- Auto-generates display title from link URL if title not provided (truncates long URLs)
+- Dark mode styles using CSS custom properties
+- Styled footer with author, source/cite, and optional link
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/lib/components/Quote.svelte` - Styled blockquote component with attribution
+
+### Notes for Next Developer
+- To use Quote in .svx files: `<script>import Quote from '$lib/components/Quote.svelte';</script>` then `<Quote author="Name" link="https://...">Quote text</Quote>`
+- Props are all optional: `author` (string), `source` (string), `link` (string), `title` (string)
+- If `link` is provided but `title` is not, the title is auto-generated from the URL (protocol/www stripped, truncated to 32 chars)
+- `source` takes precedence over `link` for the citation display
+- Component uses scoped styles with `:global([data-theme='dark'])` for dark mode
