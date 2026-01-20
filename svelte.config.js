@@ -33,17 +33,36 @@ const highlighter = await createHighlighter({
 		'vue',
 		'svelte',
 		'jsx',
-		'tsx'
+		'tsx',
+		'makefile',
+		'make',
+		'terraform',
+		'hcl',
+		'toml',
+		'ini',
+		'diff',
+		'text',
+		'dotenv',
+		'properties',
+		'xml',
+		'scss',
+		'less',
+		'sass'
 	]
 });
+
+// Get list of loaded language IDs for fallback
+const loadedLangs = highlighter.getLoadedLanguages();
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
 	extensions: ['.svx'],
 	highlight: {
 		highlighter: async (code, lang) => {
+			// Fallback to 'text' if language is not loaded
+			const safeLang = lang && loadedLangs.includes(lang) ? lang : 'text';
 			const html = highlighter.codeToHtml(code, {
-				lang: lang || 'text',
+				lang: safeLang,
 				themes: {
 					light: 'github-light',
 					dark: 'github-dark'

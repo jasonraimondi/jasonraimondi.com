@@ -669,3 +669,65 @@
 - Vimeo embeds use standard responsive iframe pattern (56.25% padding for 16:9)
 - Images referenced from external URLs (GitHub raw) are kept as-is
 - Some things (recovery-passport) keep original Hugo-style paths like `/posts/2019/03/` for backward compatibility with existing links
+
+## 2026-01-20: Blog Posts Migration (Partial)
+
+### Completed
+- Migrated 15 additional blog posts from Hugo markdown to .svx format (28 total now)
+- Posts migrated include:
+  - absolute-imports-with-typescript-and-webpack
+  - adding-vanilla-js-header-hashtag-deep-links-to-your-blog-for-easy-sharing-to-direct-content
+  - exec-command-in-nodejs
+  - enhance-macos-quick-look
+  - create-a-bootable-usb
+  - terraform-amazon-s3-static-site-with-cloudfront-https-and-cloudflare-dns
+  - encrypting-zfs-filesystem
+  - semantic-commit-messages (with Gist component)
+  - local-and-session-storage-helpers (with Gist component)
+  - fix-binary-not-found-error-asdf-nodejs-v14-with-m1-mac
+  - install-google-fonts-in-github-workflow
+  - which-online-code-editor-cheat-sheet
+  - create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang (with Asciinema component)
+  - secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component (with ImagePop, Quote components)
+  - add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load (with ImagePop component)
+- Converted Hugo shortcodes to Svelte components:
+  - `{{< asciinema >}}` → Asciinema component
+  - `{{< gist >}}` → Gist component
+  - `{{< image/pop >}}` → ImagePop component
+  - `{{< quote >}}` → Quote component
+  - `{{< relref >}}` → direct links
+- Copied images for authenticating-nextjs series to static/posts/
+- Added additional Shiki language support (makefile, terraform, hcl, dotenv, etc.)
+- Added Shiki language fallback to 'text' for unknown languages
+- Made RSS and sitemap generators more robust (handle missing metadata gracefully)
+- Escaped HTML entities in markdown (`<--` → `&lt;--`) to prevent Svelte parsing errors
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- 15 new .svx files in `src/content/posts/`
+
+### Static Assets Added
+- `static/posts/authenticating-nextjs-part-2/` - 7 GIF files
+- `static/posts/authenticating-nextjs-part-3/` - 4 files (3 GIF, 1 PNG)
+
+### Files Modified
+- `svelte.config.js` - Added more Shiki languages, added language fallback
+- `src/routes/rss.xml/+server.ts` - Made metadata handling robust
+- `src/routes/sitemap.xml/+server.ts` - Made metadata handling robust
+
+### Notes for Next Developer
+- 28 of 39 posts are now migrated (72%)
+- Remaining 11 posts are Hugo page bundles (directories with index.md + images):
+  - 2016-05-05-setting-up-laravel-with-foundation
+  - 2018-08-23-testing-a-typescript-react-app-using-ts-jest-not-create-react-app
+  - 2018-09-06-showing-code-coverage-for-a-react-app-using-code-climate-with-travis-ci
+  - 2018-10-11-using-the-timer-observable-function-from-rxjs-with-chrome-headless-to-hack-a-contest-at-work
+  - 2018-11-27-auto-deploy-docker-container-using-self-hosted-ci-drone-io-and-multi-stage-dockerfile
+  - 2018-12-13-using-an-alfred-workflow-to-assist-in-switching-from-google-chrome-to-firefox
+  - 2019-04-18-enhance-static-site-and-markdown-with-vuejs
+  - 2020-02-25-add-location-data-to-images
+  - 2022-03-24-mode-65 (image gallery with 17 images)
+  - 2024-10-18-configure-a-schlage-encode-for-home-assistant-homekit-apple-home-apple-wallet-keys
+- Page bundles require copying images to static/ and converting shortcodes
+- mdsvex requires frontmatter at the top of the file, before any script tags
+- The RSS and sitemap endpoints now gracefully handle posts with missing metadata

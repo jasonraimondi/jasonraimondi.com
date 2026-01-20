@@ -17,21 +17,33 @@ export const GET: RequestHandler = async () => {
 		metadata: Thing;
 	}>('/src/content/things/*.svx', { eager: true });
 
-	const posts: Post[] = Object.entries(postModules).map(([path, module]) => {
-		const slug = path.split('/').pop()?.replace('.svx', '') ?? '';
-		return {
-			...module.metadata,
-			slug: module.metadata.slug ?? slug
-		};
-	});
+	const posts: Post[] = Object.entries(postModules)
+		.map(([path, module]) => {
+			const fileSlug = path.split('/').pop()?.replace('.svx', '') ?? '';
+			const metadata = module.metadata || {};
+			return {
+				...metadata,
+				title: metadata.title || fileSlug,
+				description: metadata.description || '',
+				date: metadata.date || new Date().toISOString(),
+				slug: metadata.slug || fileSlug
+			};
+		})
+		.filter((post) => post.slug && post.date);
 
-	const things: Thing[] = Object.entries(thingModules).map(([path, module]) => {
-		const slug = path.split('/').pop()?.replace('.svx', '') ?? '';
-		return {
-			...module.metadata,
-			slug: module.metadata.slug ?? slug
-		};
-	});
+	const things: Thing[] = Object.entries(thingModules)
+		.map(([path, module]) => {
+			const fileSlug = path.split('/').pop()?.replace('.svx', '') ?? '';
+			const metadata = module.metadata || {};
+			return {
+				...metadata,
+				title: metadata.title || fileSlug,
+				description: metadata.description || '',
+				date: metadata.date || new Date().toISOString(),
+				slug: metadata.slug || fileSlug
+			};
+		})
+		.filter((thing) => thing.slug && thing.date);
 
 	// Find most recent dates for list pages
 	const mostRecentPostDate = posts.reduce((latest, post) => {

@@ -1,0 +1,16 @@
+---
+title: Semantic Commit Messages
+slug: semantic-commit-messages
+date: "2020-09-03T13:00:00-07:00"
+description: Semantic commit messages
+categories:
+  - ops
+tags:
+  - git
+---
+
+<script>
+import Gist from '$lib/components/Gist.svelte';
+</script>
+
+<Gist user="jasonraimondi" id="023deecb77b174a10b11d8a4832a3436" />

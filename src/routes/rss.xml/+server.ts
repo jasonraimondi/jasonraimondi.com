@@ -27,12 +27,17 @@ export const GET: RequestHandler = async () => {
 
 	const posts: Post[] = Object.entries(postModules)
 		.map(([path, module]) => {
-			const slug = path.split('/').pop()?.replace('.svx', '') ?? '';
+			const fileSlug = path.split('/').pop()?.replace('.svx', '') ?? '';
+			const metadata = module.metadata || {};
 			return {
-				...module.metadata,
-				slug: module.metadata.slug ?? slug
+				...metadata,
+				title: metadata.title || fileSlug,
+				description: metadata.description || '',
+				date: metadata.date || new Date().toISOString(),
+				slug: metadata.slug || fileSlug
 			};
 		})
+		.filter((post) => post.title && post.slug && post.date)
 		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 	const items = posts
