@@ -220,7 +220,7 @@ tasks:
       - Verify redirect HTML pages generated at old paths
       - Visit old URL
       - Verify meta refresh redirects to current URL
-    passes: false
+    passes: true
 
   - category: seo
     description: Pages include complete SEO metadata

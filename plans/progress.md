@@ -578,3 +578,33 @@
 - Theme switching is handled via CSS `light-dark()` or Shiki's built-in theme support
 - All dark mode CSS uses `:root[data-theme='dark']` selector (not `@media (prefers-color-scheme)`)
 - The theme toggle in Header persists preference to localStorage
+
+## 2026-01-20: Redirect Pages for Post Aliases
+
+### Completed
+- Created `scripts/generate-redirects.ts` to extract aliases from content frontmatter
+- Script reads all `.svx` files from `src/content/posts/` and `src/content/things/`
+- Generates Cloudflare Pages `_redirects` file with 301 redirects
+- Added `prebuild` script to package.json that runs before `vite build`
+- Added `aliases` field to `Post` interface in types.ts
+- The `Thing` interface already had aliases support
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `scripts/generate-redirects.ts` - Build script to generate _redirects from content aliases
+
+### Files Modified
+- `package.json` - Added `prebuild` script that runs redirect generation
+- `src/lib/data/types.ts` - Added `aliases?: string[]` to Post interface
+
+### Notes for Next Developer
+- The `_redirects` file is auto-generated during build and placed in `static/`
+- Cloudflare Pages uses this file for 301 redirects at the edge
+- Aliases in content frontmatter should be full paths like `/posts/old-slug/`
+- The script handles YAML frontmatter parsing for slug and aliases fields
+- When migrating content, copy aliases from Hugo posts to the `.svx` frontmatter
+- Example alias format:
+  ```yaml
+  aliases:
+  - /posts/old-url-slug/
+  ```

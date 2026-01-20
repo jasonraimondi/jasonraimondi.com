@@ -20,6 +20,7 @@ export interface Post {
 	imageCredit?: string;
 	archived?: boolean;
 	lastmod?: string;
+	aliases?: string[];
 }
 
 export interface Thing {
