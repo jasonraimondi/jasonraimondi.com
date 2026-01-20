@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+	import TipBoard from '$lib/components/TipBoard.svelte';
 
 	const breadcrumbItems = [{ label: 'Uses' }];
 
@@ -99,7 +100,7 @@
 				>
 			</p>
 
-			<div class="tipboard">
+			<TipBoard>
 				<pre><code
 						>aws          &gt; amazon is taking over the world
 bin          &gt; custom bin scripts
@@ -116,7 +117,7 @@ vim          &gt; vim configs
 zprezto      &gt; framework for Zsh
 zsh          &gt; shell configuration</code
 					></pre>
-			</div>
+			</TipBoard>
 
 			<h2>Layout</h2>
 			<p>The greatest keyboards of all time.</p>
@@ -153,28 +154,6 @@ zsh          &gt; shell configuration</code
 
 	.image-pop a {
 		display: block;
-	}
-
-	.tipboard {
-		background: var(--color-gray-100);
-		border-radius: 4px;
-		padding: 1rem;
-		margin: 1rem 0;
-		overflow-x: auto;
-	}
-
-	.tipboard pre {
-		margin: 0;
-		background: transparent;
-	}
-
-	.tipboard code {
-		font-size: 0.875rem;
-		line-height: 1.5;
-	}
-
-	:global([data-theme='dark']) .tipboard {
-		background: var(--color-gray-800);
 	}
 
 	.keyboard-embed {

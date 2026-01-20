@@ -303,3 +303,28 @@
 - If `link` is provided but `title` is not, the title is auto-generated from the URL (protocol/www stripped, truncated to 32 chars)
 - `source` takes precedence over `link` for the citation display
 - Component uses scoped styles with `:global([data-theme='dark'])` for dark mode
+
+## 2026-01-20: TipBoard Component
+
+### Completed
+- Created `TipBoard` Svelte component for styled code containers
+- Component accepts `variant` prop (`default`, `info`, `error`) and optional `title` prop
+- Uses Svelte 5 Snippets for children content
+- Updated global CSS with dark mode support for all variants
+- Added styling for inner `pre` and `code` elements
+- Refactored Uses page to use TipBoard component instead of inline styles
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/lib/components/TipBoard.svelte` - Styled code container component
+
+### Files Modified
+- `src/routes/uses/+page.svelte` - Replaced inline tipboard div with TipBoard component
+- `src/styles/components/_tipboard.css` - Added dark mode styles for error/default variants, inner pre/code styles
+
+### Notes for Next Developer
+- To use TipBoard in .svx files: `<script>import TipBoard from '$lib/components/TipBoard.svelte';</script>` then `<TipBoard variant="info" title="Title">Content</TipBoard>`
+- The `variant` defaults to `default` if not specified (gray styling)
+- Available variants: `default` (gray), `info` (green/purple), `error` (rose)
+- The `title` is optional and renders as a bold heading above content
+- Component relies on global CSS from `_tipboard.css` for styling

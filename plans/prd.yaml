@@ -120,7 +120,7 @@ tasks:
       - Load post containing TipBoard component
       - Verify code block container renders
       - Verify syntax highlighting applied
-    passes: false
+    passes: true
 
   - category: components
     description: Quote component renders blockquotes with attribution
