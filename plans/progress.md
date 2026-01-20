@@ -152,3 +152,27 @@
 - The `aliases` field is supported for URL redirects (to be implemented later)
 - Full content migration (9 things) is tracked as a separate PRD task
 - Some Hugo things use page bundles (directories with index.md + images) - these need special handling for images during full migration
+
+## 2026-01-19: Uses Page
+
+### Completed
+- Created `/uses` route with static content from Hugo
+- Migrated battlestation.jpg image to `static/covers/`
+- Converted Hugo shortcodes to inline Svelte:
+  - `image/pop` → Simple image figure with link
+  - `tipboard` → Styled pre/code block
+- Added SEO metadata (OpenGraph, Twitter cards)
+- Responsive keyboard layout iframes with lazy loading
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/uses/+page.svelte` - Uses page with hardware, dotfiles, keyboard layouts
+
+### Files Added
+- `static/covers/battlestation.jpg` - Workstation photo
+
+### Notes for Next Developer
+- Uses page does not use `.svx` content - it's a static Svelte page
+- The `image/pop` shortcode was simplified to a basic clickable image. The full ImagePop component with lightbox modal is tracked as a separate PRD task
+- The `tipboard` shortcode was inlined with basic styling. The full TipBoard component is tracked as a separate PRD task
+- Keyboard layout iframes use lazy loading for performance

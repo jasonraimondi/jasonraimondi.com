@@ -94,7 +94,7 @@ tasks:
       - Visit /uses/
       - Verify static page renders
       - Verify content displays correctly
-    passes: false
+    passes: true
 
   - category: components
     description: Gist component lazy-loads GitHub embeds
