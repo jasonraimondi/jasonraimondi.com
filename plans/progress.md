@@ -533,3 +533,28 @@
 - Placeholder appears until scroll triggers IntersectionObserver (100px rootMargin)
 - ResizeObserver adjusts iframe height as player content loads
 - Used in the "Authenticating Next.js" post for API demo recording
+
+## 2026-01-20: Data Files YAML to JSON Conversion
+
+### Completed
+- Converted `data/archives.yaml` to `src/lib/data/archives.json`
+- Converted `data/books.yaml` to `src/lib/data/books.json`
+- Added TypeScript interfaces for `Archive`, `ArchivesData`, `Book`, and `BooksData` types
+- projects.json was already converted in earlier session
+- Verified build completes without errors
+- Verified static assets copied to build output (fonts, covers, favicon.ico, robots.txt, humans.txt)
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `src/lib/data/archives.json` - Archive links data (8 entries)
+- `src/lib/data/books.json` - Book references data (6 entries)
+
+### Files Modified
+- `src/lib/data/types.ts` - Added Archive, ArchivesData, Book, BooksData interfaces
+
+### Notes for Next Developer
+- Archives and books JSON files can now be imported in components that need them
+- The description field in archives is optional and may contain markdown links
+- Original YAML files in `data/` are still present for reference but not used
+- To use in components: `import archivesData from '$lib/data/archives.json'` with type `ArchivesData`
+- Build output in `.svelte-kit/cloudflare/` includes all static assets correctly

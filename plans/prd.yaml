@@ -272,7 +272,7 @@ tasks:
       - Verify favicon.ico present
       - Verify robots.txt present
       - Verify humans.txt present
-    passes: false
+    passes: true
 
   - category: deployment
     description: Build completes without errors
@@ -282,7 +282,7 @@ tasks:
       - Verify all routes pre-rendered
       - Verify output directory contains expected files
       - Verify no broken internal links
-    passes: false
+    passes: true
 
   - category: deployment
     description: Site deploys and functions on Cloudflare Pages
@@ -320,4 +320,4 @@ tasks:
       - Convert books.yaml to books.json
       - Create TypeScript interfaces for each
       - Verify data loads correctly in components
-    passes: false
+    passes: true

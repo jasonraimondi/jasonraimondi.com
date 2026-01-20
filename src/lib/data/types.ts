@@ -19,6 +19,7 @@ export interface Post {
 	images?: string[];
 	imageCredit?: string;
 	archived?: boolean;
+	lastmod?: string;
 }
 
 export interface Thing {
@@ -30,4 +31,22 @@ export interface Thing {
 	tags?: string[];
 	images?: string[];
 	aliases?: string[];
+}
+
+export interface Archive {
+	name: string;
+	url: string;
+	description?: string;
+}
+
+export interface ArchivesData {
+	archives: Archive[];
+}
+
+export interface Book {
+	name: string;
+}
+
+export interface BooksData {
+	books: Book[];
 }
