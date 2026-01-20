@@ -58,7 +58,7 @@ tasks:
       - Verify archived banner shows if archived flag true
       - Verify Edit on GitHub link points to correct path
       - Verify SEO metadata present in head
-    passes: false
+    passes: true
 
   - category: routes
     description: Things list page displays projects

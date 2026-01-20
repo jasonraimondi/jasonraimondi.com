@@ -97,3 +97,27 @@
 - Post detail pages (`/posts/[slug]/`) still need to be implemented
 - Full content migration (39 posts) is tracked as a separate PRD task
 - The `archived` flag shows a badge when true
+
+## 2026-01-19: Post Detail Page
+
+### Completed
+- Implemented post detail route at `/posts/[slug]/` with dynamic slug routing
+- Created `Breadcrumbs` component with home icon and hierarchical navigation
+- Created `ArchivedBanner` component for outdated content warnings
+- Added SEO metadata (OpenGraph, Twitter cards, schema.org markup)
+- Post content renders from `.svx` files via mdsvex
+- Categories and tags display as labels
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/posts/[slug]/+page.svelte` - Post detail page component
+- `src/routes/posts/[slug]/+page.server.ts` - Server-side loader for individual posts
+- `src/lib/components/Breadcrumbs.svelte` - Reusable breadcrumb navigation
+- `src/lib/components/ArchivedBanner.svelte` - Archived content warning banner
+
+### Notes for Next Developer
+- Post detail pages use `$derived` runes for reactive breadcrumbs
+- The loader returns both the Svelte component and metadata from `.svx` files
+- Content is rendered using `<data.content />` pattern for Svelte 5
+- Existing CSS from `_single.css` and `_breadcrumbs.css` handles styling
+- Dark mode support for ArchivedBanner uses `color-mix` for transparent backgrounds
