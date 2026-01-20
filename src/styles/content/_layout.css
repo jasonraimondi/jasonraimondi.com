@@ -48,15 +48,15 @@
 
   & a {
     color: var(--color-black);
-
-    @media (--dark) {
-      color: var(--color-gray-500);
-    }
   }
 
   @media (--large) {
     margin: 0 0 0 1rem;
   }
+}
+
+:root[data-theme='dark'] .nav-title a {
+  color: var(--color-gray-500);
 }
 
 .nav-block {
@@ -122,10 +122,10 @@
 
   color: var(--color-gray-800);
   background-color: var(--color-gray-300);
+}
 
-  @media (--dark) {
-    color: var(--color-gray-300);
-    background-color: var(--color-gray-800);
-  }
+:root[data-theme='dark'] .menu-toggle {
+  color: var(--color-gray-300);
+  background-color: var(--color-gray-800);
 }
 

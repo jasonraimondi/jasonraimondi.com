@@ -53,7 +53,7 @@
 @import 'components/_video-container.css';
 @import 'components/_tipboard.css';
 
-@import 'lib/pygment.css';
+/* Shiki handles syntax highlighting via inline styles configured in svelte.config.js */
 
 .asciicast {
   width: 100%;

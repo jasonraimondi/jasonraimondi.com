@@ -27,11 +27,11 @@
   font-size: var(--text-xs);
   color: var(--color-gray-500);
 
-  @media (--dark) {
-    color: var(--color-gray-300);
-  }
-
   @media (--large) {
     min-width: 200px;
   }
+}
+
+:root[data-theme='dark'] .post-date {
+  color: var(--color-gray-300);
 }

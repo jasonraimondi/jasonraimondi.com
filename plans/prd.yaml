@@ -27,7 +27,7 @@ tasks:
       - Replace Pygments classes with Shiki theme
       - Add dark mode toggle styles
       - Verify build produces working CSS
-    passes: false
+    passes: true
 
   - category: routes
     description: Homepage renders with animated about-me and projects

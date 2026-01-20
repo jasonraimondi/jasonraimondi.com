@@ -7,11 +7,11 @@
     &:last-child {
       margin-bottom: 0;
     }
-
-    @media (--dark) {
-      border-color: var(--color-gray-200);
-    }
   }
+}
+
+:root[data-theme='dark'] .list > li {
+  border-color: var(--color-gray-200);
 }
 
 .list-item--title {
@@ -24,6 +24,11 @@
   margin-top: 0;
   margin-bottom: 0.5em;
 }
+
+:root[data-theme='dark'] .list-item--date {
+  color: var(--color-gray-200);
+}
+
 .list-item--description {
   line-height: 1.4;
 }

@@ -10,29 +10,29 @@ a {
     text-decoration: none;
   }
 
-  @media (--dark) {
-    color: var(--color-purple-500);
-
-    &[href]:focus,
-    &[href]:hover,
-    &[href]:active {
-      color: var(--color-purple-200);
-    }
-  }
-
   &.unstyled {
     color: var(--color-gray-800);
 
     &:hover {
       color: var(--color-gray-800);
     }
+  }
+}
 
-    @media (--dark) {
+:root[data-theme='dark'] a {
+  color: var(--color-purple-500);
+
+  &[href]:focus,
+  &[href]:hover,
+  &[href]:active {
+    color: var(--color-purple-200);
+  }
+
+  &.unstyled {
+    color: var(--color-white);
+
+    &:hover {
       color: var(--color-white);
-
-      &:hover {
-        color: var(--color-white);
-      }
     }
   }
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
+	import ThemeToggle from './ThemeToggle.svelte';
 
 	const isHome = $derived($page.url.pathname === '/');
 </script>
@@ -33,6 +34,9 @@
 					<a href="{base}/resume" class="mr-1">Resume</a>
 					<a href="{base}/resume.pdf" class="label" target="_blank"><span>pdf</span></a>
 					<a href="{base}/resume.json" class="label" target="_blank"><span>json</span></a>
+				</li>
+				<li>
+					<ThemeToggle />
 				</li>
 			</ul>
 		</li>

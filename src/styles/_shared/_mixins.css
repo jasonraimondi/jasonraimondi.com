@@ -26,8 +26,4 @@
 @define-mixin date-item {
   font-size: var(--text-sm);
   color: var(--color-gray-500);
-
-  @media (--dark) {
-    color: var(--color-gray-200);
-  }
 }

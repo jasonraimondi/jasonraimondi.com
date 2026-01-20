@@ -10,7 +10,8 @@ html {
   background-color: var(--color-white);
   color: var(--color-black);
 
-  @media (--dark) {
+  /* Support explicit theme toggle */
+  &[data-theme='dark'] {
     background-color: var(--color-gray-800);
     color: var(--color-white);
   }

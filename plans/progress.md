@@ -558,3 +558,23 @@
 - Original YAML files in `data/` are still present for reference but not used
 - To use in components: `import archivesData from '$lib/data/archives.json'` with type `ArchivesData`
 - Build output in `.svelte-kit/cloudflare/` includes all static assets correctly
+
+## 2026-01-20: CSS Migration Complete
+
+### Completed
+- Removed Pygments CSS import from `style.css` (Shiki handles syntax highlighting)
+- Shiki is configured in `svelte.config.js` with dual themes (github-light/github-dark)
+- Verified all CSS partials migrated to `src/styles/`
+- Verified dark mode styles use `[data-theme='dark']` selector pattern throughout
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Modified
+- `src/styles/style.css` - Removed pygment.css import, added comment about Shiki
+- `src/styles/lib/pygment.css` - Cleared (no longer needed)
+
+### Notes for Next Developer
+- Shiki generates inline styles for code blocks via mdsvex configuration
+- Code blocks use dual themes: `github-light` for light mode, `github-dark` for dark mode
+- Theme switching is handled via CSS `light-dark()` or Shiki's built-in theme support
+- All dark mode CSS uses `:root[data-theme='dark']` selector (not `@media (prefers-color-scheme)`)
+- The theme toggle in Header persists preference to localStorage
