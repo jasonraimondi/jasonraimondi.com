@@ -251,7 +251,7 @@ tasks:
       - Verify valid sitemap XML returned
       - Verify all pages included
       - Verify lastmod dates present
-    passes: false
+    passes: true
 
   - category: functional
     description: Resume PDF generated via Playwright

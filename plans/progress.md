@@ -378,3 +378,28 @@
 - `formatRFC822Date()` converts ISO dates to RSS-compatible format
 - When full content migration is complete, all 39 posts will be included in the feed
 - To add categories/tags to feed items, extend the item template with `<category>` elements
+
+## 2026-01-20: Sitemap XML Generation
+
+### Completed
+- Created `/sitemap.xml` server route that generates valid sitemap XML
+- Sitemap includes all static pages (homepage, posts list, things list, uses, resume)
+- Sitemap includes all posts and things with proper lastmod dates
+- Posts use `lastmod` field if available, falling back to `date`
+- List pages (posts, things) use the most recent content date for their lastmod
+- Includes changefreq and priority attributes for all URLs
+- Proper W3C date format (YYYY-MM-DD) for lastmod values
+- Feed is prerendered at build time via `prerender = true`
+- Cache headers set for CDN caching (1 hour s-maxage)
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `src/routes/sitemap.xml/+server.ts` - Sitemap server route
+
+### Notes for Next Developer
+- Sitemap follows sitemaps.org protocol
+- Static pages have manually assigned priorities (1.0 for homepage, down to 0.6 for uses)
+- Posts have priority 0.8, things have priority 0.7
+- changefreq varies: weekly for homepage/posts list, monthly for things/uses/resume, yearly for individual content pages
+- `formatW3CDate()` helper converts ISO dates to YYYY-MM-DD format
+- When full content migration is complete, all 39 posts and 9 things will be included
