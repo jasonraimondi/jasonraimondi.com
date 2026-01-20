@@ -176,3 +176,37 @@
 - The `image/pop` shortcode was simplified to a basic clickable image. The full ImagePop component with lightbox modal is tracked as a separate PRD task
 - The `tipboard` shortcode was inlined with basic styling. The full TipBoard component is tracked as a separate PRD task
 - Keyboard layout iframes use lazy loading for performance
+
+## 2026-01-19: Resume Page
+
+### Completed
+- Created `/resume` route with dedicated layout (no Header/Footer)
+- Resume data loaded from `static/resume.json` via server-side fetch
+- Created TypeScript interfaces for JSON Resume schema in `src/lib/data/resume.ts`
+- Migrated resume-specific CSS to `src/styles/resume/` directory
+- All sections render: Me, Contact, Summary, Experience, Education, Projects, Skills
+- Experience section groups consecutive positions at the same company
+- Work highlights support inline markdown links via `@html` (data is trusted)
+- PDF download link points to `/resume.pdf`
+- SEO metadata (OpenGraph) included
+- All checks pass: `pnpm run check`, `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/resume/+layout.svelte` - Dedicated layout with Inter font (no Header/Footer)
+- `src/routes/resume/+page.svelte` - Resume page component
+- `src/routes/resume/+page.server.ts` - Server-side loader for resume.json
+- `src/lib/data/resume.ts` - TypeScript interfaces for Resume data
+- `src/styles/resume.css` - Resume stylesheet entry point
+- `src/styles/resume/_layout.css` - Resume grid and section styles
+- `src/styles/resume/_me.css` - Name/title section styles
+- `src/styles/resume/_skills.css` - Skills section styles
+- `src/styles/resume/_contact.css` - Contact section styles
+- `src/styles/resume/base/_html.css` - Resume HTML base styles
+- `static/resume.json` - JSON Resume data (copied from content/)
+
+### Notes for Next Developer
+- Resume page uses a separate layout that doesn't inherit from the main site layout
+- The `shouldHide()` function filters entries where name/value starts with `__` (Hugo convention)
+- Work entries are processed to show company info only once when there are consecutive roles
+- The `@html` directive is used for work highlights that contain markdown links - data is trusted as it comes from the repo's own JSON file
+- Resume PDF generation via Playwright is tracked as a separate PRD task

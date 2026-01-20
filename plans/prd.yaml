@@ -86,7 +86,7 @@ tasks:
       - Verify all sections display (basics, work, education, skills, projects)
       - Verify styling matches design
       - Verify PDF link works (/resume.pdf)
-    passes: false
+    passes: true
 
   - category: routes
     description: Uses page renders static content

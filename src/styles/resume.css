@@ -1,0 +1,74 @@
+/**
+ * Resume Stylesheet Entry Point
+ *
+ * Import Order:
+ * 1. Vendor dependencies (normalize.css)
+ * 2. Shared foundation (from _shared/)
+ * 3. Shared base elements (from _shared/base/)
+ * 4. Resume-specific base overrides
+ * 5. Resume components
+ */
+
+/* Vendor */
+@import 'lib/normalize.css';
+
+/* Shared foundation */
+@import '_shared/_base.css';
+@import '_shared/_colors.css';
+@import '_shared/_typography.css';
+@import '_shared/_mixins.css';
+
+/* Shared base elements */
+@import '_shared/base/_headings.css';
+@import '_shared/base/_typography.css';
+@import '_shared/base/_anchor.css';
+@import '_shared/base/_img.css';
+@import '_shared/base/_container.css';
+@import '_shared/base/_label.css';
+
+/* Resume-specific base overrides */
+@import 'resume/base/_html.css';
+
+/* Resume components */
+@import 'resume/_layout.css';
+@import 'resume/_me.css';
+@import 'resume/_skills.css';
+@import 'resume/_contact.css';
+
+/* Resume-specific variables and utilities */
+:root {
+  --resume-line-height: 1.4;
+}
+
+html {
+  line-height: var(--resume-line-height);
+
+  @media (--large) {
+    font-size: 20px;
+  }
+}
+
+@media (--medium) {
+  :root {
+    --resume-line-height: 1.6;
+  }
+}
+
+@media print {
+  :root {
+    --resume-line-height: 1.3;
+  }
+  html {
+    font-size: 90%;
+  }
+  .print-only { display: block; }
+  .print-hide { display: none; }
+}
+
+#resume {
+  font-weight: 500;
+}
+
+.print-only {
+  display: none;
+}
