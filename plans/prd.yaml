@@ -241,7 +241,7 @@ tasks:
       - Verify valid RSS 2.0 XML returned
       - Verify all posts included
       - Verify titles, descriptions, links correct
-    passes: false
+    passes: true
 
   - category: seo
     description: Sitemap generates valid XML with all pages

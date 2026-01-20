@@ -353,3 +353,28 @@
 - The component receives a `filePath` prop like `posts/{slug}.svx` or `things/{slug}.svx`
 - Links are styled using existing `.edit-on-github` CSS class from `_single.css`
 - The branch is hardcoded as `main` in the URL
+
+## 2026-01-20: RSS Feed
+
+### Completed
+- Created `/rss.xml` server route that generates valid RSS 2.0 XML
+- RSS feed loads all posts from `src/content/posts/*.svx` via `import.meta.glob`
+- Posts sorted by date descending (newest first)
+- Each item includes title, link, guid, description, and pubDate
+- Proper XML escaping for special characters
+- Uses RFC 822 date format for pubDate
+- Includes `atom:link` self-reference for feed validation
+- Feed is prerendered at build time via `prerender = true`
+- Cache headers set for CDN caching (1 hour s-maxage)
+- All checks pass: `pnpm run lint`, `pnpm run build`
+
+### Files Created
+- `src/routes/rss.xml/+server.ts` - RSS feed server route
+
+### Notes for Next Developer
+- RSS feed is prerendered to static XML at build time
+- Site metadata (URL, title, description) is defined at the top of the file
+- `escapeXml()` helper handles XML entity encoding
+- `formatRFC822Date()` converts ISO dates to RSS-compatible format
+- When full content migration is complete, all 39 posts will be included in the feed
+- To add categories/tags to feed items, extend the item template with `<category>` elements
