@@ -446,3 +446,30 @@
 - Component uses iframe isolation to handle GitHub's document.write approach
 - Placeholder appears until scroll triggers IntersectionObserver (100px rootMargin)
 - ResizeObserver adjusts iframe height as gist content loads
+
+## 2026-01-20: ImagePop Component
+
+### Completed
+- Created `ImagePop` Svelte component with custom lightbox modal
+- Component accepts `src`, `alt`, `caption`, `portrait`, and `nodesc` props
+- Click on image opens modal with full-size image and caption
+- Modal closes on: click outside, Escape key, or close button click
+- Uses Svelte `fade` and `scale` transitions for smooth open/close animations
+- Uses Svelte 5 runes (`$state`, `$derived`)
+- Updated Uses page to use ImagePop component instead of simple link
+- Removed inline styles from Uses page that are no longer needed
+- All checks pass: `pnpm run lint`, `pnpm run check`, `pnpm run build`
+
+### Files Created
+- `src/lib/components/ImagePop.svelte` - Clickable image with lightbox modal
+
+### Files Modified
+- `src/routes/uses/+page.svelte` - Replaced inline image figure with ImagePop component
+
+### Notes for Next Developer
+- To use ImagePop in .svx files: `<script>import ImagePop from '$lib/components/ImagePop.svelte';</script>` then `<ImagePop src="/path/to/image.jpg" alt="Description" />`
+- The `caption` prop is optional; if not provided, `alt` is used for the caption
+- The `portrait` prop adds a CSS class for portrait-oriented images (narrower max-width on larger screens)
+- The `nodesc` prop hides the caption below the thumbnail image
+- Modal uses z-index 1000 and semi-transparent black backdrop (0.9 opacity)
+- Close button is positioned above the image, escape key listener is on svelte:window

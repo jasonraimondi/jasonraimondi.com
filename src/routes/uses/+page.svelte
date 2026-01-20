@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+	import ImagePop from '$lib/components/ImagePop.svelte';
 	import TipBoard from '$lib/components/TipBoard.svelte';
 
 	const breadcrumbItems = [{ label: 'Uses' }];
@@ -62,11 +63,7 @@
 
 	<section class="single--post">
 		<article class="single--post-body" itemprop="mainContentOfPage">
-			<figure class="image-pop">
-				<a href="/covers/battlestation.jpg" target="_blank" rel="noopener">
-					<img src="/covers/battlestation.jpg" alt="Battlestation" loading="lazy" />
-				</a>
-			</figure>
+			<ImagePop src="/covers/battlestation.jpg" alt="Battlestation" />
 
 			<h2>Self Hosted</h2>
 			<ul>
@@ -142,20 +139,6 @@ zsh          &gt; shell configuration</code
 </article>
 
 <style>
-	.image-pop {
-		margin: 0 0 1.5rem 0;
-	}
-
-	.image-pop img {
-		max-width: 100%;
-		height: auto;
-		border-radius: 4px;
-	}
-
-	.image-pop a {
-		display: block;
-	}
-
 	.keyboard-embed {
 		padding-top: 60%;
 		position: relative;

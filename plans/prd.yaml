@@ -142,7 +142,7 @@ tasks:
       - Verify modal closes with Svelte transition
       - Press escape key
       - Verify modal closes
-    passes: false
+    passes: true
 
   - category: components
     description: ImageGallery component displays grid with lightbox navigation
