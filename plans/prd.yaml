@@ -161,7 +161,7 @@ tasks:
       - Verify HTML5 video player displays
       - Verify playback controls work
       - Verify responsive sizing
-    passes: false
+    passes: true
 
   - category: components
     description: Asciinema component embeds terminal recordings

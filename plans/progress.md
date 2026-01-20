@@ -403,3 +403,24 @@
 - changefreq varies: weekly for homepage/posts list, monthly for things/uses/resume, yearly for individual content pages
 - `formatW3CDate()` helper converts ISO dates to YYYY-MM-DD format
 - When full content migration is complete, all 39 posts and 9 things will be included
+
+## 2026-01-20: Video Component
+
+### Completed
+- Created `Video` Svelte component for HTML5 video player
+- Component accepts `mp4`, `webm`, `poster`, and `portrait` props
+- Uses native HTML5 `<video>` element with controls
+- Supports multiple source formats (MP4 and WebM)
+- Portrait mode for vertical videos (max-width 400px, centered)
+- Scoped CSS with responsive sizing and border-radius
+- All checks pass: `pnpm run lint`, `pnpm run check`
+
+### Files Created
+- `src/lib/components/Video.svelte` - HTML5 video player component
+
+### Notes for Next Developer
+- To use Video in .svx files: `<script>import Video from '$lib/components/Video.svelte';</script>` then `<Video mp4="./video.mp4" webm="./video.webm" poster="./poster.png" portrait />`
+- The `portrait` prop is a boolean (no value needed when true)
+- At least one of `mp4` or `webm` should be provided
+- The `poster` prop is optional for thumbnail image before playback
+- Used in the Flipp project (`content/things/flipp/index.md`) for app demo videos
