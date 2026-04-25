@@ -3,7 +3,7 @@
 	import '../../styles/style.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import { themeStore } from '$lib/stores/theme';
+	import { themeStore } from '$lib/stores/theme.svelte';
 
 	let { children } = $props();
 
