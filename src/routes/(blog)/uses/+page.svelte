@@ -10,6 +10,17 @@
 	const pageTitle = 'Uses | Jason Raimondi';
 	const pageDescription = 'This page lists software and hardware I use on a daily basis.';
 	const imageUrl = `${siteUrl}/covers/battlestation.jpg`;
+	const published = '2019-03-19';
+	const lastmod = '2023-10-11';
+
+	function formatDate(dateString: string): string {
+		const date = new Date(dateString);
+		return date.toLocaleDateString('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric'
+		});
+	}
 
 	const jsonLdScript =
 		'<script type="application/ld+json">' +
@@ -59,6 +70,18 @@
 <article class="single" itemscope itemtype="http://schema.org/WebPage">
 	<header class="single--header">
 		<h1 class="single--title" itemprop="name">Uses</h1>
+		<p class="single--date">
+			Published:
+			<time datetime={published} itemprop="datePublished">
+				{formatDate(published)}
+			</time>
+		</p>
+		<p class="single--date">
+			Modified:
+			<time datetime={lastmod} itemprop="dateModified">
+				{formatDate(lastmod)}
+			</time>
+		</p>
 	</header>
 
 	<section class="single--post">
