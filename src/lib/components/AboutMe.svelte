@@ -2,7 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { fade } from 'svelte/transition';
 
-	const adjectives1 = ['technologist', 'technologist', 'technophile', 'technophile', 'tinkerer'];
+	const adjectives1 = ['technologist', 'technologist', 'technophile', 'technophile'];
 
 	const adjectives2 = [
 		'computer geek',
@@ -69,7 +69,7 @@
 </script>
 
 <div class="home">
-	<h1>Hey, I'm Jason.</h1>
+	<h1>Hey, I’m Jason. 👋</h1>
 
 	<h2>
 		I am a
@@ -82,17 +82,17 @@
 		{/key}.
 	</h2>
 
-	<p class="warning-banner">
-		It has come to my attention that someone may be impersonating me. I am currently employed and am
-		not applying for or seeking new opportunities. If you receive any communication claiming to be
-		from me, please contact me at jason@raimondi.us.
+	<p>
+		⚠️⚠️ It has come to my attention that someone may be impersonating me. I am currently employed
+		and am not applying for or seeking new opportunities. If you receive any communication claiming
+		to be from me, please contact me at jason@raimondi.us.
 	</p>
 
 	<p>I work at <a href="https://intelligems.io">Intelligems</a> as a Senior Software Engineer.</p>
 
 	<p>
-		I have been developing for the web since 2007. I've worked on everything from terrible
-		old-school spaghetti monsters, to MVC frameworks, to tested domain-driven applications. Early
+		I have been developing for the web since 2007. I’ve worked on everything from terrible
+		old-school spaghetti monsters 🍝, to MVC frameworks, to tested domain-driven applications. Early
 		on, I was developing traditional server-rendered PHP applications. These days, I really enjoy
 		full stack TypeScript.
 	</p>
@@ -100,7 +100,7 @@
 	<p>I have professional experience building modular, horizontally scalable applications.</p>
 
 	<p>
-		If I'm not hanging out with my amazing <a href="https://kimcalderone.com">wife</a> and
+		If I’m not hanging out with my amazing <a href="https://kimcalderone.com">wife</a> and
 		<a
 			href="https://jasonraimondi.com/images/zombie-avatar_hu9363f3c1e4663e069451d44174bd9478_83191_0x1000_resize_q75_h2_box_3.webp"
 			>pup</a
@@ -114,15 +114,3 @@
 		{/key}.
 	</p>
 </div>
-
-<style>
-	.warning-banner {
-		padding: 1rem;
-		background-color: var(--color-gray-100);
-		border-left: 4px solid var(--color-gray-500);
-	}
-
-	:global(.dark) .warning-banner {
-		background-color: var(--color-gray-800);
-	}
-</style>
