@@ -5,9 +5,11 @@
   margin: 0 0 1em;
 }
 .recent-projects--list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
 }
 .recent-projects--list--item {
-  margin-bottom: 5em;
   & a {
     font-size: 1.1em;
     font-weight: var(--font-bold);
