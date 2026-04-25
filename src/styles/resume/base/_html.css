@@ -3,7 +3,7 @@ html, body {
   width: 100%;
 }
 
-html {
+html.layout-resume {
   font-family: 'Inter', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 100%;
 

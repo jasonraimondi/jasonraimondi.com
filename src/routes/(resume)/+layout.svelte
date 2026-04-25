@@ -2,6 +2,11 @@
 	import '../../styles/resume.css';
 
 	let { children } = $props();
+
+	$effect(() => {
+		document.documentElement.classList.add('layout-resume');
+		return () => document.documentElement.classList.remove('layout-resume');
+	});
 </script>
 
 <svelte:head>
