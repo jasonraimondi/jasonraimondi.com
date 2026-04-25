@@ -3,16 +3,7 @@ build
 .svelte-kit
 dist
 node_modules
-public
-resources
-
-# Hugo directories
-layouts
-content
-archetypes
-data
 static
-taxonomy
 
 # Lock files
 pnpm-lock.yaml

@@ -5,7 +5,7 @@ This directory contains the stylesheets for jasonraimondi.com.
 ## Directory Structure
 
 ```
-css/
+src/styles/
 ├── _shared/              # Shared styles used by both main site and resume
 │   ├── _base.css         # Root CSS variables (containers, sidebar, etc)
 │   ├── _colors.css       # OKLCH color system (grayscale, brand colors)
@@ -27,26 +27,28 @@ css/
 ├── content/              # Content-specific styles
 ├── layouts/              # Page layout styles
 ├── partials/             # Partial/section styles
+├── resume/               # Resume-specific styles
 └── lib/                  # Third-party stylesheets
 ```
 
 ## Entry Points
 
-- **`assets/style.css`** - Main site stylesheet
-- **`assets/resume.css`** - Resume stylesheet
+- **`src/styles/style.css`** - Main site stylesheet (imported by `src/routes/(blog)/+layout.svelte`)
+- **`src/styles/resume.css`** - Resume stylesheet (imported by `src/routes/(resume)/+layout.svelte`)
 
 Both entry points import from `_shared/` for common base styles, then add their domain-specific styles.
 
 ## Build Process
 
-Stylesheets are processed by PostCSS:
+Stylesheets are processed by PostCSS (configured in `postcss.config.js`):
 - `postcss-import` - Concatenates @import statements
 - `postcss-mixins` - Enables reusable @mixin patterns
 - `postcss-custom-media-generator` - Creates responsive breakpoints
 - `postcss-preset-env` - Enables modern CSS (nesting, etc)
 - `autoprefixer` - Adds vendor prefixes
+- `cssnano` - Minifies in production
 
-Build command: `hugo --gc`
+Build command: `pnpm build`
 
 ## Custom Media Queries
 
@@ -75,7 +77,7 @@ Add to appropriate directory:
 - Partials/sections → `css/partials/`
 
 ### Resume-specific styles
-Add to `css-resume/` or `css-resume/base/`
+Add to `resume/` or `resume/base/`
 
 ## Color System
 

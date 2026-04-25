@@ -1,4 +1,3 @@
-.hugo_build.lock
 .baseline-css/
 
 ### SvelteKit ###
@@ -8,19 +7,6 @@ build/
 /static/resume.jpg
 /static/resume.png
 #/static/resume.pdf
-
-### Obsidian ###
-/content/.obsidian
-
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
 
 ### Node ###
 # Logs
