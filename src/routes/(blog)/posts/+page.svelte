@@ -105,12 +105,6 @@
 
 	.post-item {
 		margin-bottom: 2rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid var(--color-gray-200);
-	}
-
-	.post-item:last-child {
-		border-bottom: none;
 	}
 
 	.post-item h2 {
@@ -146,10 +140,6 @@
 		color: var(--color-gray-700);
 		font-size: 0.75rem;
 		border-radius: 0.25rem;
-	}
-
-	:global([data-theme='dark']) .post-item {
-		border-bottom-color: var(--color-gray-700);
 	}
 
 	:global([data-theme='dark']) .post-item time {

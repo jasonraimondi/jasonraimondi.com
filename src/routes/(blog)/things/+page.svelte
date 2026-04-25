@@ -102,12 +102,6 @@
 
 	.thing-item {
 		margin-bottom: 2rem;
-		padding-bottom: 2rem;
-		border-bottom: 1px solid var(--color-gray-200);
-	}
-
-	.thing-item:last-child {
-		border-bottom: none;
 	}
 
 	.thing-item h2 {
@@ -133,10 +127,6 @@
 	.thing-item p {
 		margin: 0;
 		color: var(--color-gray-700);
-	}
-
-	:global([data-theme='dark']) .thing-item {
-		border-bottom-color: var(--color-gray-700);
 	}
 
 	:global([data-theme='dark']) .thing-item time {
