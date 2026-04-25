@@ -1,8 +1,3 @@
-<script>
-import ImagePop from '$lib/components/ImagePop.svelte';
-import Quote from '$lib/components/Quote.svelte';
-</script>
-
 ---
 title: Secure a Next.js application with JWT, and a private route higher order component
 slug: secure-a-next-js-application-with-jwt-and-a-private-route-higher-order-component
@@ -21,6 +16,11 @@ tags:
 aliases:
   - /posts/2019-08-16-authenticating-2/
 ---
+
+<script>
+import ImagePop from '$lib/components/ImagePop.svelte';
+import Quote from '$lib/components/Quote.svelte';
+</script>
 
 ## Overview
 

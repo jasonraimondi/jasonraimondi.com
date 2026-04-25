@@ -1,7 +1,3 @@
-<script>
-import Asciinema from '$lib/components/Asciinema.svelte';
-</script>
-
 ---
 title: Create a secured REST Api for a Next.js application using JWT and Golang
 slug: create-a-secured-rest-api-for-a-next-js-application-using-jwt-and-golang
@@ -17,6 +13,10 @@ tags:
 aliases:
   - /posts/2019-08-16-authenticating-1/
 ---
+
+<script>
+import Asciinema from '$lib/components/Asciinema.svelte';
+</script>
 
 ## Overview
 

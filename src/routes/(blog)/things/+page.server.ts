@@ -6,6 +6,7 @@ export async function load() {
 	}>('/src/content/things/*.svx', { eager: true });
 
 	const things: Thing[] = Object.entries(thingModules)
+		.filter(([, module]) => module.metadata)
 		.map(([path, module]) => {
 			const slug = path.split('/').pop()?.replace('.svx', '') ?? '';
 			return {

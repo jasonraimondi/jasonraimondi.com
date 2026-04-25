@@ -10,8 +10,9 @@ export async function load({ params }) {
 		metadata: Post;
 	}>('/src/content/posts/*.svx', { eager: true });
 
-	const postPath = `/src/content/posts/${slug}.svx`;
-	const postModule = postModules[postPath];
+	const postModule = Object.values(postModules).find(
+		(module) => module.metadata?.slug === slug
+	);
 
 	if (!postModule) {
 		error(404, `Post not found: ${slug}`);

@@ -1,7 +1,3 @@
-<script>
-import ImagePop from '$lib/components/ImagePop.svelte';
-</script>
-
 ---
 title: Add server side rendered async api calls to your Next.js application that resolve before the initial page load
 slug: add-pre-rendered-async-rest-api-calls-to-next-js-application-that-resolve-before-initial-page-load
@@ -19,6 +15,10 @@ tags:
 aliases:
   - /posts/2019-08-16-authenticating-3/
 ---
+
+<script>
+import ImagePop from '$lib/components/ImagePop.svelte';
+</script>
 
 ## Overview
 

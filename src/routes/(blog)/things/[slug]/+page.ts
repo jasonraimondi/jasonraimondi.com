@@ -10,8 +10,9 @@ export async function load({ params }) {
 		metadata: Thing;
 	}>('/src/content/things/*.svx', { eager: true });
 
-	const thingPath = `/src/content/things/${slug}.svx`;
-	const thingModule = thingModules[thingPath];
+	const thingModule = Object.values(thingModules).find(
+		(module) => module.metadata?.slug === slug
+	);
 
 	if (!thingModule) {
 		error(404, `Thing not found: ${slug}`);
