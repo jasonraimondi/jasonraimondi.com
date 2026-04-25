@@ -146,6 +146,14 @@
 					{formatDate(data.metadata.date)}
 				</time>
 			</p>
+			{#if data.metadata.lastmod && data.metadata.lastmod !== data.metadata.date}
+				<p class="single--date">
+					Modified:
+					<time datetime={data.metadata.lastmod} itemprop="dateModified">
+						{formatDate(data.metadata.lastmod)}
+					</time>
+				</p>
+			{/if}
 		</section>
 
 		<article class="single--post-body" itemprop="articleBody">
