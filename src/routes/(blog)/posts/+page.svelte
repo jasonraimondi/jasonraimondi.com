@@ -76,14 +76,15 @@
 				<li class="post-item">
 					<article>
 						<h2>
-							<a href="{base}/posts/{post.slug}/">{post.title}</a>
+							<a href="{base}/posts/{post.slug}/">{post.title}
+
+						{#if post.archived}
+							<span class="archived-badge">Archived</span>
+						{/if}</a>
 						</h2>
 						<time datetime={post.date}>{formatDate(post.date)}</time>
 						{#if post.description}
 							<p>{post.description}</p>
-						{/if}
-						{#if post.archived}
-							<span class="archived-badge">Archived</span>
 						{/if}
 					</article>
 				</li>
@@ -133,12 +134,10 @@
 	}
 
 	.archived-badge {
-		display: inline-block;
-		margin-top: 0.5rem;
-		padding: 0.25rem 0.5rem;
+		padding: 0.2em 0.4em;
 		background-color: var(--color-gray-200);
 		color: var(--color-gray-700);
-		font-size: 0.75rem;
+		font-size: 0.5em;
 		border-radius: 0.25rem;
 	}
 
