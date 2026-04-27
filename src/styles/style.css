@@ -1,0 +1,64 @@
+/**
+ * Main Site Stylesheet Entry Point
+ *
+ * Import Order:
+ * 1. Vendor dependencies (normalize.css)
+ * 2. Shared foundation (from _shared/)
+ * 3. Shared base elements (from _shared/base/)
+ * 4. Site-specific base styles
+ * 5. Site layouts, partials, and components
+ *
+ * Note: Shared styles are imported from _shared/ and used by both
+ * the main site (this file) and resume (resume.css)
+ */
+
+/* Vendor */
+@import 'lib/normalize.css';
+
+/* Shared foundation */
+@import '_shared/_base.css';
+@import '_shared/_colors.css';
+@import '_shared/_typography.css';
+@import '_shared/_mixins.css';
+
+/* Shared base elements */
+@import '_shared/base/_headings.css';
+@import '_shared/base/_typography.css';
+@import '_shared/base/_anchor.css';
+@import '_shared/base/_img.css';
+@import '_shared/base/_container.css';
+@import '_shared/base/_label.css';
+
+/* Site-specific */
+@import 'base/_html.css';
+@import '_font-face.css';
+@import 'base/_noscript.css';
+@import 'base/_code.css';
+
+/* Site layouts, partials, components */
+@import 'layouts/_index.css';
+@import 'layouts/_list.css';
+@import 'layouts/_single.css';
+
+@import 'partials/_top-bar.css';
+@import 'partials/_breadcrumbs.css';
+@import 'partials/_pagination.css';
+@import 'partials/_related-posts.css';
+@import 'partials/_recent-projects.css';
+@import 'partials/_footer.css';
+@import 'partials/_tip.css';
+
+@import 'components/_image-gallery.css';
+@import 'components/_image-pop.css';
+@import 'components/_video-container.css';
+@import 'components/_tipboard.css';
+
+/* Shiki handles syntax highlighting via inline styles configured in svelte.config.js */
+
+.asciicast {
+  width: 100%;
+
+  & iframe {
+    width: 100%;
+  }
+}

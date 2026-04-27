@@ -1,0 +1,51 @@
+---
+title: 'Traverse: app & website (closed source version)'
+description: Traverse is a GitHub Explorer App I built using Electron + React, and a whole bunch of other open source tools.
+date: "2018-08-06T00:00:00-07:00"
+lastmod: "2020-05-16T11:36:32-08:00"
+slug: traverse
+tags:
+- electron
+- typescript
+- react
+categories:
+- frontend
+aliases:
+- /posts/traverse/
+---
+
+<script>
+import ImagePop from '$lib/components/ImagePop.svelte';
+</script>
+
+![Traverse Spaceman Logo](/things/traverse/pointing_0.5x.png)
+
+Traverse is a GitHub Explorer App I built using Electron + React, and a whole bunch of other open source tools.
+
+The app was written in TypeScript.
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_02.png" alt="Main page of Traverse, searching for monthly trending JavaScript repositories" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_05.png" alt="Main page of Traverse, searching for monthly trending Erlang repositories" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_03.png" alt="Starred repository explorer page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_04.png" alt="Settings page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_07.png" alt="Language list view" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_app_no-shadow_06.png" alt="Traverse about, version 0.9.2" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_02.png" alt="Traverse website main page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_03.png" alt="Traverse website download page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_04.png" alt="Traverse website purchase traverse page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_05.png" alt="Traverse website purchase traverse page with NANO instructions" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_06.png" alt="Traverse website support page" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_08.png" alt="Traverse website release notes" />
+
+<ImagePop portrait={true} src="/things/traverse/traverse_website_no-shadow_07.png" alt="Traverse website open source tools" />

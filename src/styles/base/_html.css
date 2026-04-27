@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: var(--font-family-serif);
+  font-size: 18px;
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  /* Support OS preference when no data-theme is set */
+  @media (--dark) {
+    &:not([data-theme]) {
+      background-color: var(--color-gray-800);
+      color: var(--color-white);
+    }
+  }
+
+  /* Support explicit theme toggle */
+  &[data-theme='dark'] {
+    background-color: var(--color-gray-800);
+    color: var(--color-white);
+  }
+
+  @media (--large) {
+    font-size: 20px;
+  }
+
+
+  @media print {
+    font-size: 90%;
+  }
+}

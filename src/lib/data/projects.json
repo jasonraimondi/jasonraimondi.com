@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "name": "typescript-oauth2-server",
+      "emoji": "🔐",
+      "url": "https://github.com/jasonraimondi/ts-oauth2-server",
+      "description": "A standards compliant implementation of an OAuth 2.0 authorization server for Node that utilizes JWT and Proof Key for Code Exchange (PKCE), written in TypeScript."
+    },
+    {
+      "name": "url-to-png",
+      "emoji": "🖼️",
+      "url": "https://github.com/jasonraimondi/url-to-png",
+      "description": "Selfhosted. Dynamic screenshots for the web over a simple http api"
+    },
+    {
+      "name": "promise-watch",
+      "emoji": "👀",
+      "url": "https://github.com/promise-watch/promise-watch",
+      "description": "An Api/E2E monitor that runs promises on intervals and sends notifications on errors"
+    },
+    {
+      "name": "traverse",
+      "emoji": "🧭",
+      "url": "/posts/traverse-2-electric-boogaloo",
+      "description": "Desktop app for explore trending GitHub repos (Mac OS/Linux)"
+    },
+    {
+      "name": "Printables",
+      "emoji": "🖨️",
+      "url": "https://github.com/jasonraimondi/printables",
+      "description": "A collection of models and random things to 3d print"
+    },
+    {
+      "name": "restforce-php",
+      "emoji": "💼",
+      "url": "https://github.com/eventfarm/restforcephp",
+      "description": "PHP API client library for Salesforce"
+    },
+    {
+      "name": "eventfarm/go-sdk",
+      "emoji": "🚀",
+      "url": "https://github.com/eventfarm/go-sdk",
+      "description": "A Golang API client library for the Event Farm API"
+    },
+    {
+      "name": "zod-friendly-forms",
+      "emoji": "📝",
+      "url": "https://github.com/jasonraimondi/zod-friendly-forms",
+      "description": "Parse forms with ease using Zod and get user-friendly error messages or valid typed data, compatible with any framework on both server and client side."
+    },
+    {
+      "name": "dotfiles",
+      "emoji": "💻",
+      "url": "https://github.com/jasonraimondi/dotfiles",
+      "description": "MacOS Dotfiles. Maintaining your machines config in git is great. Using Stow to handle the dotfiles is fantastic. Utilizing Brew, Prezto, ASDF, and Ubersicht."
+    },
+    {
+      "name": "browser-storage",
+      "emoji": "🗄️",
+      "url": "https://github.com/jasonraimondi/browser-storage",
+      "description": "An abstracted storage library for browser applications that interfaces with localStorage, sessionStorage, in-memory storage, or any custom serializer."
+    },
+    {
+      "name": "playwrite-browser-pool",
+      "emoji": "🎭",
+      "url": "https://github.com/jasonraimondi/playwright-browser-pool",
+      "description": "A template repository to spawn playwright browsers in a generic pool. For science."
+    },
+    {
+      "name": "nestjs-axios-promise",
+      "emoji": "📦",
+      "url": "https://github.com/jasonraimondi/nestjs-axios-promise",
+      "description": "A thin wrapper around Axios for Nest.js using Promises, because the @nestjs/axios package returns an observable."
+    },
+    {
+      "name": "postcss-custom-media-generator",
+      "emoji": "🎨",
+      "url": "https://github.com/jasonraimondi/postcss-custom-media-generator",
+      "description": "Generates mobile first @custom-media rules from a configuration object."
+    },
+    {
+      "name": "prisma-generator-nestjs-graphql",
+      "emoji": "🧩",
+      "url": "https://github.com/jasonraimondi/prisma-generator-nestjs-graphql",
+      "description": "Generate @nestjs/graphql entities with typesafe constructors and create/update inputs."
+    },
+    {
+      "name": "svelte-notify",
+      "emoji": "🔔",
+      "url": "https://github.com/jasonraimondi/svelte-notify",
+      "description": "A Svelte-based toast system: NotificationService class with success, info, and error methods. Time-based auto-disappear, no dupes."
+    },
+    {
+      "name": "eventfarm/javascript-sdk",
+      "emoji": "🚀",
+      "url": "https://github.com/eventfarm/javascript-sdk",
+      "description": "A TypeScript API client library for the Event Farm API"
+    }
+  ]
+}

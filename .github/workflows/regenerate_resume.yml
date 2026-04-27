@@ -5,12 +5,11 @@ on:
     paths:
       - '.github/actions/setup/action.yml'
       - '.github/workflows/regenerate_resume.yml'
-      - 'assets/resume.css'
-      - 'assets/resume/*.css'
-      - 'content/resume.json'
-      - 'layouts/_default/resume.html'
-      - 'layouts/partials/resume/*.html'
-      - 'resume-snapshotter.ts'
+      - 'src/styles/resume.css'
+      - 'src/styles/resume/**'
+      - 'src/lib/data/resume.ts'
+      - 'src/routes/(resume)/**'
+      - 'scripts/generate-resume-pdf.ts'
 
 jobs:
   regenerate_resume:
@@ -23,7 +22,7 @@ jobs:
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: npx playwright install --with-deps chromium
-      - run: pnpm gen:resume:ci
+      - run: pnpm gen:resume
       - uses: stefanzweifel/git-auto-commit-action@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

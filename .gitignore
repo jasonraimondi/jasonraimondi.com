@@ -1,21 +1,12 @@
-.hugo_build.lock
+.baseline-css/
+
+### SvelteKit ###
+.svelte-kit/
+build/
 
 /static/resume.jpg
 /static/resume.png
 #/static/resume.pdf
-
-### Obsidian ###
-/content/.obsidian
-
-### Hugo ###
-# Generated files by hugo
-/public/
-/resources/_gen/
-
-# Executable may be added to repository
-hugo.exe
-hugo.darwin
-hugo.linux
 
 ### Node ###
 # Logs
@@ -223,3 +214,6 @@ fabric.properties
 .idea/$CACHE_FILE$
 
 # End of https://www.toptal.com/developers/gitignore/api/node,hugo,webstorm
+.plan-bender/
+.plan-bender.local.yaml
+.claude/skills/bender-*
