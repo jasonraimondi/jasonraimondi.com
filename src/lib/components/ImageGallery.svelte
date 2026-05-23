@@ -68,7 +68,7 @@
 	{#each images as image, index (image.src)}
 		<button type="button" class="image-gallery-anchor" onclick={() => openLightbox(index)}>
 			<picture class="image-gallery-image">
-				<img src={image.src} alt={image.alt ?? ''} loading="lazy" />
+				<img src={image.src} alt="" loading="lazy" />
 			</picture>
 			{#if image.alt}
 				<small class="image-alt-text">{image.alt}</small>
@@ -111,7 +111,7 @@
 					{#key currentIndex}
 						<img
 							src={currentImage.src}
-							alt={currentImage.alt ?? ''}
+							alt=""
 							class="lightbox-image"
 							in:fade={{ duration: 150 }}
 						/>

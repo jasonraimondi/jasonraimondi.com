@@ -28,7 +28,7 @@
 				{#if item.href}
 					<a href="{base}{item.href}">{item.label}</a>
 				{:else}
-					<span>{item.label}</span>
+					<span aria-current="page">{item.label}</span>
 				{/if}
 			</li>
 		{/each}

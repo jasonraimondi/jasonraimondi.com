@@ -17,30 +17,26 @@
 		</picture>
 	</a>
 
-	<ul class="top-bar--nav">
+	<div class="top-bar--nav">
 		{#if !isHome}
-			<li>
-				<h2 class="top-bar--title">
-					<a href="{base}/" class="unstyled">Jason Raimondi</a>
-				</h2>
-			</li>
+			<h2 class="top-bar--title">
+				<a href="{base}/" class="unstyled">Jason Raimondi</a>
+			</h2>
 		{/if}
-		<li>
-			<ul class="topbar--nav--itemlist">
-				<li class="mr-2"><a href="{base}/posts">Posts</a></li>
-				<li class="mr-2"><a href="{base}/things">Apps</a></li>
-				<li class="mr-2"><a href="{base}/uses">Uses</a></li>
-				<li>
-					<a href="{base}/resume" class="mr-1">Resume</a>
-					<a href="{base}/resume.pdf" class="label" target="_blank"><span>pdf</span></a>
-					<a href="{base}/resume.json" class="label" target="_blank"><span>json</span></a>
-				</li>
-				<li>
-					<ThemeToggle />
-				</li>
-			</ul>
-		</li>
-	</ul>
+		<ul class="topbar--nav--itemlist">
+			<li class="mr-2"><a href="{base}/posts">Posts</a></li>
+			<li class="mr-2"><a href="{base}/things">Apps</a></li>
+			<li class="mr-2"><a href="{base}/uses">Uses</a></li>
+			<li>
+				<a href="{base}/resume" class="mr-1">Resume</a>
+				<a href="{base}/resume.pdf" class="label" target="_blank">pdf</a>
+				<a href="{base}/resume.json" class="label" target="_blank">json</a>
+			</li>
+			<li>
+				<ThemeToggle />
+			</li>
+		</ul>
+	</div>
 </nav>
 
 <style>
