@@ -40,7 +40,7 @@
 
 <div class="image-pop-container" class:portrait>
 	<button type="button" class="image-pop-trigger" onclick={openModal}>
-		<img {src} {alt} title={alt} class="pops" loading="lazy" />
+		<img {src} {alt} class="pops" loading="lazy" />
 	</button>
 	{#if !nodesc && displayCaption}
 		<small class="image-pop-title">{displayCaption}</small>
@@ -63,7 +63,7 @@
 					/>
 				</svg>
 			</button>
-			<img {src} alt={alt} class="lightbox-image" />
+			<img {src} {alt} class="lightbox-image" />
 			{#if displayCaption}
 				<p class="lightbox-caption">{displayCaption}</p>
 			{/if}
@@ -107,48 +107,39 @@
 	.image-pop-title {
 		font-style: italic;
 		color: var(--color-gray-500);
-		font-smooth: always;
 	}
 
 	.pops {
 		max-width: 100%;
 		width: 100%;
-		transition: all 200ms;
+		transition: transform 200ms;
 	}
 
 	@media (--large) {
 		.pops:hover {
-			max-width: 104% !important;
-			width: 104% !important;
-			margin-left: -2%;
-		}
-
-		.image-pop-container.portrait .pops:hover {
-			margin-left: 0;
+			transform: scale(1.04);
 		}
 	}
 
 	@media (--xlarge) {
 		.pops:hover {
-			max-width: 106% !important;
-			width: 106% !important;
-			margin-left: -3%;
-		}
-
-		.image-pop-container.portrait .pops:hover {
-			margin-left: 0;
+			transform: scale(1.06);
 		}
 	}
 
 	@media (--xxlarge) {
 		.pops:hover {
-			max-width: 110% !important;
-			width: 110% !important;
-			margin-left: -5%;
+			transform: scale(1.1);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.pops {
+			transition: none;
 		}
 
-		.image-pop-container.portrait .pops:hover {
-			margin-left: 0;
+		.pops:hover {
+			transform: none;
 		}
 	}
 
