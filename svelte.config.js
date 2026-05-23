@@ -1,6 +1,7 @@
 import adapter from "@sveltejs/adapter-cloudflare";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { mdsvex } from "mdsvex";
+import rehypeSlug from "rehype-slug";
 import { createHighlighter } from "shiki";
 
 const highlighter = await createHighlighter({
@@ -57,6 +58,7 @@ const loadedLangs = highlighter.getLoadedLanguages();
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
   extensions: [".svx"],
+  rehypePlugins: [rehypeSlug],
   highlight: {
     highlighter: async (code, lang) => {
       // Fallback to 'text' if language is not loaded

@@ -1,18 +1,11 @@
 <script lang="ts">
-  import type { Post } from "$lib/data/types";
-  import type { Component } from "svelte";
   import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
   import ArchivedBanner from "$lib/components/ArchivedBanner.svelte";
   import EditOnGitHub from "$lib/components/EditOnGitHub.svelte";
+  import JsonLd from "$lib/components/JsonLd.svelte";
+  import type { PageData } from "./$types";
 
-  interface Props {
-    data: {
-      content: Component;
-      metadata: Post;
-    };
-  }
-
-  let { data }: Props = $props();
+  let { data }: { data: PageData } = $props();
 
   const siteUrl = "https://jasonraimondi.com";
   const pageUrl = $derived(`${siteUrl}/posts/${data.metadata.slug}/`);
@@ -42,38 +35,33 @@
     { label: data.metadata.title },
   ]);
 
-  const jsonLdScript = $derived(
-    '<script type="application/ld+json">' +
-      JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        headline: data.metadata.title,
-        description: data.metadata.description,
-        url: pageUrl,
-        datePublished: formatISODate(data.metadata.date),
-        dateModified: data.metadata.lastmod
-          ? formatISODate(data.metadata.lastmod)
-          : formatISODate(data.metadata.date),
-        author: {
-          "@type": "Person",
-          name: "Jason Raimondi",
-          url: siteUrl,
-        },
-        publisher: {
-          "@type": "Person",
-          name: "Jason Raimondi",
-          url: siteUrl,
-        },
-        ...(imageUrl && { image: imageUrl }),
-        ...(data.metadata.tags?.length && { keywords: data.metadata.tags.join(", ") }),
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": pageUrl,
-        },
-      }) +
-      "</" +
-      "script>",
-  );
+  const jsonLd = $derived({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: data.metadata.title,
+    description: data.metadata.description,
+    url: pageUrl,
+    datePublished: formatISODate(data.metadata.date),
+    dateModified: data.metadata.lastmod
+      ? formatISODate(data.metadata.lastmod)
+      : formatISODate(data.metadata.date),
+    author: {
+      "@type": "Person",
+      name: "Jason Raimondi",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Person",
+      name: "Jason Raimondi",
+      url: siteUrl,
+    },
+    ...(imageUrl && { image: imageUrl }),
+    ...(data.metadata.tags?.length && { keywords: data.metadata.tags.join(", ") }),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": pageUrl,
+    },
+  });
 </script>
 
 <svelte:head>
@@ -102,11 +90,9 @@
   {#if imageUrl}
     <meta name="twitter:image" content={imageUrl} />
   {/if}
-
-  <!-- JSON-LD -->
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
-  {@html jsonLdScript}
 </svelte:head>
+
+<JsonLd data={jsonLd} />
 
 <Breadcrumbs items={breadcrumbItems} />
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
   import ImagePop from "$lib/components/ImagePop.svelte";
+  import JsonLd from "$lib/components/JsonLd.svelte";
   import TipBoard from "$lib/components/TipBoard.svelte";
 
   const breadcrumbItems = [{ label: "Uses" }];
@@ -22,23 +23,19 @@
     });
   }
 
-  const jsonLdScript =
-    '<script type="application/ld+json">' +
-    JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      name: pageTitle,
-      description: pageDescription,
-      url: pageUrl,
-      image: imageUrl,
-      isPartOf: {
-        "@type": "WebSite",
-        name: "Jason Raimondi",
-        url: siteUrl,
-      },
-    }) +
-    "</" +
-    "script>";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    image: imageUrl,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Jason Raimondi",
+      url: siteUrl,
+    },
+  };
 </script>
 
 <svelte:head>
@@ -59,11 +56,9 @@
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={pageDescription} />
   <meta name="twitter:image" content={imageUrl} />
-
-  <!-- JSON-LD -->
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
-  {@html jsonLdScript}
 </svelte:head>
+
+<JsonLd data={jsonLd} />
 
 <Breadcrumbs items={breadcrumbItems} />
 

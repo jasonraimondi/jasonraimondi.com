@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { trapFocus } from "$lib/actions/trapFocus";
   import { fade, scale } from "svelte/transition";
 
   interface Props {
@@ -55,7 +56,15 @@
     onclick={handleBackdropClick}
     onkeydown={handleKeydown}
   >
-    <div class="lightbox-content" transition:scale={{ duration: 200, start: 0.9 }}>
+    <div
+      class="lightbox-content"
+      role="dialog"
+      aria-modal="true"
+      aria-label={displayCaption || "Image viewer"}
+      tabindex="-1"
+      transition:scale={{ duration: 200, start: 0.9 }}
+      use:trapFocus
+    >
       <button type="button" class="lightbox-close" onclick={closeModal} aria-label="Close">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path

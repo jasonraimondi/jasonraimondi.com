@@ -1,14 +1,9 @@
 <script lang="ts">
   import { base } from "$app/paths";
-  import type { Post } from "$lib/data/types";
+  import JsonLd from "$lib/components/JsonLd.svelte";
+  import type { PageData } from "./$types";
 
-  interface Props {
-    data: {
-      posts: Post[];
-    };
-  }
-
-  let { data }: Props = $props();
+  let { data }: { data: PageData } = $props();
 
   const siteUrl = "https://jasonraimondi.com";
   const pageUrl = `${siteUrl}/posts/`;
@@ -16,22 +11,18 @@
   const pageDescription =
     "Blog posts by Jason Raimondi on software engineering, web development, and technology.";
 
-  const jsonLdScript =
-    '<script type="application/ld+json">' +
-    JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      name: pageTitle,
-      description: pageDescription,
-      url: pageUrl,
-      isPartOf: {
-        "@type": "WebSite",
-        name: "Jason Raimondi",
-        url: siteUrl,
-      },
-    }) +
-    "</" +
-    "script>";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: pageTitle,
+    description: pageDescription,
+    url: pageUrl,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "Jason Raimondi",
+      url: siteUrl,
+    },
+  };
 
   function formatDate(dateString: string): string {
     const date = new Date(dateString);
@@ -59,11 +50,9 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={pageDescription} />
-
-  <!-- JSON-LD -->
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
-  {@html jsonLdScript}
 </svelte:head>
+
+<JsonLd data={jsonLd} />
 
 <section class="posts-list">
   <h1>Posts</h1>

@@ -1,9 +1,9 @@
 <script lang="ts">
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
   import { base } from "$app/paths";
   import ThemeToggle from "./ThemeToggle.svelte";
 
-  const isHome = $derived($page.url.pathname === "/");
+  const isHome = $derived(page.url.pathname === "/");
 </script>
 
 <nav class="top-bar">

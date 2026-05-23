@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import LazyEmbed from "./LazyEmbed.svelte";
 
   interface Props {
     user: string;
@@ -9,40 +9,12 @@
 
   let { user, id, file }: Props = $props();
 
-  let container: HTMLElement;
-  let loaded = $state(false);
-  let loading = $state(false);
-
   const gistUrl = $derived(
     `https://gist.github.com/${user}/${id}.js${file ? `?file=${encodeURIComponent(file)}` : ""}`,
   );
 
-  function loadGist() {
-    if (loaded || loading) return;
-    loading = true;
-
-    // GitHub Gist uses document.write, so we need to capture its output in an iframe
-    const iframe = document.createElement("iframe");
-    iframe.style.width = "100%";
-    iframe.style.border = "none";
-    iframe.style.overflow = "hidden";
-    iframe.setAttribute("title", `GitHub Gist: ${id}`);
-
-    // eslint-disable-next-line svelte/no-dom-manipulating -- Required for iframe-based gist embedding
-    container.innerHTML = "";
-    // eslint-disable-next-line svelte/no-dom-manipulating -- Required for iframe-based gist embedding
-    container.appendChild(iframe);
-
-    const iframeDoc = iframe.contentDocument || iframe.contentWindow?.document;
-    if (!iframeDoc) {
-      loading = false;
-      return;
-    }
-
-    // Write the iframe content with the gist script
-    iframeDoc.open();
-    iframeDoc.write(
-      `
+  const srcdoc = $derived(
+    `
 			<!DOCTYPE html>
 			<html>
 			<head>
@@ -55,58 +27,15 @@
 			</head>
 			<body>
 				<script src="${gistUrl}"><` +
-        `/script>
+      `/script>
 			</body>
 			</html>
 		`,
-    );
-    iframeDoc.close();
-
-    // Resize iframe to fit content
-    const resizeObserver = new ResizeObserver(() => {
-      const height = iframeDoc.body?.scrollHeight;
-      if (height) {
-        iframe.style.height = `${height}px`;
-      }
-    });
-
-    iframe.onload = () => {
-      loaded = true;
-      loading = false;
-      if (iframeDoc.body) {
-        resizeObserver.observe(iframeDoc.body);
-        // Initial resize
-        const height = iframeDoc.body.scrollHeight;
-        if (height) {
-          iframe.style.height = `${height}px`;
-        }
-      }
-    };
-  }
-
-  onMount(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            loadGist();
-            observer.disconnect();
-          }
-        });
-      },
-      {
-        rootMargin: "100px", // Start loading slightly before it enters viewport
-      },
-    );
-
-    observer.observe(container);
-
-    return () => observer.disconnect();
-  });
+  );
 </script>
 
-<div class="gist-container" bind:this={container}>
-  {#if !loaded}
+<LazyEmbed {srcdoc} title="GitHub Gist: {id}" minHeight={100}>
+  {#snippet placeholder(loading)}
     <div class="gist-placeholder">
       <div class="gist-placeholder-icon">
         <svg viewBox="0 0 16 16" width="24" height="24" aria-hidden="true">
@@ -124,15 +53,10 @@
         {/if}
       </span>
     </div>
-  {/if}
-</div>
+  {/snippet}
+</LazyEmbed>
 
 <style>
-  .gist-container {
-    margin: 1.5rem 0;
-    min-height: 100px;
-  }
-
   .gist-placeholder {
     display: flex;
     flex-direction: column;

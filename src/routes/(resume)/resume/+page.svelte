@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from "$app/paths";
+  import JsonLd from "$lib/components/JsonLd.svelte";
   import type { PageData } from "./$types";
   import PdfIcon from "./PdfIcon.svelte";
 
@@ -14,26 +15,21 @@
   const profileImage = `${siteUrl}/misc/me/zombie-ruby-trimmed@2x.png`;
   const pageTitle = $derived(`${basics.name}'s Resume`);
 
-  const jsonLdScript = $derived(
-    '<script type="application/ld+json">' +
-      JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        name: pageTitle,
-        description: basics.summary,
-        url: pageUrl,
-        mainEntity: {
-          "@type": "Person",
-          name: basics.name,
-          jobTitle: "Senior Software Engineer",
-          url: basics.website,
-          email: "jason@raimondi.us",
-          image: profileImage,
-        },
-      }) +
-      "</" +
-      "script>",
-  );
+  const jsonLd = $derived({
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: pageTitle,
+    description: basics.summary,
+    url: pageUrl,
+    mainEntity: {
+      "@type": "Person",
+      name: basics.name,
+      jobTitle: "Senior Software Engineer",
+      url: basics.website,
+      email: "jason@raimondi.us",
+      image: profileImage,
+    },
+  });
 
   function formatDate(dateStr: string): string {
     if (dateStr === "present") return "present";
@@ -93,11 +89,9 @@
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={basics.summary} />
   <meta name="twitter:image" content={profileImage} />
-
-  <!-- JSON-LD -->
-  <!-- eslint-disable-next-line svelte/no-at-html-tags -- JSON-LD data is trusted -->
-  {@html jsonLdScript}
 </svelte:head>
+
+<JsonLd data={jsonLd} />
 
 <div id="resume" class="container center">
   <!-- Me Section -->

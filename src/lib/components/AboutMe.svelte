@@ -35,8 +35,9 @@
     return item;
   }
 
-  let adjective1 = $state(sample(adjectives1));
-  let adjective2 = $state(sample(adjectives2));
+  // Randomized in onMount (not in the initializer) so SSR and hydration agree.
+  let adjective1 = $state("");
+  let adjective2 = $state("");
 
   let doingsList = $state([...doings]);
   let doing1 = $state("");
@@ -59,7 +60,7 @@
   let interval: ReturnType<typeof setInterval>;
 
   onMount(() => {
-    updateDoings();
+    updatePage();
     interval = setInterval(updatePage, 60000);
   });
 

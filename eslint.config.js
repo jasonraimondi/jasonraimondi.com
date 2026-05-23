@@ -20,15 +20,15 @@ export default [
     },
   },
   {
-    files: ["**/*.svelte"],
+    files: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js"],
     languageOptions: {
       parserOptions: {
         parser: ts.parser,
       },
     },
     rules: {
-      // Using resolveRoute from $app/paths directly in href attributes
-      // The rule doesn't recognize this pattern correctly
+      // Links build paths manually with `{base}/...` rather than resolve(),
+      // which this rule flags; we manage base paths ourselves.
       "svelte/no-navigation-without-resolve": "off",
     },
   },
