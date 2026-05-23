@@ -2,40 +2,40 @@
 </script>
 
 <div class="archived-wrapper">
-	<div class="archived">
-		<p class="title">Outdated</p>
-		<p>This page contains outdated information and may no longer work as expected.</p>
-	</div>
+  <div class="archived">
+    <p class="title">Outdated</p>
+    <p>This page contains outdated information and may no longer work as expected.</p>
+  </div>
 </div>
 
 <style>
-	.archived-wrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 2rem 0;
-	}
+  .archived-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
 
-	.archived {
-		display: inline-block;
-		padding: 1rem 0.5rem;
-		border-radius: 0.25rem;
-		color: var(--color-rose-600);
-		background-color: var(--color-rose-200);
-		border: 1px solid var(--color-rose-600);
-		font-size: 1rem;
-		text-align: center;
-	}
+  .archived {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    border-radius: 0.25rem;
+    color: var(--color-rose-600);
+    background-color: var(--color-rose-200);
+    border: 1px solid var(--color-rose-600);
+    font-size: 1rem;
+    text-align: center;
+  }
 
-	.archived .title {
-		padding-bottom: 0.125rem;
-		font-weight: 700;
-		font-size: 1.2rem;
-	}
+  .archived .title {
+    padding-bottom: 0.125rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 
-	:global([data-theme='dark']) .archived {
-		color: var(--color-rose-400);
-		background-color: color-mix(in oklch, var(--color-rose-900) 50%, transparent);
-		border-color: var(--color-rose-400);
-	}
+  :global([data-theme="dark"]) .archived {
+    color: var(--color-rose-400);
+    background-color: color-mix(in oklch, var(--color-rose-900) 50%, transparent);
+    border-color: var(--color-rose-400);
+  }
 </style>

@@ -33,7 +33,7 @@
   }
 }
 
-:root[data-theme='dark'] .label {
+:root[data-theme="dark"] .label {
   color: var(--color-white);
   background-color: var(--color-purple-500);
 

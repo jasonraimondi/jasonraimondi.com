@@ -55,7 +55,7 @@
   }
 }
 
-:root[data-theme='dark'] .nav-title a {
+:root[data-theme="dark"] .nav-title a {
   color: var(--color-gray-500);
 }
 
@@ -81,7 +81,6 @@
   height: 100%;
   margin: 0;
   text-transform: uppercase;
-
 
   @media (--large) {
     margin-left: 1rem;
@@ -124,8 +123,7 @@
   background-color: var(--color-gray-300);
 }
 
-:root[data-theme='dark'] .menu-toggle {
+:root[data-theme="dark"] .menu-toggle {
   color: var(--color-gray-300);
   background-color: var(--color-gray-800);
 }
-

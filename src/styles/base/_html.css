@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -19,7 +20,7 @@ html {
   }
 
   /* Support explicit theme toggle */
-  &[data-theme='dark'] {
+  &[data-theme="dark"] {
     background-color: var(--color-gray-800);
     color: var(--color-white);
   }
@@ -27,7 +28,6 @@ html {
   @media (--large) {
     font-size: 20px;
   }
-
 
   @media print {
     font-size: 90%;

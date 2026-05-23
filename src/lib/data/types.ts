@@ -1,53 +1,53 @@
 export interface Project {
-	name: string;
-	emoji: string;
-	url: string;
-	description: string;
+  name: string;
+  emoji: string;
+  url: string;
+  description: string;
 }
 
 export interface ProjectsData {
-	projects: Project[];
+  projects: Project[];
 }
 
 export interface Post {
-	title: string;
-	slug: string;
-	date: string;
-	description: string;
-	categories?: string[];
-	tags?: string[];
-	images?: string[];
-	imageCredit?: string;
-	archived?: boolean;
-	lastmod?: string;
-	aliases?: string[];
+  title: string;
+  slug: string;
+  date: string;
+  description: string;
+  categories?: string[];
+  tags?: string[];
+  images?: string[];
+  imageCredit?: string;
+  archived?: boolean;
+  lastmod?: string;
+  aliases?: string[];
 }
 
 export interface Thing {
-	title: string;
-	slug: string;
-	date: string;
-	description: string;
-	categories?: string[];
-	tags?: string[];
-	images?: string[];
-	aliases?: string[];
+  title: string;
+  slug: string;
+  date: string;
+  description: string;
+  categories?: string[];
+  tags?: string[];
+  images?: string[];
+  aliases?: string[];
 }
 
 export interface Archive {
-	name: string;
-	url: string;
-	description?: string;
+  name: string;
+  url: string;
+  description?: string;
 }
 
 export interface ArchivesData {
-	archives: Archive[];
+  archives: Archive[];
 }
 
 export interface Book {
-	name: string;
+  name: string;
 }
 
 export interface BooksData {
-	books: Book[];
+  books: Book[];
 }

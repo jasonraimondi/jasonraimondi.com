@@ -40,6 +40,7 @@ Both entry points import from `_shared/` for common base styles, then add their 
 ## Build Process
 
 Stylesheets are processed by PostCSS (configured in `postcss.config.js`):
+
 - `postcss-import` - Concatenates @import statements
 - `postcss-mixins` - Enables reusable @mixin patterns
 - `postcss-custom-media-generator` - Creates responsive breakpoints
@@ -52,6 +53,7 @@ Build command: `pnpm build`
 ## Custom Media Queries
 
 Breakpoints defined in `postcss.config.js`:
+
 - `--xsmall`: 420px
 - `--small`: 640px
 - `--medium`: 768px
@@ -66,20 +68,25 @@ Usage: `@media (--large) { ... }`
 ## Adding New Styles
 
 ### Shared styles (used by both main site and resume)
+
 Add to `css/_shared/` or `css/_shared/base/`
 
 ### Site-specific styles
+
 Add component-specific styles to the owning `.svelte` file. Add global styles only when they are shared across components or target generated content:
+
 - Base HTML elements → `src/styles/base/`
 - Generated content / route-wide prose → `src/styles/layouts/`
 - Shared partial/global patterns → `src/styles/partials/`
 
 ### Resume-specific styles
+
 Add resume page component styles to `src/routes/(resume)/resume/+page.svelte`. Add document-level resume styles to `src/styles/resume.css` or `src/styles/resume/base/`.
 
 ## Color System
 
 Uses OKLCH color space for perceptually uniform colors. See `_shared/_colors.css` for available colors:
+
 - Grayscale: `--color-gray-50` through `--color-gray-900`
 - Brand colors: green, purple, rose, lightBlue (50-900 scales)
 

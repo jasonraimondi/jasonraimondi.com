@@ -36,7 +36,7 @@
   }
 }
 
-:root[data-theme='dark'] .pagination li a {
+:root[data-theme="dark"] .pagination li a {
   background-color: var(--color-purple-500);
 
   &:hover {

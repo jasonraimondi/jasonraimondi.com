@@ -14,34 +14,34 @@
  */
 
 /* Vendor */
-@import 'lib/normalize.css';
+@import "lib/normalize.css";
 
 /* Shared foundation */
-@import '_shared/_base.css';
-@import '_shared/_colors.css';
-@import '_shared/_typography.css';
-@import '_shared/_mixins.css';
+@import "_shared/_base.css";
+@import "_shared/_colors.css";
+@import "_shared/_typography.css";
+@import "_shared/_mixins.css";
 
 /* Shared base elements */
-@import '_shared/base/_headings.css';
-@import '_shared/base/_typography.css';
-@import '_shared/base/_anchor.css';
-@import '_shared/base/_img.css';
-@import '_shared/base/_container.css';
-@import '_shared/base/_label.css';
+@import "_shared/base/_headings.css";
+@import "_shared/base/_typography.css";
+@import "_shared/base/_anchor.css";
+@import "_shared/base/_img.css";
+@import "_shared/base/_container.css";
+@import "_shared/base/_label.css";
 
 /* Site-specific */
-@import 'base/_html.css';
-@import '_font-face.css';
-@import 'base/_noscript.css';
-@import 'base/_code.css';
+@import "base/_html.css";
+@import "_font-face.css";
+@import "base/_noscript.css";
+@import "base/_code.css";
 
 /* Site layouts and generated-content styles */
-@import 'layouts/_list.css';
-@import 'layouts/_single.css';
+@import "layouts/_list.css";
+@import "layouts/_single.css";
 
-@import 'partials/_pagination.css';
-@import 'partials/_related-posts.css';
+@import "partials/_pagination.css";
+@import "partials/_related-posts.css";
 
 /* Shiki handles syntax highlighting via inline styles configured in svelte.config.js */
 

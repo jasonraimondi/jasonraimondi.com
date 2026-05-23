@@ -32,6 +32,6 @@
   }
 }
 
-:root[data-theme='dark'] .post-date {
+:root[data-theme="dark"] .post-date {
   color: var(--color-gray-300);
 }

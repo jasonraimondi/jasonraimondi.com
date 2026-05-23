@@ -1,7 +1,7 @@
 .list {
   & > li {
     padding-bottom: 0.5em;
-/*     border-bottom: 1px solid var(--color-gray-300); */
+    /*     border-bottom: 1px solid var(--color-gray-300); */
     margin-bottom: 1em;
 
     &:last-child {
@@ -10,7 +10,7 @@
   }
 }
 
-:root[data-theme='dark'] .list > li {
+:root[data-theme="dark"] .list > li {
   border-color: var(--color-gray-200);
 }
 
@@ -25,7 +25,7 @@
   margin-bottom: 0.5em;
 }
 
-:root[data-theme='dark'] .list-item--date {
+:root[data-theme="dark"] .list-item--date {
   color: var(--color-gray-200);
 }
 
