@@ -15,3 +15,25 @@
 	</svg>
 	<span>Improve this page</span>
 </a>
+
+<style>
+	.edit-on-github {
+		font-size: 0.8em;
+		font-weight: 400;
+		border-radius: 0.25em;
+		display: inline-flex;
+		align-self: start;
+	}
+
+	.edit-on-github svg {
+		height: 1rem;
+		margin-right: 0.5rem;
+		fill: currentColor;
+	}
+
+	@media (--large) {
+		.edit-on-github {
+			margin-left: 1rem;
+		}
+	}
+</style>

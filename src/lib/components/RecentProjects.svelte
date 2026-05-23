@@ -39,3 +39,26 @@
 		{/each}
 	</ul>
 </div>
+
+<style>
+	.recent-projects {
+		margin: 1em 0 2em;
+	}
+
+	.recent-projects--title {
+		margin: 0 0 1em;
+	}
+
+	.recent-projects--list {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75em;
+	}
+
+	.recent-projects--list--item {
+		& a {
+			font-size: 1.1em;
+			font-weight: var(--font-bold);
+		}
+	}
+</style>

@@ -141,6 +141,24 @@
 {/if}
 
 <style>
+	.image-gallery-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1rem;
+	}
+
+	.image-gallery-image,
+	.image-gallery-image img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.image-gallery-image img {
+		object-fit: cover;
+	}
+
 	.image-gallery-anchor {
 		display: block;
 		width: 100%;

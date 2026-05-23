@@ -72,6 +72,29 @@
 {/if}
 
 <style>
+	.image-pop-container {
+		margin: 15px auto 30px;
+	}
+
+	.image-pop-container.portrait {
+		@media (--large) {
+			width: 55%;
+			margin: 0;
+			margin-right: 30%;
+		}
+
+		@media (--xlarge) {
+			width: 50%;
+			margin: 0;
+			margin-right: 40%;
+		}
+
+		@media (--xxlarge) {
+			margin: 0;
+			margin-right: 50%;
+		}
+	}
+
 	.image-pop-trigger {
 		display: block;
 		width: 100%;
@@ -79,6 +102,54 @@
 		border: none;
 		background: none;
 		cursor: zoom-in;
+	}
+
+	.image-pop-title {
+		font-style: italic;
+		color: var(--color-gray-500);
+		font-smooth: always;
+	}
+
+	.pops {
+		max-width: 100%;
+		width: 100%;
+		transition: all 200ms;
+	}
+
+	@media (--large) {
+		.pops:hover {
+			max-width: 104% !important;
+			width: 104% !important;
+			margin-left: -2%;
+		}
+
+		.image-pop-container.portrait .pops:hover {
+			margin-left: 0;
+		}
+	}
+
+	@media (--xlarge) {
+		.pops:hover {
+			max-width: 106% !important;
+			width: 106% !important;
+			margin-left: -3%;
+		}
+
+		.image-pop-container.portrait .pops:hover {
+			margin-left: 0;
+		}
+	}
+
+	@media (--xxlarge) {
+		.pops:hover {
+			max-width: 110% !important;
+			width: 110% !important;
+			margin-left: -5%;
+		}
+
+		.image-pop-container.portrait .pops:hover {
+			margin-left: 0;
+		}
 	}
 
 	.lightbox-backdrop {

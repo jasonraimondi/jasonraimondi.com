@@ -6,7 +6,7 @@
  * 2. Shared foundation (from _shared/)
  * 3. Shared base elements (from _shared/base/)
  * 4. Resume-specific base overrides
- * 5. Resume components
+ * 5. Resume-wide variables and document styles
  */
 
 /* Vendor */
@@ -29,13 +29,7 @@
 /* Resume-specific base overrides */
 @import 'resume/base/_html.css';
 
-/* Resume components */
-@import 'resume/_layout.css';
-@import 'resume/_me.css';
-@import 'resume/_skills.css';
-@import 'resume/_contact.css';
-
-/* Resume-specific variables and utilities */
+/* Resume-specific variables and document styles */
 :root {
   --resume-line-height: 1.4;
 }
@@ -58,17 +52,8 @@ html.layout-resume {
   :root {
     --resume-line-height: 1.3;
   }
+
   html.layout-resume {
     font-size: 90%;
   }
-  .print-only { display: block; }
-  .print-hide { display: none; }
-}
-
-#resume {
-  font-weight: 500;
-}
-
-.print-only {
-  display: none;
 }

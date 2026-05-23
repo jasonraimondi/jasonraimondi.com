@@ -23,11 +23,10 @@ src/styles/
 │   ├── _font-face.css   # Averia font imports (site only)
 │   ├── _noscript.css    # No-JS messaging
 │   └── _code.css        # Code block styles (blog only)
-├── components/           # Reusable UI components
-├── content/              # Content-specific styles
-├── layouts/              # Page layout styles
-├── partials/             # Partial/section styles
-├── resume/               # Resume-specific styles
+├── content/              # Legacy content-specific styles
+├── layouts/              # Route-wide/generated-content layout styles
+├── partials/             # Shared global partial styles
+├── resume/               # Resume document/base styles
 └── lib/                  # Third-party stylesheets
 ```
 
@@ -36,7 +35,7 @@ src/styles/
 - **`src/styles/style.css`** - Main site stylesheet (imported by `src/routes/(blog)/+layout.svelte`)
 - **`src/styles/resume.css`** - Resume stylesheet (imported by `src/routes/(resume)/+layout.svelte`)
 
-Both entry points import from `_shared/` for common base styles, then add their domain-specific styles.
+Both entry points import from `_shared/` for common base styles, then add their domain-specific global styles. Component-specific classes live in the owning `.svelte` file's `<style>` block.
 
 ## Build Process
 
@@ -70,14 +69,13 @@ Usage: `@media (--large) { ... }`
 Add to `css/_shared/` or `css/_shared/base/`
 
 ### Site-specific styles
-Add to appropriate directory:
-- Base HTML elements → `css/base/`
-- Reusable components → `css/components/`
-- Page layouts → `css/layouts/`
-- Partials/sections → `css/partials/`
+Add component-specific styles to the owning `.svelte` file. Add global styles only when they are shared across components or target generated content:
+- Base HTML elements → `src/styles/base/`
+- Generated content / route-wide prose → `src/styles/layouts/`
+- Shared partial/global patterns → `src/styles/partials/`
 
 ### Resume-specific styles
-Add to `resume/` or `resume/base/`
+Add resume page component styles to `src/routes/(resume)/resume/+page.svelte`. Add document-level resume styles to `src/styles/resume.css` or `src/styles/resume/base/`.
 
 ## Color System
 

@@ -36,6 +36,40 @@
 </nav>
 
 <style>
+	.breadcrumbs {
+		scrollbar-width: none;
+		line-height: 1.5;
+		white-space: nowrap;
+		list-style-type: none;
+		font-size: 0.8rem;
+		overflow-x: auto;
+		margin: 2em 0 1em;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		& li {
+			display: inline-block;
+
+			&::after {
+				content: '/';
+				margin: 0 0.15em;
+			}
+
+			&:last-child::after {
+				content: none;
+			}
+		}
+	}
+
+	.breadcrumbs--home {
+		fill: currentColor;
+		height: 1em;
+		position: relative;
+		top: 2px;
+	}
+
 	.visually-hidden {
 		position: absolute;
 		width: 1px;

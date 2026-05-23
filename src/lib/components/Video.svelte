@@ -22,8 +22,22 @@
 </div>
 
 <style>
+	video {
+		max-width: 100%;
+	}
+
 	.video-container {
 		margin: 1.5rem 0;
+	}
+
+	.video-container.portrait {
+		@media (--large) {
+			width: 55%;
+		}
+
+		@media (--xlarge) {
+			width: 50%;
+		}
 	}
 
 	.video-container video {
@@ -31,6 +45,7 @@
 		max-width: 100%;
 		height: auto;
 		border-radius: 0.5rem;
+		background-color: var(--color-white);
 	}
 
 	.video-container.portrait video {

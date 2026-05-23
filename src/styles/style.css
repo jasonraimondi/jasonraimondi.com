@@ -6,10 +6,11 @@
  * 2. Shared foundation (from _shared/)
  * 3. Shared base elements (from _shared/base/)
  * 4. Site-specific base styles
- * 5. Site layouts, partials, and components
+ * 5. Site-wide layouts and generated-content styles
  *
  * Note: Shared styles are imported from _shared/ and used by both
- * the main site (this file) and resume (resume.css)
+ * the main site (this file) and resume (resume.css). Component-specific
+ * classes live in the owning .svelte file.
  */
 
 /* Vendor */
@@ -35,23 +36,12 @@
 @import 'base/_noscript.css';
 @import 'base/_code.css';
 
-/* Site layouts, partials, components */
-@import 'layouts/_index.css';
+/* Site layouts and generated-content styles */
 @import 'layouts/_list.css';
 @import 'layouts/_single.css';
 
-@import 'partials/_top-bar.css';
-@import 'partials/_breadcrumbs.css';
 @import 'partials/_pagination.css';
 @import 'partials/_related-posts.css';
-@import 'partials/_recent-projects.css';
-@import 'partials/_footer.css';
-@import 'partials/_tip.css';
-
-@import 'components/_image-gallery.css';
-@import 'components/_image-pop.css';
-@import 'components/_video-container.css';
-@import 'components/_tipboard.css';
 
 /* Shiki handles syntax highlighting via inline styles configured in svelte.config.js */
 

@@ -114,3 +114,27 @@
 		{/key}.
 	</p>
 </div>
+
+<style>
+	.home {
+		line-height: 1.4;
+
+		& p {
+			padding-bottom: 1em;
+		}
+
+		& h1,
+		& h2 {
+			font-family: var(--font-family-sans);
+		}
+
+		& h1 {
+			font-size: 2.2rem;
+		}
+
+		& h2 {
+			font-size: 1.6rem;
+			line-height: 1;
+		}
+	}
+</style>
